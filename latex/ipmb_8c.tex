@@ -1,0 +1,370 @@
+\hypertarget{ipmb_8c}{\section{/home/henrique/rep/open\-M\-M\-C/modules/ipmb.c File Reference}
+\label{ipmb_8c}\index{/home/henrique/rep/open\-M\-M\-C/modules/ipmb.\-c@{/home/henrique/rep/open\-M\-M\-C/modules/ipmb.\-c}}
+}
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}queue.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}semphr.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}string.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}utils.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ipmb.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ipmi.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}led.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}port.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task\-\_\-priorities.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ipmb_8c_a410dc1e7572425a449b5dc0f7ca9f69d}{I2\-C\-\_\-\-S\-P\-E\-E\-D}~100000
+\item 
+\#define \hyperlink{ipmb_8c_afb1fa450cf18fa7580c7a27c68f142a3}{G\-P\-I\-O\-\_\-\-G\-A\-\_\-\-D\-E\-L\-A\-Y}~10
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ipmb_8h_a8d757edf82d973e9e19ea700b3cd0671}{ipmb\-\_\-error} \hyperlink{ipmb_8c_ac17c490ff29305243b72c2f83c919cf5}{ipmb\-\_\-notify\-\_\-client} (\hyperlink{structipmi__msg__cfg}{ipmi\-\_\-msg\-\_\-cfg} $\ast$msg\-\_\-cfg)
+\begin{DoxyCompactList}\small\item\em Notifies the client that a new request has arrived and copies the message to its queue. This function receives a message wrapped in a \hyperlink{structipmi__msg__cfg}{ipmi\-\_\-msg\-\_\-cfg} struct and copies only the \hyperlink{structipmi__msg}{ipmi\-\_\-msg} field to the client queue. Also, if a task has registered its handle in the caller\-\_\-task field, notify it. \end{DoxyCompactList}\item 
+\hyperlink{ipmb_8h_a8d757edf82d973e9e19ea700b3cd0671}{ipmb\-\_\-error} \hyperlink{ipmb_8c_a7732c86a719bbee62ce7383a583ea82c}{ipmb\-\_\-encode} (uint8\-\_\-t $\ast$buffer, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$msg)
+\begin{DoxyCompactList}\small\item\em Encode I\-P\-M\-I msg struct to a byte formatted buffer. \end{DoxyCompactList}\item 
+\hyperlink{ipmb_8h_a8d757edf82d973e9e19ea700b3cd0671}{ipmb\-\_\-error} \hyperlink{ipmb_8c_ab1e2328f30108a9f68cac6e6cd233428}{ipmb\-\_\-decode} (\hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$msg, uint8\-\_\-t $\ast$buffer, uint8\-\_\-t len)
+\begin{DoxyCompactList}\small\item\em Decodes a buffer and copies to its specific fields in a \hyperlink{structipmi__msg}{ipmi\-\_\-msg} struct. \end{DoxyCompactList}\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{ipmb_8c_a9da7268a374df3d8c20ec76bf5ae2a3a}{I\-P\-M\-B\-\_\-\-T\-X\-Task} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters)
+\begin{DoxyCompactList}\small\item\em I\-P\-M\-B Transmitter Task. \end{DoxyCompactList}\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{ipmb_8c_a5f3f27f298ef3643964b4085f905c031}{I\-P\-M\-B\-\_\-\-R\-X\-Task} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters)
+\begin{DoxyCompactList}\small\item\em I\-P\-M\-B Receiver Task. \end{DoxyCompactList}\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{ipmb_8c_a09d71f7adbd01a149b3778052c402b1d}{ipmb\-\_\-init} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\begin{DoxyCompactList}\small\item\em Initializes the I\-P\-M\-B Layer. \end{DoxyCompactList}\item 
+\hyperlink{ipmb_8h_a8d757edf82d973e9e19ea700b3cd0671}{ipmb\-\_\-error} \hyperlink{ipmb_8c_ab33457f43ce9d42f9335c94568bcee90}{ipmb\-\_\-send\-\_\-request} (\hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$req)
+\begin{DoxyCompactList}\small\item\em Format and send a request via I\-P\-M\-B channel. \end{DoxyCompactList}\item 
+\hyperlink{ipmb_8h_a8d757edf82d973e9e19ea700b3cd0671}{ipmb\-\_\-error} \hyperlink{ipmb_8c_ac0769acd22719fe34c97c1961c91ba26}{ipmb\-\_\-send\-\_\-response} (\hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$req, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$resp)
+\item 
+\hyperlink{ipmb_8h_a8d757edf82d973e9e19ea700b3cd0671}{ipmb\-\_\-error} \hyperlink{ipmb_8c_a027dc1f6ba3d5176fb46bade2c7afd88}{ipmb\-\_\-register\-\_\-rxqueue} (\hyperlink{queue_8h_aaf19d499892a4ce1409326ece00f5264}{Queue\-Handle\-\_\-t} $\ast$queue)
+\begin{DoxyCompactList}\small\item\em Creates and returns a queue in which the client can block to receive the incoming requests. \end{DoxyCompactList}\item 
+\hyperlink{ipmb_8h_a8d757edf82d973e9e19ea700b3cd0671}{ipmb\-\_\-error} \hyperlink{ipmb_8c_a2f65cfe781d852b8d1394830ad0ec739}{ipmb\-\_\-assert\-\_\-chksum} (uint8\-\_\-t $\ast$buffer, uint8\-\_\-t buffer\-\_\-len)
+\begin{DoxyCompactList}\small\item\em Asserts the input message checksums by comparing them with our calculated ones. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{ipmb_8c_a1c987a2dc56422b57146391280f5e796}{get\-\_\-ipmb\-\_\-addr} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\begin{DoxyCompactList}\small\item\em Reads own I2\-C slave address using G\-A pins. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{queue_8h_aaf19d499892a4ce1409326ece00f5264}{Queue\-Handle\-\_\-t} \hyperlink{ipmb_8c_a194d3916e321c0f95416bb70055b23b3}{ipmb\-\_\-txqueue} = \hyperlink{group__LPC__Types__Public__Macros_ga070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L}
+\item 
+\hyperlink{queue_8h_aaf19d499892a4ce1409326ece00f5264}{Queue\-Handle\-\_\-t} \hyperlink{ipmb_8c_af3472d74c30ad32c8d425acc85fce3f2}{client\-\_\-queue} = \hyperlink{group__LPC__Types__Public__Macros_ga070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L}
+\item 
+unsigned char \hyperlink{ipmb_8c_a88a6ca39b5e01d455656304864acf459}{I\-P\-M\-B\-L\-\_\-\-T\-A\-B\-L\-E} \mbox{[}\hyperlink{ipmb_8h_a85cd4d157a04ad1efedfec4106a1fcac}{I\-P\-M\-B\-L\-\_\-\-T\-A\-B\-L\-E\-\_\-\-S\-I\-Z\-E}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Table holding all possible address values in I\-P\-M\-B specification. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ipmb_8c_afb1fa450cf18fa7580c7a27c68f142a3}{\index{ipmb.\-c@{ipmb.\-c}!G\-P\-I\-O\-\_\-\-G\-A\-\_\-\-D\-E\-L\-A\-Y@{G\-P\-I\-O\-\_\-\-G\-A\-\_\-\-D\-E\-L\-A\-Y}}
+\index{G\-P\-I\-O\-\_\-\-G\-A\-\_\-\-D\-E\-L\-A\-Y@{G\-P\-I\-O\-\_\-\-G\-A\-\_\-\-D\-E\-L\-A\-Y}!ipmb.c@{ipmb.\-c}}
+\subsubsection[{G\-P\-I\-O\-\_\-\-G\-A\-\_\-\-D\-E\-L\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-P\-I\-O\-\_\-\-G\-A\-\_\-\-D\-E\-L\-A\-Y~10}}\label{ipmb_8c_afb1fa450cf18fa7580c7a27c68f142a3}
+The state of each G\-A signal is represented by G (grounded), U (unconnected), or P (pulled up to Management Power).
+
+The M\-M\-C drives P1 low and reads the G\-A lines. The M\-M\-C then drives P1 high and reads the G\-A lines. Any line that changes state between the two reads indicate an unconnected (U) pin.
+
+The I\-P\-M\-B-\/\-L address of a Module can be calculated as (70h + Site Number x 2). \par
+ G = 0, P = 1, U = 2 \par
+ \begin{TabularC}{4}
+\hline
+\rowcolor{lightgray}\PBS\centering {\bf Pin }&\PBS\centering {\bf Ternary }&\PBS\centering {\bf Decimal }&\PBS\centering {\bf Address  }\\\cline{1-4}
+\PBS\centering G\-G\-G &\PBS\centering 000 &\PBS\centering 0 &\PBS\centering 0x70 \\\cline{1-4}
+\PBS\centering G\-G\-P &\PBS\centering 001 &\PBS\centering 1 &\PBS\centering 0x8\-A \\\cline{1-4}
+\PBS\centering G\-G\-U &\PBS\centering 002 &\PBS\centering 2 &\PBS\centering 0x72 \\\cline{1-4}
+\PBS\centering G\-P\-G &\PBS\centering 010 &\PBS\centering 3 &\PBS\centering 0x8\-E \\\cline{1-4}
+\PBS\centering G\-P\-P &\PBS\centering 011 &\PBS\centering 4 &\PBS\centering 0x92 \\\cline{1-4}
+\PBS\centering G\-P\-U &\PBS\centering 012 &\PBS\centering 5 &\PBS\centering 0x90 \\\cline{1-4}
+\PBS\centering G\-U\-G &\PBS\centering 020 &\PBS\centering 6 &\PBS\centering 0x74 \\\cline{1-4}
+\PBS\centering G\-U\-P &\PBS\centering 021 &\PBS\centering 7 &\PBS\centering 0x8\-C \\\cline{1-4}
+\PBS\centering G\-U\-U &\PBS\centering 022 &\PBS\centering 8 &\PBS\centering 0x76 \\\cline{1-4}
+\PBS\centering P\-G\-G &\PBS\centering 100 &\PBS\centering 9 &\PBS\centering 0x98 \\\cline{1-4}
+\PBS\centering P\-G\-P &\PBS\centering 101 &\PBS\centering 10 &\PBS\centering 0x9\-C \\\cline{1-4}
+\PBS\centering P\-G\-U &\PBS\centering 102 &\PBS\centering 11 &\PBS\centering 0x9\-A \\\cline{1-4}
+\PBS\centering P\-P\-G &\PBS\centering 110 &\PBS\centering 12 &\PBS\centering 0x\-A0 \\\cline{1-4}
+\PBS\centering P\-P\-P &\PBS\centering 111 &\PBS\centering 13 &\PBS\centering 0x\-A4 \\\cline{1-4}
+\PBS\centering P\-P\-U &\PBS\centering 112 &\PBS\centering 14 &\PBS\centering 0x88 \\\cline{1-4}
+\PBS\centering P\-U\-G &\PBS\centering 120 &\PBS\centering 15 &\PBS\centering 0x9\-E \\\cline{1-4}
+\PBS\centering P\-U\-P &\PBS\centering 121 &\PBS\centering 16 &\PBS\centering 0x86 \\\cline{1-4}
+\PBS\centering P\-U\-U &\PBS\centering 122 &\PBS\centering 17 &\PBS\centering 0x84 \\\cline{1-4}
+\PBS\centering U\-G\-G &\PBS\centering 200 &\PBS\centering 18 &\PBS\centering 0x78 \\\cline{1-4}
+\PBS\centering U\-G\-P &\PBS\centering 201 &\PBS\centering 19 &\PBS\centering 0x94 \\\cline{1-4}
+\PBS\centering U\-G\-U &\PBS\centering 202 &\PBS\centering 20 &\PBS\centering 0x7\-A \\\cline{1-4}
+\PBS\centering U\-P\-G &\PBS\centering 210 &\PBS\centering 21 &\PBS\centering 0x96 \\\cline{1-4}
+\PBS\centering U\-P\-P &\PBS\centering 211 &\PBS\centering 22 &\PBS\centering 0x82 \\\cline{1-4}
+\PBS\centering U\-P\-U &\PBS\centering 212 &\PBS\centering 23 &\PBS\centering 0x80 \\\cline{1-4}
+\PBS\centering U\-U\-G &\PBS\centering 220 &\PBS\centering 24 &\PBS\centering 0x7\-C \\\cline{1-4}
+\PBS\centering U\-U\-P &\PBS\centering 221 &\PBS\centering 25 &\PBS\centering 0x7\-E \\\cline{1-4}
+\PBS\centering U\-U\-U &\PBS\centering 222 &\PBS\centering 26 &\PBS\centering 0x\-A2 \\\cline{1-4}
+\end{TabularC}
+\hypertarget{ipmb_8c_a410dc1e7572425a449b5dc0f7ca9f69d}{\index{ipmb.\-c@{ipmb.\-c}!I2\-C\-\_\-\-S\-P\-E\-E\-D@{I2\-C\-\_\-\-S\-P\-E\-E\-D}}
+\index{I2\-C\-\_\-\-S\-P\-E\-E\-D@{I2\-C\-\_\-\-S\-P\-E\-E\-D}!ipmb.c@{ipmb.\-c}}
+\subsubsection[{I2\-C\-\_\-\-S\-P\-E\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I2\-C\-\_\-\-S\-P\-E\-E\-D~100000}}\label{ipmb_8c_a410dc1e7572425a449b5dc0f7ca9f69d}
+
+
+\subsection{Function Documentation}
+\hypertarget{ipmb_8c_a1c987a2dc56422b57146391280f5e796}{\index{ipmb.\-c@{ipmb.\-c}!get\-\_\-ipmb\-\_\-addr@{get\-\_\-ipmb\-\_\-addr}}
+\index{get\-\_\-ipmb\-\_\-addr@{get\-\_\-ipmb\-\_\-addr}!ipmb.c@{ipmb.\-c}}
+\subsubsection[{get\-\_\-ipmb\-\_\-addr}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t get\-\_\-ipmb\-\_\-addr (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{ipmb_8c_a1c987a2dc56422b57146391280f5e796}
+
+
+Reads own I2\-C slave address using G\-A pins. 
+
+Based on coreipm/coreipm/mmc.\-c \begin{DoxyAuthor}{Author}
+Gokhan Sozmen Reads the G\-A pins, performing an unconnection checking, to define the device I2\-C slave address, as specified by Micro\-T\-C\-A documentation.
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+7-\/bit Slave Address
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]Develop a function to discover the Geographic Address once (checking the G\-A pins) and store it into a global variable, since everytime a I\-P\-M\-I message is built (request or response) the M\-M\-C has to check its own address to fill the rs/rq\-S\-A field, and it takes some time to go through all this function. \end{DoxyRefDesc}
+\hypertarget{ipmb_8c_a2f65cfe781d852b8d1394830ad0ec739}{\index{ipmb.\-c@{ipmb.\-c}!ipmb\-\_\-assert\-\_\-chksum@{ipmb\-\_\-assert\-\_\-chksum}}
+\index{ipmb\-\_\-assert\-\_\-chksum@{ipmb\-\_\-assert\-\_\-chksum}!ipmb.c@{ipmb.\-c}}
+\subsubsection[{ipmb\-\_\-assert\-\_\-chksum}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ipmb\-\_\-error} ipmb\-\_\-assert\-\_\-chksum (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t $\ast$}]{buffer, }
+\item[{uint8\-\_\-t}]{buffer\-\_\-len}
+\end{DoxyParamCaption}
+)}}\label{ipmb_8c_a2f65cfe781d852b8d1394830ad0ec739}
+
+
+Asserts the input message checksums by comparing them with our calculated ones. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Pointer to the message bytes. \\
+\hline
+{\em buffer\-\_\-len} & Size of the message.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em ipmb\-\_\-error\-\_\-success} & The message's checksum bytes are correct, therefore the message is valid. \\
+\hline
+{\em ipmb\-\_\-error\-\_\-hdr\-\_\-chksum} & The header checksum byte is invalid. \\
+\hline
+{\em ipmb\-\_\-error\-\_\-hdr\-\_\-chksum} & The final checksum byte is invalid. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ipmb_8c_ab1e2328f30108a9f68cac6e6cd233428}{\index{ipmb.\-c@{ipmb.\-c}!ipmb\-\_\-decode@{ipmb\-\_\-decode}}
+\index{ipmb\-\_\-decode@{ipmb\-\_\-decode}!ipmb.c@{ipmb.\-c}}
+\subsubsection[{ipmb\-\_\-decode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ipmb\-\_\-error} ipmb\-\_\-decode (
+\begin{DoxyParamCaption}
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{msg, }
+\item[{uint8\-\_\-t $\ast$}]{buffer, }
+\item[{uint8\-\_\-t}]{len}
+\end{DoxyParamCaption}
+)}}\label{ipmb_8c_ab1e2328f30108a9f68cac6e6cd233428}
+
+
+Decodes a buffer and copies to its specific fields in a \hyperlink{structipmi__msg}{ipmi\-\_\-msg} struct. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em msg} & Pointer to a \hyperlink{structipmi__msg}{ipmi\-\_\-msg} struct which will hold the decoded message \\
+\hline
+\mbox{\tt in}  & {\em buffer} & Pointer to a byte array that will be decoded \\
+\hline
+\mbox{\tt in}  & {\em len} & Length of {\ttfamily buffer} \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em ipmb\-\_\-error\-\_\-success} & The message was successfully decoded \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ipmb_8c_a7732c86a719bbee62ce7383a583ea82c}{\index{ipmb.\-c@{ipmb.\-c}!ipmb\-\_\-encode@{ipmb\-\_\-encode}}
+\index{ipmb\-\_\-encode@{ipmb\-\_\-encode}!ipmb.c@{ipmb.\-c}}
+\subsubsection[{ipmb\-\_\-encode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ipmb\-\_\-error} ipmb\-\_\-encode (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t $\ast$}]{buffer, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}}\label{ipmb_8c_a7732c86a719bbee62ce7383a583ea82c}
+
+
+Encode I\-P\-M\-I msg struct to a byte formatted buffer. 
+
+This function formats the \hyperlink{structipmi__msg}{ipmi\-\_\-msg} struct fields into a byte array, following the specification\-:
+
+$\vert$ I\-P\-M\-B Messages $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/---$\vert$ $\vert$ $\vert$ R\-E\-Q\-U\-E\-S\-T $\vert$ R\-E\-S\-P\-O\-N\-S\-E $\vert$ Bit Len $\vert$ Byte \# $\vert$ $\vert$-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/---$\vert$ $\vert$ Connection $\vert$ rs\-S\-A $\vert$ rq\-S\-A $\vert$ 8 $\vert$ 1 $\vert$ $\vert$ Header $\vert$ Net\-F\-N $\vert$ Net\-F\-N $\vert$ 6 $\vert$ 2 $\vert$ $\vert$ $\vert$ rs\-L\-U\-N $\vert$ rq\-L\-U\-N $\vert$ 2 $\vert$ 2 $\vert$ $\vert$-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/---$\vert$ $\vert$ Header Chksum $\vert$ Chksum $\vert$ Chksum $\vert$ 8 $\vert$ 3 $\vert$ $\vert$-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/---$\vert$ $\vert$ $\vert$ rq\-S\-A $\vert$ rs\-S\-A $\vert$ 8 $\vert$ 4 $\vert$ $\vert$ Callback Info $\vert$ rq\-Seq $\vert$ rq\-Seq $\vert$ 6 $\vert$ 5 $\vert$ $\vert$ $\vert$ rq\-L\-U\-N $\vert$ rs\-L\-U\-N $\vert$ 2 $\vert$ 5 $\vert$ $\vert$-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/---$\vert$ $\vert$ Command $\vert$ C\-M\-D $\vert$ C\-M\-D $\vert$ 8 $\vert$ 6 $\vert$ $\vert$-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/---$\vert$ $\vert$ Data $\vert$ $\vert$ C\-C $\vert$ 8 $\vert$ 7 $\vert$ $\vert$ $\vert$ Data $\vert$ Data $\vert$ 8$\ast$\-N $\vert$ 7+\-N $\vert$ $\vert$-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/---$\vert$ $\vert$ Message Chksum $\vert$ Chksum $\vert$ Checksum $\vert$ 8 $\vert$ 7+\-N+1 $\vert$ $\vert$-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/---$\vert$
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em buffer} & Byte buffer which will hold the formatted message \\
+\hline
+\mbox{\tt in}  & {\em msg} & The message struct to be formatted\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em ipmb\-\_\-error\-\_\-success} & The message was successfully formatted \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ipmb_8c_a09d71f7adbd01a149b3778052c402b1d}{\index{ipmb.\-c@{ipmb.\-c}!ipmb\-\_\-init@{ipmb\-\_\-init}}
+\index{ipmb\-\_\-init@{ipmb\-\_\-init}!ipmb.c@{ipmb.\-c}}
+\subsubsection[{ipmb\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} ipmb\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{ipmb_8c_a09d71f7adbd01a149b3778052c402b1d}
+
+
+Initializes the I\-P\-M\-B Layer. 
+
+Configures the I2\-C Driver, creates the T\-X queue for the I\-P\-M\-B Task and both I\-P\-M\-B R\-X and I\-P\-M\-B T\-X tasks \hypertarget{ipmb_8c_ac17c490ff29305243b72c2f83c919cf5}{\index{ipmb.\-c@{ipmb.\-c}!ipmb\-\_\-notify\-\_\-client@{ipmb\-\_\-notify\-\_\-client}}
+\index{ipmb\-\_\-notify\-\_\-client@{ipmb\-\_\-notify\-\_\-client}!ipmb.c@{ipmb.\-c}}
+\subsubsection[{ipmb\-\_\-notify\-\_\-client}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ipmb\-\_\-error} ipmb\-\_\-notify\-\_\-client (
+\begin{DoxyParamCaption}
+\item[{{\bf ipmi\-\_\-msg\-\_\-cfg} $\ast$}]{msg\-\_\-cfg}
+\end{DoxyParamCaption}
+)}}\label{ipmb_8c_ac17c490ff29305243b72c2f83c919cf5}
+
+
+Notifies the client that a new request has arrived and copies the message to its queue. This function receives a message wrapped in a \hyperlink{structipmi__msg__cfg}{ipmi\-\_\-msg\-\_\-cfg} struct and copies only the \hyperlink{structipmi__msg}{ipmi\-\_\-msg} field to the client queue. Also, if a task has registered its handle in the caller\-\_\-task field, notify it. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em msg\-\_\-cfg} & The message that arrived, wrapped in the configuration struct \hyperlink{structipmi__msg__cfg}{ipmi\-\_\-msg\-\_\-cfg}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em ipmb\-\_\-error\-\_\-success} & The message was successfully copied. \\
+\hline
+{\em ipmb\-\_\-error\-\_\-timeout} & The client\-\_\-queue was full. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ipmb_8c_a027dc1f6ba3d5176fb46bade2c7afd88}{\index{ipmb.\-c@{ipmb.\-c}!ipmb\-\_\-register\-\_\-rxqueue@{ipmb\-\_\-register\-\_\-rxqueue}}
+\index{ipmb\-\_\-register\-\_\-rxqueue@{ipmb\-\_\-register\-\_\-rxqueue}!ipmb.c@{ipmb.\-c}}
+\subsubsection[{ipmb\-\_\-register\-\_\-rxqueue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ipmb\-\_\-error} ipmb\-\_\-register\-\_\-rxqueue (
+\begin{DoxyParamCaption}
+\item[{{\bf Queue\-Handle\-\_\-t} $\ast$}]{queue}
+\end{DoxyParamCaption}
+)}}\label{ipmb_8c_a027dc1f6ba3d5176fb46bade2c7afd88}
+
+
+Creates and returns a queue in which the client can block to receive the incoming requests. 
+
+The queue is created and its handler is written at the given pointer (queue). Also keeps a copy of the handler to know where to write the incoming messages.
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue} & Pointer to a Queue\-Handle\-\_\-t variable which will be written by this function.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em ipmb\-\_\-error\-\_\-success} & The queue was successfully created. \\
+\hline
+{\em ipmb\-\_\-error\-\_\-queue\-\_\-creation} & Queue creation failed due to lack of Heap space. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{ipmb_8c_a5f3f27f298ef3643964b4085f905c031}{\index{ipmb.\-c@{ipmb.\-c}!I\-P\-M\-B\-\_\-\-R\-X\-Task@{I\-P\-M\-B\-\_\-\-R\-X\-Task}}
+\index{I\-P\-M\-B\-\_\-\-R\-X\-Task@{I\-P\-M\-B\-\_\-\-R\-X\-Task}!ipmb.c@{ipmb.\-c}}
+\subsubsection[{I\-P\-M\-B\-\_\-\-R\-X\-Task}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} I\-P\-M\-B\-\_\-\-R\-X\-Task (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)}}\label{ipmb_8c_a5f3f27f298ef3643964b4085f905c031}
+
+
+I\-P\-M\-B Receiver Task. 
+
+Similarly to \hyperlink{ipmb_8h_a9da7268a374df3d8c20ec76bf5ae2a3a}{I\-P\-M\-B\-\_\-\-T\-X\-Task}, this task remains blocked until a new message is received by the I2\-C driver. The message passes through checksum checking to assure its integrity. \par
+ If the message is a request, we have to check if it's a new one or just a retransmission of the last. In order to do this, the sequential number is tested, since every request has a different one.\par
+ Right after that, the arrival time and the message body are stored for future checking and the specified client is notified using \hyperlink{ipmb_8c_ac17c490ff29305243b72c2f83c919cf5}{ipmb\-\_\-notify\-\_\-client}.
+
+If we have received a response instead, we match it with the last stored request and also check if the awating request hasn't timed-\/out yet.
+
+\begin{DoxyNote}{Note}
+When a malformed message, a response without a request or a repeated request are received, they are just ignored, following the I\-P\-M\-B specifications.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em pv\-Parameters} & Default parameter to Free\-R\-T\-O\-S tasks, not used here. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{ipmb_8h_a9da7268a374df3d8c20ec76bf5ae2a3a}{I\-P\-M\-B\-\_\-\-T\-X\-Task} 
+
+\hyperlink{ipmb_8c_ac17c490ff29305243b72c2f83c919cf5}{ipmb\-\_\-notify\-\_\-client} 
+\end{DoxySeeAlso}
+\hypertarget{ipmb_8c_ab33457f43ce9d42f9335c94568bcee90}{\index{ipmb.\-c@{ipmb.\-c}!ipmb\-\_\-send\-\_\-request@{ipmb\-\_\-send\-\_\-request}}
+\index{ipmb\-\_\-send\-\_\-request@{ipmb\-\_\-send\-\_\-request}!ipmb.c@{ipmb.\-c}}
+\subsubsection[{ipmb\-\_\-send\-\_\-request}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ipmb\-\_\-error} ipmb\-\_\-send\-\_\-request (
+\begin{DoxyParamCaption}
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{req}
+\end{DoxyParamCaption}
+)}}\label{ipmb_8c_ab33457f43ce9d42f9335c94568bcee90}
+
+
+Format and send a request via I\-P\-M\-B channel. 
+
+\hypertarget{ipmb_8c_ac0769acd22719fe34c97c1961c91ba26}{\index{ipmb.\-c@{ipmb.\-c}!ipmb\-\_\-send\-\_\-response@{ipmb\-\_\-send\-\_\-response}}
+\index{ipmb\-\_\-send\-\_\-response@{ipmb\-\_\-send\-\_\-response}!ipmb.c@{ipmb.\-c}}
+\subsubsection[{ipmb\-\_\-send\-\_\-response}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ipmb\-\_\-error} ipmb\-\_\-send\-\_\-response (
+\begin{DoxyParamCaption}
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{req, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{resp}
+\end{DoxyParamCaption}
+)}}\label{ipmb_8c_ac0769acd22719fe34c97c1961c91ba26}
+\hypertarget{ipmb_8c_a9da7268a374df3d8c20ec76bf5ae2a3a}{\index{ipmb.\-c@{ipmb.\-c}!I\-P\-M\-B\-\_\-\-T\-X\-Task@{I\-P\-M\-B\-\_\-\-T\-X\-Task}}
+\index{I\-P\-M\-B\-\_\-\-T\-X\-Task@{I\-P\-M\-B\-\_\-\-T\-X\-Task}!ipmb.c@{ipmb.\-c}}
+\subsubsection[{I\-P\-M\-B\-\_\-\-T\-X\-Task}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} I\-P\-M\-B\-\_\-\-T\-X\-Task (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)}}\label{ipmb_8c_a9da7268a374df3d8c20ec76bf5ae2a3a}
+
+
+I\-P\-M\-B Transmitter Task. 
+
+When \hyperlink{ipmb_8h_ab33457f43ce9d42f9335c94568bcee90}{ipmb\-\_\-send\-\_\-request} or \hyperlink{ipmb_8h_ac0769acd22719fe34c97c1961c91ba26}{ipmb\-\_\-send\-\_\-response} put a message in \hyperlink{ipmb_8c_a194d3916e321c0f95416bb70055b23b3}{ipmb\-\_\-txqueue}, this task unblocks. First step to send a message is differentiating requests from responses. It does this analyzing the parity of Net\-F\-N (even for requests, odd for responses).
+
+When sending a response, this task has to check if it matches with the sequence number from the last known request and the amount of time it took to be built (timeout checking). Last step is checking if it has already tried to send this message more than \hyperlink{ipmb_8h_a5546e89aff8048ba1e566aaaed175c27}{I\-P\-M\-B\-\_\-\-M\-A\-X\-\_\-\-R\-E\-T\-R\-I\-E\-S} value. \par
+ After passing all checking, the message is formatted as the I\-P\-M\-B protocol demands and passed down to the I2\-C driver, using the function x\-I2\-C\-Write(). \par
+ If an error comes out of the I2\-C driver when sending the message, it increases the retry counter in the \hyperlink{structipmi__msg__cfg}{ipmi\-\_\-msg\-\_\-cfg} struct and send the message to the front of \hyperlink{ipmb_8c_a194d3916e321c0f95416bb70055b23b3}{ipmb\-\_\-txqueue}. \par
+ If no errors occurs, the task that put the message in the queue is notified with a success flag.
+
+The proccess is analog when sending a request, but the only check that is made is the retry number. The task skip all checking because, when sending a request, the message is formatted using it's own functions \hyperlink{ipmb_8h_ab33457f43ce9d42f9335c94568bcee90}{ipmb\-\_\-send\-\_\-request} or \hyperlink{ipmb_8h_ac0769acd22719fe34c97c1961c91ba26}{ipmb\-\_\-send\-\_\-response} and they are guaranteed to put only valid messages in queue. 
+\begin{DoxyParams}{Parameters}
+{\em pv\-Parameters} & Default parameter to Free\-R\-T\-O\-S tasks, not used here. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{ipmb_8h_a5f3f27f298ef3643964b4085f905c031}{I\-P\-M\-B\-\_\-\-R\-X\-Task} 
+
+\hyperlink{ipmb_8h_ab33457f43ce9d42f9335c94568bcee90}{ipmb\-\_\-send\-\_\-request} 
+
+\hyperlink{ipmb_8h_ac0769acd22719fe34c97c1961c91ba26}{ipmb\-\_\-send\-\_\-response} 
+\end{DoxySeeAlso}
+
+
+\subsection{Variable Documentation}
+\hypertarget{ipmb_8c_af3472d74c30ad32c8d425acc85fce3f2}{\index{ipmb.\-c@{ipmb.\-c}!client\-\_\-queue@{client\-\_\-queue}}
+\index{client\-\_\-queue@{client\-\_\-queue}!ipmb.c@{ipmb.\-c}}
+\subsubsection[{client\-\_\-queue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Queue\-Handle\-\_\-t} client\-\_\-queue = {\bf N\-U\-L\-L}}}\label{ipmb_8c_af3472d74c30ad32c8d425acc85fce3f2}
+\hypertarget{ipmb_8c_a194d3916e321c0f95416bb70055b23b3}{\index{ipmb.\-c@{ipmb.\-c}!ipmb\-\_\-txqueue@{ipmb\-\_\-txqueue}}
+\index{ipmb\-\_\-txqueue@{ipmb\-\_\-txqueue}!ipmb.c@{ipmb.\-c}}
+\subsubsection[{ipmb\-\_\-txqueue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Queue\-Handle\-\_\-t} ipmb\-\_\-txqueue = {\bf N\-U\-L\-L}}}\label{ipmb_8c_a194d3916e321c0f95416bb70055b23b3}
+\hypertarget{ipmb_8c_a88a6ca39b5e01d455656304864acf459}{\index{ipmb.\-c@{ipmb.\-c}!I\-P\-M\-B\-L\-\_\-\-T\-A\-B\-L\-E@{I\-P\-M\-B\-L\-\_\-\-T\-A\-B\-L\-E}}
+\index{I\-P\-M\-B\-L\-\_\-\-T\-A\-B\-L\-E@{I\-P\-M\-B\-L\-\_\-\-T\-A\-B\-L\-E}!ipmb.c@{ipmb.\-c}}
+\subsubsection[{I\-P\-M\-B\-L\-\_\-\-T\-A\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char I\-P\-M\-B\-L\-\_\-\-T\-A\-B\-L\-E\mbox{[}{\bf I\-P\-M\-B\-L\-\_\-\-T\-A\-B\-L\-E\-\_\-\-S\-I\-Z\-E}\mbox{]}}}\label{ipmb_8c_a88a6ca39b5e01d455656304864acf459}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= \{
+    0x70, 0x8A, 0x72, 0x8E, 0x92, 0x90, 0x74, 0x8C, 0x76,
+    0x98, 0x9C, 0x9A, 0xA0, 0xA4, 0x88, 0x9E, 0x86, 0x84,
+    0x78, 0x94, 0x7A, 0x96, 0x82, 0x80, 0x7C, 0x7E, 0xA2 \}
+\end{DoxyCode}
+
+
+Table holding all possible address values in I\-P\-M\-B specification. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{ipmb_8c_a1c987a2dc56422b57146391280f5e796}{get\-\_\-ipmb\-\_\-addr()} 
+\end{DoxySeeAlso}

@@ -1,0 +1,69 @@
+\hypertarget{main__mmc_8c}{\section{/home/henrique/rep/open\-M\-M\-C/main\-\_\-mmc.c File Reference}
+\label{main__mmc_8c}\index{/home/henrique/rep/open\-M\-M\-C/main\-\_\-mmc.\-c@{/home/henrique/rep/open\-M\-M\-C/main\-\_\-mmc.\-c}}
+}
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}queue.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}semphr.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}port.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}pin\-\_\-mapping.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}led.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ipmi.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sdr.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}payload.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}i2c.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fru.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}jtag.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fpga\-\_\-spi.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}watchdog.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}rtm.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}uart\-\_\-debug.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{main__mmc_8c_a0fcff15b45cb2d0534a2aabcd5f2e08d}{heap\-\_\-test} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$param)
+\item 
+int \hyperlink{main__mmc_8c_a840291bc02cba5474a4cb46a9b9566fe}{main} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{main__mmc_8c_a97fd430f36f8b065226e2bff9bad1de5}{v\-Application\-Idle\-Hook} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{task_8h_ae95f44d4cfeb4a599c6cc258d241cb6b}{Task\-Handle\-\_\-t} \hyperlink{main__mmc_8c_a86a70ee53021b2a530794dd220d3d7ea}{heap\-\_\-handle}
+\item 
+uint8\-\_\-t \hyperlink{main__mmc_8c_ad8fcfee4697fe45151d15d0caed4201f}{ipmb\-\_\-addr} = 0x\-F\-F
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{main__mmc_8c_a0fcff15b45cb2d0534a2aabcd5f2e08d}{\index{main\-\_\-mmc.\-c@{main\-\_\-mmc.\-c}!heap\-\_\-test@{heap\-\_\-test}}
+\index{heap\-\_\-test@{heap\-\_\-test}!main_mmc.c@{main\-\_\-mmc.\-c}}
+\subsubsection[{heap\-\_\-test}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} heap\-\_\-test (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{param}
+\end{DoxyParamCaption}
+)}}\label{main__mmc_8c_a0fcff15b45cb2d0534a2aabcd5f2e08d}
+\hypertarget{main__mmc_8c_a840291bc02cba5474a4cb46a9b9566fe}{\index{main\-\_\-mmc.\-c@{main\-\_\-mmc.\-c}!main@{main}}
+\index{main@{main}!main_mmc.c@{main\-\_\-mmc.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{main__mmc_8c_a840291bc02cba5474a4cb46a9b9566fe}
+\hypertarget{main__mmc_8c_a97fd430f36f8b065226e2bff9bad1de5}{\index{main\-\_\-mmc.\-c@{main\-\_\-mmc.\-c}!v\-Application\-Idle\-Hook@{v\-Application\-Idle\-Hook}}
+\index{v\-Application\-Idle\-Hook@{v\-Application\-Idle\-Hook}!main_mmc.c@{main\-\_\-mmc.\-c}}
+\subsubsection[{v\-Application\-Idle\-Hook}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Application\-Idle\-Hook (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{main__mmc_8c_a97fd430f36f8b065226e2bff9bad1de5}
+
+
+\subsection{Variable Documentation}
+\hypertarget{main__mmc_8c_a86a70ee53021b2a530794dd220d3d7ea}{\index{main\-\_\-mmc.\-c@{main\-\_\-mmc.\-c}!heap\-\_\-handle@{heap\-\_\-handle}}
+\index{heap\-\_\-handle@{heap\-\_\-handle}!main_mmc.c@{main\-\_\-mmc.\-c}}
+\subsubsection[{heap\-\_\-handle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Task\-Handle\-\_\-t} heap\-\_\-handle}}\label{main__mmc_8c_a86a70ee53021b2a530794dd220d3d7ea}
+\hypertarget{main__mmc_8c_ad8fcfee4697fe45151d15d0caed4201f}{\index{main\-\_\-mmc.\-c@{main\-\_\-mmc.\-c}!ipmb\-\_\-addr@{ipmb\-\_\-addr}}
+\index{ipmb\-\_\-addr@{ipmb\-\_\-addr}!main_mmc.c@{main\-\_\-mmc.\-c}}
+\subsubsection[{ipmb\-\_\-addr}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t ipmb\-\_\-addr = 0x\-F\-F}}\label{main__mmc_8c_ad8fcfee4697fe45151d15d0caed4201f}

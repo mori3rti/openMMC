@@ -1,0 +1,315 @@
+\hypertarget{MSVC-MingW_2portmacro_8h}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-M\-S\-V\-C-\/\-Ming\-W/portmacro.h File Reference}
+\label{MSVC-MingW_2portmacro_8h}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+}
+{\ttfamily \#include $<$Windows.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_add0bdbfef5abf241c7774f68bde42f1d}{port\-C\-H\-A\-R}~char
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a1bbe1ef117ec274ef919e0a930c888ac}{port\-F\-L\-O\-A\-T}~float
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a4711ce186a903a14bc8ea7c8650b4f61}{port\-D\-O\-U\-B\-L\-E}~double
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a6bbebff6020ac333ab6ec2ffd7f77001}{port\-L\-O\-N\-G}~long
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a42e62d5881b12ff2a5c659576c64d003}{port\-S\-H\-O\-R\-T}~short
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_ab0a294066ac7369b8f59a52d9491a92c}{port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E}~size\-\_\-t
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E}~long
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a53bae25f223b7156dce0fc6e6b1b2295}{port\-P\-O\-I\-N\-T\-E\-R\-\_\-\-S\-I\-Z\-E\-\_\-\-T\-Y\-P\-E}~size\-\_\-t
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a72723ba1e4a85ca14f25c2b9e066613d}{port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y}~( \hyperlink{Flsh186_2prtmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t} ) 0xffffffff\-U\-L
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a62e53bc6d3fa5c4bf4e65ab2752930f3}{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C}~1
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a21adaab1601f6a0f35ba550a43060830}{port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H}~( -\/1 )
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a554d9322ce7f698a86a22b21234bd8cd}{port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S}~( ( \hyperlink{Flsh186_2prtmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t} ) 1000 / \hyperlink{FreeRTOSConfig_8h_a2f0258dd1e3b877e5bc013be54c2db6a}{config\-T\-I\-C\-K\-\_\-\-R\-A\-T\-E\-\_\-\-H\-Z} )
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a73448585c9c9e96500c2f0c9ea824601}{port\-I\-N\-L\-I\-N\-E}~\-\_\-\-\_\-inline
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_ab9091ce3940d8bd93ec850122a2c6a1c}{port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T}~4
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_ae1ff06193615f5130b5a97dc9e708fc7}{port\-Y\-I\-E\-L\-D}()~\hyperlink{MSVC-MingW_2port_8c_a42248a1986691ed4d9344fd75789d69c}{v\-Port\-Generate\-Simulated\-Interrupt}( \hyperlink{MSVC-MingW_2portmacro_8h_ae86b9ac3969c84a0e5db6d2debeba7cb}{port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-Y\-I\-E\-L\-D} )
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_aac6850c66595efdc02a8bbb95fb4648e}{port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}(x)~return x
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_abf055ad6643e8ac35fc843c8e55d9db6}{port\-E\-N\-D\-\_\-\-S\-W\-I\-T\-C\-H\-I\-N\-G\-\_\-\-I\-S\-R}(x)~\hyperlink{Tasking_2ARM__CM4F_2portmacro_8h_aac6850c66595efdc02a8bbb95fb4648e}{port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}( ( x ) )
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a3c506bf351102047fb5a75491287fe69}{port\-C\-L\-E\-A\-N\-\_\-\-U\-P\-\_\-\-T\-C\-B}(px\-T\-C\-B)~\hyperlink{MSVC-MingW_2portmacro_8h_a0ff38519b01649ce7a5c6a2d91204940}{v\-Port\-Delete\-Thread}( px\-T\-C\-B )
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_aa97aebf8d800e651ca46e021b55c7fa0}{port\-P\-R\-E\-\_\-\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E\-\_\-\-H\-O\-O\-K}(pv\-Task\-To\-Delete, px\-Pend\-Yield)~\hyperlink{MSVC-MingW_2portmacro_8h_ad3564ae551c470eeb87262ed6c2f3cee}{v\-Port\-Close\-Running\-Thread}( ( pv\-Task\-To\-Delete ), ( px\-Pend\-Yield ) )
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a6e3d10ee1a0734a647ca192523c2cfc1}{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}()~\hyperlink{Tasking_2ARM__CM4F_2portmacro_8h_a2ed3554a3de09a3bd09d396ee081ab69}{v\-Port\-Enter\-Critical}()
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_abc47e85a6befbb47961ad5ee7aa57173}{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}()~\hyperlink{Tasking_2ARM__CM4F_2portmacro_8h_aed20ada05b957181a0de042802a82a5b}{v\-Port\-Exit\-Critical}()
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a8a09321ad004019f3c8d0f2e4d7224c7}{port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}()~\hyperlink{Tasking_2ARM__CM4F_2portmacro_8h_a2ed3554a3de09a3bd09d396ee081ab69}{v\-Port\-Enter\-Critical}()
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a529358e6147881dd881c890ade21c9bd}{port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}()~\hyperlink{Tasking_2ARM__CM4F_2portmacro_8h_aed20ada05b957181a0de042802a82a5b}{v\-Port\-Exit\-Critical}()
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_aebb8c3a87d591f60f974772be0ee798d}{config\-U\-S\-E\-\_\-\-P\-O\-R\-T\-\_\-\-O\-P\-T\-I\-M\-I\-S\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-S\-E\-L\-E\-C\-T\-I\-O\-N}~1
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a113cd9b8401284194da8ddc4569aa484}{port\-R\-E\-C\-O\-R\-D\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y}(ux\-Priority, ux\-Ready\-Priorities)~( ux\-Ready\-Priorities ) $\vert$= ( 1\-U\-L $<$$<$ ( ux\-Priority ) )
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_aab771d12c0912d93d52a586628fb18a6}{port\-R\-E\-S\-E\-T\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y}(ux\-Priority, ux\-Ready\-Priorities)~( ux\-Ready\-Priorities ) \&= $\sim$( 1\-U\-L $<$$<$ ( ux\-Priority ) )
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a5ed536be98084ed8c77c95d79a2688ee}{port\-G\-E\-T\-\_\-\-H\-I\-G\-H\-E\-S\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y}(ux\-Top\-Priority, ux\-Ready\-Priorities)~\-\_\-\-Bit\-Scan\-Reverse( ( D\-W\-O\-R\-D $\ast$ ) \&( ux\-Top\-Priority ), ( ux\-Ready\-Priorities ) )
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a2921e1c5a1f974dfa01ae44d1f665f14}{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O}(v\-Function, pv\-Parameters)~\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} v\-Function( \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$ pv\-Parameters )
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a3a289793652f505c538abea27045ccdf}{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}(v\-Function, pv\-Parameters)~\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} v\-Function( \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$ pv\-Parameters )
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_ae86b9ac3969c84a0e5db6d2debeba7cb}{port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-Y\-I\-E\-L\-D}~( 0\-U\-L )
+\item 
+\#define \hyperlink{MSVC-MingW_2portmacro_8h_a6be5f7ce924302129a4184caf180a607}{port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-T\-I\-C\-K}~( 1\-U\-L )
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{WizC_2PIC18_2portmacro_8h_ab0a294066ac7369b8f59a52d9491a92c}{port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E} \hyperlink{MSVC-MingW_2portmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t}
+\item 
+typedef long \hyperlink{MSVC-MingW_2portmacro_8h_a46fb21e00ae0729d7515c0fbf2269796}{Base\-Type\-\_\-t}
+\item 
+typedef unsigned long \hyperlink{MSVC-MingW_2portmacro_8h_a646f89d4298e4f5afd522202b11cb2e6}{U\-Base\-Type\-\_\-t}
+\item 
+typedef uint32\-\_\-t \hyperlink{MSVC-MingW_2portmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{MSVC-MingW_2portmacro_8h_ad3564ae551c470eeb87262ed6c2f3cee}{v\-Port\-Close\-Running\-Thread} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Task\-To\-Delete, volatile \hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} $\ast$px\-Pend\-Yield)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{MSVC-MingW_2portmacro_8h_a0ff38519b01649ce7a5c6a2d91204940}{v\-Port\-Delete\-Thread} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Thread\-To\-Delete)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{MSVC-MingW_2portmacro_8h_a2ed3554a3de09a3bd09d396ee081ab69}{v\-Port\-Enter\-Critical} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{MSVC-MingW_2portmacro_8h_aed20ada05b957181a0de042802a82a5b}{v\-Port\-Exit\-Critical} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{MSVC-MingW_2portmacro_8h_aa96879487bfeaee8781301a07a5bed16}{\-\_\-\-\_\-pragma} (warning(disable\-:4211)) \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{MSVC-MingW_2port_8c_a42248a1986691ed4d9344fd75789d69c}{v\-Port\-Generate\-Simulated\-Interrupt}(uint32\-\_\-t ul\-Interrupt\-Number)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{MSVC-MingW_2portmacro_8h_a35b5d3a9b147da8e3adda2a2cc7b6cc0}{v\-Port\-Set\-Interrupt\-Handler} (uint32\-\_\-t ul\-Interrupt\-Number, uint32\-\_\-t($\ast$pv\-Handler)(\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void}))
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{MSVC-MingW_2portmacro_8h_aebb8c3a87d591f60f974772be0ee798d}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!config\-U\-S\-E\-\_\-\-P\-O\-R\-T\-\_\-\-O\-P\-T\-I\-M\-I\-S\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-S\-E\-L\-E\-C\-T\-I\-O\-N@{config\-U\-S\-E\-\_\-\-P\-O\-R\-T\-\_\-\-O\-P\-T\-I\-M\-I\-S\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-S\-E\-L\-E\-C\-T\-I\-O\-N}}
+\index{config\-U\-S\-E\-\_\-\-P\-O\-R\-T\-\_\-\-O\-P\-T\-I\-M\-I\-S\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-S\-E\-L\-E\-C\-T\-I\-O\-N@{config\-U\-S\-E\-\_\-\-P\-O\-R\-T\-\_\-\-O\-P\-T\-I\-M\-I\-S\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-S\-E\-L\-E\-C\-T\-I\-O\-N}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{config\-U\-S\-E\-\_\-\-P\-O\-R\-T\-\_\-\-O\-P\-T\-I\-M\-I\-S\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-S\-E\-L\-E\-C\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-U\-S\-E\-\_\-\-P\-O\-R\-T\-\_\-\-O\-P\-T\-I\-M\-I\-S\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-S\-E\-L\-E\-C\-T\-I\-O\-N~1}}\label{MSVC-MingW_2portmacro_8h_aebb8c3a87d591f60f974772be0ee798d}
+\hypertarget{MSVC-MingW_2portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E@{port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E}}
+\index{port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E@{port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E~long}}\label{MSVC-MingW_2portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}
+\hypertarget{MSVC-MingW_2portmacro_8h_ab9091ce3940d8bd93ec850122a2c6a1c}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T@{port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T}}
+\index{port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T@{port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T~4}}\label{MSVC-MingW_2portmacro_8h_ab9091ce3940d8bd93ec850122a2c6a1c}
+\hypertarget{MSVC-MingW_2portmacro_8h_add0bdbfef5abf241c7774f68bde42f1d}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-C\-H\-A\-R@{port\-C\-H\-A\-R}}
+\index{port\-C\-H\-A\-R@{port\-C\-H\-A\-R}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-C\-H\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-C\-H\-A\-R~char}}\label{MSVC-MingW_2portmacro_8h_add0bdbfef5abf241c7774f68bde42f1d}
+\hypertarget{MSVC-MingW_2portmacro_8h_a3c506bf351102047fb5a75491287fe69}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-C\-L\-E\-A\-N\-\_\-\-U\-P\-\_\-\-T\-C\-B@{port\-C\-L\-E\-A\-N\-\_\-\-U\-P\-\_\-\-T\-C\-B}}
+\index{port\-C\-L\-E\-A\-N\-\_\-\-U\-P\-\_\-\-T\-C\-B@{port\-C\-L\-E\-A\-N\-\_\-\-U\-P\-\_\-\-T\-C\-B}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-C\-L\-E\-A\-N\-\_\-\-U\-P\-\_\-\-T\-C\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-C\-L\-E\-A\-N\-\_\-\-U\-P\-\_\-\-T\-C\-B(
+\begin{DoxyParamCaption}
+\item[{}]{px\-T\-C\-B}
+\end{DoxyParamCaption}
+)~{\bf v\-Port\-Delete\-Thread}( px\-T\-C\-B )}}\label{MSVC-MingW_2portmacro_8h_a3c506bf351102047fb5a75491287fe69}
+\hypertarget{MSVC-MingW_2portmacro_8h_a6e3d10ee1a0734a647ca192523c2cfc1}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S@{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}}
+\index{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S@{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)~{\bf v\-Port\-Enter\-Critical}()}}\label{MSVC-MingW_2portmacro_8h_a6e3d10ee1a0734a647ca192523c2cfc1}
+\hypertarget{MSVC-MingW_2portmacro_8h_a4711ce186a903a14bc8ea7c8650b4f61}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-D\-O\-U\-B\-L\-E@{port\-D\-O\-U\-B\-L\-E}}
+\index{port\-D\-O\-U\-B\-L\-E@{port\-D\-O\-U\-B\-L\-E}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-D\-O\-U\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-D\-O\-U\-B\-L\-E~double}}\label{MSVC-MingW_2portmacro_8h_a4711ce186a903a14bc8ea7c8650b4f61}
+\hypertarget{MSVC-MingW_2portmacro_8h_abc47e85a6befbb47961ad5ee7aa57173}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S@{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}}
+\index{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S@{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)~{\bf v\-Port\-Exit\-Critical}()}}\label{MSVC-MingW_2portmacro_8h_abc47e85a6befbb47961ad5ee7aa57173}
+\hypertarget{MSVC-MingW_2portmacro_8h_abf055ad6643e8ac35fc843c8e55d9db6}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-E\-N\-D\-\_\-\-S\-W\-I\-T\-C\-H\-I\-N\-G\-\_\-\-I\-S\-R@{port\-E\-N\-D\-\_\-\-S\-W\-I\-T\-C\-H\-I\-N\-G\-\_\-\-I\-S\-R}}
+\index{port\-E\-N\-D\-\_\-\-S\-W\-I\-T\-C\-H\-I\-N\-G\-\_\-\-I\-S\-R@{port\-E\-N\-D\-\_\-\-S\-W\-I\-T\-C\-H\-I\-N\-G\-\_\-\-I\-S\-R}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-E\-N\-D\-\_\-\-S\-W\-I\-T\-C\-H\-I\-N\-G\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-E\-N\-D\-\_\-\-S\-W\-I\-T\-C\-H\-I\-N\-G\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~{\bf port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}( ( x ) )}}\label{MSVC-MingW_2portmacro_8h_abf055ad6643e8ac35fc843c8e55d9db6}
+\hypertarget{MSVC-MingW_2portmacro_8h_a8a09321ad004019f3c8d0f2e4d7224c7}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L@{port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}}
+\index{port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L@{port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)~{\bf v\-Port\-Enter\-Critical}()}}\label{MSVC-MingW_2portmacro_8h_a8a09321ad004019f3c8d0f2e4d7224c7}
+\hypertarget{MSVC-MingW_2portmacro_8h_a529358e6147881dd881c890ade21c9bd}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L@{port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}}
+\index{port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L@{port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)~{\bf v\-Port\-Exit\-Critical}()}}\label{MSVC-MingW_2portmacro_8h_a529358e6147881dd881c890ade21c9bd}
+\hypertarget{MSVC-MingW_2portmacro_8h_a1bbe1ef117ec274ef919e0a930c888ac}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-F\-L\-O\-A\-T@{port\-F\-L\-O\-A\-T}}
+\index{port\-F\-L\-O\-A\-T@{port\-F\-L\-O\-A\-T}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-F\-L\-O\-A\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-F\-L\-O\-A\-T~float}}\label{MSVC-MingW_2portmacro_8h_a1bbe1ef117ec274ef919e0a930c888ac}
+\hypertarget{MSVC-MingW_2portmacro_8h_a5ed536be98084ed8c77c95d79a2688ee}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-G\-E\-T\-\_\-\-H\-I\-G\-H\-E\-S\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y@{port\-G\-E\-T\-\_\-\-H\-I\-G\-H\-E\-S\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y}}
+\index{port\-G\-E\-T\-\_\-\-H\-I\-G\-H\-E\-S\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y@{port\-G\-E\-T\-\_\-\-H\-I\-G\-H\-E\-S\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-G\-E\-T\-\_\-\-H\-I\-G\-H\-E\-S\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-G\-E\-T\-\_\-\-H\-I\-G\-H\-E\-S\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y(
+\begin{DoxyParamCaption}
+\item[{}]{ux\-Top\-Priority, }
+\item[{}]{ux\-Ready\-Priorities}
+\end{DoxyParamCaption}
+)~\-\_\-\-Bit\-Scan\-Reverse( ( D\-W\-O\-R\-D $\ast$ ) \&( ux\-Top\-Priority ), ( ux\-Ready\-Priorities ) )}}\label{MSVC-MingW_2portmacro_8h_a5ed536be98084ed8c77c95d79a2688ee}
+\hypertarget{MSVC-MingW_2portmacro_8h_a73448585c9c9e96500c2f0c9ea824601}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-I\-N\-L\-I\-N\-E@{port\-I\-N\-L\-I\-N\-E}}
+\index{port\-I\-N\-L\-I\-N\-E@{port\-I\-N\-L\-I\-N\-E}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-I\-N\-L\-I\-N\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-L\-I\-N\-E~\-\_\-\-\_\-inline}}\label{MSVC-MingW_2portmacro_8h_a73448585c9c9e96500c2f0c9ea824601}
+\hypertarget{MSVC-MingW_2portmacro_8h_a6be5f7ce924302129a4184caf180a607}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-T\-I\-C\-K@{port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-T\-I\-C\-K}}
+\index{port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-T\-I\-C\-K@{port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-T\-I\-C\-K}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-T\-I\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-T\-I\-C\-K~( 1\-U\-L )}}\label{MSVC-MingW_2portmacro_8h_a6be5f7ce924302129a4184caf180a607}
+\hypertarget{MSVC-MingW_2portmacro_8h_ae86b9ac3969c84a0e5db6d2debeba7cb}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-Y\-I\-E\-L\-D@{port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-Y\-I\-E\-L\-D}}
+\index{port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-Y\-I\-E\-L\-D@{port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-Y\-I\-E\-L\-D}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-Y\-I\-E\-L\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-Y\-I\-E\-L\-D~( 0\-U\-L )}}\label{MSVC-MingW_2portmacro_8h_ae86b9ac3969c84a0e5db6d2debeba7cb}
+\hypertarget{MSVC-MingW_2portmacro_8h_a6bbebff6020ac333ab6ec2ffd7f77001}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-L\-O\-N\-G@{port\-L\-O\-N\-G}}
+\index{port\-L\-O\-N\-G@{port\-L\-O\-N\-G}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-L\-O\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-L\-O\-N\-G~long}}\label{MSVC-MingW_2portmacro_8h_a6bbebff6020ac333ab6ec2ffd7f77001}
+\hypertarget{MSVC-MingW_2portmacro_8h_a72723ba1e4a85ca14f25c2b9e066613d}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y@{port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y}}
+\index{port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y@{port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y~( {\bf Tick\-Type\-\_\-t} ) 0xffffffff\-U\-L}}\label{MSVC-MingW_2portmacro_8h_a72723ba1e4a85ca14f25c2b9e066613d}
+\hypertarget{MSVC-MingW_2portmacro_8h_a53bae25f223b7156dce0fc6e6b1b2295}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-P\-O\-I\-N\-T\-E\-R\-\_\-\-S\-I\-Z\-E\-\_\-\-T\-Y\-P\-E@{port\-P\-O\-I\-N\-T\-E\-R\-\_\-\-S\-I\-Z\-E\-\_\-\-T\-Y\-P\-E}}
+\index{port\-P\-O\-I\-N\-T\-E\-R\-\_\-\-S\-I\-Z\-E\-\_\-\-T\-Y\-P\-E@{port\-P\-O\-I\-N\-T\-E\-R\-\_\-\-S\-I\-Z\-E\-\_\-\-T\-Y\-P\-E}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-P\-O\-I\-N\-T\-E\-R\-\_\-\-S\-I\-Z\-E\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-P\-O\-I\-N\-T\-E\-R\-\_\-\-S\-I\-Z\-E\-\_\-\-T\-Y\-P\-E~size\-\_\-t}}\label{MSVC-MingW_2portmacro_8h_a53bae25f223b7156dce0fc6e6b1b2295}
+\hypertarget{MSVC-MingW_2portmacro_8h_aa97aebf8d800e651ca46e021b55c7fa0}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-P\-R\-E\-\_\-\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E\-\_\-\-H\-O\-O\-K@{port\-P\-R\-E\-\_\-\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E\-\_\-\-H\-O\-O\-K}}
+\index{port\-P\-R\-E\-\_\-\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E\-\_\-\-H\-O\-O\-K@{port\-P\-R\-E\-\_\-\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E\-\_\-\-H\-O\-O\-K}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-P\-R\-E\-\_\-\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E\-\_\-\-H\-O\-O\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-P\-R\-E\-\_\-\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E\-\_\-\-H\-O\-O\-K(
+\begin{DoxyParamCaption}
+\item[{}]{pv\-Task\-To\-Delete, }
+\item[{}]{px\-Pend\-Yield}
+\end{DoxyParamCaption}
+)~{\bf v\-Port\-Close\-Running\-Thread}( ( pv\-Task\-To\-Delete ), ( px\-Pend\-Yield ) )}}\label{MSVC-MingW_2portmacro_8h_aa97aebf8d800e651ca46e021b55c7fa0}
+\hypertarget{MSVC-MingW_2portmacro_8h_a113cd9b8401284194da8ddc4569aa484}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-R\-E\-C\-O\-R\-D\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y@{port\-R\-E\-C\-O\-R\-D\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y}}
+\index{port\-R\-E\-C\-O\-R\-D\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y@{port\-R\-E\-C\-O\-R\-D\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-R\-E\-C\-O\-R\-D\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-R\-E\-C\-O\-R\-D\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y(
+\begin{DoxyParamCaption}
+\item[{}]{ux\-Priority, }
+\item[{}]{ux\-Ready\-Priorities}
+\end{DoxyParamCaption}
+)~( ux\-Ready\-Priorities ) $\vert$= ( 1\-U\-L $<$$<$ ( ux\-Priority ) )}}\label{MSVC-MingW_2portmacro_8h_a113cd9b8401284194da8ddc4569aa484}
+\hypertarget{MSVC-MingW_2portmacro_8h_aab771d12c0912d93d52a586628fb18a6}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-R\-E\-S\-E\-T\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y@{port\-R\-E\-S\-E\-T\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y}}
+\index{port\-R\-E\-S\-E\-T\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y@{port\-R\-E\-S\-E\-T\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-R\-E\-S\-E\-T\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-R\-E\-S\-E\-T\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y(
+\begin{DoxyParamCaption}
+\item[{}]{ux\-Priority, }
+\item[{}]{ux\-Ready\-Priorities}
+\end{DoxyParamCaption}
+)~( ux\-Ready\-Priorities ) \&= $\sim$( 1\-U\-L $<$$<$ ( ux\-Priority ) )}}\label{MSVC-MingW_2portmacro_8h_aab771d12c0912d93d52a586628fb18a6}
+\hypertarget{MSVC-MingW_2portmacro_8h_a42e62d5881b12ff2a5c659576c64d003}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-S\-H\-O\-R\-T@{port\-S\-H\-O\-R\-T}}
+\index{port\-S\-H\-O\-R\-T@{port\-S\-H\-O\-R\-T}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-S\-H\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-H\-O\-R\-T~short}}\label{MSVC-MingW_2portmacro_8h_a42e62d5881b12ff2a5c659576c64d003}
+\hypertarget{MSVC-MingW_2portmacro_8h_a21adaab1601f6a0f35ba550a43060830}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H@{port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H}}
+\index{port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H@{port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H~( -\/1 )}}\label{MSVC-MingW_2portmacro_8h_a21adaab1601f6a0f35ba550a43060830}
+\hypertarget{MSVC-MingW_2portmacro_8h_ab0a294066ac7369b8f59a52d9491a92c}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E@{port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E}}
+\index{port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E@{port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E~size\-\_\-t}}\label{MSVC-MingW_2portmacro_8h_ab0a294066ac7369b8f59a52d9491a92c}
+\hypertarget{MSVC-MingW_2portmacro_8h_a3a289793652f505c538abea27045ccdf}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N@{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}}
+\index{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N@{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N(
+\begin{DoxyParamCaption}
+\item[{}]{v\-Function, }
+\item[{}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)~{\bf void} v\-Function( {\bf void} $\ast$ pv\-Parameters )}}\label{MSVC-MingW_2portmacro_8h_a3a289793652f505c538abea27045ccdf}
+\hypertarget{MSVC-MingW_2portmacro_8h_a2921e1c5a1f974dfa01ae44d1f665f14}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O@{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O}}
+\index{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O@{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O(
+\begin{DoxyParamCaption}
+\item[{}]{v\-Function, }
+\item[{}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)~{\bf void} v\-Function( {\bf void} $\ast$ pv\-Parameters )}}\label{MSVC-MingW_2portmacro_8h_a2921e1c5a1f974dfa01ae44d1f665f14}
+\hypertarget{MSVC-MingW_2portmacro_8h_a554d9322ce7f698a86a22b21234bd8cd}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S@{port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S}}
+\index{port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S@{port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S~( ( {\bf Tick\-Type\-\_\-t} ) 1000 / {\bf config\-T\-I\-C\-K\-\_\-\-R\-A\-T\-E\-\_\-\-H\-Z} )}}\label{MSVC-MingW_2portmacro_8h_a554d9322ce7f698a86a22b21234bd8cd}
+\hypertarget{MSVC-MingW_2portmacro_8h_a62e53bc6d3fa5c4bf4e65ab2752930f3}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C@{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C}}
+\index{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C@{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C~1}}\label{MSVC-MingW_2portmacro_8h_a62e53bc6d3fa5c4bf4e65ab2752930f3}
+\hypertarget{MSVC-MingW_2portmacro_8h_ae1ff06193615f5130b5a97dc9e708fc7}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-Y\-I\-E\-L\-D@{port\-Y\-I\-E\-L\-D}}
+\index{port\-Y\-I\-E\-L\-D@{port\-Y\-I\-E\-L\-D}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-Y\-I\-E\-L\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-Y\-I\-E\-L\-D(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf v\-Port\-Generate\-Simulated\-Interrupt}( {\bf port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-Y\-I\-E\-L\-D} )}}\label{MSVC-MingW_2portmacro_8h_ae1ff06193615f5130b5a97dc9e708fc7}
+\hypertarget{MSVC-MingW_2portmacro_8h_aac6850c66595efdc02a8bbb95fb4648e}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}}
+\index{port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~return x}}\label{MSVC-MingW_2portmacro_8h_aac6850c66595efdc02a8bbb95fb4648e}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{MSVC-MingW_2portmacro_8h_a46fb21e00ae0729d7515c0fbf2269796}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!Base\-Type\-\_\-t@{Base\-Type\-\_\-t}}
+\index{Base\-Type\-\_\-t@{Base\-Type\-\_\-t}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{Base\-Type\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef long {\bf Base\-Type\-\_\-t}}}\label{MSVC-MingW_2portmacro_8h_a46fb21e00ae0729d7515c0fbf2269796}
+\hypertarget{MSVC-MingW_2portmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!Stack\-Type\-\_\-t@{Stack\-Type\-\_\-t}}
+\index{Stack\-Type\-\_\-t@{Stack\-Type\-\_\-t}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{Stack\-Type\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E} {\bf Stack\-Type\-\_\-t}}}\label{MSVC-MingW_2portmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}
+\hypertarget{MSVC-MingW_2portmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!Tick\-Type\-\_\-t@{Tick\-Type\-\_\-t}}
+\index{Tick\-Type\-\_\-t@{Tick\-Type\-\_\-t}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{Tick\-Type\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint32\-\_\-t {\bf Tick\-Type\-\_\-t}}}\label{MSVC-MingW_2portmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}
+\hypertarget{MSVC-MingW_2portmacro_8h_a646f89d4298e4f5afd522202b11cb2e6}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!U\-Base\-Type\-\_\-t@{U\-Base\-Type\-\_\-t}}
+\index{U\-Base\-Type\-\_\-t@{U\-Base\-Type\-\_\-t}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{U\-Base\-Type\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long {\bf U\-Base\-Type\-\_\-t}}}\label{MSVC-MingW_2portmacro_8h_a646f89d4298e4f5afd522202b11cb2e6}
+
+
+\subsection{Function Documentation}
+\hypertarget{MSVC-MingW_2portmacro_8h_aa96879487bfeaee8781301a07a5bed16}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!\-\_\-\-\_\-pragma@{\-\_\-\-\_\-pragma}}
+\index{\-\_\-\-\_\-pragma@{\-\_\-\-\_\-pragma}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{\-\_\-\-\_\-pragma}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-pragma (
+\begin{DoxyParamCaption}
+\item[{warning(disable\-:4211)}]{}
+\end{DoxyParamCaption}
+)}}\label{MSVC-MingW_2portmacro_8h_aa96879487bfeaee8781301a07a5bed16}
+\hypertarget{MSVC-MingW_2portmacro_8h_ad3564ae551c470eeb87262ed6c2f3cee}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!v\-Port\-Close\-Running\-Thread@{v\-Port\-Close\-Running\-Thread}}
+\index{v\-Port\-Close\-Running\-Thread@{v\-Port\-Close\-Running\-Thread}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{v\-Port\-Close\-Running\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Close\-Running\-Thread (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{pv\-Task\-To\-Delete, }
+\item[{volatile {\bf Base\-Type\-\_\-t} $\ast$}]{px\-Pend\-Yield}
+\end{DoxyParamCaption}
+)}}\label{MSVC-MingW_2portmacro_8h_ad3564ae551c470eeb87262ed6c2f3cee}
+\hypertarget{MSVC-MingW_2portmacro_8h_a0ff38519b01649ce7a5c6a2d91204940}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!v\-Port\-Delete\-Thread@{v\-Port\-Delete\-Thread}}
+\index{v\-Port\-Delete\-Thread@{v\-Port\-Delete\-Thread}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{v\-Port\-Delete\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Delete\-Thread (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{pv\-Thread\-To\-Delete}
+\end{DoxyParamCaption}
+)}}\label{MSVC-MingW_2portmacro_8h_a0ff38519b01649ce7a5c6a2d91204940}
+\hypertarget{MSVC-MingW_2portmacro_8h_a2ed3554a3de09a3bd09d396ee081ab69}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!v\-Port\-Enter\-Critical@{v\-Port\-Enter\-Critical}}
+\index{v\-Port\-Enter\-Critical@{v\-Port\-Enter\-Critical}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{v\-Port\-Enter\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Enter\-Critical (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{MSVC-MingW_2portmacro_8h_a2ed3554a3de09a3bd09d396ee081ab69}
+\hypertarget{MSVC-MingW_2portmacro_8h_aed20ada05b957181a0de042802a82a5b}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!v\-Port\-Exit\-Critical@{v\-Port\-Exit\-Critical}}
+\index{v\-Port\-Exit\-Critical@{v\-Port\-Exit\-Critical}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{v\-Port\-Exit\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Exit\-Critical (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{MSVC-MingW_2portmacro_8h_aed20ada05b957181a0de042802a82a5b}
+\hypertarget{MSVC-MingW_2portmacro_8h_a35b5d3a9b147da8e3adda2a2cc7b6cc0}{\index{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}!v\-Port\-Set\-Interrupt\-Handler@{v\-Port\-Set\-Interrupt\-Handler}}
+\index{v\-Port\-Set\-Interrupt\-Handler@{v\-Port\-Set\-Interrupt\-Handler}!MSVC-MingW/portmacro.h@{M\-S\-V\-C-\/\-Ming\-W/portmacro.\-h}}
+\subsubsection[{v\-Port\-Set\-Interrupt\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Set\-Interrupt\-Handler (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{ul\-Interrupt\-Number, }
+\item[{uint32\-\_\-t($\ast$)({\bf void})}]{pv\-Handler}
+\end{DoxyParamCaption}
+)}}\label{MSVC-MingW_2portmacro_8h_a35b5d3a9b147da8e3adda2a2cc7b6cc0}

@@ -1,0 +1,64 @@
+\hypertarget{at24mac_8c}{\section{/home/henrique/rep/open\-M\-M\-C/modules/at24mac.c File Reference}
+\label{at24mac_8c}\index{/home/henrique/rep/open\-M\-M\-C/modules/at24mac.\-c@{/home/henrique/rep/open\-M\-M\-C/modules/at24mac.\-c}}
+}
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}string.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}at24mac.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}port.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}i2c.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\-\_\-t \hyperlink{at24mac_8c_aea6077b9cbd120ae1e57ec3605dffece}{at24mac\-\_\-read} (uint8\-\_\-t id, uint8\-\_\-t address, uint8\-\_\-t $\ast$rx\-\_\-data, size\-\_\-t buf\-\_\-len, uint8\-\_\-t timeout)
+\item 
+size\-\_\-t \hyperlink{at24mac_8c_a6b885c0f733157abe8879b67228f2923}{at24mac\-\_\-read\-\_\-serial\-\_\-num} (uint8\-\_\-t id, uint8\-\_\-t $\ast$rx\-\_\-data, size\-\_\-t buf\-\_\-len, uint8\-\_\-t timeout)
+\item 
+size\-\_\-t \hyperlink{at24mac_8c_ae5dcf04d86006e51b64bc2ac66719a26}{at24mac\-\_\-read\-\_\-eui} (uint8\-\_\-t id, uint8\-\_\-t $\ast$rx\-\_\-data, size\-\_\-t buf\-\_\-len, uint8\-\_\-t timeout)
+\item 
+size\-\_\-t \hyperlink{at24mac_8c_a5dc642ec3331cdb1c6d404a70cb84e6a}{at24mac\-\_\-write} (uint8\-\_\-t id, uint8\-\_\-t address, uint8\-\_\-t $\ast$tx\-\_\-data, size\-\_\-t buf\-\_\-len, uint8\-\_\-t timeout)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{at24mac_8c_aea6077b9cbd120ae1e57ec3605dffece}{\index{at24mac.\-c@{at24mac.\-c}!at24mac\-\_\-read@{at24mac\-\_\-read}}
+\index{at24mac\-\_\-read@{at24mac\-\_\-read}!at24mac.c@{at24mac.\-c}}
+\subsubsection[{at24mac\-\_\-read}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t at24mac\-\_\-read (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{id, }
+\item[{uint8\-\_\-t}]{address, }
+\item[{uint8\-\_\-t $\ast$}]{rx\-\_\-data, }
+\item[{size\-\_\-t}]{buf\-\_\-len, }
+\item[{uint8\-\_\-t}]{timeout}
+\end{DoxyParamCaption}
+)}}\label{at24mac_8c_aea6077b9cbd120ae1e57ec3605dffece}
+\hypertarget{at24mac_8c_ae5dcf04d86006e51b64bc2ac66719a26}{\index{at24mac.\-c@{at24mac.\-c}!at24mac\-\_\-read\-\_\-eui@{at24mac\-\_\-read\-\_\-eui}}
+\index{at24mac\-\_\-read\-\_\-eui@{at24mac\-\_\-read\-\_\-eui}!at24mac.c@{at24mac.\-c}}
+\subsubsection[{at24mac\-\_\-read\-\_\-eui}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t at24mac\-\_\-read\-\_\-eui (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{id, }
+\item[{uint8\-\_\-t $\ast$}]{rx\-\_\-data, }
+\item[{size\-\_\-t}]{buf\-\_\-len, }
+\item[{uint8\-\_\-t}]{timeout}
+\end{DoxyParamCaption}
+)}}\label{at24mac_8c_ae5dcf04d86006e51b64bc2ac66719a26}
+\hypertarget{at24mac_8c_a6b885c0f733157abe8879b67228f2923}{\index{at24mac.\-c@{at24mac.\-c}!at24mac\-\_\-read\-\_\-serial\-\_\-num@{at24mac\-\_\-read\-\_\-serial\-\_\-num}}
+\index{at24mac\-\_\-read\-\_\-serial\-\_\-num@{at24mac\-\_\-read\-\_\-serial\-\_\-num}!at24mac.c@{at24mac.\-c}}
+\subsubsection[{at24mac\-\_\-read\-\_\-serial\-\_\-num}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t at24mac\-\_\-read\-\_\-serial\-\_\-num (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{id, }
+\item[{uint8\-\_\-t $\ast$}]{rx\-\_\-data, }
+\item[{size\-\_\-t}]{buf\-\_\-len, }
+\item[{uint8\-\_\-t}]{timeout}
+\end{DoxyParamCaption}
+)}}\label{at24mac_8c_a6b885c0f733157abe8879b67228f2923}
+\hypertarget{at24mac_8c_a5dc642ec3331cdb1c6d404a70cb84e6a}{\index{at24mac.\-c@{at24mac.\-c}!at24mac\-\_\-write@{at24mac\-\_\-write}}
+\index{at24mac\-\_\-write@{at24mac\-\_\-write}!at24mac.c@{at24mac.\-c}}
+\subsubsection[{at24mac\-\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t at24mac\-\_\-write (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{id, }
+\item[{uint8\-\_\-t}]{address, }
+\item[{uint8\-\_\-t $\ast$}]{tx\-\_\-data, }
+\item[{size\-\_\-t}]{buf\-\_\-len, }
+\item[{uint8\-\_\-t}]{timeout}
+\end{DoxyParamCaption}
+)}}\label{at24mac_8c_a5dc642ec3331cdb1c6d404a70cb84e6a}

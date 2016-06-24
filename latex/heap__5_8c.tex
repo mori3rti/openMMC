@@ -1,0 +1,94 @@
+\hypertarget{heap__5_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Mem\-Mang/heap\-\_\-5.c File Reference}
+\label{heap__5_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Mem\-Mang/heap\-\_\-5.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Mem\-Mang/heap\-\_\-5.\-c}}
+}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structA__BLOCK__LINK}{A\-\_\-\-B\-L\-O\-C\-K\-\_\-\-L\-I\-N\-K}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{heap__5_8c_ab622d8c674f2a417a666a7ed89109e79}{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}
+\item 
+\#define \hyperlink{heap__5_8c_ab71bae5a95671265c828339d44c44b25}{heap\-M\-I\-N\-I\-M\-U\-M\-\_\-\-B\-L\-O\-C\-K\-\_\-\-S\-I\-Z\-E}~( ( size\-\_\-t ) ( x\-Heap\-Struct\-Size $<$$<$ 1 ) )
+\item 
+\#define \hyperlink{heap__5_8c_adcef0c4245ebe20ca2b08a574c1caac9}{heap\-B\-I\-T\-S\-\_\-\-P\-E\-R\-\_\-\-B\-Y\-T\-E}~( ( size\-\_\-t ) 8 )
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structA__BLOCK__LINK}{A\-\_\-\-B\-L\-O\-C\-K\-\_\-\-L\-I\-N\-K} \hyperlink{heap__5_8c_ad9a44f586d03fc020ee6f5939defb314}{Block\-Link\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$ \hyperlink{heap__5_8c_a0379669d07d76cc81e3028123113b271}{pv\-Port\-Malloc} (size\-\_\-t x\-Wanted\-Size)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{heap__5_8c_a1e7cea2fd1bc894ea3b5f5e8179d259b}{v\-Port\-Free} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv)
+\item 
+size\-\_\-t \hyperlink{heap__5_8c_a0c28a12b313bc248be0cb7a37ed81bb7}{x\-Port\-Get\-Free\-Heap\-Size} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+size\-\_\-t \hyperlink{heap__5_8c_ab222e4545b8ff12b62fd000fea6b34eb}{x\-Port\-Get\-Minimum\-Ever\-Free\-Heap\-Size} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{heap__5_8c_ab13f7c55a8661da7bba3ef95f1282aee}{v\-Port\-Define\-Heap\-Regions} (const \hyperlink{portable_8h_a2496d40e3117c2f7c473d7fb6b77654d}{Heap\-Region\-\_\-t} $\ast$const px\-Heap\-Regions)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{heap__5_8c_adcef0c4245ebe20ca2b08a574c1caac9}{\index{heap\-\_\-5.\-c@{heap\-\_\-5.\-c}!heap\-B\-I\-T\-S\-\_\-\-P\-E\-R\-\_\-\-B\-Y\-T\-E@{heap\-B\-I\-T\-S\-\_\-\-P\-E\-R\-\_\-\-B\-Y\-T\-E}}
+\index{heap\-B\-I\-T\-S\-\_\-\-P\-E\-R\-\_\-\-B\-Y\-T\-E@{heap\-B\-I\-T\-S\-\_\-\-P\-E\-R\-\_\-\-B\-Y\-T\-E}!heap_5.c@{heap\-\_\-5.\-c}}
+\subsubsection[{heap\-B\-I\-T\-S\-\_\-\-P\-E\-R\-\_\-\-B\-Y\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define heap\-B\-I\-T\-S\-\_\-\-P\-E\-R\-\_\-\-B\-Y\-T\-E~( ( size\-\_\-t ) 8 )}}\label{heap__5_8c_adcef0c4245ebe20ca2b08a574c1caac9}
+\hypertarget{heap__5_8c_ab71bae5a95671265c828339d44c44b25}{\index{heap\-\_\-5.\-c@{heap\-\_\-5.\-c}!heap\-M\-I\-N\-I\-M\-U\-M\-\_\-\-B\-L\-O\-C\-K\-\_\-\-S\-I\-Z\-E@{heap\-M\-I\-N\-I\-M\-U\-M\-\_\-\-B\-L\-O\-C\-K\-\_\-\-S\-I\-Z\-E}}
+\index{heap\-M\-I\-N\-I\-M\-U\-M\-\_\-\-B\-L\-O\-C\-K\-\_\-\-S\-I\-Z\-E@{heap\-M\-I\-N\-I\-M\-U\-M\-\_\-\-B\-L\-O\-C\-K\-\_\-\-S\-I\-Z\-E}!heap_5.c@{heap\-\_\-5.\-c}}
+\subsubsection[{heap\-M\-I\-N\-I\-M\-U\-M\-\_\-\-B\-L\-O\-C\-K\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define heap\-M\-I\-N\-I\-M\-U\-M\-\_\-\-B\-L\-O\-C\-K\-\_\-\-S\-I\-Z\-E~( ( size\-\_\-t ) ( x\-Heap\-Struct\-Size $<$$<$ 1 ) )}}\label{heap__5_8c_ab71bae5a95671265c828339d44c44b25}
+\hypertarget{heap__5_8c_ab622d8c674f2a417a666a7ed89109e79}{\index{heap\-\_\-5.\-c@{heap\-\_\-5.\-c}!M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E@{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}}
+\index{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E@{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}!heap_5.c@{heap\-\_\-5.\-c}}
+\subsubsection[{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}}\label{heap__5_8c_ab622d8c674f2a417a666a7ed89109e79}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{heap__5_8c_ad9a44f586d03fc020ee6f5939defb314}{\index{heap\-\_\-5.\-c@{heap\-\_\-5.\-c}!Block\-Link\-\_\-t@{Block\-Link\-\_\-t}}
+\index{Block\-Link\-\_\-t@{Block\-Link\-\_\-t}!heap_5.c@{heap\-\_\-5.\-c}}
+\subsubsection[{Block\-Link\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf A\-\_\-\-B\-L\-O\-C\-K\-\_\-\-L\-I\-N\-K}  {\bf Block\-Link\-\_\-t}}}\label{heap__5_8c_ad9a44f586d03fc020ee6f5939defb314}
+
+
+\subsection{Function Documentation}
+\hypertarget{heap__5_8c_a0379669d07d76cc81e3028123113b271}{\index{heap\-\_\-5.\-c@{heap\-\_\-5.\-c}!pv\-Port\-Malloc@{pv\-Port\-Malloc}}
+\index{pv\-Port\-Malloc@{pv\-Port\-Malloc}!heap_5.c@{heap\-\_\-5.\-c}}
+\subsubsection[{pv\-Port\-Malloc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void}$\ast$ pv\-Port\-Malloc (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{x\-Wanted\-Size}
+\end{DoxyParamCaption}
+)}}\label{heap__5_8c_a0379669d07d76cc81e3028123113b271}
+\hypertarget{heap__5_8c_ab13f7c55a8661da7bba3ef95f1282aee}{\index{heap\-\_\-5.\-c@{heap\-\_\-5.\-c}!v\-Port\-Define\-Heap\-Regions@{v\-Port\-Define\-Heap\-Regions}}
+\index{v\-Port\-Define\-Heap\-Regions@{v\-Port\-Define\-Heap\-Regions}!heap_5.c@{heap\-\_\-5.\-c}}
+\subsubsection[{v\-Port\-Define\-Heap\-Regions}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Define\-Heap\-Regions (
+\begin{DoxyParamCaption}
+\item[{const {\bf Heap\-Region\-\_\-t} $\ast$const}]{px\-Heap\-Regions}
+\end{DoxyParamCaption}
+)}}\label{heap__5_8c_ab13f7c55a8661da7bba3ef95f1282aee}
+\hypertarget{heap__5_8c_a1e7cea2fd1bc894ea3b5f5e8179d259b}{\index{heap\-\_\-5.\-c@{heap\-\_\-5.\-c}!v\-Port\-Free@{v\-Port\-Free}}
+\index{v\-Port\-Free@{v\-Port\-Free}!heap_5.c@{heap\-\_\-5.\-c}}
+\subsubsection[{v\-Port\-Free}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Free (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{pv}
+\end{DoxyParamCaption}
+)}}\label{heap__5_8c_a1e7cea2fd1bc894ea3b5f5e8179d259b}
+\hypertarget{heap__5_8c_a0c28a12b313bc248be0cb7a37ed81bb7}{\index{heap\-\_\-5.\-c@{heap\-\_\-5.\-c}!x\-Port\-Get\-Free\-Heap\-Size@{x\-Port\-Get\-Free\-Heap\-Size}}
+\index{x\-Port\-Get\-Free\-Heap\-Size@{x\-Port\-Get\-Free\-Heap\-Size}!heap_5.c@{heap\-\_\-5.\-c}}
+\subsubsection[{x\-Port\-Get\-Free\-Heap\-Size}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t x\-Port\-Get\-Free\-Heap\-Size (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{heap__5_8c_a0c28a12b313bc248be0cb7a37ed81bb7}
+\hypertarget{heap__5_8c_ab222e4545b8ff12b62fd000fea6b34eb}{\index{heap\-\_\-5.\-c@{heap\-\_\-5.\-c}!x\-Port\-Get\-Minimum\-Ever\-Free\-Heap\-Size@{x\-Port\-Get\-Minimum\-Ever\-Free\-Heap\-Size}}
+\index{x\-Port\-Get\-Minimum\-Ever\-Free\-Heap\-Size@{x\-Port\-Get\-Minimum\-Ever\-Free\-Heap\-Size}!heap_5.c@{heap\-\_\-5.\-c}}
+\subsubsection[{x\-Port\-Get\-Minimum\-Ever\-Free\-Heap\-Size}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t x\-Port\-Get\-Minimum\-Ever\-Free\-Heap\-Size (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{heap__5_8c_ab222e4545b8ff12b62fd000fea6b34eb}

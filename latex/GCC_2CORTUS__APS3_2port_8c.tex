@@ -1,0 +1,72 @@
+\hypertarget{GCC_2CORTUS__APS3_2port_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.c File Reference}
+\label{GCC_2CORTUS__APS3_2port_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c}}
+}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$machine/counter.\-h$>$}\\*
+{\ttfamily \#include $<$machine/ic.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{GCC_2CORTUS__APS3_2port_8c_a90fe418ff96de61a217864454e0ce249}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-R}~( 0x00020000 )
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$ \hyperlink{GCC_2CORTUS__APS3_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{px\-Port\-Initialise\-Stack} (\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$px\-Top\-Of\-Stack, \hyperlink{projdefs_8h_a24177544ba9c507a9429d6d5761eb487}{Task\-Function\-\_\-t} px\-Code, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters)
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{GCC_2CORTUS__APS3_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{x\-Port\-Start\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2CORTUS__APS3_2port_8c_a50b37c333edece21ce0e269a5a1a9a68}{interrupt31\-\_\-handler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2CORTUS__APS3_2port_8c_a1addd63671cd6fd6f4b9c5752433008e}{interrupt7\-\_\-handler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2CORTUS__APS3_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{v\-Port\-End\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{GCC_2CORTUS__APS3_2port_8c_a90fe418ff96de61a217864454e0ce249}{\index{G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c@{G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c}!port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-R@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-R}}
+\index{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-R@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-R}!GCC/CORTUS_APS3/port.c@{G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c}}
+\subsubsection[{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-R~( 0x00020000 )}}\label{GCC_2CORTUS__APS3_2port_8c_a90fe418ff96de61a217864454e0ce249}
+
+
+\subsection{Function Documentation}
+\hypertarget{GCC_2CORTUS__APS3_2port_8c_a50b37c333edece21ce0e269a5a1a9a68}{\index{G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c@{G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c}!interrupt31\-\_\-handler@{interrupt31\-\_\-handler}}
+\index{interrupt31\-\_\-handler@{interrupt31\-\_\-handler}!GCC/CORTUS_APS3/port.c@{G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c}}
+\subsubsection[{interrupt31\-\_\-handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} interrupt31\-\_\-handler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2CORTUS__APS3_2port_8c_a50b37c333edece21ce0e269a5a1a9a68}
+\hypertarget{GCC_2CORTUS__APS3_2port_8c_a1addd63671cd6fd6f4b9c5752433008e}{\index{G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c@{G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c}!interrupt7\-\_\-handler@{interrupt7\-\_\-handler}}
+\index{interrupt7\-\_\-handler@{interrupt7\-\_\-handler}!GCC/CORTUS_APS3/port.c@{G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c}}
+\subsubsection[{interrupt7\-\_\-handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} interrupt7\-\_\-handler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2CORTUS__APS3_2port_8c_a1addd63671cd6fd6f4b9c5752433008e}
+\hypertarget{GCC_2CORTUS__APS3_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{\index{G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c@{G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c}!px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}}
+\index{px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}!GCC/CORTUS_APS3/port.c@{G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c}}
+\subsubsection[{px\-Port\-Initialise\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stack\-Type\-\_\-t}$\ast$ px\-Port\-Initialise\-Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\-Type\-\_\-t} $\ast$}]{px\-Top\-Of\-Stack, }
+\item[{{\bf Task\-Function\-\_\-t}}]{px\-Code, }
+\item[{{\bf void} $\ast$}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)}}\label{GCC_2CORTUS__APS3_2port_8c_a474fbbb58ea661a1557f05adc41120c1}
+\hypertarget{GCC_2CORTUS__APS3_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{\index{G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c@{G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c}!v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}}
+\index{v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}!GCC/CORTUS_APS3/port.c@{G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c}}
+\subsubsection[{v\-Port\-End\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-End\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2CORTUS__APS3_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}
+\hypertarget{GCC_2CORTUS__APS3_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{\index{G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c@{G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c}!x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}}
+\index{x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}!GCC/CORTUS_APS3/port.c@{G\-C\-C/\-C\-O\-R\-T\-U\-S\-\_\-\-A\-P\-S3/port.\-c}}
+\subsubsection[{x\-Port\-Start\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} x\-Port\-Start\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2CORTUS__APS3_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}

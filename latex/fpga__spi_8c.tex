@@ -1,0 +1,52 @@
+\hypertarget{fpga__spi_8c}{\section{/home/henrique/rep/open\-M\-M\-C/modules/fpga\-\_\-spi.c File Reference}
+\label{fpga__spi_8c}\index{/home/henrique/rep/open\-M\-M\-C/modules/fpga\-\_\-spi.\-c@{/home/henrique/rep/open\-M\-M\-C/modules/fpga\-\_\-spi.\-c}}
+}
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}port.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fpga\-\_\-spi.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task\-\_\-priorities.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}string.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}led.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}i2c.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sdr.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{fpga__spi_8c_ae460cde38ecc2b59fc4ccb5ed2206bfd}{F\-P\-G\-A\-\_\-\-S\-P\-I\-\_\-\-B\-I\-T\-R\-A\-T\-E}~10000000
+\item 
+\#define \hyperlink{fpga__spi_8c_a9291224a7282bafe4ef7f702701ae8c8}{F\-P\-G\-A\-\_\-\-S\-P\-I\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E}~8
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{fpga__spi_8c_a8c9e6492b68d86051c70e3345d53f67c}{v\-Task\-F\-P\-G\-A\-\_\-\-C\-O\-M\-M} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$Parameters)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{fpga__spi_8c_ac6c79d3bc7c6f71f727a737383eb46e1}{fpga\-\_\-spi\-\_\-init} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{fpga__spi_8c_ae460cde38ecc2b59fc4ccb5ed2206bfd}{\index{fpga\-\_\-spi.\-c@{fpga\-\_\-spi.\-c}!F\-P\-G\-A\-\_\-\-S\-P\-I\-\_\-\-B\-I\-T\-R\-A\-T\-E@{F\-P\-G\-A\-\_\-\-S\-P\-I\-\_\-\-B\-I\-T\-R\-A\-T\-E}}
+\index{F\-P\-G\-A\-\_\-\-S\-P\-I\-\_\-\-B\-I\-T\-R\-A\-T\-E@{F\-P\-G\-A\-\_\-\-S\-P\-I\-\_\-\-B\-I\-T\-R\-A\-T\-E}!fpga_spi.c@{fpga\-\_\-spi.\-c}}
+\subsubsection[{F\-P\-G\-A\-\_\-\-S\-P\-I\-\_\-\-B\-I\-T\-R\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-P\-G\-A\-\_\-\-S\-P\-I\-\_\-\-B\-I\-T\-R\-A\-T\-E~10000000}}\label{fpga__spi_8c_ae460cde38ecc2b59fc4ccb5ed2206bfd}
+\hypertarget{fpga__spi_8c_a9291224a7282bafe4ef7f702701ae8c8}{\index{fpga\-\_\-spi.\-c@{fpga\-\_\-spi.\-c}!F\-P\-G\-A\-\_\-\-S\-P\-I\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E@{F\-P\-G\-A\-\_\-\-S\-P\-I\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E}}
+\index{F\-P\-G\-A\-\_\-\-S\-P\-I\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E@{F\-P\-G\-A\-\_\-\-S\-P\-I\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E}!fpga_spi.c@{fpga\-\_\-spi.\-c}}
+\subsubsection[{F\-P\-G\-A\-\_\-\-S\-P\-I\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-P\-G\-A\-\_\-\-S\-P\-I\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E~8}}\label{fpga__spi_8c_a9291224a7282bafe4ef7f702701ae8c8}
+
+
+\subsection{Function Documentation}
+\hypertarget{fpga__spi_8c_ac6c79d3bc7c6f71f727a737383eb46e1}{\index{fpga\-\_\-spi.\-c@{fpga\-\_\-spi.\-c}!fpga\-\_\-spi\-\_\-init@{fpga\-\_\-spi\-\_\-init}}
+\index{fpga\-\_\-spi\-\_\-init@{fpga\-\_\-spi\-\_\-init}!fpga_spi.c@{fpga\-\_\-spi.\-c}}
+\subsubsection[{fpga\-\_\-spi\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} fpga\-\_\-spi\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{fpga__spi_8c_ac6c79d3bc7c6f71f727a737383eb46e1}
+\hypertarget{fpga__spi_8c_a8c9e6492b68d86051c70e3345d53f67c}{\index{fpga\-\_\-spi.\-c@{fpga\-\_\-spi.\-c}!v\-Task\-F\-P\-G\-A\-\_\-\-C\-O\-M\-M@{v\-Task\-F\-P\-G\-A\-\_\-\-C\-O\-M\-M}}
+\index{v\-Task\-F\-P\-G\-A\-\_\-\-C\-O\-M\-M@{v\-Task\-F\-P\-G\-A\-\_\-\-C\-O\-M\-M}!fpga_spi.c@{fpga\-\_\-spi.\-c}}
+\subsubsection[{v\-Task\-F\-P\-G\-A\-\_\-\-C\-O\-M\-M}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Task\-F\-P\-G\-A\-\_\-\-C\-O\-M\-M (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{Parameters}
+\end{DoxyParamCaption}
+)}}\label{fpga__spi_8c_a8c9e6492b68d86051c70e3345d53f67c}

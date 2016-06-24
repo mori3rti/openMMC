@@ -1,0 +1,277 @@
+\hypertarget{ipmi_8c}{\section{/home/henrique/rep/open\-M\-M\-C/modules/ipmi.c File Reference}
+\label{ipmi_8c}\index{/home/henrique/rep/open\-M\-M\-C/modules/ipmi.\-c@{/home/henrique/rep/open\-M\-M\-C/modules/ipmi.\-c}}
+}
+{\ttfamily \#include \char`\"{}string.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ipmi.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}port.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task\-\_\-priorities.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}led.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}payload.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}uart\-\_\-debug.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{ipmi_8c_a39a0f1e61e5e56094a3e16768974379c}{I\-P\-M\-I\-Task} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{ipmi_8c_a7cb50481a3971a3910efd1ba4e4d7876}{ipmi\-\_\-init} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{ipmi_8h_ae8d76fafa26fe153e5646fb94b6399fb}{t\-\_\-req\-\_\-handler} \hyperlink{ipmi_8c_acbfa06d1826d965b679c660d08f033bf}{ipmi\-\_\-retrieve\-\_\-handler} (uint8\-\_\-t netfn, uint8\-\_\-t cmd)
+\begin{DoxyCompactList}\small\item\em Finds a handler associated with a given netfunction and command. \end{DoxyCompactList}\item 
+\hyperlink{ipmb_8h_a8d757edf82d973e9e19ea700b3cd0671}{ipmb\-\_\-error} \hyperlink{ipmi_8c_a87596b58965c4479b96a79b2a789566d}{ipmi\-\_\-event\-\_\-send} (\hyperlink{structsensor__t}{sensor\-\_\-t} $\ast$sensor, uint8\-\_\-t assert\-\_\-deassert, uint8\-\_\-t $\ast$ev\-Data, uint8\-\_\-t length)
+\begin{DoxyCompactList}\small\item\em Sends an event message via I\-P\-M\-B interface. \end{DoxyCompactList}\item 
+\hyperlink{ipmi_8c_ab560cc7a3b9a9264296f742d63b1283a}{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R} (ipmi\-\_\-get\-\_\-device\-\_\-id, \hyperlink{ipmi_8h_a1581da6b4c468038e4f3f5f531c8ffa7}{N\-E\-T\-F\-N\-\_\-\-A\-P\-P}, \hyperlink{ipmi_8h_ace0772092f035503df32a1ba7c89181b}{I\-P\-M\-I\-\_\-\-G\-E\-T\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-C\-M\-D}, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$req, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$rsp)
+\begin{DoxyCompactList}\small\item\em Handler for G\-E\-T Device I\-D command as in I\-P\-M\-I v2.\-0 section 20.\-1 for more information. \end{DoxyCompactList}\item 
+\hyperlink{ipmi_8c_a36cbdc74ce276263dbd60fdcfab6ad6a}{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R} (ipmi\-\_\-get\-\_\-device\-\_\-guid, \hyperlink{ipmi_8h_a1581da6b4c468038e4f3f5f531c8ffa7}{N\-E\-T\-F\-N\-\_\-\-A\-P\-P}, \hyperlink{ipmi_8h_ac13d7b8f3ac14fa3a3172ccc0fbc41db}{I\-P\-M\-I\-\_\-\-G\-E\-T\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-G\-U\-I\-D\-\_\-\-C\-M\-D}, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$req, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$rsp)
+\begin{DoxyCompactList}\small\item\em Handler for G\-E\-T Device G\-U\-I\-D command. \end{DoxyCompactList}\item 
+\hyperlink{ipmi_8c_affd33bfe68f6abb307d3c5b77497eaab}{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R} (ipmi\-\_\-picmg\-\_\-get\-\_\-properties, \hyperlink{ipmi_8h_a27ea7c162811163c28a31cc9cd677a80}{N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}, \hyperlink{ipmi_8h_ab7990586bcae7e8a21743a2995f23d5e}{I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-P\-R\-O\-P\-E\-R\-T\-I\-E\-S}, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$req, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$rsp)
+\begin{DoxyCompactList}\small\item\em Handler for G\-E\-T Properties request. To be called by I\-P\-M\-I request handler, it must obey the predefined function signature and protocol. Check I\-P\-M\-I 2.\-0 table 3-\/11 for more information. \end{DoxyCompactList}\item 
+\hyperlink{ipmi_8c_a3aab8dc0fb105c9d44eec109ccb17e1e}{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R} (ipmi\-\_\-picmg\-\_\-cmd\-\_\-set\-\_\-amc\-\_\-port\-\_\-state, \hyperlink{ipmi_8h_a27ea7c162811163c28a31cc9cd677a80}{N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}, \hyperlink{ipmi_8h_a934d185b4c8c450fcb9b55f32caf3713}{I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-S\-E\-T\-\_\-\-A\-M\-C\-\_\-\-P\-O\-R\-T\-\_\-\-S\-T\-A\-T\-E}, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$req, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$rsp)
+\begin{DoxyCompactList}\small\item\em Handler for Set A\-M\-C Port state request. Check I\-P\-M\-I 2.\-0 table 3-\/11 for more information. \end{DoxyCompactList}\item 
+\hyperlink{ipmi_8c_ac2e47a5ef63bf45b21f107ad3336048b}{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R} (ipmi\-\_\-get\-\_\-device\-\_\-locator\-\_\-record, \hyperlink{ipmi_8h_a27ea7c162811163c28a31cc9cd677a80}{N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}, \hyperlink{ipmi_8h_a6c562b344e382be2e5a6cc611f28b239}{I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-L\-O\-C\-A\-T\-O\-R\-\_\-\-R\-E\-C\-O\-R\-D}, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$req, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$rsp)
+\item 
+\hyperlink{ipmi_8c_a61618acaf5f4ab411e4f815b728dec5a}{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R} (ipmi\-\_\-picmg\-\_\-cmd\-\_\-fru\-\_\-control, \hyperlink{ipmi_8h_a27ea7c162811163c28a31cc9cd677a80}{N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}, \hyperlink{ipmi_8h_a869e065bba4457e23a028b9e611b1efd}{I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-F\-R\-U\-\_\-\-C\-O\-N\-T\-R\-O\-L}, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$req, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$rsp)
+\item 
+\hyperlink{ipmi_8c_a0d0796dd356f1145cf1293a57b7b9f5e}{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R} (ipmi\-\_\-picmg\-\_\-cmd\-\_\-get\-\_\-fru\-\_\-control\-\_\-capabilities, \hyperlink{ipmi_8h_a27ea7c162811163c28a31cc9cd677a80}{N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}, \hyperlink{ipmi_8h_aa2b44fd16a64771ca4d244f99d867b92}{I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-F\-R\-U\-\_\-\-C\-O\-N\-T\-R\-O\-L\-\_\-\-C\-A\-P\-A\-B\-I\-L\-I\-T\-I\-E\-S}, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$req, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$rsp)
+\item 
+\hyperlink{ipmi_8c_a1d968bfc4481417a4496255b6addcc6a}{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R} (ipmi\-\_\-picmg\-\_\-cmd\-\_\-set\-\_\-fru\-\_\-activation\-\_\-policy, \hyperlink{ipmi_8h_a27ea7c162811163c28a31cc9cd677a80}{N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}, \hyperlink{ipmi_8h_ab13d6445b2f97348ee96d856c19ea6e1}{I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-S\-E\-T\-\_\-\-F\-R\-U\-\_\-\-A\-C\-T\-I\-V\-A\-T\-I\-O\-N\-\_\-\-P\-O\-L\-I\-C\-Y}, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$req, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$rsp)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{queue_8h_aaf19d499892a4ce1409326ece00f5264}{Queue\-Handle\-\_\-t} \hyperlink{ipmi_8c_abeb4cc3653b87d7bfe54aba4871d3818}{ipmi\-\_\-rxqueue} = \hyperlink{group__LPC__Types__Public__Macros_ga070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L}
+\item 
+volatile const \\*
+\hyperlink{structt__req__handler__record}{t\-\_\-req\-\_\-handler\-\_\-record} $\ast$ \hyperlink{ipmi_8c_a314385ff92bc32be37dc7ae39146c7f0}{ipmi\-Entries} = (\hyperlink{structt__req__handler__record}{t\-\_\-req\-\_\-handler\-\_\-record} $\ast$) \&\hyperlink{ipmi_8h_aaf9366d031dbd7249fec4763d9d87387}{\-\_\-ipmi\-\_\-handlers}
+\item 
+volatile const \\*
+\hyperlink{structt__req__handler__record}{t\-\_\-req\-\_\-handler\-\_\-record} $\ast$ \hyperlink{ipmi_8c_ad7ea94c7840b6bc4c14bcc28acb07ece}{ipmi\-Entries\-\_\-end} = (\hyperlink{structt__req__handler__record}{t\-\_\-req\-\_\-handler\-\_\-record} $\ast$) \&\hyperlink{ipmi_8h_a1df167b38f3654a555eb744b50e6d8d8}{\-\_\-eipmi\-\_\-handlers}
+\item 
+\hyperlink{task_8h_ae95f44d4cfeb4a599c6cc258d241cb6b}{Task\-Handle\-\_\-t} \hyperlink{ipmi_8c_a0ea7154e097de7002a6b4909370dfed7}{Task\-I\-P\-M\-I\-\_\-\-Handle}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{ipmi_8c_a87596b58965c4479b96a79b2a789566d}{\index{ipmi.\-c@{ipmi.\-c}!ipmi\-\_\-event\-\_\-send@{ipmi\-\_\-event\-\_\-send}}
+\index{ipmi\-\_\-event\-\_\-send@{ipmi\-\_\-event\-\_\-send}!ipmi.c@{ipmi.\-c}}
+\subsubsection[{ipmi\-\_\-event\-\_\-send}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ipmb\-\_\-error} ipmi\-\_\-event\-\_\-send (
+\begin{DoxyParamCaption}
+\item[{{\bf sensor\-\_\-t} $\ast$}]{sensor, }
+\item[{uint8\-\_\-t}]{assert\-\_\-deassert, }
+\item[{uint8\-\_\-t $\ast$}]{ev\-Data, }
+\item[{uint8\-\_\-t}]{length}
+\end{DoxyParamCaption}
+)}}\label{ipmi_8c_a87596b58965c4479b96a79b2a789566d}
+
+
+Sends an event message via I\-P\-M\-B interface. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sensor} & Pointer to sensor structure defined in sensor.\-h \\
+\hline
+\mbox{\tt in}  & {\em assert\-\_\-deassert} & Flag to indicate an (de)assertion event \\
+\hline
+\mbox{\tt in}  & {\em ev\-Data} & Data buffer holding the event data, size indicated by {\ttfamily length} \\
+\hline
+\mbox{\tt in}  & {\em length} & Lenght of {\ttfamily ev\-Data} buffer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ipmb\-\_\-error return value from \hyperlink{ipmb_8h_ab33457f43ce9d42f9335c94568bcee90}{ipmb\-\_\-send\-\_\-request}
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{ipmb_8c_ab33457f43ce9d42f9335c94568bcee90}{ipmb\-\_\-send\-\_\-request()} 
+\end{DoxySeeAlso}
+\hypertarget{ipmi_8c_ab560cc7a3b9a9264296f742d63b1283a}{\index{ipmi.\-c@{ipmi.\-c}!I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}}
+\index{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}!ipmi.c@{ipmi.\-c}}
+\subsubsection[{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R (
+\begin{DoxyParamCaption}
+\item[{ipmi\-\_\-get\-\_\-device\-\_\-id}]{, }
+\item[{{\bf N\-E\-T\-F\-N\-\_\-\-A\-P\-P}}]{, }
+\item[{{\bf I\-P\-M\-I\-\_\-\-G\-E\-T\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-C\-M\-D}}]{, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{req, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{rsp}
+\end{DoxyParamCaption}
+)}}\label{ipmi_8c_ab560cc7a3b9a9264296f742d63b1283a}
+
+
+Handler for G\-E\-T Device I\-D command as in I\-P\-M\-I v2.\-0 section 20.\-1 for more information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em req\mbox{[}in\mbox{]}} & pointer to request message\\
+\hline
+{\em rsp\mbox{[}out\mbox{]}} & pointer to response message\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]\-: several bits of hardcoded information. Organize it so it makes more sense and is easier to modify. \end{DoxyRefDesc}
+\hypertarget{ipmi_8c_a36cbdc74ce276263dbd60fdcfab6ad6a}{\index{ipmi.\-c@{ipmi.\-c}!I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}}
+\index{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}!ipmi.c@{ipmi.\-c}}
+\subsubsection[{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R (
+\begin{DoxyParamCaption}
+\item[{ipmi\-\_\-get\-\_\-device\-\_\-guid}]{, }
+\item[{{\bf N\-E\-T\-F\-N\-\_\-\-A\-P\-P}}]{, }
+\item[{{\bf I\-P\-M\-I\-\_\-\-G\-E\-T\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-G\-U\-I\-D\-\_\-\-C\-M\-D}}]{, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{req, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{rsp}
+\end{DoxyParamCaption}
+)}}\label{ipmi_8c_a36cbdc74ce276263dbd60fdcfab6ad6a}
+
+
+Handler for G\-E\-T Device G\-U\-I\-D command. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em req} & pointer to request message\\
+\hline
+\mbox{\tt out}  & {\em rsp} & pointer to response message\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{ipmi_8c_affd33bfe68f6abb307d3c5b77497eaab}{\index{ipmi.\-c@{ipmi.\-c}!I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}}
+\index{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}!ipmi.c@{ipmi.\-c}}
+\subsubsection[{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R (
+\begin{DoxyParamCaption}
+\item[{ipmi\-\_\-picmg\-\_\-get\-\_\-properties}]{, }
+\item[{{\bf N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}}]{, }
+\item[{{\bf I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-P\-R\-O\-P\-E\-R\-T\-I\-E\-S}}]{, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{req, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{rsp}
+\end{DoxyParamCaption}
+)}}\label{ipmi_8c_affd33bfe68f6abb307d3c5b77497eaab}
+
+
+Handler for G\-E\-T Properties request. To be called by I\-P\-M\-I request handler, it must obey the predefined function signature and protocol. Check I\-P\-M\-I 2.\-0 table 3-\/11 for more information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em req} & Request to be handled and answered. Unused in this particular function.\\
+\hline
+\mbox{\tt out}  & {\em rsp} & Message with data, data length and completion code. \\
+\hline
+\end{DoxyParams}
+\hypertarget{ipmi_8c_a3aab8dc0fb105c9d44eec109ccb17e1e}{\index{ipmi.\-c@{ipmi.\-c}!I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}}
+\index{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}!ipmi.c@{ipmi.\-c}}
+\subsubsection[{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R (
+\begin{DoxyParamCaption}
+\item[{ipmi\-\_\-picmg\-\_\-cmd\-\_\-set\-\_\-amc\-\_\-port\-\_\-state}]{, }
+\item[{{\bf N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}}]{, }
+\item[{{\bf I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-S\-E\-T\-\_\-\-A\-M\-C\-\_\-\-P\-O\-R\-T\-\_\-\-S\-T\-A\-T\-E}}]{, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{req, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{rsp}
+\end{DoxyParamCaption}
+)}}\label{ipmi_8c_a3aab8dc0fb105c9d44eec109ccb17e1e}
+
+
+Handler for Set A\-M\-C Port state request. Check I\-P\-M\-I 2.\-0 table 3-\/11 for more information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em request} & Request to be handled and answered. Unused in this particular function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{structipmi__msg}{ipmi\-\_\-msg} Message with data, data length and completion code. 
+\end{DoxyReturn}
+\hypertarget{ipmi_8c_ac2e47a5ef63bf45b21f107ad3336048b}{\index{ipmi.\-c@{ipmi.\-c}!I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}}
+\index{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}!ipmi.c@{ipmi.\-c}}
+\subsubsection[{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R (
+\begin{DoxyParamCaption}
+\item[{ipmi\-\_\-get\-\_\-device\-\_\-locator\-\_\-record}]{, }
+\item[{{\bf N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}}]{, }
+\item[{{\bf I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-L\-O\-C\-A\-T\-O\-R\-\_\-\-R\-E\-C\-O\-R\-D}}]{, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{req, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{rsp}
+\end{DoxyParamCaption}
+)}}\label{ipmi_8c_ac2e47a5ef63bf45b21f107ad3336048b}
+\hypertarget{ipmi_8c_a61618acaf5f4ab411e4f815b728dec5a}{\index{ipmi.\-c@{ipmi.\-c}!I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}}
+\index{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}!ipmi.c@{ipmi.\-c}}
+\subsubsection[{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R (
+\begin{DoxyParamCaption}
+\item[{ipmi\-\_\-picmg\-\_\-cmd\-\_\-fru\-\_\-control}]{, }
+\item[{{\bf N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}}]{, }
+\item[{{\bf I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-F\-R\-U\-\_\-\-C\-O\-N\-T\-R\-O\-L}}]{, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{req, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{rsp}
+\end{DoxyParamCaption}
+)}}\label{ipmi_8c_a61618acaf5f4ab411e4f815b728dec5a}
+\hypertarget{ipmi_8c_a0d0796dd356f1145cf1293a57b7b9f5e}{\index{ipmi.\-c@{ipmi.\-c}!I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}}
+\index{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}!ipmi.c@{ipmi.\-c}}
+\subsubsection[{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R (
+\begin{DoxyParamCaption}
+\item[{ipmi\-\_\-picmg\-\_\-cmd\-\_\-get\-\_\-fru\-\_\-control\-\_\-capabilities}]{, }
+\item[{{\bf N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}}]{, }
+\item[{{\bf I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-F\-R\-U\-\_\-\-C\-O\-N\-T\-R\-O\-L\-\_\-\-C\-A\-P\-A\-B\-I\-L\-I\-T\-I\-E\-S}}]{, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{req, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{rsp}
+\end{DoxyParamCaption}
+)}}\label{ipmi_8c_a0d0796dd356f1145cf1293a57b7b9f5e}
+\hypertarget{ipmi_8c_a1d968bfc4481417a4496255b6addcc6a}{\index{ipmi.\-c@{ipmi.\-c}!I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}}
+\index{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}!ipmi.c@{ipmi.\-c}}
+\subsubsection[{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R (
+\begin{DoxyParamCaption}
+\item[{ipmi\-\_\-picmg\-\_\-cmd\-\_\-set\-\_\-fru\-\_\-activation\-\_\-policy}]{, }
+\item[{{\bf N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}}]{, }
+\item[{{\bf I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-S\-E\-T\-\_\-\-F\-R\-U\-\_\-\-A\-C\-T\-I\-V\-A\-T\-I\-O\-N\-\_\-\-P\-O\-L\-I\-C\-Y}}]{, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{req, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{rsp}
+\end{DoxyParamCaption}
+)}}\label{ipmi_8c_a1d968bfc4481417a4496255b6addcc6a}
+\hypertarget{ipmi_8c_a7cb50481a3971a3910efd1ba4e4d7876}{\index{ipmi.\-c@{ipmi.\-c}!ipmi\-\_\-init@{ipmi\-\_\-init}}
+\index{ipmi\-\_\-init@{ipmi\-\_\-init}!ipmi.c@{ipmi.\-c}}
+\subsubsection[{ipmi\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} ipmi\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{ipmi_8c_a7cb50481a3971a3910efd1ba4e4d7876}
+\hypertarget{ipmi_8c_acbfa06d1826d965b679c660d08f033bf}{\index{ipmi.\-c@{ipmi.\-c}!ipmi\-\_\-retrieve\-\_\-handler@{ipmi\-\_\-retrieve\-\_\-handler}}
+\index{ipmi\-\_\-retrieve\-\_\-handler@{ipmi\-\_\-retrieve\-\_\-handler}!ipmi.c@{ipmi.\-c}}
+\subsubsection[{ipmi\-\_\-retrieve\-\_\-handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-req\-\_\-handler} ipmi\-\_\-retrieve\-\_\-handler (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{netfn, }
+\item[{uint8\-\_\-t}]{cmd}
+\end{DoxyParamCaption}
+)}}\label{ipmi_8c_acbfa06d1826d965b679c660d08f033bf}
+
+
+Finds a handler associated with a given netfunction and command. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em netfn} & 8-\/bit network function code \\
+\hline
+\mbox{\tt in}  & {\em cmd} & 8-\/bit command code\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the function which will handle this command, as defined in the netfn handler list. 
+\end{DoxyReturn}
+\hypertarget{ipmi_8c_a39a0f1e61e5e56094a3e16768974379c}{\index{ipmi.\-c@{ipmi.\-c}!I\-P\-M\-I\-Task@{I\-P\-M\-I\-Task}}
+\index{I\-P\-M\-I\-Task@{I\-P\-M\-I\-Task}!ipmi.c@{ipmi.\-c}}
+\subsubsection[{I\-P\-M\-I\-Task}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} I\-P\-M\-I\-Task (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)}}\label{ipmi_8c_a39a0f1e61e5e56094a3e16768974379c}
+
+
+\subsection{Variable Documentation}
+\hypertarget{ipmi_8c_abeb4cc3653b87d7bfe54aba4871d3818}{\index{ipmi.\-c@{ipmi.\-c}!ipmi\-\_\-rxqueue@{ipmi\-\_\-rxqueue}}
+\index{ipmi\-\_\-rxqueue@{ipmi\-\_\-rxqueue}!ipmi.c@{ipmi.\-c}}
+\subsubsection[{ipmi\-\_\-rxqueue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Queue\-Handle\-\_\-t} ipmi\-\_\-rxqueue = {\bf N\-U\-L\-L}}}\label{ipmi_8c_abeb4cc3653b87d7bfe54aba4871d3818}
+\hypertarget{ipmi_8c_a314385ff92bc32be37dc7ae39146c7f0}{\index{ipmi.\-c@{ipmi.\-c}!ipmi\-Entries@{ipmi\-Entries}}
+\index{ipmi\-Entries@{ipmi\-Entries}!ipmi.c@{ipmi.\-c}}
+\subsubsection[{ipmi\-Entries}]{\setlength{\rightskip}{0pt plus 5cm}volatile const {\bf t\-\_\-req\-\_\-handler\-\_\-record}$\ast$ ipmi\-Entries = ({\bf t\-\_\-req\-\_\-handler\-\_\-record} $\ast$) \&{\bf \-\_\-ipmi\-\_\-handlers}}}\label{ipmi_8c_a314385ff92bc32be37dc7ae39146c7f0}
+\hypertarget{ipmi_8c_ad7ea94c7840b6bc4c14bcc28acb07ece}{\index{ipmi.\-c@{ipmi.\-c}!ipmi\-Entries\-\_\-end@{ipmi\-Entries\-\_\-end}}
+\index{ipmi\-Entries\-\_\-end@{ipmi\-Entries\-\_\-end}!ipmi.c@{ipmi.\-c}}
+\subsubsection[{ipmi\-Entries\-\_\-end}]{\setlength{\rightskip}{0pt plus 5cm}volatile const {\bf t\-\_\-req\-\_\-handler\-\_\-record}$\ast$ ipmi\-Entries\-\_\-end = ({\bf t\-\_\-req\-\_\-handler\-\_\-record} $\ast$) \&{\bf \-\_\-eipmi\-\_\-handlers}}}\label{ipmi_8c_ad7ea94c7840b6bc4c14bcc28acb07ece}
+\hypertarget{ipmi_8c_a0ea7154e097de7002a6b4909370dfed7}{\index{ipmi.\-c@{ipmi.\-c}!Task\-I\-P\-M\-I\-\_\-\-Handle@{Task\-I\-P\-M\-I\-\_\-\-Handle}}
+\index{Task\-I\-P\-M\-I\-\_\-\-Handle@{Task\-I\-P\-M\-I\-\_\-\-Handle}!ipmi.c@{ipmi.\-c}}
+\subsubsection[{Task\-I\-P\-M\-I\-\_\-\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Task\-Handle\-\_\-t} Task\-I\-P\-M\-I\-\_\-\-Handle}}\label{ipmi_8c_a0ea7154e097de7002a6b4909370dfed7}

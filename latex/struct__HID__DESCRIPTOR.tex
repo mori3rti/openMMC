@@ -1,0 +1,64 @@
+\hypertarget{struct__HID__DESCRIPTOR}{\section{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R Struct Reference}
+\label{struct__HID__DESCRIPTOR}\index{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R@{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R}}
+}
+
+
+H\-I\-D class-\/specific H\-I\-D Descriptor.  
+
+
+
+
+{\ttfamily \#include $<$usbd\-\_\-hid.\-h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__HID__DESCRIPTOR_1_1__HID__DESCRIPTOR__LIST}{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R\-\_\-\-L\-I\-S\-T}
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint8\-\_\-t \hyperlink{struct__HID__DESCRIPTOR_abec52caed8ae7c6265e6aa9fccfec729}{b\-Length}
+\item 
+uint8\-\_\-t \hyperlink{struct__HID__DESCRIPTOR_a212247b88d45fcb74da281192f9d4d02}{b\-Descriptor\-Type}
+\item 
+uint16\-\_\-t \hyperlink{struct__HID__DESCRIPTOR_acb02b2afae4c474d60d3ce5ea90d6b3d}{bcd\-H\-I\-D}
+\item 
+uint8\-\_\-t \hyperlink{struct__HID__DESCRIPTOR_a6d494d09bf37ea067da3a089f0c966ba}{b\-Country\-Code}
+\item 
+uint8\-\_\-t \hyperlink{struct__HID__DESCRIPTOR_a9613890e6d0ae78428807a72beb64d74}{b\-Num\-Descriptors}
+\item 
+P\-R\-E\-\_\-\-P\-A\-C\-K struct P\-O\-S\-T\-\_\-\-P\-A\-C\-K \\*
+\hyperlink{struct__HID__DESCRIPTOR_1_1__HID__DESCRIPTOR__LIST}{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R\-::\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R\-\_\-\-L\-I\-S\-T} \hyperlink{struct__HID__DESCRIPTOR_ab147b0fb12a4d62db59bb05846a48161}{Descriptor\-List} \mbox{[}1\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\-I\-D class-\/specific H\-I\-D Descriptor. 
+
+Type define for the H\-I\-D class-\/specific H\-I\-D descriptor, to describe the H\-I\-D device's specifications. Refer to the H\-I\-D specification for details on the structure elements. 
+
+\subsection{Field Documentation}
+\hypertarget{struct__HID__DESCRIPTOR_acb02b2afae4c474d60d3ce5ea90d6b3d}{\index{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R@{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R}!bcd\-H\-I\-D@{bcd\-H\-I\-D}}
+\index{bcd\-H\-I\-D@{bcd\-H\-I\-D}!_HID_DESCRIPTOR@{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R}}
+\subsubsection[{bcd\-H\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t \-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R\-::bcd\-H\-I\-D}}\label{struct__HID__DESCRIPTOR_acb02b2afae4c474d60d3ce5ea90d6b3d}
+B\-C\-D encoded version that the H\-I\-D descriptor and device complies to. \hypertarget{struct__HID__DESCRIPTOR_a6d494d09bf37ea067da3a089f0c966ba}{\index{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R@{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R}!b\-Country\-Code@{b\-Country\-Code}}
+\index{b\-Country\-Code@{b\-Country\-Code}!_HID_DESCRIPTOR@{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R}}
+\subsubsection[{b\-Country\-Code}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t \-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R\-::b\-Country\-Code}}\label{struct__HID__DESCRIPTOR_a6d494d09bf37ea067da3a089f0c966ba}
+Country code of the localized device, or zero if universal. \hypertarget{struct__HID__DESCRIPTOR_a212247b88d45fcb74da281192f9d4d02}{\index{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R@{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R}!b\-Descriptor\-Type@{b\-Descriptor\-Type}}
+\index{b\-Descriptor\-Type@{b\-Descriptor\-Type}!_HID_DESCRIPTOR@{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R}}
+\subsubsection[{b\-Descriptor\-Type}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t \-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R\-::b\-Descriptor\-Type}}\label{struct__HID__DESCRIPTOR_a212247b88d45fcb74da281192f9d4d02}
+Type of H\-I\-D descriptor. \hypertarget{struct__HID__DESCRIPTOR_abec52caed8ae7c6265e6aa9fccfec729}{\index{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R@{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R}!b\-Length@{b\-Length}}
+\index{b\-Length@{b\-Length}!_HID_DESCRIPTOR@{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R}}
+\subsubsection[{b\-Length}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t \-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R\-::b\-Length}}\label{struct__HID__DESCRIPTOR_abec52caed8ae7c6265e6aa9fccfec729}
+Size of the descriptor, in bytes. \hypertarget{struct__HID__DESCRIPTOR_a9613890e6d0ae78428807a72beb64d74}{\index{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R@{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R}!b\-Num\-Descriptors@{b\-Num\-Descriptors}}
+\index{b\-Num\-Descriptors@{b\-Num\-Descriptors}!_HID_DESCRIPTOR@{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R}}
+\subsubsection[{b\-Num\-Descriptors}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t \-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R\-::b\-Num\-Descriptors}}\label{struct__HID__DESCRIPTOR_a9613890e6d0ae78428807a72beb64d74}
+Total number of H\-I\-D report descriptors for the interface. \hypertarget{struct__HID__DESCRIPTOR_ab147b0fb12a4d62db59bb05846a48161}{\index{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R@{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R}!Descriptor\-List@{Descriptor\-List}}
+\index{Descriptor\-List@{Descriptor\-List}!_HID_DESCRIPTOR@{\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R}}
+\subsubsection[{Descriptor\-List}]{\setlength{\rightskip}{0pt plus 5cm}P\-R\-E\-\_\-\-P\-A\-C\-K struct P\-O\-S\-T\-\_\-\-P\-A\-C\-K {\bf \-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R\-::\-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R\-\_\-\-L\-I\-S\-T}  \-\_\-\-H\-I\-D\-\_\-\-D\-E\-S\-C\-R\-I\-P\-T\-O\-R\-::\-Descriptor\-List\mbox{[}1\mbox{]}}}\label{struct__HID__DESCRIPTOR_ab147b0fb12a4d62db59bb05846a48161}
+Array of one or more descriptors 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpcopen/inc/usbd/\hyperlink{usbd__hid_8h}{usbd\-\_\-hid.\-h}\end{DoxyCompactItemize}

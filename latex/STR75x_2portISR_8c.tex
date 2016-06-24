@@ -1,0 +1,69 @@
+\hypertarget{STR75x_2portISR_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-S\-T\-R75x/port\-I\-S\-R.c File Reference}
+\label{STR75x_2portISR_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-S\-T\-R75x/port\-I\-S\-R.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-S\-T\-R75x/port\-I\-S\-R.\-c}}
+}
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{STR75x_2portISR_8c_ab7c7cbbda4fb9a253c7e5086071db162}{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}~( ( uint32\-\_\-t ) 0 )
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{STR75x_2portISR_8c_ab6f659b3911405d21fe98a1c7a347d8f}{v\-Port\-I\-S\-R\-Start\-First\-Task} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{STR75x_2portISR_8c_a546d822c1cff528af19326d0fb49e7de}{v\-Port\-Tick\-I\-S\-R} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{STR75x_2portISR_8c_a2ed3554a3de09a3bd09d396ee081ab69}{v\-Port\-Enter\-Critical} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{STR75x_2portISR_8c_aed20ada05b957181a0de042802a82a5b}{v\-Port\-Exit\-Critical} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile uint32\-\_\-t \hyperlink{STR75x_2portISR_8c_a4e719b187cba9cb244aeb611aca513f6}{ul\-Critical\-Nesting} = 9999\-U\-L
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{STR75x_2portISR_8c_ab7c7cbbda4fb9a253c7e5086071db162}{\index{S\-T\-R75x/port\-I\-S\-R.\-c@{S\-T\-R75x/port\-I\-S\-R.\-c}!port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G@{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}}
+\index{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G@{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}!STR75x/portISR.c@{S\-T\-R75x/port\-I\-S\-R.\-c}}
+\subsubsection[{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G~( ( uint32\-\_\-t ) 0 )}}\label{STR75x_2portISR_8c_ab7c7cbbda4fb9a253c7e5086071db162}
+
+
+\subsection{Function Documentation}
+\hypertarget{STR75x_2portISR_8c_a2ed3554a3de09a3bd09d396ee081ab69}{\index{S\-T\-R75x/port\-I\-S\-R.\-c@{S\-T\-R75x/port\-I\-S\-R.\-c}!v\-Port\-Enter\-Critical@{v\-Port\-Enter\-Critical}}
+\index{v\-Port\-Enter\-Critical@{v\-Port\-Enter\-Critical}!STR75x/portISR.c@{S\-T\-R75x/port\-I\-S\-R.\-c}}
+\subsubsection[{v\-Port\-Enter\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Enter\-Critical (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{STR75x_2portISR_8c_a2ed3554a3de09a3bd09d396ee081ab69}
+\hypertarget{STR75x_2portISR_8c_aed20ada05b957181a0de042802a82a5b}{\index{S\-T\-R75x/port\-I\-S\-R.\-c@{S\-T\-R75x/port\-I\-S\-R.\-c}!v\-Port\-Exit\-Critical@{v\-Port\-Exit\-Critical}}
+\index{v\-Port\-Exit\-Critical@{v\-Port\-Exit\-Critical}!STR75x/portISR.c@{S\-T\-R75x/port\-I\-S\-R.\-c}}
+\subsubsection[{v\-Port\-Exit\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Exit\-Critical (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{STR75x_2portISR_8c_aed20ada05b957181a0de042802a82a5b}
+\hypertarget{STR75x_2portISR_8c_ab6f659b3911405d21fe98a1c7a347d8f}{\index{S\-T\-R75x/port\-I\-S\-R.\-c@{S\-T\-R75x/port\-I\-S\-R.\-c}!v\-Port\-I\-S\-R\-Start\-First\-Task@{v\-Port\-I\-S\-R\-Start\-First\-Task}}
+\index{v\-Port\-I\-S\-R\-Start\-First\-Task@{v\-Port\-I\-S\-R\-Start\-First\-Task}!STR75x/portISR.c@{S\-T\-R75x/port\-I\-S\-R.\-c}}
+\subsubsection[{v\-Port\-I\-S\-R\-Start\-First\-Task}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-I\-S\-R\-Start\-First\-Task (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{STR75x_2portISR_8c_ab6f659b3911405d21fe98a1c7a347d8f}
+\hypertarget{STR75x_2portISR_8c_a546d822c1cff528af19326d0fb49e7de}{\index{S\-T\-R75x/port\-I\-S\-R.\-c@{S\-T\-R75x/port\-I\-S\-R.\-c}!v\-Port\-Tick\-I\-S\-R@{v\-Port\-Tick\-I\-S\-R}}
+\index{v\-Port\-Tick\-I\-S\-R@{v\-Port\-Tick\-I\-S\-R}!STR75x/portISR.c@{S\-T\-R75x/port\-I\-S\-R.\-c}}
+\subsubsection[{v\-Port\-Tick\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Tick\-I\-S\-R (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{STR75x_2portISR_8c_a546d822c1cff528af19326d0fb49e7de}
+
+
+\subsection{Variable Documentation}
+\hypertarget{STR75x_2portISR_8c_a4e719b187cba9cb244aeb611aca513f6}{\index{S\-T\-R75x/port\-I\-S\-R.\-c@{S\-T\-R75x/port\-I\-S\-R.\-c}!ul\-Critical\-Nesting@{ul\-Critical\-Nesting}}
+\index{ul\-Critical\-Nesting@{ul\-Critical\-Nesting}!STR75x/portISR.c@{S\-T\-R75x/port\-I\-S\-R.\-c}}
+\subsubsection[{ul\-Critical\-Nesting}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint32\-\_\-t ul\-Critical\-Nesting = 9999\-U\-L}}\label{STR75x_2portISR_8c_a4e719b187cba9cb244aeb611aca513f6}

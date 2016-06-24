@@ -1,0 +1,231 @@
+\hypertarget{led_8h}{\section{/home/henrique/rep/open\-M\-M\-C/modules/led.h File Reference}
+\label{led_8h}\index{/home/henrique/rep/open\-M\-M\-C/modules/led.\-h@{/home/henrique/rep/open\-M\-M\-C/modules/led.\-h}}
+}
+{\ttfamily \#include \char`\"{}port.\-h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structLEDState__t}{L\-E\-D\-State\-\_\-t}
+\item 
+struct \hyperlink{structLEDConfig}{L\-E\-D\-Config}
+\item 
+struct \hyperlink{structLEDUpdate}{L\-E\-D\-Update}
+\item 
+struct \hyperlink{structLEDPincfg}{L\-E\-D\-Pincfg}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{led_8h_aaeca05a9e5ba2423d2ba86c6add4ac30}{L\-E\-D\-C\-O\-N\-F\-I\-G\-\_\-\-S\-I\-Z\-E}~1
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void}($\ast$ \hyperlink{led_8h_a0e486f1c6803f7ac2d0b797aa810bb8a}{led\-\_\-act\-\_\-func\-\_\-t} )(uint8\-\_\-t id, uint8\-\_\-t action)
+\item 
+typedef struct \hyperlink{structLEDConfig}{L\-E\-D\-Config} \hyperlink{led_8h_afacac0217e1a8d0673e1db7a536f8499}{L\-E\-D\-Config\-\_\-t}
+\item 
+typedef struct \hyperlink{structLEDUpdate}{L\-E\-D\-Update} \hyperlink{led_8h_a8c397f37f9a369bbc3f027d901173d95}{L\-E\-D\-Update\-\_\-t}
+\item 
+typedef struct \hyperlink{structLEDPincfg}{L\-E\-D\-Pincfg} \hyperlink{led_8h_afc3e48aa64853d50d56ea3f39a8cd44e}{L\-E\-D\-Pincfg\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{led_8h_a20686d72752a8842320e750ba4ec4388}{L\-E\-D\-\_\-\-I\-D} \{ \hyperlink{led_8h_a20686d72752a8842320e750ba4ec4388aa67c57c0ff22a2772cb6a5751a3327bf}{L\-E\-D\-\_\-\-B\-L\-U\-E} = 0, 
+\hyperlink{led_8h_a20686d72752a8842320e750ba4ec4388adac6477842247cab1a8c02c65f431b44}{L\-E\-D1}, 
+\hyperlink{led_8h_a20686d72752a8842320e750ba4ec4388a8379bbaa96d151e6adac488b2a147b7a}{L\-E\-D2}, 
+\hyperlink{led_8h_a20686d72752a8842320e750ba4ec4388af09da57493c57655050f1f45ec6e921e}{L\-E\-D\-\_\-\-C\-N\-T}
+ \}
+\item 
+enum \hyperlink{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86}{L\-E\-D\-Color} \{ \\*
+\hyperlink{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86adf1075f424ab0e946cb5399952a69788}{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-B\-L\-U\-E} = 1, 
+\hyperlink{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86a74c5181ada4bf9ee56f56420f2969da7}{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-R\-E\-D}, 
+\hyperlink{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86a88309bcf3721dddb4722c3becfda7c23}{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-G\-R\-E\-E\-N}, 
+\hyperlink{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86a8b5380af61fcf5a977538e8977869e54}{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-A\-M\-B\-E\-R}, 
+\\*
+\hyperlink{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86aeeeb642e6902b7ba97bb88a1a06f66bc}{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-O\-R\-A\-N\-G\-E}, 
+\hyperlink{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86a5596e55c83d3a23178682e767df7ac6c}{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-W\-H\-I\-T\-E}
+ \}
+\item 
+enum \hyperlink{led_8h_a8a2be46da7529c49f977640213c22afb}{L\-E\-D\-Init\-\_\-status} \{ \hyperlink{led_8h_a8a2be46da7529c49f977640213c22afba1e21d385e15a1c63430f6337a449f4d0}{L\-E\-D\-I\-N\-I\-T\-\_\-\-O\-N} = 0x00, 
+\hyperlink{led_8h_a8a2be46da7529c49f977640213c22afba4c3c690e31c8b9ec9d2b856f68ad5ef7}{L\-E\-D\-I\-N\-I\-T\-\_\-\-O\-F\-F} = 0x\-F\-F
+ \}
+\item 
+enum \hyperlink{led_8h_a51a69e0b98357e170e63bc843e2fd1c0}{L\-E\-D\-State} \{ \hyperlink{led_8h_a51a69e0b98357e170e63bc843e2fd1c0a87acd599dc9ce46abbe81e039f7be140}{L\-E\-D\-S\-T\-A\-T\-E\-\_\-\-I\-N\-I\-T}, 
+\hyperlink{led_8h_a51a69e0b98357e170e63bc843e2fd1c0a09eee685da5f0c4347d72b470e6fa072}{L\-E\-D\-S\-T\-A\-T\-E\-\_\-\-T\-O\-G\-G\-L\-E\-D}
+ \}
+\item 
+enum \hyperlink{led_8h_adb4d342e29cca0fab8b687d0ac869223}{L\-E\-D\-Act} \{ \hyperlink{led_8h_adb4d342e29cca0fab8b687d0ac869223aa2105156a4de910b93b8986020f670b4}{L\-E\-D\-A\-C\-T\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N} = 0x00, 
+\hyperlink{led_8h_adb4d342e29cca0fab8b687d0ac869223aa825c862e9921a5ce1aae993e006e50a}{L\-E\-D\-A\-C\-T\-\_\-\-T\-O\-G\-G\-L\-E}, 
+\hyperlink{led_8h_adb4d342e29cca0fab8b687d0ac869223ac8ce161f00d8277a999115a5b6c151c6}{L\-E\-D\-A\-C\-T\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F} = 0x\-F\-F
+ \}
+\item 
+enum \hyperlink{led_8h_a57effb96f46e458675a2653d4c543ca2}{L\-E\-D\-Mode} \{ \hyperlink{led_8h_a57effb96f46e458675a2653d4c543ca2ae88afb31b1a3e784caff4086cb24da8a}{L\-E\-D\-M\-O\-D\-E\-\_\-\-L\-O\-C\-A\-L}, 
+\hyperlink{led_8h_a57effb96f46e458675a2653d4c543ca2a604b8c8403540b61347cf09ed67e6eaa}{L\-E\-D\-M\-O\-D\-E\-\_\-\-O\-V\-E\-R\-R\-I\-D\-E}, 
+\hyperlink{led_8h_a57effb96f46e458675a2653d4c543ca2a30b940d3f6e0989449650dc2623856b1}{L\-E\-D\-M\-O\-D\-E\-\_\-\-L\-A\-M\-P\-T\-E\-S\-T}, 
+\hyperlink{led_8h_a57effb96f46e458675a2653d4c543ca2acfe39eac075b00326eb71c682dbdef63}{L\-E\-D\-M\-O\-D\-E\-\_\-\-C\-N\-T}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{led_8h_a50cf228fce8563fc202330b7b4816cb9}{L\-E\-D\-\_\-init} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{led_8h_a6f6e088d8b99a3a27a5fdcf15242da8a}{L\-E\-D\-\_\-\-Task} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$Parameters)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{led_8h_a8fdb095408c357c7d78963a3f8930c16}{L\-E\-D\-Update} (uint8\-\_\-t \hyperlink{fru_8c_a3d7cc64921822af8dcd4d120a3c00f68}{fru}, uint8\-\_\-t led\-\_\-num, uint8\-\_\-t mode, uint8\-\_\-t init\-\_\-status, uint16\-\_\-t t\-\_\-init, uint16\-\_\-t t\-\_\-toggle)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{led_8h_a3679b0ccb97b967a0a162bc786d354d4}{amc\-\_\-led\-\_\-act} (uint8\-\_\-t id, uint8\-\_\-t action)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{led_8h_aaeca05a9e5ba2423d2ba86c6add4ac30}{\index{led.\-h@{led.\-h}!L\-E\-D\-C\-O\-N\-F\-I\-G\-\_\-\-S\-I\-Z\-E@{L\-E\-D\-C\-O\-N\-F\-I\-G\-\_\-\-S\-I\-Z\-E}}
+\index{L\-E\-D\-C\-O\-N\-F\-I\-G\-\_\-\-S\-I\-Z\-E@{L\-E\-D\-C\-O\-N\-F\-I\-G\-\_\-\-S\-I\-Z\-E}!led.h@{led.\-h}}
+\subsubsection[{L\-E\-D\-C\-O\-N\-F\-I\-G\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-E\-D\-C\-O\-N\-F\-I\-G\-\_\-\-S\-I\-Z\-E~1}}\label{led_8h_aaeca05a9e5ba2423d2ba86c6add4ac30}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{led_8h_a0e486f1c6803f7ac2d0b797aa810bb8a}{\index{led.\-h@{led.\-h}!led\-\_\-act\-\_\-func\-\_\-t@{led\-\_\-act\-\_\-func\-\_\-t}}
+\index{led\-\_\-act\-\_\-func\-\_\-t@{led\-\_\-act\-\_\-func\-\_\-t}!led.h@{led.\-h}}
+\subsubsection[{led\-\_\-act\-\_\-func\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$  led\-\_\-act\-\_\-func\-\_\-t)(uint8\-\_\-t id, uint8\-\_\-t action)}}\label{led_8h_a0e486f1c6803f7ac2d0b797aa810bb8a}
+\hypertarget{led_8h_afacac0217e1a8d0673e1db7a536f8499}{\index{led.\-h@{led.\-h}!L\-E\-D\-Config\-\_\-t@{L\-E\-D\-Config\-\_\-t}}
+\index{L\-E\-D\-Config\-\_\-t@{L\-E\-D\-Config\-\_\-t}!led.h@{led.\-h}}
+\subsubsection[{L\-E\-D\-Config\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf L\-E\-D\-Config}  {\bf L\-E\-D\-Config\-\_\-t}}}\label{led_8h_afacac0217e1a8d0673e1db7a536f8499}
+\hypertarget{led_8h_afc3e48aa64853d50d56ea3f39a8cd44e}{\index{led.\-h@{led.\-h}!L\-E\-D\-Pincfg\-\_\-t@{L\-E\-D\-Pincfg\-\_\-t}}
+\index{L\-E\-D\-Pincfg\-\_\-t@{L\-E\-D\-Pincfg\-\_\-t}!led.h@{led.\-h}}
+\subsubsection[{L\-E\-D\-Pincfg\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf L\-E\-D\-Pincfg}  {\bf L\-E\-D\-Pincfg\-\_\-t}}}\label{led_8h_afc3e48aa64853d50d56ea3f39a8cd44e}
+\hypertarget{led_8h_a8c397f37f9a369bbc3f027d901173d95}{\index{led.\-h@{led.\-h}!L\-E\-D\-Update\-\_\-t@{L\-E\-D\-Update\-\_\-t}}
+\index{L\-E\-D\-Update\-\_\-t@{L\-E\-D\-Update\-\_\-t}!led.h@{led.\-h}}
+\subsubsection[{L\-E\-D\-Update\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf L\-E\-D\-Update}  {\bf L\-E\-D\-Update\-\_\-t}}}\label{led_8h_a8c397f37f9a369bbc3f027d901173d95}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{led_8h_a20686d72752a8842320e750ba4ec4388}{\index{led.\-h@{led.\-h}!L\-E\-D\-\_\-\-I\-D@{L\-E\-D\-\_\-\-I\-D}}
+\index{L\-E\-D\-\_\-\-I\-D@{L\-E\-D\-\_\-\-I\-D}!led.h@{led.\-h}}
+\subsubsection[{L\-E\-D\-\_\-\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf L\-E\-D\-\_\-\-I\-D}}}\label{led_8h_a20686d72752a8842320e750ba4ec4388}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\-E\-D\-\_\-\-B\-L\-U\-E@{L\-E\-D\-\_\-\-B\-L\-U\-E}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-\_\-\-B\-L\-U\-E@{L\-E\-D\-\_\-\-B\-L\-U\-E}}\item[{\em 
+\hypertarget{led_8h_a20686d72752a8842320e750ba4ec4388aa67c57c0ff22a2772cb6a5751a3327bf}{L\-E\-D\-\_\-\-B\-L\-U\-E}\label{led_8h_a20686d72752a8842320e750ba4ec4388aa67c57c0ff22a2772cb6a5751a3327bf}
+}]\index{L\-E\-D1@{L\-E\-D1}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D1@{L\-E\-D1}}\item[{\em 
+\hypertarget{led_8h_a20686d72752a8842320e750ba4ec4388adac6477842247cab1a8c02c65f431b44}{L\-E\-D1}\label{led_8h_a20686d72752a8842320e750ba4ec4388adac6477842247cab1a8c02c65f431b44}
+}]\index{L\-E\-D2@{L\-E\-D2}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D2@{L\-E\-D2}}\item[{\em 
+\hypertarget{led_8h_a20686d72752a8842320e750ba4ec4388a8379bbaa96d151e6adac488b2a147b7a}{L\-E\-D2}\label{led_8h_a20686d72752a8842320e750ba4ec4388a8379bbaa96d151e6adac488b2a147b7a}
+}]\index{L\-E\-D\-\_\-\-C\-N\-T@{L\-E\-D\-\_\-\-C\-N\-T}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-\_\-\-C\-N\-T@{L\-E\-D\-\_\-\-C\-N\-T}}\item[{\em 
+\hypertarget{led_8h_a20686d72752a8842320e750ba4ec4388af09da57493c57655050f1f45ec6e921e}{L\-E\-D\-\_\-\-C\-N\-T}\label{led_8h_a20686d72752a8842320e750ba4ec4388af09da57493c57655050f1f45ec6e921e}
+}]\end{description}
+\end{Desc}
+\hypertarget{led_8h_adb4d342e29cca0fab8b687d0ac869223}{\index{led.\-h@{led.\-h}!L\-E\-D\-Act@{L\-E\-D\-Act}}
+\index{L\-E\-D\-Act@{L\-E\-D\-Act}!led.h@{led.\-h}}
+\subsubsection[{L\-E\-D\-Act}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf L\-E\-D\-Act}}}\label{led_8h_adb4d342e29cca0fab8b687d0ac869223}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\-E\-D\-A\-C\-T\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N@{L\-E\-D\-A\-C\-T\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-A\-C\-T\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N@{L\-E\-D\-A\-C\-T\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N}}\item[{\em 
+\hypertarget{led_8h_adb4d342e29cca0fab8b687d0ac869223aa2105156a4de910b93b8986020f670b4}{L\-E\-D\-A\-C\-T\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N}\label{led_8h_adb4d342e29cca0fab8b687d0ac869223aa2105156a4de910b93b8986020f670b4}
+}]\index{L\-E\-D\-A\-C\-T\-\_\-\-T\-O\-G\-G\-L\-E@{L\-E\-D\-A\-C\-T\-\_\-\-T\-O\-G\-G\-L\-E}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-A\-C\-T\-\_\-\-T\-O\-G\-G\-L\-E@{L\-E\-D\-A\-C\-T\-\_\-\-T\-O\-G\-G\-L\-E}}\item[{\em 
+\hypertarget{led_8h_adb4d342e29cca0fab8b687d0ac869223aa825c862e9921a5ce1aae993e006e50a}{L\-E\-D\-A\-C\-T\-\_\-\-T\-O\-G\-G\-L\-E}\label{led_8h_adb4d342e29cca0fab8b687d0ac869223aa825c862e9921a5ce1aae993e006e50a}
+}]\index{L\-E\-D\-A\-C\-T\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F@{L\-E\-D\-A\-C\-T\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-A\-C\-T\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F@{L\-E\-D\-A\-C\-T\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F}}\item[{\em 
+\hypertarget{led_8h_adb4d342e29cca0fab8b687d0ac869223ac8ce161f00d8277a999115a5b6c151c6}{L\-E\-D\-A\-C\-T\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F}\label{led_8h_adb4d342e29cca0fab8b687d0ac869223ac8ce161f00d8277a999115a5b6c151c6}
+}]\end{description}
+\end{Desc}
+\hypertarget{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86}{\index{led.\-h@{led.\-h}!L\-E\-D\-Color@{L\-E\-D\-Color}}
+\index{L\-E\-D\-Color@{L\-E\-D\-Color}!led.h@{led.\-h}}
+\subsubsection[{L\-E\-D\-Color}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf L\-E\-D\-Color}}}\label{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-B\-L\-U\-E@{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-B\-L\-U\-E}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-B\-L\-U\-E@{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-B\-L\-U\-E}}\item[{\em 
+\hypertarget{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86adf1075f424ab0e946cb5399952a69788}{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-B\-L\-U\-E}\label{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86adf1075f424ab0e946cb5399952a69788}
+}]\index{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-R\-E\-D@{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-R\-E\-D}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-R\-E\-D@{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-R\-E\-D}}\item[{\em 
+\hypertarget{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86a74c5181ada4bf9ee56f56420f2969da7}{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-R\-E\-D}\label{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86a74c5181ada4bf9ee56f56420f2969da7}
+}]\index{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-G\-R\-E\-E\-N@{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-G\-R\-E\-E\-N}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-G\-R\-E\-E\-N@{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-G\-R\-E\-E\-N}}\item[{\em 
+\hypertarget{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86a88309bcf3721dddb4722c3becfda7c23}{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-G\-R\-E\-E\-N}\label{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86a88309bcf3721dddb4722c3becfda7c23}
+}]\index{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-A\-M\-B\-E\-R@{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-A\-M\-B\-E\-R}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-A\-M\-B\-E\-R@{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-A\-M\-B\-E\-R}}\item[{\em 
+\hypertarget{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86a8b5380af61fcf5a977538e8977869e54}{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-A\-M\-B\-E\-R}\label{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86a8b5380af61fcf5a977538e8977869e54}
+}]\index{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-O\-R\-A\-N\-G\-E@{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-O\-R\-A\-N\-G\-E}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-O\-R\-A\-N\-G\-E@{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-O\-R\-A\-N\-G\-E}}\item[{\em 
+\hypertarget{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86aeeeb642e6902b7ba97bb88a1a06f66bc}{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-O\-R\-A\-N\-G\-E}\label{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86aeeeb642e6902b7ba97bb88a1a06f66bc}
+}]\index{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-W\-H\-I\-T\-E@{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-W\-H\-I\-T\-E}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-W\-H\-I\-T\-E@{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-W\-H\-I\-T\-E}}\item[{\em 
+\hypertarget{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86a5596e55c83d3a23178682e767df7ac6c}{L\-E\-D\-C\-O\-L\-O\-R\-\_\-\-W\-H\-I\-T\-E}\label{led_8h_ad9863eda5ebf62f855a438d9bf3e5b86a5596e55c83d3a23178682e767df7ac6c}
+}]\end{description}
+\end{Desc}
+\hypertarget{led_8h_a8a2be46da7529c49f977640213c22afb}{\index{led.\-h@{led.\-h}!L\-E\-D\-Init\-\_\-status@{L\-E\-D\-Init\-\_\-status}}
+\index{L\-E\-D\-Init\-\_\-status@{L\-E\-D\-Init\-\_\-status}!led.h@{led.\-h}}
+\subsubsection[{L\-E\-D\-Init\-\_\-status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf L\-E\-D\-Init\-\_\-status}}}\label{led_8h_a8a2be46da7529c49f977640213c22afb}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\-E\-D\-I\-N\-I\-T\-\_\-\-O\-N@{L\-E\-D\-I\-N\-I\-T\-\_\-\-O\-N}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-I\-N\-I\-T\-\_\-\-O\-N@{L\-E\-D\-I\-N\-I\-T\-\_\-\-O\-N}}\item[{\em 
+\hypertarget{led_8h_a8a2be46da7529c49f977640213c22afba1e21d385e15a1c63430f6337a449f4d0}{L\-E\-D\-I\-N\-I\-T\-\_\-\-O\-N}\label{led_8h_a8a2be46da7529c49f977640213c22afba1e21d385e15a1c63430f6337a449f4d0}
+}]\index{L\-E\-D\-I\-N\-I\-T\-\_\-\-O\-F\-F@{L\-E\-D\-I\-N\-I\-T\-\_\-\-O\-F\-F}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-I\-N\-I\-T\-\_\-\-O\-F\-F@{L\-E\-D\-I\-N\-I\-T\-\_\-\-O\-F\-F}}\item[{\em 
+\hypertarget{led_8h_a8a2be46da7529c49f977640213c22afba4c3c690e31c8b9ec9d2b856f68ad5ef7}{L\-E\-D\-I\-N\-I\-T\-\_\-\-O\-F\-F}\label{led_8h_a8a2be46da7529c49f977640213c22afba4c3c690e31c8b9ec9d2b856f68ad5ef7}
+}]\end{description}
+\end{Desc}
+\hypertarget{led_8h_a57effb96f46e458675a2653d4c543ca2}{\index{led.\-h@{led.\-h}!L\-E\-D\-Mode@{L\-E\-D\-Mode}}
+\index{L\-E\-D\-Mode@{L\-E\-D\-Mode}!led.h@{led.\-h}}
+\subsubsection[{L\-E\-D\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf L\-E\-D\-Mode}}}\label{led_8h_a57effb96f46e458675a2653d4c543ca2}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\-E\-D\-M\-O\-D\-E\-\_\-\-L\-O\-C\-A\-L@{L\-E\-D\-M\-O\-D\-E\-\_\-\-L\-O\-C\-A\-L}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-M\-O\-D\-E\-\_\-\-L\-O\-C\-A\-L@{L\-E\-D\-M\-O\-D\-E\-\_\-\-L\-O\-C\-A\-L}}\item[{\em 
+\hypertarget{led_8h_a57effb96f46e458675a2653d4c543ca2ae88afb31b1a3e784caff4086cb24da8a}{L\-E\-D\-M\-O\-D\-E\-\_\-\-L\-O\-C\-A\-L}\label{led_8h_a57effb96f46e458675a2653d4c543ca2ae88afb31b1a3e784caff4086cb24da8a}
+}]\index{L\-E\-D\-M\-O\-D\-E\-\_\-\-O\-V\-E\-R\-R\-I\-D\-E@{L\-E\-D\-M\-O\-D\-E\-\_\-\-O\-V\-E\-R\-R\-I\-D\-E}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-M\-O\-D\-E\-\_\-\-O\-V\-E\-R\-R\-I\-D\-E@{L\-E\-D\-M\-O\-D\-E\-\_\-\-O\-V\-E\-R\-R\-I\-D\-E}}\item[{\em 
+\hypertarget{led_8h_a57effb96f46e458675a2653d4c543ca2a604b8c8403540b61347cf09ed67e6eaa}{L\-E\-D\-M\-O\-D\-E\-\_\-\-O\-V\-E\-R\-R\-I\-D\-E}\label{led_8h_a57effb96f46e458675a2653d4c543ca2a604b8c8403540b61347cf09ed67e6eaa}
+}]\index{L\-E\-D\-M\-O\-D\-E\-\_\-\-L\-A\-M\-P\-T\-E\-S\-T@{L\-E\-D\-M\-O\-D\-E\-\_\-\-L\-A\-M\-P\-T\-E\-S\-T}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-M\-O\-D\-E\-\_\-\-L\-A\-M\-P\-T\-E\-S\-T@{L\-E\-D\-M\-O\-D\-E\-\_\-\-L\-A\-M\-P\-T\-E\-S\-T}}\item[{\em 
+\hypertarget{led_8h_a57effb96f46e458675a2653d4c543ca2a30b940d3f6e0989449650dc2623856b1}{L\-E\-D\-M\-O\-D\-E\-\_\-\-L\-A\-M\-P\-T\-E\-S\-T}\label{led_8h_a57effb96f46e458675a2653d4c543ca2a30b940d3f6e0989449650dc2623856b1}
+}]\index{L\-E\-D\-M\-O\-D\-E\-\_\-\-C\-N\-T@{L\-E\-D\-M\-O\-D\-E\-\_\-\-C\-N\-T}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-M\-O\-D\-E\-\_\-\-C\-N\-T@{L\-E\-D\-M\-O\-D\-E\-\_\-\-C\-N\-T}}\item[{\em 
+\hypertarget{led_8h_a57effb96f46e458675a2653d4c543ca2acfe39eac075b00326eb71c682dbdef63}{L\-E\-D\-M\-O\-D\-E\-\_\-\-C\-N\-T}\label{led_8h_a57effb96f46e458675a2653d4c543ca2acfe39eac075b00326eb71c682dbdef63}
+}]\end{description}
+\end{Desc}
+\hypertarget{led_8h_a51a69e0b98357e170e63bc843e2fd1c0}{\index{led.\-h@{led.\-h}!L\-E\-D\-State@{L\-E\-D\-State}}
+\index{L\-E\-D\-State@{L\-E\-D\-State}!led.h@{led.\-h}}
+\subsubsection[{L\-E\-D\-State}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf L\-E\-D\-State}}}\label{led_8h_a51a69e0b98357e170e63bc843e2fd1c0}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\-E\-D\-S\-T\-A\-T\-E\-\_\-\-I\-N\-I\-T@{L\-E\-D\-S\-T\-A\-T\-E\-\_\-\-I\-N\-I\-T}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-S\-T\-A\-T\-E\-\_\-\-I\-N\-I\-T@{L\-E\-D\-S\-T\-A\-T\-E\-\_\-\-I\-N\-I\-T}}\item[{\em 
+\hypertarget{led_8h_a51a69e0b98357e170e63bc843e2fd1c0a87acd599dc9ce46abbe81e039f7be140}{L\-E\-D\-S\-T\-A\-T\-E\-\_\-\-I\-N\-I\-T}\label{led_8h_a51a69e0b98357e170e63bc843e2fd1c0a87acd599dc9ce46abbe81e039f7be140}
+}]\index{L\-E\-D\-S\-T\-A\-T\-E\-\_\-\-T\-O\-G\-G\-L\-E\-D@{L\-E\-D\-S\-T\-A\-T\-E\-\_\-\-T\-O\-G\-G\-L\-E\-D}!led.\-h@{led.\-h}}\index{led.\-h@{led.\-h}!L\-E\-D\-S\-T\-A\-T\-E\-\_\-\-T\-O\-G\-G\-L\-E\-D@{L\-E\-D\-S\-T\-A\-T\-E\-\_\-\-T\-O\-G\-G\-L\-E\-D}}\item[{\em 
+\hypertarget{led_8h_a51a69e0b98357e170e63bc843e2fd1c0a09eee685da5f0c4347d72b470e6fa072}{L\-E\-D\-S\-T\-A\-T\-E\-\_\-\-T\-O\-G\-G\-L\-E\-D}\label{led_8h_a51a69e0b98357e170e63bc843e2fd1c0a09eee685da5f0c4347d72b470e6fa072}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{led_8h_a3679b0ccb97b967a0a162bc786d354d4}{\index{led.\-h@{led.\-h}!amc\-\_\-led\-\_\-act@{amc\-\_\-led\-\_\-act}}
+\index{amc\-\_\-led\-\_\-act@{amc\-\_\-led\-\_\-act}!led.h@{led.\-h}}
+\subsubsection[{amc\-\_\-led\-\_\-act}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} amc\-\_\-led\-\_\-act (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{id, }
+\item[{uint8\-\_\-t}]{action}
+\end{DoxyParamCaption}
+)}}\label{led_8h_a3679b0ccb97b967a0a162bc786d354d4}
+\hypertarget{led_8h_a50cf228fce8563fc202330b7b4816cb9}{\index{led.\-h@{led.\-h}!L\-E\-D\-\_\-init@{L\-E\-D\-\_\-init}}
+\index{L\-E\-D\-\_\-init@{L\-E\-D\-\_\-init}!led.h@{led.\-h}}
+\subsubsection[{L\-E\-D\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} L\-E\-D\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{led_8h_a50cf228fce8563fc202330b7b4816cb9}
+\hypertarget{led_8h_a6f6e088d8b99a3a27a5fdcf15242da8a}{\index{led.\-h@{led.\-h}!L\-E\-D\-\_\-\-Task@{L\-E\-D\-\_\-\-Task}}
+\index{L\-E\-D\-\_\-\-Task@{L\-E\-D\-\_\-\-Task}!led.h@{led.\-h}}
+\subsubsection[{L\-E\-D\-\_\-\-Task}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} L\-E\-D\-\_\-\-Task (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{Parameters}
+\end{DoxyParamCaption}
+)}}\label{led_8h_a6f6e088d8b99a3a27a5fdcf15242da8a}
+\hypertarget{led_8h_a8fdb095408c357c7d78963a3f8930c16}{\index{led.\-h@{led.\-h}!L\-E\-D\-Update@{L\-E\-D\-Update}}
+\index{L\-E\-D\-Update@{L\-E\-D\-Update}!led.h@{led.\-h}}
+\subsubsection[{L\-E\-D\-Update}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf L\-E\-D\-Update} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{fru, }
+\item[{uint8\-\_\-t}]{led\-\_\-num, }
+\item[{uint8\-\_\-t}]{mode, }
+\item[{uint8\-\_\-t}]{init\-\_\-status, }
+\item[{uint16\-\_\-t}]{t\-\_\-init, }
+\item[{uint16\-\_\-t}]{t\-\_\-toggle}
+\end{DoxyParamCaption}
+)}}\label{led_8h_a8fdb095408c357c7d78963a3f8930c16}

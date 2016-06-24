@@ -1,0 +1,49 @@
+\hypertarget{group__USBD__CDC}{\section{Communication Device Class (C\-D\-C) Function Driver}
+\label{group__USBD__CDC}\index{Communication Device Class (\-C\-D\-C) Function Driver@{Communication Device Class (\-C\-D\-C) Function Driver}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structUSBD__CDC__INIT__PARAM}{U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M}
+\begin{DoxyCompactList}\small\item\em Communication Device Class function driver initialization parameter data structure. \end{DoxyCompactList}\item 
+struct \hyperlink{structUSBD__CDC__API}{U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-A\-P\-I}
+\begin{DoxyCompactList}\small\item\em C\-D\-C class A\-P\-I functions structure.
+
+This module exposes functions which interact directly with U\-S\-B device controller hardware. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structUSBD__CDC__INIT__PARAM}{U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M} \hyperlink{group__USBD__CDC_ga78b2c5f20653181161c59062795233b3}{U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T}
+\begin{DoxyCompactList}\small\item\em Communication Device Class function driver initialization parameter data structure. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structUSBD__CDC__API}{U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-A\-P\-I} \hyperlink{group__USBD__CDC_gaad7f61aed01ad4130bee0f50b17eb716}{U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-A\-P\-I\-\_\-\-T}
+\begin{DoxyCompactList}\small\item\em C\-D\-C class A\-P\-I functions structure.
+
+This module exposes functions which interact directly with U\-S\-B device controller hardware. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hypertarget{group__USBD__CDC_Sec_CDCModDescription}{}\subsection{Module Description}\label{group__USBD__CDC_Sec_CDCModDescription}
+C\-D\-C Class Function Driver module. This module contains an internal implementation of the U\-S\-B C\-D\-C Class.
+
+User applications can use this class driver instead of implementing the C\-D\-C-\/\-A\-C\-M class manually via the low-\/level U\-S\-B\-D\-\_\-\-H\-W and U\-S\-B\-D\-\_\-\-Core A\-P\-Is.
+
+This module is designed to simplify the user code by exposing only the required interface needed to interface with Devices using the U\-S\-B C\-D\-C-\/\-A\-C\-M Class. 
+
+\subsection{Typedef Documentation}
+\hypertarget{group__USBD__CDC_gaad7f61aed01ad4130bee0f50b17eb716}{\index{Communication Device Class (\-C\-D\-C) Function Driver@{Communication Device Class (\-C\-D\-C) Function Driver}!U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-A\-P\-I\-\_\-\-T@{U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-A\-P\-I\-\_\-\-T}}
+\index{U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-A\-P\-I\-\_\-\-T@{U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-A\-P\-I\-\_\-\-T}!Communication Device Class (CDC) Function Driver@{Communication Device Class (\-C\-D\-C) Function Driver}}
+\subsubsection[{U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-A\-P\-I\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-A\-P\-I}  {\bf U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-A\-P\-I\-\_\-\-T}}}\label{group__USBD__CDC_gaad7f61aed01ad4130bee0f50b17eb716}
+
+
+C\-D\-C class A\-P\-I functions structure.
+
+This module exposes functions which interact directly with U\-S\-B device controller hardware. 
+
+\hypertarget{group__USBD__CDC_ga78b2c5f20653181161c59062795233b3}{\index{Communication Device Class (\-C\-D\-C) Function Driver@{Communication Device Class (\-C\-D\-C) Function Driver}!U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T@{U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T}}
+\index{U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T@{U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T}!Communication Device Class (CDC) Function Driver@{Communication Device Class (\-C\-D\-C) Function Driver}}
+\subsubsection[{U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M}  {\bf U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T}}}\label{group__USBD__CDC_ga78b2c5f20653181161c59062795233b3}
+
+
+Communication Device Class function driver initialization parameter data structure. 
+
+This data structure is used to pass initialization parameters to the Communication Device Class function driver's init function. 

@@ -1,0 +1,99 @@
+\hypertarget{Paradigm_2Tern__EE_2large__untested_2portasm_8h}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Paradigm/\-Tern\-\_\-\-E\-E/large\-\_\-untested/portasm.h File Reference}
+\label{Paradigm_2Tern__EE_2large__untested_2portasm_8h}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Paradigm/\-Tern\-\_\-\-E\-E/large\-\_\-untested/portasm.\-h@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Paradigm/\-Tern\-\_\-\-E\-E/large\-\_\-untested/portasm.\-h}}
+}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Paradigm_2Tern__EE_2large__untested_2portasm_8h_a869a3163395ff1708939cebf15e224b9}{port\-S\-W\-I\-T\-C\-H\-\_\-\-C\-O\-N\-T\-E\-X\-T}()
+\item 
+\#define \hyperlink{Paradigm_2Tern__EE_2large__untested_2portasm_8h_a5ba70a7960be7c8188af742db5c6158e}{port\-F\-I\-R\-S\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T}()
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{Paradigm_2Tern__EE_2large__untested_2portasm_8h_af5b0f7452857787ed70ce2856ca74c4b}{T\-C\-B\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{Paradigm_2Tern__EE_2large__untested_2portasm_8h_a9c86137bc3c1cbffc39fff22627cb885}{v\-Task\-Switch\-Context} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile \hyperlink{BCC_216BitDOS_2common_2portasm_8h_af5b0f7452857787ed70ce2856ca74c4b}{T\-C\-B\-\_\-t} $\ast$volatile \hyperlink{Paradigm_2Tern__EE_2large__untested_2portasm_8h_af7b1fc0a36e224b885fb22b9936a03a2}{px\-Current\-T\-C\-B}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{Paradigm_2Tern__EE_2large__untested_2portasm_8h_a5ba70a7960be7c8188af742db5c6158e}{\index{Paradigm/\-Tern\-\_\-\-E\-E/large\-\_\-untested/portasm.\-h@{Paradigm/\-Tern\-\_\-\-E\-E/large\-\_\-untested/portasm.\-h}!port\-F\-I\-R\-S\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-F\-I\-R\-S\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T}}
+\index{port\-F\-I\-R\-S\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-F\-I\-R\-S\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T}!Paradigm/Tern_EE/large_untested/portasm.h@{Paradigm/\-Tern\-\_\-\-E\-E/large\-\_\-untested/portasm.\-h}}
+\subsubsection[{port\-F\-I\-R\-S\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-F\-I\-R\-S\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)}}\label{Paradigm_2Tern__EE_2large__untested_2portasm_8h_a5ba70a7960be7c8188af742db5c6158e}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{asm} \{ mov   ax, seg \hyperlink{BCC_216BitDOS_2common_2portasm_8h_a7cd782382601a8809780a8b6e8ffe570}{pxCurrentTCB}        \}   \(\backslash\)
+                            asm \{ mov   ds, ax                      \}   \(\backslash\)
+                            asm \{ les   bx, dword ptr \hyperlink{BCC_216BitDOS_2common_2portasm_8h_a7cd782382601a8809780a8b6e8ffe570}{pxCurrentTCB}  \}   \(\backslash\)
+                            asm \{ mov   ss, es:[ bx + 2 ]           \}   \(\backslash\)
+                            asm \{ mov   \hyperlink{isr__support_8h_a78954c18cde9882760485d3420c872db}{sp}, es:[ bx ]             \}   \(\backslash\)
+                            asm \{ pop   bp                          \}   \(\backslash\)
+                            asm \{ pop   di                          \}   \(\backslash\)
+                            asm \{ pop   si                          \}   \(\backslash\)
+                            asm \{ pop   ds                          \}   \(\backslash\)
+                            asm \{ pop   es                          \}   \(\backslash\)
+                            asm \{ pop   dx                          \}   \(\backslash\)
+                            asm \{ pop   cx                          \}   \(\backslash\)
+                            asm \{ pop   bx                          \}   \(\backslash\)
+                            asm \{ pop   ax                          \}   \(\backslash\)
+                            asm \{ iret                              \}
+\end{DoxyCode}
+\hypertarget{Paradigm_2Tern__EE_2large__untested_2portasm_8h_a869a3163395ff1708939cebf15e224b9}{\index{Paradigm/\-Tern\-\_\-\-E\-E/large\-\_\-untested/portasm.\-h@{Paradigm/\-Tern\-\_\-\-E\-E/large\-\_\-untested/portasm.\-h}!port\-S\-W\-I\-T\-C\-H\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-S\-W\-I\-T\-C\-H\-\_\-\-C\-O\-N\-T\-E\-X\-T}}
+\index{port\-S\-W\-I\-T\-C\-H\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-S\-W\-I\-T\-C\-H\-\_\-\-C\-O\-N\-T\-E\-X\-T}!Paradigm/Tern_EE/large_untested/portasm.h@{Paradigm/\-Tern\-\_\-\-E\-E/large\-\_\-untested/portasm.\-h}}
+\subsubsection[{port\-S\-W\-I\-T\-C\-H\-\_\-\-C\-O\-N\-T\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-W\-I\-T\-C\-H\-\_\-\-C\-O\-N\-T\-E\-X\-T(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)}}\label{Paradigm_2Tern__EE_2large__untested_2portasm_8h_a869a3163395ff1708939cebf15e224b9}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{asm} \{ mov   ax, seg \hyperlink{BCC_216BitDOS_2common_2portasm_8h_a7cd782382601a8809780a8b6e8ffe570}{pxCurrentTCB}        \} \(\backslash\)
+                            asm \{ mov   ds, ax                      \}  \(\backslash\)
+                            asm \{ les   bx, \hyperlink{BCC_216BitDOS_2common_2portasm_8h_a7cd782382601a8809780a8b6e8ffe570}{pxCurrentTCB}            \}   \textcolor{comment}{/* Save the stack
+       pointer into the TCB. */}    \(\backslash\)
+                            asm \{ mov   es:0x2[ bx ], ss            \}   \(\backslash\)
+                            asm \{ mov   es:[ bx ], \hyperlink{isr__support_8h_a78954c18cde9882760485d3420c872db}{sp}             \}   \(\backslash\)
+                            asm \{ \hyperlink{CCS_2MSP430X_2data__model_8h_a869a0a2c43d256ec1a6346c64bfca0ad}{call}  far ptr \hyperlink{BCC_216BitDOS_2common_2portasm_8h_a9c86137bc3c1cbffc39fff22627cb885}{vTaskSwitchContext}    \}   \textcolor{comment}{/* Perform
+       the switch. */}   \(\backslash\)
+                            asm \{ mov   ax, seg \hyperlink{BCC_216BitDOS_2common_2portasm_8h_a7cd782382601a8809780a8b6e8ffe570}{pxCurrentTCB}        \}   \textcolor{comment}{/* Restore the stack
+       pointer from the TCB. */}  \(\backslash\)
+                            asm \{ mov   ds, ax                      \}   \(\backslash\)
+                            asm \{ les   bx, dword ptr \hyperlink{BCC_216BitDOS_2common_2portasm_8h_a7cd782382601a8809780a8b6e8ffe570}{pxCurrentTCB}  \}   \(\backslash\)
+                            asm \{ mov   ss, es:[ bx + 2 ]           \}      \(\backslash\)
+                            asm \{ mov   \hyperlink{isr__support_8h_a78954c18cde9882760485d3420c872db}{sp}, es:[ bx ]             \}
+\end{DoxyCode}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{Paradigm_2Tern__EE_2large__untested_2portasm_8h_af5b0f7452857787ed70ce2856ca74c4b}{\index{Paradigm/\-Tern\-\_\-\-E\-E/large\-\_\-untested/portasm.\-h@{Paradigm/\-Tern\-\_\-\-E\-E/large\-\_\-untested/portasm.\-h}!T\-C\-B\-\_\-t@{T\-C\-B\-\_\-t}}
+\index{T\-C\-B\-\_\-t@{T\-C\-B\-\_\-t}!Paradigm/Tern_EE/large_untested/portasm.h@{Paradigm/\-Tern\-\_\-\-E\-E/large\-\_\-untested/portasm.\-h}}
+\subsubsection[{T\-C\-B\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void} {\bf T\-C\-B\-\_\-t}}}\label{Paradigm_2Tern__EE_2large__untested_2portasm_8h_af5b0f7452857787ed70ce2856ca74c4b}
+
+
+\subsection{Function Documentation}
+\hypertarget{Paradigm_2Tern__EE_2large__untested_2portasm_8h_a9c86137bc3c1cbffc39fff22627cb885}{\index{Paradigm/\-Tern\-\_\-\-E\-E/large\-\_\-untested/portasm.\-h@{Paradigm/\-Tern\-\_\-\-E\-E/large\-\_\-untested/portasm.\-h}!v\-Task\-Switch\-Context@{v\-Task\-Switch\-Context}}
+\index{v\-Task\-Switch\-Context@{v\-Task\-Switch\-Context}!Paradigm/Tern_EE/large_untested/portasm.h@{Paradigm/\-Tern\-\_\-\-E\-E/large\-\_\-untested/portasm.\-h}}
+\subsubsection[{v\-Task\-Switch\-Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Task\-Switch\-Context (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{Paradigm_2Tern__EE_2large__untested_2portasm_8h_a9c86137bc3c1cbffc39fff22627cb885}
+
+
+\subsection{Variable Documentation}
+\hypertarget{Paradigm_2Tern__EE_2large__untested_2portasm_8h_af7b1fc0a36e224b885fb22b9936a03a2}{\index{Paradigm/\-Tern\-\_\-\-E\-E/large\-\_\-untested/portasm.\-h@{Paradigm/\-Tern\-\_\-\-E\-E/large\-\_\-untested/portasm.\-h}!px\-Current\-T\-C\-B@{px\-Current\-T\-C\-B}}
+\index{px\-Current\-T\-C\-B@{px\-Current\-T\-C\-B}!Paradigm/Tern_EE/large_untested/portasm.h@{Paradigm/\-Tern\-\_\-\-E\-E/large\-\_\-untested/portasm.\-h}}
+\subsubsection[{px\-Current\-T\-C\-B}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf T\-C\-B\-\_\-t}$\ast$ volatile px\-Current\-T\-C\-B}}\label{Paradigm_2Tern__EE_2large__untested_2portasm_8h_af7b1fc0a36e224b885fb22b9936a03a2}

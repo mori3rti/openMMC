@@ -1,0 +1,135 @@
+\hypertarget{lpc17__gpio_8h}{\section{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpc17\-\_\-gpio.h File Reference}
+\label{lpc17__gpio_8h}\index{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpc17\-\_\-gpio.\-h@{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpc17\-\_\-gpio.\-h}}
+}
+{\ttfamily \#include \char`\"{}gpio\-\_\-17xx\-\_\-40xx.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{lpc17__gpio_8h_aea281af6e4a0854ecaf1c92fb8588f28}{L\-P\-C17\-\_\-\-G\-P\-I\-O\-\_\-\-H\-\_\-}
+\item 
+\#define \hyperlink{lpc17__gpio_8h_a1bb283bd7893b9855e2f23013891fc82}{I\-N\-P\-U\-T}~0
+\item 
+\#define \hyperlink{lpc17__gpio_8h_a61a3c9a18380aafb6e430e79bf596557}{O\-U\-T\-P\-U\-T}~1
+\item 
+\#define \hyperlink{lpc17__gpio_8h_ab811d8c6ff3a505312d3276590444289}{L\-O\-W}~0
+\item 
+\#define \hyperlink{lpc17__gpio_8h_a5bb885982ff66a2e0a0a45a8ee9c35e2}{H\-I\-G\-H}~1
+\item 
+\#define \hyperlink{lpc17__gpio_8h_a849d46f6abb7f4e78f6cde87b7f0571b}{gpio\-\_\-init}()~\hyperlink{group__GPIO__17XX__40XX_gaeaca39372c8ff9f288243a20dd2259ce}{Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Init}( \hyperlink{group__PERIPH__407X__8X__BASE_ga8fce6a072685922bf3ebc1aa9070f408}{L\-P\-C\-\_\-\-G\-P\-I\-O} )
+\item 
+\#define \hyperlink{lpc17__gpio_8h_af04140f17175bf81e0ed388a029005f4}{gpio\-\_\-read\-\_\-pin}(port, pin)~\hyperlink{group__GPIO__17XX__40XX_ga9f0e35190f01c706564a88f1f88cf716}{Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Get\-Pin\-State}( \hyperlink{group__PERIPH__407X__8X__BASE_ga8fce6a072685922bf3ebc1aa9070f408}{L\-P\-C\-\_\-\-G\-P\-I\-O}, port, pin )
+\item 
+\#define \hyperlink{lpc17__gpio_8h_a24c4288bf64bbc9c6f312dd2fb4f0434}{gpio\-\_\-read\-\_\-port}(port)~\hyperlink{group__GPIO__17XX__40XX_ga14c7161208fed3f7ac4e62953353ab9b}{Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Get\-Port\-Value}( \hyperlink{group__PERIPH__407X__8X__BASE_ga8fce6a072685922bf3ebc1aa9070f408}{L\-P\-C\-\_\-\-G\-P\-I\-O}, port )
+\item 
+\#define \hyperlink{lpc17__gpio_8h_a1fccea682fb04fb65cfd55619da742a5}{gpio\-\_\-set\-\_\-pin}(port, pin)~\hyperlink{group__GPIO__17XX__40XX_ga1447549f6e88a29b5589326f177d4a96}{Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Set\-Pin\-Out\-High}( \hyperlink{group__PERIPH__407X__8X__BASE_ga8fce6a072685922bf3ebc1aa9070f408}{L\-P\-C\-\_\-\-G\-P\-I\-O}, port, pin )
+\item 
+\#define \hyperlink{lpc17__gpio_8h_a988fbd3484f79deb6336ecbdbcda0133}{gpio\-\_\-set\-\_\-port}(port, mask)~\hyperlink{group__GPIO__17XX__40XX_ga8a9b2dd9c70e835b718c2edc5b9701af}{Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Set\-Port\-Out\-High}( \hyperlink{group__PERIPH__407X__8X__BASE_ga8fce6a072685922bf3ebc1aa9070f408}{L\-P\-C\-\_\-\-G\-P\-I\-O}, port, mask )
+\item 
+\#define \hyperlink{lpc17__gpio_8h_ab75c1cf151054a0eb03ff37fa618371d}{gpio\-\_\-clr\-\_\-pin}(port, pin)~\hyperlink{group__GPIO__17XX__40XX_ga0e06760450b8e7a2c71920b06bcd6286}{Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Set\-Pin\-Out\-Low}( \hyperlink{group__PERIPH__407X__8X__BASE_ga8fce6a072685922bf3ebc1aa9070f408}{L\-P\-C\-\_\-\-G\-P\-I\-O}, port, pin )
+\item 
+\#define \hyperlink{lpc17__gpio_8h_aedebb9df812c9f5cd96aa44686032521}{gpio\-\_\-clr\-\_\-port}(port, mask)~\hyperlink{group__GPIO__17XX__40XX_ga2f85c3b0c7a48d68a508a0f94f6e691e}{Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Set\-Port\-Out\-Low}( \hyperlink{group__PERIPH__407X__8X__BASE_ga8fce6a072685922bf3ebc1aa9070f408}{L\-P\-C\-\_\-\-G\-P\-I\-O}, port, mask )
+\item 
+\#define \hyperlink{lpc17__gpio_8h_ab1cb0fb6db66ae4783a9b6e66605f4b5}{gpio\-\_\-pin\-\_\-toggle}(port, pin)~\hyperlink{group__GPIO__17XX__40XX_ga5437e5a8ae2ce7662b605f9961aad8f5}{Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Set\-Pin\-Toggle}( \hyperlink{group__PERIPH__407X__8X__BASE_ga8fce6a072685922bf3ebc1aa9070f408}{L\-P\-C\-\_\-\-G\-P\-I\-O}, port, pin )
+\item 
+\#define \hyperlink{lpc17__gpio_8h_a78f00dd20e8d207a4737511f57b9705a}{gpio\-\_\-set\-\_\-pin\-\_\-state}(port, pin, state)~\hyperlink{group__GPIO__17XX__40XX_ga2d8db9f0a52f061d64e8cada713ae03e}{Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Set\-Pin\-State}( \hyperlink{group__PERIPH__407X__8X__BASE_ga8fce6a072685922bf3ebc1aa9070f408}{L\-P\-C\-\_\-\-G\-P\-I\-O}, port, pin, state )
+\item 
+\#define \hyperlink{lpc17__gpio_8h_ac3f5cfa5d75037c54de09a93c9ff4d09}{gpio\-\_\-set\-\_\-pin\-\_\-dir}(port, pin, dir)~\hyperlink{group__GPIO__17XX__40XX_gac384ba462a45291528e95945c3273772}{Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Set\-Pin\-D\-I\-R}( \hyperlink{group__PERIPH__407X__8X__BASE_ga8fce6a072685922bf3ebc1aa9070f408}{L\-P\-C\-\_\-\-G\-P\-I\-O}, port, pin, dir )
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{lpc17__gpio_8h_ab75c1cf151054a0eb03ff37fa618371d}{\index{lpc17\-\_\-gpio.\-h@{lpc17\-\_\-gpio.\-h}!gpio\-\_\-clr\-\_\-pin@{gpio\-\_\-clr\-\_\-pin}}
+\index{gpio\-\_\-clr\-\_\-pin@{gpio\-\_\-clr\-\_\-pin}!lpc17_gpio.h@{lpc17\-\_\-gpio.\-h}}
+\subsubsection[{gpio\-\_\-clr\-\_\-pin}]{\setlength{\rightskip}{0pt plus 5cm}\#define gpio\-\_\-clr\-\_\-pin(
+\begin{DoxyParamCaption}
+\item[{}]{port, }
+\item[{}]{pin}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Set\-Pin\-Out\-Low}( {\bf L\-P\-C\-\_\-\-G\-P\-I\-O}, port, pin )}}\label{lpc17__gpio_8h_ab75c1cf151054a0eb03ff37fa618371d}
+\hypertarget{lpc17__gpio_8h_aedebb9df812c9f5cd96aa44686032521}{\index{lpc17\-\_\-gpio.\-h@{lpc17\-\_\-gpio.\-h}!gpio\-\_\-clr\-\_\-port@{gpio\-\_\-clr\-\_\-port}}
+\index{gpio\-\_\-clr\-\_\-port@{gpio\-\_\-clr\-\_\-port}!lpc17_gpio.h@{lpc17\-\_\-gpio.\-h}}
+\subsubsection[{gpio\-\_\-clr\-\_\-port}]{\setlength{\rightskip}{0pt plus 5cm}\#define gpio\-\_\-clr\-\_\-port(
+\begin{DoxyParamCaption}
+\item[{}]{port, }
+\item[{}]{mask}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Set\-Port\-Out\-Low}( {\bf L\-P\-C\-\_\-\-G\-P\-I\-O}, port, mask )}}\label{lpc17__gpio_8h_aedebb9df812c9f5cd96aa44686032521}
+\hypertarget{lpc17__gpio_8h_a849d46f6abb7f4e78f6cde87b7f0571b}{\index{lpc17\-\_\-gpio.\-h@{lpc17\-\_\-gpio.\-h}!gpio\-\_\-init@{gpio\-\_\-init}}
+\index{gpio\-\_\-init@{gpio\-\_\-init}!lpc17_gpio.h@{lpc17\-\_\-gpio.\-h}}
+\subsubsection[{gpio\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}\#define gpio\-\_\-init(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Init}( {\bf L\-P\-C\-\_\-\-G\-P\-I\-O} )}}\label{lpc17__gpio_8h_a849d46f6abb7f4e78f6cde87b7f0571b}
+\hypertarget{lpc17__gpio_8h_ab1cb0fb6db66ae4783a9b6e66605f4b5}{\index{lpc17\-\_\-gpio.\-h@{lpc17\-\_\-gpio.\-h}!gpio\-\_\-pin\-\_\-toggle@{gpio\-\_\-pin\-\_\-toggle}}
+\index{gpio\-\_\-pin\-\_\-toggle@{gpio\-\_\-pin\-\_\-toggle}!lpc17_gpio.h@{lpc17\-\_\-gpio.\-h}}
+\subsubsection[{gpio\-\_\-pin\-\_\-toggle}]{\setlength{\rightskip}{0pt plus 5cm}\#define gpio\-\_\-pin\-\_\-toggle(
+\begin{DoxyParamCaption}
+\item[{}]{port, }
+\item[{}]{pin}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Set\-Pin\-Toggle}( {\bf L\-P\-C\-\_\-\-G\-P\-I\-O}, port, pin )}}\label{lpc17__gpio_8h_ab1cb0fb6db66ae4783a9b6e66605f4b5}
+\hypertarget{lpc17__gpio_8h_af04140f17175bf81e0ed388a029005f4}{\index{lpc17\-\_\-gpio.\-h@{lpc17\-\_\-gpio.\-h}!gpio\-\_\-read\-\_\-pin@{gpio\-\_\-read\-\_\-pin}}
+\index{gpio\-\_\-read\-\_\-pin@{gpio\-\_\-read\-\_\-pin}!lpc17_gpio.h@{lpc17\-\_\-gpio.\-h}}
+\subsubsection[{gpio\-\_\-read\-\_\-pin}]{\setlength{\rightskip}{0pt plus 5cm}\#define gpio\-\_\-read\-\_\-pin(
+\begin{DoxyParamCaption}
+\item[{}]{port, }
+\item[{}]{pin}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Get\-Pin\-State}( {\bf L\-P\-C\-\_\-\-G\-P\-I\-O}, port, pin )}}\label{lpc17__gpio_8h_af04140f17175bf81e0ed388a029005f4}
+\hypertarget{lpc17__gpio_8h_a24c4288bf64bbc9c6f312dd2fb4f0434}{\index{lpc17\-\_\-gpio.\-h@{lpc17\-\_\-gpio.\-h}!gpio\-\_\-read\-\_\-port@{gpio\-\_\-read\-\_\-port}}
+\index{gpio\-\_\-read\-\_\-port@{gpio\-\_\-read\-\_\-port}!lpc17_gpio.h@{lpc17\-\_\-gpio.\-h}}
+\subsubsection[{gpio\-\_\-read\-\_\-port}]{\setlength{\rightskip}{0pt plus 5cm}\#define gpio\-\_\-read\-\_\-port(
+\begin{DoxyParamCaption}
+\item[{}]{port}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Get\-Port\-Value}( {\bf L\-P\-C\-\_\-\-G\-P\-I\-O}, port )}}\label{lpc17__gpio_8h_a24c4288bf64bbc9c6f312dd2fb4f0434}
+\hypertarget{lpc17__gpio_8h_a1fccea682fb04fb65cfd55619da742a5}{\index{lpc17\-\_\-gpio.\-h@{lpc17\-\_\-gpio.\-h}!gpio\-\_\-set\-\_\-pin@{gpio\-\_\-set\-\_\-pin}}
+\index{gpio\-\_\-set\-\_\-pin@{gpio\-\_\-set\-\_\-pin}!lpc17_gpio.h@{lpc17\-\_\-gpio.\-h}}
+\subsubsection[{gpio\-\_\-set\-\_\-pin}]{\setlength{\rightskip}{0pt plus 5cm}\#define gpio\-\_\-set\-\_\-pin(
+\begin{DoxyParamCaption}
+\item[{}]{port, }
+\item[{}]{pin}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Set\-Pin\-Out\-High}( {\bf L\-P\-C\-\_\-\-G\-P\-I\-O}, port, pin )}}\label{lpc17__gpio_8h_a1fccea682fb04fb65cfd55619da742a5}
+\hypertarget{lpc17__gpio_8h_ac3f5cfa5d75037c54de09a93c9ff4d09}{\index{lpc17\-\_\-gpio.\-h@{lpc17\-\_\-gpio.\-h}!gpio\-\_\-set\-\_\-pin\-\_\-dir@{gpio\-\_\-set\-\_\-pin\-\_\-dir}}
+\index{gpio\-\_\-set\-\_\-pin\-\_\-dir@{gpio\-\_\-set\-\_\-pin\-\_\-dir}!lpc17_gpio.h@{lpc17\-\_\-gpio.\-h}}
+\subsubsection[{gpio\-\_\-set\-\_\-pin\-\_\-dir}]{\setlength{\rightskip}{0pt plus 5cm}\#define gpio\-\_\-set\-\_\-pin\-\_\-dir(
+\begin{DoxyParamCaption}
+\item[{}]{port, }
+\item[{}]{pin, }
+\item[{}]{dir}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Set\-Pin\-D\-I\-R}( {\bf L\-P\-C\-\_\-\-G\-P\-I\-O}, port, pin, dir )}}\label{lpc17__gpio_8h_ac3f5cfa5d75037c54de09a93c9ff4d09}
+\hypertarget{lpc17__gpio_8h_a78f00dd20e8d207a4737511f57b9705a}{\index{lpc17\-\_\-gpio.\-h@{lpc17\-\_\-gpio.\-h}!gpio\-\_\-set\-\_\-pin\-\_\-state@{gpio\-\_\-set\-\_\-pin\-\_\-state}}
+\index{gpio\-\_\-set\-\_\-pin\-\_\-state@{gpio\-\_\-set\-\_\-pin\-\_\-state}!lpc17_gpio.h@{lpc17\-\_\-gpio.\-h}}
+\subsubsection[{gpio\-\_\-set\-\_\-pin\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}\#define gpio\-\_\-set\-\_\-pin\-\_\-state(
+\begin{DoxyParamCaption}
+\item[{}]{port, }
+\item[{}]{pin, }
+\item[{}]{state}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Set\-Pin\-State}( {\bf L\-P\-C\-\_\-\-G\-P\-I\-O}, port, pin, state )}}\label{lpc17__gpio_8h_a78f00dd20e8d207a4737511f57b9705a}
+\hypertarget{lpc17__gpio_8h_a988fbd3484f79deb6336ecbdbcda0133}{\index{lpc17\-\_\-gpio.\-h@{lpc17\-\_\-gpio.\-h}!gpio\-\_\-set\-\_\-port@{gpio\-\_\-set\-\_\-port}}
+\index{gpio\-\_\-set\-\_\-port@{gpio\-\_\-set\-\_\-port}!lpc17_gpio.h@{lpc17\-\_\-gpio.\-h}}
+\subsubsection[{gpio\-\_\-set\-\_\-port}]{\setlength{\rightskip}{0pt plus 5cm}\#define gpio\-\_\-set\-\_\-port(
+\begin{DoxyParamCaption}
+\item[{}]{port, }
+\item[{}]{mask}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-G\-P\-I\-O\-\_\-\-Set\-Port\-Out\-High}( {\bf L\-P\-C\-\_\-\-G\-P\-I\-O}, port, mask )}}\label{lpc17__gpio_8h_a988fbd3484f79deb6336ecbdbcda0133}
+\hypertarget{lpc17__gpio_8h_a5bb885982ff66a2e0a0a45a8ee9c35e2}{\index{lpc17\-\_\-gpio.\-h@{lpc17\-\_\-gpio.\-h}!H\-I\-G\-H@{H\-I\-G\-H}}
+\index{H\-I\-G\-H@{H\-I\-G\-H}!lpc17_gpio.h@{lpc17\-\_\-gpio.\-h}}
+\subsubsection[{H\-I\-G\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\-I\-G\-H~1}}\label{lpc17__gpio_8h_a5bb885982ff66a2e0a0a45a8ee9c35e2}
+\hypertarget{lpc17__gpio_8h_a1bb283bd7893b9855e2f23013891fc82}{\index{lpc17\-\_\-gpio.\-h@{lpc17\-\_\-gpio.\-h}!I\-N\-P\-U\-T@{I\-N\-P\-U\-T}}
+\index{I\-N\-P\-U\-T@{I\-N\-P\-U\-T}!lpc17_gpio.h@{lpc17\-\_\-gpio.\-h}}
+\subsubsection[{I\-N\-P\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-P\-U\-T~0}}\label{lpc17__gpio_8h_a1bb283bd7893b9855e2f23013891fc82}
+\hypertarget{lpc17__gpio_8h_ab811d8c6ff3a505312d3276590444289}{\index{lpc17\-\_\-gpio.\-h@{lpc17\-\_\-gpio.\-h}!L\-O\-W@{L\-O\-W}}
+\index{L\-O\-W@{L\-O\-W}!lpc17_gpio.h@{lpc17\-\_\-gpio.\-h}}
+\subsubsection[{L\-O\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-W~0}}\label{lpc17__gpio_8h_ab811d8c6ff3a505312d3276590444289}
+\hypertarget{lpc17__gpio_8h_aea281af6e4a0854ecaf1c92fb8588f28}{\index{lpc17\-\_\-gpio.\-h@{lpc17\-\_\-gpio.\-h}!L\-P\-C17\-\_\-\-G\-P\-I\-O\-\_\-\-H\-\_\-@{L\-P\-C17\-\_\-\-G\-P\-I\-O\-\_\-\-H\-\_\-}}
+\index{L\-P\-C17\-\_\-\-G\-P\-I\-O\-\_\-\-H\-\_\-@{L\-P\-C17\-\_\-\-G\-P\-I\-O\-\_\-\-H\-\_\-}!lpc17_gpio.h@{lpc17\-\_\-gpio.\-h}}
+\subsubsection[{L\-P\-C17\-\_\-\-G\-P\-I\-O\-\_\-\-H\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-P\-C17\-\_\-\-G\-P\-I\-O\-\_\-\-H\-\_\-}}\label{lpc17__gpio_8h_aea281af6e4a0854ecaf1c92fb8588f28}
+\hypertarget{lpc17__gpio_8h_a61a3c9a18380aafb6e430e79bf596557}{\index{lpc17\-\_\-gpio.\-h@{lpc17\-\_\-gpio.\-h}!O\-U\-T\-P\-U\-T@{O\-U\-T\-P\-U\-T}}
+\index{O\-U\-T\-P\-U\-T@{O\-U\-T\-P\-U\-T}!lpc17_gpio.h@{lpc17\-\_\-gpio.\-h}}
+\subsubsection[{O\-U\-T\-P\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-U\-T\-P\-U\-T~1}}\label{lpc17__gpio_8h_a61a3c9a18380aafb6e430e79bf596557}

@@ -1,0 +1,237 @@
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.h File Reference}
+\label{GCC_2PPC405__Xilinx_2portmacro_8h}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+}
+{\ttfamily \#include \char`\"{}xexception\-\_\-l.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_add0bdbfef5abf241c7774f68bde42f1d}{port\-C\-H\-A\-R}~char
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a1bbe1ef117ec274ef919e0a930c888ac}{port\-F\-L\-O\-A\-T}~float
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a4711ce186a903a14bc8ea7c8650b4f61}{port\-D\-O\-U\-B\-L\-E}~double
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a6bbebff6020ac333ab6ec2ffd7f77001}{port\-L\-O\-N\-G}~long
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a42e62d5881b12ff2a5c659576c64d003}{port\-S\-H\-O\-R\-T}~short
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_ab0a294066ac7369b8f59a52d9491a92c}{port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E}~uint32\-\_\-t
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E}~long
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a72723ba1e4a85ca14f25c2b9e066613d}{port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y}~( \hyperlink{Flsh186_2prtmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t} ) 0xffffffff\-U\-L
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a4088d4f41bae06c9e871b918888ce7e6}{port\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G\-\_\-\-I\-N\-\_\-\-T\-C\-B}~1
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a6e3d10ee1a0734a647ca192523c2cfc1}{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}()~X\-Exc\-\_\-m\-Disable\-Exceptions( X\-E\-X\-C\-\_\-\-N\-O\-N\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L );
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_abc47e85a6befbb47961ad5ee7aa57173}{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}()~X\-Exc\-\_\-m\-Enable\-Exceptions( X\-E\-X\-C\-\_\-\-N\-O\-N\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L );
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a8a09321ad004019f3c8d0f2e4d7224c7}{port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}()~\hyperlink{Renesas_2SH2A__FPU_2portmacro_8h_af7496ea503bc46ef98e35db9ce9d747f}{v\-Task\-Enter\-Critical}()
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a529358e6147881dd881c890ade21c9bd}{port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}()~\hyperlink{Renesas_2SH2A__FPU_2portmacro_8h_ab2026aedc871bc29b9ef3f88c08e2e85}{v\-Task\-Exit\-Critical}()
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_ae1ff06193615f5130b5a97dc9e708fc7}{port\-Y\-I\-E\-L\-D}()~asm volatile ( \char`\"{}S\-C \textbackslash{}n\textbackslash{}t N\-O\-P\char`\"{} )
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_ab35c804254f390845581c29fe6bcb65a}{port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}()~\hyperlink{tasks_8c_a9c86137bc3c1cbffc39fff22627cb885}{v\-Task\-Switch\-Context}()
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_ab9091ce3940d8bd93ec850122a2c6a1c}{port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T}~8
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a21adaab1601f6a0f35ba550a43060830}{port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H}~( -\/1 )
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a554d9322ce7f698a86a22b21234bd8cd}{port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S}~( ( \hyperlink{Flsh186_2prtmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t} ) 1000 / \hyperlink{FreeRTOSConfig_8h_a2f0258dd1e3b877e5bc013be54c2db6a}{config\-T\-I\-C\-K\-\_\-\-R\-A\-T\-E\-\_\-\-H\-Z} )
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a23c54dff0b50ff35563ef06c6d6d1835}{port\-N\-O\-P}()~asm volatile ( \char`\"{}N\-O\-P\char`\"{} )
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a83089879b6ca75134e8ab19f650e0a2c}{port\-N\-O\-\_\-\-F\-L\-O\-P\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S\-\_\-\-T\-O\-\_\-\-S\-A\-V\-E}~( 32 + 1 )
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a2921e1c5a1f974dfa01ae44d1f665f14}{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O}(v\-Function, pv\-Parameters)~\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} v\-Function( \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters )
+\item 
+\#define \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a3a289793652f505c538abea27045ccdf}{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}(v\-Function, pv\-Parameters)~\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} v\-Function( \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters )
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{WizC_2PIC18_2portmacro_8h_ab0a294066ac7369b8f59a52d9491a92c}{port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E} \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t}
+\item 
+typedef long \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a46fb21e00ae0729d7515c0fbf2269796}{Base\-Type\-\_\-t}
+\item 
+typedef unsigned long \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a646f89d4298e4f5afd522202b11cb2e6}{U\-Base\-Type\-\_\-t}
+\item 
+typedef uint32\-\_\-t \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_af7496ea503bc46ef98e35db9ce9d747f}{v\-Task\-Enter\-Critical} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_ab2026aedc871bc29b9ef3f88c08e2e85}{v\-Task\-Exit\-Critical} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_add01c927fb689f7ec170e42d47d27927}{v\-Port\-Yield} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_ae5be4d9eedc1da804c76cf9356563377}{v\-Port\-Setup\-Interrupt\-Controller} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{GCC_2PPC405__Xilinx_2portmacro_8h_a7e326747e8b11763013926ee724d5523}{x\-Port\-Install\-Interrupt\-Handler} (uint8\-\_\-t uc\-Interrupt\-I\-D, X\-Interrupt\-Handler px\-Handler, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Call\-Back\-Ref)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E@{port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E}}
+\index{port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E@{port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E~long}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_ab9091ce3940d8bd93ec850122a2c6a1c}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T@{port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T}}
+\index{port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T@{port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T~8}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_ab9091ce3940d8bd93ec850122a2c6a1c}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_add0bdbfef5abf241c7774f68bde42f1d}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-C\-H\-A\-R@{port\-C\-H\-A\-R}}
+\index{port\-C\-H\-A\-R@{port\-C\-H\-A\-R}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-C\-H\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-C\-H\-A\-R~char}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_add0bdbfef5abf241c7774f68bde42f1d}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a4088d4f41bae06c9e871b918888ce7e6}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G\-\_\-\-I\-N\-\_\-\-T\-C\-B@{port\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G\-\_\-\-I\-N\-\_\-\-T\-C\-B}}
+\index{port\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G\-\_\-\-I\-N\-\_\-\-T\-C\-B@{port\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G\-\_\-\-I\-N\-\_\-\-T\-C\-B}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G\-\_\-\-I\-N\-\_\-\-T\-C\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G\-\_\-\-I\-N\-\_\-\-T\-C\-B~1}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a4088d4f41bae06c9e871b918888ce7e6}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a6e3d10ee1a0734a647ca192523c2cfc1}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S@{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}}
+\index{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S@{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)~X\-Exc\-\_\-m\-Disable\-Exceptions( X\-E\-X\-C\-\_\-\-N\-O\-N\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L );}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a6e3d10ee1a0734a647ca192523c2cfc1}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a4711ce186a903a14bc8ea7c8650b4f61}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-D\-O\-U\-B\-L\-E@{port\-D\-O\-U\-B\-L\-E}}
+\index{port\-D\-O\-U\-B\-L\-E@{port\-D\-O\-U\-B\-L\-E}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-D\-O\-U\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-D\-O\-U\-B\-L\-E~double}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a4711ce186a903a14bc8ea7c8650b4f61}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_abc47e85a6befbb47961ad5ee7aa57173}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S@{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}}
+\index{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S@{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)~X\-Exc\-\_\-m\-Enable\-Exceptions( X\-E\-X\-C\-\_\-\-N\-O\-N\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L );}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_abc47e85a6befbb47961ad5ee7aa57173}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a8a09321ad004019f3c8d0f2e4d7224c7}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L@{port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}}
+\index{port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L@{port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)~{\bf v\-Task\-Enter\-Critical}()}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a8a09321ad004019f3c8d0f2e4d7224c7}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a529358e6147881dd881c890ade21c9bd}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L@{port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}}
+\index{port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L@{port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)~{\bf v\-Task\-Exit\-Critical}()}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a529358e6147881dd881c890ade21c9bd}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a1bbe1ef117ec274ef919e0a930c888ac}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-F\-L\-O\-A\-T@{port\-F\-L\-O\-A\-T}}
+\index{port\-F\-L\-O\-A\-T@{port\-F\-L\-O\-A\-T}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-F\-L\-O\-A\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-F\-L\-O\-A\-T~float}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a1bbe1ef117ec274ef919e0a930c888ac}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a6bbebff6020ac333ab6ec2ffd7f77001}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-L\-O\-N\-G@{port\-L\-O\-N\-G}}
+\index{port\-L\-O\-N\-G@{port\-L\-O\-N\-G}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-L\-O\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-L\-O\-N\-G~long}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a6bbebff6020ac333ab6ec2ffd7f77001}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a72723ba1e4a85ca14f25c2b9e066613d}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y@{port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y}}
+\index{port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y@{port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y~( {\bf Tick\-Type\-\_\-t} ) 0xffffffff\-U\-L}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a72723ba1e4a85ca14f25c2b9e066613d}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a83089879b6ca75134e8ab19f650e0a2c}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-N\-O\-\_\-\-F\-L\-O\-P\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S\-\_\-\-T\-O\-\_\-\-S\-A\-V\-E@{port\-N\-O\-\_\-\-F\-L\-O\-P\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S\-\_\-\-T\-O\-\_\-\-S\-A\-V\-E}}
+\index{port\-N\-O\-\_\-\-F\-L\-O\-P\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S\-\_\-\-T\-O\-\_\-\-S\-A\-V\-E@{port\-N\-O\-\_\-\-F\-L\-O\-P\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S\-\_\-\-T\-O\-\_\-\-S\-A\-V\-E}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-N\-O\-\_\-\-F\-L\-O\-P\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S\-\_\-\-T\-O\-\_\-\-S\-A\-V\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-N\-O\-\_\-\-F\-L\-O\-P\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S\-\_\-\-T\-O\-\_\-\-S\-A\-V\-E~( 32 + 1 )}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a83089879b6ca75134e8ab19f650e0a2c}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a23c54dff0b50ff35563ef06c6d6d1835}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-N\-O\-P@{port\-N\-O\-P}}
+\index{port\-N\-O\-P@{port\-N\-O\-P}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-N\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-N\-O\-P(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~asm volatile ( \char`\"{}N\-O\-P\char`\"{} )}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a23c54dff0b50ff35563ef06c6d6d1835}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a42e62d5881b12ff2a5c659576c64d003}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-S\-H\-O\-R\-T@{port\-S\-H\-O\-R\-T}}
+\index{port\-S\-H\-O\-R\-T@{port\-S\-H\-O\-R\-T}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-S\-H\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-H\-O\-R\-T~short}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a42e62d5881b12ff2a5c659576c64d003}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a21adaab1601f6a0f35ba550a43060830}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H@{port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H}}
+\index{port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H@{port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H~( -\/1 )}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a21adaab1601f6a0f35ba550a43060830}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_ab0a294066ac7369b8f59a52d9491a92c}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E@{port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E}}
+\index{port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E@{port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E~uint32\-\_\-t}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_ab0a294066ac7369b8f59a52d9491a92c}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a3a289793652f505c538abea27045ccdf}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N@{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}}
+\index{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N@{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N(
+\begin{DoxyParamCaption}
+\item[{}]{v\-Function, }
+\item[{}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)~{\bf void} v\-Function( {\bf void} $\ast$pv\-Parameters )}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a3a289793652f505c538abea27045ccdf}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a2921e1c5a1f974dfa01ae44d1f665f14}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O@{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O}}
+\index{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O@{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O(
+\begin{DoxyParamCaption}
+\item[{}]{v\-Function, }
+\item[{}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)~{\bf void} v\-Function( {\bf void} $\ast$pv\-Parameters )}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a2921e1c5a1f974dfa01ae44d1f665f14}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a554d9322ce7f698a86a22b21234bd8cd}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S@{port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S}}
+\index{port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S@{port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S~( ( {\bf Tick\-Type\-\_\-t} ) 1000 / {\bf config\-T\-I\-C\-K\-\_\-\-R\-A\-T\-E\-\_\-\-H\-Z} )}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a554d9322ce7f698a86a22b21234bd8cd}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_ae1ff06193615f5130b5a97dc9e708fc7}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-Y\-I\-E\-L\-D@{port\-Y\-I\-E\-L\-D}}
+\index{port\-Y\-I\-E\-L\-D@{port\-Y\-I\-E\-L\-D}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-Y\-I\-E\-L\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-Y\-I\-E\-L\-D(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~asm volatile ( \char`\"{}S\-C \textbackslash{}n\textbackslash{}t N\-O\-P\char`\"{} )}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_ae1ff06193615f5130b5a97dc9e708fc7}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_ab35c804254f390845581c29fe6bcb65a}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}}
+\index{port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf v\-Task\-Switch\-Context}()}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_ab35c804254f390845581c29fe6bcb65a}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a46fb21e00ae0729d7515c0fbf2269796}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!Base\-Type\-\_\-t@{Base\-Type\-\_\-t}}
+\index{Base\-Type\-\_\-t@{Base\-Type\-\_\-t}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{Base\-Type\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef long {\bf Base\-Type\-\_\-t}}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a46fb21e00ae0729d7515c0fbf2269796}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!Stack\-Type\-\_\-t@{Stack\-Type\-\_\-t}}
+\index{Stack\-Type\-\_\-t@{Stack\-Type\-\_\-t}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{Stack\-Type\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E} {\bf Stack\-Type\-\_\-t}}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!Tick\-Type\-\_\-t@{Tick\-Type\-\_\-t}}
+\index{Tick\-Type\-\_\-t@{Tick\-Type\-\_\-t}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{Tick\-Type\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint32\-\_\-t {\bf Tick\-Type\-\_\-t}}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a646f89d4298e4f5afd522202b11cb2e6}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!U\-Base\-Type\-\_\-t@{U\-Base\-Type\-\_\-t}}
+\index{U\-Base\-Type\-\_\-t@{U\-Base\-Type\-\_\-t}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{U\-Base\-Type\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long {\bf U\-Base\-Type\-\_\-t}}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a646f89d4298e4f5afd522202b11cb2e6}
+
+
+\subsection{Function Documentation}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_ae5be4d9eedc1da804c76cf9356563377}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!v\-Port\-Setup\-Interrupt\-Controller@{v\-Port\-Setup\-Interrupt\-Controller}}
+\index{v\-Port\-Setup\-Interrupt\-Controller@{v\-Port\-Setup\-Interrupt\-Controller}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{v\-Port\-Setup\-Interrupt\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Setup\-Interrupt\-Controller (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_ae5be4d9eedc1da804c76cf9356563377}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_add01c927fb689f7ec170e42d47d27927}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!v\-Port\-Yield@{v\-Port\-Yield}}
+\index{v\-Port\-Yield@{v\-Port\-Yield}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{v\-Port\-Yield}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Yield (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_add01c927fb689f7ec170e42d47d27927}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_af7496ea503bc46ef98e35db9ce9d747f}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!v\-Task\-Enter\-Critical@{v\-Task\-Enter\-Critical}}
+\index{v\-Task\-Enter\-Critical@{v\-Task\-Enter\-Critical}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{v\-Task\-Enter\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Task\-Enter\-Critical (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_af7496ea503bc46ef98e35db9ce9d747f}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_ab2026aedc871bc29b9ef3f88c08e2e85}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!v\-Task\-Exit\-Critical@{v\-Task\-Exit\-Critical}}
+\index{v\-Task\-Exit\-Critical@{v\-Task\-Exit\-Critical}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{v\-Task\-Exit\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Task\-Exit\-Critical (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_ab2026aedc871bc29b9ef3f88c08e2e85}
+\hypertarget{GCC_2PPC405__Xilinx_2portmacro_8h_a7e326747e8b11763013926ee724d5523}{\index{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}!x\-Port\-Install\-Interrupt\-Handler@{x\-Port\-Install\-Interrupt\-Handler}}
+\index{x\-Port\-Install\-Interrupt\-Handler@{x\-Port\-Install\-Interrupt\-Handler}!GCC/PPC405_Xilinx/portmacro.h@{G\-C\-C/\-P\-P\-C405\-\_\-\-Xilinx/portmacro.\-h}}
+\subsubsection[{x\-Port\-Install\-Interrupt\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} x\-Port\-Install\-Interrupt\-Handler (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{uc\-Interrupt\-I\-D, }
+\item[{X\-Interrupt\-Handler}]{px\-Handler, }
+\item[{{\bf void} $\ast$}]{pv\-Call\-Back\-Ref}
+\end{DoxyParamCaption}
+)}}\label{GCC_2PPC405__Xilinx_2portmacro_8h_a7e326747e8b11763013926ee724d5523}

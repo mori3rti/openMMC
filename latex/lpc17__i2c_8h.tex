@@ -1,0 +1,107 @@
+\hypertarget{lpc17__i2c_8h}{\section{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpc17\-\_\-i2c.h File Reference}
+\label{lpc17__i2c_8h}\index{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpc17\-\_\-i2c.\-h@{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpc17\-\_\-i2c.\-h}}
+}
+
+
+I2\-C driver for L\-P\-C17xx.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{lpc17__i2c_8h_a76a8759a11a951362ba2cee55fb9bea1}{i2c\-M\-A\-X\-\_\-\-M\-S\-G\-\_\-\-L\-E\-N\-G\-T\-H}~32
+\begin{DoxyCompactList}\small\item\em Max message length (in bits) used in I2\-C. \end{DoxyCompactList}\item 
+\#define \hyperlink{lpc17__i2c_8h_a52871317a7cf99e0ebd8e51371574830}{x\-I2\-C\-Master\-Write}(id, addr, tx\-\_\-buff, tx\-\_\-len)~\hyperlink{group__I2C__17XX__40XX_ga9ff549bdb526786d313c141b11cab43e}{Chip\-\_\-\-I2\-C\-\_\-\-Master\-Send}(id, addr, tx\-\_\-buff, tx\-\_\-len)
+\item 
+\#define \hyperlink{lpc17__i2c_8h_a99b5e79eab9824953c1b9bb00cdb0ea6}{x\-I2\-C\-Master\-Read}(id, addr, rx\-\_\-buff, rx\-\_\-len)~\hyperlink{group__I2C__17XX__40XX_gae816049843eb162c803b5058ebd9a25c}{Chip\-\_\-\-I2\-C\-\_\-\-Master\-Read}(id, addr, rx\-\_\-buff, rx\-\_\-len)
+\item 
+\#define \hyperlink{lpc17__i2c_8h_a17228eb98d676bba930b9ec68d20a0b9}{x\-I2\-C\-Master\-Write\-Read}(id, addr, cmd, rx\-\_\-buff, rx\-\_\-len)~\hyperlink{group__I2C__17XX__40XX_ga4a875b456dfe68acbe8ce1fc74d88bd3}{Chip\-\_\-\-I2\-C\-\_\-\-Master\-Cmd\-Read}(id, addr, cmd, rx\-\_\-buff, rx\-\_\-len)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\-\_\-t \hyperlink{lpc17__i2c_8h_a7b0777d6921bf55cb693310264e4a6bd}{x\-I2\-C\-Slave\-Receive} (\hyperlink{group__I2C__17XX__40XX_ga957556a4d900506cd4cba8427afd81e6}{I2\-C\-\_\-\-I\-D\-\_\-\-T} id, uint8\-\_\-t $\ast$rx\-\_\-buff, uint8\-\_\-t buff\-\_\-len, uint32\-\_\-t timeout)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{lpc17__i2c_8h_aa9f09ab0680c907a1ffb266a38bca4a0}{v\-I2\-C\-Slave\-Setup} (\hyperlink{group__I2C__17XX__40XX_ga957556a4d900506cd4cba8427afd81e6}{I2\-C\-\_\-\-I\-D\-\_\-\-T} id, uint8\-\_\-t slave\-\_\-addr)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{lpc17__i2c_8h_aeb8d11afa8ad0cca828bb2f5828d779e}{v\-I2\-C\-Config} (\hyperlink{group__I2C__17XX__40XX_ga957556a4d900506cd4cba8427afd81e6}{I2\-C\-\_\-\-I\-D\-\_\-\-T} id, uint32\-\_\-t speed)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+I2\-C driver for L\-P\-C17xx. \begin{DoxyAuthor}{Author}
+Henrique Silva \href{mailto:henrique.silva@lnls.br}{\tt henrique.\-silva@lnls.\-br}, L\-N\-L\-S 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March 2016 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{lpc17__i2c_8h_a76a8759a11a951362ba2cee55fb9bea1}{\index{lpc17\-\_\-i2c.\-h@{lpc17\-\_\-i2c.\-h}!i2c\-M\-A\-X\-\_\-\-M\-S\-G\-\_\-\-L\-E\-N\-G\-T\-H@{i2c\-M\-A\-X\-\_\-\-M\-S\-G\-\_\-\-L\-E\-N\-G\-T\-H}}
+\index{i2c\-M\-A\-X\-\_\-\-M\-S\-G\-\_\-\-L\-E\-N\-G\-T\-H@{i2c\-M\-A\-X\-\_\-\-M\-S\-G\-\_\-\-L\-E\-N\-G\-T\-H}!lpc17_i2c.h@{lpc17\-\_\-i2c.\-h}}
+\subsubsection[{i2c\-M\-A\-X\-\_\-\-M\-S\-G\-\_\-\-L\-E\-N\-G\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define i2c\-M\-A\-X\-\_\-\-M\-S\-G\-\_\-\-L\-E\-N\-G\-T\-H~32}}\label{lpc17__i2c_8h_a76a8759a11a951362ba2cee55fb9bea1}
+
+
+Max message length (in bits) used in I2\-C. 
+
+\hypertarget{lpc17__i2c_8h_a99b5e79eab9824953c1b9bb00cdb0ea6}{\index{lpc17\-\_\-i2c.\-h@{lpc17\-\_\-i2c.\-h}!x\-I2\-C\-Master\-Read@{x\-I2\-C\-Master\-Read}}
+\index{x\-I2\-C\-Master\-Read@{x\-I2\-C\-Master\-Read}!lpc17_i2c.h@{lpc17\-\_\-i2c.\-h}}
+\subsubsection[{x\-I2\-C\-Master\-Read}]{\setlength{\rightskip}{0pt plus 5cm}\#define x\-I2\-C\-Master\-Read(
+\begin{DoxyParamCaption}
+\item[{}]{id, }
+\item[{}]{addr, }
+\item[{}]{rx\-\_\-buff, }
+\item[{}]{rx\-\_\-len}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-I2\-C\-\_\-\-Master\-Read}(id, addr, rx\-\_\-buff, rx\-\_\-len)}}\label{lpc17__i2c_8h_a99b5e79eab9824953c1b9bb00cdb0ea6}
+\hypertarget{lpc17__i2c_8h_a52871317a7cf99e0ebd8e51371574830}{\index{lpc17\-\_\-i2c.\-h@{lpc17\-\_\-i2c.\-h}!x\-I2\-C\-Master\-Write@{x\-I2\-C\-Master\-Write}}
+\index{x\-I2\-C\-Master\-Write@{x\-I2\-C\-Master\-Write}!lpc17_i2c.h@{lpc17\-\_\-i2c.\-h}}
+\subsubsection[{x\-I2\-C\-Master\-Write}]{\setlength{\rightskip}{0pt plus 5cm}\#define x\-I2\-C\-Master\-Write(
+\begin{DoxyParamCaption}
+\item[{}]{id, }
+\item[{}]{addr, }
+\item[{}]{tx\-\_\-buff, }
+\item[{}]{tx\-\_\-len}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-I2\-C\-\_\-\-Master\-Send}(id, addr, tx\-\_\-buff, tx\-\_\-len)}}\label{lpc17__i2c_8h_a52871317a7cf99e0ebd8e51371574830}
+\hypertarget{lpc17__i2c_8h_a17228eb98d676bba930b9ec68d20a0b9}{\index{lpc17\-\_\-i2c.\-h@{lpc17\-\_\-i2c.\-h}!x\-I2\-C\-Master\-Write\-Read@{x\-I2\-C\-Master\-Write\-Read}}
+\index{x\-I2\-C\-Master\-Write\-Read@{x\-I2\-C\-Master\-Write\-Read}!lpc17_i2c.h@{lpc17\-\_\-i2c.\-h}}
+\subsubsection[{x\-I2\-C\-Master\-Write\-Read}]{\setlength{\rightskip}{0pt plus 5cm}\#define x\-I2\-C\-Master\-Write\-Read(
+\begin{DoxyParamCaption}
+\item[{}]{id, }
+\item[{}]{addr, }
+\item[{}]{cmd, }
+\item[{}]{rx\-\_\-buff, }
+\item[{}]{rx\-\_\-len}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-I2\-C\-\_\-\-Master\-Cmd\-Read}(id, addr, cmd, rx\-\_\-buff, rx\-\_\-len)}}\label{lpc17__i2c_8h_a17228eb98d676bba930b9ec68d20a0b9}
+
+
+\subsection{Function Documentation}
+\hypertarget{lpc17__i2c_8h_aeb8d11afa8ad0cca828bb2f5828d779e}{\index{lpc17\-\_\-i2c.\-h@{lpc17\-\_\-i2c.\-h}!v\-I2\-C\-Config@{v\-I2\-C\-Config}}
+\index{v\-I2\-C\-Config@{v\-I2\-C\-Config}!lpc17_i2c.h@{lpc17\-\_\-i2c.\-h}}
+\subsubsection[{v\-I2\-C\-Config}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-I2\-C\-Config (
+\begin{DoxyParamCaption}
+\item[{{\bf I2\-C\-\_\-\-I\-D\-\_\-\-T}}]{id, }
+\item[{uint32\-\_\-t}]{speed}
+\end{DoxyParamCaption}
+)}}\label{lpc17__i2c_8h_aeb8d11afa8ad0cca828bb2f5828d779e}
+\hypertarget{lpc17__i2c_8h_aa9f09ab0680c907a1ffb266a38bca4a0}{\index{lpc17\-\_\-i2c.\-h@{lpc17\-\_\-i2c.\-h}!v\-I2\-C\-Slave\-Setup@{v\-I2\-C\-Slave\-Setup}}
+\index{v\-I2\-C\-Slave\-Setup@{v\-I2\-C\-Slave\-Setup}!lpc17_i2c.h@{lpc17\-\_\-i2c.\-h}}
+\subsubsection[{v\-I2\-C\-Slave\-Setup}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-I2\-C\-Slave\-Setup (
+\begin{DoxyParamCaption}
+\item[{{\bf I2\-C\-\_\-\-I\-D\-\_\-\-T}}]{id, }
+\item[{uint8\-\_\-t}]{slave\-\_\-addr}
+\end{DoxyParamCaption}
+)}}\label{lpc17__i2c_8h_aa9f09ab0680c907a1ffb266a38bca4a0}
+\hypertarget{lpc17__i2c_8h_a7b0777d6921bf55cb693310264e4a6bd}{\index{lpc17\-\_\-i2c.\-h@{lpc17\-\_\-i2c.\-h}!x\-I2\-C\-Slave\-Receive@{x\-I2\-C\-Slave\-Receive}}
+\index{x\-I2\-C\-Slave\-Receive@{x\-I2\-C\-Slave\-Receive}!lpc17_i2c.h@{lpc17\-\_\-i2c.\-h}}
+\subsubsection[{x\-I2\-C\-Slave\-Receive}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t x\-I2\-C\-Slave\-Receive (
+\begin{DoxyParamCaption}
+\item[{{\bf I2\-C\-\_\-\-I\-D\-\_\-\-T}}]{id, }
+\item[{uint8\-\_\-t $\ast$}]{rx\-\_\-buff, }
+\item[{uint8\-\_\-t}]{buff\-\_\-len, }
+\item[{uint32\-\_\-t}]{timeout}
+\end{DoxyParamCaption}
+)}}\label{lpc17__i2c_8h_a7b0777d6921bf55cb693310264e4a6bd}

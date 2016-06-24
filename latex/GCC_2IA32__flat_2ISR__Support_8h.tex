@@ -1,0 +1,40 @@
+\hypertarget{GCC_2IA32__flat_2ISR__Support_8h}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-I\-A32\-\_\-flat/\-I\-S\-R\-\_\-\-Support.h File Reference}
+\label{GCC_2IA32__flat_2ISR__Support_8h}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-I\-A32\-\_\-flat/\-I\-S\-R\-\_\-\-Support.\-h@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-I\-A32\-\_\-flat/\-I\-S\-R\-\_\-\-Support.\-h}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+ul\-Top\-Of\-System\-Stack \\*
+ul\-Interrupt\-Nesting \hyperlink{ARM__CA9_2portASM_8h_a65c8432cac2434a5fc857e7562a4715e}{macro} \\*
+port\-F\-R\-E\-E\-R\-T\-O\-S\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-E\-N\-T\-R\-Y \\*
+pusha movl \hyperlink{GCC_2IA32__flat_2ISR__Support_8h_aa0ff340482c83563800640b082e0b0c3}{ul\-Interrupt\-Nesting}
+\item 
+ul\-Top\-Of\-System\-Stack \\*
+\hyperlink{GCC_2IA32__flat_2ISR__Support_8h_aa0ff340482c83563800640b082e0b0c3}{ul\-Interrupt\-Nesting} \hyperlink{ARM__CA9_2portASM_8h_a65c8432cac2434a5fc857e7562a4715e}{macro} \\*
+port\-F\-R\-E\-E\-R\-T\-O\-S\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-E\-N\-T\-R\-Y \\*
+pusha movl eax test \hyperlink{GCC_2IA32__flat_2ISR__Support_8h_a4002f2e4c769f6b28fa37cd997d9f6bb}{eax}
+\item 
+ul\-Top\-Of\-System\-Stack \\*
+\hyperlink{GCC_2IA32__flat_2ISR__Support_8h_aa0ff340482c83563800640b082e0b0c3}{ul\-Interrupt\-Nesting} \hyperlink{ARM__CA9_2portASM_8h_a65c8432cac2434a5fc857e7562a4715e}{macro} \\*
+port\-F\-R\-E\-E\-R\-T\-O\-S\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-E\-N\-T\-R\-Y \\*
+pusha movl \hyperlink{GCC_2IA32__flat_2ISR__Support_8h_a4002f2e4c769f6b28fa37cd997d9f6bb}{eax} test \hyperlink{GCC_2IA32__flat_2ISR__Support_8h_a4002f2e4c769f6b28fa37cd997d9f6bb}{eax} jne if \hyperlink{GCC_2IA32__flat_2ISR__Support_8h_a41352f6ee8cdc3d7d9867f5a4e8b2efc}{config\-S\-U\-P\-P\-O\-R\-T\-\_\-\-F\-P\-U}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{GCC_2IA32__flat_2ISR__Support_8h_a41352f6ee8cdc3d7d9867f5a4e8b2efc}{\index{G\-C\-C/\-I\-A32\-\_\-flat/\-I\-S\-R\-\_\-\-Support.\-h@{G\-C\-C/\-I\-A32\-\_\-flat/\-I\-S\-R\-\_\-\-Support.\-h}!config\-S\-U\-P\-P\-O\-R\-T\-\_\-\-F\-P\-U@{config\-S\-U\-P\-P\-O\-R\-T\-\_\-\-F\-P\-U}}
+\index{config\-S\-U\-P\-P\-O\-R\-T\-\_\-\-F\-P\-U@{config\-S\-U\-P\-P\-O\-R\-T\-\_\-\-F\-P\-U}!GCC/IA32_flat/ISR_Support.h@{G\-C\-C/\-I\-A32\-\_\-flat/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{config\-S\-U\-P\-P\-O\-R\-T\-\_\-\-F\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}ul\-Top\-Of\-System\-Stack {\bf ul\-Interrupt\-Nesting} {\bf macro} port\-F\-R\-E\-E\-R\-T\-O\-S\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-E\-N\-T\-R\-Y pusha movl {\bf eax} test {\bf eax} jne if config\-S\-U\-P\-P\-O\-R\-T\-\_\-\-F\-P\-U}}\label{GCC_2IA32__flat_2ISR__Support_8h_a41352f6ee8cdc3d7d9867f5a4e8b2efc}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+== 1
+
+        
+        movl    pucPortTaskFPUContextBuffer
+\end{DoxyCode}
+\hypertarget{GCC_2IA32__flat_2ISR__Support_8h_a4002f2e4c769f6b28fa37cd997d9f6bb}{\index{G\-C\-C/\-I\-A32\-\_\-flat/\-I\-S\-R\-\_\-\-Support.\-h@{G\-C\-C/\-I\-A32\-\_\-flat/\-I\-S\-R\-\_\-\-Support.\-h}!eax@{eax}}
+\index{eax@{eax}!GCC/IA32_flat/ISR_Support.h@{G\-C\-C/\-I\-A32\-\_\-flat/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{eax}]{\setlength{\rightskip}{0pt plus 5cm}ul\-Top\-Of\-System\-Stack {\bf ul\-Interrupt\-Nesting} {\bf macro} port\-F\-R\-E\-E\-R\-T\-O\-S\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-E\-N\-T\-R\-Y pusha movl eax test eax jne if eax test eax}}\label{GCC_2IA32__flat_2ISR__Support_8h_a4002f2e4c769f6b28fa37cd997d9f6bb}
+\hypertarget{GCC_2IA32__flat_2ISR__Support_8h_aa0ff340482c83563800640b082e0b0c3}{\index{G\-C\-C/\-I\-A32\-\_\-flat/\-I\-S\-R\-\_\-\-Support.\-h@{G\-C\-C/\-I\-A32\-\_\-flat/\-I\-S\-R\-\_\-\-Support.\-h}!ul\-Interrupt\-Nesting@{ul\-Interrupt\-Nesting}}
+\index{ul\-Interrupt\-Nesting@{ul\-Interrupt\-Nesting}!GCC/IA32_flat/ISR_Support.h@{G\-C\-C/\-I\-A32\-\_\-flat/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{ul\-Interrupt\-Nesting}]{\setlength{\rightskip}{0pt plus 5cm}ul\-Top\-Of\-System\-Stack ul\-Interrupt\-Nesting {\bf macro} port\-F\-R\-E\-E\-R\-T\-O\-S\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-E\-N\-T\-R\-Y pusha movl ul\-Interrupt\-Nesting}}\label{GCC_2IA32__flat_2ISR__Support_8h_aa0ff340482c83563800640b082e0b0c3}

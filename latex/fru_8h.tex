@@ -1,0 +1,85 @@
+\hypertarget{fru_8h}{\section{/home/henrique/rep/open\-M\-M\-C/modules/fru.h File Reference}
+\label{fru_8h}\index{/home/henrique/rep/open\-M\-M\-C/modules/fru.\-h@{/home/henrique/rep/open\-M\-M\-C/modules/fru.\-h}}
+}
+{\ttfamily \#include $<$stdint.\-h$>$}\\*
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structfru__data}{fru\-\_\-data}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef size\-\_\-t($\ast$ \hyperlink{fru_8h_a41aff4730aa69cf10dd749b5befef9f5}{fru\-\_\-build\-\_\-t} )(uint8\-\_\-t $\ast$$\ast$buffer)
+\item 
+typedef struct \hyperlink{structfru__data}{fru\-\_\-data} \hyperlink{fru_8h_a6d62d8802ae2cfa4b0e5a8756b4d9465}{fru\-\_\-data\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{fru_8h_a99fb83031ce9923c84392b4e92f956b5a792f9112b1f2475109e943c09c378658}{F\-R\-U\-\_\-\-A\-M\-C}, 
+\hyperlink{fru_8h_a99fb83031ce9923c84392b4e92f956b5aff0a81a42520b45e0ed52e1432d8693a}{F\-R\-U\-\_\-\-C\-O\-U\-N\-T}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{fru_8h_ae87f2c71139fdbe571b37afb20aaab59}{fru\-\_\-init} (uint8\-\_\-t id)
+\item 
+size\-\_\-t \hyperlink{fru_8h_ae965521102668654c5988d0d680f29b1}{fru\-\_\-read} (uint8\-\_\-t id, uint8\-\_\-t $\ast$rx\-\_\-buff, uint16\-\_\-t \hyperlink{MPLAB_2PIC32MZ_2ISR__Support_8h_ac0542d92dfcd62c19170fd963f9e5052}{offset}, size\-\_\-t len)
+\item 
+size\-\_\-t \hyperlink{fru_8h_ab693e83ba3ca4031d65956ca78f47683}{fru\-\_\-write} (uint8\-\_\-t id, uint8\-\_\-t $\ast$tx\-\_\-buff, uint16\-\_\-t \hyperlink{MPLAB_2PIC32MZ_2ISR__Support_8h_ac0542d92dfcd62c19170fd963f9e5052}{offset}, size\-\_\-t len)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{fru_8h_a41aff4730aa69cf10dd749b5befef9f5}{\index{fru.\-h@{fru.\-h}!fru\-\_\-build\-\_\-t@{fru\-\_\-build\-\_\-t}}
+\index{fru\-\_\-build\-\_\-t@{fru\-\_\-build\-\_\-t}!fru.h@{fru.\-h}}
+\subsubsection[{fru\-\_\-build\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef size\-\_\-t($\ast$  fru\-\_\-build\-\_\-t)(uint8\-\_\-t $\ast$$\ast$buffer)}}\label{fru_8h_a41aff4730aa69cf10dd749b5befef9f5}
+\hypertarget{fru_8h_a6d62d8802ae2cfa4b0e5a8756b4d9465}{\index{fru.\-h@{fru.\-h}!fru\-\_\-data\-\_\-t@{fru\-\_\-data\-\_\-t}}
+\index{fru\-\_\-data\-\_\-t@{fru\-\_\-data\-\_\-t}!fru.h@{fru.\-h}}
+\subsubsection[{fru\-\_\-data\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf fru\-\_\-data}  {\bf fru\-\_\-data\-\_\-t}}}\label{fru_8h_a6d62d8802ae2cfa4b0e5a8756b4d9465}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{fru_8h_a99fb83031ce9923c84392b4e92f956b5}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{fru_8h_a99fb83031ce9923c84392b4e92f956b5}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{F\-R\-U\-\_\-\-A\-M\-C@{F\-R\-U\-\_\-\-A\-M\-C}!fru.\-h@{fru.\-h}}\index{fru.\-h@{fru.\-h}!F\-R\-U\-\_\-\-A\-M\-C@{F\-R\-U\-\_\-\-A\-M\-C}}\item[{\em 
+\hypertarget{fru_8h_a99fb83031ce9923c84392b4e92f956b5a792f9112b1f2475109e943c09c378658}{F\-R\-U\-\_\-\-A\-M\-C}\label{fru_8h_a99fb83031ce9923c84392b4e92f956b5a792f9112b1f2475109e943c09c378658}
+}]\index{F\-R\-U\-\_\-\-C\-O\-U\-N\-T@{F\-R\-U\-\_\-\-C\-O\-U\-N\-T}!fru.\-h@{fru.\-h}}\index{fru.\-h@{fru.\-h}!F\-R\-U\-\_\-\-C\-O\-U\-N\-T@{F\-R\-U\-\_\-\-C\-O\-U\-N\-T}}\item[{\em 
+\hypertarget{fru_8h_a99fb83031ce9923c84392b4e92f956b5aff0a81a42520b45e0ed52e1432d8693a}{F\-R\-U\-\_\-\-C\-O\-U\-N\-T}\label{fru_8h_a99fb83031ce9923c84392b4e92f956b5aff0a81a42520b45e0ed52e1432d8693a}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{fru_8h_ae87f2c71139fdbe571b37afb20aaab59}{\index{fru.\-h@{fru.\-h}!fru\-\_\-init@{fru\-\_\-init}}
+\index{fru\-\_\-init@{fru\-\_\-init}!fru.h@{fru.\-h}}
+\subsubsection[{fru\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} fru\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{id}
+\end{DoxyParamCaption}
+)}}\label{fru_8h_ae87f2c71139fdbe571b37afb20aaab59}
+\hypertarget{fru_8h_ae965521102668654c5988d0d680f29b1}{\index{fru.\-h@{fru.\-h}!fru\-\_\-read@{fru\-\_\-read}}
+\index{fru\-\_\-read@{fru\-\_\-read}!fru.h@{fru.\-h}}
+\subsubsection[{fru\-\_\-read}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t fru\-\_\-read (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{id, }
+\item[{uint8\-\_\-t $\ast$}]{rx\-\_\-buff, }
+\item[{uint16\-\_\-t}]{offset, }
+\item[{size\-\_\-t}]{len}
+\end{DoxyParamCaption}
+)}}\label{fru_8h_ae965521102668654c5988d0d680f29b1}
+\hypertarget{fru_8h_ab693e83ba3ca4031d65956ca78f47683}{\index{fru.\-h@{fru.\-h}!fru\-\_\-write@{fru\-\_\-write}}
+\index{fru\-\_\-write@{fru\-\_\-write}!fru.h@{fru.\-h}}
+\subsubsection[{fru\-\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t fru\-\_\-write (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{id, }
+\item[{uint8\-\_\-t $\ast$}]{tx\-\_\-buff, }
+\item[{uint16\-\_\-t}]{offset, }
+\item[{size\-\_\-t}]{len}
+\end{DoxyParamCaption}
+)}}\label{fru_8h_ab693e83ba3ca4031d65956ca78f47683}

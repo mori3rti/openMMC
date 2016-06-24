@@ -1,0 +1,121 @@
+\hypertarget{lpc17__hpm_8c}{\section{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpc17\-\_\-hpm.c File Reference}
+\label{lpc17__hpm_8c}\index{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpc17\-\_\-hpm.\-c@{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpc17\-\_\-hpm.\-c}}
+}
+
+
+Firmware update functions (H\-P\-M.\-1)  
+
+
+{\ttfamily \#include \char`\"{}chip\-\_\-lpc175x\-\_\-6x.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lpc17\-\_\-hpm.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}iap.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ipmi.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}boot.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\-\_\-t \hyperlink{lpc17__hpm_8c_a1529d2f81fa840539276465fb76e4e7f}{ipmc\-\_\-hpm\-\_\-prepare\-\_\-comp} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+uint8\-\_\-t \hyperlink{lpc17__hpm_8c_a86af696ae7006809bff8257b3524864b}{ipmc\-\_\-hpm\-\_\-upload\-\_\-block} (uint8\-\_\-t $\ast$block, uint16\-\_\-t size)
+\item 
+uint8\-\_\-t \hyperlink{lpc17__hpm_8c_a70ea30ebde716e95034bd22c821b2abe}{ipmc\-\_\-hpm\-\_\-finish\-\_\-upload} (uint32\-\_\-t image\-\_\-size)
+\item 
+uint8\-\_\-t \hyperlink{lpc17__hpm_8c_ab7fa5c11a3283a66617336f252b0d7c2}{ipmc\-\_\-hpm\-\_\-get\-\_\-upgrade\-\_\-status} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+uint8\-\_\-t \hyperlink{lpc17__hpm_8c_a3a8cd7cb1d1e90c88e1f2c6aaccfed34}{ipmc\-\_\-hpm\-\_\-activate\-\_\-firmware} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+uint8\-\_\-t \hyperlink{lpc17__hpm_8c_a48087044d8d72c0f660b6975ca7fc01f}{ipmc\-\_\-program\-\_\-page} (uint32\-\_\-t address, uint32\-\_\-t $\ast$data, uint32\-\_\-t size)
+\item 
+uint8\-\_\-t \hyperlink{lpc17__hpm_8c_a9885800687130ec47cd6e536a87a0202}{ipmc\-\_\-erase\-\_\-sector} (uint32\-\_\-t sector\-\_\-start, uint32\-\_\-t sector\-\_\-end)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\-\_\-t \hyperlink{lpc17__hpm_8c_a88beb0768ca6986a0969a7f1ca284ad6}{ipmc\-\_\-page\-\_\-addr} = 0
+\item 
+uint32\-\_\-t \hyperlink{lpc17__hpm_8c_a83a37f86f84c3ee096999eaa370ab8b0}{ipmc\-\_\-image\-\_\-size} = 0
+\item 
+uint32\-\_\-t \hyperlink{lpc17__hpm_8c_a3bc259e20c9d574b367aabb73b3526e9}{ipmc\-\_\-pg\-\_\-index} = 0
+\item 
+uint32\-\_\-t \hyperlink{lpc17__hpm_8c_a9f2eb1250baebed33401bdb9958de741}{ipmc\-\_\-page} \mbox{[}64\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Firmware update functions (H\-P\-M.\-1) \begin{DoxyAuthor}{Author}
+Henrique Silva \href{mailto:henrique.silva@lnls.br}{\tt henrique.\-silva@lnls.\-br}, L\-N\-L\-S 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{lpc17__hpm_8c_a9885800687130ec47cd6e536a87a0202}{\index{lpc17\-\_\-hpm.\-c@{lpc17\-\_\-hpm.\-c}!ipmc\-\_\-erase\-\_\-sector@{ipmc\-\_\-erase\-\_\-sector}}
+\index{ipmc\-\_\-erase\-\_\-sector@{ipmc\-\_\-erase\-\_\-sector}!lpc17_hpm.c@{lpc17\-\_\-hpm.\-c}}
+\subsubsection[{ipmc\-\_\-erase\-\_\-sector}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t ipmc\-\_\-erase\-\_\-sector (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{sector\-\_\-start, }
+\item[{uint32\-\_\-t}]{sector\-\_\-end}
+\end{DoxyParamCaption}
+)}}\label{lpc17__hpm_8c_a9885800687130ec47cd6e536a87a0202}
+\hypertarget{lpc17__hpm_8c_a3a8cd7cb1d1e90c88e1f2c6aaccfed34}{\index{lpc17\-\_\-hpm.\-c@{lpc17\-\_\-hpm.\-c}!ipmc\-\_\-hpm\-\_\-activate\-\_\-firmware@{ipmc\-\_\-hpm\-\_\-activate\-\_\-firmware}}
+\index{ipmc\-\_\-hpm\-\_\-activate\-\_\-firmware@{ipmc\-\_\-hpm\-\_\-activate\-\_\-firmware}!lpc17_hpm.c@{lpc17\-\_\-hpm.\-c}}
+\subsubsection[{ipmc\-\_\-hpm\-\_\-activate\-\_\-firmware}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t ipmc\-\_\-hpm\-\_\-activate\-\_\-firmware (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{lpc17__hpm_8c_a3a8cd7cb1d1e90c88e1f2c6aaccfed34}
+\hypertarget{lpc17__hpm_8c_a70ea30ebde716e95034bd22c821b2abe}{\index{lpc17\-\_\-hpm.\-c@{lpc17\-\_\-hpm.\-c}!ipmc\-\_\-hpm\-\_\-finish\-\_\-upload@{ipmc\-\_\-hpm\-\_\-finish\-\_\-upload}}
+\index{ipmc\-\_\-hpm\-\_\-finish\-\_\-upload@{ipmc\-\_\-hpm\-\_\-finish\-\_\-upload}!lpc17_hpm.c@{lpc17\-\_\-hpm.\-c}}
+\subsubsection[{ipmc\-\_\-hpm\-\_\-finish\-\_\-upload}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t ipmc\-\_\-hpm\-\_\-finish\-\_\-upload (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{image\-\_\-size}
+\end{DoxyParamCaption}
+)}}\label{lpc17__hpm_8c_a70ea30ebde716e95034bd22c821b2abe}
+\hypertarget{lpc17__hpm_8c_ab7fa5c11a3283a66617336f252b0d7c2}{\index{lpc17\-\_\-hpm.\-c@{lpc17\-\_\-hpm.\-c}!ipmc\-\_\-hpm\-\_\-get\-\_\-upgrade\-\_\-status@{ipmc\-\_\-hpm\-\_\-get\-\_\-upgrade\-\_\-status}}
+\index{ipmc\-\_\-hpm\-\_\-get\-\_\-upgrade\-\_\-status@{ipmc\-\_\-hpm\-\_\-get\-\_\-upgrade\-\_\-status}!lpc17_hpm.c@{lpc17\-\_\-hpm.\-c}}
+\subsubsection[{ipmc\-\_\-hpm\-\_\-get\-\_\-upgrade\-\_\-status}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t ipmc\-\_\-hpm\-\_\-get\-\_\-upgrade\-\_\-status (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{lpc17__hpm_8c_ab7fa5c11a3283a66617336f252b0d7c2}
+\hypertarget{lpc17__hpm_8c_a1529d2f81fa840539276465fb76e4e7f}{\index{lpc17\-\_\-hpm.\-c@{lpc17\-\_\-hpm.\-c}!ipmc\-\_\-hpm\-\_\-prepare\-\_\-comp@{ipmc\-\_\-hpm\-\_\-prepare\-\_\-comp}}
+\index{ipmc\-\_\-hpm\-\_\-prepare\-\_\-comp@{ipmc\-\_\-hpm\-\_\-prepare\-\_\-comp}!lpc17_hpm.c@{lpc17\-\_\-hpm.\-c}}
+\subsubsection[{ipmc\-\_\-hpm\-\_\-prepare\-\_\-comp}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t ipmc\-\_\-hpm\-\_\-prepare\-\_\-comp (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{lpc17__hpm_8c_a1529d2f81fa840539276465fb76e4e7f}
+\hypertarget{lpc17__hpm_8c_a86af696ae7006809bff8257b3524864b}{\index{lpc17\-\_\-hpm.\-c@{lpc17\-\_\-hpm.\-c}!ipmc\-\_\-hpm\-\_\-upload\-\_\-block@{ipmc\-\_\-hpm\-\_\-upload\-\_\-block}}
+\index{ipmc\-\_\-hpm\-\_\-upload\-\_\-block@{ipmc\-\_\-hpm\-\_\-upload\-\_\-block}!lpc17_hpm.c@{lpc17\-\_\-hpm.\-c}}
+\subsubsection[{ipmc\-\_\-hpm\-\_\-upload\-\_\-block}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t ipmc\-\_\-hpm\-\_\-upload\-\_\-block (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t $\ast$}]{block, }
+\item[{uint16\-\_\-t}]{size}
+\end{DoxyParamCaption}
+)}}\label{lpc17__hpm_8c_a86af696ae7006809bff8257b3524864b}
+\hypertarget{lpc17__hpm_8c_a48087044d8d72c0f660b6975ca7fc01f}{\index{lpc17\-\_\-hpm.\-c@{lpc17\-\_\-hpm.\-c}!ipmc\-\_\-program\-\_\-page@{ipmc\-\_\-program\-\_\-page}}
+\index{ipmc\-\_\-program\-\_\-page@{ipmc\-\_\-program\-\_\-page}!lpc17_hpm.c@{lpc17\-\_\-hpm.\-c}}
+\subsubsection[{ipmc\-\_\-program\-\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t ipmc\-\_\-program\-\_\-page (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{address, }
+\item[{uint32\-\_\-t $\ast$}]{data, }
+\item[{uint32\-\_\-t}]{size}
+\end{DoxyParamCaption}
+)}}\label{lpc17__hpm_8c_a48087044d8d72c0f660b6975ca7fc01f}
+
+
+\subsection{Variable Documentation}
+\hypertarget{lpc17__hpm_8c_a83a37f86f84c3ee096999eaa370ab8b0}{\index{lpc17\-\_\-hpm.\-c@{lpc17\-\_\-hpm.\-c}!ipmc\-\_\-image\-\_\-size@{ipmc\-\_\-image\-\_\-size}}
+\index{ipmc\-\_\-image\-\_\-size@{ipmc\-\_\-image\-\_\-size}!lpc17_hpm.c@{lpc17\-\_\-hpm.\-c}}
+\subsubsection[{ipmc\-\_\-image\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t ipmc\-\_\-image\-\_\-size = 0}}\label{lpc17__hpm_8c_a83a37f86f84c3ee096999eaa370ab8b0}
+\hypertarget{lpc17__hpm_8c_a9f2eb1250baebed33401bdb9958de741}{\index{lpc17\-\_\-hpm.\-c@{lpc17\-\_\-hpm.\-c}!ipmc\-\_\-page@{ipmc\-\_\-page}}
+\index{ipmc\-\_\-page@{ipmc\-\_\-page}!lpc17_hpm.c@{lpc17\-\_\-hpm.\-c}}
+\subsubsection[{ipmc\-\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t ipmc\-\_\-page\mbox{[}64\mbox{]}}}\label{lpc17__hpm_8c_a9f2eb1250baebed33401bdb9958de741}
+\hypertarget{lpc17__hpm_8c_a88beb0768ca6986a0969a7f1ca284ad6}{\index{lpc17\-\_\-hpm.\-c@{lpc17\-\_\-hpm.\-c}!ipmc\-\_\-page\-\_\-addr@{ipmc\-\_\-page\-\_\-addr}}
+\index{ipmc\-\_\-page\-\_\-addr@{ipmc\-\_\-page\-\_\-addr}!lpc17_hpm.c@{lpc17\-\_\-hpm.\-c}}
+\subsubsection[{ipmc\-\_\-page\-\_\-addr}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t ipmc\-\_\-page\-\_\-addr = 0}}\label{lpc17__hpm_8c_a88beb0768ca6986a0969a7f1ca284ad6}
+\hypertarget{lpc17__hpm_8c_a3bc259e20c9d574b367aabb73b3526e9}{\index{lpc17\-\_\-hpm.\-c@{lpc17\-\_\-hpm.\-c}!ipmc\-\_\-pg\-\_\-index@{ipmc\-\_\-pg\-\_\-index}}
+\index{ipmc\-\_\-pg\-\_\-index@{ipmc\-\_\-pg\-\_\-index}!lpc17_hpm.c@{lpc17\-\_\-hpm.\-c}}
+\subsubsection[{ipmc\-\_\-pg\-\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t ipmc\-\_\-pg\-\_\-index = 0}}\label{lpc17__hpm_8c_a3bc259e20c9d574b367aabb73b3526e9}

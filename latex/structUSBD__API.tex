@@ -1,0 +1,72 @@
+\hypertarget{structUSBD__API}{\section{U\-S\-B\-D\-\_\-\-A\-P\-I Struct Reference}
+\label{structUSBD__API}\index{U\-S\-B\-D\-\_\-\-A\-P\-I@{U\-S\-B\-D\-\_\-\-A\-P\-I}}
+}
+
+
+Main U\-S\-B\-D A\-P\-I functions structure.
+
+This structure contains pointer to various U\-S\-B Device stack's sub-\/module function tables. This structure is used as main entry point to access various methods (grouped in sub-\/modules) exposed by R\-O\-M based U\-S\-B device stack.  
+
+
+
+
+{\ttfamily \#include $<$usbd\-\_\-rom\-\_\-api.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{group__USBD__HW_ga4df5b7beaddc4e9267c320d92b4434fc}{U\-S\-B\-D\-\_\-\-H\-W\-\_\-\-A\-P\-I\-\_\-\-T} $\ast$ \hyperlink{structUSBD__API_a80f452bd8ff7fdff6fb835beb5e3255c}{hw}
+\item 
+const \hyperlink{group__USBD__Core_ga6a53e8395d1c68f98d18ca4a49b75baa}{U\-S\-B\-D\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I\-\_\-\-T} $\ast$ \hyperlink{structUSBD__API_a52b343de8166692bd2b4aecfb5eea59d}{core}
+\item 
+const \hyperlink{group__USBD__MSC_ga521bb0e0edf4060aeb10827c6c29f7cf}{U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-A\-P\-I\-\_\-\-T} $\ast$ \hyperlink{structUSBD__API_a0a7fefe527769345f3565fba289c8358}{msc}
+\item 
+const \hyperlink{group__USBD__DFU_gadf9281f8af1223053e3ccf48e26ac80d}{U\-S\-B\-D\-\_\-\-D\-F\-U\-\_\-\-A\-P\-I\-\_\-\-T} $\ast$ \hyperlink{structUSBD__API_ade2d145690a4684babfc683b9cdec47f}{dfu}
+\item 
+const \hyperlink{group__USBD__HID_ga48d7b7f66a852d99dfbe2c419cc408ba}{U\-S\-B\-D\-\_\-\-H\-I\-D\-\_\-\-A\-P\-I\-\_\-\-T} $\ast$ \hyperlink{structUSBD__API_add4c43d092004fe92e77152d970e877b}{hid}
+\item 
+const \hyperlink{group__USBD__CDC_gaad7f61aed01ad4130bee0f50b17eb716}{U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-A\-P\-I\-\_\-\-T} $\ast$ \hyperlink{structUSBD__API_a5560686e2f376096d2e1a640bb16bb84}{cdc}
+\item 
+const uint32\-\_\-t $\ast$ \hyperlink{structUSBD__API_a4761deeab24d9655d4ab471dee37fe9a}{reserved6}
+\item 
+const uint32\-\_\-t \hyperlink{structUSBD__API_a900209612d9df086dd044b630607955b}{version}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main U\-S\-B\-D A\-P\-I functions structure.
+
+This structure contains pointer to various U\-S\-B Device stack's sub-\/module function tables. This structure is used as main entry point to access various methods (grouped in sub-\/modules) exposed by R\-O\-M based U\-S\-B device stack. 
+
+
+
+\subsection{Field Documentation}
+\hypertarget{structUSBD__API_a5560686e2f376096d2e1a640bb16bb84}{\index{U\-S\-B\-D\-\_\-\-A\-P\-I@{U\-S\-B\-D\-\_\-\-A\-P\-I}!cdc@{cdc}}
+\index{cdc@{cdc}!USBD_API@{U\-S\-B\-D\-\_\-\-A\-P\-I}}
+\subsubsection[{cdc}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf U\-S\-B\-D\-\_\-\-C\-D\-C\-\_\-\-A\-P\-I\-\_\-\-T}$\ast$ U\-S\-B\-D\-\_\-\-A\-P\-I\-::cdc}}\label{structUSBD__API_a5560686e2f376096d2e1a640bb16bb84}
+Pointer to function table which exposes functions provided by C\-D\-C-\/\-A\-C\-M function driver module. \hypertarget{structUSBD__API_a52b343de8166692bd2b4aecfb5eea59d}{\index{U\-S\-B\-D\-\_\-\-A\-P\-I@{U\-S\-B\-D\-\_\-\-A\-P\-I}!core@{core}}
+\index{core@{core}!USBD_API@{U\-S\-B\-D\-\_\-\-A\-P\-I}}
+\subsubsection[{core}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf U\-S\-B\-D\-\_\-\-C\-O\-R\-E\-\_\-\-A\-P\-I\-\_\-\-T}$\ast$ U\-S\-B\-D\-\_\-\-A\-P\-I\-::core}}\label{structUSBD__API_a52b343de8166692bd2b4aecfb5eea59d}
+Pointer to function table which exposes functions which interact directly with U\-S\-B device controller hardware. \hypertarget{structUSBD__API_ade2d145690a4684babfc683b9cdec47f}{\index{U\-S\-B\-D\-\_\-\-A\-P\-I@{U\-S\-B\-D\-\_\-\-A\-P\-I}!dfu@{dfu}}
+\index{dfu@{dfu}!USBD_API@{U\-S\-B\-D\-\_\-\-A\-P\-I}}
+\subsubsection[{dfu}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf U\-S\-B\-D\-\_\-\-D\-F\-U\-\_\-\-A\-P\-I\-\_\-\-T}$\ast$ U\-S\-B\-D\-\_\-\-A\-P\-I\-::dfu}}\label{structUSBD__API_ade2d145690a4684babfc683b9cdec47f}
+Pointer to function table which exposes functions provided by D\-F\-U function driver module. \hypertarget{structUSBD__API_add4c43d092004fe92e77152d970e877b}{\index{U\-S\-B\-D\-\_\-\-A\-P\-I@{U\-S\-B\-D\-\_\-\-A\-P\-I}!hid@{hid}}
+\index{hid@{hid}!USBD_API@{U\-S\-B\-D\-\_\-\-A\-P\-I}}
+\subsubsection[{hid}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf U\-S\-B\-D\-\_\-\-H\-I\-D\-\_\-\-A\-P\-I\-\_\-\-T}$\ast$ U\-S\-B\-D\-\_\-\-A\-P\-I\-::hid}}\label{structUSBD__API_add4c43d092004fe92e77152d970e877b}
+Pointer to function table which exposes functions provided by H\-I\-D function driver module. \hypertarget{structUSBD__API_a80f452bd8ff7fdff6fb835beb5e3255c}{\index{U\-S\-B\-D\-\_\-\-A\-P\-I@{U\-S\-B\-D\-\_\-\-A\-P\-I}!hw@{hw}}
+\index{hw@{hw}!USBD_API@{U\-S\-B\-D\-\_\-\-A\-P\-I}}
+\subsubsection[{hw}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf U\-S\-B\-D\-\_\-\-H\-W\-\_\-\-A\-P\-I\-\_\-\-T}$\ast$ U\-S\-B\-D\-\_\-\-A\-P\-I\-::hw}}\label{structUSBD__API_a80f452bd8ff7fdff6fb835beb5e3255c}
+Pointer to function table which exposes functions which interact directly with U\-S\-B device stack's core layer. \hypertarget{structUSBD__API_a0a7fefe527769345f3565fba289c8358}{\index{U\-S\-B\-D\-\_\-\-A\-P\-I@{U\-S\-B\-D\-\_\-\-A\-P\-I}!msc@{msc}}
+\index{msc@{msc}!USBD_API@{U\-S\-B\-D\-\_\-\-A\-P\-I}}
+\subsubsection[{msc}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-A\-P\-I\-\_\-\-T}$\ast$ U\-S\-B\-D\-\_\-\-A\-P\-I\-::msc}}\label{structUSBD__API_a0a7fefe527769345f3565fba289c8358}
+Pointer to function table which exposes functions provided by M\-S\-C function driver module. \hypertarget{structUSBD__API_a4761deeab24d9655d4ab471dee37fe9a}{\index{U\-S\-B\-D\-\_\-\-A\-P\-I@{U\-S\-B\-D\-\_\-\-A\-P\-I}!reserved6@{reserved6}}
+\index{reserved6@{reserved6}!USBD_API@{U\-S\-B\-D\-\_\-\-A\-P\-I}}
+\subsubsection[{reserved6}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\-\_\-t$\ast$ U\-S\-B\-D\-\_\-\-A\-P\-I\-::reserved6}}\label{structUSBD__API_a4761deeab24d9655d4ab471dee37fe9a}
+Reserved for future function driver module. \hypertarget{structUSBD__API_a900209612d9df086dd044b630607955b}{\index{U\-S\-B\-D\-\_\-\-A\-P\-I@{U\-S\-B\-D\-\_\-\-A\-P\-I}!version@{version}}
+\index{version@{version}!USBD_API@{U\-S\-B\-D\-\_\-\-A\-P\-I}}
+\subsubsection[{version}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\-\_\-t U\-S\-B\-D\-\_\-\-A\-P\-I\-::version}}\label{structUSBD__API_a900209612d9df086dd044b630607955b}
+Version identifier of U\-S\-B R\-O\-M stack. The version is defined as 0x0\-C\-H\-D\-Mh\-C\-C where each nibble represents version number of the corresponding component. C\-C -\/ 7\-:0 -\/ 8bit core version number h -\/ 11\-:8 -\/ 4bit hardware interface version number M -\/ 15\-:12 -\/ 4bit M\-S\-C class module version number D -\/ 19\-:16 -\/ 4bit D\-F\-U class module version number H -\/ 23\-:20 -\/ 4bit H\-I\-D class module version number C -\/ 27\-:24 -\/ 4bit C\-D\-C class module version number H -\/ 31\-:28 -\/ 4bit reserved 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpcopen/inc/usbd/\hyperlink{usbd__rom__api_8h}{usbd\-\_\-rom\-\_\-api.\-h}\end{DoxyCompactItemize}

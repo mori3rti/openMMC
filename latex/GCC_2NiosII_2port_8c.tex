@@ -1,0 +1,77 @@
+\hypertarget{GCC_2NiosII_2port_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-Nios\-I\-I/port.c File Reference}
+\label{GCC_2NiosII_2port_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-Nios\-I\-I/port.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-Nios\-I\-I/port.\-c}}
+}
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$errno.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}sys/alt\-\_\-irq.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}altera\-\_\-avalon\-\_\-timer\-\_\-regs.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}priv/alt\-\_\-irq\-\_\-table.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{GCC_2NiosII_2port_8c_a48b9faaa951d933ea7146ac60b7cf7f1}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-E\-S\-T\-A\-T\-U\-S}~( \hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} ) 0x01
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2NiosII_2port_8c_aba3499e1ee02f7effadcdda992d7c17f}{v\-Port\-Sys\-Tick\-Handler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$\hyperlink{ARM__CA9_2portASM_8h_afc222dc14cdd45ff7e72dec42824f2ac}{context}, alt\-\_\-u32 id)
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$ \hyperlink{GCC_2NiosII_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{px\-Port\-Initialise\-Stack} (\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$px\-Top\-Of\-Stack, \hyperlink{projdefs_8h_a24177544ba9c507a9429d6d5761eb487}{Task\-Function\-\_\-t} px\-Code, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters)
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{GCC_2NiosII_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{x\-Port\-Start\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2NiosII_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{v\-Port\-End\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+int \hyperlink{GCC_2NiosII_2port_8c_a4e6cf52f2584041266c71bea630cd84e}{alt\-\_\-irq\-\_\-register} (alt\-\_\-u32 id, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$\hyperlink{ARM__CA9_2portASM_8h_afc222dc14cdd45ff7e72dec42824f2ac}{context}, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void}($\ast$handler)(\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$, alt\-\_\-u32))
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{GCC_2NiosII_2port_8c_a48b9faaa951d933ea7146ac60b7cf7f1}{\index{G\-C\-C/\-Nios\-I\-I/port.\-c@{G\-C\-C/\-Nios\-I\-I/port.\-c}!port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-E\-S\-T\-A\-T\-U\-S@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-E\-S\-T\-A\-T\-U\-S}}
+\index{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-E\-S\-T\-A\-T\-U\-S@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-E\-S\-T\-A\-T\-U\-S}!GCC/NiosII/port.c@{G\-C\-C/\-Nios\-I\-I/port.\-c}}
+\subsubsection[{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-E\-S\-T\-A\-T\-U\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-E\-S\-T\-A\-T\-U\-S~( {\bf Stack\-Type\-\_\-t} ) 0x01}}\label{GCC_2NiosII_2port_8c_a48b9faaa951d933ea7146ac60b7cf7f1}
+
+
+\subsection{Function Documentation}
+\hypertarget{GCC_2NiosII_2port_8c_a4e6cf52f2584041266c71bea630cd84e}{\index{G\-C\-C/\-Nios\-I\-I/port.\-c@{G\-C\-C/\-Nios\-I\-I/port.\-c}!alt\-\_\-irq\-\_\-register@{alt\-\_\-irq\-\_\-register}}
+\index{alt\-\_\-irq\-\_\-register@{alt\-\_\-irq\-\_\-register}!GCC/NiosII/port.c@{G\-C\-C/\-Nios\-I\-I/port.\-c}}
+\subsubsection[{alt\-\_\-irq\-\_\-register}]{\setlength{\rightskip}{0pt plus 5cm}int alt\-\_\-irq\-\_\-register (
+\begin{DoxyParamCaption}
+\item[{alt\-\_\-u32}]{id, }
+\item[{{\bf void} $\ast$}]{context, }
+\item[{{\bf void}($\ast$)({\bf void} $\ast$, alt\-\_\-u32)}]{handler}
+\end{DoxyParamCaption}
+)}}\label{GCC_2NiosII_2port_8c_a4e6cf52f2584041266c71bea630cd84e}
+This function is a re-\/implementation of the Altera provided function. The function is re-\/implemented to prevent it from enabling an interrupt when it is registered. Interrupts should only be enabled after the Free\-R\-T\-O\-S.\-org kernel has its scheduler started so that contexts are saved and switched correctly. \hypertarget{GCC_2NiosII_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{\index{G\-C\-C/\-Nios\-I\-I/port.\-c@{G\-C\-C/\-Nios\-I\-I/port.\-c}!px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}}
+\index{px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}!GCC/NiosII/port.c@{G\-C\-C/\-Nios\-I\-I/port.\-c}}
+\subsubsection[{px\-Port\-Initialise\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stack\-Type\-\_\-t}$\ast$ px\-Port\-Initialise\-Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\-Type\-\_\-t} $\ast$}]{px\-Top\-Of\-Stack, }
+\item[{{\bf Task\-Function\-\_\-t}}]{px\-Code, }
+\item[{{\bf void} $\ast$}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)}}\label{GCC_2NiosII_2port_8c_a474fbbb58ea661a1557f05adc41120c1}
+\hypertarget{GCC_2NiosII_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{\index{G\-C\-C/\-Nios\-I\-I/port.\-c@{G\-C\-C/\-Nios\-I\-I/port.\-c}!v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}}
+\index{v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}!GCC/NiosII/port.c@{G\-C\-C/\-Nios\-I\-I/port.\-c}}
+\subsubsection[{v\-Port\-End\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-End\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2NiosII_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}
+\hypertarget{GCC_2NiosII_2port_8c_aba3499e1ee02f7effadcdda992d7c17f}{\index{G\-C\-C/\-Nios\-I\-I/port.\-c@{G\-C\-C/\-Nios\-I\-I/port.\-c}!v\-Port\-Sys\-Tick\-Handler@{v\-Port\-Sys\-Tick\-Handler}}
+\index{v\-Port\-Sys\-Tick\-Handler@{v\-Port\-Sys\-Tick\-Handler}!GCC/NiosII/port.c@{G\-C\-C/\-Nios\-I\-I/port.\-c}}
+\subsubsection[{v\-Port\-Sys\-Tick\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Sys\-Tick\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{context, }
+\item[{alt\-\_\-u32}]{id}
+\end{DoxyParamCaption}
+)}}\label{GCC_2NiosII_2port_8c_aba3499e1ee02f7effadcdda992d7c17f}
+\hypertarget{GCC_2NiosII_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{\index{G\-C\-C/\-Nios\-I\-I/port.\-c@{G\-C\-C/\-Nios\-I\-I/port.\-c}!x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}}
+\index{x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}!GCC/NiosII/port.c@{G\-C\-C/\-Nios\-I\-I/port.\-c}}
+\subsubsection[{x\-Port\-Start\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} x\-Port\-Start\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2NiosII_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}

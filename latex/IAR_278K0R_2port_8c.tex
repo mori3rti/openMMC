@@ -1,0 +1,84 @@
+\hypertarget{IAR_278K0R_2port_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-I\-A\-R/78\-K0\-R/port.c File Reference}
+\label{IAR_278K0R_2port_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-I\-A\-R/78\-K0\-R/port.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-I\-A\-R/78\-K0\-R/port.\-c}}
+}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{IAR_278K0R_2port_8c_ac9ed907cf162fb95081e68f847bc6e43}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}~(( uint16\-\_\-t ) 10)
+\item 
+\#define \hyperlink{IAR_278K0R_2port_8c_a205927c7f06ac46a6bd7fe7c7b8d8bc9}{port\-P\-S\-W}~(0xc6\-U\-L)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{IAR_278K0R_2port_8c_af5b0f7452857787ed70ce2856ca74c4b}{T\-C\-B\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$ \hyperlink{IAR_278K0R_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{px\-Port\-Initialise\-Stack} (\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$px\-Top\-Of\-Stack, \hyperlink{projdefs_8h_a24177544ba9c507a9429d6d5761eb487}{Task\-Function\-\_\-t} px\-Code, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters)
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{IAR_278K0R_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{x\-Port\-Start\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{IAR_278K0R_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{v\-Port\-End\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile \hyperlink{BCC_216BitDOS_2common_2portasm_8h_af5b0f7452857787ed70ce2856ca74c4b}{T\-C\-B\-\_\-t} $\ast$volatile \hyperlink{IAR_278K0R_2port_8c_af7b1fc0a36e224b885fb22b9936a03a2}{px\-Current\-T\-C\-B}
+\item 
+volatile uint16\-\_\-t \hyperlink{IAR_278K0R_2port_8c_a72024c36cef5744b86e354381b5d3dcd}{us\-Critical\-Nesting} = \hyperlink{Rowley_2MSP430F449_2port_8c_ac9ed907cf162fb95081e68f847bc6e43}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{IAR_278K0R_2port_8c_ac9ed907cf162fb95081e68f847bc6e43}{\index{I\-A\-R/78\-K0\-R/port.\-c@{I\-A\-R/78\-K0\-R/port.\-c}!port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}}
+\index{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}!IAR/78K0R/port.c@{I\-A\-R/78\-K0\-R/port.\-c}}
+\subsubsection[{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G~(( uint16\-\_\-t ) 10)}}\label{IAR_278K0R_2port_8c_ac9ed907cf162fb95081e68f847bc6e43}
+\hypertarget{IAR_278K0R_2port_8c_a205927c7f06ac46a6bd7fe7c7b8d8bc9}{\index{I\-A\-R/78\-K0\-R/port.\-c@{I\-A\-R/78\-K0\-R/port.\-c}!port\-P\-S\-W@{port\-P\-S\-W}}
+\index{port\-P\-S\-W@{port\-P\-S\-W}!IAR/78K0R/port.c@{I\-A\-R/78\-K0\-R/port.\-c}}
+\subsubsection[{port\-P\-S\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-P\-S\-W~(0xc6\-U\-L)}}\label{IAR_278K0R_2port_8c_a205927c7f06ac46a6bd7fe7c7b8d8bc9}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{IAR_278K0R_2port_8c_af5b0f7452857787ed70ce2856ca74c4b}{\index{I\-A\-R/78\-K0\-R/port.\-c@{I\-A\-R/78\-K0\-R/port.\-c}!T\-C\-B\-\_\-t@{T\-C\-B\-\_\-t}}
+\index{T\-C\-B\-\_\-t@{T\-C\-B\-\_\-t}!IAR/78K0R/port.c@{I\-A\-R/78\-K0\-R/port.\-c}}
+\subsubsection[{T\-C\-B\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void} {\bf T\-C\-B\-\_\-t}}}\label{IAR_278K0R_2port_8c_af5b0f7452857787ed70ce2856ca74c4b}
+
+
+\subsection{Function Documentation}
+\hypertarget{IAR_278K0R_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{\index{I\-A\-R/78\-K0\-R/port.\-c@{I\-A\-R/78\-K0\-R/port.\-c}!px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}}
+\index{px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}!IAR/78K0R/port.c@{I\-A\-R/78\-K0\-R/port.\-c}}
+\subsubsection[{px\-Port\-Initialise\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stack\-Type\-\_\-t}$\ast$ px\-Port\-Initialise\-Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\-Type\-\_\-t} $\ast$}]{px\-Top\-Of\-Stack, }
+\item[{{\bf Task\-Function\-\_\-t}}]{px\-Code, }
+\item[{{\bf void} $\ast$}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)}}\label{IAR_278K0R_2port_8c_a474fbbb58ea661a1557f05adc41120c1}
+\hypertarget{IAR_278K0R_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{\index{I\-A\-R/78\-K0\-R/port.\-c@{I\-A\-R/78\-K0\-R/port.\-c}!v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}}
+\index{v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}!IAR/78K0R/port.c@{I\-A\-R/78\-K0\-R/port.\-c}}
+\subsubsection[{v\-Port\-End\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-End\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{IAR_278K0R_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}
+\hypertarget{IAR_278K0R_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{\index{I\-A\-R/78\-K0\-R/port.\-c@{I\-A\-R/78\-K0\-R/port.\-c}!x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}}
+\index{x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}!IAR/78K0R/port.c@{I\-A\-R/78\-K0\-R/port.\-c}}
+\subsubsection[{x\-Port\-Start\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} x\-Port\-Start\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{IAR_278K0R_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}
+
+
+\subsection{Variable Documentation}
+\hypertarget{IAR_278K0R_2port_8c_af7b1fc0a36e224b885fb22b9936a03a2}{\index{I\-A\-R/78\-K0\-R/port.\-c@{I\-A\-R/78\-K0\-R/port.\-c}!px\-Current\-T\-C\-B@{px\-Current\-T\-C\-B}}
+\index{px\-Current\-T\-C\-B@{px\-Current\-T\-C\-B}!IAR/78K0R/port.c@{I\-A\-R/78\-K0\-R/port.\-c}}
+\subsubsection[{px\-Current\-T\-C\-B}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf T\-C\-B\-\_\-t}$\ast$ volatile px\-Current\-T\-C\-B}}\label{IAR_278K0R_2port_8c_af7b1fc0a36e224b885fb22b9936a03a2}
+\hypertarget{IAR_278K0R_2port_8c_a72024c36cef5744b86e354381b5d3dcd}{\index{I\-A\-R/78\-K0\-R/port.\-c@{I\-A\-R/78\-K0\-R/port.\-c}!us\-Critical\-Nesting@{us\-Critical\-Nesting}}
+\index{us\-Critical\-Nesting@{us\-Critical\-Nesting}!IAR/78K0R/port.c@{I\-A\-R/78\-K0\-R/port.\-c}}
+\subsubsection[{us\-Critical\-Nesting}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint16\-\_\-t us\-Critical\-Nesting = {\bf port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}}}\label{IAR_278K0R_2port_8c_a72024c36cef5744b86e354381b5d3dcd}

@@ -1,0 +1,62 @@
+\hypertarget{structGPDMA__CH__CFG__T}{\section{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T Struct Reference}
+\label{structGPDMA__CH__CFG__T}\index{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T@{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T}}
+}
+
+
+G\-P\-D\-M\-A structure using for D\-M\-A configuration.  
+
+
+
+
+{\ttfamily \#include $<$gpdma\-\_\-17xx\-\_\-40xx.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint32\-\_\-t \hyperlink{structGPDMA__CH__CFG__T_a9a37cb463108848cc37e79d230f34602}{Channel\-Num}
+\item 
+uint32\-\_\-t \hyperlink{structGPDMA__CH__CFG__T_a5666efb9edb055974b590443ea45ed7b}{Transfer\-Size}
+\item 
+uint32\-\_\-t \hyperlink{structGPDMA__CH__CFG__T_a7aff974420b56393365cc335015ba8df}{Transfer\-Width}
+\item 
+uint32\-\_\-t \hyperlink{structGPDMA__CH__CFG__T_a53adde93dea1ba4ce81af0fd4bd3e66e}{Src\-Addr}
+\item 
+uint32\-\_\-t \hyperlink{structGPDMA__CH__CFG__T_a6e67f866c02d9a27662c798bac0554b8}{Dst\-Addr}
+\item 
+uint32\-\_\-t \hyperlink{structGPDMA__CH__CFG__T_a6c21f3fe48e5e23443a324f9a42a3886}{Transfer\-Type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+G\-P\-D\-M\-A structure using for D\-M\-A configuration. 
+
+\subsection{Field Documentation}
+\hypertarget{structGPDMA__CH__CFG__T_a9a37cb463108848cc37e79d230f34602}{\index{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T@{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T}!Channel\-Num@{Channel\-Num}}
+\index{Channel\-Num@{Channel\-Num}!GPDMA_CH_CFG_T@{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T}}
+\subsubsection[{Channel\-Num}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T\-::\-Channel\-Num}}\label{structGPDMA__CH__CFG__T_a9a37cb463108848cc37e79d230f34602}
+D\-M\-A channel number, should be in range from 0 to 7. Note\-: D\-M\-A channel 0 has the highest priority and D\-M\-A channel 7 the lowest priority. \hypertarget{structGPDMA__CH__CFG__T_a6e67f866c02d9a27662c798bac0554b8}{\index{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T@{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T}!Dst\-Addr@{Dst\-Addr}}
+\index{Dst\-Addr@{Dst\-Addr}!GPDMA_CH_CFG_T@{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T}}
+\subsubsection[{Dst\-Addr}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T\-::\-Dst\-Addr}}\label{structGPDMA__CH__CFG__T_a6e67f866c02d9a27662c798bac0554b8}
+Physical Destination Address, used in case Transfer\-Type is chosen as G\-P\-D\-M\-A\-\_\-\-T\-R\-A\-N\-S\-F\-E\-R\-T\-Y\-P\-E\-\_\-\-M2\-M or G\-P\-D\-M\-A\-\_\-\-T\-R\-A\-N\-S\-F\-E\-R\-T\-Y\-P\-E\-\_\-\-P2\-M \hypertarget{structGPDMA__CH__CFG__T_a53adde93dea1ba4ce81af0fd4bd3e66e}{\index{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T@{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T}!Src\-Addr@{Src\-Addr}}
+\index{Src\-Addr@{Src\-Addr}!GPDMA_CH_CFG_T@{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T}}
+\subsubsection[{Src\-Addr}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T\-::\-Src\-Addr}}\label{structGPDMA__CH__CFG__T_a53adde93dea1ba4ce81af0fd4bd3e66e}
+Physical Source Address, used in case Transfer\-Type is chosen as G\-P\-D\-M\-A\-\_\-\-T\-R\-A\-N\-S\-F\-E\-R\-T\-Y\-P\-E\-\_\-\-M2\-M or G\-P\-D\-M\-A\-\_\-\-T\-R\-A\-N\-S\-F\-E\-R\-T\-Y\-P\-E\-\_\-\-M2\-P \hypertarget{structGPDMA__CH__CFG__T_a5666efb9edb055974b590443ea45ed7b}{\index{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T@{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T}!Transfer\-Size@{Transfer\-Size}}
+\index{Transfer\-Size@{Transfer\-Size}!GPDMA_CH_CFG_T@{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T}}
+\subsubsection[{Transfer\-Size}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T\-::\-Transfer\-Size}}\label{structGPDMA__CH__CFG__T_a5666efb9edb055974b590443ea45ed7b}
+Length/\-Size of transfer \hypertarget{structGPDMA__CH__CFG__T_a6c21f3fe48e5e23443a324f9a42a3886}{\index{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T@{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T}!Transfer\-Type@{Transfer\-Type}}
+\index{Transfer\-Type@{Transfer\-Type}!GPDMA_CH_CFG_T@{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T}}
+\subsubsection[{Transfer\-Type}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T\-::\-Transfer\-Type}}\label{structGPDMA__CH__CFG__T_a6c21f3fe48e5e23443a324f9a42a3886}
+Transfer Type, should be one of the following\-:
+\begin{DoxyItemize}
+\item G\-P\-D\-M\-A\-\_\-\-T\-R\-A\-N\-S\-F\-E\-R\-T\-Y\-P\-E\-\_\-\-M2\-M\-: Memory to memory -\/ D\-M\-A control
+\item G\-P\-D\-M\-A\-\_\-\-T\-R\-A\-N\-S\-F\-E\-R\-T\-Y\-P\-E\-\_\-\-M2\-P\-: Memory to peripheral -\/ D\-M\-A control
+\item G\-P\-D\-M\-A\-\_\-\-T\-R\-A\-N\-S\-F\-E\-R\-T\-Y\-P\-E\-\_\-\-P2\-M\-: Peripheral to memory -\/ D\-M\-A control
+\item G\-P\-D\-M\-A\-\_\-\-T\-R\-A\-N\-S\-F\-E\-R\-T\-Y\-P\-E\-\_\-\-P2\-P\-: Source peripheral to destination peripheral -\/ D\-M\-A control 
+\end{DoxyItemize}\hypertarget{structGPDMA__CH__CFG__T_a7aff974420b56393365cc335015ba8df}{\index{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T@{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T}!Transfer\-Width@{Transfer\-Width}}
+\index{Transfer\-Width@{Transfer\-Width}!GPDMA_CH_CFG_T@{G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T}}
+\subsubsection[{Transfer\-Width}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t G\-P\-D\-M\-A\-\_\-\-C\-H\-\_\-\-C\-F\-G\-\_\-\-T\-::\-Transfer\-Width}}\label{structGPDMA__CH__CFG__T_a7aff974420b56393365cc335015ba8df}
+Transfer width -\/ used for Transfer\-Type is G\-P\-D\-M\-A\-\_\-\-T\-R\-A\-N\-S\-F\-E\-R\-T\-Y\-P\-E\-\_\-\-M2\-M only 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpcopen/inc/\hyperlink{gpdma__17xx__40xx_8h}{gpdma\-\_\-17xx\-\_\-40xx.\-h}\end{DoxyCompactItemize}

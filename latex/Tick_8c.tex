@@ -1,0 +1,56 @@
+\hypertarget{Tick_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Wiz\-C/\-P\-I\-C18/\-Drivers/\-Tick/\-Tick.c File Reference}
+\label{Tick_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Wiz\-C/\-P\-I\-C18/\-Drivers/\-Tick/\-Tick.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Wiz\-C/\-P\-I\-C18/\-Drivers/\-Tick/\-Tick.\-c}}
+}
+{\ttfamily \#include $<$Free\-R\-T\-O\-S.\-h$>$}\\*
+{\ttfamily \#include $<$task.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Tick_8c_af90312d7bbf878b4175a88247b5d5d0f}{port\-B\-I\-T\-\_\-\-S\-E\-T}~(1)
+\item 
+\#define \hyperlink{Tick_8c_ae10c299006f2c1b8ec405bb1fa9e993b}{port\-B\-I\-T\-\_\-\-C\-L\-E\-A\-R}~(0)
+\item 
+\#define \hyperlink{Tick_8c_aaed649db146f6545797f1a85b29bffed}{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-B\-A\-S\-E}~((A\-P\-R\-O\-C\-F\-R\-E\-Q/4)/\hyperlink{FreeRTOSConfig_8h_a2f0258dd1e3b877e5bc013be54c2db6a}{config\-T\-I\-C\-K\-\_\-\-R\-A\-T\-E\-\_\-\-H\-Z})
+\item 
+\#define \hyperlink{Tick_8c_a4deee5f3cea1a853d7bfced1ca88ab32}{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-V\-A\-L\-U\-E}~(\hyperlink{Tick_8c_aaed649db146f6545797f1a85b29bffed}{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-B\-A\-S\-E})
+\item 
+\#define \hyperlink{Tick_8c_a510a9891ca09fb506485fbbe4096b231}{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-P\-S1}~(\hyperlink{Tick_8c_ae10c299006f2c1b8ec405bb1fa9e993b}{port\-B\-I\-T\-\_\-\-C\-L\-E\-A\-R})
+\item 
+\#define \hyperlink{Tick_8c_a7845f993e8d451104d6e78e8f0b61e0e}{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-P\-S0}~(\hyperlink{Tick_8c_ae10c299006f2c1b8ec405bb1fa9e993b}{port\-B\-I\-T\-\_\-\-C\-L\-E\-A\-R})
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{Tick_8c_a97b27e7afea96574a70aab311e350ac0}{port\-Setup\-Tick} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{Tick_8c_ae10c299006f2c1b8ec405bb1fa9e993b}{\index{Tick.\-c@{Tick.\-c}!port\-B\-I\-T\-\_\-\-C\-L\-E\-A\-R@{port\-B\-I\-T\-\_\-\-C\-L\-E\-A\-R}}
+\index{port\-B\-I\-T\-\_\-\-C\-L\-E\-A\-R@{port\-B\-I\-T\-\_\-\-C\-L\-E\-A\-R}!Tick.c@{Tick.\-c}}
+\subsubsection[{port\-B\-I\-T\-\_\-\-C\-L\-E\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-B\-I\-T\-\_\-\-C\-L\-E\-A\-R~(0)}}\label{Tick_8c_ae10c299006f2c1b8ec405bb1fa9e993b}
+\hypertarget{Tick_8c_af90312d7bbf878b4175a88247b5d5d0f}{\index{Tick.\-c@{Tick.\-c}!port\-B\-I\-T\-\_\-\-S\-E\-T@{port\-B\-I\-T\-\_\-\-S\-E\-T}}
+\index{port\-B\-I\-T\-\_\-\-S\-E\-T@{port\-B\-I\-T\-\_\-\-S\-E\-T}!Tick.c@{Tick.\-c}}
+\subsubsection[{port\-B\-I\-T\-\_\-\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-B\-I\-T\-\_\-\-S\-E\-T~(1)}}\label{Tick_8c_af90312d7bbf878b4175a88247b5d5d0f}
+\hypertarget{Tick_8c_aaed649db146f6545797f1a85b29bffed}{\index{Tick.\-c@{Tick.\-c}!port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-B\-A\-S\-E@{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-B\-A\-S\-E}}
+\index{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-B\-A\-S\-E@{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-B\-A\-S\-E}!Tick.c@{Tick.\-c}}
+\subsubsection[{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-B\-A\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-B\-A\-S\-E~((A\-P\-R\-O\-C\-F\-R\-E\-Q/4)/{\bf config\-T\-I\-C\-K\-\_\-\-R\-A\-T\-E\-\_\-\-H\-Z})}}\label{Tick_8c_aaed649db146f6545797f1a85b29bffed}
+\hypertarget{Tick_8c_a7845f993e8d451104d6e78e8f0b61e0e}{\index{Tick.\-c@{Tick.\-c}!port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-P\-S0@{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-P\-S0}}
+\index{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-P\-S0@{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-P\-S0}!Tick.c@{Tick.\-c}}
+\subsubsection[{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-P\-S0}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-P\-S0~({\bf port\-B\-I\-T\-\_\-\-C\-L\-E\-A\-R})}}\label{Tick_8c_a7845f993e8d451104d6e78e8f0b61e0e}
+\hypertarget{Tick_8c_a510a9891ca09fb506485fbbe4096b231}{\index{Tick.\-c@{Tick.\-c}!port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-P\-S1@{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-P\-S1}}
+\index{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-P\-S1@{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-P\-S1}!Tick.c@{Tick.\-c}}
+\subsubsection[{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-P\-S1}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-P\-S1~({\bf port\-B\-I\-T\-\_\-\-C\-L\-E\-A\-R})}}\label{Tick_8c_a510a9891ca09fb506485fbbe4096b231}
+\hypertarget{Tick_8c_a4deee5f3cea1a853d7bfced1ca88ab32}{\index{Tick.\-c@{Tick.\-c}!port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-V\-A\-L\-U\-E@{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-V\-A\-L\-U\-E}}
+\index{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-V\-A\-L\-U\-E@{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-V\-A\-L\-U\-E}!Tick.c@{Tick.\-c}}
+\subsubsection[{port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-V\-A\-L\-U\-E~({\bf port\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-B\-A\-S\-E})}}\label{Tick_8c_a4deee5f3cea1a853d7bfced1ca88ab32}
+
+
+\subsection{Function Documentation}
+\hypertarget{Tick_8c_a97b27e7afea96574a70aab311e350ac0}{\index{Tick.\-c@{Tick.\-c}!port\-Setup\-Tick@{port\-Setup\-Tick}}
+\index{port\-Setup\-Tick@{port\-Setup\-Tick}!Tick.c@{Tick.\-c}}
+\subsubsection[{port\-Setup\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} port\-Setup\-Tick (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{Tick_8c_a97b27e7afea96574a70aab311e350ac0}

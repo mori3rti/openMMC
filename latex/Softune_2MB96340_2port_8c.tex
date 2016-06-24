@@ -1,0 +1,237 @@
+\hypertarget{Softune_2MB96340_2port_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Softune/\-M\-B96340/port.c File Reference}
+\label{Softune_2MB96340_2port_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Softune/\-M\-B96340/port.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Softune/\-M\-B96340/port.\-c}}
+}
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Softune_2MB96340_2port_8c_a798f37b250502b49763c54a56b3aa4b0}{port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}()
+\item 
+\#define \hyperlink{Softune_2MB96340_2port_8c_a8d3a167375b5b57944a57df23d45b39e}{port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}()
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{Softune_2MB96340_2port_8c_af5b0f7452857787ed70ce2856ca74c4b}{T\-C\-B\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} \hyperlink{Softune_2MB96340_2port_8c_a13e5fe7547f79ab37fa3a6908f4a298e}{x\-Get\-\_\-\-D\-P\-R\-\_\-\-A\-D\-B\-\_\-bank} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} \hyperlink{Softune_2MB96340_2port_8c_ac1749073ebb72afb94fe7392ae8ba435}{x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+G\-L\-O\-B\-A\-L \-\_\-x\-Get\-\_\-\-D\-P\-R\-\_\-\-A\-D\-B\-\_\-bank \\*
+G\-L\-O\-B\-A\-L \hyperlink{Softune_2MB96340_2port_8c_ad707757f4336268c389905abf826b948}{\-\_\-x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank} \\*
+S\-E\-C\-T\-I\-O\-N D\-P\-R S\-W\-A\-P M\-O\-V A\-D\-B O\-R\-W \hyperlink{Softune_2MB96340_2port_8c_ae2572b8ee3e438f22571e0214222bd1b}{A} \\*
+R\-E\-T\-P D\-T\-B S\-W\-A\-P M\-O\-V P\-C\-B O\-R\-W \hyperlink{Softune_2MB96340_2port_8c_ae2572b8ee3e438f22571e0214222bd1b}{A} \\*
+R\-E\-T\-P \hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$ \hyperlink{Softune_2MB96340_2port_8c_a3619379843b3b54ae162b086190caee6}{px\-Port\-Initialise\-Stack} (\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$px\-Top\-Of\-Stack, \hyperlink{projdefs_8h_a24177544ba9c507a9429d6d5761eb487}{Task\-Function\-\_\-t} px\-Code, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters)
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{Softune_2MB96340_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{x\-Port\-Start\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{Softune_2MB96340_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{v\-Port\-End\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\-\_\-\-\_\-interrupt \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{Softune_2MB96340_2port_8c_aa4da5ab5570e9f7f2177febfa143843a}{prv\-R\-L\-T0\-\_\-\-T\-I\-C\-K\-I\-S\-R} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\-\_\-\-\_\-nosavereg \-\_\-\-\_\-interrupt \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{Softune_2MB96340_2port_8c_a37d8576541c056d8278f58b796d4e017}{v\-Port\-Yield} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\-\_\-\-\_\-nosavereg \-\_\-\-\_\-interrupt \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{Softune_2MB96340_2port_8c_a04375590036a5cbfb25df405922ab067}{v\-Port\-Yield\-Delayed} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile \hyperlink{BCC_216BitDOS_2common_2portasm_8h_af5b0f7452857787ed70ce2856ca74c4b}{T\-C\-B\-\_\-t} $\ast$volatile \hyperlink{Softune_2MB96340_2port_8c_af7b1fc0a36e224b885fb22b9936a03a2}{px\-Current\-T\-C\-B}
+\item 
+G\-L\-O\-B\-A\-L \-\_\-x\-Get\-\_\-\-D\-P\-R\-\_\-\-A\-D\-B\-\_\-bank \\*
+G\-L\-O\-B\-A\-L \hyperlink{Softune_2MB96340_2port_8c_ad707757f4336268c389905abf826b948}{\-\_\-x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank} \\*
+S\-E\-C\-T\-I\-O\-N \hyperlink{Softune_2MB96340_2port_8c_a7d51db29a9359d977e16da4b501a4274}{C\-O\-D\-E}
+\item 
+G\-L\-O\-B\-A\-L \-\_\-x\-Get\-\_\-\-D\-P\-R\-\_\-\-A\-D\-B\-\_\-bank \\*
+G\-L\-O\-B\-A\-L \hyperlink{Softune_2MB96340_2port_8c_ad707757f4336268c389905abf826b948}{\-\_\-x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank} \\*
+S\-E\-C\-T\-I\-O\-N \hyperlink{Softune_2MB96340_2port_8c_a8de422401fee7edc1a14cf099a10ec3c}{A\-L\-I\-G\-N}
+\item 
+G\-L\-O\-B\-A\-L \-\_\-x\-Get\-\_\-\-D\-P\-R\-\_\-\-A\-D\-B\-\_\-bank \\*
+G\-L\-O\-B\-A\-L \hyperlink{Softune_2MB96340_2port_8c_ad707757f4336268c389905abf826b948}{\-\_\-x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank} \\*
+S\-E\-C\-T\-I\-O\-N D\-P\-R S\-W\-A\-P M\-O\-V \hyperlink{Softune_2MB96340_2port_8c_ae2572b8ee3e438f22571e0214222bd1b}{A}
+\item 
+G\-L\-O\-B\-A\-L \-\_\-x\-Get\-\_\-\-D\-P\-R\-\_\-\-A\-D\-B\-\_\-bank \\*
+G\-L\-O\-B\-A\-L \-\_\-x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank \\*
+S\-E\-C\-T\-I\-O\-N D\-P\-R S\-W\-A\-P M\-O\-V A\-D\-B O\-R\-W \hyperlink{Softune_2MB96340_2port_8c_ae2572b8ee3e438f22571e0214222bd1b}{A} \\*
+R\-E\-T\-P \hyperlink{Softune_2MB96340_2port_8c_ad707757f4336268c389905abf826b948}{\-\_\-x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{Softune_2MB96340_2port_8c_a8d3a167375b5b57944a57df23d45b39e}{\index{Softune/\-M\-B96340/port.\-c@{Softune/\-M\-B96340/port.\-c}!port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}}
+\index{port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}!Softune/MB96340/port.c@{Softune/\-M\-B96340/port.\-c}}
+\subsubsection[{port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)}}\label{Softune_2MB96340_2port_8c_a8d3a167375b5b57944a57df23d45b39e}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\{   \_\_asm(\textcolor{stringliteral}{" MOVW A, \_pxCurrentTCB "});                       \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" MOVW A, @A "});                                  \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" AND  CCR,#H'DF "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" MOVW SP, A "});                                  \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" POPW (RW0,RW1,RW2,RW3,RW4,RW5,RW6,RW7) "});      \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" POPW  A "});                                     \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" OR   CCR,#H'20 "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" PUSHW  A "});                                    \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" AND  CCR,#H'DF "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" POPW  A "});                                     \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" OR   CCR,#H'20 "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" PUSHW  A "});                                    \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" AND  CCR,#H'DF "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" POPW  A "});                                     \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" OR   CCR,#H'20 "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" PUSHW  A "});                                    \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" AND  CCR,#H'DF "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" POPW  A "});                                     \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" OR   CCR,#H'20 "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" PUSHW  A "});                                    \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" AND  CCR,#H'DF "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" POPW  A "});                                     \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" OR   CCR,#H'20 "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" PUSHW  A "});                                    \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" AND  CCR,#H'DF "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" POPW  A "});                                     \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" OR   CCR,#H'20 "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" PUSHW  A "});                                    \(\backslash\)
+            \}
+\end{DoxyCode}
+\hypertarget{Softune_2MB96340_2port_8c_a798f37b250502b49763c54a56b3aa4b0}{\index{Softune/\-M\-B96340/port.\-c@{Softune/\-M\-B96340/port.\-c}!port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}}
+\index{port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}!Softune/MB96340/port.c@{Softune/\-M\-B96340/port.\-c}}
+\subsubsection[{port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)}}\label{Softune_2MB96340_2port_8c_a798f37b250502b49763c54a56b3aa4b0}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\{   \_\_asm(\textcolor{stringliteral}{" POPW  A "});                                     \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" AND  CCR,#H'DF "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" PUSHW  A "});                                    \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" OR   CCR,#H'20 "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" POPW  A "});                                     \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" AND  CCR,#H'DF "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" PUSHW  A "});                                    \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" OR   CCR,#H'20 "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" POPW  A "});                                     \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" AND  CCR,#H'DF "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" PUSHW  A "});                                    \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" OR   CCR,#H'20 "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" POPW  A "});                                     \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" AND  CCR,#H'DF "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" PUSHW  A "});                                    \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" OR   CCR,#H'20 "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" POPW  A "});                                     \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" AND  CCR,#H'DF "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" PUSHW  A "});                                    \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" OR   CCR,#H'20 "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" POPW  A "});                                     \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" AND  CCR,#H'DF "});                              \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" PUSHW  A "});                                    \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" PUSHW (RW0,RW1,RW2,RW3,RW4,RW5,RW6,RW7) "});     \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" MOVW A, \_pxCurrentTCB "});                       \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" MOVW A, SP "});                                  \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" SWAPW "});                                       \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" MOVW @AL, AH "});                                \(\backslash\)
+                \_\_asm(\textcolor{stringliteral}{" OR   CCR,#H'20 "});                              \(\backslash\)
+            \}
+\end{DoxyCode}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{Softune_2MB96340_2port_8c_af5b0f7452857787ed70ce2856ca74c4b}{\index{Softune/\-M\-B96340/port.\-c@{Softune/\-M\-B96340/port.\-c}!T\-C\-B\-\_\-t@{T\-C\-B\-\_\-t}}
+\index{T\-C\-B\-\_\-t@{T\-C\-B\-\_\-t}!Softune/MB96340/port.c@{Softune/\-M\-B96340/port.\-c}}
+\subsubsection[{T\-C\-B\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void} {\bf T\-C\-B\-\_\-t}}}\label{Softune_2MB96340_2port_8c_af5b0f7452857787ed70ce2856ca74c4b}
+
+
+\subsection{Function Documentation}
+\hypertarget{Softune_2MB96340_2port_8c_aa4da5ab5570e9f7f2177febfa143843a}{\index{Softune/\-M\-B96340/port.\-c@{Softune/\-M\-B96340/port.\-c}!prv\-R\-L\-T0\-\_\-\-T\-I\-C\-K\-I\-S\-R@{prv\-R\-L\-T0\-\_\-\-T\-I\-C\-K\-I\-S\-R}}
+\index{prv\-R\-L\-T0\-\_\-\-T\-I\-C\-K\-I\-S\-R@{prv\-R\-L\-T0\-\_\-\-T\-I\-C\-K\-I\-S\-R}!Softune/MB96340/port.c@{Softune/\-M\-B96340/port.\-c}}
+\subsubsection[{prv\-R\-L\-T0\-\_\-\-T\-I\-C\-K\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-interrupt {\bf void} prv\-R\-L\-T0\-\_\-\-T\-I\-C\-K\-I\-S\-R (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{Softune_2MB96340_2port_8c_aa4da5ab5570e9f7f2177febfa143843a}
+\hypertarget{Softune_2MB96340_2port_8c_a3619379843b3b54ae162b086190caee6}{\index{Softune/\-M\-B96340/port.\-c@{Softune/\-M\-B96340/port.\-c}!px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}}
+\index{px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}!Softune/MB96340/port.c@{Softune/\-M\-B96340/port.\-c}}
+\subsubsection[{px\-Port\-Initialise\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}G\-L\-O\-B\-A\-L \-\_\-x\-Get\-\_\-\-D\-P\-R\-\_\-\-A\-D\-B\-\_\-bank G\-L\-O\-B\-A\-L {\bf \-\_\-x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank} S\-E\-C\-T\-I\-O\-N D\-P\-R S\-W\-A\-P M\-O\-V A\-D\-B O\-R\-W {\bf A} R\-E\-T\-P D\-T\-B S\-W\-A\-P M\-O\-V P\-C\-B O\-R\-W {\bf A} R\-E\-T\-P {\bf Stack\-Type\-\_\-t}$\ast$ px\-Port\-Initialise\-Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\-Type\-\_\-t} $\ast$}]{px\-Top\-Of\-Stack, }
+\item[{{\bf Task\-Function\-\_\-t}}]{px\-Code, }
+\item[{{\bf void} $\ast$}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)}}\label{Softune_2MB96340_2port_8c_a3619379843b3b54ae162b086190caee6}
+\hypertarget{Softune_2MB96340_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{\index{Softune/\-M\-B96340/port.\-c@{Softune/\-M\-B96340/port.\-c}!v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}}
+\index{v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}!Softune/MB96340/port.c@{Softune/\-M\-B96340/port.\-c}}
+\subsubsection[{v\-Port\-End\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-End\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{Softune_2MB96340_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}
+\hypertarget{Softune_2MB96340_2port_8c_a37d8576541c056d8278f58b796d4e017}{\index{Softune/\-M\-B96340/port.\-c@{Softune/\-M\-B96340/port.\-c}!v\-Port\-Yield@{v\-Port\-Yield}}
+\index{v\-Port\-Yield@{v\-Port\-Yield}!Softune/MB96340/port.c@{Softune/\-M\-B96340/port.\-c}}
+\subsubsection[{v\-Port\-Yield}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-nosavereg \-\_\-\-\_\-interrupt {\bf void} v\-Port\-Yield (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{Softune_2MB96340_2port_8c_a37d8576541c056d8278f58b796d4e017}
+\hypertarget{Softune_2MB96340_2port_8c_a04375590036a5cbfb25df405922ab067}{\index{Softune/\-M\-B96340/port.\-c@{Softune/\-M\-B96340/port.\-c}!v\-Port\-Yield\-Delayed@{v\-Port\-Yield\-Delayed}}
+\index{v\-Port\-Yield\-Delayed@{v\-Port\-Yield\-Delayed}!Softune/MB96340/port.c@{Softune/\-M\-B96340/port.\-c}}
+\subsubsection[{v\-Port\-Yield\-Delayed}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-nosavereg \-\_\-\-\_\-interrupt {\bf void} v\-Port\-Yield\-Delayed (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{Softune_2MB96340_2port_8c_a04375590036a5cbfb25df405922ab067}
+\hypertarget{Softune_2MB96340_2port_8c_a13e5fe7547f79ab37fa3a6908f4a298e}{\index{Softune/\-M\-B96340/port.\-c@{Softune/\-M\-B96340/port.\-c}!x\-Get\-\_\-\-D\-P\-R\-\_\-\-A\-D\-B\-\_\-bank@{x\-Get\-\_\-\-D\-P\-R\-\_\-\-A\-D\-B\-\_\-bank}}
+\index{x\-Get\-\_\-\-D\-P\-R\-\_\-\-A\-D\-B\-\_\-bank@{x\-Get\-\_\-\-D\-P\-R\-\_\-\-A\-D\-B\-\_\-bank}!Softune/MB96340/port.c@{Softune/\-M\-B96340/port.\-c}}
+\subsubsection[{x\-Get\-\_\-\-D\-P\-R\-\_\-\-A\-D\-B\-\_\-bank}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stack\-Type\-\_\-t} x\-Get\-\_\-\-D\-P\-R\-\_\-\-A\-D\-B\-\_\-bank (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{Softune_2MB96340_2port_8c_a13e5fe7547f79ab37fa3a6908f4a298e}
+\hypertarget{Softune_2MB96340_2port_8c_ac1749073ebb72afb94fe7392ae8ba435}{\index{Softune/\-M\-B96340/port.\-c@{Softune/\-M\-B96340/port.\-c}!x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank@{x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank}}
+\index{x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank@{x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank}!Softune/MB96340/port.c@{Softune/\-M\-B96340/port.\-c}}
+\subsubsection[{x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stack\-Type\-\_\-t} x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{Softune_2MB96340_2port_8c_ac1749073ebb72afb94fe7392ae8ba435}
+\hypertarget{Softune_2MB96340_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{\index{Softune/\-M\-B96340/port.\-c@{Softune/\-M\-B96340/port.\-c}!x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}}
+\index{x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}!Softune/MB96340/port.c@{Softune/\-M\-B96340/port.\-c}}
+\subsubsection[{x\-Port\-Start\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} x\-Port\-Start\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{Softune_2MB96340_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}
+
+
+\subsection{Variable Documentation}
+\hypertarget{Softune_2MB96340_2port_8c_ad707757f4336268c389905abf826b948}{\index{Softune/\-M\-B96340/port.\-c@{Softune/\-M\-B96340/port.\-c}!\-\_\-x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank@{\-\_\-x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank}}
+\index{\-\_\-x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank@{\-\_\-x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank}!Softune/MB96340/port.c@{Softune/\-M\-B96340/port.\-c}}
+\subsubsection[{\-\_\-x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank}]{\setlength{\rightskip}{0pt plus 5cm}G\-L\-O\-B\-A\-L \-\_\-x\-Get\-\_\-\-D\-P\-R\-\_\-\-A\-D\-B\-\_\-bank G\-L\-O\-B\-A\-L \-\_\-x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank S\-E\-C\-T\-I\-O\-N D\-P\-R S\-W\-A\-P M\-O\-V A\-D\-B O\-R\-W {\bf A} R\-E\-T\-P \-\_\-x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank}}\label{Softune_2MB96340_2port_8c_ad707757f4336268c389905abf826b948}
+\hypertarget{Softune_2MB96340_2port_8c_ae2572b8ee3e438f22571e0214222bd1b}{\index{Softune/\-M\-B96340/port.\-c@{Softune/\-M\-B96340/port.\-c}!A@{A}}
+\index{A@{A}!Softune/MB96340/port.c@{Softune/\-M\-B96340/port.\-c}}
+\subsubsection[{A}]{\setlength{\rightskip}{0pt plus 5cm}G\-L\-O\-B\-A\-L \-\_\-x\-Get\-\_\-\-D\-P\-R\-\_\-\-A\-D\-B\-\_\-bank G\-L\-O\-B\-A\-L {\bf \-\_\-x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank} S\-E\-C\-T\-I\-O\-N D\-P\-R S\-W\-A\-P M\-O\-V A\-D\-B O\-R\-W A R\-E\-T\-P D\-T\-B S\-W\-A\-P M\-O\-V A}}\label{Softune_2MB96340_2port_8c_ae2572b8ee3e438f22571e0214222bd1b}
+\hypertarget{Softune_2MB96340_2port_8c_a8de422401fee7edc1a14cf099a10ec3c}{\index{Softune/\-M\-B96340/port.\-c@{Softune/\-M\-B96340/port.\-c}!A\-L\-I\-G\-N@{A\-L\-I\-G\-N}}
+\index{A\-L\-I\-G\-N@{A\-L\-I\-G\-N}!Softune/MB96340/port.c@{Softune/\-M\-B96340/port.\-c}}
+\subsubsection[{A\-L\-I\-G\-N}]{\setlength{\rightskip}{0pt plus 5cm}G\-L\-O\-B\-A\-L \-\_\-x\-Get\-\_\-\-D\-P\-R\-\_\-\-A\-D\-B\-\_\-bank G\-L\-O\-B\-A\-L {\bf \-\_\-x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank} S\-E\-C\-T\-I\-O\-N A\-L\-I\-G\-N}}\label{Softune_2MB96340_2port_8c_a8de422401fee7edc1a14cf099a10ec3c}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=1
+
+\_xGet\_DPR\_ADB\_bank:
+
+    MOV \hyperlink{Softune_2MB96340_2port_8c_ae2572b8ee3e438f22571e0214222bd1b}{A}
+\end{DoxyCode}
+\hypertarget{Softune_2MB96340_2port_8c_a7d51db29a9359d977e16da4b501a4274}{\index{Softune/\-M\-B96340/port.\-c@{Softune/\-M\-B96340/port.\-c}!C\-O\-D\-E@{C\-O\-D\-E}}
+\index{C\-O\-D\-E@{C\-O\-D\-E}!Softune/MB96340/port.c@{Softune/\-M\-B96340/port.\-c}}
+\subsubsection[{C\-O\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}G\-L\-O\-B\-A\-L \-\_\-x\-Get\-\_\-\-D\-P\-R\-\_\-\-A\-D\-B\-\_\-bank G\-L\-O\-B\-A\-L {\bf \-\_\-x\-Get\-\_\-\-D\-T\-B\-\_\-\-P\-C\-B\-\_\-bank} S\-E\-C\-T\-I\-O\-N C\-O\-D\-E}}\label{Softune_2MB96340_2port_8c_a7d51db29a9359d977e16da4b501a4274}
+\hypertarget{Softune_2MB96340_2port_8c_af7b1fc0a36e224b885fb22b9936a03a2}{\index{Softune/\-M\-B96340/port.\-c@{Softune/\-M\-B96340/port.\-c}!px\-Current\-T\-C\-B@{px\-Current\-T\-C\-B}}
+\index{px\-Current\-T\-C\-B@{px\-Current\-T\-C\-B}!Softune/MB96340/port.c@{Softune/\-M\-B96340/port.\-c}}
+\subsubsection[{px\-Current\-T\-C\-B}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf T\-C\-B\-\_\-t}$\ast$ volatile px\-Current\-T\-C\-B}}\label{Softune_2MB96340_2port_8c_af7b1fc0a36e224b885fb22b9936a03a2}

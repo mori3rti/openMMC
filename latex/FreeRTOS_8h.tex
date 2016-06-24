@@ -1,0 +1,1172 @@
+\hypertarget{FreeRTOS_8h}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/include/\-Free\-R\-T\-O\-S.h File Reference}
+\label{FreeRTOS_8h}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/include/\-Free\-R\-T\-O\-S.\-h@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/include/\-Free\-R\-T\-O\-S.\-h}}
+}
+{\ttfamily \#include $<$stddef.\-h$>$}\\*
+{\ttfamily \#include $<$stdint.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S\-Config.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}projdefs.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}portable.\-h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structxSTATIC__LIST__ITEM}{x\-S\-T\-A\-T\-I\-C\-\_\-\-L\-I\-S\-T\-\_\-\-I\-T\-E\-M}
+\item 
+struct \hyperlink{structxSTATIC__MINI__LIST__ITEM}{x\-S\-T\-A\-T\-I\-C\-\_\-\-M\-I\-N\-I\-\_\-\-L\-I\-S\-T\-\_\-\-I\-T\-E\-M}
+\item 
+struct \hyperlink{structxSTATIC__LIST}{x\-S\-T\-A\-T\-I\-C\-\_\-\-L\-I\-S\-T}
+\item 
+struct \hyperlink{structxSTATIC__TCB}{x\-S\-T\-A\-T\-I\-C\-\_\-\-T\-C\-B}
+\item 
+struct \hyperlink{structxSTATIC__QUEUE}{x\-S\-T\-A\-T\-I\-C\-\_\-\-Q\-U\-E\-U\-E}
+\item 
+struct \hyperlink{structxSTATIC__EVENT__GROUP}{x\-S\-T\-A\-T\-I\-C\-\_\-\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P}
+\item 
+struct \hyperlink{structxSTATIC__TIMER}{x\-S\-T\-A\-T\-I\-C\-\_\-\-T\-I\-M\-E\-R}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{FreeRTOS_8h_acf3616a8cbe15687f6000cefcca84bbd}{config\-U\-S\-E\-\_\-\-N\-E\-W\-L\-I\-B\-\_\-\-R\-E\-E\-N\-T\-R\-A\-N\-T}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_ae8811def4dd6983011fed9ef8686f18f}{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Idle\-Task\-Handle}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_ac54efb28edcc1d3b9d0844005ea20674}{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Abort\-Delay}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a4e2902143b6abf777065c15940321911}{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Queue\-Get\-Mutex\-Holder}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_ad221128595137414579be33cf8e446d8}{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Semaphore\-Get\-Mutex\-Holder}~\hyperlink{FreeRTOS_8h_a4e2902143b6abf777065c15940321911}{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Queue\-Get\-Mutex\-Holder}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a33733d2bbe005751ec3a417e5ac373bf}{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Handle}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a4fd1d67d54044ac86e8ffc890180f9f6}{I\-N\-C\-L\-U\-D\-E\-\_\-e\-Task\-Get\-State}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a85e3dae9f3daa26f24e679cb6793811e}{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Resume\-From\-I\-S\-R}~1
+\item 
+\#define \hyperlink{FreeRTOS_8h_a4b4336acd61a8e513ca2376be84326b5}{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Timer\-Pend\-Function\-Call}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a9ed60ede556830584e6bfd4a3ab4f9de}{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Scheduler\-State}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a0415288d8efe664e0b05a7b53fbfaa33}{config\-U\-S\-E\-\_\-\-D\-A\-E\-M\-O\-N\-\_\-\-T\-A\-S\-K\-\_\-\-S\-T\-A\-R\-T\-U\-P\-\_\-\-H\-O\-O\-K}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a8d32b5f74e55dfd12c5aa3415e16d75e}{config\-N\-U\-M\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-L\-O\-C\-A\-L\-\_\-\-S\-T\-O\-R\-A\-G\-E\-\_\-\-P\-O\-I\-N\-T\-E\-R\-S}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_ac342ae309b0c53828d2ecad3e6de355b}{config\-U\-S\-E\-\_\-\-T\-I\-M\-E\-R\-S}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a4088d4f41bae06c9e871b918888ce7e6}{port\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G\-\_\-\-I\-N\-\_\-\-T\-C\-B}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a7c1502a6fbffa00b3e2350e86e8bff06}{config\-A\-S\-S\-E\-R\-T\-\_\-\-D\-E\-F\-I\-N\-E\-D}~1
+\item 
+\#define \hyperlink{FreeRTOS_8h_a31b4260dbc1823ba80b578f86eb15a98}{port\-S\-E\-T\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}()~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a2661e2c5a4e4afe5bef2ebe9872e28b3}{port\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}(ux\-Saved\-Status\-Value)~( \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} ) ux\-Saved\-Status\-Value
+\item 
+\#define \hyperlink{FreeRTOS_8h_a3c506bf351102047fb5a75491287fe69}{port\-C\-L\-E\-A\-N\-\_\-\-U\-P\-\_\-\-T\-C\-B}(px\-T\-C\-B)~( \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} ) px\-T\-C\-B
+\item 
+\#define \hyperlink{FreeRTOS_8h_a712f8cbd5ce7b049ef6a92dbb0da0215}{port\-P\-R\-E\-\_\-\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E\-\_\-\-H\-O\-O\-K}(pv\-Task\-To\-Delete, px\-Yield\-Pending)
+\item 
+\#define \hyperlink{FreeRTOS_8h_aca0e7403a160318f5c216fc40c95e294}{port\-S\-E\-T\-U\-P\-\_\-\-T\-C\-B}(px\-T\-C\-B)~( \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} ) px\-T\-C\-B
+\item 
+\#define \hyperlink{FreeRTOS_8h_a53bae25f223b7156dce0fc6e6b1b2295}{port\-P\-O\-I\-N\-T\-E\-R\-\_\-\-S\-I\-Z\-E\-\_\-\-T\-Y\-P\-E}~uint32\-\_\-t
+\item 
+\#define \hyperlink{FreeRTOS_8h_ac0d88fb803a85b6afd2a2c20de0ddcd0}{trace\-S\-T\-A\-R\-T}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_aeb2fb62c3f25ec4d8e7a02f267f7e508}{trace\-E\-N\-D}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a2f813fe80d3519a396a9f2bb7cc7e820}{trace\-T\-A\-S\-K\-\_\-\-S\-W\-I\-T\-C\-H\-E\-D\-\_\-\-I\-N}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a74e013fe2bad2c2d7db71f4b17bad698}{trace\-I\-N\-C\-R\-E\-A\-S\-E\-\_\-\-T\-I\-C\-K\-\_\-\-C\-O\-U\-N\-T}(x)
+\item 
+\#define \hyperlink{FreeRTOS_8h_acc1364ea0a06d6395232d57708e4987c}{trace\-L\-O\-W\-\_\-\-P\-O\-W\-E\-R\-\_\-\-I\-D\-L\-E\-\_\-\-B\-E\-G\-I\-N}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_aa5471ee0f56cb504d9aaba9cb3b7750e}{trace\-L\-O\-W\-\_\-\-P\-O\-W\-E\-R\-\_\-\-I\-D\-L\-E\-\_\-\-E\-N\-D}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a4b94b0d35e9a4ad783af7be32cabbdaa}{trace\-T\-A\-S\-K\-\_\-\-S\-W\-I\-T\-C\-H\-E\-D\-\_\-\-O\-U\-T}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a4149bb2def17cb85a356c17fa6331c79}{trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-I\-N\-H\-E\-R\-I\-T}(px\-T\-C\-B\-Of\-Mutex\-Holder, ux\-Inherited\-Priority)
+\item 
+\#define \hyperlink{FreeRTOS_8h_aeef741f693914ccacb456313d613c810}{trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-D\-I\-S\-I\-N\-H\-E\-R\-I\-T}(px\-T\-C\-B\-Of\-Mutex\-Holder, ux\-Original\-Priority)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a657997eddb8c89bef7157e74bac003e2}{trace\-B\-L\-O\-C\-K\-I\-N\-G\-\_\-\-O\-N\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E}(px\-Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a9484f4523e4bec2ab2dc233f2556c3c5}{trace\-B\-L\-O\-C\-K\-I\-N\-G\-\_\-\-O\-N\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D}(px\-Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a8c5050de556ff7e7cdbc7de55f46709d}{trace\-M\-O\-V\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-T\-O\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-S\-T\-A\-T\-E}(px\-T\-C\-B)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a8d70c64cfe141df1bbe25b624405ec37}{trace\-P\-O\-S\-T\-\_\-\-M\-O\-V\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-T\-O\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-S\-T\-A\-T\-E}(px\-T\-C\-B)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a62dcc27e040063ec72e174c985740f96}{trace\-Q\-U\-E\-U\-E\-\_\-\-C\-R\-E\-A\-T\-E}(px\-New\-Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a3a0d6a2e556a9bb303cbcb2a23700118}{trace\-Q\-U\-E\-U\-E\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D}(uc\-Queue\-Type)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a2eff67edaee170b33b549966d8b99b47}{trace\-C\-R\-E\-A\-T\-E\-\_\-\-M\-U\-T\-E\-X}(px\-New\-Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_aa01e89d6df9ac9c4506f8918cc809ddf}{trace\-C\-R\-E\-A\-T\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-F\-A\-I\-L\-E\-D}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_aa42efc6b6938c6f2a5f04c7367f59b22}{trace\-G\-I\-V\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E}(px\-Mutex)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a6b41ab1bbdaa0eb7f8e790602ed21077}{trace\-G\-I\-V\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D}(px\-Mutex)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a088b831fdffacf61abf9c7312a2386ad}{trace\-T\-A\-K\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E}(px\-Mutex)
+\item 
+\#define \hyperlink{FreeRTOS_8h_ad2d983d63b7d1c3d9208b14d3b76df53}{trace\-T\-A\-K\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D}(px\-Mutex)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a3803714a43519a6bfc93dadfa255bf14}{trace\-C\-R\-E\-A\-T\-E\-\_\-\-C\-O\-U\-N\-T\-I\-N\-G\-\_\-\-S\-E\-M\-A\-P\-H\-O\-R\-E}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a656fccb9717146cc4036ff8701eeb67e}{trace\-C\-R\-E\-A\-T\-E\-\_\-\-C\-O\-U\-N\-T\-I\-N\-G\-\_\-\-S\-E\-M\-A\-P\-H\-O\-R\-E\-\_\-\-F\-A\-I\-L\-E\-D}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a5cfc9dd899c89966172cb329740f551a}{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D}(px\-Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_ab4896b8d7e443200918a6e4a7f64585d}{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-A\-I\-L\-E\-D}(px\-Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a82b39aa722910a5e43793e882ded0faf}{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E}(px\-Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_acd24b909ecdd18ed844cdede3027e534}{trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K}(px\-Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a3e2a14b61c26f9690deb26d76cc801ee}{trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}(px\-Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a0dbf5969c9d984920177a19d5b402e4e}{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D}(px\-Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a590bfae4dcb6be8a4b3daadf09a1b587}{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}(px\-Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a71fa002ce8a199d38e697d94c613649f}{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D}(px\-Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_ace59eac86a08f533c19edf91594961c6}{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}(px\-Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a1f1f4a1fea93a33050fa6c27c30752d5}{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D}(px\-Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a72ea0f09cc6a38363f2b5217aab27fd3}{trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D}(px\-Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_aae8ebd9c82ecd564953a37bb26a5a1e5}{trace\-Q\-U\-E\-U\-E\-\_\-\-D\-E\-L\-E\-T\-E}(px\-Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a453dc678632734505187c453da598172}{trace\-T\-A\-S\-K\-\_\-\-C\-R\-E\-A\-T\-E}(px\-New\-T\-C\-B)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a82a6a366facc1fb8b0209bfe2e5ce546}{trace\-T\-A\-S\-K\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_af3f9bb780241cc663247908a22defa65}{trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E}(px\-Task\-To\-Delete)
+\item 
+\#define \hyperlink{FreeRTOS_8h_ac7bba9e806376061522f5cb2eef261c4}{trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-U\-N\-T\-I\-L}(x)
+\item 
+\#define \hyperlink{FreeRTOS_8h_adb0c71969f4eed7a92f0f398dffb443d}{trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-A\-Y}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_acec813ac5f0628aa108bede0cd8c329d}{trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-S\-E\-T}(px\-Task, ux\-New\-Priority)
+\item 
+\#define \hyperlink{FreeRTOS_8h_ac48891d4d553ea9acbc660d2ebd2ffd7}{trace\-T\-A\-S\-K\-\_\-\-S\-U\-S\-P\-E\-N\-D}(px\-Task\-To\-Suspend)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a4f21b0c170fa8675ee2dbf70141695a2}{trace\-T\-A\-S\-K\-\_\-\-R\-E\-S\-U\-M\-E}(px\-Task\-To\-Resume)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a7b4afafa82e9c80d0dc43cc22108d248}{trace\-T\-A\-S\-K\-\_\-\-R\-E\-S\-U\-M\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}(px\-Task\-To\-Resume)
+\item 
+\#define \hyperlink{FreeRTOS_8h_aeea8ada76999a73fd5ffcacd267d336d}{trace\-T\-A\-S\-K\-\_\-\-I\-N\-C\-R\-E\-M\-E\-N\-T\-\_\-\-T\-I\-C\-K}(x\-Tick\-Count)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a21b54dae77c227db92f56131cae6de81}{trace\-T\-I\-M\-E\-R\-\_\-\-C\-R\-E\-A\-T\-E}(px\-New\-Timer)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a9b508233fb4bebee72529af4f4413cf6}{trace\-T\-I\-M\-E\-R\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_aa5e8cd9587c262fdf914b56c286c47b8}{trace\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-M\-A\-N\-D\-\_\-\-S\-E\-N\-D}(x\-Timer, x\-Message\-I\-D, x\-Message\-Value\-Value, x\-Return)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a71329ddad88950ea45b32d5adcb1b2f3}{trace\-T\-I\-M\-E\-R\-\_\-\-E\-X\-P\-I\-R\-E\-D}(px\-Timer)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a6c6d5767fb1746077b62e5da5a28db63}{trace\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-M\-A\-N\-D\-\_\-\-R\-E\-C\-E\-I\-V\-E\-D}(px\-Timer, x\-Message\-I\-D, x\-Message\-Value)
+\item 
+\#define \hyperlink{FreeRTOS_8h_af326afe922ffa6da245c98dc227a3293}{trace\-M\-A\-L\-L\-O\-C}(pv\-Address, ui\-Size)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a941bb09090b5788f0c27d9690118eed2}{trace\-F\-R\-E\-E}(pv\-Address, ui\-Size)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a0100fcbcc03e3c2f0cd7bc7071f9ab70}{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-R\-E\-A\-T\-E}(x\-Event\-Group)
+\item 
+\#define \hyperlink{FreeRTOS_8h_ac6f6ea04ddbf43f62f1b0285622d4474}{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a898ead658f344a0475a9f2ed3bf8f407}{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-L\-O\-C\-K}(x\-Event\-Group, ux\-Bits\-To\-Set, ux\-Bits\-To\-Wait\-For)
+\item 
+\#define \hyperlink{FreeRTOS_8h_af0cb50e5a1402163cd29e638c6140a2e}{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-Y\-N\-C\-\_\-\-E\-N\-D}(x\-Event\-Group, ux\-Bits\-To\-Set, ux\-Bits\-To\-Wait\-For, x\-Timeout\-Occurred)~( \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} ) x\-Timeout\-Occurred
+\item 
+\#define \hyperlink{FreeRTOS_8h_aeb8953a9be153986d0e830acdf60445a}{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-W\-A\-I\-T\-\_\-\-B\-I\-T\-S\-\_\-\-B\-L\-O\-C\-K}(x\-Event\-Group, ux\-Bits\-To\-Wait\-For)
+\item 
+\#define \hyperlink{FreeRTOS_8h_ad7a6b7684053a41690cac487ccf4d927}{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-W\-A\-I\-T\-\_\-\-B\-I\-T\-S\-\_\-\-E\-N\-D}(x\-Event\-Group, ux\-Bits\-To\-Wait\-For, x\-Timeout\-Occurred)~( \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} ) x\-Timeout\-Occurred
+\item 
+\#define \hyperlink{FreeRTOS_8h_ad929200fa50e5a1ae2c5894ffeea2ef6}{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-L\-E\-A\-R\-\_\-\-B\-I\-T\-S}(x\-Event\-Group, ux\-Bits\-To\-Clear)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a9facfdc883aa503d2891c27c5c136d84}{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-L\-E\-A\-R\-\_\-\-B\-I\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}(x\-Event\-Group, ux\-Bits\-To\-Clear)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a56eb08eb12a36c99a32729a518d5b3fd}{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-E\-T\-\_\-\-B\-I\-T\-S}(x\-Event\-Group, ux\-Bits\-To\-Set)
+\item 
+\#define \hyperlink{FreeRTOS_8h_ae11a37557005c2660326e9874d5d3155}{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-E\-T\-\_\-\-B\-I\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}(x\-Event\-Group, ux\-Bits\-To\-Set)
+\item 
+\#define \hyperlink{FreeRTOS_8h_abf48364a72dd38af47bf7203c06ee832}{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-D\-E\-L\-E\-T\-E}(x\-Event\-Group)
+\item 
+\#define \hyperlink{FreeRTOS_8h_ab9c72706acbdbcec75ffb2cdaca45b24}{trace\-P\-E\-N\-D\-\_\-\-F\-U\-N\-C\-\_\-\-C\-A\-L\-L}(x\-Function\-To\-Pend, pv\-Parameter1, ul\-Parameter2, \hyperlink{CCS_2MSP430X_2data__model_8h_ac252abdd57e002f8fa2085164a5b42b5}{ret})
+\item 
+\#define \hyperlink{FreeRTOS_8h_a9b864660c6d826e802d9e3f94548cd7f}{trace\-P\-E\-N\-D\-\_\-\-F\-U\-N\-C\-\_\-\-C\-A\-L\-L\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}(x\-Function\-To\-Pend, pv\-Parameter1, ul\-Parameter2, \hyperlink{CCS_2MSP430X_2data__model_8h_ac252abdd57e002f8fa2085164a5b42b5}{ret})
+\item 
+\#define \hyperlink{FreeRTOS_8h_a2f326b01ad82a3ab14cc9fc4b3abd6b8}{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-G\-I\-S\-T\-R\-Y\-\_\-\-A\-D\-D}(x\-Queue, pc\-Queue\-Name)
+\item 
+\#define \hyperlink{FreeRTOS_8h_af6c636f9baf2eb594ffb0b6689d1b729}{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-T\-A\-K\-E\-\_\-\-B\-L\-O\-C\-K}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_ab60d0210392d54bc0539de67c8bb3bf6}{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-T\-A\-K\-E}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a42d4b4f2c5bac89d617c27902606019c}{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-W\-A\-I\-T\-\_\-\-B\-L\-O\-C\-K}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a32ea7a3f22b7ef8b2ddc7b98848b8446}{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-W\-A\-I\-T}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a0047b9beb807b3c8b31d485532f7b077}{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_aad4d3ae692f3500f4644070fe971b646}{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a99d95526db9937c96ba110f46bb59ee5}{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-G\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a727939bcdb98501e0eba0ec8a1841e1b}{port\-C\-O\-N\-F\-I\-G\-U\-R\-E\-\_\-\-T\-I\-M\-E\-R\-\_\-\-F\-O\-R\-\_\-\-R\-U\-N\-\_\-\-T\-I\-M\-E\-\_\-\-S\-T\-A\-T\-S}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a27b7e11718b2ec5b5217e60f3b9e8aec}{port\-P\-R\-I\-V\-I\-L\-E\-G\-E\-\_\-\-B\-I\-T}~( ( \hyperlink{Flsh186_2prtmacro_8h_a8e88a5e44a5243b3d1c29af17fd6b5bd}{U\-Base\-Type\-\_\-t} ) 0x00 )
+\item 
+\#define \hyperlink{FreeRTOS_8h_af4484fc07631a16e45ac5f29a3f0556e}{port\-Y\-I\-E\-L\-D\-\_\-\-W\-I\-T\-H\-I\-N\-\_\-\-A\-P\-I}~\hyperlink{Tasking_2ARM__CM4F_2portmacro_8h_ae1ff06193615f5130b5a97dc9e708fc7}{port\-Y\-I\-E\-L\-D}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a1dcf4bd9c1ad4fe16a71391dd95cf585}{port\-S\-U\-P\-P\-R\-E\-S\-S\-\_\-\-T\-I\-C\-K\-S\-\_\-\-A\-N\-D\-\_\-\-S\-L\-E\-E\-P}(x\-Expected\-Idle\-Time)
+\item 
+\#define \hyperlink{FreeRTOS_8h_aff3d7f6e5b38283f5214880d8086bb57}{config\-E\-X\-P\-E\-C\-T\-E\-D\-\_\-\-I\-D\-L\-E\-\_\-\-T\-I\-M\-E\-\_\-\-B\-E\-F\-O\-R\-E\-\_\-\-S\-L\-E\-E\-P}~2
+\item 
+\#define \hyperlink{FreeRTOS_8h_aa19d69387b32a94d79ea52bb2c6f2649}{config\-U\-S\-E\-\_\-\-T\-I\-C\-K\-L\-E\-S\-S\-\_\-\-I\-D\-L\-E}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a986fc0c49fdf4945edd7fb6701e04978}{config\-P\-R\-E\-\_\-\-S\-L\-E\-E\-P\-\_\-\-P\-R\-O\-C\-E\-S\-S\-I\-N\-G}(x)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a55f848c10319c953bfcc456fc724cee1}{config\-P\-O\-S\-T\-\_\-\-S\-L\-E\-E\-P\-\_\-\-P\-R\-O\-C\-E\-S\-S\-I\-N\-G}(x)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a7bfbcca89aaa971f59fe9233772cc33d}{config\-U\-S\-E\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-T\-S}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_ad39396f0acc31310827fbbaf28623d58}{port\-T\-A\-S\-K\-\_\-\-U\-S\-E\-S\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a493c5763eb7a39bd80779a1c58de0d82}{config\-U\-S\-E\-\_\-\-T\-I\-M\-E\-\_\-\-S\-L\-I\-C\-I\-N\-G}~1
+\item 
+\#define \hyperlink{FreeRTOS_8h_a7990cb1664418797a8aad3917b665116}{config\-I\-N\-C\-L\-U\-D\-E\-\_\-\-A\-P\-P\-L\-I\-C\-A\-T\-I\-O\-N\-\_\-\-D\-E\-F\-I\-N\-E\-D\-\_\-\-P\-R\-I\-V\-I\-L\-E\-G\-E\-D\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-S}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a10f75d20c71c4289f96d1b89cb6c62e2}{port\-A\-S\-S\-E\-R\-T\-\_\-\-I\-F\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-I\-N\-V\-A\-L\-I\-D}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_ac77e2af1a6b0d38fbab36cf2aa96f1a8}{mt\-C\-O\-V\-E\-R\-A\-G\-E\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-R\-K\-E\-R}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a2ddaee9013b02cfbfe2773ec4257375c}{mt\-C\-O\-V\-E\-R\-A\-G\-E\-\_\-\-T\-E\-S\-T\-\_\-\-D\-E\-L\-A\-Y}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a24a48f166f347e5201a72efcc73d0202}{port\-A\-S\-S\-E\-R\-T\-\_\-\-I\-F\-\_\-\-I\-N\-\_\-\-I\-S\-R}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a62e53bc6d3fa5c4bf4e65ab2752930f3}{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a1d6797a53b62d501b095f964036a7ac4}{config\-S\-U\-P\-P\-O\-R\-T\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-L\-L\-O\-C\-A\-T\-I\-O\-N}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a5ada85b405891061cad280c1e35213ee}{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}()~\hyperlink{oWatcom_216BitDOS_2Flsh186_2portmacro_8h_adff63afc268c80ed13a4db7eb576c989}{port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a3a24fff82b123ddc7cf8195a466733dd}{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}()~\hyperlink{oWatcom_216BitDOS_2PC_2portmacro_8h_a71ba2a5ff29ae3cc7a1ad9e3ae6a7ddf}{port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a7b53d0f5d4ae09f599f92fb5cd546e6b}{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-E\-T\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}()~\hyperlink{Tasking_2ARM__CM4F_2portmacro_8h_a31b4260dbc1823ba80b578f86eb15a98}{port\-S\-E\-T\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a506f401396abd44a8dbe31edac713f8b}{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}(x)~\hyperlink{Tasking_2ARM__CM4F_2portmacro_8h_a79d65a5d0f6f9133a0739832e9d8367e}{port\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}( ( x ) )
+\item 
+\#define \hyperlink{FreeRTOS_8h_ad1bc0e8a3c68c90d6711ec4a9ac1a516}{e\-Task\-State\-Get}~\hyperlink{task_8h_a954df77397d616484edb7c58c7760b10}{e\-Task\-Get\-State}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a324d7087026e1e9dfe6b7567d5bf63c8}{port\-Tick\-Type}~\hyperlink{Flsh186_2prtmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t}
+\item 
+\#define \hyperlink{FreeRTOS_8h_af7cd8f53b62f0c497b442b504c30f2ec}{x\-Task\-Handle}~\hyperlink{task_8h_ae95f44d4cfeb4a599c6cc258d241cb6b}{Task\-Handle\-\_\-t}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a2b4ea2af4cc24db3cbd458722e96fa2f}{x\-Queue\-Handle}~\hyperlink{queue_8h_aaf19d499892a4ce1409326ece00f5264}{Queue\-Handle\-\_\-t}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a520d8cf032327581ece00e5bd8e03a75}{x\-Semaphore\-Handle}~\hyperlink{semphr_8h_ad88c6df4a04beedeac782918c8a332f5}{Semaphore\-Handle\-\_\-t}
+\item 
+\#define \hyperlink{FreeRTOS_8h_ab8d6acee206b02a6a4cf4e63d035b3fd}{x\-Queue\-Set\-Handle}~\hyperlink{queue_8h_a32a86d604e1706d72a5a4c62d8262f56}{Queue\-Set\-Handle\-\_\-t}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a009d2d6ce8ab8635eaf9f3e507866f6c}{x\-Queue\-Set\-Member\-Handle}~\hyperlink{queue_8h_a6c19a940d8fe07d338928ecea68b1776}{Queue\-Set\-Member\-Handle\-\_\-t}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a819785230f5d9368aec050ac661d12e0}{x\-Time\-Out\-Type}~\hyperlink{task_8h_a5e1a80e591c8c42e2d21a29d70256ea2}{Time\-Out\-\_\-t}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a5971b85d409766aa17def6cc275c15cd}{x\-Memory\-Region}~\hyperlink{task_8h_af609504de4d78ff6f71477ae47c66e51}{Memory\-Region\-\_\-t}
+\item 
+\#define \hyperlink{FreeRTOS_8h_aba476594b7c76708495313b143d7edde}{x\-Task\-Parameters}~\hyperlink{task_8h_aab31598a83ebd71dfce65f58add35676}{Task\-Parameters\-\_\-t}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a86ae1e476b7df91b0b58f7cc0f1ce7ea}{x\-Task\-Status\-Type}~\hyperlink{task_8h_a34f88ef69814fb27d554e666e9868a9c}{Task\-Status\-\_\-t}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a9fa57c444af781c3b6286f5cc9e4982d}{x\-Timer\-Handle}~\hyperlink{timers_8h_aae4bf1dce696ab615d5fd073606fd3cb}{Timer\-Handle\-\_\-t}
+\item 
+\#define \hyperlink{FreeRTOS_8h_ac6d7ef270d5c85eb91906683157ffc13}{x\-Co\-Routine\-Handle}~\hyperlink{croutine_8h_a33b9d058688c92258155b5756d9936dd}{Co\-Routine\-Handle\-\_\-t}
+\item 
+\#define \hyperlink{FreeRTOS_8h_ac53ab0d2f78148433574898386aeb5f4}{pd\-T\-A\-S\-K\-\_\-\-H\-O\-O\-K\-\_\-\-C\-O\-D\-E}~\hyperlink{task_8h_a58914b9ed19adbed49b2fb0f09bd5af5}{Task\-Hook\-Function\-\_\-t}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a8689cad2afb0c5f65d866e2c356378bf}{port\-T\-I\-C\-K\-\_\-\-R\-A\-T\-E\-\_\-\-M\-S}~\hyperlink{Tasking_2ARM__CM4F_2portmacro_8h_a554d9322ce7f698a86a22b21234bd8cd}{port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a626c65afa49005d067495a6cdaace885}{pc\-Task\-Get\-Task\-Name}~\hyperlink{tasks_8c_a2ee63040e19e7c0cd7dbd070b8e1bca5}{pc\-Task\-Get\-Name}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a870358d5faa01a5290705b073de220ca}{pc\-Timer\-Get\-Timer\-Name}~\hyperlink{timers_8h_a43c9186d441d03fc6f97b542f853bd1a}{pc\-Timer\-Get\-Name}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a8363e9859059888726caa268e1816e54}{pc\-Queue\-Get\-Queue\-Name}~pc\-Queue\-Get\-Name
+\item 
+\#define \hyperlink{FreeRTOS_8h_af91a84ee7fcd1c03bba33c0c86c9a493}{v\-Task\-Get\-Task\-Info}~\hyperlink{task_8h_ac08c26d037d0dc685740eec9b2028715}{v\-Task\-Get\-Info}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a0da0e4db75906783854965b3cb9db214}{tmr\-T\-I\-M\-E\-R\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K}~\hyperlink{timers_8h_a6813740434d6879a34b97734ee5966e6}{Timer\-Callback\-Function\-\_\-t}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a74cee96c96792dab96bdc57ba9007b24}{pd\-T\-A\-S\-K\-\_\-\-C\-O\-D\-E}~\hyperlink{projdefs_8h_a24177544ba9c507a9429d6d5761eb487}{Task\-Function\-\_\-t}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a62b284ca8496de2faf0157e6c8be94b6}{x\-List\-Item}~\hyperlink{list_8h_a1a62d469392f9bfe2443e7efab9c8398}{List\-Item\-\_\-t}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a990e46a268202dae9f09ca56c35cc17c}{x\-List}~\hyperlink{list_8h_afd590ef6400071b4d63d65ef90bea7f4}{List\-\_\-t}
+\item 
+\#define \hyperlink{FreeRTOS_8h_aec0ba4af7bdd0e0acba26902a496de6c}{config\-U\-S\-E\-\_\-\-T\-A\-S\-K\-\_\-\-F\-P\-U\-\_\-\-S\-U\-P\-P\-O\-R\-T}~1
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structxSTATIC__LIST__ITEM}{x\-S\-T\-A\-T\-I\-C\-\_\-\-L\-I\-S\-T\-\_\-\-I\-T\-E\-M} \hyperlink{FreeRTOS_8h_a1d31bc0472385a87424518da484d9e09}{Static\-List\-Item\-\_\-t}
+\item 
+typedef struct \\*
+\hyperlink{structxSTATIC__MINI__LIST__ITEM}{x\-S\-T\-A\-T\-I\-C\-\_\-\-M\-I\-N\-I\-\_\-\-L\-I\-S\-T\-\_\-\-I\-T\-E\-M} \hyperlink{FreeRTOS_8h_a9097f48f4dfa56e8e01d9179462c7994}{Static\-Mini\-List\-Item\-\_\-t}
+\item 
+typedef struct \hyperlink{structxSTATIC__LIST}{x\-S\-T\-A\-T\-I\-C\-\_\-\-L\-I\-S\-T} \hyperlink{FreeRTOS_8h_a9735ad9101a2bd25f83a62089a4acee6}{Static\-List\-\_\-t}
+\item 
+typedef struct \hyperlink{structxSTATIC__TCB}{x\-S\-T\-A\-T\-I\-C\-\_\-\-T\-C\-B} \hyperlink{FreeRTOS_8h_a1af40d1b7ab8cb328bac2d92d7378c38}{Static\-Task\-\_\-t}
+\item 
+typedef struct \hyperlink{structxSTATIC__QUEUE}{x\-S\-T\-A\-T\-I\-C\-\_\-\-Q\-U\-E\-U\-E} \hyperlink{FreeRTOS_8h_a9deecb4f17c68b05469a3019cc674bac}{Static\-Queue\-\_\-t}
+\item 
+typedef \hyperlink{FreeRTOS_8h_a9deecb4f17c68b05469a3019cc674bac}{Static\-Queue\-\_\-t} \hyperlink{FreeRTOS_8h_a5899eefbfd03bc6eb83c9accffc8975e}{Static\-Semaphore\-\_\-t}
+\item 
+typedef struct \hyperlink{structxSTATIC__EVENT__GROUP}{x\-S\-T\-A\-T\-I\-C\-\_\-\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P} \hyperlink{FreeRTOS_8h_a4299b2d274d971e7861eb11e4a688a01}{Static\-Event\-Group\-\_\-t}
+\item 
+typedef struct \hyperlink{structxSTATIC__TIMER}{x\-S\-T\-A\-T\-I\-C\-\_\-\-T\-I\-M\-E\-R} \hyperlink{FreeRTOS_8h_af99691595ea45dc3fb803cc004cb6bb9}{Static\-Timer\-\_\-t}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{FreeRTOS_8h_a7c1502a6fbffa00b3e2350e86e8bff06}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!config\-A\-S\-S\-E\-R\-T\-\_\-\-D\-E\-F\-I\-N\-E\-D@{config\-A\-S\-S\-E\-R\-T\-\_\-\-D\-E\-F\-I\-N\-E\-D}}
+\index{config\-A\-S\-S\-E\-R\-T\-\_\-\-D\-E\-F\-I\-N\-E\-D@{config\-A\-S\-S\-E\-R\-T\-\_\-\-D\-E\-F\-I\-N\-E\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{config\-A\-S\-S\-E\-R\-T\-\_\-\-D\-E\-F\-I\-N\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-A\-S\-S\-E\-R\-T\-\_\-\-D\-E\-F\-I\-N\-E\-D~1}}\label{FreeRTOS_8h_a7c1502a6fbffa00b3e2350e86e8bff06}
+\hypertarget{FreeRTOS_8h_aff3d7f6e5b38283f5214880d8086bb57}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!config\-E\-X\-P\-E\-C\-T\-E\-D\-\_\-\-I\-D\-L\-E\-\_\-\-T\-I\-M\-E\-\_\-\-B\-E\-F\-O\-R\-E\-\_\-\-S\-L\-E\-E\-P@{config\-E\-X\-P\-E\-C\-T\-E\-D\-\_\-\-I\-D\-L\-E\-\_\-\-T\-I\-M\-E\-\_\-\-B\-E\-F\-O\-R\-E\-\_\-\-S\-L\-E\-E\-P}}
+\index{config\-E\-X\-P\-E\-C\-T\-E\-D\-\_\-\-I\-D\-L\-E\-\_\-\-T\-I\-M\-E\-\_\-\-B\-E\-F\-O\-R\-E\-\_\-\-S\-L\-E\-E\-P@{config\-E\-X\-P\-E\-C\-T\-E\-D\-\_\-\-I\-D\-L\-E\-\_\-\-T\-I\-M\-E\-\_\-\-B\-E\-F\-O\-R\-E\-\_\-\-S\-L\-E\-E\-P}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{config\-E\-X\-P\-E\-C\-T\-E\-D\-\_\-\-I\-D\-L\-E\-\_\-\-T\-I\-M\-E\-\_\-\-B\-E\-F\-O\-R\-E\-\_\-\-S\-L\-E\-E\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-E\-X\-P\-E\-C\-T\-E\-D\-\_\-\-I\-D\-L\-E\-\_\-\-T\-I\-M\-E\-\_\-\-B\-E\-F\-O\-R\-E\-\_\-\-S\-L\-E\-E\-P~2}}\label{FreeRTOS_8h_aff3d7f6e5b38283f5214880d8086bb57}
+\hypertarget{FreeRTOS_8h_a7990cb1664418797a8aad3917b665116}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!config\-I\-N\-C\-L\-U\-D\-E\-\_\-\-A\-P\-P\-L\-I\-C\-A\-T\-I\-O\-N\-\_\-\-D\-E\-F\-I\-N\-E\-D\-\_\-\-P\-R\-I\-V\-I\-L\-E\-G\-E\-D\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-S@{config\-I\-N\-C\-L\-U\-D\-E\-\_\-\-A\-P\-P\-L\-I\-C\-A\-T\-I\-O\-N\-\_\-\-D\-E\-F\-I\-N\-E\-D\-\_\-\-P\-R\-I\-V\-I\-L\-E\-G\-E\-D\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-S}}
+\index{config\-I\-N\-C\-L\-U\-D\-E\-\_\-\-A\-P\-P\-L\-I\-C\-A\-T\-I\-O\-N\-\_\-\-D\-E\-F\-I\-N\-E\-D\-\_\-\-P\-R\-I\-V\-I\-L\-E\-G\-E\-D\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-S@{config\-I\-N\-C\-L\-U\-D\-E\-\_\-\-A\-P\-P\-L\-I\-C\-A\-T\-I\-O\-N\-\_\-\-D\-E\-F\-I\-N\-E\-D\-\_\-\-P\-R\-I\-V\-I\-L\-E\-G\-E\-D\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-S}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{config\-I\-N\-C\-L\-U\-D\-E\-\_\-\-A\-P\-P\-L\-I\-C\-A\-T\-I\-O\-N\-\_\-\-D\-E\-F\-I\-N\-E\-D\-\_\-\-P\-R\-I\-V\-I\-L\-E\-G\-E\-D\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-I\-N\-C\-L\-U\-D\-E\-\_\-\-A\-P\-P\-L\-I\-C\-A\-T\-I\-O\-N\-\_\-\-D\-E\-F\-I\-N\-E\-D\-\_\-\-P\-R\-I\-V\-I\-L\-E\-G\-E\-D\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-S~0}}\label{FreeRTOS_8h_a7990cb1664418797a8aad3917b665116}
+\hypertarget{FreeRTOS_8h_a8d32b5f74e55dfd12c5aa3415e16d75e}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!config\-N\-U\-M\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-L\-O\-C\-A\-L\-\_\-\-S\-T\-O\-R\-A\-G\-E\-\_\-\-P\-O\-I\-N\-T\-E\-R\-S@{config\-N\-U\-M\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-L\-O\-C\-A\-L\-\_\-\-S\-T\-O\-R\-A\-G\-E\-\_\-\-P\-O\-I\-N\-T\-E\-R\-S}}
+\index{config\-N\-U\-M\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-L\-O\-C\-A\-L\-\_\-\-S\-T\-O\-R\-A\-G\-E\-\_\-\-P\-O\-I\-N\-T\-E\-R\-S@{config\-N\-U\-M\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-L\-O\-C\-A\-L\-\_\-\-S\-T\-O\-R\-A\-G\-E\-\_\-\-P\-O\-I\-N\-T\-E\-R\-S}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{config\-N\-U\-M\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-L\-O\-C\-A\-L\-\_\-\-S\-T\-O\-R\-A\-G\-E\-\_\-\-P\-O\-I\-N\-T\-E\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-N\-U\-M\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-L\-O\-C\-A\-L\-\_\-\-S\-T\-O\-R\-A\-G\-E\-\_\-\-P\-O\-I\-N\-T\-E\-R\-S~0}}\label{FreeRTOS_8h_a8d32b5f74e55dfd12c5aa3415e16d75e}
+\hypertarget{FreeRTOS_8h_a55f848c10319c953bfcc456fc724cee1}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!config\-P\-O\-S\-T\-\_\-\-S\-L\-E\-E\-P\-\_\-\-P\-R\-O\-C\-E\-S\-S\-I\-N\-G@{config\-P\-O\-S\-T\-\_\-\-S\-L\-E\-E\-P\-\_\-\-P\-R\-O\-C\-E\-S\-S\-I\-N\-G}}
+\index{config\-P\-O\-S\-T\-\_\-\-S\-L\-E\-E\-P\-\_\-\-P\-R\-O\-C\-E\-S\-S\-I\-N\-G@{config\-P\-O\-S\-T\-\_\-\-S\-L\-E\-E\-P\-\_\-\-P\-R\-O\-C\-E\-S\-S\-I\-N\-G}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{config\-P\-O\-S\-T\-\_\-\-S\-L\-E\-E\-P\-\_\-\-P\-R\-O\-C\-E\-S\-S\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-P\-O\-S\-T\-\_\-\-S\-L\-E\-E\-P\-\_\-\-P\-R\-O\-C\-E\-S\-S\-I\-N\-G(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a55f848c10319c953bfcc456fc724cee1}
+\hypertarget{FreeRTOS_8h_a986fc0c49fdf4945edd7fb6701e04978}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!config\-P\-R\-E\-\_\-\-S\-L\-E\-E\-P\-\_\-\-P\-R\-O\-C\-E\-S\-S\-I\-N\-G@{config\-P\-R\-E\-\_\-\-S\-L\-E\-E\-P\-\_\-\-P\-R\-O\-C\-E\-S\-S\-I\-N\-G}}
+\index{config\-P\-R\-E\-\_\-\-S\-L\-E\-E\-P\-\_\-\-P\-R\-O\-C\-E\-S\-S\-I\-N\-G@{config\-P\-R\-E\-\_\-\-S\-L\-E\-E\-P\-\_\-\-P\-R\-O\-C\-E\-S\-S\-I\-N\-G}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{config\-P\-R\-E\-\_\-\-S\-L\-E\-E\-P\-\_\-\-P\-R\-O\-C\-E\-S\-S\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-P\-R\-E\-\_\-\-S\-L\-E\-E\-P\-\_\-\-P\-R\-O\-C\-E\-S\-S\-I\-N\-G(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a986fc0c49fdf4945edd7fb6701e04978}
+\hypertarget{FreeRTOS_8h_a1d6797a53b62d501b095f964036a7ac4}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!config\-S\-U\-P\-P\-O\-R\-T\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-L\-L\-O\-C\-A\-T\-I\-O\-N@{config\-S\-U\-P\-P\-O\-R\-T\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-L\-L\-O\-C\-A\-T\-I\-O\-N}}
+\index{config\-S\-U\-P\-P\-O\-R\-T\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-L\-L\-O\-C\-A\-T\-I\-O\-N@{config\-S\-U\-P\-P\-O\-R\-T\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-L\-L\-O\-C\-A\-T\-I\-O\-N}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{config\-S\-U\-P\-P\-O\-R\-T\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-L\-L\-O\-C\-A\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-S\-U\-P\-P\-O\-R\-T\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-L\-L\-O\-C\-A\-T\-I\-O\-N~0}}\label{FreeRTOS_8h_a1d6797a53b62d501b095f964036a7ac4}
+\hypertarget{FreeRTOS_8h_a0415288d8efe664e0b05a7b53fbfaa33}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!config\-U\-S\-E\-\_\-\-D\-A\-E\-M\-O\-N\-\_\-\-T\-A\-S\-K\-\_\-\-S\-T\-A\-R\-T\-U\-P\-\_\-\-H\-O\-O\-K@{config\-U\-S\-E\-\_\-\-D\-A\-E\-M\-O\-N\-\_\-\-T\-A\-S\-K\-\_\-\-S\-T\-A\-R\-T\-U\-P\-\_\-\-H\-O\-O\-K}}
+\index{config\-U\-S\-E\-\_\-\-D\-A\-E\-M\-O\-N\-\_\-\-T\-A\-S\-K\-\_\-\-S\-T\-A\-R\-T\-U\-P\-\_\-\-H\-O\-O\-K@{config\-U\-S\-E\-\_\-\-D\-A\-E\-M\-O\-N\-\_\-\-T\-A\-S\-K\-\_\-\-S\-T\-A\-R\-T\-U\-P\-\_\-\-H\-O\-O\-K}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{config\-U\-S\-E\-\_\-\-D\-A\-E\-M\-O\-N\-\_\-\-T\-A\-S\-K\-\_\-\-S\-T\-A\-R\-T\-U\-P\-\_\-\-H\-O\-O\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-U\-S\-E\-\_\-\-D\-A\-E\-M\-O\-N\-\_\-\-T\-A\-S\-K\-\_\-\-S\-T\-A\-R\-T\-U\-P\-\_\-\-H\-O\-O\-K~0}}\label{FreeRTOS_8h_a0415288d8efe664e0b05a7b53fbfaa33}
+\hypertarget{FreeRTOS_8h_acf3616a8cbe15687f6000cefcca84bbd}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!config\-U\-S\-E\-\_\-\-N\-E\-W\-L\-I\-B\-\_\-\-R\-E\-E\-N\-T\-R\-A\-N\-T@{config\-U\-S\-E\-\_\-\-N\-E\-W\-L\-I\-B\-\_\-\-R\-E\-E\-N\-T\-R\-A\-N\-T}}
+\index{config\-U\-S\-E\-\_\-\-N\-E\-W\-L\-I\-B\-\_\-\-R\-E\-E\-N\-T\-R\-A\-N\-T@{config\-U\-S\-E\-\_\-\-N\-E\-W\-L\-I\-B\-\_\-\-R\-E\-E\-N\-T\-R\-A\-N\-T}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{config\-U\-S\-E\-\_\-\-N\-E\-W\-L\-I\-B\-\_\-\-R\-E\-E\-N\-T\-R\-A\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-U\-S\-E\-\_\-\-N\-E\-W\-L\-I\-B\-\_\-\-R\-E\-E\-N\-T\-R\-A\-N\-T~0}}\label{FreeRTOS_8h_acf3616a8cbe15687f6000cefcca84bbd}
+\hypertarget{FreeRTOS_8h_a7bfbcca89aaa971f59fe9233772cc33d}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!config\-U\-S\-E\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-T\-S@{config\-U\-S\-E\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-T\-S}}
+\index{config\-U\-S\-E\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-T\-S@{config\-U\-S\-E\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-T\-S}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{config\-U\-S\-E\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-U\-S\-E\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-T\-S~0}}\label{FreeRTOS_8h_a7bfbcca89aaa971f59fe9233772cc33d}
+\hypertarget{FreeRTOS_8h_aec0ba4af7bdd0e0acba26902a496de6c}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!config\-U\-S\-E\-\_\-\-T\-A\-S\-K\-\_\-\-F\-P\-U\-\_\-\-S\-U\-P\-P\-O\-R\-T@{config\-U\-S\-E\-\_\-\-T\-A\-S\-K\-\_\-\-F\-P\-U\-\_\-\-S\-U\-P\-P\-O\-R\-T}}
+\index{config\-U\-S\-E\-\_\-\-T\-A\-S\-K\-\_\-\-F\-P\-U\-\_\-\-S\-U\-P\-P\-O\-R\-T@{config\-U\-S\-E\-\_\-\-T\-A\-S\-K\-\_\-\-F\-P\-U\-\_\-\-S\-U\-P\-P\-O\-R\-T}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{config\-U\-S\-E\-\_\-\-T\-A\-S\-K\-\_\-\-F\-P\-U\-\_\-\-S\-U\-P\-P\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-U\-S\-E\-\_\-\-T\-A\-S\-K\-\_\-\-F\-P\-U\-\_\-\-S\-U\-P\-P\-O\-R\-T~1}}\label{FreeRTOS_8h_aec0ba4af7bdd0e0acba26902a496de6c}
+\hypertarget{FreeRTOS_8h_aa19d69387b32a94d79ea52bb2c6f2649}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!config\-U\-S\-E\-\_\-\-T\-I\-C\-K\-L\-E\-S\-S\-\_\-\-I\-D\-L\-E@{config\-U\-S\-E\-\_\-\-T\-I\-C\-K\-L\-E\-S\-S\-\_\-\-I\-D\-L\-E}}
+\index{config\-U\-S\-E\-\_\-\-T\-I\-C\-K\-L\-E\-S\-S\-\_\-\-I\-D\-L\-E@{config\-U\-S\-E\-\_\-\-T\-I\-C\-K\-L\-E\-S\-S\-\_\-\-I\-D\-L\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{config\-U\-S\-E\-\_\-\-T\-I\-C\-K\-L\-E\-S\-S\-\_\-\-I\-D\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-U\-S\-E\-\_\-\-T\-I\-C\-K\-L\-E\-S\-S\-\_\-\-I\-D\-L\-E~0}}\label{FreeRTOS_8h_aa19d69387b32a94d79ea52bb2c6f2649}
+\hypertarget{FreeRTOS_8h_a493c5763eb7a39bd80779a1c58de0d82}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!config\-U\-S\-E\-\_\-\-T\-I\-M\-E\-\_\-\-S\-L\-I\-C\-I\-N\-G@{config\-U\-S\-E\-\_\-\-T\-I\-M\-E\-\_\-\-S\-L\-I\-C\-I\-N\-G}}
+\index{config\-U\-S\-E\-\_\-\-T\-I\-M\-E\-\_\-\-S\-L\-I\-C\-I\-N\-G@{config\-U\-S\-E\-\_\-\-T\-I\-M\-E\-\_\-\-S\-L\-I\-C\-I\-N\-G}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{config\-U\-S\-E\-\_\-\-T\-I\-M\-E\-\_\-\-S\-L\-I\-C\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-U\-S\-E\-\_\-\-T\-I\-M\-E\-\_\-\-S\-L\-I\-C\-I\-N\-G~1}}\label{FreeRTOS_8h_a493c5763eb7a39bd80779a1c58de0d82}
+\hypertarget{FreeRTOS_8h_ac342ae309b0c53828d2ecad3e6de355b}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!config\-U\-S\-E\-\_\-\-T\-I\-M\-E\-R\-S@{config\-U\-S\-E\-\_\-\-T\-I\-M\-E\-R\-S}}
+\index{config\-U\-S\-E\-\_\-\-T\-I\-M\-E\-R\-S@{config\-U\-S\-E\-\_\-\-T\-I\-M\-E\-R\-S}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{config\-U\-S\-E\-\_\-\-T\-I\-M\-E\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-U\-S\-E\-\_\-\-T\-I\-M\-E\-R\-S~0}}\label{FreeRTOS_8h_ac342ae309b0c53828d2ecad3e6de355b}
+\hypertarget{FreeRTOS_8h_ad1bc0e8a3c68c90d6711ec4a9ac1a516}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!e\-Task\-State\-Get@{e\-Task\-State\-Get}}
+\index{e\-Task\-State\-Get@{e\-Task\-State\-Get}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{e\-Task\-State\-Get}]{\setlength{\rightskip}{0pt plus 5cm}\#define e\-Task\-State\-Get~{\bf e\-Task\-Get\-State}}}\label{FreeRTOS_8h_ad1bc0e8a3c68c90d6711ec4a9ac1a516}
+\hypertarget{FreeRTOS_8h_a4fd1d67d54044ac86e8ffc890180f9f6}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!I\-N\-C\-L\-U\-D\-E\-\_\-e\-Task\-Get\-State@{I\-N\-C\-L\-U\-D\-E\-\_\-e\-Task\-Get\-State}}
+\index{I\-N\-C\-L\-U\-D\-E\-\_\-e\-Task\-Get\-State@{I\-N\-C\-L\-U\-D\-E\-\_\-e\-Task\-Get\-State}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{I\-N\-C\-L\-U\-D\-E\-\_\-e\-Task\-Get\-State}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-C\-L\-U\-D\-E\-\_\-e\-Task\-Get\-State~0}}\label{FreeRTOS_8h_a4fd1d67d54044ac86e8ffc890180f9f6}
+\hypertarget{FreeRTOS_8h_a4e2902143b6abf777065c15940321911}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!I\-N\-C\-L\-U\-D\-E\-\_\-x\-Queue\-Get\-Mutex\-Holder@{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Queue\-Get\-Mutex\-Holder}}
+\index{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Queue\-Get\-Mutex\-Holder@{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Queue\-Get\-Mutex\-Holder}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Queue\-Get\-Mutex\-Holder}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-C\-L\-U\-D\-E\-\_\-x\-Queue\-Get\-Mutex\-Holder~0}}\label{FreeRTOS_8h_a4e2902143b6abf777065c15940321911}
+\hypertarget{FreeRTOS_8h_ad221128595137414579be33cf8e446d8}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!I\-N\-C\-L\-U\-D\-E\-\_\-x\-Semaphore\-Get\-Mutex\-Holder@{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Semaphore\-Get\-Mutex\-Holder}}
+\index{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Semaphore\-Get\-Mutex\-Holder@{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Semaphore\-Get\-Mutex\-Holder}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Semaphore\-Get\-Mutex\-Holder}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-C\-L\-U\-D\-E\-\_\-x\-Semaphore\-Get\-Mutex\-Holder~{\bf I\-N\-C\-L\-U\-D\-E\-\_\-x\-Queue\-Get\-Mutex\-Holder}}}\label{FreeRTOS_8h_ad221128595137414579be33cf8e446d8}
+\hypertarget{FreeRTOS_8h_ac54efb28edcc1d3b9d0844005ea20674}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Abort\-Delay@{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Abort\-Delay}}
+\index{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Abort\-Delay@{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Abort\-Delay}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Abort\-Delay}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Abort\-Delay~0}}\label{FreeRTOS_8h_ac54efb28edcc1d3b9d0844005ea20674}
+\hypertarget{FreeRTOS_8h_a33733d2bbe005751ec3a417e5ac373bf}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Handle@{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Handle}}
+\index{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Handle@{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Handle}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Handle~0}}\label{FreeRTOS_8h_a33733d2bbe005751ec3a417e5ac373bf}
+\hypertarget{FreeRTOS_8h_ae8811def4dd6983011fed9ef8686f18f}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Idle\-Task\-Handle@{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Idle\-Task\-Handle}}
+\index{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Idle\-Task\-Handle@{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Idle\-Task\-Handle}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Idle\-Task\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Idle\-Task\-Handle~0}}\label{FreeRTOS_8h_ae8811def4dd6983011fed9ef8686f18f}
+\hypertarget{FreeRTOS_8h_a9ed60ede556830584e6bfd4a3ab4f9de}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Scheduler\-State@{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Scheduler\-State}}
+\index{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Scheduler\-State@{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Scheduler\-State}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Scheduler\-State}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Get\-Scheduler\-State~0}}\label{FreeRTOS_8h_a9ed60ede556830584e6bfd4a3ab4f9de}
+\hypertarget{FreeRTOS_8h_a85e3dae9f3daa26f24e679cb6793811e}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Resume\-From\-I\-S\-R@{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Resume\-From\-I\-S\-R}}
+\index{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Resume\-From\-I\-S\-R@{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Resume\-From\-I\-S\-R}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Resume\-From\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-C\-L\-U\-D\-E\-\_\-x\-Task\-Resume\-From\-I\-S\-R~1}}\label{FreeRTOS_8h_a85e3dae9f3daa26f24e679cb6793811e}
+\hypertarget{FreeRTOS_8h_a4b4336acd61a8e513ca2376be84326b5}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!I\-N\-C\-L\-U\-D\-E\-\_\-x\-Timer\-Pend\-Function\-Call@{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Timer\-Pend\-Function\-Call}}
+\index{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Timer\-Pend\-Function\-Call@{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Timer\-Pend\-Function\-Call}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{I\-N\-C\-L\-U\-D\-E\-\_\-x\-Timer\-Pend\-Function\-Call}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-C\-L\-U\-D\-E\-\_\-x\-Timer\-Pend\-Function\-Call~0}}\label{FreeRTOS_8h_a4b4336acd61a8e513ca2376be84326b5}
+\hypertarget{FreeRTOS_8h_a2ddaee9013b02cfbfe2773ec4257375c}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!mt\-C\-O\-V\-E\-R\-A\-G\-E\-\_\-\-T\-E\-S\-T\-\_\-\-D\-E\-L\-A\-Y@{mt\-C\-O\-V\-E\-R\-A\-G\-E\-\_\-\-T\-E\-S\-T\-\_\-\-D\-E\-L\-A\-Y}}
+\index{mt\-C\-O\-V\-E\-R\-A\-G\-E\-\_\-\-T\-E\-S\-T\-\_\-\-D\-E\-L\-A\-Y@{mt\-C\-O\-V\-E\-R\-A\-G\-E\-\_\-\-T\-E\-S\-T\-\_\-\-D\-E\-L\-A\-Y}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{mt\-C\-O\-V\-E\-R\-A\-G\-E\-\_\-\-T\-E\-S\-T\-\_\-\-D\-E\-L\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define mt\-C\-O\-V\-E\-R\-A\-G\-E\-\_\-\-T\-E\-S\-T\-\_\-\-D\-E\-L\-A\-Y(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a2ddaee9013b02cfbfe2773ec4257375c}
+\hypertarget{FreeRTOS_8h_ac77e2af1a6b0d38fbab36cf2aa96f1a8}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!mt\-C\-O\-V\-E\-R\-A\-G\-E\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-R\-K\-E\-R@{mt\-C\-O\-V\-E\-R\-A\-G\-E\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-R\-K\-E\-R}}
+\index{mt\-C\-O\-V\-E\-R\-A\-G\-E\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-R\-K\-E\-R@{mt\-C\-O\-V\-E\-R\-A\-G\-E\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-R\-K\-E\-R}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{mt\-C\-O\-V\-E\-R\-A\-G\-E\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-R\-K\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define mt\-C\-O\-V\-E\-R\-A\-G\-E\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-R\-K\-E\-R(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_ac77e2af1a6b0d38fbab36cf2aa96f1a8}
+\hypertarget{FreeRTOS_8h_a8363e9859059888726caa268e1816e54}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!pc\-Queue\-Get\-Queue\-Name@{pc\-Queue\-Get\-Queue\-Name}}
+\index{pc\-Queue\-Get\-Queue\-Name@{pc\-Queue\-Get\-Queue\-Name}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{pc\-Queue\-Get\-Queue\-Name}]{\setlength{\rightskip}{0pt plus 5cm}\#define pc\-Queue\-Get\-Queue\-Name~pc\-Queue\-Get\-Name}}\label{FreeRTOS_8h_a8363e9859059888726caa268e1816e54}
+\hypertarget{FreeRTOS_8h_a626c65afa49005d067495a6cdaace885}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!pc\-Task\-Get\-Task\-Name@{pc\-Task\-Get\-Task\-Name}}
+\index{pc\-Task\-Get\-Task\-Name@{pc\-Task\-Get\-Task\-Name}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{pc\-Task\-Get\-Task\-Name}]{\setlength{\rightskip}{0pt plus 5cm}\#define pc\-Task\-Get\-Task\-Name~{\bf pc\-Task\-Get\-Name}}}\label{FreeRTOS_8h_a626c65afa49005d067495a6cdaace885}
+\hypertarget{FreeRTOS_8h_a870358d5faa01a5290705b073de220ca}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!pc\-Timer\-Get\-Timer\-Name@{pc\-Timer\-Get\-Timer\-Name}}
+\index{pc\-Timer\-Get\-Timer\-Name@{pc\-Timer\-Get\-Timer\-Name}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{pc\-Timer\-Get\-Timer\-Name}]{\setlength{\rightskip}{0pt plus 5cm}\#define pc\-Timer\-Get\-Timer\-Name~{\bf pc\-Timer\-Get\-Name}}}\label{FreeRTOS_8h_a870358d5faa01a5290705b073de220ca}
+\hypertarget{FreeRTOS_8h_a74cee96c96792dab96bdc57ba9007b24}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!pd\-T\-A\-S\-K\-\_\-\-C\-O\-D\-E@{pd\-T\-A\-S\-K\-\_\-\-C\-O\-D\-E}}
+\index{pd\-T\-A\-S\-K\-\_\-\-C\-O\-D\-E@{pd\-T\-A\-S\-K\-\_\-\-C\-O\-D\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{pd\-T\-A\-S\-K\-\_\-\-C\-O\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define pd\-T\-A\-S\-K\-\_\-\-C\-O\-D\-E~{\bf Task\-Function\-\_\-t}}}\label{FreeRTOS_8h_a74cee96c96792dab96bdc57ba9007b24}
+\hypertarget{FreeRTOS_8h_ac53ab0d2f78148433574898386aeb5f4}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!pd\-T\-A\-S\-K\-\_\-\-H\-O\-O\-K\-\_\-\-C\-O\-D\-E@{pd\-T\-A\-S\-K\-\_\-\-H\-O\-O\-K\-\_\-\-C\-O\-D\-E}}
+\index{pd\-T\-A\-S\-K\-\_\-\-H\-O\-O\-K\-\_\-\-C\-O\-D\-E@{pd\-T\-A\-S\-K\-\_\-\-H\-O\-O\-K\-\_\-\-C\-O\-D\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{pd\-T\-A\-S\-K\-\_\-\-H\-O\-O\-K\-\_\-\-C\-O\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define pd\-T\-A\-S\-K\-\_\-\-H\-O\-O\-K\-\_\-\-C\-O\-D\-E~{\bf Task\-Hook\-Function\-\_\-t}}}\label{FreeRTOS_8h_ac53ab0d2f78148433574898386aeb5f4}
+\hypertarget{FreeRTOS_8h_a24a48f166f347e5201a72efcc73d0202}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-A\-S\-S\-E\-R\-T\-\_\-\-I\-F\-\_\-\-I\-N\-\_\-\-I\-S\-R@{port\-A\-S\-S\-E\-R\-T\-\_\-\-I\-F\-\_\-\-I\-N\-\_\-\-I\-S\-R}}
+\index{port\-A\-S\-S\-E\-R\-T\-\_\-\-I\-F\-\_\-\-I\-N\-\_\-\-I\-S\-R@{port\-A\-S\-S\-E\-R\-T\-\_\-\-I\-F\-\_\-\-I\-N\-\_\-\-I\-S\-R}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-A\-S\-S\-E\-R\-T\-\_\-\-I\-F\-\_\-\-I\-N\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-A\-S\-S\-E\-R\-T\-\_\-\-I\-F\-\_\-\-I\-N\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a24a48f166f347e5201a72efcc73d0202}
+\hypertarget{FreeRTOS_8h_a10f75d20c71c4289f96d1b89cb6c62e2}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-A\-S\-S\-E\-R\-T\-\_\-\-I\-F\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-I\-N\-V\-A\-L\-I\-D@{port\-A\-S\-S\-E\-R\-T\-\_\-\-I\-F\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-I\-N\-V\-A\-L\-I\-D}}
+\index{port\-A\-S\-S\-E\-R\-T\-\_\-\-I\-F\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-I\-N\-V\-A\-L\-I\-D@{port\-A\-S\-S\-E\-R\-T\-\_\-\-I\-F\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-I\-N\-V\-A\-L\-I\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-A\-S\-S\-E\-R\-T\-\_\-\-I\-F\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-I\-N\-V\-A\-L\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-A\-S\-S\-E\-R\-T\-\_\-\-I\-F\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-I\-N\-V\-A\-L\-I\-D(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a10f75d20c71c4289f96d1b89cb6c62e2}
+\hypertarget{FreeRTOS_8h_a3c506bf351102047fb5a75491287fe69}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-C\-L\-E\-A\-N\-\_\-\-U\-P\-\_\-\-T\-C\-B@{port\-C\-L\-E\-A\-N\-\_\-\-U\-P\-\_\-\-T\-C\-B}}
+\index{port\-C\-L\-E\-A\-N\-\_\-\-U\-P\-\_\-\-T\-C\-B@{port\-C\-L\-E\-A\-N\-\_\-\-U\-P\-\_\-\-T\-C\-B}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-C\-L\-E\-A\-N\-\_\-\-U\-P\-\_\-\-T\-C\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-C\-L\-E\-A\-N\-\_\-\-U\-P\-\_\-\-T\-C\-B(
+\begin{DoxyParamCaption}
+\item[{}]{px\-T\-C\-B}
+\end{DoxyParamCaption}
+)~( {\bf void} ) px\-T\-C\-B}}\label{FreeRTOS_8h_a3c506bf351102047fb5a75491287fe69}
+\hypertarget{FreeRTOS_8h_a2661e2c5a4e4afe5bef2ebe9872e28b3}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{port\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}}
+\index{port\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{port\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+\item[{}]{ux\-Saved\-Status\-Value}
+\end{DoxyParamCaption}
+)~( {\bf void} ) ux\-Saved\-Status\-Value}}\label{FreeRTOS_8h_a2661e2c5a4e4afe5bef2ebe9872e28b3}
+\hypertarget{FreeRTOS_8h_a727939bcdb98501e0eba0ec8a1841e1b}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-C\-O\-N\-F\-I\-G\-U\-R\-E\-\_\-\-T\-I\-M\-E\-R\-\_\-\-F\-O\-R\-\_\-\-R\-U\-N\-\_\-\-T\-I\-M\-E\-\_\-\-S\-T\-A\-T\-S@{port\-C\-O\-N\-F\-I\-G\-U\-R\-E\-\_\-\-T\-I\-M\-E\-R\-\_\-\-F\-O\-R\-\_\-\-R\-U\-N\-\_\-\-T\-I\-M\-E\-\_\-\-S\-T\-A\-T\-S}}
+\index{port\-C\-O\-N\-F\-I\-G\-U\-R\-E\-\_\-\-T\-I\-M\-E\-R\-\_\-\-F\-O\-R\-\_\-\-R\-U\-N\-\_\-\-T\-I\-M\-E\-\_\-\-S\-T\-A\-T\-S@{port\-C\-O\-N\-F\-I\-G\-U\-R\-E\-\_\-\-T\-I\-M\-E\-R\-\_\-\-F\-O\-R\-\_\-\-R\-U\-N\-\_\-\-T\-I\-M\-E\-\_\-\-S\-T\-A\-T\-S}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-C\-O\-N\-F\-I\-G\-U\-R\-E\-\_\-\-T\-I\-M\-E\-R\-\_\-\-F\-O\-R\-\_\-\-R\-U\-N\-\_\-\-T\-I\-M\-E\-\_\-\-S\-T\-A\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-C\-O\-N\-F\-I\-G\-U\-R\-E\-\_\-\-T\-I\-M\-E\-R\-\_\-\-F\-O\-R\-\_\-\-R\-U\-N\-\_\-\-T\-I\-M\-E\-\_\-\-S\-T\-A\-T\-S(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a727939bcdb98501e0eba0ec8a1841e1b}
+\hypertarget{FreeRTOS_8h_a4088d4f41bae06c9e871b918888ce7e6}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G\-\_\-\-I\-N\-\_\-\-T\-C\-B@{port\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G\-\_\-\-I\-N\-\_\-\-T\-C\-B}}
+\index{port\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G\-\_\-\-I\-N\-\_\-\-T\-C\-B@{port\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G\-\_\-\-I\-N\-\_\-\-T\-C\-B}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G\-\_\-\-I\-N\-\_\-\-T\-C\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G\-\_\-\-I\-N\-\_\-\-T\-C\-B~0}}\label{FreeRTOS_8h_a4088d4f41bae06c9e871b918888ce7e6}
+\hypertarget{FreeRTOS_8h_a53bae25f223b7156dce0fc6e6b1b2295}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-P\-O\-I\-N\-T\-E\-R\-\_\-\-S\-I\-Z\-E\-\_\-\-T\-Y\-P\-E@{port\-P\-O\-I\-N\-T\-E\-R\-\_\-\-S\-I\-Z\-E\-\_\-\-T\-Y\-P\-E}}
+\index{port\-P\-O\-I\-N\-T\-E\-R\-\_\-\-S\-I\-Z\-E\-\_\-\-T\-Y\-P\-E@{port\-P\-O\-I\-N\-T\-E\-R\-\_\-\-S\-I\-Z\-E\-\_\-\-T\-Y\-P\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-P\-O\-I\-N\-T\-E\-R\-\_\-\-S\-I\-Z\-E\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-P\-O\-I\-N\-T\-E\-R\-\_\-\-S\-I\-Z\-E\-\_\-\-T\-Y\-P\-E~uint32\-\_\-t}}\label{FreeRTOS_8h_a53bae25f223b7156dce0fc6e6b1b2295}
+\hypertarget{FreeRTOS_8h_a712f8cbd5ce7b049ef6a92dbb0da0215}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-P\-R\-E\-\_\-\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E\-\_\-\-H\-O\-O\-K@{port\-P\-R\-E\-\_\-\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E\-\_\-\-H\-O\-O\-K}}
+\index{port\-P\-R\-E\-\_\-\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E\-\_\-\-H\-O\-O\-K@{port\-P\-R\-E\-\_\-\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E\-\_\-\-H\-O\-O\-K}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-P\-R\-E\-\_\-\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E\-\_\-\-H\-O\-O\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-P\-R\-E\-\_\-\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E\-\_\-\-H\-O\-O\-K(
+\begin{DoxyParamCaption}
+\item[{}]{pv\-Task\-To\-Delete, }
+\item[{}]{px\-Yield\-Pending}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a712f8cbd5ce7b049ef6a92dbb0da0215}
+\hypertarget{FreeRTOS_8h_a27b7e11718b2ec5b5217e60f3b9e8aec}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-P\-R\-I\-V\-I\-L\-E\-G\-E\-\_\-\-B\-I\-T@{port\-P\-R\-I\-V\-I\-L\-E\-G\-E\-\_\-\-B\-I\-T}}
+\index{port\-P\-R\-I\-V\-I\-L\-E\-G\-E\-\_\-\-B\-I\-T@{port\-P\-R\-I\-V\-I\-L\-E\-G\-E\-\_\-\-B\-I\-T}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-P\-R\-I\-V\-I\-L\-E\-G\-E\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-P\-R\-I\-V\-I\-L\-E\-G\-E\-\_\-\-B\-I\-T~( ( {\bf U\-Base\-Type\-\_\-t} ) 0x00 )}}\label{FreeRTOS_8h_a27b7e11718b2ec5b5217e60f3b9e8aec}
+\hypertarget{FreeRTOS_8h_a31b4260dbc1823ba80b578f86eb15a98}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-S\-E\-T\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{port\-S\-E\-T\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}}
+\index{port\-S\-E\-T\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{port\-S\-E\-T\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-S\-E\-T\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-E\-T\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~0}}\label{FreeRTOS_8h_a31b4260dbc1823ba80b578f86eb15a98}
+\hypertarget{FreeRTOS_8h_aca0e7403a160318f5c216fc40c95e294}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-S\-E\-T\-U\-P\-\_\-\-T\-C\-B@{port\-S\-E\-T\-U\-P\-\_\-\-T\-C\-B}}
+\index{port\-S\-E\-T\-U\-P\-\_\-\-T\-C\-B@{port\-S\-E\-T\-U\-P\-\_\-\-T\-C\-B}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-S\-E\-T\-U\-P\-\_\-\-T\-C\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-E\-T\-U\-P\-\_\-\-T\-C\-B(
+\begin{DoxyParamCaption}
+\item[{}]{px\-T\-C\-B}
+\end{DoxyParamCaption}
+)~( {\bf void} ) px\-T\-C\-B}}\label{FreeRTOS_8h_aca0e7403a160318f5c216fc40c95e294}
+\hypertarget{FreeRTOS_8h_a1dcf4bd9c1ad4fe16a71391dd95cf585}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-S\-U\-P\-P\-R\-E\-S\-S\-\_\-\-T\-I\-C\-K\-S\-\_\-\-A\-N\-D\-\_\-\-S\-L\-E\-E\-P@{port\-S\-U\-P\-P\-R\-E\-S\-S\-\_\-\-T\-I\-C\-K\-S\-\_\-\-A\-N\-D\-\_\-\-S\-L\-E\-E\-P}}
+\index{port\-S\-U\-P\-P\-R\-E\-S\-S\-\_\-\-T\-I\-C\-K\-S\-\_\-\-A\-N\-D\-\_\-\-S\-L\-E\-E\-P@{port\-S\-U\-P\-P\-R\-E\-S\-S\-\_\-\-T\-I\-C\-K\-S\-\_\-\-A\-N\-D\-\_\-\-S\-L\-E\-E\-P}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-S\-U\-P\-P\-R\-E\-S\-S\-\_\-\-T\-I\-C\-K\-S\-\_\-\-A\-N\-D\-\_\-\-S\-L\-E\-E\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-U\-P\-P\-R\-E\-S\-S\-\_\-\-T\-I\-C\-K\-S\-\_\-\-A\-N\-D\-\_\-\-S\-L\-E\-E\-P(
+\begin{DoxyParamCaption}
+\item[{}]{x\-Expected\-Idle\-Time}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a1dcf4bd9c1ad4fe16a71391dd95cf585}
+\hypertarget{FreeRTOS_8h_ad39396f0acc31310827fbbaf28623d58}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-T\-A\-S\-K\-\_\-\-U\-S\-E\-S\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T@{port\-T\-A\-S\-K\-\_\-\-U\-S\-E\-S\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T}}
+\index{port\-T\-A\-S\-K\-\_\-\-U\-S\-E\-S\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T@{port\-T\-A\-S\-K\-\_\-\-U\-S\-E\-S\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-T\-A\-S\-K\-\_\-\-U\-S\-E\-S\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-A\-S\-K\-\_\-\-U\-S\-E\-S\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_ad39396f0acc31310827fbbaf28623d58}
+\hypertarget{FreeRTOS_8h_a8689cad2afb0c5f65d866e2c356378bf}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-T\-I\-C\-K\-\_\-\-R\-A\-T\-E\-\_\-\-M\-S@{port\-T\-I\-C\-K\-\_\-\-R\-A\-T\-E\-\_\-\-M\-S}}
+\index{port\-T\-I\-C\-K\-\_\-\-R\-A\-T\-E\-\_\-\-M\-S@{port\-T\-I\-C\-K\-\_\-\-R\-A\-T\-E\-\_\-\-M\-S}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-T\-I\-C\-K\-\_\-\-R\-A\-T\-E\-\_\-\-M\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-I\-C\-K\-\_\-\-R\-A\-T\-E\-\_\-\-M\-S~{\bf port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S}}}\label{FreeRTOS_8h_a8689cad2afb0c5f65d866e2c356378bf}
+\hypertarget{FreeRTOS_8h_a506f401396abd44a8dbe31edac713f8b}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}}
+\index{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~{\bf port\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}( ( x ) )}}\label{FreeRTOS_8h_a506f401396abd44a8dbe31edac713f8b}
+\hypertarget{FreeRTOS_8h_a5ada85b405891061cad280c1e35213ee}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L@{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}}
+\index{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L@{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}()}}\label{FreeRTOS_8h_a5ada85b405891061cad280c1e35213ee}
+\hypertarget{FreeRTOS_8h_a3a24fff82b123ddc7cf8195a466733dd}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L@{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}}
+\index{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L@{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}()}}\label{FreeRTOS_8h_a3a24fff82b123ddc7cf8195a466733dd}
+\hypertarget{FreeRTOS_8h_a62e53bc6d3fa5c4bf4e65ab2752930f3}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C@{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C}}
+\index{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C@{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C~0}}\label{FreeRTOS_8h_a62e53bc6d3fa5c4bf4e65ab2752930f3}
+\hypertarget{FreeRTOS_8h_a7b53d0f5d4ae09f599f92fb5cd546e6b}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-E\-T\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-E\-T\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}}
+\index{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-E\-T\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-E\-T\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-E\-T\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-S\-E\-T\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf port\-S\-E\-T\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}()}}\label{FreeRTOS_8h_a7b53d0f5d4ae09f599f92fb5cd546e6b}
+\hypertarget{FreeRTOS_8h_a324d7087026e1e9dfe6b7567d5bf63c8}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-Tick\-Type@{port\-Tick\-Type}}
+\index{port\-Tick\-Type@{port\-Tick\-Type}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-Tick\-Type}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-Tick\-Type~{\bf Tick\-Type\-\_\-t}}}\label{FreeRTOS_8h_a324d7087026e1e9dfe6b7567d5bf63c8}
+\hypertarget{FreeRTOS_8h_af4484fc07631a16e45ac5f29a3f0556e}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!port\-Y\-I\-E\-L\-D\-\_\-\-W\-I\-T\-H\-I\-N\-\_\-\-A\-P\-I@{port\-Y\-I\-E\-L\-D\-\_\-\-W\-I\-T\-H\-I\-N\-\_\-\-A\-P\-I}}
+\index{port\-Y\-I\-E\-L\-D\-\_\-\-W\-I\-T\-H\-I\-N\-\_\-\-A\-P\-I@{port\-Y\-I\-E\-L\-D\-\_\-\-W\-I\-T\-H\-I\-N\-\_\-\-A\-P\-I}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{port\-Y\-I\-E\-L\-D\-\_\-\-W\-I\-T\-H\-I\-N\-\_\-\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-Y\-I\-E\-L\-D\-\_\-\-W\-I\-T\-H\-I\-N\-\_\-\-A\-P\-I~{\bf port\-Y\-I\-E\-L\-D}}}\label{FreeRTOS_8h_af4484fc07631a16e45ac5f29a3f0556e}
+\hypertarget{FreeRTOS_8h_a0da0e4db75906783854965b3cb9db214}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!tmr\-T\-I\-M\-E\-R\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K@{tmr\-T\-I\-M\-E\-R\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K}}
+\index{tmr\-T\-I\-M\-E\-R\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K@{tmr\-T\-I\-M\-E\-R\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{tmr\-T\-I\-M\-E\-R\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define tmr\-T\-I\-M\-E\-R\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K~{\bf Timer\-Callback\-Function\-\_\-t}}}\label{FreeRTOS_8h_a0da0e4db75906783854965b3cb9db214}
+\hypertarget{FreeRTOS_8h_a657997eddb8c89bef7157e74bac003e2}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-B\-L\-O\-C\-K\-I\-N\-G\-\_\-\-O\-N\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E@{trace\-B\-L\-O\-C\-K\-I\-N\-G\-\_\-\-O\-N\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E}}
+\index{trace\-B\-L\-O\-C\-K\-I\-N\-G\-\_\-\-O\-N\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E@{trace\-B\-L\-O\-C\-K\-I\-N\-G\-\_\-\-O\-N\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-B\-L\-O\-C\-K\-I\-N\-G\-\_\-\-O\-N\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-B\-L\-O\-C\-K\-I\-N\-G\-\_\-\-O\-N\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Queue}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a657997eddb8c89bef7157e74bac003e2}
+\hypertarget{FreeRTOS_8h_a9484f4523e4bec2ab2dc233f2556c3c5}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-B\-L\-O\-C\-K\-I\-N\-G\-\_\-\-O\-N\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D@{trace\-B\-L\-O\-C\-K\-I\-N\-G\-\_\-\-O\-N\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D}}
+\index{trace\-B\-L\-O\-C\-K\-I\-N\-G\-\_\-\-O\-N\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D@{trace\-B\-L\-O\-C\-K\-I\-N\-G\-\_\-\-O\-N\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-B\-L\-O\-C\-K\-I\-N\-G\-\_\-\-O\-N\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-B\-L\-O\-C\-K\-I\-N\-G\-\_\-\-O\-N\-\_\-\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Queue}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a9484f4523e4bec2ab2dc233f2556c3c5}
+\hypertarget{FreeRTOS_8h_a3803714a43519a6bfc93dadfa255bf14}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-C\-R\-E\-A\-T\-E\-\_\-\-C\-O\-U\-N\-T\-I\-N\-G\-\_\-\-S\-E\-M\-A\-P\-H\-O\-R\-E@{trace\-C\-R\-E\-A\-T\-E\-\_\-\-C\-O\-U\-N\-T\-I\-N\-G\-\_\-\-S\-E\-M\-A\-P\-H\-O\-R\-E}}
+\index{trace\-C\-R\-E\-A\-T\-E\-\_\-\-C\-O\-U\-N\-T\-I\-N\-G\-\_\-\-S\-E\-M\-A\-P\-H\-O\-R\-E@{trace\-C\-R\-E\-A\-T\-E\-\_\-\-C\-O\-U\-N\-T\-I\-N\-G\-\_\-\-S\-E\-M\-A\-P\-H\-O\-R\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-C\-R\-E\-A\-T\-E\-\_\-\-C\-O\-U\-N\-T\-I\-N\-G\-\_\-\-S\-E\-M\-A\-P\-H\-O\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-C\-R\-E\-A\-T\-E\-\_\-\-C\-O\-U\-N\-T\-I\-N\-G\-\_\-\-S\-E\-M\-A\-P\-H\-O\-R\-E(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a3803714a43519a6bfc93dadfa255bf14}
+\hypertarget{FreeRTOS_8h_a656fccb9717146cc4036ff8701eeb67e}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-C\-R\-E\-A\-T\-E\-\_\-\-C\-O\-U\-N\-T\-I\-N\-G\-\_\-\-S\-E\-M\-A\-P\-H\-O\-R\-E\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-C\-R\-E\-A\-T\-E\-\_\-\-C\-O\-U\-N\-T\-I\-N\-G\-\_\-\-S\-E\-M\-A\-P\-H\-O\-R\-E\-\_\-\-F\-A\-I\-L\-E\-D}}
+\index{trace\-C\-R\-E\-A\-T\-E\-\_\-\-C\-O\-U\-N\-T\-I\-N\-G\-\_\-\-S\-E\-M\-A\-P\-H\-O\-R\-E\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-C\-R\-E\-A\-T\-E\-\_\-\-C\-O\-U\-N\-T\-I\-N\-G\-\_\-\-S\-E\-M\-A\-P\-H\-O\-R\-E\-\_\-\-F\-A\-I\-L\-E\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-C\-R\-E\-A\-T\-E\-\_\-\-C\-O\-U\-N\-T\-I\-N\-G\-\_\-\-S\-E\-M\-A\-P\-H\-O\-R\-E\-\_\-\-F\-A\-I\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-C\-R\-E\-A\-T\-E\-\_\-\-C\-O\-U\-N\-T\-I\-N\-G\-\_\-\-S\-E\-M\-A\-P\-H\-O\-R\-E\-\_\-\-F\-A\-I\-L\-E\-D(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a656fccb9717146cc4036ff8701eeb67e}
+\hypertarget{FreeRTOS_8h_a2eff67edaee170b33b549966d8b99b47}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-C\-R\-E\-A\-T\-E\-\_\-\-M\-U\-T\-E\-X@{trace\-C\-R\-E\-A\-T\-E\-\_\-\-M\-U\-T\-E\-X}}
+\index{trace\-C\-R\-E\-A\-T\-E\-\_\-\-M\-U\-T\-E\-X@{trace\-C\-R\-E\-A\-T\-E\-\_\-\-M\-U\-T\-E\-X}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-C\-R\-E\-A\-T\-E\-\_\-\-M\-U\-T\-E\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-C\-R\-E\-A\-T\-E\-\_\-\-M\-U\-T\-E\-X(
+\begin{DoxyParamCaption}
+\item[{}]{px\-New\-Queue}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a2eff67edaee170b33b549966d8b99b47}
+\hypertarget{FreeRTOS_8h_aa01e89d6df9ac9c4506f8918cc809ddf}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-C\-R\-E\-A\-T\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-C\-R\-E\-A\-T\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-F\-A\-I\-L\-E\-D}}
+\index{trace\-C\-R\-E\-A\-T\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-C\-R\-E\-A\-T\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-F\-A\-I\-L\-E\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-C\-R\-E\-A\-T\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-F\-A\-I\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-C\-R\-E\-A\-T\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-F\-A\-I\-L\-E\-D(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_aa01e89d6df9ac9c4506f8918cc809ddf}
+\hypertarget{FreeRTOS_8h_aeb2fb62c3f25ec4d8e7a02f267f7e508}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-E\-N\-D@{trace\-E\-N\-D}}
+\index{trace\-E\-N\-D@{trace\-E\-N\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-E\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-E\-N\-D(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_aeb2fb62c3f25ec4d8e7a02f267f7e508}
+\hypertarget{FreeRTOS_8h_ad929200fa50e5a1ae2c5894ffeea2ef6}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-L\-E\-A\-R\-\_\-\-B\-I\-T\-S@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-L\-E\-A\-R\-\_\-\-B\-I\-T\-S}}
+\index{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-L\-E\-A\-R\-\_\-\-B\-I\-T\-S@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-L\-E\-A\-R\-\_\-\-B\-I\-T\-S}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-L\-E\-A\-R\-\_\-\-B\-I\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-L\-E\-A\-R\-\_\-\-B\-I\-T\-S(
+\begin{DoxyParamCaption}
+\item[{}]{x\-Event\-Group, }
+\item[{}]{ux\-Bits\-To\-Clear}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_ad929200fa50e5a1ae2c5894ffeea2ef6}
+\hypertarget{FreeRTOS_8h_a9facfdc883aa503d2891c27c5c136d84}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-L\-E\-A\-R\-\_\-\-B\-I\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-L\-E\-A\-R\-\_\-\-B\-I\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}}
+\index{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-L\-E\-A\-R\-\_\-\-B\-I\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-L\-E\-A\-R\-\_\-\-B\-I\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-L\-E\-A\-R\-\_\-\-B\-I\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-L\-E\-A\-R\-\_\-\-B\-I\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+\item[{}]{x\-Event\-Group, }
+\item[{}]{ux\-Bits\-To\-Clear}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a9facfdc883aa503d2891c27c5c136d84}
+\hypertarget{FreeRTOS_8h_a0100fcbcc03e3c2f0cd7bc7071f9ab70}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-R\-E\-A\-T\-E@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-R\-E\-A\-T\-E}}
+\index{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-R\-E\-A\-T\-E@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-R\-E\-A\-T\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-R\-E\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-R\-E\-A\-T\-E(
+\begin{DoxyParamCaption}
+\item[{}]{x\-Event\-Group}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a0100fcbcc03e3c2f0cd7bc7071f9ab70}
+\hypertarget{FreeRTOS_8h_ac6f6ea04ddbf43f62f1b0285622d4474}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D}}
+\index{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_ac6f6ea04ddbf43f62f1b0285622d4474}
+\hypertarget{FreeRTOS_8h_abf48364a72dd38af47bf7203c06ee832}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-D\-E\-L\-E\-T\-E@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-D\-E\-L\-E\-T\-E}}
+\index{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-D\-E\-L\-E\-T\-E@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-D\-E\-L\-E\-T\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-D\-E\-L\-E\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-D\-E\-L\-E\-T\-E(
+\begin{DoxyParamCaption}
+\item[{}]{x\-Event\-Group}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_abf48364a72dd38af47bf7203c06ee832}
+\hypertarget{FreeRTOS_8h_a56eb08eb12a36c99a32729a518d5b3fd}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-E\-T\-\_\-\-B\-I\-T\-S@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-E\-T\-\_\-\-B\-I\-T\-S}}
+\index{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-E\-T\-\_\-\-B\-I\-T\-S@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-E\-T\-\_\-\-B\-I\-T\-S}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-E\-T\-\_\-\-B\-I\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-E\-T\-\_\-\-B\-I\-T\-S(
+\begin{DoxyParamCaption}
+\item[{}]{x\-Event\-Group, }
+\item[{}]{ux\-Bits\-To\-Set}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a56eb08eb12a36c99a32729a518d5b3fd}
+\hypertarget{FreeRTOS_8h_ae11a37557005c2660326e9874d5d3155}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-E\-T\-\_\-\-B\-I\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-E\-T\-\_\-\-B\-I\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}}
+\index{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-E\-T\-\_\-\-B\-I\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-E\-T\-\_\-\-B\-I\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-E\-T\-\_\-\-B\-I\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-E\-T\-\_\-\-B\-I\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+\item[{}]{x\-Event\-Group, }
+\item[{}]{ux\-Bits\-To\-Set}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_ae11a37557005c2660326e9874d5d3155}
+\hypertarget{FreeRTOS_8h_a898ead658f344a0475a9f2ed3bf8f407}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-L\-O\-C\-K@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-L\-O\-C\-K}}
+\index{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-L\-O\-C\-K@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-L\-O\-C\-K}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-L\-O\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-L\-O\-C\-K(
+\begin{DoxyParamCaption}
+\item[{}]{x\-Event\-Group, }
+\item[{}]{ux\-Bits\-To\-Set, }
+\item[{}]{ux\-Bits\-To\-Wait\-For}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a898ead658f344a0475a9f2ed3bf8f407}
+\hypertarget{FreeRTOS_8h_af0cb50e5a1402163cd29e638c6140a2e}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-Y\-N\-C\-\_\-\-E\-N\-D@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-Y\-N\-C\-\_\-\-E\-N\-D}}
+\index{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-Y\-N\-C\-\_\-\-E\-N\-D@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-Y\-N\-C\-\_\-\-E\-N\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-Y\-N\-C\-\_\-\-E\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-Y\-N\-C\-\_\-\-E\-N\-D(
+\begin{DoxyParamCaption}
+\item[{}]{x\-Event\-Group, }
+\item[{}]{ux\-Bits\-To\-Set, }
+\item[{}]{ux\-Bits\-To\-Wait\-For, }
+\item[{}]{x\-Timeout\-Occurred}
+\end{DoxyParamCaption}
+)~( {\bf void} ) x\-Timeout\-Occurred}}\label{FreeRTOS_8h_af0cb50e5a1402163cd29e638c6140a2e}
+\hypertarget{FreeRTOS_8h_aeb8953a9be153986d0e830acdf60445a}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-W\-A\-I\-T\-\_\-\-B\-I\-T\-S\-\_\-\-B\-L\-O\-C\-K@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-W\-A\-I\-T\-\_\-\-B\-I\-T\-S\-\_\-\-B\-L\-O\-C\-K}}
+\index{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-W\-A\-I\-T\-\_\-\-B\-I\-T\-S\-\_\-\-B\-L\-O\-C\-K@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-W\-A\-I\-T\-\_\-\-B\-I\-T\-S\-\_\-\-B\-L\-O\-C\-K}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-W\-A\-I\-T\-\_\-\-B\-I\-T\-S\-\_\-\-B\-L\-O\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-W\-A\-I\-T\-\_\-\-B\-I\-T\-S\-\_\-\-B\-L\-O\-C\-K(
+\begin{DoxyParamCaption}
+\item[{}]{x\-Event\-Group, }
+\item[{}]{ux\-Bits\-To\-Wait\-For}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_aeb8953a9be153986d0e830acdf60445a}
+\hypertarget{FreeRTOS_8h_ad7a6b7684053a41690cac487ccf4d927}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-W\-A\-I\-T\-\_\-\-B\-I\-T\-S\-\_\-\-E\-N\-D@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-W\-A\-I\-T\-\_\-\-B\-I\-T\-S\-\_\-\-E\-N\-D}}
+\index{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-W\-A\-I\-T\-\_\-\-B\-I\-T\-S\-\_\-\-E\-N\-D@{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-W\-A\-I\-T\-\_\-\-B\-I\-T\-S\-\_\-\-E\-N\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-W\-A\-I\-T\-\_\-\-B\-I\-T\-S\-\_\-\-E\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P\-\_\-\-W\-A\-I\-T\-\_\-\-B\-I\-T\-S\-\_\-\-E\-N\-D(
+\begin{DoxyParamCaption}
+\item[{}]{x\-Event\-Group, }
+\item[{}]{ux\-Bits\-To\-Wait\-For, }
+\item[{}]{x\-Timeout\-Occurred}
+\end{DoxyParamCaption}
+)~( {\bf void} ) x\-Timeout\-Occurred}}\label{FreeRTOS_8h_ad7a6b7684053a41690cac487ccf4d927}
+\hypertarget{FreeRTOS_8h_a941bb09090b5788f0c27d9690118eed2}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-F\-R\-E\-E@{trace\-F\-R\-E\-E}}
+\index{trace\-F\-R\-E\-E@{trace\-F\-R\-E\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-F\-R\-E\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-F\-R\-E\-E(
+\begin{DoxyParamCaption}
+\item[{}]{pv\-Address, }
+\item[{}]{ui\-Size}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a941bb09090b5788f0c27d9690118eed2}
+\hypertarget{FreeRTOS_8h_aa42efc6b6938c6f2a5f04c7367f59b22}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-G\-I\-V\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E@{trace\-G\-I\-V\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E}}
+\index{trace\-G\-I\-V\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E@{trace\-G\-I\-V\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-G\-I\-V\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-G\-I\-V\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Mutex}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_aa42efc6b6938c6f2a5f04c7367f59b22}
+\hypertarget{FreeRTOS_8h_a6b41ab1bbdaa0eb7f8e790602ed21077}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-G\-I\-V\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-G\-I\-V\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D}}
+\index{trace\-G\-I\-V\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-G\-I\-V\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-G\-I\-V\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-G\-I\-V\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Mutex}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a6b41ab1bbdaa0eb7f8e790602ed21077}
+\hypertarget{FreeRTOS_8h_a74e013fe2bad2c2d7db71f4b17bad698}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-I\-N\-C\-R\-E\-A\-S\-E\-\_\-\-T\-I\-C\-K\-\_\-\-C\-O\-U\-N\-T@{trace\-I\-N\-C\-R\-E\-A\-S\-E\-\_\-\-T\-I\-C\-K\-\_\-\-C\-O\-U\-N\-T}}
+\index{trace\-I\-N\-C\-R\-E\-A\-S\-E\-\_\-\-T\-I\-C\-K\-\_\-\-C\-O\-U\-N\-T@{trace\-I\-N\-C\-R\-E\-A\-S\-E\-\_\-\-T\-I\-C\-K\-\_\-\-C\-O\-U\-N\-T}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-I\-N\-C\-R\-E\-A\-S\-E\-\_\-\-T\-I\-C\-K\-\_\-\-C\-O\-U\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-I\-N\-C\-R\-E\-A\-S\-E\-\_\-\-T\-I\-C\-K\-\_\-\-C\-O\-U\-N\-T(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a74e013fe2bad2c2d7db71f4b17bad698}
+\hypertarget{FreeRTOS_8h_acc1364ea0a06d6395232d57708e4987c}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-L\-O\-W\-\_\-\-P\-O\-W\-E\-R\-\_\-\-I\-D\-L\-E\-\_\-\-B\-E\-G\-I\-N@{trace\-L\-O\-W\-\_\-\-P\-O\-W\-E\-R\-\_\-\-I\-D\-L\-E\-\_\-\-B\-E\-G\-I\-N}}
+\index{trace\-L\-O\-W\-\_\-\-P\-O\-W\-E\-R\-\_\-\-I\-D\-L\-E\-\_\-\-B\-E\-G\-I\-N@{trace\-L\-O\-W\-\_\-\-P\-O\-W\-E\-R\-\_\-\-I\-D\-L\-E\-\_\-\-B\-E\-G\-I\-N}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-L\-O\-W\-\_\-\-P\-O\-W\-E\-R\-\_\-\-I\-D\-L\-E\-\_\-\-B\-E\-G\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-L\-O\-W\-\_\-\-P\-O\-W\-E\-R\-\_\-\-I\-D\-L\-E\-\_\-\-B\-E\-G\-I\-N(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_acc1364ea0a06d6395232d57708e4987c}
+\hypertarget{FreeRTOS_8h_aa5471ee0f56cb504d9aaba9cb3b7750e}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-L\-O\-W\-\_\-\-P\-O\-W\-E\-R\-\_\-\-I\-D\-L\-E\-\_\-\-E\-N\-D@{trace\-L\-O\-W\-\_\-\-P\-O\-W\-E\-R\-\_\-\-I\-D\-L\-E\-\_\-\-E\-N\-D}}
+\index{trace\-L\-O\-W\-\_\-\-P\-O\-W\-E\-R\-\_\-\-I\-D\-L\-E\-\_\-\-E\-N\-D@{trace\-L\-O\-W\-\_\-\-P\-O\-W\-E\-R\-\_\-\-I\-D\-L\-E\-\_\-\-E\-N\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-L\-O\-W\-\_\-\-P\-O\-W\-E\-R\-\_\-\-I\-D\-L\-E\-\_\-\-E\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-L\-O\-W\-\_\-\-P\-O\-W\-E\-R\-\_\-\-I\-D\-L\-E\-\_\-\-E\-N\-D(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_aa5471ee0f56cb504d9aaba9cb3b7750e}
+\hypertarget{FreeRTOS_8h_af326afe922ffa6da245c98dc227a3293}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-M\-A\-L\-L\-O\-C@{trace\-M\-A\-L\-L\-O\-C}}
+\index{trace\-M\-A\-L\-L\-O\-C@{trace\-M\-A\-L\-L\-O\-C}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-M\-A\-L\-L\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-M\-A\-L\-L\-O\-C(
+\begin{DoxyParamCaption}
+\item[{}]{pv\-Address, }
+\item[{}]{ui\-Size}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_af326afe922ffa6da245c98dc227a3293}
+\hypertarget{FreeRTOS_8h_a8c5050de556ff7e7cdbc7de55f46709d}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-M\-O\-V\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-T\-O\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-S\-T\-A\-T\-E@{trace\-M\-O\-V\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-T\-O\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-S\-T\-A\-T\-E}}
+\index{trace\-M\-O\-V\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-T\-O\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-S\-T\-A\-T\-E@{trace\-M\-O\-V\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-T\-O\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-S\-T\-A\-T\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-M\-O\-V\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-T\-O\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-S\-T\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-M\-O\-V\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-T\-O\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-S\-T\-A\-T\-E(
+\begin{DoxyParamCaption}
+\item[{}]{px\-T\-C\-B}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a8c5050de556ff7e7cdbc7de55f46709d}
+\hypertarget{FreeRTOS_8h_ab9c72706acbdbcec75ffb2cdaca45b24}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-P\-E\-N\-D\-\_\-\-F\-U\-N\-C\-\_\-\-C\-A\-L\-L@{trace\-P\-E\-N\-D\-\_\-\-F\-U\-N\-C\-\_\-\-C\-A\-L\-L}}
+\index{trace\-P\-E\-N\-D\-\_\-\-F\-U\-N\-C\-\_\-\-C\-A\-L\-L@{trace\-P\-E\-N\-D\-\_\-\-F\-U\-N\-C\-\_\-\-C\-A\-L\-L}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-P\-E\-N\-D\-\_\-\-F\-U\-N\-C\-\_\-\-C\-A\-L\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-P\-E\-N\-D\-\_\-\-F\-U\-N\-C\-\_\-\-C\-A\-L\-L(
+\begin{DoxyParamCaption}
+\item[{}]{x\-Function\-To\-Pend, }
+\item[{}]{pv\-Parameter1, }
+\item[{}]{ul\-Parameter2, }
+\item[{}]{{\bf ret}}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_ab9c72706acbdbcec75ffb2cdaca45b24}
+\hypertarget{FreeRTOS_8h_a9b864660c6d826e802d9e3f94548cd7f}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-P\-E\-N\-D\-\_\-\-F\-U\-N\-C\-\_\-\-C\-A\-L\-L\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{trace\-P\-E\-N\-D\-\_\-\-F\-U\-N\-C\-\_\-\-C\-A\-L\-L\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}}
+\index{trace\-P\-E\-N\-D\-\_\-\-F\-U\-N\-C\-\_\-\-C\-A\-L\-L\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{trace\-P\-E\-N\-D\-\_\-\-F\-U\-N\-C\-\_\-\-C\-A\-L\-L\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-P\-E\-N\-D\-\_\-\-F\-U\-N\-C\-\_\-\-C\-A\-L\-L\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-P\-E\-N\-D\-\_\-\-F\-U\-N\-C\-\_\-\-C\-A\-L\-L\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+\item[{}]{x\-Function\-To\-Pend, }
+\item[{}]{pv\-Parameter1, }
+\item[{}]{ul\-Parameter2, }
+\item[{}]{{\bf ret}}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a9b864660c6d826e802d9e3f94548cd7f}
+\hypertarget{FreeRTOS_8h_a8d70c64cfe141df1bbe25b624405ec37}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-P\-O\-S\-T\-\_\-\-M\-O\-V\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-T\-O\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-S\-T\-A\-T\-E@{trace\-P\-O\-S\-T\-\_\-\-M\-O\-V\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-T\-O\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-S\-T\-A\-T\-E}}
+\index{trace\-P\-O\-S\-T\-\_\-\-M\-O\-V\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-T\-O\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-S\-T\-A\-T\-E@{trace\-P\-O\-S\-T\-\_\-\-M\-O\-V\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-T\-O\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-S\-T\-A\-T\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-P\-O\-S\-T\-\_\-\-M\-O\-V\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-T\-O\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-S\-T\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-P\-O\-S\-T\-\_\-\-M\-O\-V\-E\-D\-\_\-\-T\-A\-S\-K\-\_\-\-T\-O\-\_\-\-R\-E\-A\-D\-Y\-\_\-\-S\-T\-A\-T\-E(
+\begin{DoxyParamCaption}
+\item[{}]{px\-T\-C\-B}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a8d70c64cfe141df1bbe25b624405ec37}
+\hypertarget{FreeRTOS_8h_a62dcc27e040063ec72e174c985740f96}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-Q\-U\-E\-U\-E\-\_\-\-C\-R\-E\-A\-T\-E@{trace\-Q\-U\-E\-U\-E\-\_\-\-C\-R\-E\-A\-T\-E}}
+\index{trace\-Q\-U\-E\-U\-E\-\_\-\-C\-R\-E\-A\-T\-E@{trace\-Q\-U\-E\-U\-E\-\_\-\-C\-R\-E\-A\-T\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-Q\-U\-E\-U\-E\-\_\-\-C\-R\-E\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-Q\-U\-E\-U\-E\-\_\-\-C\-R\-E\-A\-T\-E(
+\begin{DoxyParamCaption}
+\item[{}]{px\-New\-Queue}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a62dcc27e040063ec72e174c985740f96}
+\hypertarget{FreeRTOS_8h_a3a0d6a2e556a9bb303cbcb2a23700118}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-Q\-U\-E\-U\-E\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-Q\-U\-E\-U\-E\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D}}
+\index{trace\-Q\-U\-E\-U\-E\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-Q\-U\-E\-U\-E\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-Q\-U\-E\-U\-E\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-Q\-U\-E\-U\-E\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D(
+\begin{DoxyParamCaption}
+\item[{}]{uc\-Queue\-Type}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a3a0d6a2e556a9bb303cbcb2a23700118}
+\hypertarget{FreeRTOS_8h_aae8ebd9c82ecd564953a37bb26a5a1e5}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-Q\-U\-E\-U\-E\-\_\-\-D\-E\-L\-E\-T\-E@{trace\-Q\-U\-E\-U\-E\-\_\-\-D\-E\-L\-E\-T\-E}}
+\index{trace\-Q\-U\-E\-U\-E\-\_\-\-D\-E\-L\-E\-T\-E@{trace\-Q\-U\-E\-U\-E\-\_\-\-D\-E\-L\-E\-T\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-Q\-U\-E\-U\-E\-\_\-\-D\-E\-L\-E\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-Q\-U\-E\-U\-E\-\_\-\-D\-E\-L\-E\-T\-E(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Queue}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_aae8ebd9c82ecd564953a37bb26a5a1e5}
+\hypertarget{FreeRTOS_8h_acd24b909ecdd18ed844cdede3027e534}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K@{trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K}}
+\index{trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K@{trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Queue}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_acd24b909ecdd18ed844cdede3027e534}
+\hypertarget{FreeRTOS_8h_a3e2a14b61c26f9690deb26d76cc801ee}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}}
+\index{trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Queue}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a3e2a14b61c26f9690deb26d76cc801ee}
+\hypertarget{FreeRTOS_8h_a72ea0f09cc6a38363f2b5217aab27fd3}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D}}
+\index{trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-Q\-U\-E\-U\-E\-\_\-\-P\-E\-E\-K\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Queue}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a72ea0f09cc6a38363f2b5217aab27fd3}
+\hypertarget{FreeRTOS_8h_a82b39aa722910a5e43793e882ded0faf}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E@{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E}}
+\index{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E@{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Queue}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a82b39aa722910a5e43793e882ded0faf}
+\hypertarget{FreeRTOS_8h_a0dbf5969c9d984920177a19d5b402e4e}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D}}
+\index{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Queue}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a0dbf5969c9d984920177a19d5b402e4e}
+\hypertarget{FreeRTOS_8h_ace59eac86a08f533c19edf91594961c6}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}}
+\index{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Queue}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_ace59eac86a08f533c19edf91594961c6}
+\hypertarget{FreeRTOS_8h_a1f1f4a1fea93a33050fa6c27c30752d5}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D}}
+\index{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Queue}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a1f1f4a1fea93a33050fa6c27c30752d5}
+\hypertarget{FreeRTOS_8h_a2f326b01ad82a3ab14cc9fc4b3abd6b8}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-G\-I\-S\-T\-R\-Y\-\_\-\-A\-D\-D@{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-G\-I\-S\-T\-R\-Y\-\_\-\-A\-D\-D}}
+\index{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-G\-I\-S\-T\-R\-Y\-\_\-\-A\-D\-D@{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-G\-I\-S\-T\-R\-Y\-\_\-\-A\-D\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-G\-I\-S\-T\-R\-Y\-\_\-\-A\-D\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-Q\-U\-E\-U\-E\-\_\-\-R\-E\-G\-I\-S\-T\-R\-Y\-\_\-\-A\-D\-D(
+\begin{DoxyParamCaption}
+\item[{}]{x\-Queue, }
+\item[{}]{pc\-Queue\-Name}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a2f326b01ad82a3ab14cc9fc4b3abd6b8}
+\hypertarget{FreeRTOS_8h_a5cfc9dd899c89966172cb329740f551a}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D@{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D}}
+\index{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D@{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Queue}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a5cfc9dd899c89966172cb329740f551a}
+\hypertarget{FreeRTOS_8h_ab4896b8d7e443200918a6e4a7f64585d}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-A\-I\-L\-E\-D}}
+\index{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-A\-I\-L\-E\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-A\-I\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-A\-I\-L\-E\-D(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Queue}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_ab4896b8d7e443200918a6e4a7f64585d}
+\hypertarget{FreeRTOS_8h_a590bfae4dcb6be8a4b3daadf09a1b587}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}}
+\index{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Queue}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a590bfae4dcb6be8a4b3daadf09a1b587}
+\hypertarget{FreeRTOS_8h_a71fa002ce8a199d38e697d94c613649f}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D}}
+\index{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-Q\-U\-E\-U\-E\-\_\-\-S\-E\-N\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R\-\_\-\-F\-A\-I\-L\-E\-D(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Queue}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a71fa002ce8a199d38e697d94c613649f}
+\hypertarget{FreeRTOS_8h_ac0d88fb803a85b6afd2a2c20de0ddcd0}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-S\-T\-A\-R\-T@{trace\-S\-T\-A\-R\-T}}
+\index{trace\-S\-T\-A\-R\-T@{trace\-S\-T\-A\-R\-T}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-S\-T\-A\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-S\-T\-A\-R\-T(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_ac0d88fb803a85b6afd2a2c20de0ddcd0}
+\hypertarget{FreeRTOS_8h_a088b831fdffacf61abf9c7312a2386ad}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-K\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E@{trace\-T\-A\-K\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E}}
+\index{trace\-T\-A\-K\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E@{trace\-T\-A\-K\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-K\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-K\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Mutex}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a088b831fdffacf61abf9c7312a2386ad}
+\hypertarget{FreeRTOS_8h_ad2d983d63b7d1c3d9208b14d3b76df53}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-K\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-T\-A\-K\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D}}
+\index{trace\-T\-A\-K\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-T\-A\-K\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-K\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-K\-E\-\_\-\-M\-U\-T\-E\-X\-\_\-\-R\-E\-C\-U\-R\-S\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Mutex}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_ad2d983d63b7d1c3d9208b14d3b76df53}
+\hypertarget{FreeRTOS_8h_a453dc678632734505187c453da598172}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-C\-R\-E\-A\-T\-E@{trace\-T\-A\-S\-K\-\_\-\-C\-R\-E\-A\-T\-E}}
+\index{trace\-T\-A\-S\-K\-\_\-\-C\-R\-E\-A\-T\-E@{trace\-T\-A\-S\-K\-\_\-\-C\-R\-E\-A\-T\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-C\-R\-E\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-C\-R\-E\-A\-T\-E(
+\begin{DoxyParamCaption}
+\item[{}]{px\-New\-T\-C\-B}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a453dc678632734505187c453da598172}
+\hypertarget{FreeRTOS_8h_a82a6a366facc1fb8b0209bfe2e5ce546}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-T\-A\-S\-K\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D}}
+\index{trace\-T\-A\-S\-K\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-T\-A\-S\-K\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a82a6a366facc1fb8b0209bfe2e5ce546}
+\hypertarget{FreeRTOS_8h_adb0c71969f4eed7a92f0f398dffb443d}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-A\-Y@{trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-A\-Y}}
+\index{trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-A\-Y@{trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-A\-Y}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-A\-Y(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_adb0c71969f4eed7a92f0f398dffb443d}
+\hypertarget{FreeRTOS_8h_ac7bba9e806376061522f5cb2eef261c4}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-U\-N\-T\-I\-L@{trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-U\-N\-T\-I\-L}}
+\index{trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-U\-N\-T\-I\-L@{trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-U\-N\-T\-I\-L}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-U\-N\-T\-I\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-U\-N\-T\-I\-L(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_ac7bba9e806376061522f5cb2eef261c4}
+\hypertarget{FreeRTOS_8h_af3f9bb780241cc663247908a22defa65}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E@{trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E}}
+\index{trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E@{trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-D\-E\-L\-E\-T\-E(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Task\-To\-Delete}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_af3f9bb780241cc663247908a22defa65}
+\hypertarget{FreeRTOS_8h_aeea8ada76999a73fd5ffcacd267d336d}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-I\-N\-C\-R\-E\-M\-E\-N\-T\-\_\-\-T\-I\-C\-K@{trace\-T\-A\-S\-K\-\_\-\-I\-N\-C\-R\-E\-M\-E\-N\-T\-\_\-\-T\-I\-C\-K}}
+\index{trace\-T\-A\-S\-K\-\_\-\-I\-N\-C\-R\-E\-M\-E\-N\-T\-\_\-\-T\-I\-C\-K@{trace\-T\-A\-S\-K\-\_\-\-I\-N\-C\-R\-E\-M\-E\-N\-T\-\_\-\-T\-I\-C\-K}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-I\-N\-C\-R\-E\-M\-E\-N\-T\-\_\-\-T\-I\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-I\-N\-C\-R\-E\-M\-E\-N\-T\-\_\-\-T\-I\-C\-K(
+\begin{DoxyParamCaption}
+\item[{}]{x\-Tick\-Count}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_aeea8ada76999a73fd5ffcacd267d336d}
+\hypertarget{FreeRTOS_8h_a0047b9beb807b3c8b31d485532f7b077}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y@{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y}}
+\index{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y@{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a0047b9beb807b3c8b31d485532f7b077}
+\hypertarget{FreeRTOS_8h_aad4d3ae692f3500f4644070fe971b646}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}}
+\index{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_aad4d3ae692f3500f4644070fe971b646}
+\hypertarget{FreeRTOS_8h_a99d95526db9937c96ba110f46bb59ee5}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-G\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-G\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}}
+\index{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-G\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-G\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-G\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-G\-I\-V\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a99d95526db9937c96ba110f46bb59ee5}
+\hypertarget{FreeRTOS_8h_ab60d0210392d54bc0539de67c8bb3bf6}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-T\-A\-K\-E@{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-T\-A\-K\-E}}
+\index{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-T\-A\-K\-E@{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-T\-A\-K\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-T\-A\-K\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-T\-A\-K\-E(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_ab60d0210392d54bc0539de67c8bb3bf6}
+\hypertarget{FreeRTOS_8h_af6c636f9baf2eb594ffb0b6689d1b729}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-T\-A\-K\-E\-\_\-\-B\-L\-O\-C\-K@{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-T\-A\-K\-E\-\_\-\-B\-L\-O\-C\-K}}
+\index{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-T\-A\-K\-E\-\_\-\-B\-L\-O\-C\-K@{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-T\-A\-K\-E\-\_\-\-B\-L\-O\-C\-K}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-T\-A\-K\-E\-\_\-\-B\-L\-O\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-T\-A\-K\-E\-\_\-\-B\-L\-O\-C\-K(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_af6c636f9baf2eb594ffb0b6689d1b729}
+\hypertarget{FreeRTOS_8h_a32ea7a3f22b7ef8b2ddc7b98848b8446}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-W\-A\-I\-T@{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-W\-A\-I\-T}}
+\index{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-W\-A\-I\-T@{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-W\-A\-I\-T}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-W\-A\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-W\-A\-I\-T(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a32ea7a3f22b7ef8b2ddc7b98848b8446}
+\hypertarget{FreeRTOS_8h_a42d4b4f2c5bac89d617c27902606019c}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-W\-A\-I\-T\-\_\-\-B\-L\-O\-C\-K@{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-W\-A\-I\-T\-\_\-\-B\-L\-O\-C\-K}}
+\index{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-W\-A\-I\-T\-\_\-\-B\-L\-O\-C\-K@{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-W\-A\-I\-T\-\_\-\-B\-L\-O\-C\-K}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-W\-A\-I\-T\-\_\-\-B\-L\-O\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-N\-O\-T\-I\-F\-Y\-\_\-\-W\-A\-I\-T\-\_\-\-B\-L\-O\-C\-K(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a42d4b4f2c5bac89d617c27902606019c}
+\hypertarget{FreeRTOS_8h_aeef741f693914ccacb456313d613c810}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-D\-I\-S\-I\-N\-H\-E\-R\-I\-T@{trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-D\-I\-S\-I\-N\-H\-E\-R\-I\-T}}
+\index{trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-D\-I\-S\-I\-N\-H\-E\-R\-I\-T@{trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-D\-I\-S\-I\-N\-H\-E\-R\-I\-T}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-D\-I\-S\-I\-N\-H\-E\-R\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-D\-I\-S\-I\-N\-H\-E\-R\-I\-T(
+\begin{DoxyParamCaption}
+\item[{}]{px\-T\-C\-B\-Of\-Mutex\-Holder, }
+\item[{}]{ux\-Original\-Priority}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_aeef741f693914ccacb456313d613c810}
+\hypertarget{FreeRTOS_8h_a4149bb2def17cb85a356c17fa6331c79}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-I\-N\-H\-E\-R\-I\-T@{trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-I\-N\-H\-E\-R\-I\-T}}
+\index{trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-I\-N\-H\-E\-R\-I\-T@{trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-I\-N\-H\-E\-R\-I\-T}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-I\-N\-H\-E\-R\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-I\-N\-H\-E\-R\-I\-T(
+\begin{DoxyParamCaption}
+\item[{}]{px\-T\-C\-B\-Of\-Mutex\-Holder, }
+\item[{}]{ux\-Inherited\-Priority}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a4149bb2def17cb85a356c17fa6331c79}
+\hypertarget{FreeRTOS_8h_acec813ac5f0628aa108bede0cd8c329d}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-S\-E\-T@{trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-S\-E\-T}}
+\index{trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-S\-E\-T@{trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-S\-E\-T}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-S\-E\-T(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Task, }
+\item[{}]{ux\-New\-Priority}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_acec813ac5f0628aa108bede0cd8c329d}
+\hypertarget{FreeRTOS_8h_a4f21b0c170fa8675ee2dbf70141695a2}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-R\-E\-S\-U\-M\-E@{trace\-T\-A\-S\-K\-\_\-\-R\-E\-S\-U\-M\-E}}
+\index{trace\-T\-A\-S\-K\-\_\-\-R\-E\-S\-U\-M\-E@{trace\-T\-A\-S\-K\-\_\-\-R\-E\-S\-U\-M\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-R\-E\-S\-U\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-R\-E\-S\-U\-M\-E(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Task\-To\-Resume}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a4f21b0c170fa8675ee2dbf70141695a2}
+\hypertarget{FreeRTOS_8h_a7b4afafa82e9c80d0dc43cc22108d248}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-R\-E\-S\-U\-M\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{trace\-T\-A\-S\-K\-\_\-\-R\-E\-S\-U\-M\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}}
+\index{trace\-T\-A\-S\-K\-\_\-\-R\-E\-S\-U\-M\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{trace\-T\-A\-S\-K\-\_\-\-R\-E\-S\-U\-M\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-R\-E\-S\-U\-M\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-R\-E\-S\-U\-M\-E\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Task\-To\-Resume}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a7b4afafa82e9c80d0dc43cc22108d248}
+\hypertarget{FreeRTOS_8h_ac48891d4d553ea9acbc660d2ebd2ffd7}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-S\-U\-S\-P\-E\-N\-D@{trace\-T\-A\-S\-K\-\_\-\-S\-U\-S\-P\-E\-N\-D}}
+\index{trace\-T\-A\-S\-K\-\_\-\-S\-U\-S\-P\-E\-N\-D@{trace\-T\-A\-S\-K\-\_\-\-S\-U\-S\-P\-E\-N\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-S\-U\-S\-P\-E\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-S\-U\-S\-P\-E\-N\-D(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Task\-To\-Suspend}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_ac48891d4d553ea9acbc660d2ebd2ffd7}
+\hypertarget{FreeRTOS_8h_a2f813fe80d3519a396a9f2bb7cc7e820}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-S\-W\-I\-T\-C\-H\-E\-D\-\_\-\-I\-N@{trace\-T\-A\-S\-K\-\_\-\-S\-W\-I\-T\-C\-H\-E\-D\-\_\-\-I\-N}}
+\index{trace\-T\-A\-S\-K\-\_\-\-S\-W\-I\-T\-C\-H\-E\-D\-\_\-\-I\-N@{trace\-T\-A\-S\-K\-\_\-\-S\-W\-I\-T\-C\-H\-E\-D\-\_\-\-I\-N}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-S\-W\-I\-T\-C\-H\-E\-D\-\_\-\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-S\-W\-I\-T\-C\-H\-E\-D\-\_\-\-I\-N(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a2f813fe80d3519a396a9f2bb7cc7e820}
+\hypertarget{FreeRTOS_8h_a4b94b0d35e9a4ad783af7be32cabbdaa}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-A\-S\-K\-\_\-\-S\-W\-I\-T\-C\-H\-E\-D\-\_\-\-O\-U\-T@{trace\-T\-A\-S\-K\-\_\-\-S\-W\-I\-T\-C\-H\-E\-D\-\_\-\-O\-U\-T}}
+\index{trace\-T\-A\-S\-K\-\_\-\-S\-W\-I\-T\-C\-H\-E\-D\-\_\-\-O\-U\-T@{trace\-T\-A\-S\-K\-\_\-\-S\-W\-I\-T\-C\-H\-E\-D\-\_\-\-O\-U\-T}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-A\-S\-K\-\_\-\-S\-W\-I\-T\-C\-H\-E\-D\-\_\-\-O\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-A\-S\-K\-\_\-\-S\-W\-I\-T\-C\-H\-E\-D\-\_\-\-O\-U\-T(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a4b94b0d35e9a4ad783af7be32cabbdaa}
+\hypertarget{FreeRTOS_8h_a6c6d5767fb1746077b62e5da5a28db63}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-M\-A\-N\-D\-\_\-\-R\-E\-C\-E\-I\-V\-E\-D@{trace\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-M\-A\-N\-D\-\_\-\-R\-E\-C\-E\-I\-V\-E\-D}}
+\index{trace\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-M\-A\-N\-D\-\_\-\-R\-E\-C\-E\-I\-V\-E\-D@{trace\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-M\-A\-N\-D\-\_\-\-R\-E\-C\-E\-I\-V\-E\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-M\-A\-N\-D\-\_\-\-R\-E\-C\-E\-I\-V\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-M\-A\-N\-D\-\_\-\-R\-E\-C\-E\-I\-V\-E\-D(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Timer, }
+\item[{}]{x\-Message\-I\-D, }
+\item[{}]{x\-Message\-Value}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a6c6d5767fb1746077b62e5da5a28db63}
+\hypertarget{FreeRTOS_8h_aa5e8cd9587c262fdf914b56c286c47b8}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-M\-A\-N\-D\-\_\-\-S\-E\-N\-D@{trace\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-M\-A\-N\-D\-\_\-\-S\-E\-N\-D}}
+\index{trace\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-M\-A\-N\-D\-\_\-\-S\-E\-N\-D@{trace\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-M\-A\-N\-D\-\_\-\-S\-E\-N\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-M\-A\-N\-D\-\_\-\-S\-E\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-I\-M\-E\-R\-\_\-\-C\-O\-M\-M\-A\-N\-D\-\_\-\-S\-E\-N\-D(
+\begin{DoxyParamCaption}
+\item[{}]{x\-Timer, }
+\item[{}]{x\-Message\-I\-D, }
+\item[{}]{x\-Message\-Value\-Value, }
+\item[{}]{x\-Return}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_aa5e8cd9587c262fdf914b56c286c47b8}
+\hypertarget{FreeRTOS_8h_a21b54dae77c227db92f56131cae6de81}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-I\-M\-E\-R\-\_\-\-C\-R\-E\-A\-T\-E@{trace\-T\-I\-M\-E\-R\-\_\-\-C\-R\-E\-A\-T\-E}}
+\index{trace\-T\-I\-M\-E\-R\-\_\-\-C\-R\-E\-A\-T\-E@{trace\-T\-I\-M\-E\-R\-\_\-\-C\-R\-E\-A\-T\-E}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-I\-M\-E\-R\-\_\-\-C\-R\-E\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-I\-M\-E\-R\-\_\-\-C\-R\-E\-A\-T\-E(
+\begin{DoxyParamCaption}
+\item[{}]{px\-New\-Timer}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a21b54dae77c227db92f56131cae6de81}
+\hypertarget{FreeRTOS_8h_a9b508233fb4bebee72529af4f4413cf6}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-I\-M\-E\-R\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-T\-I\-M\-E\-R\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D}}
+\index{trace\-T\-I\-M\-E\-R\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D@{trace\-T\-I\-M\-E\-R\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-I\-M\-E\-R\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-I\-M\-E\-R\-\_\-\-C\-R\-E\-A\-T\-E\-\_\-\-F\-A\-I\-L\-E\-D(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a9b508233fb4bebee72529af4f4413cf6}
+\hypertarget{FreeRTOS_8h_a71329ddad88950ea45b32d5adcb1b2f3}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!trace\-T\-I\-M\-E\-R\-\_\-\-E\-X\-P\-I\-R\-E\-D@{trace\-T\-I\-M\-E\-R\-\_\-\-E\-X\-P\-I\-R\-E\-D}}
+\index{trace\-T\-I\-M\-E\-R\-\_\-\-E\-X\-P\-I\-R\-E\-D@{trace\-T\-I\-M\-E\-R\-\_\-\-E\-X\-P\-I\-R\-E\-D}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{trace\-T\-I\-M\-E\-R\-\_\-\-E\-X\-P\-I\-R\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define trace\-T\-I\-M\-E\-R\-\_\-\-E\-X\-P\-I\-R\-E\-D(
+\begin{DoxyParamCaption}
+\item[{}]{px\-Timer}
+\end{DoxyParamCaption}
+)}}\label{FreeRTOS_8h_a71329ddad88950ea45b32d5adcb1b2f3}
+\hypertarget{FreeRTOS_8h_af91a84ee7fcd1c03bba33c0c86c9a493}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!v\-Task\-Get\-Task\-Info@{v\-Task\-Get\-Task\-Info}}
+\index{v\-Task\-Get\-Task\-Info@{v\-Task\-Get\-Task\-Info}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{v\-Task\-Get\-Task\-Info}]{\setlength{\rightskip}{0pt plus 5cm}\#define v\-Task\-Get\-Task\-Info~{\bf v\-Task\-Get\-Info}}}\label{FreeRTOS_8h_af91a84ee7fcd1c03bba33c0c86c9a493}
+\hypertarget{FreeRTOS_8h_ac6d7ef270d5c85eb91906683157ffc13}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!x\-Co\-Routine\-Handle@{x\-Co\-Routine\-Handle}}
+\index{x\-Co\-Routine\-Handle@{x\-Co\-Routine\-Handle}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{x\-Co\-Routine\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}\#define x\-Co\-Routine\-Handle~{\bf Co\-Routine\-Handle\-\_\-t}}}\label{FreeRTOS_8h_ac6d7ef270d5c85eb91906683157ffc13}
+\hypertarget{FreeRTOS_8h_a990e46a268202dae9f09ca56c35cc17c}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!x\-List@{x\-List}}
+\index{x\-List@{x\-List}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{x\-List}]{\setlength{\rightskip}{0pt plus 5cm}\#define x\-List~{\bf List\-\_\-t}}}\label{FreeRTOS_8h_a990e46a268202dae9f09ca56c35cc17c}
+\hypertarget{FreeRTOS_8h_a62b284ca8496de2faf0157e6c8be94b6}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!x\-List\-Item@{x\-List\-Item}}
+\index{x\-List\-Item@{x\-List\-Item}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{x\-List\-Item}]{\setlength{\rightskip}{0pt plus 5cm}\#define x\-List\-Item~{\bf List\-Item\-\_\-t}}}\label{FreeRTOS_8h_a62b284ca8496de2faf0157e6c8be94b6}
+\hypertarget{FreeRTOS_8h_a5971b85d409766aa17def6cc275c15cd}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!x\-Memory\-Region@{x\-Memory\-Region}}
+\index{x\-Memory\-Region@{x\-Memory\-Region}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{x\-Memory\-Region}]{\setlength{\rightskip}{0pt plus 5cm}\#define x\-Memory\-Region~{\bf Memory\-Region\-\_\-t}}}\label{FreeRTOS_8h_a5971b85d409766aa17def6cc275c15cd}
+\hypertarget{FreeRTOS_8h_a2b4ea2af4cc24db3cbd458722e96fa2f}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!x\-Queue\-Handle@{x\-Queue\-Handle}}
+\index{x\-Queue\-Handle@{x\-Queue\-Handle}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{x\-Queue\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}\#define x\-Queue\-Handle~{\bf Queue\-Handle\-\_\-t}}}\label{FreeRTOS_8h_a2b4ea2af4cc24db3cbd458722e96fa2f}
+\hypertarget{FreeRTOS_8h_ab8d6acee206b02a6a4cf4e63d035b3fd}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!x\-Queue\-Set\-Handle@{x\-Queue\-Set\-Handle}}
+\index{x\-Queue\-Set\-Handle@{x\-Queue\-Set\-Handle}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{x\-Queue\-Set\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}\#define x\-Queue\-Set\-Handle~{\bf Queue\-Set\-Handle\-\_\-t}}}\label{FreeRTOS_8h_ab8d6acee206b02a6a4cf4e63d035b3fd}
+\hypertarget{FreeRTOS_8h_a009d2d6ce8ab8635eaf9f3e507866f6c}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!x\-Queue\-Set\-Member\-Handle@{x\-Queue\-Set\-Member\-Handle}}
+\index{x\-Queue\-Set\-Member\-Handle@{x\-Queue\-Set\-Member\-Handle}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{x\-Queue\-Set\-Member\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}\#define x\-Queue\-Set\-Member\-Handle~{\bf Queue\-Set\-Member\-Handle\-\_\-t}}}\label{FreeRTOS_8h_a009d2d6ce8ab8635eaf9f3e507866f6c}
+\hypertarget{FreeRTOS_8h_a520d8cf032327581ece00e5bd8e03a75}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!x\-Semaphore\-Handle@{x\-Semaphore\-Handle}}
+\index{x\-Semaphore\-Handle@{x\-Semaphore\-Handle}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{x\-Semaphore\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}\#define x\-Semaphore\-Handle~{\bf Semaphore\-Handle\-\_\-t}}}\label{FreeRTOS_8h_a520d8cf032327581ece00e5bd8e03a75}
+\hypertarget{FreeRTOS_8h_af7cd8f53b62f0c497b442b504c30f2ec}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!x\-Task\-Handle@{x\-Task\-Handle}}
+\index{x\-Task\-Handle@{x\-Task\-Handle}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{x\-Task\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}\#define x\-Task\-Handle~{\bf Task\-Handle\-\_\-t}}}\label{FreeRTOS_8h_af7cd8f53b62f0c497b442b504c30f2ec}
+\hypertarget{FreeRTOS_8h_aba476594b7c76708495313b143d7edde}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!x\-Task\-Parameters@{x\-Task\-Parameters}}
+\index{x\-Task\-Parameters@{x\-Task\-Parameters}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{x\-Task\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}\#define x\-Task\-Parameters~{\bf Task\-Parameters\-\_\-t}}}\label{FreeRTOS_8h_aba476594b7c76708495313b143d7edde}
+\hypertarget{FreeRTOS_8h_a86ae1e476b7df91b0b58f7cc0f1ce7ea}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!x\-Task\-Status\-Type@{x\-Task\-Status\-Type}}
+\index{x\-Task\-Status\-Type@{x\-Task\-Status\-Type}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{x\-Task\-Status\-Type}]{\setlength{\rightskip}{0pt plus 5cm}\#define x\-Task\-Status\-Type~{\bf Task\-Status\-\_\-t}}}\label{FreeRTOS_8h_a86ae1e476b7df91b0b58f7cc0f1ce7ea}
+\hypertarget{FreeRTOS_8h_a819785230f5d9368aec050ac661d12e0}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!x\-Time\-Out\-Type@{x\-Time\-Out\-Type}}
+\index{x\-Time\-Out\-Type@{x\-Time\-Out\-Type}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{x\-Time\-Out\-Type}]{\setlength{\rightskip}{0pt plus 5cm}\#define x\-Time\-Out\-Type~{\bf Time\-Out\-\_\-t}}}\label{FreeRTOS_8h_a819785230f5d9368aec050ac661d12e0}
+\hypertarget{FreeRTOS_8h_a9fa57c444af781c3b6286f5cc9e4982d}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!x\-Timer\-Handle@{x\-Timer\-Handle}}
+\index{x\-Timer\-Handle@{x\-Timer\-Handle}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{x\-Timer\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}\#define x\-Timer\-Handle~{\bf Timer\-Handle\-\_\-t}}}\label{FreeRTOS_8h_a9fa57c444af781c3b6286f5cc9e4982d}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{FreeRTOS_8h_a4299b2d274d971e7861eb11e4a688a01}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!Static\-Event\-Group\-\_\-t@{Static\-Event\-Group\-\_\-t}}
+\index{Static\-Event\-Group\-\_\-t@{Static\-Event\-Group\-\_\-t}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{Static\-Event\-Group\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf x\-S\-T\-A\-T\-I\-C\-\_\-\-E\-V\-E\-N\-T\-\_\-\-G\-R\-O\-U\-P}  {\bf Static\-Event\-Group\-\_\-t}}}\label{FreeRTOS_8h_a4299b2d274d971e7861eb11e4a688a01}
+\hypertarget{FreeRTOS_8h_a9735ad9101a2bd25f83a62089a4acee6}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!Static\-List\-\_\-t@{Static\-List\-\_\-t}}
+\index{Static\-List\-\_\-t@{Static\-List\-\_\-t}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{Static\-List\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf x\-S\-T\-A\-T\-I\-C\-\_\-\-L\-I\-S\-T}  {\bf Static\-List\-\_\-t}}}\label{FreeRTOS_8h_a9735ad9101a2bd25f83a62089a4acee6}
+\hypertarget{FreeRTOS_8h_a1d31bc0472385a87424518da484d9e09}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!Static\-List\-Item\-\_\-t@{Static\-List\-Item\-\_\-t}}
+\index{Static\-List\-Item\-\_\-t@{Static\-List\-Item\-\_\-t}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{Static\-List\-Item\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf x\-S\-T\-A\-T\-I\-C\-\_\-\-L\-I\-S\-T\-\_\-\-I\-T\-E\-M} {\bf Static\-List\-Item\-\_\-t}}}\label{FreeRTOS_8h_a1d31bc0472385a87424518da484d9e09}
+\hypertarget{FreeRTOS_8h_a9097f48f4dfa56e8e01d9179462c7994}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!Static\-Mini\-List\-Item\-\_\-t@{Static\-Mini\-List\-Item\-\_\-t}}
+\index{Static\-Mini\-List\-Item\-\_\-t@{Static\-Mini\-List\-Item\-\_\-t}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{Static\-Mini\-List\-Item\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf x\-S\-T\-A\-T\-I\-C\-\_\-\-M\-I\-N\-I\-\_\-\-L\-I\-S\-T\-\_\-\-I\-T\-E\-M} {\bf Static\-Mini\-List\-Item\-\_\-t}}}\label{FreeRTOS_8h_a9097f48f4dfa56e8e01d9179462c7994}
+\hypertarget{FreeRTOS_8h_a9deecb4f17c68b05469a3019cc674bac}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!Static\-Queue\-\_\-t@{Static\-Queue\-\_\-t}}
+\index{Static\-Queue\-\_\-t@{Static\-Queue\-\_\-t}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{Static\-Queue\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf x\-S\-T\-A\-T\-I\-C\-\_\-\-Q\-U\-E\-U\-E}  {\bf Static\-Queue\-\_\-t}}}\label{FreeRTOS_8h_a9deecb4f17c68b05469a3019cc674bac}
+\hypertarget{FreeRTOS_8h_a5899eefbfd03bc6eb83c9accffc8975e}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!Static\-Semaphore\-\_\-t@{Static\-Semaphore\-\_\-t}}
+\index{Static\-Semaphore\-\_\-t@{Static\-Semaphore\-\_\-t}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{Static\-Semaphore\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Static\-Queue\-\_\-t} {\bf Static\-Semaphore\-\_\-t}}}\label{FreeRTOS_8h_a5899eefbfd03bc6eb83c9accffc8975e}
+\hypertarget{FreeRTOS_8h_a1af40d1b7ab8cb328bac2d92d7378c38}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!Static\-Task\-\_\-t@{Static\-Task\-\_\-t}}
+\index{Static\-Task\-\_\-t@{Static\-Task\-\_\-t}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{Static\-Task\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf x\-S\-T\-A\-T\-I\-C\-\_\-\-T\-C\-B}  {\bf Static\-Task\-\_\-t}}}\label{FreeRTOS_8h_a1af40d1b7ab8cb328bac2d92d7378c38}
+\hypertarget{FreeRTOS_8h_af99691595ea45dc3fb803cc004cb6bb9}{\index{Free\-R\-T\-O\-S.\-h@{Free\-R\-T\-O\-S.\-h}!Static\-Timer\-\_\-t@{Static\-Timer\-\_\-t}}
+\index{Static\-Timer\-\_\-t@{Static\-Timer\-\_\-t}!FreeRTOS.h@{Free\-R\-T\-O\-S.\-h}}
+\subsubsection[{Static\-Timer\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf x\-S\-T\-A\-T\-I\-C\-\_\-\-T\-I\-M\-E\-R}  {\bf Static\-Timer\-\_\-t}}}\label{FreeRTOS_8h_af99691595ea45dc3fb803cc004cb6bb9}

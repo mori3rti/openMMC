@@ -1,0 +1,93 @@
+\hypertarget{v3__0_2payload_8c}{\section{/home/henrique/rep/open\-M\-M\-C/port/board/afc/v3\-\_\-0/payload.c File Reference}
+\label{v3__0_2payload_8c}\index{/home/henrique/rep/open\-M\-M\-C/port/board/afc/v3\-\_\-0/payload.\-c@{/home/henrique/rep/open\-M\-M\-C/port/board/afc/v3\-\_\-0/payload.\-c}}
+}
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}semphr.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}event\-\_\-groups.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}port.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}payload.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ipmi.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task\-\_\-priorities.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}adn4604.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ad84xx.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}hotswap.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}utils.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fru.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{v3__0_2payload_8c_a89a993ecd240ec5e4b0a0c946b9e7a17}{E\-I\-N\-T2\-\_\-\-I\-R\-Q\-Handler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{v3__0_2payload_8c_ae7e9602dee8558c5678f3aeccc6618d2}{set\-D\-C\-\_\-\-D\-C\-\_\-\-Converters\-O\-N} (bool on)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{v3__0_2payload_8c_a36b5372f7b812f7c5c20ef239a2c52d1}{initialize\-D\-C\-D\-C} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{v3__0_2payload_8c_a446f73c2a4ab9c48f9c78457e26eb214}{payload\-\_\-send\-\_\-message} (uint8\-\_\-t fru\-\_\-id, \hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} msg)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{v3__0_2payload_8c_a096f5bc7ba795f3210cecd5540eb5bb6}{payload\-\_\-init} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{v3__0_2payload_8c_a05ecf3aa2992d7aa0735e18ee4f63919}{v\-Task\-Payload} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{event__groups_8h_a5119294106541c4eca46e8742fdb4e85}{Event\-Group\-Handle\-\_\-t} \hyperlink{v3__0_2payload_8c_ad505acaa164c27f15e7c7d1482504efe}{amc\-\_\-payload\-\_\-evt} = \hyperlink{group__LPC__Types__Public__Macros_ga070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L}
+\item 
+\hyperlink{task_8h_ae95f44d4cfeb4a599c6cc258d241cb6b}{Task\-Handle\-\_\-t} \hyperlink{v3__0_2payload_8c_aa3186011e409561c496ef0e07c9cf71d}{v\-Task\-Payload\-\_\-\-Handle}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{v3__0_2payload_8c_a89a993ecd240ec5e4b0a0c946b9e7a17}{\index{v3\-\_\-0/payload.\-c@{v3\-\_\-0/payload.\-c}!E\-I\-N\-T2\-\_\-\-I\-R\-Q\-Handler@{E\-I\-N\-T2\-\_\-\-I\-R\-Q\-Handler}}
+\index{E\-I\-N\-T2\-\_\-\-I\-R\-Q\-Handler@{E\-I\-N\-T2\-\_\-\-I\-R\-Q\-Handler}!v3_0/payload.c@{v3\-\_\-0/payload.\-c}}
+\subsubsection[{E\-I\-N\-T2\-\_\-\-I\-R\-Q\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} E\-I\-N\-T2\-\_\-\-I\-R\-Q\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{v3__0_2payload_8c_a89a993ecd240ec5e4b0a0c946b9e7a17}
+\hypertarget{v3__0_2payload_8c_a36b5372f7b812f7c5c20ef239a2c52d1}{\index{v3\-\_\-0/payload.\-c@{v3\-\_\-0/payload.\-c}!initialize\-D\-C\-D\-C@{initialize\-D\-C\-D\-C}}
+\index{initialize\-D\-C\-D\-C@{initialize\-D\-C\-D\-C}!v3_0/payload.c@{v3\-\_\-0/payload.\-c}}
+\subsubsection[{initialize\-D\-C\-D\-C}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} initialize\-D\-C\-D\-C (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{v3__0_2payload_8c_a36b5372f7b812f7c5c20ef239a2c52d1}
+\hypertarget{v3__0_2payload_8c_a096f5bc7ba795f3210cecd5540eb5bb6}{\index{v3\-\_\-0/payload.\-c@{v3\-\_\-0/payload.\-c}!payload\-\_\-init@{payload\-\_\-init}}
+\index{payload\-\_\-init@{payload\-\_\-init}!v3_0/payload.c@{v3\-\_\-0/payload.\-c}}
+\subsubsection[{payload\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} payload\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{v3__0_2payload_8c_a096f5bc7ba795f3210cecd5540eb5bb6}
+\hypertarget{v3__0_2payload_8c_a446f73c2a4ab9c48f9c78457e26eb214}{\index{v3\-\_\-0/payload.\-c@{v3\-\_\-0/payload.\-c}!payload\-\_\-send\-\_\-message@{payload\-\_\-send\-\_\-message}}
+\index{payload\-\_\-send\-\_\-message@{payload\-\_\-send\-\_\-message}!v3_0/payload.c@{v3\-\_\-0/payload.\-c}}
+\subsubsection[{payload\-\_\-send\-\_\-message}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} payload\-\_\-send\-\_\-message (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{fru\-\_\-id, }
+\item[{{\bf Event\-Bits\-\_\-t}}]{msg}
+\end{DoxyParamCaption}
+)}}\label{v3__0_2payload_8c_a446f73c2a4ab9c48f9c78457e26eb214}
+\hypertarget{v3__0_2payload_8c_ae7e9602dee8558c5678f3aeccc6618d2}{\index{v3\-\_\-0/payload.\-c@{v3\-\_\-0/payload.\-c}!set\-D\-C\-\_\-\-D\-C\-\_\-\-Converters\-O\-N@{set\-D\-C\-\_\-\-D\-C\-\_\-\-Converters\-O\-N}}
+\index{set\-D\-C\-\_\-\-D\-C\-\_\-\-Converters\-O\-N@{set\-D\-C\-\_\-\-D\-C\-\_\-\-Converters\-O\-N}!v3_0/payload.c@{v3\-\_\-0/payload.\-c}}
+\subsubsection[{set\-D\-C\-\_\-\-D\-C\-\_\-\-Converters\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} set\-D\-C\-\_\-\-D\-C\-\_\-\-Converters\-O\-N (
+\begin{DoxyParamCaption}
+\item[{bool}]{on}
+\end{DoxyParamCaption}
+)}}\label{v3__0_2payload_8c_ae7e9602dee8558c5678f3aeccc6618d2}
+\hypertarget{v3__0_2payload_8c_a05ecf3aa2992d7aa0735e18ee4f63919}{\index{v3\-\_\-0/payload.\-c@{v3\-\_\-0/payload.\-c}!v\-Task\-Payload@{v\-Task\-Payload}}
+\index{v\-Task\-Payload@{v\-Task\-Payload}!v3_0/payload.c@{v3\-\_\-0/payload.\-c}}
+\subsubsection[{v\-Task\-Payload}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Task\-Payload (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)}}\label{v3__0_2payload_8c_a05ecf3aa2992d7aa0735e18ee4f63919}
+
+
+\subsection{Variable Documentation}
+\hypertarget{v3__0_2payload_8c_ad505acaa164c27f15e7c7d1482504efe}{\index{v3\-\_\-0/payload.\-c@{v3\-\_\-0/payload.\-c}!amc\-\_\-payload\-\_\-evt@{amc\-\_\-payload\-\_\-evt}}
+\index{amc\-\_\-payload\-\_\-evt@{amc\-\_\-payload\-\_\-evt}!v3_0/payload.c@{v3\-\_\-0/payload.\-c}}
+\subsubsection[{amc\-\_\-payload\-\_\-evt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event\-Group\-Handle\-\_\-t} amc\-\_\-payload\-\_\-evt = {\bf N\-U\-L\-L}}}\label{v3__0_2payload_8c_ad505acaa164c27f15e7c7d1482504efe}
+\hypertarget{v3__0_2payload_8c_aa3186011e409561c496ef0e07c9cf71d}{\index{v3\-\_\-0/payload.\-c@{v3\-\_\-0/payload.\-c}!v\-Task\-Payload\-\_\-\-Handle@{v\-Task\-Payload\-\_\-\-Handle}}
+\index{v\-Task\-Payload\-\_\-\-Handle@{v\-Task\-Payload\-\_\-\-Handle}!v3_0/payload.c@{v3\-\_\-0/payload.\-c}}
+\subsubsection[{v\-Task\-Payload\-\_\-\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Task\-Handle\-\_\-t} v\-Task\-Payload\-\_\-\-Handle}}\label{v3__0_2payload_8c_aa3186011e409561c496ef0e07c9cf71d}

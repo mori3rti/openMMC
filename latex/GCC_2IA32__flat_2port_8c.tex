@@ -1,0 +1,308 @@
+\hypertarget{GCC_2IA32__flat_2port_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-I\-A32\-\_\-flat/port.c File Reference}
+\label{GCC_2IA32__flat_2port_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+}
+{\ttfamily \#include $<$limits.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structIDTEntry}{I\-D\-T\-Entry}
+\item 
+struct \hyperlink{structIDTPointer}{I\-D\-T\-Pointer}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{GCC_2IA32__flat_2port_8c_ab7c7cbbda4fb9a253c7e5086071db162}{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}~( ( uint32\-\_\-t ) 0 )
+\item 
+\#define \hyperlink{GCC_2IA32__flat_2port_8c_a20b80621f4d4ec9522bd510f89641cf3}{port\-N\-O\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T}~( ( \hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} ) 0 )
+\item 
+\#define \hyperlink{GCC_2IA32__flat_2port_8c_a9cd5d7ebd40391483c78d3d1e3317b61}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-E\-F\-L\-A\-G\-S}~( 0x200\-U\-L )
+\item 
+\#define \hyperlink{GCC_2IA32__flat_2port_8c_aa57eeab951a4a84ff8d8bc08c33649e6}{port\-A\-P\-I\-C\-\_\-\-L\-V\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-V\-E\-C\-T\-O\-R}~( 0xfe )
+\item 
+\#define \hyperlink{GCC_2IA32__flat_2port_8c_a3b4056b9cb2409b0ab06ec12f2e86e56}{port\-A\-P\-I\-C\-\_\-\-S\-P\-U\-R\-I\-O\-U\-S\-\_\-\-I\-N\-T\-\_\-\-V\-E\-C\-T\-O\-R}~( 0xff )
+\item 
+\#define \hyperlink{GCC_2IA32__flat_2port_8c_a9b70115bf068687317ff737f0abd2b54}{port\-E\-F\-L\-A\-G\-S\-\_\-\-I\-F}~( 0x200\-U\-L )
+\item 
+\#define \hyperlink{GCC_2IA32__flat_2port_8c_aca8d51f902ccd2ece2c52a7384ae0158}{port\-F\-P\-U\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-S\-I\-Z\-E\-\_\-\-B\-Y\-T\-E\-S}~108
+\item 
+\#define \hyperlink{GCC_2IA32__flat_2port_8c_a2e2f8157e2d6dd1b5b749b4f74dfd642}{port\-E\-X\-P\-E\-C\-T\-E\-D\-\_\-\-I\-D\-T\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-S\-I\-Z\-E}~8
+\item 
+\#define \hyperlink{GCC_2IA32__flat_2port_8c_adfdc22e5a2441f184a3117f4d98987d5}{port\-I\-D\-T\-\_\-\-F\-L\-A\-G\-S}~( 0x8\-E )
+\item 
+\#define \hyperlink{GCC_2IA32__flat_2port_8c_a94b33a8c7fa2c048d5ca7441d7ee19fd}{port\-A\-P\-I\-C\-\_\-\-M\-I\-N\-\_\-\-A\-L\-L\-O\-W\-A\-B\-L\-E\-\_\-\-V\-E\-C\-T\-O\-R}~( 0x20 )
+\item 
+\#define \hyperlink{GCC_2IA32__flat_2port_8c_a3061bc2d4f0034ea2b1ff199c94c7be3}{port\-S\-T\-A\-C\-K\-\_\-\-W\-O\-R\-D}~( 0xecececec )
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structIDTEntry}{I\-D\-T\-Entry} \hyperlink{GCC_2IA32__flat_2port_8c_a3f3ad9d9a474933bc498baafd818ed6b}{I\-D\-T\-Entry\-\_\-t}
+\item 
+typedef struct \hyperlink{structIDTPointer}{I\-D\-T\-Pointer} \hyperlink{GCC_2IA32__flat_2port_8c_a9cfa1fd2ecc8d667250940612bacd84d}{I\-D\-T\-Pointer\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2IA32__flat_2port_8c_a5cfc38319f17c8e804020ec247b6325d}{v\-Port\-Start\-First\-Task} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2IA32__flat_2port_8c_a9427e8b1f123b9b6cd5f6531fbe342bf}{v\-Port\-Central\-Interrupt\-Wrapper} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2IA32__flat_2port_8c_a220b88566b1282758d92b6ae16f19fe9}{v\-Port\-Yield\-Call} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2IA32__flat_2port_8c_a55872590166dadefe3cb12afa147e3c5}{v\-Port\-Timer\-Handler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+struct \hyperlink{structIDTEntry}{I\-D\-T\-Entry} \hyperlink{GCC_2IA32__flat_2port_8c_adc383239b4092038b9d80761cb017898}{\-\_\-\-\_\-attribute\-\_\-\-\_\-} ((packed))
+\item 
+struct \hyperlink{structIDTPointer}{I\-D\-T\-Pointer} \hyperlink{GCC_2IA32__flat_2port_8c_ad09246453a4dabd919c7541484046a87}{\-\_\-\-\_\-attribute\-\_\-\-\_\-} ((\-\_\-\-\_\-packed\-\_\-\-\_\-))
+\item 
+volatile uint32\-\_\-t \\*
+ul\-Top\-Of\-System\-Stack \hyperlink{GCC_2IA32__flat_2port_8c_ac4c6fcdf70ff4b83cd5b6bba09936692}{\-\_\-\-\_\-attribute\-\_\-\-\_\-} ((used))
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$ \hyperlink{GCC_2IA32__flat_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{px\-Port\-Initialise\-Stack} (\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$px\-Top\-Of\-Stack, \hyperlink{projdefs_8h_a24177544ba9c507a9429d6d5761eb487}{Task\-Function\-\_\-t} px\-Code, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2IA32__flat_2port_8c_ab80bbff02ac9871dcfb168f77b763beb}{v\-Port\-Setup\-I\-D\-T} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{GCC_2IA32__flat_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{x\-Port\-Start\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2IA32__flat_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{v\-Port\-End\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2IA32__flat_2port_8c_a2ed3554a3de09a3bd09d396ee081ab69}{v\-Port\-Enter\-Critical} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2IA32__flat_2port_8c_aed20ada05b957181a0de042802a82a5b}{v\-Port\-Exit\-Critical} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+uint32\-\_\-t \hyperlink{GCC_2IA32__flat_2port_8c_a0625efca0dcd0cb3a264e046a937731a}{ul\-Port\-Set\-Interrupt\-Mask} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2IA32__flat_2port_8c_a27249dcba4cae6d593e0dc39d8df2f25}{v\-Port\-Clear\-Interrupt\-Mask} (uint32\-\_\-t ul\-New\-Mask\-Value)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2IA32__flat_2port_8c_a918606de526c4a144a1f7a2692309a13}{v\-Port\-A\-P\-I\-C\-Error\-Handler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{GCC_2IA32__flat_2port_8c_aafd5a66e2a6b457102a8bad08e680532}{x\-Port\-Install\-Interrupt\-Handler} (\hyperlink{GCC_2IA32__flat_2portmacro_8h_ad75c1773eeb0390fb691b2cd21353681}{I\-S\-R\-\_\-\-Handler\-\_\-t} px\-Handler, uint32\-\_\-t ul\-Vector\-Number)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2IA32__flat_2port_8c_af53be450d8f7c7e129425e990b887c29}{v\-Generate\-Yield\-Interrupt} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile uint32\-\_\-t \hyperlink{GCC_2IA32__flat_2port_8c_a4e719b187cba9cb244aeb611aca513f6}{ul\-Critical\-Nesting} = 9999\-U\-L
+\item 
+uint16\-\_\-t \hyperlink{GCC_2IA32__flat_2port_8c_aab5103304eab3c391894b4f4b2192c5c}{us\-I\-S\-R\-Low}
+\item 
+uint16\-\_\-t \hyperlink{GCC_2IA32__flat_2port_8c_ad1ef9dd34a8f75039b5aae7161428169}{us\-Segment\-Selector}
+\item 
+uint8\-\_\-t \hyperlink{GCC_2IA32__flat_2port_8c_aa2f17fa093db9acf8c5fb8149066f3ab}{uc\-Zero}
+\item 
+uint8\-\_\-t \hyperlink{GCC_2IA32__flat_2port_8c_ab8f6da769d17b9653e9a6d879e875e9b}{uc\-Flags}
+\item 
+uint16\-\_\-t \hyperlink{GCC_2IA32__flat_2port_8c_a1dc8949e3861a8252c6a33c5ad012faf}{us\-I\-S\-R\-High}
+\item 
+uint16\-\_\-t \hyperlink{GCC_2IA32__flat_2port_8c_a346f50f6a1bcd6c4b0ab4a01950bf213}{us\-Table\-Limit}
+\item 
+uint32\-\_\-t \hyperlink{GCC_2IA32__flat_2port_8c_a552cc8d565c21202cf6dc2c55ac97505}{ul\-Table\-Base}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{GCC_2IA32__flat_2port_8c_aa57eeab951a4a84ff8d8bc08c33649e6}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!port\-A\-P\-I\-C\-\_\-\-L\-V\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-V\-E\-C\-T\-O\-R@{port\-A\-P\-I\-C\-\_\-\-L\-V\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-V\-E\-C\-T\-O\-R}}
+\index{port\-A\-P\-I\-C\-\_\-\-L\-V\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-V\-E\-C\-T\-O\-R@{port\-A\-P\-I\-C\-\_\-\-L\-V\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-V\-E\-C\-T\-O\-R}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{port\-A\-P\-I\-C\-\_\-\-L\-V\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-V\-E\-C\-T\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-A\-P\-I\-C\-\_\-\-L\-V\-T\-\_\-\-E\-R\-R\-O\-R\-\_\-\-V\-E\-C\-T\-O\-R~( 0xfe )}}\label{GCC_2IA32__flat_2port_8c_aa57eeab951a4a84ff8d8bc08c33649e6}
+\hypertarget{GCC_2IA32__flat_2port_8c_a94b33a8c7fa2c048d5ca7441d7ee19fd}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!port\-A\-P\-I\-C\-\_\-\-M\-I\-N\-\_\-\-A\-L\-L\-O\-W\-A\-B\-L\-E\-\_\-\-V\-E\-C\-T\-O\-R@{port\-A\-P\-I\-C\-\_\-\-M\-I\-N\-\_\-\-A\-L\-L\-O\-W\-A\-B\-L\-E\-\_\-\-V\-E\-C\-T\-O\-R}}
+\index{port\-A\-P\-I\-C\-\_\-\-M\-I\-N\-\_\-\-A\-L\-L\-O\-W\-A\-B\-L\-E\-\_\-\-V\-E\-C\-T\-O\-R@{port\-A\-P\-I\-C\-\_\-\-M\-I\-N\-\_\-\-A\-L\-L\-O\-W\-A\-B\-L\-E\-\_\-\-V\-E\-C\-T\-O\-R}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{port\-A\-P\-I\-C\-\_\-\-M\-I\-N\-\_\-\-A\-L\-L\-O\-W\-A\-B\-L\-E\-\_\-\-V\-E\-C\-T\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-A\-P\-I\-C\-\_\-\-M\-I\-N\-\_\-\-A\-L\-L\-O\-W\-A\-B\-L\-E\-\_\-\-V\-E\-C\-T\-O\-R~( 0x20 )}}\label{GCC_2IA32__flat_2port_8c_a94b33a8c7fa2c048d5ca7441d7ee19fd}
+\hypertarget{GCC_2IA32__flat_2port_8c_a3b4056b9cb2409b0ab06ec12f2e86e56}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!port\-A\-P\-I\-C\-\_\-\-S\-P\-U\-R\-I\-O\-U\-S\-\_\-\-I\-N\-T\-\_\-\-V\-E\-C\-T\-O\-R@{port\-A\-P\-I\-C\-\_\-\-S\-P\-U\-R\-I\-O\-U\-S\-\_\-\-I\-N\-T\-\_\-\-V\-E\-C\-T\-O\-R}}
+\index{port\-A\-P\-I\-C\-\_\-\-S\-P\-U\-R\-I\-O\-U\-S\-\_\-\-I\-N\-T\-\_\-\-V\-E\-C\-T\-O\-R@{port\-A\-P\-I\-C\-\_\-\-S\-P\-U\-R\-I\-O\-U\-S\-\_\-\-I\-N\-T\-\_\-\-V\-E\-C\-T\-O\-R}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{port\-A\-P\-I\-C\-\_\-\-S\-P\-U\-R\-I\-O\-U\-S\-\_\-\-I\-N\-T\-\_\-\-V\-E\-C\-T\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-A\-P\-I\-C\-\_\-\-S\-P\-U\-R\-I\-O\-U\-S\-\_\-\-I\-N\-T\-\_\-\-V\-E\-C\-T\-O\-R~( 0xff )}}\label{GCC_2IA32__flat_2port_8c_a3b4056b9cb2409b0ab06ec12f2e86e56}
+\hypertarget{GCC_2IA32__flat_2port_8c_a9b70115bf068687317ff737f0abd2b54}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!port\-E\-F\-L\-A\-G\-S\-\_\-\-I\-F@{port\-E\-F\-L\-A\-G\-S\-\_\-\-I\-F}}
+\index{port\-E\-F\-L\-A\-G\-S\-\_\-\-I\-F@{port\-E\-F\-L\-A\-G\-S\-\_\-\-I\-F}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{port\-E\-F\-L\-A\-G\-S\-\_\-\-I\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-E\-F\-L\-A\-G\-S\-\_\-\-I\-F~( 0x200\-U\-L )}}\label{GCC_2IA32__flat_2port_8c_a9b70115bf068687317ff737f0abd2b54}
+\hypertarget{GCC_2IA32__flat_2port_8c_a2e2f8157e2d6dd1b5b749b4f74dfd642}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!port\-E\-X\-P\-E\-C\-T\-E\-D\-\_\-\-I\-D\-T\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-S\-I\-Z\-E@{port\-E\-X\-P\-E\-C\-T\-E\-D\-\_\-\-I\-D\-T\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-S\-I\-Z\-E}}
+\index{port\-E\-X\-P\-E\-C\-T\-E\-D\-\_\-\-I\-D\-T\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-S\-I\-Z\-E@{port\-E\-X\-P\-E\-C\-T\-E\-D\-\_\-\-I\-D\-T\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-S\-I\-Z\-E}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{port\-E\-X\-P\-E\-C\-T\-E\-D\-\_\-\-I\-D\-T\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-E\-X\-P\-E\-C\-T\-E\-D\-\_\-\-I\-D\-T\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-S\-I\-Z\-E~8}}\label{GCC_2IA32__flat_2port_8c_a2e2f8157e2d6dd1b5b749b4f74dfd642}
+\hypertarget{GCC_2IA32__flat_2port_8c_aca8d51f902ccd2ece2c52a7384ae0158}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!port\-F\-P\-U\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-S\-I\-Z\-E\-\_\-\-B\-Y\-T\-E\-S@{port\-F\-P\-U\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-S\-I\-Z\-E\-\_\-\-B\-Y\-T\-E\-S}}
+\index{port\-F\-P\-U\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-S\-I\-Z\-E\-\_\-\-B\-Y\-T\-E\-S@{port\-F\-P\-U\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-S\-I\-Z\-E\-\_\-\-B\-Y\-T\-E\-S}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{port\-F\-P\-U\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-S\-I\-Z\-E\-\_\-\-B\-Y\-T\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-F\-P\-U\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-S\-I\-Z\-E\-\_\-\-B\-Y\-T\-E\-S~108}}\label{GCC_2IA32__flat_2port_8c_aca8d51f902ccd2ece2c52a7384ae0158}
+\hypertarget{GCC_2IA32__flat_2port_8c_adfdc22e5a2441f184a3117f4d98987d5}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!port\-I\-D\-T\-\_\-\-F\-L\-A\-G\-S@{port\-I\-D\-T\-\_\-\-F\-L\-A\-G\-S}}
+\index{port\-I\-D\-T\-\_\-\-F\-L\-A\-G\-S@{port\-I\-D\-T\-\_\-\-F\-L\-A\-G\-S}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{port\-I\-D\-T\-\_\-\-F\-L\-A\-G\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-D\-T\-\_\-\-F\-L\-A\-G\-S~( 0x8\-E )}}\label{GCC_2IA32__flat_2port_8c_adfdc22e5a2441f184a3117f4d98987d5}
+\hypertarget{GCC_2IA32__flat_2port_8c_a9cd5d7ebd40391483c78d3d1e3317b61}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-E\-F\-L\-A\-G\-S@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-E\-F\-L\-A\-G\-S}}
+\index{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-E\-F\-L\-A\-G\-S@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-E\-F\-L\-A\-G\-S}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-E\-F\-L\-A\-G\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-E\-F\-L\-A\-G\-S~( 0x200\-U\-L )}}\label{GCC_2IA32__flat_2port_8c_a9cd5d7ebd40391483c78d3d1e3317b61}
+\hypertarget{GCC_2IA32__flat_2port_8c_ab7c7cbbda4fb9a253c7e5086071db162}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G@{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}}
+\index{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G@{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G~( ( uint32\-\_\-t ) 0 )}}\label{GCC_2IA32__flat_2port_8c_ab7c7cbbda4fb9a253c7e5086071db162}
+\hypertarget{GCC_2IA32__flat_2port_8c_a20b80621f4d4ec9522bd510f89641cf3}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!port\-N\-O\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-N\-O\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T}}
+\index{port\-N\-O\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-N\-O\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{port\-N\-O\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-N\-O\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T~( ( {\bf Stack\-Type\-\_\-t} ) 0 )}}\label{GCC_2IA32__flat_2port_8c_a20b80621f4d4ec9522bd510f89641cf3}
+\hypertarget{GCC_2IA32__flat_2port_8c_a3061bc2d4f0034ea2b1ff199c94c7be3}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!port\-S\-T\-A\-C\-K\-\_\-\-W\-O\-R\-D@{port\-S\-T\-A\-C\-K\-\_\-\-W\-O\-R\-D}}
+\index{port\-S\-T\-A\-C\-K\-\_\-\-W\-O\-R\-D@{port\-S\-T\-A\-C\-K\-\_\-\-W\-O\-R\-D}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{port\-S\-T\-A\-C\-K\-\_\-\-W\-O\-R\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-T\-A\-C\-K\-\_\-\-W\-O\-R\-D~( 0xecececec )}}\label{GCC_2IA32__flat_2port_8c_a3061bc2d4f0034ea2b1ff199c94c7be3}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{GCC_2IA32__flat_2port_8c_a3f3ad9d9a474933bc498baafd818ed6b}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!I\-D\-T\-Entry\-\_\-t@{I\-D\-T\-Entry\-\_\-t}}
+\index{I\-D\-T\-Entry\-\_\-t@{I\-D\-T\-Entry\-\_\-t}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{I\-D\-T\-Entry\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf I\-D\-T\-Entry} {\bf I\-D\-T\-Entry\-\_\-t}}}\label{GCC_2IA32__flat_2port_8c_a3f3ad9d9a474933bc498baafd818ed6b}
+\hypertarget{GCC_2IA32__flat_2port_8c_a9cfa1fd2ecc8d667250940612bacd84d}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!I\-D\-T\-Pointer\-\_\-t@{I\-D\-T\-Pointer\-\_\-t}}
+\index{I\-D\-T\-Pointer\-\_\-t@{I\-D\-T\-Pointer\-\_\-t}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{I\-D\-T\-Pointer\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf I\-D\-T\-Pointer} {\bf I\-D\-T\-Pointer\-\_\-t}}}\label{GCC_2IA32__flat_2port_8c_a9cfa1fd2ecc8d667250940612bacd84d}
+
+
+\subsection{Function Documentation}
+\hypertarget{GCC_2IA32__flat_2port_8c_adc383239b4092038b9d80761cb017898}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!\-\_\-\-\_\-attribute\-\_\-\-\_\-@{\-\_\-\-\_\-attribute\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-attribute\-\_\-\-\_\-@{\-\_\-\-\_\-attribute\-\_\-\-\_\-}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{\-\_\-\-\_\-attribute\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf I\-D\-T\-Entry} \-\_\-\-\_\-attribute\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{(packed)}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2IA32__flat_2port_8c_adc383239b4092038b9d80761cb017898}
+\hypertarget{GCC_2IA32__flat_2port_8c_ad09246453a4dabd919c7541484046a87}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!\-\_\-\-\_\-attribute\-\_\-\-\_\-@{\-\_\-\-\_\-attribute\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-attribute\-\_\-\-\_\-@{\-\_\-\-\_\-attribute\-\_\-\-\_\-}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{\-\_\-\-\_\-attribute\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}struct \-\_\-\-\_\-attribute\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{(\-\_\-\-\_\-packed\-\_\-\-\_\-)}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2IA32__flat_2port_8c_ad09246453a4dabd919c7541484046a87}
+\hypertarget{GCC_2IA32__flat_2port_8c_ac4c6fcdf70ff4b83cd5b6bba09936692}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!\-\_\-\-\_\-attribute\-\_\-\-\_\-@{\-\_\-\-\_\-attribute\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-attribute\-\_\-\-\_\-@{\-\_\-\-\_\-attribute\-\_\-\-\_\-}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{\-\_\-\-\_\-attribute\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint32\-\_\-t ul\-Top\-Of\-System\-Stack \-\_\-\-\_\-attribute\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{(used)}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2IA32__flat_2port_8c_ac4c6fcdf70ff4b83cd5b6bba09936692}
+\hypertarget{GCC_2IA32__flat_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}}
+\index{px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{px\-Port\-Initialise\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stack\-Type\-\_\-t}$\ast$ px\-Port\-Initialise\-Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\-Type\-\_\-t} $\ast$}]{px\-Top\-Of\-Stack, }
+\item[{{\bf Task\-Function\-\_\-t}}]{px\-Code, }
+\item[{{\bf void} $\ast$}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)}}\label{GCC_2IA32__flat_2port_8c_a474fbbb58ea661a1557f05adc41120c1}
+\hypertarget{GCC_2IA32__flat_2port_8c_a0625efca0dcd0cb3a264e046a937731a}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!ul\-Port\-Set\-Interrupt\-Mask@{ul\-Port\-Set\-Interrupt\-Mask}}
+\index{ul\-Port\-Set\-Interrupt\-Mask@{ul\-Port\-Set\-Interrupt\-Mask}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{ul\-Port\-Set\-Interrupt\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t ul\-Port\-Set\-Interrupt\-Mask (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2IA32__flat_2port_8c_a0625efca0dcd0cb3a264e046a937731a}
+\hypertarget{GCC_2IA32__flat_2port_8c_af53be450d8f7c7e129425e990b887c29}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!v\-Generate\-Yield\-Interrupt@{v\-Generate\-Yield\-Interrupt}}
+\index{v\-Generate\-Yield\-Interrupt@{v\-Generate\-Yield\-Interrupt}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{v\-Generate\-Yield\-Interrupt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Generate\-Yield\-Interrupt (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2IA32__flat_2port_8c_af53be450d8f7c7e129425e990b887c29}
+\hypertarget{GCC_2IA32__flat_2port_8c_a918606de526c4a144a1f7a2692309a13}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!v\-Port\-A\-P\-I\-C\-Error\-Handler@{v\-Port\-A\-P\-I\-C\-Error\-Handler}}
+\index{v\-Port\-A\-P\-I\-C\-Error\-Handler@{v\-Port\-A\-P\-I\-C\-Error\-Handler}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{v\-Port\-A\-P\-I\-C\-Error\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-A\-P\-I\-C\-Error\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2IA32__flat_2port_8c_a918606de526c4a144a1f7a2692309a13}
+\hypertarget{GCC_2IA32__flat_2port_8c_a9427e8b1f123b9b6cd5f6531fbe342bf}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!v\-Port\-Central\-Interrupt\-Wrapper@{v\-Port\-Central\-Interrupt\-Wrapper}}
+\index{v\-Port\-Central\-Interrupt\-Wrapper@{v\-Port\-Central\-Interrupt\-Wrapper}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{v\-Port\-Central\-Interrupt\-Wrapper}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Central\-Interrupt\-Wrapper (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2IA32__flat_2port_8c_a9427e8b1f123b9b6cd5f6531fbe342bf}
+\hypertarget{GCC_2IA32__flat_2port_8c_a27249dcba4cae6d593e0dc39d8df2f25}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!v\-Port\-Clear\-Interrupt\-Mask@{v\-Port\-Clear\-Interrupt\-Mask}}
+\index{v\-Port\-Clear\-Interrupt\-Mask@{v\-Port\-Clear\-Interrupt\-Mask}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{v\-Port\-Clear\-Interrupt\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Clear\-Interrupt\-Mask (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{ul\-New\-Mask\-Value}
+\end{DoxyParamCaption}
+)}}\label{GCC_2IA32__flat_2port_8c_a27249dcba4cae6d593e0dc39d8df2f25}
+\hypertarget{GCC_2IA32__flat_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}}
+\index{v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{v\-Port\-End\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-End\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2IA32__flat_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}
+\hypertarget{GCC_2IA32__flat_2port_8c_a2ed3554a3de09a3bd09d396ee081ab69}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!v\-Port\-Enter\-Critical@{v\-Port\-Enter\-Critical}}
+\index{v\-Port\-Enter\-Critical@{v\-Port\-Enter\-Critical}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{v\-Port\-Enter\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Enter\-Critical (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2IA32__flat_2port_8c_a2ed3554a3de09a3bd09d396ee081ab69}
+\hypertarget{GCC_2IA32__flat_2port_8c_aed20ada05b957181a0de042802a82a5b}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!v\-Port\-Exit\-Critical@{v\-Port\-Exit\-Critical}}
+\index{v\-Port\-Exit\-Critical@{v\-Port\-Exit\-Critical}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{v\-Port\-Exit\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Exit\-Critical (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2IA32__flat_2port_8c_aed20ada05b957181a0de042802a82a5b}
+\hypertarget{GCC_2IA32__flat_2port_8c_ab80bbff02ac9871dcfb168f77b763beb}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!v\-Port\-Setup\-I\-D\-T@{v\-Port\-Setup\-I\-D\-T}}
+\index{v\-Port\-Setup\-I\-D\-T@{v\-Port\-Setup\-I\-D\-T}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{v\-Port\-Setup\-I\-D\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Setup\-I\-D\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2IA32__flat_2port_8c_ab80bbff02ac9871dcfb168f77b763beb}
+\hypertarget{GCC_2IA32__flat_2port_8c_a5cfc38319f17c8e804020ec247b6325d}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!v\-Port\-Start\-First\-Task@{v\-Port\-Start\-First\-Task}}
+\index{v\-Port\-Start\-First\-Task@{v\-Port\-Start\-First\-Task}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{v\-Port\-Start\-First\-Task}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Start\-First\-Task (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2IA32__flat_2port_8c_a5cfc38319f17c8e804020ec247b6325d}
+\hypertarget{GCC_2IA32__flat_2port_8c_a55872590166dadefe3cb12afa147e3c5}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!v\-Port\-Timer\-Handler@{v\-Port\-Timer\-Handler}}
+\index{v\-Port\-Timer\-Handler@{v\-Port\-Timer\-Handler}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{v\-Port\-Timer\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Timer\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2IA32__flat_2port_8c_a55872590166dadefe3cb12afa147e3c5}
+\hypertarget{GCC_2IA32__flat_2port_8c_a220b88566b1282758d92b6ae16f19fe9}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!v\-Port\-Yield\-Call@{v\-Port\-Yield\-Call}}
+\index{v\-Port\-Yield\-Call@{v\-Port\-Yield\-Call}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{v\-Port\-Yield\-Call}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Yield\-Call (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2IA32__flat_2port_8c_a220b88566b1282758d92b6ae16f19fe9}
+\hypertarget{GCC_2IA32__flat_2port_8c_aafd5a66e2a6b457102a8bad08e680532}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!x\-Port\-Install\-Interrupt\-Handler@{x\-Port\-Install\-Interrupt\-Handler}}
+\index{x\-Port\-Install\-Interrupt\-Handler@{x\-Port\-Install\-Interrupt\-Handler}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{x\-Port\-Install\-Interrupt\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} x\-Port\-Install\-Interrupt\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf I\-S\-R\-\_\-\-Handler\-\_\-t}}]{px\-Handler, }
+\item[{uint32\-\_\-t}]{ul\-Vector\-Number}
+\end{DoxyParamCaption}
+)}}\label{GCC_2IA32__flat_2port_8c_aafd5a66e2a6b457102a8bad08e680532}
+\hypertarget{GCC_2IA32__flat_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}}
+\index{x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{x\-Port\-Start\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} x\-Port\-Start\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2IA32__flat_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}
+
+
+\subsection{Variable Documentation}
+\hypertarget{GCC_2IA32__flat_2port_8c_ab8f6da769d17b9653e9a6d879e875e9b}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!uc\-Flags@{uc\-Flags}}
+\index{uc\-Flags@{uc\-Flags}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{uc\-Flags}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t uc\-Flags}}\label{GCC_2IA32__flat_2port_8c_ab8f6da769d17b9653e9a6d879e875e9b}
+\hypertarget{GCC_2IA32__flat_2port_8c_aa2f17fa093db9acf8c5fb8149066f3ab}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!uc\-Zero@{uc\-Zero}}
+\index{uc\-Zero@{uc\-Zero}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{uc\-Zero}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t uc\-Zero}}\label{GCC_2IA32__flat_2port_8c_aa2f17fa093db9acf8c5fb8149066f3ab}
+\hypertarget{GCC_2IA32__flat_2port_8c_a4e719b187cba9cb244aeb611aca513f6}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!ul\-Critical\-Nesting@{ul\-Critical\-Nesting}}
+\index{ul\-Critical\-Nesting@{ul\-Critical\-Nesting}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{ul\-Critical\-Nesting}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint32\-\_\-t ul\-Critical\-Nesting = 9999\-U\-L}}\label{GCC_2IA32__flat_2port_8c_a4e719b187cba9cb244aeb611aca513f6}
+\hypertarget{GCC_2IA32__flat_2port_8c_a552cc8d565c21202cf6dc2c55ac97505}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!ul\-Table\-Base@{ul\-Table\-Base}}
+\index{ul\-Table\-Base@{ul\-Table\-Base}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{ul\-Table\-Base}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t ul\-Table\-Base}}\label{GCC_2IA32__flat_2port_8c_a552cc8d565c21202cf6dc2c55ac97505}
+\hypertarget{GCC_2IA32__flat_2port_8c_a1dc8949e3861a8252c6a33c5ad012faf}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!us\-I\-S\-R\-High@{us\-I\-S\-R\-High}}
+\index{us\-I\-S\-R\-High@{us\-I\-S\-R\-High}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{us\-I\-S\-R\-High}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t us\-I\-S\-R\-High}}\label{GCC_2IA32__flat_2port_8c_a1dc8949e3861a8252c6a33c5ad012faf}
+\hypertarget{GCC_2IA32__flat_2port_8c_aab5103304eab3c391894b4f4b2192c5c}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!us\-I\-S\-R\-Low@{us\-I\-S\-R\-Low}}
+\index{us\-I\-S\-R\-Low@{us\-I\-S\-R\-Low}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{us\-I\-S\-R\-Low}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t us\-I\-S\-R\-Low}}\label{GCC_2IA32__flat_2port_8c_aab5103304eab3c391894b4f4b2192c5c}
+\hypertarget{GCC_2IA32__flat_2port_8c_ad1ef9dd34a8f75039b5aae7161428169}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!us\-Segment\-Selector@{us\-Segment\-Selector}}
+\index{us\-Segment\-Selector@{us\-Segment\-Selector}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{us\-Segment\-Selector}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t us\-Segment\-Selector}}\label{GCC_2IA32__flat_2port_8c_ad1ef9dd34a8f75039b5aae7161428169}
+\hypertarget{GCC_2IA32__flat_2port_8c_a346f50f6a1bcd6c4b0ab4a01950bf213}{\index{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}!us\-Table\-Limit@{us\-Table\-Limit}}
+\index{us\-Table\-Limit@{us\-Table\-Limit}!GCC/IA32_flat/port.c@{G\-C\-C/\-I\-A32\-\_\-flat/port.\-c}}
+\subsubsection[{us\-Table\-Limit}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t us\-Table\-Limit}}\label{GCC_2IA32__flat_2port_8c_a346f50f6a1bcd6c4b0ab4a01950bf213}

@@ -1,0 +1,345 @@
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-Micro\-Blaze\-V8/portmacro.h File Reference}
+\label{GCC_2MicroBlazeV8_2portmacro_8h}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+}
+{\ttfamily \#include $<$mb\-\_\-interface.\-h$>$}\\*
+{\ttfamily \#include $<$xparameters.\-h$>$}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structPORT__REGISTER__DUMP}{P\-O\-R\-T\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-D\-U\-M\-P}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_add0bdbfef5abf241c7774f68bde42f1d}{port\-C\-H\-A\-R}~char
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a1bbe1ef117ec274ef919e0a930c888ac}{port\-F\-L\-O\-A\-T}~float
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a4711ce186a903a14bc8ea7c8650b4f61}{port\-D\-O\-U\-B\-L\-E}~double
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a6bbebff6020ac333ab6ec2ffd7f77001}{port\-L\-O\-N\-G}~long
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a42e62d5881b12ff2a5c659576c64d003}{port\-S\-H\-O\-R\-T}~short
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_ab0a294066ac7369b8f59a52d9491a92c}{port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E}~uint32\-\_\-t
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E}~long
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a72723ba1e4a85ca14f25c2b9e066613d}{port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y}~( \hyperlink{Flsh186_2prtmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t} ) 0xffffffff\-U\-L
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a62e53bc6d3fa5c4bf4e65ab2752930f3}{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C}~1
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a6e3d10ee1a0734a647ca192523c2cfc1}{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}()~\hyperlink{GCC_2MicroBlazeV9_2portmacro_8h_a0bf78ff841f9b3b0ef2cde57729865ac}{microblaze\-\_\-disable\-\_\-interrupts}()
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_abc47e85a6befbb47961ad5ee7aa57173}{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}()~\hyperlink{GCC_2MicroBlazeV9_2portmacro_8h_a1fb342dccdb8b0b7fde838d3a275a5de}{microblaze\-\_\-enable\-\_\-interrupts}()
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a8a09321ad004019f3c8d0f2e4d7224c7}{port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}()
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a529358e6147881dd881c890ade21c9bd}{port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}()
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_ae1ff06193615f5130b5a97dc9e708fc7}{port\-Y\-I\-E\-L\-D}()~\hyperlink{WizC_2PIC18_2port_8c_add01c927fb689f7ec170e42d47d27927}{v\-Port\-Yield}()
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_aac6850c66595efdc02a8bbb95fb4648e}{port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}(x)~if( ( x ) != \hyperlink{projdefs_8h_aa56260e937e7e203026707e5ba944273}{pd\-F\-A\-L\-S\-E} ) \hyperlink{GCC_2MicroBlazeV9_2portmacro_8h_a142558b17027233797220c49c71c4f1f}{ul\-Task\-Switch\-Requested} = 1
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_ab9091ce3940d8bd93ec850122a2c6a1c}{port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T}~4
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a21adaab1601f6a0f35ba550a43060830}{port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H}~( -\/1 )
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a554d9322ce7f698a86a22b21234bd8cd}{port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S}~( ( \hyperlink{Flsh186_2prtmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t} ) 1000 / \hyperlink{FreeRTOSConfig_8h_a2f0258dd1e3b877e5bc013be54c2db6a}{config\-T\-I\-C\-K\-\_\-\-R\-A\-T\-E\-\_\-\-H\-Z} )
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a23c54dff0b50ff35563ef06c6d6d1835}{port\-N\-O\-P}()~asm volatile ( \char`\"{}N\-O\-P\char`\"{} )
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a2921e1c5a1f974dfa01ae44d1f665f14}{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O}(v\-Function, pv\-Parameters)~\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} v\-Function( \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters )
+\item 
+\#define \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a3a289793652f505c538abea27045ccdf}{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}(v\-Function, pv\-Parameters)~\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} v\-Function( \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters )
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{WizC_2PIC18_2portmacro_8h_ab0a294066ac7369b8f59a52d9491a92c}{port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E} \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t}
+\item 
+typedef long \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a46fb21e00ae0729d7515c0fbf2269796}{Base\-Type\-\_\-t}
+\item 
+typedef unsigned long \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a646f89d4298e4f5afd522202b11cb2e6}{U\-Base\-Type\-\_\-t}
+\item 
+typedef uint32\-\_\-t \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t}
+\item 
+typedef struct \hyperlink{structPORT__REGISTER__DUMP}{P\-O\-R\-T\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-D\-U\-M\-P} \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_aef4699fe8035e90a41de07cec1329c01}{x\-Port\-Register\-Dump}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a0bf78ff841f9b3b0ef2cde57729865ac}{microblaze\-\_\-disable\-\_\-interrupts} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a1fb342dccdb8b0b7fde838d3a275a5de}{microblaze\-\_\-enable\-\_\-interrupts} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a2ed3554a3de09a3bd09d396ee081ab69}{v\-Port\-Enter\-Critical} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_aed20ada05b957181a0de042802a82a5b}{v\-Port\-Exit\-Critical} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_add01c927fb689f7ec170e42d47d27927}{v\-Port\-Yield} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a7e326747e8b11763013926ee724d5523}{x\-Port\-Install\-Interrupt\-Handler} (uint8\-\_\-t uc\-Interrupt\-I\-D, X\-Interrupt\-Handler px\-Handler, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Call\-Back\-Ref)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a0471656744e861f8982a1f5397a27838}{v\-Port\-Enable\-Interrupt} (uint8\-\_\-t uc\-Interrupt\-I\-D)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a46aef84bd9c309576be51201c6f09741}{v\-Port\-Disable\-Interrupt} (uint8\-\_\-t uc\-Interrupt\-I\-D)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_af6c61ea6aaa9367ebdc5348c1b121aa7}{v\-Application\-Setup\-Timer\-Interrupt} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_ada8bec0ed1974828097368e3eb2e6a09}{v\-Application\-Clear\-Timer\-Interrupt} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a02e7621bd12097c626a731d7a0b452c7}{v\-Port\-Exceptions\-Install\-Handlers} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_ad172ba5723fe0b2b6d0595b03f277d9c}{v\-Application\-Exception\-Register\-Dump} (\hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_aef4699fe8035e90a41de07cec1329c01}{x\-Port\-Register\-Dump} $\ast$x\-Register\-Dump)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile uint32\-\_\-t \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_a142558b17027233797220c49c71c4f1f}{ul\-Task\-Switch\-Requested}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E@{port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E}}
+\index{port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E@{port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-B\-A\-S\-E\-\_\-\-T\-Y\-P\-E~long}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_ab9091ce3940d8bd93ec850122a2c6a1c}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T@{port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T}}
+\index{port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T@{port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T~4}}\label{GCC_2MicroBlazeV8_2portmacro_8h_ab9091ce3940d8bd93ec850122a2c6a1c}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_add0bdbfef5abf241c7774f68bde42f1d}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-C\-H\-A\-R@{port\-C\-H\-A\-R}}
+\index{port\-C\-H\-A\-R@{port\-C\-H\-A\-R}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-C\-H\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-C\-H\-A\-R~char}}\label{GCC_2MicroBlazeV8_2portmacro_8h_add0bdbfef5abf241c7774f68bde42f1d}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a6e3d10ee1a0734a647ca192523c2cfc1}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S@{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}}
+\index{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S@{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)~{\bf microblaze\-\_\-disable\-\_\-interrupts}()}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a6e3d10ee1a0734a647ca192523c2cfc1}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a4711ce186a903a14bc8ea7c8650b4f61}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-D\-O\-U\-B\-L\-E@{port\-D\-O\-U\-B\-L\-E}}
+\index{port\-D\-O\-U\-B\-L\-E@{port\-D\-O\-U\-B\-L\-E}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-D\-O\-U\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-D\-O\-U\-B\-L\-E~double}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a4711ce186a903a14bc8ea7c8650b4f61}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_abc47e85a6befbb47961ad5ee7aa57173}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S@{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}}
+\index{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S@{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)~{\bf microblaze\-\_\-enable\-\_\-interrupts}()}}\label{GCC_2MicroBlazeV8_2portmacro_8h_abc47e85a6befbb47961ad5ee7aa57173}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a8a09321ad004019f3c8d0f2e4d7224c7}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L@{port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}}
+\index{port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L@{port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-E\-N\-T\-E\-R\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a8a09321ad004019f3c8d0f2e4d7224c7}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\{                                                               \(\backslash\)
+                                        extern \textcolor{keyword}{volatile} \hyperlink{Flsh186_2prtmacro_8h_a8e88a5e44a5243b3d1c29af17fd6b5bd}{UBaseType\_t} 
+      \hyperlink{CodeWarrior_2HCS12_2port_8c_abf3b0e1cd9ee0a23eaf382bd87ff0744}{uxCriticalNesting};             \hyperlink{GCC_2MicroBlaze_2portmacro_8h_a0bf78ff841f9b3b0ef2cde57729865ac}{\(\backslash\)}
+\hyperlink{GCC_2MicroBlaze_2portmacro_8h_a0bf78ff841f9b3b0ef2cde57729865ac}{                                        microblaze\_disable\_interrupts}
+      ();                          \(\backslash\)
+                                        uxCriticalNesting++;                                        \(\backslash\)
+                                    \}
+\end{DoxyCode}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a529358e6147881dd881c890ade21c9bd}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L@{port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}}
+\index{port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L@{port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-E\-X\-I\-T\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a529358e6147881dd881c890ade21c9bd}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\{                                                               \(\backslash\)
+                                        extern \textcolor{keyword}{volatile} \hyperlink{Flsh186_2prtmacro_8h_a8e88a5e44a5243b3d1c29af17fd6b5bd}{UBaseType\_t} 
+      \hyperlink{CodeWarrior_2HCS12_2port_8c_abf3b0e1cd9ee0a23eaf382bd87ff0744}{uxCriticalNesting};             \(\backslash\)
+                                        \textcolor{comment}{/* Interrupts are disabled, so we can */}                    \(\backslash\)
+                                        \textcolor{comment}{/* access the variable directly. */}                         \(\backslash\)
+                                        uxCriticalNesting--;                                        \(\backslash\)
+                                        if( uxCriticalNesting == 0 )                                \(\backslash\)
+                                        \{                                                           \(\backslash\)
+                                            \textcolor{comment}{/* The nesting has unwound and we                       \(\backslash\)}
+\textcolor{comment}{                                            can enable interrupts again. */}                         
+      \hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_abc47e85a6befbb47961ad5ee7aa57173}{\(\backslash\)}
+\hyperlink{GCC_2MicroBlazeV8_2portmacro_8h_abc47e85a6befbb47961ad5ee7aa57173}{                                            portENABLE\_INTERRUPTS}();                                
+      \(\backslash\)
+                                        \}                                                           \(\backslash\)
+                                    \}
+\end{DoxyCode}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a1bbe1ef117ec274ef919e0a930c888ac}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-F\-L\-O\-A\-T@{port\-F\-L\-O\-A\-T}}
+\index{port\-F\-L\-O\-A\-T@{port\-F\-L\-O\-A\-T}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-F\-L\-O\-A\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-F\-L\-O\-A\-T~float}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a1bbe1ef117ec274ef919e0a930c888ac}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a6bbebff6020ac333ab6ec2ffd7f77001}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-L\-O\-N\-G@{port\-L\-O\-N\-G}}
+\index{port\-L\-O\-N\-G@{port\-L\-O\-N\-G}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-L\-O\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-L\-O\-N\-G~long}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a6bbebff6020ac333ab6ec2ffd7f77001}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a72723ba1e4a85ca14f25c2b9e066613d}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y@{port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y}}
+\index{port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y@{port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y~( {\bf Tick\-Type\-\_\-t} ) 0xffffffff\-U\-L}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a72723ba1e4a85ca14f25c2b9e066613d}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a23c54dff0b50ff35563ef06c6d6d1835}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-N\-O\-P@{port\-N\-O\-P}}
+\index{port\-N\-O\-P@{port\-N\-O\-P}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-N\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-N\-O\-P(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~asm volatile ( \char`\"{}N\-O\-P\char`\"{} )}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a23c54dff0b50ff35563ef06c6d6d1835}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a42e62d5881b12ff2a5c659576c64d003}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-S\-H\-O\-R\-T@{port\-S\-H\-O\-R\-T}}
+\index{port\-S\-H\-O\-R\-T@{port\-S\-H\-O\-R\-T}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-S\-H\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-H\-O\-R\-T~short}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a42e62d5881b12ff2a5c659576c64d003}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a21adaab1601f6a0f35ba550a43060830}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H@{port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H}}
+\index{port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H@{port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-T\-A\-C\-K\-\_\-\-G\-R\-O\-W\-T\-H~( -\/1 )}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a21adaab1601f6a0f35ba550a43060830}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_ab0a294066ac7369b8f59a52d9491a92c}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E@{port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E}}
+\index{port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E@{port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E~uint32\-\_\-t}}\label{GCC_2MicroBlazeV8_2portmacro_8h_ab0a294066ac7369b8f59a52d9491a92c}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a3a289793652f505c538abea27045ccdf}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N@{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}}
+\index{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N@{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N(
+\begin{DoxyParamCaption}
+\item[{}]{v\-Function, }
+\item[{}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)~{\bf void} v\-Function( {\bf void} $\ast$pv\-Parameters )}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a3a289793652f505c538abea27045ccdf}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a2921e1c5a1f974dfa01ae44d1f665f14}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O@{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O}}
+\index{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O@{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-A\-S\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-R\-O\-T\-O(
+\begin{DoxyParamCaption}
+\item[{}]{v\-Function, }
+\item[{}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)~{\bf void} v\-Function( {\bf void} $\ast$pv\-Parameters )}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a2921e1c5a1f974dfa01ae44d1f665f14}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a554d9322ce7f698a86a22b21234bd8cd}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S@{port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S}}
+\index{port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S@{port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-I\-C\-K\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-M\-S~( ( {\bf Tick\-Type\-\_\-t} ) 1000 / {\bf config\-T\-I\-C\-K\-\_\-\-R\-A\-T\-E\-\_\-\-H\-Z} )}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a554d9322ce7f698a86a22b21234bd8cd}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a62e53bc6d3fa5c4bf4e65ab2752930f3}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C@{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C}}
+\index{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C@{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-I\-C\-K\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-A\-T\-O\-M\-I\-C~1}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a62e53bc6d3fa5c4bf4e65ab2752930f3}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_ae1ff06193615f5130b5a97dc9e708fc7}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-Y\-I\-E\-L\-D@{port\-Y\-I\-E\-L\-D}}
+\index{port\-Y\-I\-E\-L\-D@{port\-Y\-I\-E\-L\-D}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-Y\-I\-E\-L\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-Y\-I\-E\-L\-D(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf v\-Port\-Yield}()}}\label{GCC_2MicroBlazeV8_2portmacro_8h_ae1ff06193615f5130b5a97dc9e708fc7}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_aac6850c66595efdc02a8bbb95fb4648e}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}}
+\index{port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R@{port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-Y\-I\-E\-L\-D\-\_\-\-F\-R\-O\-M\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~if( ( x ) != {\bf pd\-F\-A\-L\-S\-E} ) {\bf ul\-Task\-Switch\-Requested} = 1}}\label{GCC_2MicroBlazeV8_2portmacro_8h_aac6850c66595efdc02a8bbb95fb4648e}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a46fb21e00ae0729d7515c0fbf2269796}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!Base\-Type\-\_\-t@{Base\-Type\-\_\-t}}
+\index{Base\-Type\-\_\-t@{Base\-Type\-\_\-t}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{Base\-Type\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef long {\bf Base\-Type\-\_\-t}}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a46fb21e00ae0729d7515c0fbf2269796}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!Stack\-Type\-\_\-t@{Stack\-Type\-\_\-t}}
+\index{Stack\-Type\-\_\-t@{Stack\-Type\-\_\-t}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{Stack\-Type\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf port\-S\-T\-A\-C\-K\-\_\-\-T\-Y\-P\-E} {\bf Stack\-Type\-\_\-t}}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!Tick\-Type\-\_\-t@{Tick\-Type\-\_\-t}}
+\index{Tick\-Type\-\_\-t@{Tick\-Type\-\_\-t}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{Tick\-Type\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint32\-\_\-t {\bf Tick\-Type\-\_\-t}}}\label{GCC_2MicroBlazeV8_2portmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a646f89d4298e4f5afd522202b11cb2e6}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!U\-Base\-Type\-\_\-t@{U\-Base\-Type\-\_\-t}}
+\index{U\-Base\-Type\-\_\-t@{U\-Base\-Type\-\_\-t}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{U\-Base\-Type\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long {\bf U\-Base\-Type\-\_\-t}}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a646f89d4298e4f5afd522202b11cb2e6}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_aef4699fe8035e90a41de07cec1329c01}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!x\-Port\-Register\-Dump@{x\-Port\-Register\-Dump}}
+\index{x\-Port\-Register\-Dump@{x\-Port\-Register\-Dump}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{x\-Port\-Register\-Dump}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf P\-O\-R\-T\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-D\-U\-M\-P}  {\bf x\-Port\-Register\-Dump}}}\label{GCC_2MicroBlazeV8_2portmacro_8h_aef4699fe8035e90a41de07cec1329c01}
+
+
+\subsection{Function Documentation}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a0bf78ff841f9b3b0ef2cde57729865ac}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!microblaze\-\_\-disable\-\_\-interrupts@{microblaze\-\_\-disable\-\_\-interrupts}}
+\index{microblaze\-\_\-disable\-\_\-interrupts@{microblaze\-\_\-disable\-\_\-interrupts}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{microblaze\-\_\-disable\-\_\-interrupts}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} microblaze\-\_\-disable\-\_\-interrupts (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a0bf78ff841f9b3b0ef2cde57729865ac}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a1fb342dccdb8b0b7fde838d3a275a5de}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!microblaze\-\_\-enable\-\_\-interrupts@{microblaze\-\_\-enable\-\_\-interrupts}}
+\index{microblaze\-\_\-enable\-\_\-interrupts@{microblaze\-\_\-enable\-\_\-interrupts}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{microblaze\-\_\-enable\-\_\-interrupts}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} microblaze\-\_\-enable\-\_\-interrupts (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a1fb342dccdb8b0b7fde838d3a275a5de}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_ada8bec0ed1974828097368e3eb2e6a09}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!v\-Application\-Clear\-Timer\-Interrupt@{v\-Application\-Clear\-Timer\-Interrupt}}
+\index{v\-Application\-Clear\-Timer\-Interrupt@{v\-Application\-Clear\-Timer\-Interrupt}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{v\-Application\-Clear\-Timer\-Interrupt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Application\-Clear\-Timer\-Interrupt (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MicroBlazeV8_2portmacro_8h_ada8bec0ed1974828097368e3eb2e6a09}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_ad172ba5723fe0b2b6d0595b03f277d9c}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!v\-Application\-Exception\-Register\-Dump@{v\-Application\-Exception\-Register\-Dump}}
+\index{v\-Application\-Exception\-Register\-Dump@{v\-Application\-Exception\-Register\-Dump}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{v\-Application\-Exception\-Register\-Dump}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Application\-Exception\-Register\-Dump (
+\begin{DoxyParamCaption}
+\item[{{\bf x\-Port\-Register\-Dump} $\ast$}]{x\-Register\-Dump}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MicroBlazeV8_2portmacro_8h_ad172ba5723fe0b2b6d0595b03f277d9c}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_af6c61ea6aaa9367ebdc5348c1b121aa7}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!v\-Application\-Setup\-Timer\-Interrupt@{v\-Application\-Setup\-Timer\-Interrupt}}
+\index{v\-Application\-Setup\-Timer\-Interrupt@{v\-Application\-Setup\-Timer\-Interrupt}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{v\-Application\-Setup\-Timer\-Interrupt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Application\-Setup\-Timer\-Interrupt (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MicroBlazeV8_2portmacro_8h_af6c61ea6aaa9367ebdc5348c1b121aa7}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a46aef84bd9c309576be51201c6f09741}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!v\-Port\-Disable\-Interrupt@{v\-Port\-Disable\-Interrupt}}
+\index{v\-Port\-Disable\-Interrupt@{v\-Port\-Disable\-Interrupt}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{v\-Port\-Disable\-Interrupt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Disable\-Interrupt (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{uc\-Interrupt\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a46aef84bd9c309576be51201c6f09741}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a0471656744e861f8982a1f5397a27838}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!v\-Port\-Enable\-Interrupt@{v\-Port\-Enable\-Interrupt}}
+\index{v\-Port\-Enable\-Interrupt@{v\-Port\-Enable\-Interrupt}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{v\-Port\-Enable\-Interrupt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Enable\-Interrupt (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{uc\-Interrupt\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a0471656744e861f8982a1f5397a27838}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a2ed3554a3de09a3bd09d396ee081ab69}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!v\-Port\-Enter\-Critical@{v\-Port\-Enter\-Critical}}
+\index{v\-Port\-Enter\-Critical@{v\-Port\-Enter\-Critical}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{v\-Port\-Enter\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Enter\-Critical (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a2ed3554a3de09a3bd09d396ee081ab69}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a02e7621bd12097c626a731d7a0b452c7}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!v\-Port\-Exceptions\-Install\-Handlers@{v\-Port\-Exceptions\-Install\-Handlers}}
+\index{v\-Port\-Exceptions\-Install\-Handlers@{v\-Port\-Exceptions\-Install\-Handlers}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{v\-Port\-Exceptions\-Install\-Handlers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Exceptions\-Install\-Handlers (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a02e7621bd12097c626a731d7a0b452c7}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_aed20ada05b957181a0de042802a82a5b}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!v\-Port\-Exit\-Critical@{v\-Port\-Exit\-Critical}}
+\index{v\-Port\-Exit\-Critical@{v\-Port\-Exit\-Critical}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{v\-Port\-Exit\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Exit\-Critical (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MicroBlazeV8_2portmacro_8h_aed20ada05b957181a0de042802a82a5b}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_add01c927fb689f7ec170e42d47d27927}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!v\-Port\-Yield@{v\-Port\-Yield}}
+\index{v\-Port\-Yield@{v\-Port\-Yield}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{v\-Port\-Yield}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Yield (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MicroBlazeV8_2portmacro_8h_add01c927fb689f7ec170e42d47d27927}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a7e326747e8b11763013926ee724d5523}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!x\-Port\-Install\-Interrupt\-Handler@{x\-Port\-Install\-Interrupt\-Handler}}
+\index{x\-Port\-Install\-Interrupt\-Handler@{x\-Port\-Install\-Interrupt\-Handler}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{x\-Port\-Install\-Interrupt\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} x\-Port\-Install\-Interrupt\-Handler (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{uc\-Interrupt\-I\-D, }
+\item[{X\-Interrupt\-Handler}]{px\-Handler, }
+\item[{{\bf void} $\ast$}]{pv\-Call\-Back\-Ref}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a7e326747e8b11763013926ee724d5523}
+
+
+\subsection{Variable Documentation}
+\hypertarget{GCC_2MicroBlazeV8_2portmacro_8h_a142558b17027233797220c49c71c4f1f}{\index{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}!ul\-Task\-Switch\-Requested@{ul\-Task\-Switch\-Requested}}
+\index{ul\-Task\-Switch\-Requested@{ul\-Task\-Switch\-Requested}!GCC/MicroBlazeV8/portmacro.h@{G\-C\-C/\-Micro\-Blaze\-V8/portmacro.\-h}}
+\subsubsection[{ul\-Task\-Switch\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint32\-\_\-t ul\-Task\-Switch\-Requested}}\label{GCC_2MicroBlazeV8_2portmacro_8h_a142558b17027233797220c49c71c4f1f}

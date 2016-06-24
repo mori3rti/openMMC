@@ -1,0 +1,26 @@
+\hypertarget{trcKernelHooks_8h}{\section{/home/henrique/rep/open\-M\-M\-C/trace/trc\-Kernel\-Hooks.h File Reference}
+\label{trcKernelHooks_8h}\index{/home/henrique/rep/open\-M\-M\-C/trace/trc\-Kernel\-Hooks.\-h@{/home/henrique/rep/open\-M\-M\-C/trace/trc\-Kernel\-Hooks.\-h}}
+}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{trcKernelHooks_8h_a14058870ab984f57429aa8a9cd47b6fe}{trc\-K\-E\-R\-N\-E\-L\-\_\-\-H\-O\-O\-K\-S\-\_\-\-T\-I\-M\-E\-R\-\_\-\-D\-E\-L\-E\-T\-E}(S\-E\-R\-V\-I\-C\-E, px\-Timer)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{trcKernelHooks_8h_a14058870ab984f57429aa8a9cd47b6fe}{\index{trc\-Kernel\-Hooks.\-h@{trc\-Kernel\-Hooks.\-h}!trc\-K\-E\-R\-N\-E\-L\-\_\-\-H\-O\-O\-K\-S\-\_\-\-T\-I\-M\-E\-R\-\_\-\-D\-E\-L\-E\-T\-E@{trc\-K\-E\-R\-N\-E\-L\-\_\-\-H\-O\-O\-K\-S\-\_\-\-T\-I\-M\-E\-R\-\_\-\-D\-E\-L\-E\-T\-E}}
+\index{trc\-K\-E\-R\-N\-E\-L\-\_\-\-H\-O\-O\-K\-S\-\_\-\-T\-I\-M\-E\-R\-\_\-\-D\-E\-L\-E\-T\-E@{trc\-K\-E\-R\-N\-E\-L\-\_\-\-H\-O\-O\-K\-S\-\_\-\-T\-I\-M\-E\-R\-\_\-\-D\-E\-L\-E\-T\-E}!trcKernelHooks.h@{trc\-Kernel\-Hooks.\-h}}
+\subsubsection[{trc\-K\-E\-R\-N\-E\-L\-\_\-\-H\-O\-O\-K\-S\-\_\-\-T\-I\-M\-E\-R\-\_\-\-D\-E\-L\-E\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define trc\-K\-E\-R\-N\-E\-L\-\_\-\-H\-O\-O\-K\-S\-\_\-\-T\-I\-M\-E\-R\-\_\-\-D\-E\-L\-E\-T\-E(
+\begin{DoxyParamCaption}
+\item[{}]{S\-E\-R\-V\-I\-C\-E, }
+\item[{}]{px\-Timer}
+\end{DoxyParamCaption}
+)}}\label{trcKernelHooks_8h_a14058870ab984f57429aa8a9cd47b6fe}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+vTraceStoreKernelCall(SERVICE, TRACE\_CLASS\_TIMER, TRACE\_GET\_TIMER\_NUMBER(pxTimer)); \(\backslash\)
+vTraceStoreObjectNameOnCloseEvent(TRACE\_GET\_TIMER\_NUMBER(pxTimer), TRACE\_CLASS\_TIMER); \(\backslash\)
+vTraceStoreObjectPropertiesOnCloseEvent(TRACE\_GET\_TIMER\_NUMBER(pxTimer), TRACE\_CLASS\_TIMER); \(\backslash\)
+vTraceFreeObjectHandle(TRACE\_CLASS\_TIMER, TRACE\_GET\_TIMER\_NUMBER(pxTimer));
+\end{DoxyCode}

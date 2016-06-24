@@ -1,0 +1,73 @@
+\hypertarget{timing_2i2c__mapping_8c}{\section{/home/henrique/rep/open\-M\-M\-C/port/board/afc-\/timing/i2c\-\_\-mapping.c File Reference}
+\label{timing_2i2c__mapping_8c}\index{/home/henrique/rep/open\-M\-M\-C/port/board/afc-\/timing/i2c\-\_\-mapping.\-c@{/home/henrique/rep/open\-M\-M\-C/port/board/afc-\/timing/i2c\-\_\-mapping.\-c}}
+}
+{\ttfamily \#include \char`\"{}i2c.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}i2c\-\_\-mapping.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}port.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{timing_2i2c__mapping_8c_a023b299a28186eba3ec81cbd1649f6b7}{i2c\-\_\-set\-\_\-mux\-\_\-bus} (uint8\-\_\-t bus\-\_\-id, \hyperlink{i2c_8h_a4448c08f3a95dee90646ea7efbb195a6}{i2c\-\_\-mux\-\_\-state\-\_\-t} $\ast$\hyperlink{timing_2i2c__mapping_8h_a5d0b4adb120556cfc91cba7028ff968d}{i2c\-\_\-mux}, int8\-\_\-t new\-\_\-state)
+\item 
+uint8\-\_\-t \hyperlink{timing_2i2c__mapping_8c_ae62d9260418932a436dc4b4f5d8be0bf}{i2c\-\_\-get\-\_\-mux\-\_\-bus} (uint8\-\_\-t bus\-\_\-id, \hyperlink{i2c_8h_a4448c08f3a95dee90646ea7efbb195a6}{i2c\-\_\-mux\-\_\-state\-\_\-t} $\ast$\hyperlink{timing_2i2c__mapping_8h_a5d0b4adb120556cfc91cba7028ff968d}{i2c\-\_\-mux})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{i2c_8h_a4448c08f3a95dee90646ea7efbb195a6}{i2c\-\_\-mux\-\_\-state\-\_\-t} \hyperlink{timing_2i2c__mapping_8c_a5d0b4adb120556cfc91cba7028ff968d}{i2c\-\_\-mux} \mbox{[}\hyperlink{timing_2i2c__mapping_8h_aee321cd602e527b9ef212489af6f443c}{I2\-C\-\_\-\-M\-U\-X\-\_\-\-C\-N\-T}\mbox{]}
+\item 
+\hyperlink{i2c_8h_a49371d605ca175a0185513a79909a839}{i2c\-\_\-bus\-\_\-mapping\-\_\-t} \hyperlink{timing_2i2c__mapping_8c_af8f9845fe260b517cc495ad41d3ad528}{i2c\-\_\-bus\-\_\-map} \mbox{[}\hyperlink{timing_2i2c__mapping_8h_a7fea1694db807dca93db3821e6357848}{I2\-C\-\_\-\-B\-U\-S\-\_\-\-C\-N\-T}\mbox{]}
+\item 
+\hyperlink{i2c_8h_a433dca1692cf122d9291cee89aa083d1}{i2c\-\_\-chip\-\_\-mapping\-\_\-t} \hyperlink{timing_2i2c__mapping_8c_a30f2d887276421fb4d82fb3b92deb7fa}{i2c\-\_\-chip\-\_\-map} \mbox{[}\hyperlink{timing_2i2c__mapping_8h_aa2791bfce9a71091fd86613de2926a74}{I2\-C\-\_\-\-C\-H\-I\-P\-\_\-\-C\-N\-T}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{timing_2i2c__mapping_8c_ae62d9260418932a436dc4b4f5d8be0bf}{\index{timing/i2c\-\_\-mapping.\-c@{timing/i2c\-\_\-mapping.\-c}!i2c\-\_\-get\-\_\-mux\-\_\-bus@{i2c\-\_\-get\-\_\-mux\-\_\-bus}}
+\index{i2c\-\_\-get\-\_\-mux\-\_\-bus@{i2c\-\_\-get\-\_\-mux\-\_\-bus}!timing/i2c_mapping.c@{timing/i2c\-\_\-mapping.\-c}}
+\subsubsection[{i2c\-\_\-get\-\_\-mux\-\_\-bus}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t i2c\-\_\-get\-\_\-mux\-\_\-bus (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{bus\-\_\-id, }
+\item[{{\bf i2c\-\_\-mux\-\_\-state\-\_\-t} $\ast$}]{i2c\-\_\-mux}
+\end{DoxyParamCaption}
+)}}\label{timing_2i2c__mapping_8c_ae62d9260418932a436dc4b4f5d8be0bf}
+\hypertarget{timing_2i2c__mapping_8c_a023b299a28186eba3ec81cbd1649f6b7}{\index{timing/i2c\-\_\-mapping.\-c@{timing/i2c\-\_\-mapping.\-c}!i2c\-\_\-set\-\_\-mux\-\_\-bus@{i2c\-\_\-set\-\_\-mux\-\_\-bus}}
+\index{i2c\-\_\-set\-\_\-mux\-\_\-bus@{i2c\-\_\-set\-\_\-mux\-\_\-bus}!timing/i2c_mapping.c@{timing/i2c\-\_\-mapping.\-c}}
+\subsubsection[{i2c\-\_\-set\-\_\-mux\-\_\-bus}]{\setlength{\rightskip}{0pt plus 5cm}bool i2c\-\_\-set\-\_\-mux\-\_\-bus (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{bus\-\_\-id, }
+\item[{{\bf i2c\-\_\-mux\-\_\-state\-\_\-t} $\ast$}]{i2c\-\_\-mux, }
+\item[{int8\-\_\-t}]{new\-\_\-state}
+\end{DoxyParamCaption}
+)}}\label{timing_2i2c__mapping_8c_a023b299a28186eba3ec81cbd1649f6b7}
+
+
+\subsection{Variable Documentation}
+\hypertarget{timing_2i2c__mapping_8c_af8f9845fe260b517cc495ad41d3ad528}{\index{timing/i2c\-\_\-mapping.\-c@{timing/i2c\-\_\-mapping.\-c}!i2c\-\_\-bus\-\_\-map@{i2c\-\_\-bus\-\_\-map}}
+\index{i2c\-\_\-bus\-\_\-map@{i2c\-\_\-bus\-\_\-map}!timing/i2c_mapping.c@{timing/i2c\-\_\-mapping.\-c}}
+\subsubsection[{i2c\-\_\-bus\-\_\-map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf i2c\-\_\-bus\-\_\-mapping\-\_\-t} i2c\-\_\-bus\-\_\-map\mbox{[}{\bf I2\-C\-\_\-\-B\-U\-S\-\_\-\-C\-N\-T}\mbox{]}}}\label{timing_2i2c__mapping_8c_af8f9845fe260b517cc495ad41d3ad528}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= \{
+    [\hyperlink{v3__0_2i2c__mapping_8h_ab04a0655cd1e3bcac5e8f48c18df1a57ac698fd1efe2093a4c007c8fe150e9f5a}{I2C\_BUS\_UNKNOWN\_ID}] = \{ \hyperlink{group__I2C__17XX__40XX_ggaec46000c6a1fe2c12c9a0c7ee3677626aeb0f494c71f34592c5a4500ee98ab4a2}{I2C1}, -1, 0 \},
+    [\hyperlink{v3__0_2i2c__mapping_8h_ab04a0655cd1e3bcac5e8f48c18df1a57a966291a20bb2b136f2d77c51d6b5854b}{I2C\_BUS\_FMC1\_ID}]    = \{ \hyperlink{group__I2C__17XX__40XX_ggaec46000c6a1fe2c12c9a0c7ee3677626ae2cc6f0481e798aedb5fd5c6a2bfc01b}{I2C2},  0, 1 \},
+    [\hyperlink{v3__0_2i2c__mapping_8h_ab04a0655cd1e3bcac5e8f48c18df1a57af812fe18b0dc3c0ceae7e35fffcec991}{I2C\_BUS\_FMC2\_ID}]    = \{ \hyperlink{group__I2C__17XX__40XX_ggaec46000c6a1fe2c12c9a0c7ee3677626ae2cc6f0481e798aedb5fd5c6a2bfc01b}{I2C2},  1, 1 \},
+    [\hyperlink{v3__0_2i2c__mapping_8h_ab04a0655cd1e3bcac5e8f48c18df1a57a7896640f6bebd2cea903562885e0b443}{I2C\_BUS\_CPU\_ID}]     = \{ \hyperlink{group__I2C__17XX__40XX_ggaec46000c6a1fe2c12c9a0c7ee3677626aeb0f494c71f34592c5a4500ee98ab4a2}{I2C1}, -1, 1 \},
+    [\hyperlink{v3__0_2i2c__mapping_8h_ab04a0655cd1e3bcac5e8f48c18df1a57a74b2730becc27fe1c86db6924dd8453a}{I2C\_BUS\_RTM\_ID}]     = \{ \hyperlink{group__I2C__17XX__40XX_ggaec46000c6a1fe2c12c9a0c7ee3677626ae2cc6f0481e798aedb5fd5c6a2bfc01b}{I2C2},  3, 1 \},
+    [\hyperlink{v3__0_2i2c__mapping_8h_ab04a0655cd1e3bcac5e8f48c18df1a57a1444b59db94b98952cde42287ce7ac5f}{I2C\_BUS\_CLOCK\_ID}]   = \{ \hyperlink{group__I2C__17XX__40XX_ggaec46000c6a1fe2c12c9a0c7ee3677626ae2cc6f0481e798aedb5fd5c6a2bfc01b}{I2C2},  2, 1 \},
+    [\hyperlink{v3__0_2i2c__mapping_8h_ab04a0655cd1e3bcac5e8f48c18df1a57ac3c0c5aa68373346b48813662a474a96}{I2C\_BUS\_FPGA\_ID}]    = \{ \hyperlink{group__I2C__17XX__40XX_ggaec46000c6a1fe2c12c9a0c7ee3677626ae2cc6f0481e798aedb5fd5c6a2bfc01b}{I2C2}, -1, 1 \},
+\}
+\end{DoxyCode}
+\hypertarget{timing_2i2c__mapping_8c_a30f2d887276421fb4d82fb3b92deb7fa}{\index{timing/i2c\-\_\-mapping.\-c@{timing/i2c\-\_\-mapping.\-c}!i2c\-\_\-chip\-\_\-map@{i2c\-\_\-chip\-\_\-map}}
+\index{i2c\-\_\-chip\-\_\-map@{i2c\-\_\-chip\-\_\-map}!timing/i2c_mapping.c@{timing/i2c\-\_\-mapping.\-c}}
+\subsubsection[{i2c\-\_\-chip\-\_\-map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf i2c\-\_\-chip\-\_\-mapping\-\_\-t} i2c\-\_\-chip\-\_\-map\mbox{[}{\bf I2\-C\-\_\-\-C\-H\-I\-P\-\_\-\-C\-N\-T}\mbox{]}}}\label{timing_2i2c__mapping_8c_a30f2d887276421fb4d82fb3b92deb7fa}
+\hypertarget{timing_2i2c__mapping_8c_a5d0b4adb120556cfc91cba7028ff968d}{\index{timing/i2c\-\_\-mapping.\-c@{timing/i2c\-\_\-mapping.\-c}!i2c\-\_\-mux@{i2c\-\_\-mux}}
+\index{i2c\-\_\-mux@{i2c\-\_\-mux}!timing/i2c_mapping.c@{timing/i2c\-\_\-mapping.\-c}}
+\subsubsection[{i2c\-\_\-mux}]{\setlength{\rightskip}{0pt plus 5cm}{\bf i2c\-\_\-mux\-\_\-state\-\_\-t} i2c\-\_\-mux\mbox{[}{\bf I2\-C\-\_\-\-M\-U\-X\-\_\-\-C\-N\-T}\mbox{]}}}\label{timing_2i2c__mapping_8c_a5d0b4adb120556cfc91cba7028ff968d}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= \{
+    \{ \hyperlink{group__I2C__17XX__40XX_ggaec46000c6a1fe2c12c9a0c7ee3677626aeb0f494c71f34592c5a4500ee98ab4a2}{I2C1}, -1, 0 \},
+    \{ \hyperlink{group__I2C__17XX__40XX_ggaec46000c6a1fe2c12c9a0c7ee3677626ae2cc6f0481e798aedb5fd5c6a2bfc01b}{I2C2}, -1, 0 \}
+\}
+\end{DoxyCode}

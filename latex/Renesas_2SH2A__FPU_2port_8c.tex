@@ -1,0 +1,98 @@
+\hypertarget{Renesas_2SH2A__FPU_2port_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.c File Reference}
+\label{Renesas_2SH2A__FPU_2port_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}}
+}
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}string.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Renesas_2SH2A__FPU_2port_8c_a26624b2cf57368e3719a498832ecb658}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-R}~( 0\-U\-L )
+\item 
+\#define \hyperlink{Renesas_2SH2A__FPU_2port_8c_a7d4650fd5f89cac2195cd6fcdb7c9958}{port\-F\-L\-O\-P\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S\-\_\-\-T\-O\-\_\-\-S\-T\-O\-R\-E}~( 18 )
+\item 
+\#define \hyperlink{Renesas_2SH2A__FPU_2port_8c_a88e477459affee5c7c1cda5ae67fdc3b}{port\-F\-L\-O\-P\-\_\-\-S\-T\-O\-R\-A\-G\-E\-\_\-\-S\-I\-Z\-E}~( \hyperlink{Renesas_2SH2A__FPU_2port_8c_a7d4650fd5f89cac2195cd6fcdb7c9958}{port\-F\-L\-O\-P\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S\-\_\-\-T\-O\-\_\-\-S\-T\-O\-R\-E} $\ast$ 4 )
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{Renesas_2SH2A__FPU_2port_8c_add01c927fb689f7ec170e42d47d27927}{v\-Port\-Yield} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{Renesas_2SH2A__FPU_2port_8c_a5cfc38319f17c8e804020ec247b6325d}{v\-Port\-Start\-First\-Task} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+uint32\-\_\-t \hyperlink{Renesas_2SH2A__FPU_2port_8c_a7a34437befcf8e09719a0642630f7fc6}{ul\-Port\-Get\-G\-B\-R} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$ \hyperlink{Renesas_2SH2A__FPU_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{px\-Port\-Initialise\-Stack} (\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$px\-Top\-Of\-Stack, \hyperlink{projdefs_8h_a24177544ba9c507a9429d6d5761eb487}{Task\-Function\-\_\-t} px\-Code, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters)
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{Renesas_2SH2A__FPU_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{x\-Port\-Start\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{Renesas_2SH2A__FPU_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{v\-Port\-End\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{Renesas_2SH2A__FPU_2port_8c_a2560cc8c9004754d3540f6a3fc462f94}{x\-Port\-Uses\-Floating\-Point} (\hyperlink{task_8h_ae95f44d4cfeb4a599c6cc258d241cb6b}{Task\-Handle\-\_\-t} x\-Task)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{Renesas_2SH2A__FPU_2port_8c_a7d4650fd5f89cac2195cd6fcdb7c9958}{\index{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}!port\-F\-L\-O\-P\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S\-\_\-\-T\-O\-\_\-\-S\-T\-O\-R\-E@{port\-F\-L\-O\-P\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S\-\_\-\-T\-O\-\_\-\-S\-T\-O\-R\-E}}
+\index{port\-F\-L\-O\-P\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S\-\_\-\-T\-O\-\_\-\-S\-T\-O\-R\-E@{port\-F\-L\-O\-P\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S\-\_\-\-T\-O\-\_\-\-S\-T\-O\-R\-E}!Renesas/SH2A_FPU/port.c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}}
+\subsubsection[{port\-F\-L\-O\-P\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S\-\_\-\-T\-O\-\_\-\-S\-T\-O\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-F\-L\-O\-P\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S\-\_\-\-T\-O\-\_\-\-S\-T\-O\-R\-E~( 18 )}}\label{Renesas_2SH2A__FPU_2port_8c_a7d4650fd5f89cac2195cd6fcdb7c9958}
+\hypertarget{Renesas_2SH2A__FPU_2port_8c_a88e477459affee5c7c1cda5ae67fdc3b}{\index{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}!port\-F\-L\-O\-P\-\_\-\-S\-T\-O\-R\-A\-G\-E\-\_\-\-S\-I\-Z\-E@{port\-F\-L\-O\-P\-\_\-\-S\-T\-O\-R\-A\-G\-E\-\_\-\-S\-I\-Z\-E}}
+\index{port\-F\-L\-O\-P\-\_\-\-S\-T\-O\-R\-A\-G\-E\-\_\-\-S\-I\-Z\-E@{port\-F\-L\-O\-P\-\_\-\-S\-T\-O\-R\-A\-G\-E\-\_\-\-S\-I\-Z\-E}!Renesas/SH2A_FPU/port.c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}}
+\subsubsection[{port\-F\-L\-O\-P\-\_\-\-S\-T\-O\-R\-A\-G\-E\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-F\-L\-O\-P\-\_\-\-S\-T\-O\-R\-A\-G\-E\-\_\-\-S\-I\-Z\-E~( {\bf port\-F\-L\-O\-P\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S\-\_\-\-T\-O\-\_\-\-S\-T\-O\-R\-E} $\ast$ 4 )}}\label{Renesas_2SH2A__FPU_2port_8c_a88e477459affee5c7c1cda5ae67fdc3b}
+\hypertarget{Renesas_2SH2A__FPU_2port_8c_a26624b2cf57368e3719a498832ecb658}{\index{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}!port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-R@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-R}}
+\index{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-R@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-R}!Renesas/SH2A_FPU/port.c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}}
+\subsubsection[{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-R~( 0\-U\-L )}}\label{Renesas_2SH2A__FPU_2port_8c_a26624b2cf57368e3719a498832ecb658}
+
+
+\subsection{Function Documentation}
+\hypertarget{Renesas_2SH2A__FPU_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{\index{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}!px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}}
+\index{px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}!Renesas/SH2A_FPU/port.c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}}
+\subsubsection[{px\-Port\-Initialise\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stack\-Type\-\_\-t}$\ast$ px\-Port\-Initialise\-Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\-Type\-\_\-t} $\ast$}]{px\-Top\-Of\-Stack, }
+\item[{{\bf Task\-Function\-\_\-t}}]{px\-Code, }
+\item[{{\bf void} $\ast$}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)}}\label{Renesas_2SH2A__FPU_2port_8c_a474fbbb58ea661a1557f05adc41120c1}
+\hypertarget{Renesas_2SH2A__FPU_2port_8c_a7a34437befcf8e09719a0642630f7fc6}{\index{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}!ul\-Port\-Get\-G\-B\-R@{ul\-Port\-Get\-G\-B\-R}}
+\index{ul\-Port\-Get\-G\-B\-R@{ul\-Port\-Get\-G\-B\-R}!Renesas/SH2A_FPU/port.c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}}
+\subsubsection[{ul\-Port\-Get\-G\-B\-R}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t ul\-Port\-Get\-G\-B\-R (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{Renesas_2SH2A__FPU_2port_8c_a7a34437befcf8e09719a0642630f7fc6}
+\hypertarget{Renesas_2SH2A__FPU_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{\index{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}!v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}}
+\index{v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}!Renesas/SH2A_FPU/port.c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}}
+\subsubsection[{v\-Port\-End\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-End\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{Renesas_2SH2A__FPU_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}
+\hypertarget{Renesas_2SH2A__FPU_2port_8c_a5cfc38319f17c8e804020ec247b6325d}{\index{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}!v\-Port\-Start\-First\-Task@{v\-Port\-Start\-First\-Task}}
+\index{v\-Port\-Start\-First\-Task@{v\-Port\-Start\-First\-Task}!Renesas/SH2A_FPU/port.c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}}
+\subsubsection[{v\-Port\-Start\-First\-Task}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Start\-First\-Task (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{Renesas_2SH2A__FPU_2port_8c_a5cfc38319f17c8e804020ec247b6325d}
+\hypertarget{Renesas_2SH2A__FPU_2port_8c_add01c927fb689f7ec170e42d47d27927}{\index{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}!v\-Port\-Yield@{v\-Port\-Yield}}
+\index{v\-Port\-Yield@{v\-Port\-Yield}!Renesas/SH2A_FPU/port.c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}}
+\subsubsection[{v\-Port\-Yield}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Yield (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{Renesas_2SH2A__FPU_2port_8c_add01c927fb689f7ec170e42d47d27927}
+\hypertarget{Renesas_2SH2A__FPU_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{\index{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}!x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}}
+\index{x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}!Renesas/SH2A_FPU/port.c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}}
+\subsubsection[{x\-Port\-Start\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} x\-Port\-Start\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{Renesas_2SH2A__FPU_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}
+\hypertarget{Renesas_2SH2A__FPU_2port_8c_a2560cc8c9004754d3540f6a3fc462f94}{\index{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}!x\-Port\-Uses\-Floating\-Point@{x\-Port\-Uses\-Floating\-Point}}
+\index{x\-Port\-Uses\-Floating\-Point@{x\-Port\-Uses\-Floating\-Point}!Renesas/SH2A_FPU/port.c@{Renesas/\-S\-H2\-A\-\_\-\-F\-P\-U/port.\-c}}
+\subsubsection[{x\-Port\-Uses\-Floating\-Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} x\-Port\-Uses\-Floating\-Point (
+\begin{DoxyParamCaption}
+\item[{{\bf Task\-Handle\-\_\-t}}]{x\-Task}
+\end{DoxyParamCaption}
+)}}\label{Renesas_2SH2A__FPU_2port_8c_a2560cc8c9004754d3540f6a3fc462f94}

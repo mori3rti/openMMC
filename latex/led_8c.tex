@@ -1,0 +1,181 @@
+\hypertarget{led_8c}{\section{/home/henrique/rep/open\-M\-M\-C/modules/led.c File Reference}
+\label{led_8c}\index{/home/henrique/rep/open\-M\-M\-C/modules/led.\-c@{/home/henrique/rep/open\-M\-M\-C/modules/led.\-c}}
+}
+{\ttfamily \#include \char`\"{}string.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}queue.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ipmi.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}port.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}led.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task\-\_\-priorities.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{led_8c_ab35645d397ae1e94fec263ed3f033d8d}{L\-E\-D\-Manage} (\hyperlink{led_8h_afacac0217e1a8d0673e1db7a536f8499}{L\-E\-D\-Config\-\_\-t} $\ast$led\-\_\-cfg)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{led_8c_a50cf228fce8563fc202330b7b4816cb9}{L\-E\-D\-\_\-init} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{led_8c_a6f6e088d8b99a3a27a5fdcf15242da8a}{L\-E\-D\-\_\-\-Task} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$Parameters)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{led_8c_a8fdb095408c357c7d78963a3f8930c16}{L\-E\-D\-Update} (uint8\-\_\-t \hyperlink{fru_8c_a3d7cc64921822af8dcd4d120a3c00f68}{fru}, uint8\-\_\-t led\-\_\-num, uint8\-\_\-t mode, uint8\-\_\-t init\-\_\-status, uint16\-\_\-t t\-\_\-init, uint16\-\_\-t t\-\_\-toggle)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{led_8c_a3679b0ccb97b967a0a162bc786d354d4}{amc\-\_\-led\-\_\-act} (uint8\-\_\-t id, uint8\-\_\-t action)
+\item 
+\hyperlink{led_8c_a1d8151a1b64168e9777a63d3926c96c1}{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R} (ipmi\-\_\-picmg\-\_\-set\-\_\-fru\-\_\-led\-\_\-state, \hyperlink{ipmi_8h_a27ea7c162811163c28a31cc9cd677a80}{N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}, \hyperlink{ipmi_8h_a1348fec938a5ac83160b5efeebaac82d}{I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-S\-E\-T\-\_\-\-F\-R\-U\-\_\-\-L\-E\-D\-\_\-\-S\-T\-A\-T\-E}, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$req, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$rsp)
+\begin{DoxyCompactList}\small\item\em Handler for \char`\"{}\-Set F\-R\-U L\-E\-D State\char`\"{}" request. Check I\-P\-M\-I 2.\-0 table 3-\/31 for more information. \end{DoxyCompactList}\item 
+\hyperlink{led_8c_abb0141bf10d0560f134904bbc26610a5}{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R} (ipmi\-\_\-picmg\-\_\-get\-\_\-fru\-\_\-led\-\_\-properties, \hyperlink{ipmi_8h_a27ea7c162811163c28a31cc9cd677a80}{N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}, \hyperlink{ipmi_8h_ad047ddb10ce5fac3206f9e352c23df50}{I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-F\-R\-U\-\_\-\-L\-E\-D\-\_\-\-P\-R\-O\-P\-E\-R\-T\-I\-E\-S}, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$req, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$rsp)
+\item 
+\hyperlink{led_8c_a3b4c89c84b10907749f2e12fa899b68a}{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R} (ipmi\-\_\-picmg\-\_\-get\-\_\-fru\-\_\-led\-\_\-state, \hyperlink{ipmi_8h_a27ea7c162811163c28a31cc9cd677a80}{N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}, \hyperlink{ipmi_8h_a648cb209b13245f96c8e4ad1d803ec8a}{I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-F\-R\-U\-\_\-\-L\-E\-D\-\_\-\-S\-T\-A\-T\-E}, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$req, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$rsp)
+\item 
+\hyperlink{led_8c_aca537a51c39a970d470b70f5037fa9f2}{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R} (ipmi\-\_\-picmg\-\_\-get\-\_\-led\-\_\-color\-\_\-capabilities, \hyperlink{ipmi_8h_a27ea7c162811163c28a31cc9cd677a80}{N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}, \hyperlink{ipmi_8h_a09e86f10357e1e17b4670417b19736fc}{I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-L\-E\-D\-\_\-\-C\-O\-L\-O\-R\-\_\-\-C\-A\-P\-A\-B\-I\-L\-I\-T\-I\-E\-S}, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$req, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$rsp)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{led_8h_afc3e48aa64853d50d56ea3f39a8cd44e}{L\-E\-D\-Pincfg\-\_\-t} \hyperlink{led_8c_ada02767f6b0893599ba3f73e85484573}{amc\-\_\-led\-\_\-pincfg} \mbox{[}\hyperlink{led_8h_a20686d72752a8842320e750ba4ec4388af09da57493c57655050f1f45ec6e921e}{L\-E\-D\-\_\-\-C\-N\-T}\mbox{]}
+\item 
+\hyperlink{led_8h_afacac0217e1a8d0673e1db7a536f8499}{L\-E\-D\-Config\-\_\-t} \hyperlink{led_8c_a55e589d01579416efa9f9c48aad1ca1b}{amc\-\_\-leds\-\_\-config} \mbox{[}\hyperlink{led_8h_a20686d72752a8842320e750ba4ec4388af09da57493c57655050f1f45ec6e921e}{L\-E\-D\-\_\-\-C\-N\-T}\mbox{]}
+\item 
+\hyperlink{led_8h_afacac0217e1a8d0673e1db7a536f8499}{L\-E\-D\-Config\-\_\-t} \hyperlink{led_8c_a6446583be8f0212587cb8902ea1e249f}{led\-\_\-config} \mbox{[}\hyperlink{led_8h_aaeca05a9e5ba2423d2ba86c6add4ac30}{L\-E\-D\-C\-O\-N\-F\-I\-G\-\_\-\-S\-I\-Z\-E}\mbox{]}\mbox{[}\hyperlink{led_8h_a20686d72752a8842320e750ba4ec4388af09da57493c57655050f1f45ec6e921e}{L\-E\-D\-\_\-\-C\-N\-T}\mbox{]}
+\item 
+\hyperlink{queue_8h_aaf19d499892a4ce1409326ece00f5264}{Queue\-Handle\-\_\-t} \hyperlink{led_8c_a6d6055d2011943637b9554c1fdc0da2c}{led\-\_\-update\-\_\-queue}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{led_8c_a3679b0ccb97b967a0a162bc786d354d4}{\index{led.\-c@{led.\-c}!amc\-\_\-led\-\_\-act@{amc\-\_\-led\-\_\-act}}
+\index{amc\-\_\-led\-\_\-act@{amc\-\_\-led\-\_\-act}!led.c@{led.\-c}}
+\subsubsection[{amc\-\_\-led\-\_\-act}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} amc\-\_\-led\-\_\-act (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{id, }
+\item[{uint8\-\_\-t}]{action}
+\end{DoxyParamCaption}
+)}}\label{led_8c_a3679b0ccb97b967a0a162bc786d354d4}
+\hypertarget{led_8c_a1d8151a1b64168e9777a63d3926c96c1}{\index{led.\-c@{led.\-c}!I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}}
+\index{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}!led.c@{led.\-c}}
+\subsubsection[{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R (
+\begin{DoxyParamCaption}
+\item[{ipmi\-\_\-picmg\-\_\-set\-\_\-fru\-\_\-led\-\_\-state}]{, }
+\item[{{\bf N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}}]{, }
+\item[{{\bf I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-S\-E\-T\-\_\-\-F\-R\-U\-\_\-\-L\-E\-D\-\_\-\-S\-T\-A\-T\-E}}]{, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{req, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{rsp}
+\end{DoxyParamCaption}
+)}}\label{led_8c_a1d8151a1b64168e9777a63d3926c96c1}
+
+
+Handler for \char`\"{}\-Set F\-R\-U L\-E\-D State\char`\"{}" request. Check I\-P\-M\-I 2.\-0 table 3-\/31 for more information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em req} & Pointer to request struct to be handled and answered. Contains which L\-E\-D should be set, how it should be set and other commands.\\
+\hline
+\mbox{\tt out}  & {\em rsp} & Pointer to response struct to be modified with the message\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{led_8c_abb0141bf10d0560f134904bbc26610a5}{\index{led.\-c@{led.\-c}!I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}}
+\index{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}!led.c@{led.\-c}}
+\subsubsection[{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R (
+\begin{DoxyParamCaption}
+\item[{ipmi\-\_\-picmg\-\_\-get\-\_\-fru\-\_\-led\-\_\-properties}]{, }
+\item[{{\bf N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}}]{, }
+\item[{{\bf I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-F\-R\-U\-\_\-\-L\-E\-D\-\_\-\-P\-R\-O\-P\-E\-R\-T\-I\-E\-S}}]{, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{req, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{rsp}
+\end{DoxyParamCaption}
+)}}\label{led_8c_abb0141bf10d0560f134904bbc26610a5}
+\hypertarget{led_8c_a3b4c89c84b10907749f2e12fa899b68a}{\index{led.\-c@{led.\-c}!I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}}
+\index{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}!led.c@{led.\-c}}
+\subsubsection[{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R (
+\begin{DoxyParamCaption}
+\item[{ipmi\-\_\-picmg\-\_\-get\-\_\-fru\-\_\-led\-\_\-state}]{, }
+\item[{{\bf N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}}]{, }
+\item[{{\bf I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-F\-R\-U\-\_\-\-L\-E\-D\-\_\-\-S\-T\-A\-T\-E}}]{, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{req, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{rsp}
+\end{DoxyParamCaption}
+)}}\label{led_8c_a3b4c89c84b10907749f2e12fa899b68a}
+\hypertarget{led_8c_aca537a51c39a970d470b70f5037fa9f2}{\index{led.\-c@{led.\-c}!I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}}
+\index{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R@{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}!led.c@{led.\-c}}
+\subsubsection[{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R (
+\begin{DoxyParamCaption}
+\item[{ipmi\-\_\-picmg\-\_\-get\-\_\-led\-\_\-color\-\_\-capabilities}]{, }
+\item[{{\bf N\-E\-T\-F\-N\-\_\-\-G\-R\-P\-E\-X\-T}}]{, }
+\item[{{\bf I\-P\-M\-I\-\_\-\-P\-I\-C\-M\-G\-\_\-\-C\-M\-D\-\_\-\-G\-E\-T\-\_\-\-L\-E\-D\-\_\-\-C\-O\-L\-O\-R\-\_\-\-C\-A\-P\-A\-B\-I\-L\-I\-T\-I\-E\-S}}]{, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{req, }
+\item[{{\bf ipmi\-\_\-msg} $\ast$}]{rsp}
+\end{DoxyParamCaption}
+)}}\label{led_8c_aca537a51c39a970d470b70f5037fa9f2}
+\hypertarget{led_8c_a50cf228fce8563fc202330b7b4816cb9}{\index{led.\-c@{led.\-c}!L\-E\-D\-\_\-init@{L\-E\-D\-\_\-init}}
+\index{L\-E\-D\-\_\-init@{L\-E\-D\-\_\-init}!led.c@{led.\-c}}
+\subsubsection[{L\-E\-D\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} L\-E\-D\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{led_8c_a50cf228fce8563fc202330b7b4816cb9}
+\hypertarget{led_8c_a6f6e088d8b99a3a27a5fdcf15242da8a}{\index{led.\-c@{led.\-c}!L\-E\-D\-\_\-\-Task@{L\-E\-D\-\_\-\-Task}}
+\index{L\-E\-D\-\_\-\-Task@{L\-E\-D\-\_\-\-Task}!led.c@{led.\-c}}
+\subsubsection[{L\-E\-D\-\_\-\-Task}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} L\-E\-D\-\_\-\-Task (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{Parameters}
+\end{DoxyParamCaption}
+)}}\label{led_8c_a6f6e088d8b99a3a27a5fdcf15242da8a}
+\hypertarget{led_8c_ab35645d397ae1e94fec263ed3f033d8d}{\index{led.\-c@{led.\-c}!L\-E\-D\-Manage@{L\-E\-D\-Manage}}
+\index{L\-E\-D\-Manage@{L\-E\-D\-Manage}!led.c@{led.\-c}}
+\subsubsection[{L\-E\-D\-Manage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} L\-E\-D\-Manage (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-E\-D\-Config\-\_\-t} $\ast$}]{led\-\_\-cfg}
+\end{DoxyParamCaption}
+)}}\label{led_8c_ab35645d397ae1e94fec263ed3f033d8d}
+\hypertarget{led_8c_a8fdb095408c357c7d78963a3f8930c16}{\index{led.\-c@{led.\-c}!L\-E\-D\-Update@{L\-E\-D\-Update}}
+\index{L\-E\-D\-Update@{L\-E\-D\-Update}!led.c@{led.\-c}}
+\subsubsection[{L\-E\-D\-Update}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf L\-E\-D\-Update} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{fru, }
+\item[{uint8\-\_\-t}]{led\-\_\-num, }
+\item[{uint8\-\_\-t}]{mode, }
+\item[{uint8\-\_\-t}]{init\-\_\-status, }
+\item[{uint16\-\_\-t}]{t\-\_\-init, }
+\item[{uint16\-\_\-t}]{t\-\_\-toggle}
+\end{DoxyParamCaption}
+)}}\label{led_8c_a8fdb095408c357c7d78963a3f8930c16}
+
+
+\subsection{Variable Documentation}
+\hypertarget{led_8c_ada02767f6b0893599ba3f73e85484573}{\index{led.\-c@{led.\-c}!amc\-\_\-led\-\_\-pincfg@{amc\-\_\-led\-\_\-pincfg}}
+\index{amc\-\_\-led\-\_\-pincfg@{amc\-\_\-led\-\_\-pincfg}!led.c@{led.\-c}}
+\subsubsection[{amc\-\_\-led\-\_\-pincfg}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf L\-E\-D\-Pincfg\-\_\-t} amc\-\_\-led\-\_\-pincfg\mbox{[}{\bf L\-E\-D\-\_\-\-C\-N\-T}\mbox{]}}}\label{led_8c_ada02767f6b0893599ba3f73e85484573}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= \{
+    [\hyperlink{led_8h_a20686d72752a8842320e750ba4ec4388aa67c57c0ff22a2772cb6a5751a3327bf}{LED\_BLUE}] = \{
+        .pin = \hyperlink{v3__0_2pin__mapping_8h_a2dc70922756a03b2322b9c236f05d666}{LEDBLUE\_PIN},
+        .port = \hyperlink{v3__0_2pin__mapping_8h_a521d7543d0bf6ccd00ba3c8331e0a930}{LEDBLUE\_PORT},
+        .func = \hyperlink{v3__0_2pin__mapping_8h_a4c75e43af802cc933bb872c1988ca187}{LED\_PIN\_FUNC}
+    \},
+
+    [\hyperlink{led_8h_a20686d72752a8842320e750ba4ec4388adac6477842247cab1a8c02c65f431b44}{LED1}] = \{
+        .pin = \hyperlink{v3__0_2pin__mapping_8h_a93ee6a35977853d4c29ec669aee20c75}{LEDRED\_PIN},
+        .port = \hyperlink{v3__0_2pin__mapping_8h_aab6569b6ac43607e331cfa43cf80bcaf}{LEDRED\_PORT},
+        .func = \hyperlink{v3__0_2pin__mapping_8h_a4c75e43af802cc933bb872c1988ca187}{LED\_PIN\_FUNC}
+    \},
+
+    [\hyperlink{led_8h_a20686d72752a8842320e750ba4ec4388a8379bbaa96d151e6adac488b2a147b7a}{LED2}] = \{
+        .pin = \hyperlink{v3__0_2pin__mapping_8h_a7b4c22e33758d351cf14a9f1e587c100}{LEDGREEN\_PIN},
+        .port = \hyperlink{v3__0_2pin__mapping_8h_a85fb97eae5c105b954f560238e9f2f93}{LEDGREEN\_PORT},
+        .func = \hyperlink{v3__0_2pin__mapping_8h_a4c75e43af802cc933bb872c1988ca187}{LED\_PIN\_FUNC}
+    \}
+\}
+\end{DoxyCode}
+\hypertarget{led_8c_a55e589d01579416efa9f9c48aad1ca1b}{\index{led.\-c@{led.\-c}!amc\-\_\-leds\-\_\-config@{amc\-\_\-leds\-\_\-config}}
+\index{amc\-\_\-leds\-\_\-config@{amc\-\_\-leds\-\_\-config}!led.c@{led.\-c}}
+\subsubsection[{amc\-\_\-leds\-\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-E\-D\-Config\-\_\-t} amc\-\_\-leds\-\_\-config\mbox{[}{\bf L\-E\-D\-\_\-\-C\-N\-T}\mbox{]}}}\label{led_8c_a55e589d01579416efa9f9c48aad1ca1b}
+\hypertarget{led_8c_a6446583be8f0212587cb8902ea1e249f}{\index{led.\-c@{led.\-c}!led\-\_\-config@{led\-\_\-config}}
+\index{led\-\_\-config@{led\-\_\-config}!led.c@{led.\-c}}
+\subsubsection[{led\-\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-E\-D\-Config\-\_\-t} led\-\_\-config\mbox{[}{\bf L\-E\-D\-C\-O\-N\-F\-I\-G\-\_\-\-S\-I\-Z\-E}\mbox{]}\mbox{[}{\bf L\-E\-D\-\_\-\-C\-N\-T}\mbox{]}}}\label{led_8c_a6446583be8f0212587cb8902ea1e249f}
+\hypertarget{led_8c_a6d6055d2011943637b9554c1fdc0da2c}{\index{led.\-c@{led.\-c}!led\-\_\-update\-\_\-queue@{led\-\_\-update\-\_\-queue}}
+\index{led\-\_\-update\-\_\-queue@{led\-\_\-update\-\_\-queue}!led.c@{led.\-c}}
+\subsubsection[{led\-\_\-update\-\_\-queue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Queue\-Handle\-\_\-t} led\-\_\-update\-\_\-queue}}\label{led_8c_a6d6055d2011943637b9554c1fdc0da2c}

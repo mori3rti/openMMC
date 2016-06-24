@@ -1,0 +1,271 @@
+\hypertarget{mpu__wrappers_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Common/mpu\-\_\-wrappers.c File Reference}
+\label{mpu__wrappers_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Common/mpu\-\_\-wrappers.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Common/mpu\-\_\-wrappers.\-c}}
+}
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}queue.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}timers.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}event\-\_\-groups.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mpu\-\_\-prototypes.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{mpu__wrappers_8c_ab622d8c674f2a417a666a7ed89109e79}{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{mpu__wrappers_8c_ac42aa31652a6e8158f8ea8a88aad8275}{x\-Port\-Raise\-Privilege} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{mpu__wrappers_8c_a5d01951fdc30c9d8ec5769dbf7e4cb73}{M\-P\-U\-\_\-x\-Task\-Create\-Restricted} (const \hyperlink{task_8h_aab31598a83ebd71dfce65f58add35676}{Task\-Parameters\-\_\-t} $\ast$const px\-Task\-Definition, \hyperlink{task_8h_ae95f44d4cfeb4a599c6cc258d241cb6b}{Task\-Handle\-\_\-t} $\ast$px\-Created\-Task)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{mpu__wrappers_8c_a851c943acdf98615bfa3940ae18b0158}{M\-P\-U\-\_\-v\-Task\-Allocate\-M\-P\-U\-Regions} (\hyperlink{task_8h_ae95f44d4cfeb4a599c6cc258d241cb6b}{Task\-Handle\-\_\-t} x\-Task, const \hyperlink{task_8h_af609504de4d78ff6f71477ae47c66e51}{Memory\-Region\-\_\-t} $\ast$const x\-Regions)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{mpu__wrappers_8c_a5a89966e24025e52ea10166ce2c492d4}{M\-P\-U\-\_\-v\-Task\-Suspend\-All} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{mpu__wrappers_8c_aa43b421a9eff441d0a850998551b17b4}{M\-P\-U\-\_\-x\-Task\-Resume\-All} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t} \hyperlink{mpu__wrappers_8c_a3b24e0327b39b868b91ff031fbdab048}{M\-P\-U\-\_\-x\-Task\-Get\-Tick\-Count} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a8e88a5e44a5243b3d1c29af17fd6b5bd}{U\-Base\-Type\-\_\-t} \hyperlink{mpu__wrappers_8c_a46b9dfbf8afce7ac947cb5be9bf381fa}{M\-P\-U\-\_\-ux\-Task\-Get\-Number\-Of\-Tasks} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+char $\ast$ \hyperlink{mpu__wrappers_8c_a0a39a60680b18b8b9c650a3d38af4f7b}{M\-P\-U\-\_\-pc\-Task\-Get\-Name} (\hyperlink{task_8h_ae95f44d4cfeb4a599c6cc258d241cb6b}{Task\-Handle\-\_\-t} x\-Task\-To\-Query)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{mpu__wrappers_8c_a0c2b837c8ebc7189c2d168f26e8fc47c}{M\-P\-U\-\_\-v\-Task\-Set\-Time\-Out\-State} (\hyperlink{task_8h_a5e1a80e591c8c42e2d21a29d70256ea2}{Time\-Out\-\_\-t} $\ast$const px\-Time\-Out)
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{mpu__wrappers_8c_a6d0605238a63245000181fa892ec5323}{M\-P\-U\-\_\-x\-Task\-Check\-For\-Time\-Out} (\hyperlink{task_8h_a5e1a80e591c8c42e2d21a29d70256ea2}{Time\-Out\-\_\-t} $\ast$const px\-Time\-Out, \hyperlink{Flsh186_2prtmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t} $\ast$const px\-Ticks\-To\-Wait)
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{mpu__wrappers_8c_ac7dccb1862fd656e1aedff73bd7c3433}{M\-P\-U\-\_\-x\-Queue\-Generic\-Reset} (\hyperlink{queue_8h_aaf19d499892a4ce1409326ece00f5264}{Queue\-Handle\-\_\-t} px\-Queue, \hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} x\-New\-Queue)
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{mpu__wrappers_8c_afec3801d053a850488cda14b0cad95fd}{M\-P\-U\-\_\-x\-Queue\-Generic\-Send} (\hyperlink{queue_8h_aaf19d499892a4ce1409326ece00f5264}{Queue\-Handle\-\_\-t} x\-Queue, const \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$const pv\-Item\-To\-Queue, \hyperlink{Flsh186_2prtmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t} x\-Ticks\-To\-Wait, \hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} x\-Copy\-Position)
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a8e88a5e44a5243b3d1c29af17fd6b5bd}{U\-Base\-Type\-\_\-t} \hyperlink{mpu__wrappers_8c_ab197334f4b3b92d0a0c744f568481a5d}{M\-P\-U\-\_\-ux\-Queue\-Messages\-Waiting} (const \hyperlink{queue_8h_aaf19d499892a4ce1409326ece00f5264}{Queue\-Handle\-\_\-t} px\-Queue)
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a8e88a5e44a5243b3d1c29af17fd6b5bd}{U\-Base\-Type\-\_\-t} \hyperlink{mpu__wrappers_8c_af423f8035d982ede94ddbdc4795af8ca}{M\-P\-U\-\_\-ux\-Queue\-Spaces\-Available} (const \hyperlink{queue_8h_aaf19d499892a4ce1409326ece00f5264}{Queue\-Handle\-\_\-t} x\-Queue)
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{mpu__wrappers_8c_a11f6f4ba0b7f2612c09d7494aa695297}{M\-P\-U\-\_\-x\-Queue\-Generic\-Receive} (\hyperlink{queue_8h_aaf19d499892a4ce1409326ece00f5264}{Queue\-Handle\-\_\-t} px\-Queue, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$const pv\-Buffer, \hyperlink{Flsh186_2prtmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t} x\-Ticks\-To\-Wait, \hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} x\-Just\-Peeking)
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{mpu__wrappers_8c_a9aeb66abf9fe439c26ffebcde56017ea}{M\-P\-U\-\_\-x\-Queue\-Peek\-From\-I\-S\-R} (\hyperlink{queue_8h_aaf19d499892a4ce1409326ece00f5264}{Queue\-Handle\-\_\-t} px\-Queue, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$const pv\-Buffer)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$ \hyperlink{mpu__wrappers_8c_a7278ca1132b990192755eee24d6d2ef7}{M\-P\-U\-\_\-x\-Queue\-Get\-Mutex\-Holder} (\hyperlink{queue_8h_aaf19d499892a4ce1409326ece00f5264}{Queue\-Handle\-\_\-t} x\-Semaphore)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{mpu__wrappers_8c_ac378aaf28d5631ab7dcb8c75840f9544}{M\-P\-U\-\_\-v\-Queue\-Delete} (\hyperlink{queue_8h_aaf19d499892a4ce1409326ece00f5264}{Queue\-Handle\-\_\-t} x\-Queue)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{mpu__wrappers_8c_aab32821ad688618871c0c2771b981a61}{M\-P\-U\-\_\-v\-Port\-Initialise\-Blocks} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+size\-\_\-t \hyperlink{mpu__wrappers_8c_aaa61035f1d697dafc2b97227e0d81f0a}{M\-P\-U\-\_\-x\-Port\-Get\-Free\-Heap\-Size} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} \hyperlink{mpu__wrappers_8c_a9de3688a138371bf668f3db7d246c4f6}{M\-P\-U\-\_\-x\-Event\-Group\-Wait\-Bits} (\hyperlink{event__groups_8h_a5119294106541c4eca46e8742fdb4e85}{Event\-Group\-Handle\-\_\-t} x\-Event\-Group, const \hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} ux\-Bits\-To\-Wait\-For, const \hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} x\-Clear\-On\-Exit, const \hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} x\-Wait\-For\-All\-Bits, \hyperlink{Flsh186_2prtmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t} x\-Ticks\-To\-Wait)
+\item 
+\hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} \hyperlink{mpu__wrappers_8c_ad3779b376e213e0868c55cd1f816bfb8}{M\-P\-U\-\_\-x\-Event\-Group\-Clear\-Bits} (\hyperlink{event__groups_8h_a5119294106541c4eca46e8742fdb4e85}{Event\-Group\-Handle\-\_\-t} x\-Event\-Group, const \hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} ux\-Bits\-To\-Clear)
+\item 
+\hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} \hyperlink{mpu__wrappers_8c_a0432497ecd5f8a19cc61a13cf53adaff}{M\-P\-U\-\_\-x\-Event\-Group\-Set\-Bits} (\hyperlink{event__groups_8h_a5119294106541c4eca46e8742fdb4e85}{Event\-Group\-Handle\-\_\-t} x\-Event\-Group, const \hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} ux\-Bits\-To\-Set)
+\item 
+\hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} \hyperlink{mpu__wrappers_8c_a6a226283b88af6323ec11950dfaa9c7e}{M\-P\-U\-\_\-x\-Event\-Group\-Sync} (\hyperlink{event__groups_8h_a5119294106541c4eca46e8742fdb4e85}{Event\-Group\-Handle\-\_\-t} x\-Event\-Group, const \hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} ux\-Bits\-To\-Set, const \hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} ux\-Bits\-To\-Wait\-For, \hyperlink{Flsh186_2prtmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t} x\-Ticks\-To\-Wait)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{mpu__wrappers_8c_a5c58731972a24a3ef87e83179cb3a078}{M\-P\-U\-\_\-v\-Event\-Group\-Delete} (\hyperlink{event__groups_8h_a5119294106541c4eca46e8742fdb4e85}{Event\-Group\-Handle\-\_\-t} x\-Event\-Group)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{mpu__wrappers_8c_ab622d8c674f2a417a666a7ed89109e79}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E@{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}}
+\index{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E@{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}}\label{mpu__wrappers_8c_ab622d8c674f2a417a666a7ed89109e79}
+
+
+\subsection{Function Documentation}
+\hypertarget{mpu__wrappers_8c_a0a39a60680b18b8b9c650a3d38af4f7b}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-pc\-Task\-Get\-Name@{M\-P\-U\-\_\-pc\-Task\-Get\-Name}}
+\index{M\-P\-U\-\_\-pc\-Task\-Get\-Name@{M\-P\-U\-\_\-pc\-Task\-Get\-Name}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-pc\-Task\-Get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ M\-P\-U\-\_\-pc\-Task\-Get\-Name (
+\begin{DoxyParamCaption}
+\item[{{\bf Task\-Handle\-\_\-t}}]{x\-Task\-To\-Query}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_a0a39a60680b18b8b9c650a3d38af4f7b}
+\hypertarget{mpu__wrappers_8c_ab197334f4b3b92d0a0c744f568481a5d}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-ux\-Queue\-Messages\-Waiting@{M\-P\-U\-\_\-ux\-Queue\-Messages\-Waiting}}
+\index{M\-P\-U\-\_\-ux\-Queue\-Messages\-Waiting@{M\-P\-U\-\_\-ux\-Queue\-Messages\-Waiting}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-ux\-Queue\-Messages\-Waiting}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\-Base\-Type\-\_\-t} M\-P\-U\-\_\-ux\-Queue\-Messages\-Waiting (
+\begin{DoxyParamCaption}
+\item[{const {\bf Queue\-Handle\-\_\-t}}]{px\-Queue}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_ab197334f4b3b92d0a0c744f568481a5d}
+\hypertarget{mpu__wrappers_8c_af423f8035d982ede94ddbdc4795af8ca}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-ux\-Queue\-Spaces\-Available@{M\-P\-U\-\_\-ux\-Queue\-Spaces\-Available}}
+\index{M\-P\-U\-\_\-ux\-Queue\-Spaces\-Available@{M\-P\-U\-\_\-ux\-Queue\-Spaces\-Available}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-ux\-Queue\-Spaces\-Available}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\-Base\-Type\-\_\-t} M\-P\-U\-\_\-ux\-Queue\-Spaces\-Available (
+\begin{DoxyParamCaption}
+\item[{const {\bf Queue\-Handle\-\_\-t}}]{x\-Queue}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_af423f8035d982ede94ddbdc4795af8ca}
+\hypertarget{mpu__wrappers_8c_a46b9dfbf8afce7ac947cb5be9bf381fa}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-ux\-Task\-Get\-Number\-Of\-Tasks@{M\-P\-U\-\_\-ux\-Task\-Get\-Number\-Of\-Tasks}}
+\index{M\-P\-U\-\_\-ux\-Task\-Get\-Number\-Of\-Tasks@{M\-P\-U\-\_\-ux\-Task\-Get\-Number\-Of\-Tasks}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-ux\-Task\-Get\-Number\-Of\-Tasks}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\-Base\-Type\-\_\-t} M\-P\-U\-\_\-ux\-Task\-Get\-Number\-Of\-Tasks (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_a46b9dfbf8afce7ac947cb5be9bf381fa}
+\hypertarget{mpu__wrappers_8c_a5c58731972a24a3ef87e83179cb3a078}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-v\-Event\-Group\-Delete@{M\-P\-U\-\_\-v\-Event\-Group\-Delete}}
+\index{M\-P\-U\-\_\-v\-Event\-Group\-Delete@{M\-P\-U\-\_\-v\-Event\-Group\-Delete}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-v\-Event\-Group\-Delete}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} M\-P\-U\-\_\-v\-Event\-Group\-Delete (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\-Group\-Handle\-\_\-t}}]{x\-Event\-Group}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_a5c58731972a24a3ef87e83179cb3a078}
+\hypertarget{mpu__wrappers_8c_aab32821ad688618871c0c2771b981a61}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-v\-Port\-Initialise\-Blocks@{M\-P\-U\-\_\-v\-Port\-Initialise\-Blocks}}
+\index{M\-P\-U\-\_\-v\-Port\-Initialise\-Blocks@{M\-P\-U\-\_\-v\-Port\-Initialise\-Blocks}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-v\-Port\-Initialise\-Blocks}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} M\-P\-U\-\_\-v\-Port\-Initialise\-Blocks (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_aab32821ad688618871c0c2771b981a61}
+\hypertarget{mpu__wrappers_8c_ac378aaf28d5631ab7dcb8c75840f9544}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-v\-Queue\-Delete@{M\-P\-U\-\_\-v\-Queue\-Delete}}
+\index{M\-P\-U\-\_\-v\-Queue\-Delete@{M\-P\-U\-\_\-v\-Queue\-Delete}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-v\-Queue\-Delete}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} M\-P\-U\-\_\-v\-Queue\-Delete (
+\begin{DoxyParamCaption}
+\item[{{\bf Queue\-Handle\-\_\-t}}]{x\-Queue}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_ac378aaf28d5631ab7dcb8c75840f9544}
+\hypertarget{mpu__wrappers_8c_a851c943acdf98615bfa3940ae18b0158}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-v\-Task\-Allocate\-M\-P\-U\-Regions@{M\-P\-U\-\_\-v\-Task\-Allocate\-M\-P\-U\-Regions}}
+\index{M\-P\-U\-\_\-v\-Task\-Allocate\-M\-P\-U\-Regions@{M\-P\-U\-\_\-v\-Task\-Allocate\-M\-P\-U\-Regions}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-v\-Task\-Allocate\-M\-P\-U\-Regions}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} M\-P\-U\-\_\-v\-Task\-Allocate\-M\-P\-U\-Regions (
+\begin{DoxyParamCaption}
+\item[{{\bf Task\-Handle\-\_\-t}}]{x\-Task, }
+\item[{const {\bf Memory\-Region\-\_\-t} $\ast$const}]{x\-Regions}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_a851c943acdf98615bfa3940ae18b0158}
+\hypertarget{mpu__wrappers_8c_a0c2b837c8ebc7189c2d168f26e8fc47c}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-v\-Task\-Set\-Time\-Out\-State@{M\-P\-U\-\_\-v\-Task\-Set\-Time\-Out\-State}}
+\index{M\-P\-U\-\_\-v\-Task\-Set\-Time\-Out\-State@{M\-P\-U\-\_\-v\-Task\-Set\-Time\-Out\-State}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-v\-Task\-Set\-Time\-Out\-State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} M\-P\-U\-\_\-v\-Task\-Set\-Time\-Out\-State (
+\begin{DoxyParamCaption}
+\item[{{\bf Time\-Out\-\_\-t} $\ast$const}]{px\-Time\-Out}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_a0c2b837c8ebc7189c2d168f26e8fc47c}
+\hypertarget{mpu__wrappers_8c_a5a89966e24025e52ea10166ce2c492d4}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-v\-Task\-Suspend\-All@{M\-P\-U\-\_\-v\-Task\-Suspend\-All}}
+\index{M\-P\-U\-\_\-v\-Task\-Suspend\-All@{M\-P\-U\-\_\-v\-Task\-Suspend\-All}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-v\-Task\-Suspend\-All}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} M\-P\-U\-\_\-v\-Task\-Suspend\-All (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_a5a89966e24025e52ea10166ce2c492d4}
+\hypertarget{mpu__wrappers_8c_ad3779b376e213e0868c55cd1f816bfb8}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-x\-Event\-Group\-Clear\-Bits@{M\-P\-U\-\_\-x\-Event\-Group\-Clear\-Bits}}
+\index{M\-P\-U\-\_\-x\-Event\-Group\-Clear\-Bits@{M\-P\-U\-\_\-x\-Event\-Group\-Clear\-Bits}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-x\-Event\-Group\-Clear\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event\-Bits\-\_\-t} M\-P\-U\-\_\-x\-Event\-Group\-Clear\-Bits (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\-Group\-Handle\-\_\-t}}]{x\-Event\-Group, }
+\item[{const {\bf Event\-Bits\-\_\-t}}]{ux\-Bits\-To\-Clear}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_ad3779b376e213e0868c55cd1f816bfb8}
+\hypertarget{mpu__wrappers_8c_a0432497ecd5f8a19cc61a13cf53adaff}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-x\-Event\-Group\-Set\-Bits@{M\-P\-U\-\_\-x\-Event\-Group\-Set\-Bits}}
+\index{M\-P\-U\-\_\-x\-Event\-Group\-Set\-Bits@{M\-P\-U\-\_\-x\-Event\-Group\-Set\-Bits}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-x\-Event\-Group\-Set\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event\-Bits\-\_\-t} M\-P\-U\-\_\-x\-Event\-Group\-Set\-Bits (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\-Group\-Handle\-\_\-t}}]{x\-Event\-Group, }
+\item[{const {\bf Event\-Bits\-\_\-t}}]{ux\-Bits\-To\-Set}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_a0432497ecd5f8a19cc61a13cf53adaff}
+\hypertarget{mpu__wrappers_8c_a6a226283b88af6323ec11950dfaa9c7e}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-x\-Event\-Group\-Sync@{M\-P\-U\-\_\-x\-Event\-Group\-Sync}}
+\index{M\-P\-U\-\_\-x\-Event\-Group\-Sync@{M\-P\-U\-\_\-x\-Event\-Group\-Sync}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-x\-Event\-Group\-Sync}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event\-Bits\-\_\-t} M\-P\-U\-\_\-x\-Event\-Group\-Sync (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\-Group\-Handle\-\_\-t}}]{x\-Event\-Group, }
+\item[{const {\bf Event\-Bits\-\_\-t}}]{ux\-Bits\-To\-Set, }
+\item[{const {\bf Event\-Bits\-\_\-t}}]{ux\-Bits\-To\-Wait\-For, }
+\item[{{\bf Tick\-Type\-\_\-t}}]{x\-Ticks\-To\-Wait}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_a6a226283b88af6323ec11950dfaa9c7e}
+\hypertarget{mpu__wrappers_8c_a9de3688a138371bf668f3db7d246c4f6}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-x\-Event\-Group\-Wait\-Bits@{M\-P\-U\-\_\-x\-Event\-Group\-Wait\-Bits}}
+\index{M\-P\-U\-\_\-x\-Event\-Group\-Wait\-Bits@{M\-P\-U\-\_\-x\-Event\-Group\-Wait\-Bits}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-x\-Event\-Group\-Wait\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event\-Bits\-\_\-t} M\-P\-U\-\_\-x\-Event\-Group\-Wait\-Bits (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\-Group\-Handle\-\_\-t}}]{x\-Event\-Group, }
+\item[{const {\bf Event\-Bits\-\_\-t}}]{ux\-Bits\-To\-Wait\-For, }
+\item[{const {\bf Base\-Type\-\_\-t}}]{x\-Clear\-On\-Exit, }
+\item[{const {\bf Base\-Type\-\_\-t}}]{x\-Wait\-For\-All\-Bits, }
+\item[{{\bf Tick\-Type\-\_\-t}}]{x\-Ticks\-To\-Wait}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_a9de3688a138371bf668f3db7d246c4f6}
+\hypertarget{mpu__wrappers_8c_aaa61035f1d697dafc2b97227e0d81f0a}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-x\-Port\-Get\-Free\-Heap\-Size@{M\-P\-U\-\_\-x\-Port\-Get\-Free\-Heap\-Size}}
+\index{M\-P\-U\-\_\-x\-Port\-Get\-Free\-Heap\-Size@{M\-P\-U\-\_\-x\-Port\-Get\-Free\-Heap\-Size}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-x\-Port\-Get\-Free\-Heap\-Size}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t M\-P\-U\-\_\-x\-Port\-Get\-Free\-Heap\-Size (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_aaa61035f1d697dafc2b97227e0d81f0a}
+\hypertarget{mpu__wrappers_8c_a11f6f4ba0b7f2612c09d7494aa695297}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-x\-Queue\-Generic\-Receive@{M\-P\-U\-\_\-x\-Queue\-Generic\-Receive}}
+\index{M\-P\-U\-\_\-x\-Queue\-Generic\-Receive@{M\-P\-U\-\_\-x\-Queue\-Generic\-Receive}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-x\-Queue\-Generic\-Receive}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} M\-P\-U\-\_\-x\-Queue\-Generic\-Receive (
+\begin{DoxyParamCaption}
+\item[{{\bf Queue\-Handle\-\_\-t}}]{px\-Queue, }
+\item[{{\bf void} $\ast$const}]{pv\-Buffer, }
+\item[{{\bf Tick\-Type\-\_\-t}}]{x\-Ticks\-To\-Wait, }
+\item[{{\bf Base\-Type\-\_\-t}}]{x\-Just\-Peeking}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_a11f6f4ba0b7f2612c09d7494aa695297}
+\hypertarget{mpu__wrappers_8c_ac7dccb1862fd656e1aedff73bd7c3433}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-x\-Queue\-Generic\-Reset@{M\-P\-U\-\_\-x\-Queue\-Generic\-Reset}}
+\index{M\-P\-U\-\_\-x\-Queue\-Generic\-Reset@{M\-P\-U\-\_\-x\-Queue\-Generic\-Reset}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-x\-Queue\-Generic\-Reset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} M\-P\-U\-\_\-x\-Queue\-Generic\-Reset (
+\begin{DoxyParamCaption}
+\item[{{\bf Queue\-Handle\-\_\-t}}]{px\-Queue, }
+\item[{{\bf Base\-Type\-\_\-t}}]{x\-New\-Queue}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_ac7dccb1862fd656e1aedff73bd7c3433}
+\hypertarget{mpu__wrappers_8c_afec3801d053a850488cda14b0cad95fd}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-x\-Queue\-Generic\-Send@{M\-P\-U\-\_\-x\-Queue\-Generic\-Send}}
+\index{M\-P\-U\-\_\-x\-Queue\-Generic\-Send@{M\-P\-U\-\_\-x\-Queue\-Generic\-Send}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-x\-Queue\-Generic\-Send}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} M\-P\-U\-\_\-x\-Queue\-Generic\-Send (
+\begin{DoxyParamCaption}
+\item[{{\bf Queue\-Handle\-\_\-t}}]{x\-Queue, }
+\item[{const {\bf void} $\ast$const}]{pv\-Item\-To\-Queue, }
+\item[{{\bf Tick\-Type\-\_\-t}}]{x\-Ticks\-To\-Wait, }
+\item[{{\bf Base\-Type\-\_\-t}}]{x\-Copy\-Position}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_afec3801d053a850488cda14b0cad95fd}
+\hypertarget{mpu__wrappers_8c_a7278ca1132b990192755eee24d6d2ef7}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-x\-Queue\-Get\-Mutex\-Holder@{M\-P\-U\-\_\-x\-Queue\-Get\-Mutex\-Holder}}
+\index{M\-P\-U\-\_\-x\-Queue\-Get\-Mutex\-Holder@{M\-P\-U\-\_\-x\-Queue\-Get\-Mutex\-Holder}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-x\-Queue\-Get\-Mutex\-Holder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void}$\ast$ M\-P\-U\-\_\-x\-Queue\-Get\-Mutex\-Holder (
+\begin{DoxyParamCaption}
+\item[{{\bf Queue\-Handle\-\_\-t}}]{x\-Semaphore}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_a7278ca1132b990192755eee24d6d2ef7}
+\hypertarget{mpu__wrappers_8c_a9aeb66abf9fe439c26ffebcde56017ea}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-x\-Queue\-Peek\-From\-I\-S\-R@{M\-P\-U\-\_\-x\-Queue\-Peek\-From\-I\-S\-R}}
+\index{M\-P\-U\-\_\-x\-Queue\-Peek\-From\-I\-S\-R@{M\-P\-U\-\_\-x\-Queue\-Peek\-From\-I\-S\-R}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-x\-Queue\-Peek\-From\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} M\-P\-U\-\_\-x\-Queue\-Peek\-From\-I\-S\-R (
+\begin{DoxyParamCaption}
+\item[{{\bf Queue\-Handle\-\_\-t}}]{px\-Queue, }
+\item[{{\bf void} $\ast$const}]{pv\-Buffer}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_a9aeb66abf9fe439c26ffebcde56017ea}
+\hypertarget{mpu__wrappers_8c_a6d0605238a63245000181fa892ec5323}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-x\-Task\-Check\-For\-Time\-Out@{M\-P\-U\-\_\-x\-Task\-Check\-For\-Time\-Out}}
+\index{M\-P\-U\-\_\-x\-Task\-Check\-For\-Time\-Out@{M\-P\-U\-\_\-x\-Task\-Check\-For\-Time\-Out}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-x\-Task\-Check\-For\-Time\-Out}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} M\-P\-U\-\_\-x\-Task\-Check\-For\-Time\-Out (
+\begin{DoxyParamCaption}
+\item[{{\bf Time\-Out\-\_\-t} $\ast$const}]{px\-Time\-Out, }
+\item[{{\bf Tick\-Type\-\_\-t} $\ast$const}]{px\-Ticks\-To\-Wait}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_a6d0605238a63245000181fa892ec5323}
+\hypertarget{mpu__wrappers_8c_a5d01951fdc30c9d8ec5769dbf7e4cb73}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-x\-Task\-Create\-Restricted@{M\-P\-U\-\_\-x\-Task\-Create\-Restricted}}
+\index{M\-P\-U\-\_\-x\-Task\-Create\-Restricted@{M\-P\-U\-\_\-x\-Task\-Create\-Restricted}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-x\-Task\-Create\-Restricted}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} M\-P\-U\-\_\-x\-Task\-Create\-Restricted (
+\begin{DoxyParamCaption}
+\item[{const {\bf Task\-Parameters\-\_\-t} $\ast$const}]{px\-Task\-Definition, }
+\item[{{\bf Task\-Handle\-\_\-t} $\ast$}]{px\-Created\-Task}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_a5d01951fdc30c9d8ec5769dbf7e4cb73}
+\hypertarget{mpu__wrappers_8c_a3b24e0327b39b868b91ff031fbdab048}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-x\-Task\-Get\-Tick\-Count@{M\-P\-U\-\_\-x\-Task\-Get\-Tick\-Count}}
+\index{M\-P\-U\-\_\-x\-Task\-Get\-Tick\-Count@{M\-P\-U\-\_\-x\-Task\-Get\-Tick\-Count}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-x\-Task\-Get\-Tick\-Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tick\-Type\-\_\-t} M\-P\-U\-\_\-x\-Task\-Get\-Tick\-Count (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_a3b24e0327b39b868b91ff031fbdab048}
+\hypertarget{mpu__wrappers_8c_aa43b421a9eff441d0a850998551b17b4}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!M\-P\-U\-\_\-x\-Task\-Resume\-All@{M\-P\-U\-\_\-x\-Task\-Resume\-All}}
+\index{M\-P\-U\-\_\-x\-Task\-Resume\-All@{M\-P\-U\-\_\-x\-Task\-Resume\-All}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{M\-P\-U\-\_\-x\-Task\-Resume\-All}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} M\-P\-U\-\_\-x\-Task\-Resume\-All (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_aa43b421a9eff441d0a850998551b17b4}
+\hypertarget{mpu__wrappers_8c_ac42aa31652a6e8158f8ea8a88aad8275}{\index{mpu\-\_\-wrappers.\-c@{mpu\-\_\-wrappers.\-c}!x\-Port\-Raise\-Privilege@{x\-Port\-Raise\-Privilege}}
+\index{x\-Port\-Raise\-Privilege@{x\-Port\-Raise\-Privilege}!mpu_wrappers.c@{mpu\-\_\-wrappers.\-c}}
+\subsubsection[{x\-Port\-Raise\-Privilege}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} x\-Port\-Raise\-Privilege (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{mpu__wrappers_8c_ac42aa31652a6e8158f8ea8a88aad8275}

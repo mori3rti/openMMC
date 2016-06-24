@@ -1,0 +1,61 @@
+\hypertarget{structLPC__WWDT__T}{\section{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T Struct Reference}
+\label{structLPC__WWDT__T}\index{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T@{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T}}
+}
+
+
+Windowed Watchdog register block structure.  
+
+
+
+
+{\ttfamily \#include $<$wwdt\-\_\-17xx\-\_\-40xx.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core__cm3_8h_aec43007d9998a0a0e01faede4133d6be}{\-\_\-\-\_\-\-I\-O} uint32\-\_\-t \hyperlink{structLPC__WWDT__T_a92ea6cd2032ed81f7c5f626b48c4c772}{M\-O\-D}
+\item 
+\hyperlink{core__cm3_8h_aec43007d9998a0a0e01faede4133d6be}{\-\_\-\-\_\-\-I\-O} uint32\-\_\-t \hyperlink{structLPC__WWDT__T_a8390ac91aea3330b363ad2fd5dc97f98}{T\-C}
+\item 
+\hyperlink{core__cm3_8h_a7e25d9380f9ef903923964322e71f2f6}{\-\_\-\-\_\-\-O} uint32\-\_\-t \hyperlink{structLPC__WWDT__T_a80b357a30f90ba82fd46ff1faa8fe4b8}{F\-E\-E\-D}
+\item 
+\hyperlink{core__cm3_8h_af63697ed9952cc71e1225efe205f6cd3}{\-\_\-\-\_\-\-I} uint32\-\_\-t \hyperlink{structLPC__WWDT__T_a8257032e074282d5242e1d2a07537db1}{T\-V}
+\item 
+\hyperlink{core__cm3_8h_af63697ed9952cc71e1225efe205f6cd3}{\-\_\-\-\_\-\-I} uint32\-\_\-t \hyperlink{structLPC__WWDT__T_af47cdcbd1ae7b068bf6b66566a140aa6}{R\-E\-S\-E\-R\-V\-E\-D0}
+\item 
+\hyperlink{core__cm3_8h_aec43007d9998a0a0e01faede4133d6be}{\-\_\-\-\_\-\-I\-O} uint32\-\_\-t \hyperlink{structLPC__WWDT__T_a6efaed3716fc4661ef3a7a52bcc9028a}{W\-A\-R\-N\-I\-N\-T}
+\item 
+\hyperlink{core__cm3_8h_aec43007d9998a0a0e01faede4133d6be}{\-\_\-\-\_\-\-I\-O} uint32\-\_\-t \hyperlink{structLPC__WWDT__T_abcc1eca1d9cc366b693a5333fb75d1e0}{W\-I\-N\-D\-O\-W}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Windowed Watchdog register block structure. 
+
+\subsection{Field Documentation}
+\hypertarget{structLPC__WWDT__T_a80b357a30f90ba82fd46ff1faa8fe4b8}{\index{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T@{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T}!F\-E\-E\-D@{F\-E\-E\-D}}
+\index{F\-E\-E\-D@{F\-E\-E\-D}!LPC_WWDT_T@{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T}}
+\subsubsection[{F\-E\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-\_\-\-O} uint32\-\_\-t L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T\-::\-F\-E\-E\-D}}\label{structLPC__WWDT__T_a80b357a30f90ba82fd46ff1faa8fe4b8}
+Watchdog feed sequence register. Writing 0x\-A\-A followed by 0x55 to this register reloads the Watchdog timer with the value contained in W\-D\-T\-C. \hypertarget{structLPC__WWDT__T_a92ea6cd2032ed81f7c5f626b48c4c772}{\index{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T@{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T}!M\-O\-D@{M\-O\-D}}
+\index{M\-O\-D@{M\-O\-D}!LPC_WWDT_T@{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T}}
+\subsubsection[{M\-O\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-\_\-\-I\-O} uint32\-\_\-t L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T\-::\-M\-O\-D}}\label{structLPC__WWDT__T_a92ea6cd2032ed81f7c5f626b48c4c772}
+$<$ W\-W\-D\-T Structure Watchdog mode register. This register contains the basic mode and status of the Watchdog Timer. \hypertarget{structLPC__WWDT__T_af47cdcbd1ae7b068bf6b66566a140aa6}{\index{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T@{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T}!R\-E\-S\-E\-R\-V\-E\-D0@{R\-E\-S\-E\-R\-V\-E\-D0}}
+\index{R\-E\-S\-E\-R\-V\-E\-D0@{R\-E\-S\-E\-R\-V\-E\-D0}!LPC_WWDT_T@{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T}}
+\subsubsection[{R\-E\-S\-E\-R\-V\-E\-D0}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-\_\-\-I} uint32\-\_\-t L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T\-::\-R\-E\-S\-E\-R\-V\-E\-D0}}\label{structLPC__WWDT__T_af47cdcbd1ae7b068bf6b66566a140aa6}
+\hypertarget{structLPC__WWDT__T_a8390ac91aea3330b363ad2fd5dc97f98}{\index{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T@{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T}!T\-C@{T\-C}}
+\index{T\-C@{T\-C}!LPC_WWDT_T@{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T}}
+\subsubsection[{T\-C}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-\_\-\-I\-O} uint32\-\_\-t L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T\-::\-T\-C}}\label{structLPC__WWDT__T_a8390ac91aea3330b363ad2fd5dc97f98}
+Watchdog timer constant register. This register determines the time-\/out value. \hypertarget{structLPC__WWDT__T_a8257032e074282d5242e1d2a07537db1}{\index{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T@{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T}!T\-V@{T\-V}}
+\index{T\-V@{T\-V}!LPC_WWDT_T@{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T}}
+\subsubsection[{T\-V}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-\_\-\-I} uint32\-\_\-t L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T\-::\-T\-V}}\label{structLPC__WWDT__T_a8257032e074282d5242e1d2a07537db1}
+Watchdog timer value register. This register reads out the current value of the Watchdog timer. \hypertarget{structLPC__WWDT__T_a6efaed3716fc4661ef3a7a52bcc9028a}{\index{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T@{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T}!W\-A\-R\-N\-I\-N\-T@{W\-A\-R\-N\-I\-N\-T}}
+\index{W\-A\-R\-N\-I\-N\-T@{W\-A\-R\-N\-I\-N\-T}!LPC_WWDT_T@{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T}}
+\subsubsection[{W\-A\-R\-N\-I\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-\_\-\-I\-O} uint32\-\_\-t L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T\-::\-W\-A\-R\-N\-I\-N\-T}}\label{structLPC__WWDT__T_a6efaed3716fc4661ef3a7a52bcc9028a}
+Watchdog warning interrupt register. This register contains the Watchdog warning interrupt compare value. \hypertarget{structLPC__WWDT__T_abcc1eca1d9cc366b693a5333fb75d1e0}{\index{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T@{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T}!W\-I\-N\-D\-O\-W@{W\-I\-N\-D\-O\-W}}
+\index{W\-I\-N\-D\-O\-W@{W\-I\-N\-D\-O\-W}!LPC_WWDT_T@{L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T}}
+\subsubsection[{W\-I\-N\-D\-O\-W}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-\_\-\-I\-O} uint32\-\_\-t L\-P\-C\-\_\-\-W\-W\-D\-T\-\_\-\-T\-::\-W\-I\-N\-D\-O\-W}}\label{structLPC__WWDT__T_abcc1eca1d9cc366b693a5333fb75d1e0}
+Watchdog timer window register. This register contains the Watchdog window value. 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpcopen/inc/\hyperlink{wwdt__17xx__40xx_8h}{wwdt\-\_\-17xx\-\_\-40xx.\-h}\end{DoxyCompactItemize}

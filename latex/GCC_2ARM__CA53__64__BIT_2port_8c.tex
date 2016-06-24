@@ -1,0 +1,229 @@
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.c File Reference}
+\label{GCC_2ARM__CA53__64__BIT_2port_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a3fa0e1f577a34f688d80f58d51d937f2}{config\-C\-L\-E\-A\-R\-\_\-\-T\-I\-C\-K\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T}()
+\item 
+\#define \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_ab7c7cbbda4fb9a253c7e5086071db162}{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}~( ( size\-\_\-t ) 0 )
+\item 
+\#define \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a5eeb3ad5676c34d091d186ab0d926e35}{port\-U\-N\-M\-A\-S\-K\-\_\-\-V\-A\-L\-U\-E}~( 0x\-F\-F\-U\-L )
+\item 
+\#define \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a20b80621f4d4ec9522bd510f89641cf3}{port\-N\-O\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T}~( ( \hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} ) 0 )
+\item 
+\#define \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_ad377f3a8bf381f88b95b8c4bb0f28449}{port\-E\-L3}~( ( \hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} ) 0x0c )
+\item 
+\#define \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a4a8870707a188204a5f2e344a2cb4f72}{port\-S\-P\-\_\-\-E\-Lx}~( ( \hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} ) 0x01 )
+\item 
+\#define \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a9b28537e49893287c89a094235639d43}{port\-S\-P\-\_\-\-E\-L0}~( ( \hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} ) 0x00 )
+\item 
+\#define \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_aa57547732409129ad43ec6f656a083eb}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-T\-A\-T\-E}~( \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_ad377f3a8bf381f88b95b8c4bb0f28449}{port\-E\-L3} $\vert$ \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a9b28537e49893287c89a094235639d43}{port\-S\-P\-\_\-\-E\-L0} )
+\item 
+\#define \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a6dccb019d7021b86c2d3e6526f657740}{port\-B\-I\-N\-A\-R\-Y\-\_\-\-P\-O\-I\-N\-T\-\_\-\-B\-I\-T\-S}~( ( uint8\-\_\-t ) 0x03 )
+\item 
+\#define \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a22f68e4b19d3c26b3cf77a143b8359d6}{port\-A\-P\-S\-R\-\_\-\-M\-O\-D\-E\-\_\-\-B\-I\-T\-S\-\_\-\-M\-A\-S\-K}~( 0x0\-C )
+\item 
+\#define \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a58229c12b445c89bb297a2704db0be37}{port\-D\-A\-I\-F\-\_\-\-I}~( 0x80 )
+\item 
+\#define \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_add90c69e5eb5f04699c6978856695904}{port\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K}()
+\item 
+\#define \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_afa25d401ba43865fa6fbd14f8eecdb93}{port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-O\-F\-F\-S\-E\-T}~0x400\-U\-L
+\item 
+\#define \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a6a8cc3be38f6a681ffcf3a895970853f}{port\-M\-A\-X\-\_\-8\-\_\-\-B\-I\-T\-\_\-\-V\-A\-L\-U\-E}~( ( uint8\-\_\-t ) 0xff )
+\item 
+\#define \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_af039687d4e35ac6f855103d8a28e373b}{port\-B\-I\-T\-\_\-0\-\_\-\-S\-E\-T}~( ( uint8\-\_\-t ) 0x01 )
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a222aec9e4494ebf3fdbda864b5cb3a4b}{v\-Port\-Restore\-Task\-Context} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_ab35b2424ac8c0625cfdbbcf916c5e1c3}{\-\_\-\-\_\-attribute\-\_\-\-\_\-} ((used)) const = \hyperlink{projdefs_8h_aa56260e937e7e203026707e5ba944273}{pd\-F\-A\-L\-S\-E}
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{x\-Port\-Start\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{v\-Port\-End\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a2ed3554a3de09a3bd09d396ee081ab69}{v\-Port\-Enter\-Critical} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_aed20ada05b957181a0de042802a82a5b}{v\-Port\-Exit\-Critical} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a3853f6eea7b62957ada2e0feba299037}{Free\-R\-T\-O\-S\-\_\-\-Tick\-\_\-\-Handler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a4c83c3bee8f08f0a7247571845b56d65}{v\-Port\-Task\-Uses\-F\-P\-U} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_aac0c43c94966fe5ff5a89c1396e2e1fa}{v\-Port\-Clear\-Interrupt\-Mask} (\hyperlink{Flsh186_2prtmacro_8h_a8e88a5e44a5243b3d1c29af17fd6b5bd}{U\-Base\-Type\-\_\-t} ux\-New\-Mask\-Value)
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a8e88a5e44a5243b3d1c29af17fd6b5bd}{U\-Base\-Type\-\_\-t} \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a01c8d84ad6ff85fa1710c05fdccb0b57}{ux\-Port\-Set\-Interrupt\-Mask} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile uint64\-\_\-t \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a6926f2a7838addbba85833667d4d10d3}{ull\-Critical\-Nesting} = 9999\-U\-L\-L
+\item 
+uint64\-\_\-t \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a2a56e57eb5c52a3002ae65a9e0a4c038}{ull\-Port\-Task\-Has\-F\-P\-U\-Context} = \hyperlink{projdefs_8h_aa56260e937e7e203026707e5ba944273}{pd\-F\-A\-L\-S\-E}
+\item 
+uint64\-\_\-t \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_ade3230db36947eec41dc48cf55f827e8}{ull\-Port\-Yield\-Required} = \hyperlink{projdefs_8h_aa56260e937e7e203026707e5ba944273}{pd\-F\-A\-L\-S\-E}
+\item 
+uint64\-\_\-t \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a2dac83a0657a10812594a4f3d4fdcea0}{ull\-Port\-Interrupt\-Nesting} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_a3fa0e1f577a34f688d80f58d51d937f2}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!config\-C\-L\-E\-A\-R\-\_\-\-T\-I\-C\-K\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T@{config\-C\-L\-E\-A\-R\-\_\-\-T\-I\-C\-K\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T}}
+\index{config\-C\-L\-E\-A\-R\-\_\-\-T\-I\-C\-K\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T@{config\-C\-L\-E\-A\-R\-\_\-\-T\-I\-C\-K\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{config\-C\-L\-E\-A\-R\-\_\-\-T\-I\-C\-K\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-C\-L\-E\-A\-R\-\_\-\-T\-I\-C\-K\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_a3fa0e1f577a34f688d80f58d51d937f2}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_a22f68e4b19d3c26b3cf77a143b8359d6}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!port\-A\-P\-S\-R\-\_\-\-M\-O\-D\-E\-\_\-\-B\-I\-T\-S\-\_\-\-M\-A\-S\-K@{port\-A\-P\-S\-R\-\_\-\-M\-O\-D\-E\-\_\-\-B\-I\-T\-S\-\_\-\-M\-A\-S\-K}}
+\index{port\-A\-P\-S\-R\-\_\-\-M\-O\-D\-E\-\_\-\-B\-I\-T\-S\-\_\-\-M\-A\-S\-K@{port\-A\-P\-S\-R\-\_\-\-M\-O\-D\-E\-\_\-\-B\-I\-T\-S\-\_\-\-M\-A\-S\-K}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{port\-A\-P\-S\-R\-\_\-\-M\-O\-D\-E\-\_\-\-B\-I\-T\-S\-\_\-\-M\-A\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-A\-P\-S\-R\-\_\-\-M\-O\-D\-E\-\_\-\-B\-I\-T\-S\-\_\-\-M\-A\-S\-K~( 0x0\-C )}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_a22f68e4b19d3c26b3cf77a143b8359d6}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_a6dccb019d7021b86c2d3e6526f657740}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!port\-B\-I\-N\-A\-R\-Y\-\_\-\-P\-O\-I\-N\-T\-\_\-\-B\-I\-T\-S@{port\-B\-I\-N\-A\-R\-Y\-\_\-\-P\-O\-I\-N\-T\-\_\-\-B\-I\-T\-S}}
+\index{port\-B\-I\-N\-A\-R\-Y\-\_\-\-P\-O\-I\-N\-T\-\_\-\-B\-I\-T\-S@{port\-B\-I\-N\-A\-R\-Y\-\_\-\-P\-O\-I\-N\-T\-\_\-\-B\-I\-T\-S}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{port\-B\-I\-N\-A\-R\-Y\-\_\-\-P\-O\-I\-N\-T\-\_\-\-B\-I\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-B\-I\-N\-A\-R\-Y\-\_\-\-P\-O\-I\-N\-T\-\_\-\-B\-I\-T\-S~( ( uint8\-\_\-t ) 0x03 )}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_a6dccb019d7021b86c2d3e6526f657740}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_af039687d4e35ac6f855103d8a28e373b}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!port\-B\-I\-T\-\_\-0\-\_\-\-S\-E\-T@{port\-B\-I\-T\-\_\-0\-\_\-\-S\-E\-T}}
+\index{port\-B\-I\-T\-\_\-0\-\_\-\-S\-E\-T@{port\-B\-I\-T\-\_\-0\-\_\-\-S\-E\-T}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{port\-B\-I\-T\-\_\-0\-\_\-\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-B\-I\-T\-\_\-0\-\_\-\-S\-E\-T~( ( uint8\-\_\-t ) 0x01 )}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_af039687d4e35ac6f855103d8a28e373b}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_add90c69e5eb5f04699c6978856695904}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!port\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K@{port\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K}}
+\index{port\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K@{port\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{port\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-C\-L\-E\-A\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-A\-S\-K(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_add90c69e5eb5f04699c6978856695904}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\{                                                                   \hyperlink{Flsh186_2prtmacro_8h_a6e3d10ee1a0734a647ca192523c2cfc1}{\(\backslash\)}
+\hyperlink{Flsh186_2prtmacro_8h_a6e3d10ee1a0734a647ca192523c2cfc1}{    portDISABLE\_INTERRUPTS}();                                        
+      \hyperlink{RVDS_2ARM__CA9_2port_8c_aba37a58c09c5a8ac522137ac63f1de6b}{\(\backslash\)}
+\hyperlink{RVDS_2ARM__CA9_2port_8c_aba37a58c09c5a8ac522137ac63f1de6b}{    portICCPMR\_PRIORITY\_MASK\_REGISTER} = 
+      \hyperlink{GCC_2ARM__CA53__64__BIT_2port_8c_a5eeb3ad5676c34d091d186ab0d926e35}{portUNMASK\_VALUE};           \(\backslash\)
+    \_\_asm \textcolor{keyword}{volatile} (    \textcolor{stringliteral}{"DSB SY     \(\backslash\)n"}                             \(\backslash\)
+                        \textcolor{stringliteral}{"ISB SY     \(\backslash\)n"} );                          \hyperlink{Flsh186_2prtmacro_8h_abc47e85a6befbb47961ad5ee7aa57173}{\(\backslash\)}
+\hyperlink{Flsh186_2prtmacro_8h_abc47e85a6befbb47961ad5ee7aa57173}{    portENABLE\_INTERRUPTS}();                                      \(\backslash\)
+\}
+\end{DoxyCode}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_a58229c12b445c89bb297a2704db0be37}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!port\-D\-A\-I\-F\-\_\-\-I@{port\-D\-A\-I\-F\-\_\-\-I}}
+\index{port\-D\-A\-I\-F\-\_\-\-I@{port\-D\-A\-I\-F\-\_\-\-I}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{port\-D\-A\-I\-F\-\_\-\-I}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-D\-A\-I\-F\-\_\-\-I~( 0x80 )}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_a58229c12b445c89bb297a2704db0be37}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_ad377f3a8bf381f88b95b8c4bb0f28449}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!port\-E\-L3@{port\-E\-L3}}
+\index{port\-E\-L3@{port\-E\-L3}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{port\-E\-L3}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-E\-L3~( ( {\bf Stack\-Type\-\_\-t} ) 0x0c )}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_ad377f3a8bf381f88b95b8c4bb0f28449}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_aa57547732409129ad43ec6f656a083eb}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-T\-A\-T\-E@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-T\-A\-T\-E}}
+\index{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-T\-A\-T\-E@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-T\-A\-T\-E}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-T\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-T\-A\-T\-E~( {\bf port\-E\-L3} $\vert$ {\bf port\-S\-P\-\_\-\-E\-L0} )}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_aa57547732409129ad43ec6f656a083eb}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_afa25d401ba43865fa6fbd14f8eecdb93}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-O\-F\-F\-S\-E\-T@{port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-O\-F\-F\-S\-E\-T}}
+\index{port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-O\-F\-F\-S\-E\-T@{port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-O\-F\-F\-S\-E\-T}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-O\-F\-F\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-O\-F\-F\-S\-E\-T~0x400\-U\-L}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_afa25d401ba43865fa6fbd14f8eecdb93}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_a6a8cc3be38f6a681ffcf3a895970853f}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!port\-M\-A\-X\-\_\-8\-\_\-\-B\-I\-T\-\_\-\-V\-A\-L\-U\-E@{port\-M\-A\-X\-\_\-8\-\_\-\-B\-I\-T\-\_\-\-V\-A\-L\-U\-E}}
+\index{port\-M\-A\-X\-\_\-8\-\_\-\-B\-I\-T\-\_\-\-V\-A\-L\-U\-E@{port\-M\-A\-X\-\_\-8\-\_\-\-B\-I\-T\-\_\-\-V\-A\-L\-U\-E}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{port\-M\-A\-X\-\_\-8\-\_\-\-B\-I\-T\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-M\-A\-X\-\_\-8\-\_\-\-B\-I\-T\-\_\-\-V\-A\-L\-U\-E~( ( uint8\-\_\-t ) 0xff )}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_a6a8cc3be38f6a681ffcf3a895970853f}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_ab7c7cbbda4fb9a253c7e5086071db162}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G@{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}}
+\index{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G@{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G~( ( size\-\_\-t ) 0 )}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_ab7c7cbbda4fb9a253c7e5086071db162}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_a20b80621f4d4ec9522bd510f89641cf3}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!port\-N\-O\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-N\-O\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T}}
+\index{port\-N\-O\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-N\-O\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{port\-N\-O\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-N\-O\-\_\-\-F\-L\-O\-A\-T\-I\-N\-G\-\_\-\-P\-O\-I\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T~( ( {\bf Stack\-Type\-\_\-t} ) 0 )}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_a20b80621f4d4ec9522bd510f89641cf3}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_a9b28537e49893287c89a094235639d43}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!port\-S\-P\-\_\-\-E\-L0@{port\-S\-P\-\_\-\-E\-L0}}
+\index{port\-S\-P\-\_\-\-E\-L0@{port\-S\-P\-\_\-\-E\-L0}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{port\-S\-P\-\_\-\-E\-L0}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-P\-\_\-\-E\-L0~( ( {\bf Stack\-Type\-\_\-t} ) 0x00 )}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_a9b28537e49893287c89a094235639d43}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_a4a8870707a188204a5f2e344a2cb4f72}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!port\-S\-P\-\_\-\-E\-Lx@{port\-S\-P\-\_\-\-E\-Lx}}
+\index{port\-S\-P\-\_\-\-E\-Lx@{port\-S\-P\-\_\-\-E\-Lx}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{port\-S\-P\-\_\-\-E\-Lx}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-P\-\_\-\-E\-Lx~( ( {\bf Stack\-Type\-\_\-t} ) 0x01 )}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_a4a8870707a188204a5f2e344a2cb4f72}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_a5eeb3ad5676c34d091d186ab0d926e35}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!port\-U\-N\-M\-A\-S\-K\-\_\-\-V\-A\-L\-U\-E@{port\-U\-N\-M\-A\-S\-K\-\_\-\-V\-A\-L\-U\-E}}
+\index{port\-U\-N\-M\-A\-S\-K\-\_\-\-V\-A\-L\-U\-E@{port\-U\-N\-M\-A\-S\-K\-\_\-\-V\-A\-L\-U\-E}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{port\-U\-N\-M\-A\-S\-K\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-U\-N\-M\-A\-S\-K\-\_\-\-V\-A\-L\-U\-E~( 0x\-F\-F\-U\-L )}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_a5eeb3ad5676c34d091d186ab0d926e35}
+
+
+\subsection{Function Documentation}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_ab35b2424ac8c0625cfdbbcf916c5e1c3}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!\-\_\-\-\_\-attribute\-\_\-\-\_\-@{\-\_\-\-\_\-attribute\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-attribute\-\_\-\-\_\-@{\-\_\-\-\_\-attribute\-\_\-\-\_\-}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{\-\_\-\-\_\-attribute\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint32\-\_\-t {\bf ul\-Interrupt\-Nesting} \-\_\-\-\_\-attribute\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{(used)}]{}
+\end{DoxyParamCaption}
+) const = {\bf pd\-F\-A\-L\-S\-E}}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_ab35b2424ac8c0625cfdbbcf916c5e1c3}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_a3853f6eea7b62957ada2e0feba299037}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!Free\-R\-T\-O\-S\-\_\-\-Tick\-\_\-\-Handler@{Free\-R\-T\-O\-S\-\_\-\-Tick\-\_\-\-Handler}}
+\index{Free\-R\-T\-O\-S\-\_\-\-Tick\-\_\-\-Handler@{Free\-R\-T\-O\-S\-\_\-\-Tick\-\_\-\-Handler}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{Free\-R\-T\-O\-S\-\_\-\-Tick\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Free\-R\-T\-O\-S\-\_\-\-Tick\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_a3853f6eea7b62957ada2e0feba299037}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_a01c8d84ad6ff85fa1710c05fdccb0b57}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!ux\-Port\-Set\-Interrupt\-Mask@{ux\-Port\-Set\-Interrupt\-Mask}}
+\index{ux\-Port\-Set\-Interrupt\-Mask@{ux\-Port\-Set\-Interrupt\-Mask}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{ux\-Port\-Set\-Interrupt\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\-Base\-Type\-\_\-t} ux\-Port\-Set\-Interrupt\-Mask (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_a01c8d84ad6ff85fa1710c05fdccb0b57}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_aac0c43c94966fe5ff5a89c1396e2e1fa}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!v\-Port\-Clear\-Interrupt\-Mask@{v\-Port\-Clear\-Interrupt\-Mask}}
+\index{v\-Port\-Clear\-Interrupt\-Mask@{v\-Port\-Clear\-Interrupt\-Mask}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{v\-Port\-Clear\-Interrupt\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Clear\-Interrupt\-Mask (
+\begin{DoxyParamCaption}
+\item[{{\bf U\-Base\-Type\-\_\-t}}]{ux\-New\-Mask\-Value}
+\end{DoxyParamCaption}
+)}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_aac0c43c94966fe5ff5a89c1396e2e1fa}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}}
+\index{v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{v\-Port\-End\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-End\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_a2ed3554a3de09a3bd09d396ee081ab69}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!v\-Port\-Enter\-Critical@{v\-Port\-Enter\-Critical}}
+\index{v\-Port\-Enter\-Critical@{v\-Port\-Enter\-Critical}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{v\-Port\-Enter\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Enter\-Critical (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_a2ed3554a3de09a3bd09d396ee081ab69}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_aed20ada05b957181a0de042802a82a5b}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!v\-Port\-Exit\-Critical@{v\-Port\-Exit\-Critical}}
+\index{v\-Port\-Exit\-Critical@{v\-Port\-Exit\-Critical}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{v\-Port\-Exit\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Exit\-Critical (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_aed20ada05b957181a0de042802a82a5b}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_a222aec9e4494ebf3fdbda864b5cb3a4b}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!v\-Port\-Restore\-Task\-Context@{v\-Port\-Restore\-Task\-Context}}
+\index{v\-Port\-Restore\-Task\-Context@{v\-Port\-Restore\-Task\-Context}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{v\-Port\-Restore\-Task\-Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Restore\-Task\-Context (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_a222aec9e4494ebf3fdbda864b5cb3a4b}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_a4c83c3bee8f08f0a7247571845b56d65}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!v\-Port\-Task\-Uses\-F\-P\-U@{v\-Port\-Task\-Uses\-F\-P\-U}}
+\index{v\-Port\-Task\-Uses\-F\-P\-U@{v\-Port\-Task\-Uses\-F\-P\-U}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{v\-Port\-Task\-Uses\-F\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Task\-Uses\-F\-P\-U (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_a4c83c3bee8f08f0a7247571845b56d65}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}}
+\index{x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{x\-Port\-Start\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} x\-Port\-Start\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}
+
+
+\subsection{Variable Documentation}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_a6926f2a7838addbba85833667d4d10d3}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!ull\-Critical\-Nesting@{ull\-Critical\-Nesting}}
+\index{ull\-Critical\-Nesting@{ull\-Critical\-Nesting}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{ull\-Critical\-Nesting}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint64\-\_\-t ull\-Critical\-Nesting = 9999\-U\-L\-L}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_a6926f2a7838addbba85833667d4d10d3}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_a2dac83a0657a10812594a4f3d4fdcea0}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!ull\-Port\-Interrupt\-Nesting@{ull\-Port\-Interrupt\-Nesting}}
+\index{ull\-Port\-Interrupt\-Nesting@{ull\-Port\-Interrupt\-Nesting}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{ull\-Port\-Interrupt\-Nesting}]{\setlength{\rightskip}{0pt plus 5cm}uint64\-\_\-t ull\-Port\-Interrupt\-Nesting = 0}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_a2dac83a0657a10812594a4f3d4fdcea0}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_a2a56e57eb5c52a3002ae65a9e0a4c038}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!ull\-Port\-Task\-Has\-F\-P\-U\-Context@{ull\-Port\-Task\-Has\-F\-P\-U\-Context}}
+\index{ull\-Port\-Task\-Has\-F\-P\-U\-Context@{ull\-Port\-Task\-Has\-F\-P\-U\-Context}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{ull\-Port\-Task\-Has\-F\-P\-U\-Context}]{\setlength{\rightskip}{0pt plus 5cm}uint64\-\_\-t ull\-Port\-Task\-Has\-F\-P\-U\-Context = {\bf pd\-F\-A\-L\-S\-E}}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_a2a56e57eb5c52a3002ae65a9e0a4c038}
+\hypertarget{GCC_2ARM__CA53__64__BIT_2port_8c_ade3230db36947eec41dc48cf55f827e8}{\index{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}!ull\-Port\-Yield\-Required@{ull\-Port\-Yield\-Required}}
+\index{ull\-Port\-Yield\-Required@{ull\-Port\-Yield\-Required}!GCC/ARM_CA53_64_BIT/port.c@{G\-C\-C/\-A\-R\-M\-\_\-\-C\-A53\-\_\-64\-\_\-\-B\-I\-T/port.\-c}}
+\subsubsection[{ull\-Port\-Yield\-Required}]{\setlength{\rightskip}{0pt plus 5cm}uint64\-\_\-t ull\-Port\-Yield\-Required = {\bf pd\-F\-A\-L\-S\-E}}}\label{GCC_2ARM__CA53__64__BIT_2port_8c_ade3230db36947eec41dc48cf55f827e8}

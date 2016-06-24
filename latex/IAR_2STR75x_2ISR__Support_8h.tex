@@ -1,0 +1,84 @@
+\hypertarget{IAR_2STR75x_2ISR__Support_8h}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.h File Reference}
+\label{IAR_2STR75x_2ISR__Support_8h}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga77366c1bd428629dc898e188bfd182a3}{E\-X\-T\-E\-R\-N} \hyperlink{tasks_8c_acdecf2afe97343aba42b111bc6df9eea}{px\-Current\-T\-C\-B} \hyperlink{group__LPC__Types__Public__Macros_ga77366c1bd428629dc898e188bfd182a3}{E\-X\-T\-E\-R\-N} \hyperlink{IAR_2STR75x_2ISR__Support_8h_abddaf7d1779826a770c7c3b2e2a9d37f}{ul\-Critical\-Nesting}
+\item 
+Context save and restore \hyperlink{ARM__CA9_2portASM_8h_a65c8432cac2434a5fc857e7562a4715e}{macro} \hyperlink{IAR_2STR75x_2ISR__Support_8h_a2fdfb760bca82b5282e098a230f10532}{definitions}
+\item 
+\hyperlink{IAR_2V850ES_2portmacro_8h_ad79a8b96e1489f7f0645e8d57360337d}{port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T} \hyperlink{IAR_2STR75x_2ISR__Support_8h_ada307cac855884c6cb4493eaa3663de7}{M\-A\-C\-R\-O}
+\item 
+Push \hyperlink{Softune_2MB91460_2port_8c_ab71e6f94394636766ac73443d5268517}{R0} as we are going \hyperlink{ioat91sam7x256_8h_a964274cc117a83510a5ca1ad054ca6ae}{to} use \\*
+\hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} \hyperlink{RVDS_2ARM7__LPC21xx_2portmacro_8h_a24ac627a7839caecddfc66f1d46033f0}{register} S\-T\-M\-D\-B \hyperlink{IAR_2STR75x_2ISR__Support_8h_a85224ff891d5fa22f8aa26c3eaca34f1}{S\-P} \{\hyperlink{Softune_2MB91460_2port_8c_ab71e6f94394636766ac73443d5268517}{R0}\}
+\item 
+Push R0 as we are going \hyperlink{ioat91sam7x256_8h_a964274cc117a83510a5ca1ad054ca6ae}{to} use \\*
+\hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} \hyperlink{RVDS_2ARM7__LPC21xx_2portmacro_8h_a24ac627a7839caecddfc66f1d46033f0}{register} S\-T\-M\-D\-B Set R0 \hyperlink{ioat91sam7x256_8h_a964274cc117a83510a5ca1ad054ca6ae}{to} \\*
+point \hyperlink{ioat91sam7x256_8h_a964274cc117a83510a5ca1ad054ca6ae}{to} \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} task \hyperlink{IAR_2V850ES_2ISR__Support_8h_a0be1cfabf98139b63feae55f7e985c93}{stack} \\*
+pointer S\-T\-M\-D\-B L\-D\-M\-I\-A Push \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} \\*
+return address onto \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} \hyperlink{IAR_2V850ES_2ISR__Support_8h_a0be1cfabf98139b63feae55f7e985c93}{stack} \\*
+S\-T\-M\-D\-B \hyperlink{IAR_2STR75x_2ISR__Support_8h_ae1fdf286159156293fa65008651e485b}{R0} \{R0\}
+\item 
+Push \hyperlink{Softune_2MB91460_2port_8c_ab71e6f94394636766ac73443d5268517}{R0} as we are going \hyperlink{ioat91sam7x256_8h_a964274cc117a83510a5ca1ad054ca6ae}{to} use \\*
+\hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} \hyperlink{RVDS_2ARM7__LPC21xx_2portmacro_8h_a24ac627a7839caecddfc66f1d46033f0}{register} S\-T\-M\-D\-B Set \hyperlink{Softune_2MB91460_2port_8c_ab71e6f94394636766ac73443d5268517}{R0} \hyperlink{ioat91sam7x256_8h_a964274cc117a83510a5ca1ad054ca6ae}{to} \\*
+point \hyperlink{ioat91sam7x256_8h_a964274cc117a83510a5ca1ad054ca6ae}{to} \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} task \hyperlink{IAR_2V850ES_2ISR__Support_8h_a0be1cfabf98139b63feae55f7e985c93}{stack} \\*
+pointer S\-T\-M\-D\-B L\-D\-M\-I\-A Push \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} \\*
+return address onto \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} \hyperlink{IAR_2V850ES_2ISR__Support_8h_a0be1cfabf98139b63feae55f7e985c93}{stack} \\*
+S\-T\-M\-D\-B Now we have saved L\-R we \\*
+can use it instead of \hyperlink{Softune_2MB91460_2port_8c_ab71e6f94394636766ac73443d5268517}{R0} M\-O\-V \hyperlink{IAR_2STR75x_2ISR__Support_8h_aea250a9501de6f05bc594cf2e82287ea}{L\-R} \{L\-R\}
+\item 
+Pop \hyperlink{Softune_2MB91460_2port_8c_ab71e6f94394636766ac73443d5268517}{R0} so we can save it onto \\*
+\hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} system mode \hyperlink{IAR_2V850ES_2ISR__Support_8h_a0be1cfabf98139b63feae55f7e985c93}{stack} L\-D\-M\-I\-A \\*
+Push all \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} system mode \\*
+\hyperlink{IAR_2RL78_2ISR__Support_8h_a3de5611e92ac83d85441f23bf7c14cf7}{registers} onto \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} task \hyperlink{IAR_2V850ES_2ISR__Support_8h_a0be1cfabf98139b63feae55f7e985c93}{stack} \\*
+S\-T\-M\-D\-B Push \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} S\-P\-S\-R onto \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} \\*
+task \hyperlink{IAR_2V850ES_2ISR__Support_8h_a0be1cfabf98139b63feae55f7e985c93}{stack} M\-R\-S S\-P\-S\-R S\-T\-M\-D\-B \\*
+S\-T\-M\-D\-B Store \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} new top of \\*
+\hyperlink{IAR_2V850ES_2ISR__Support_8h_a0be1cfabf98139b63feae55f7e985c93}{stack} for \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} task L\-D\-R \hyperlink{IAR_2STR75x_2ISR__Support_8h_aff27e396da762779404affb9cf6aef61}{R1} \{\hyperlink{Softune_2MB91460_2port_8c_ab71e6f94394636766ac73443d5268517}{R0}\}
+\item 
+Set \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} \hyperlink{IAR_2STR91x_2ISR__Support_8h_aea250a9501de6f05bc594cf2e82287ea}{L\-R} \hyperlink{ioat91sam7x256_8h_a964274cc117a83510a5ca1ad054ca6ae}{to} \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} task stack \\*
+L\-D\-R L\-D\-R The critical nesting \\*
+depth is \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} first item on \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} \hyperlink{IAR_2STR75x_2ISR__Support_8h_aaec180425e780b8769116ab4f2d3ec06}{stack}
+\item 
+Restore all system mode \\*
+\hyperlink{IAR_2RL78_2ISR__Support_8h_a3de5611e92ac83d85441f23bf7c14cf7}{registers} for the task L\-D\-M\-F\-D \\*
+Restore the return address L\-D\-R \\*
+And return correcting the \\*
+\hyperlink{MPLAB_2PIC32MZ_2ISR__Support_8h_ac0542d92dfcd62c19170fd963f9e5052}{offset} in the \hyperlink{IAR_2STR91x_2ISR__Support_8h_aea250a9501de6f05bc594cf2e82287ea}{L\-R} \hyperlink{ioat91sam7x256_8h_a964274cc117a83510a5ca1ad054ca6ae}{to} obtain \hyperlink{IAR_2STR75x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the}
+\item 
+correct address S\-U\-B\-S \hyperlink{IAR_2STR75x_2ISR__Support_8h_a8c2d0d370cca772111890ac230f68c35}{P\-C}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{IAR_2STR75x_2ISR__Support_8h_a2fdfb760bca82b5282e098a230f10532}{\index{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}!definitions@{definitions}}
+\index{definitions@{definitions}!IAR/STR75x/ISR_Support.h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{definitions}]{\setlength{\rightskip}{0pt plus 5cm}Context save and restore {\bf macro} definitions}}\label{IAR_2STR75x_2ISR__Support_8h_a2fdfb760bca82b5282e098a230f10532}
+\hypertarget{IAR_2STR75x_2ISR__Support_8h_aea250a9501de6f05bc594cf2e82287ea}{\index{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}!L\-R@{L\-R}}
+\index{L\-R@{L\-R}!IAR/STR75x/ISR_Support.h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{L\-R}]{\setlength{\rightskip}{0pt plus 5cm}correct address S\-U\-B\-S L\-R \{L\-R\}}}\label{IAR_2STR75x_2ISR__Support_8h_aea250a9501de6f05bc594cf2e82287ea}
+\hypertarget{IAR_2STR75x_2ISR__Support_8h_ada307cac855884c6cb4493eaa3663de7}{\index{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}!M\-A\-C\-R\-O@{M\-A\-C\-R\-O}}
+\index{M\-A\-C\-R\-O@{M\-A\-C\-R\-O}!IAR/STR75x/ISR_Support.h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{M\-A\-C\-R\-O}]{\setlength{\rightskip}{0pt plus 5cm}Pop {\bf R0} so we can save it onto {\bf the} system mode {\bf stack} L\-D\-M\-I\-A Push all {\bf the} system mode {\bf registers} onto {\bf the} task {\bf stack} S\-T\-M\-D\-B Push {\bf the} S\-P\-S\-R onto {\bf the} task {\bf stack} M\-R\-S S\-P\-S\-R S\-T\-M\-D\-B S\-T\-M\-D\-B Store {\bf the} new top of {\bf stack} for {\bf the} task L\-D\-R {\bf S\-T\-R} {\bf E\-N\-D\-M} {\bf port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T} M\-A\-C\-R\-O}}\label{IAR_2STR75x_2ISR__Support_8h_ada307cac855884c6cb4493eaa3663de7}
+\hypertarget{IAR_2STR75x_2ISR__Support_8h_a8c2d0d370cca772111890ac230f68c35}{\index{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}!P\-C@{P\-C}}
+\index{P\-C@{P\-C}!IAR/STR75x/ISR_Support.h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{P\-C}]{\setlength{\rightskip}{0pt plus 5cm}correct address S\-U\-B\-S P\-C}}\label{IAR_2STR75x_2ISR__Support_8h_a8c2d0d370cca772111890ac230f68c35}
+\hypertarget{IAR_2STR75x_2ISR__Support_8h_ae1fdf286159156293fa65008651e485b}{\index{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}!R0@{R0}}
+\index{R0@{R0}!IAR/STR75x/ISR_Support.h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{R0}]{\setlength{\rightskip}{0pt plus 5cm}Load it into {\bf the} {\bf ul\-Critical\-Nesting} variable L\-D\-R Get {\bf the} S\-P\-S\-R from {\bf the} {\bf stack} L\-D\-M\-F\-D R0 \{R0\}}}\label{IAR_2STR75x_2ISR__Support_8h_ae1fdf286159156293fa65008651e485b}
+\hypertarget{IAR_2STR75x_2ISR__Support_8h_aff27e396da762779404affb9cf6aef61}{\index{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}!R1@{R1}}
+\index{R1@{R1}!IAR/STR75x/ISR_Support.h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{R1}]{\setlength{\rightskip}{0pt plus 5cm}Set {\bf the} {\bf L\-R} {\bf to} {\bf the} task {\bf stack} L\-D\-R R1 \{{\bf R0}\}}}\label{IAR_2STR75x_2ISR__Support_8h_aff27e396da762779404affb9cf6aef61}
+\hypertarget{IAR_2STR75x_2ISR__Support_8h_a85224ff891d5fa22f8aa26c3eaca34f1}{\index{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}!S\-P@{S\-P}}
+\index{S\-P@{S\-P}!IAR/STR75x/ISR_Support.h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{S\-P}]{\setlength{\rightskip}{0pt plus 5cm}Pop {\bf R0} so we can save it onto {\bf the} system mode {\bf stack} L\-D\-M\-I\-A S\-P \{{\bf R0}\}}}\label{IAR_2STR75x_2ISR__Support_8h_a85224ff891d5fa22f8aa26c3eaca34f1}
+\hypertarget{IAR_2STR75x_2ISR__Support_8h_aaec180425e780b8769116ab4f2d3ec06}{\index{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}!stack@{stack}}
+\index{stack@{stack}!IAR/STR75x/ISR_Support.h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{stack}]{\setlength{\rightskip}{0pt plus 5cm}Set {\bf the} {\bf L\-R} {\bf to} {\bf the} task stack L\-D\-R L\-D\-R The critical nesting depth is {\bf the} first item on {\bf the} stack}}\label{IAR_2STR75x_2ISR__Support_8h_aaec180425e780b8769116ab4f2d3ec06}
+\hypertarget{IAR_2STR75x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{\index{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}!the@{the}}
+\index{the@{the}!IAR/STR75x/ISR_Support.h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{the}]{\setlength{\rightskip}{0pt plus 5cm}Restore all system mode {\bf registers} for the task L\-D\-M\-F\-D Restore the return address L\-D\-R And return correcting the {\bf offset} in the {\bf L\-R} {\bf to} obtain the}}\label{IAR_2STR75x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}
+\hypertarget{IAR_2STR75x_2ISR__Support_8h_abddaf7d1779826a770c7c3b2e2a9d37f}{\index{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}!ul\-Critical\-Nesting@{ul\-Critical\-Nesting}}
+\index{ul\-Critical\-Nesting@{ul\-Critical\-Nesting}!IAR/STR75x/ISR_Support.h@{I\-A\-R/\-S\-T\-R75x/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{ul\-Critical\-Nesting}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\-X\-T\-E\-R\-N} {\bf px\-Current\-T\-C\-B} {\bf E\-X\-T\-E\-R\-N} ul\-Critical\-Nesting}}\label{IAR_2STR75x_2ISR__Support_8h_abddaf7d1779826a770c7c3b2e2a9d37f}

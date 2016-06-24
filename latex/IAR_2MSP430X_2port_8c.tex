@@ -1,0 +1,97 @@
+\hypertarget{IAR_2MSP430X_2port_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-I\-A\-R/\-M\-S\-P430\-X/port.c File Reference}
+\label{IAR_2MSP430X_2port_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-I\-A\-R/\-M\-S\-P430\-X/port.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-I\-A\-R/\-M\-S\-P430\-X/port.\-c}}
+}
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{IAR_2MSP430X_2port_8c_ac539a316edadf394a897fb205ebee7ab}{port\-A\-C\-L\-K\-\_\-\-F\-R\-E\-Q\-U\-E\-N\-C\-Y\-\_\-\-H\-Z}~( ( \hyperlink{Flsh186_2prtmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t} ) 32768 )
+\item 
+\#define \hyperlink{IAR_2MSP430X_2port_8c_ac9ed907cf162fb95081e68f847bc6e43}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}~( ( uint16\-\_\-t ) 10 )
+\item 
+\#define \hyperlink{IAR_2MSP430X_2port_8c_ad05c7a8ee45c5190627f9a49c95e7538}{port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}~( ( \hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} ) 0x08 )
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{IAR_2MSP430X_2port_8c_af5b0f7452857787ed70ce2856ca74c4b}{T\-C\-B\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{IAR_2MSP430X_2port_8c_a4649001ea4d29b80759e6eca4bba58eb}{v\-Port\-Setup\-Timer\-Interrupt} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$ \hyperlink{IAR_2MSP430X_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{px\-Port\-Initialise\-Stack} (\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$px\-Top\-Of\-Stack, \hyperlink{projdefs_8h_a24177544ba9c507a9429d6d5761eb487}{Task\-Function\-\_\-t} px\-Code, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{IAR_2MSP430X_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{v\-Port\-End\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\-\_\-\-\_\-interrupt \-\_\-\-\_\-raw \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{IAR_2MSP430X_2port_8c_a42999e5984ec18fad49f7718a898139e}{v\-Tick\-I\-S\-R\-Entry} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile \hyperlink{BCC_216BitDOS_2common_2portasm_8h_af5b0f7452857787ed70ce2856ca74c4b}{T\-C\-B\-\_\-t} $\ast$volatile \hyperlink{IAR_2MSP430X_2port_8c_af7b1fc0a36e224b885fb22b9936a03a2}{px\-Current\-T\-C\-B}
+\item 
+volatile uint16\-\_\-t \hyperlink{IAR_2MSP430X_2port_8c_a72024c36cef5744b86e354381b5d3dcd}{us\-Critical\-Nesting} = \hyperlink{Rowley_2MSP430F449_2port_8c_ac9ed907cf162fb95081e68f847bc6e43}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{IAR_2MSP430X_2port_8c_ac539a316edadf394a897fb205ebee7ab}{\index{I\-A\-R/\-M\-S\-P430\-X/port.\-c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}!port\-A\-C\-L\-K\-\_\-\-F\-R\-E\-Q\-U\-E\-N\-C\-Y\-\_\-\-H\-Z@{port\-A\-C\-L\-K\-\_\-\-F\-R\-E\-Q\-U\-E\-N\-C\-Y\-\_\-\-H\-Z}}
+\index{port\-A\-C\-L\-K\-\_\-\-F\-R\-E\-Q\-U\-E\-N\-C\-Y\-\_\-\-H\-Z@{port\-A\-C\-L\-K\-\_\-\-F\-R\-E\-Q\-U\-E\-N\-C\-Y\-\_\-\-H\-Z}!IAR/MSP430X/port.c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}}
+\subsubsection[{port\-A\-C\-L\-K\-\_\-\-F\-R\-E\-Q\-U\-E\-N\-C\-Y\-\_\-\-H\-Z}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-A\-C\-L\-K\-\_\-\-F\-R\-E\-Q\-U\-E\-N\-C\-Y\-\_\-\-H\-Z~( ( {\bf Tick\-Type\-\_\-t} ) 32768 )}}\label{IAR_2MSP430X_2port_8c_ac539a316edadf394a897fb205ebee7ab}
+\hypertarget{IAR_2MSP430X_2port_8c_ad05c7a8ee45c5190627f9a49c95e7538}{\index{I\-A\-R/\-M\-S\-P430\-X/port.\-c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}!port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D@{port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D@{port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}!IAR/MSP430X/port.c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}}
+\subsubsection[{port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D~( ( {\bf Stack\-Type\-\_\-t} ) 0x08 )}}\label{IAR_2MSP430X_2port_8c_ad05c7a8ee45c5190627f9a49c95e7538}
+\hypertarget{IAR_2MSP430X_2port_8c_ac9ed907cf162fb95081e68f847bc6e43}{\index{I\-A\-R/\-M\-S\-P430\-X/port.\-c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}!port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}}
+\index{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}!IAR/MSP430X/port.c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}}
+\subsubsection[{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G~( ( uint16\-\_\-t ) 10 )}}\label{IAR_2MSP430X_2port_8c_ac9ed907cf162fb95081e68f847bc6e43}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{IAR_2MSP430X_2port_8c_af5b0f7452857787ed70ce2856ca74c4b}{\index{I\-A\-R/\-M\-S\-P430\-X/port.\-c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}!T\-C\-B\-\_\-t@{T\-C\-B\-\_\-t}}
+\index{T\-C\-B\-\_\-t@{T\-C\-B\-\_\-t}!IAR/MSP430X/port.c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}}
+\subsubsection[{T\-C\-B\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void} {\bf T\-C\-B\-\_\-t}}}\label{IAR_2MSP430X_2port_8c_af5b0f7452857787ed70ce2856ca74c4b}
+
+
+\subsection{Function Documentation}
+\hypertarget{IAR_2MSP430X_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{\index{I\-A\-R/\-M\-S\-P430\-X/port.\-c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}!px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}}
+\index{px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}!IAR/MSP430X/port.c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}}
+\subsubsection[{px\-Port\-Initialise\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stack\-Type\-\_\-t}$\ast$ px\-Port\-Initialise\-Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\-Type\-\_\-t} $\ast$}]{px\-Top\-Of\-Stack, }
+\item[{{\bf Task\-Function\-\_\-t}}]{px\-Code, }
+\item[{{\bf void} $\ast$}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)}}\label{IAR_2MSP430X_2port_8c_a474fbbb58ea661a1557f05adc41120c1}
+\hypertarget{IAR_2MSP430X_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{\index{I\-A\-R/\-M\-S\-P430\-X/port.\-c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}!v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}}
+\index{v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}!IAR/MSP430X/port.c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}}
+\subsubsection[{v\-Port\-End\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-End\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{IAR_2MSP430X_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}
+\hypertarget{IAR_2MSP430X_2port_8c_a4649001ea4d29b80759e6eca4bba58eb}{\index{I\-A\-R/\-M\-S\-P430\-X/port.\-c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}!v\-Port\-Setup\-Timer\-Interrupt@{v\-Port\-Setup\-Timer\-Interrupt}}
+\index{v\-Port\-Setup\-Timer\-Interrupt@{v\-Port\-Setup\-Timer\-Interrupt}!IAR/MSP430X/port.c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}}
+\subsubsection[{v\-Port\-Setup\-Timer\-Interrupt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Setup\-Timer\-Interrupt (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{IAR_2MSP430X_2port_8c_a4649001ea4d29b80759e6eca4bba58eb}
+\hypertarget{IAR_2MSP430X_2port_8c_a42999e5984ec18fad49f7718a898139e}{\index{I\-A\-R/\-M\-S\-P430\-X/port.\-c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}!v\-Tick\-I\-S\-R\-Entry@{v\-Tick\-I\-S\-R\-Entry}}
+\index{v\-Tick\-I\-S\-R\-Entry@{v\-Tick\-I\-S\-R\-Entry}!IAR/MSP430X/port.c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}}
+\subsubsection[{v\-Tick\-I\-S\-R\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-interrupt \-\_\-\-\_\-raw {\bf void} v\-Tick\-I\-S\-R\-Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{IAR_2MSP430X_2port_8c_a42999e5984ec18fad49f7718a898139e}
+
+
+\subsection{Variable Documentation}
+\hypertarget{IAR_2MSP430X_2port_8c_af7b1fc0a36e224b885fb22b9936a03a2}{\index{I\-A\-R/\-M\-S\-P430\-X/port.\-c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}!px\-Current\-T\-C\-B@{px\-Current\-T\-C\-B}}
+\index{px\-Current\-T\-C\-B@{px\-Current\-T\-C\-B}!IAR/MSP430X/port.c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}}
+\subsubsection[{px\-Current\-T\-C\-B}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf T\-C\-B\-\_\-t}$\ast$ volatile px\-Current\-T\-C\-B}}\label{IAR_2MSP430X_2port_8c_af7b1fc0a36e224b885fb22b9936a03a2}
+\hypertarget{IAR_2MSP430X_2port_8c_a72024c36cef5744b86e354381b5d3dcd}{\index{I\-A\-R/\-M\-S\-P430\-X/port.\-c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}!us\-Critical\-Nesting@{us\-Critical\-Nesting}}
+\index{us\-Critical\-Nesting@{us\-Critical\-Nesting}!IAR/MSP430X/port.c@{I\-A\-R/\-M\-S\-P430\-X/port.\-c}}
+\subsubsection[{us\-Critical\-Nesting}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint16\-\_\-t us\-Critical\-Nesting = {\bf port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}}}\label{IAR_2MSP430X_2port_8c_a72024c36cef5744b86e354381b5d3dcd}

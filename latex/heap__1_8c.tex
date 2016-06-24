@@ -1,0 +1,64 @@
+\hypertarget{heap__1_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Mem\-Mang/heap\-\_\-1.c File Reference}
+\label{heap__1_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Mem\-Mang/heap\-\_\-1.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Mem\-Mang/heap\-\_\-1.\-c}}
+}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{heap__1_8c_ab622d8c674f2a417a666a7ed89109e79}{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}
+\item 
+\#define \hyperlink{heap__1_8c_a3e68bebe7509a99550e1358cbca8e23f}{config\-A\-D\-J\-U\-S\-T\-E\-D\-\_\-\-H\-E\-A\-P\-\_\-\-S\-I\-Z\-E}~( \hyperlink{FreeRTOSConfig_8h_a9f213227674effff0122a75d94d87938}{config\-T\-O\-T\-A\-L\-\_\-\-H\-E\-A\-P\-\_\-\-S\-I\-Z\-E} -\/ \hyperlink{WizC_2PIC18_2portmacro_8h_ab9091ce3940d8bd93ec850122a2c6a1c}{port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T} )
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$ \hyperlink{heap__1_8c_a0379669d07d76cc81e3028123113b271}{pv\-Port\-Malloc} (size\-\_\-t x\-Wanted\-Size)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{heap__1_8c_a1e7cea2fd1bc894ea3b5f5e8179d259b}{v\-Port\-Free} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{heap__1_8c_a8bf103ce32ce8473574e9920af8b4eec}{v\-Port\-Initialise\-Blocks} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+size\-\_\-t \hyperlink{heap__1_8c_a0c28a12b313bc248be0cb7a37ed81bb7}{x\-Port\-Get\-Free\-Heap\-Size} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{heap__1_8c_a3e68bebe7509a99550e1358cbca8e23f}{\index{heap\-\_\-1.\-c@{heap\-\_\-1.\-c}!config\-A\-D\-J\-U\-S\-T\-E\-D\-\_\-\-H\-E\-A\-P\-\_\-\-S\-I\-Z\-E@{config\-A\-D\-J\-U\-S\-T\-E\-D\-\_\-\-H\-E\-A\-P\-\_\-\-S\-I\-Z\-E}}
+\index{config\-A\-D\-J\-U\-S\-T\-E\-D\-\_\-\-H\-E\-A\-P\-\_\-\-S\-I\-Z\-E@{config\-A\-D\-J\-U\-S\-T\-E\-D\-\_\-\-H\-E\-A\-P\-\_\-\-S\-I\-Z\-E}!heap_1.c@{heap\-\_\-1.\-c}}
+\subsubsection[{config\-A\-D\-J\-U\-S\-T\-E\-D\-\_\-\-H\-E\-A\-P\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-A\-D\-J\-U\-S\-T\-E\-D\-\_\-\-H\-E\-A\-P\-\_\-\-S\-I\-Z\-E~( {\bf config\-T\-O\-T\-A\-L\-\_\-\-H\-E\-A\-P\-\_\-\-S\-I\-Z\-E} -\/ {\bf port\-B\-Y\-T\-E\-\_\-\-A\-L\-I\-G\-N\-M\-E\-N\-T} )}}\label{heap__1_8c_a3e68bebe7509a99550e1358cbca8e23f}
+\hypertarget{heap__1_8c_ab622d8c674f2a417a666a7ed89109e79}{\index{heap\-\_\-1.\-c@{heap\-\_\-1.\-c}!M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E@{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}}
+\index{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E@{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}!heap_1.c@{heap\-\_\-1.\-c}}
+\subsubsection[{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}}\label{heap__1_8c_ab622d8c674f2a417a666a7ed89109e79}
+
+
+\subsection{Function Documentation}
+\hypertarget{heap__1_8c_a0379669d07d76cc81e3028123113b271}{\index{heap\-\_\-1.\-c@{heap\-\_\-1.\-c}!pv\-Port\-Malloc@{pv\-Port\-Malloc}}
+\index{pv\-Port\-Malloc@{pv\-Port\-Malloc}!heap_1.c@{heap\-\_\-1.\-c}}
+\subsubsection[{pv\-Port\-Malloc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void}$\ast$ pv\-Port\-Malloc (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{x\-Wanted\-Size}
+\end{DoxyParamCaption}
+)}}\label{heap__1_8c_a0379669d07d76cc81e3028123113b271}
+\hypertarget{heap__1_8c_a1e7cea2fd1bc894ea3b5f5e8179d259b}{\index{heap\-\_\-1.\-c@{heap\-\_\-1.\-c}!v\-Port\-Free@{v\-Port\-Free}}
+\index{v\-Port\-Free@{v\-Port\-Free}!heap_1.c@{heap\-\_\-1.\-c}}
+\subsubsection[{v\-Port\-Free}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Free (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{pv}
+\end{DoxyParamCaption}
+)}}\label{heap__1_8c_a1e7cea2fd1bc894ea3b5f5e8179d259b}
+\hypertarget{heap__1_8c_a8bf103ce32ce8473574e9920af8b4eec}{\index{heap\-\_\-1.\-c@{heap\-\_\-1.\-c}!v\-Port\-Initialise\-Blocks@{v\-Port\-Initialise\-Blocks}}
+\index{v\-Port\-Initialise\-Blocks@{v\-Port\-Initialise\-Blocks}!heap_1.c@{heap\-\_\-1.\-c}}
+\subsubsection[{v\-Port\-Initialise\-Blocks}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Initialise\-Blocks (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{heap__1_8c_a8bf103ce32ce8473574e9920af8b4eec}
+\hypertarget{heap__1_8c_a0c28a12b313bc248be0cb7a37ed81bb7}{\index{heap\-\_\-1.\-c@{heap\-\_\-1.\-c}!x\-Port\-Get\-Free\-Heap\-Size@{x\-Port\-Get\-Free\-Heap\-Size}}
+\index{x\-Port\-Get\-Free\-Heap\-Size@{x\-Port\-Get\-Free\-Heap\-Size}!heap_1.c@{heap\-\_\-1.\-c}}
+\subsubsection[{x\-Port\-Get\-Free\-Heap\-Size}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t x\-Port\-Get\-Free\-Heap\-Size (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{heap__1_8c_a0c28a12b313bc248be0cb7a37ed81bb7}

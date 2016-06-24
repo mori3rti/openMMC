@@ -1,0 +1,42 @@
+\hypertarget{ring__buffer_8c}{\section{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpcopen/src/ring\-\_\-buffer.c File Reference}
+\label{ring__buffer_8c}\index{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpcopen/src/ring\-\_\-buffer.\-c@{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpcopen/src/ring\-\_\-buffer.\-c}}
+}
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}ring\-\_\-buffer.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ring__buffer_8c_a49f3b0cdbb8ce653fbbec369f155af98}{R\-B\-\_\-\-I\-N\-D\-H}(rb)~((rb)-\/$>$head \& ((rb)-\/$>$count -\/ 1))
+\item 
+\#define \hyperlink{ring__buffer_8c_a6180e2a9bf03e7502dd85bd5929cd09d}{R\-B\-\_\-\-I\-N\-D\-T}(rb)~((rb)-\/$>$tail \& ((rb)-\/$>$count -\/ 1))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__Ring__Buffer_gaaf3bb51f2228ea1bea603e19c7eba5bb}{Ring\-Buffer\-\_\-\-Init} (\hyperlink{structRINGBUFF__T}{R\-I\-N\-G\-B\-U\-F\-F\-\_\-\-T} $\ast$Ring\-Buff, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$buffer, int item\-Size, int count)
+\begin{DoxyCompactList}\small\item\em Initialize ring buffer. \end{DoxyCompactList}\item 
+int \hyperlink{group__Ring__Buffer_gaafdee54f2525b2c7a983d1a631b42226}{Ring\-Buffer\-\_\-\-Insert} (\hyperlink{structRINGBUFF__T}{R\-I\-N\-G\-B\-U\-F\-F\-\_\-\-T} $\ast$Ring\-Buff, const \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$data)
+\begin{DoxyCompactList}\small\item\em Insert a single item into ring buffer. \end{DoxyCompactList}\item 
+int \hyperlink{group__Ring__Buffer_gafeafb521d4e03052ab2c893fd0e388d5}{Ring\-Buffer\-\_\-\-Insert\-Mult} (\hyperlink{structRINGBUFF__T}{R\-I\-N\-G\-B\-U\-F\-F\-\_\-\-T} $\ast$Ring\-Buff, const \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$data, int num)
+\begin{DoxyCompactList}\small\item\em Insert an array of items into ring buffer. \end{DoxyCompactList}\item 
+int \hyperlink{group__Ring__Buffer_gaf3ce7f43677c2b4c6eedb3cc4962b80d}{Ring\-Buffer\-\_\-\-Pop} (\hyperlink{structRINGBUFF__T}{R\-I\-N\-G\-B\-U\-F\-F\-\_\-\-T} $\ast$Ring\-Buff, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$data)
+\begin{DoxyCompactList}\small\item\em Pop an item from the ring buffer. \end{DoxyCompactList}\item 
+int \hyperlink{group__Ring__Buffer_gae0ef7bb96d1fe84ae1441b7c214b1e56}{Ring\-Buffer\-\_\-\-Pop\-Mult} (\hyperlink{structRINGBUFF__T}{R\-I\-N\-G\-B\-U\-F\-F\-\_\-\-T} $\ast$Ring\-Buff, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$data, int num)
+\begin{DoxyCompactList}\small\item\em Pop an array of items from the ring buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ring__buffer_8c_a49f3b0cdbb8ce653fbbec369f155af98}{\index{ring\-\_\-buffer.\-c@{ring\-\_\-buffer.\-c}!R\-B\-\_\-\-I\-N\-D\-H@{R\-B\-\_\-\-I\-N\-D\-H}}
+\index{R\-B\-\_\-\-I\-N\-D\-H@{R\-B\-\_\-\-I\-N\-D\-H}!ring_buffer.c@{ring\-\_\-buffer.\-c}}
+\subsubsection[{R\-B\-\_\-\-I\-N\-D\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-B\-\_\-\-I\-N\-D\-H(
+\begin{DoxyParamCaption}
+\item[{}]{rb}
+\end{DoxyParamCaption}
+)~((rb)-\/$>$head \& ((rb)-\/$>$count -\/ 1))}}\label{ring__buffer_8c_a49f3b0cdbb8ce653fbbec369f155af98}
+\hypertarget{ring__buffer_8c_a6180e2a9bf03e7502dd85bd5929cd09d}{\index{ring\-\_\-buffer.\-c@{ring\-\_\-buffer.\-c}!R\-B\-\_\-\-I\-N\-D\-T@{R\-B\-\_\-\-I\-N\-D\-T}}
+\index{R\-B\-\_\-\-I\-N\-D\-T@{R\-B\-\_\-\-I\-N\-D\-T}!ring_buffer.c@{ring\-\_\-buffer.\-c}}
+\subsubsection[{R\-B\-\_\-\-I\-N\-D\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-B\-\_\-\-I\-N\-D\-T(
+\begin{DoxyParamCaption}
+\item[{}]{rb}
+\end{DoxyParamCaption}
+)~((rb)-\/$>$tail \& ((rb)-\/$>$count -\/ 1))}}\label{ring__buffer_8c_a6180e2a9bf03e7502dd85bd5929cd09d}

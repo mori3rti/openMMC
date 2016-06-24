@@ -1,0 +1,534 @@
+\hypertarget{group__SYSCTL__17XX__40XX}{\section{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}
+\label{group__SYSCTL__17XX__40XX}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSYSCTL__PLL__REGS__T}{S\-Y\-S\-C\-T\-L\-\_\-\-P\-L\-L\-\_\-\-R\-E\-G\-S\-\_\-\-T}
+\begin{DoxyCompactList}\small\item\em L\-P\-C17\-X\-X/40\-X\-X Clock and Power P\-L\-L register block structure. \end{DoxyCompactList}\item 
+struct \hyperlink{structLPC__SYSCTL__T}{L\-P\-C\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-T}
+\begin{DoxyCompactList}\small\item\em L\-P\-C17\-X\-X/40\-X\-X Clock and Power register block structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__SYSCTL__17XX__40XX_gaeb159c3928c725d8e218dbb5426f99b8}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-P\-O\-R}~(1 $<$$<$ 0)
+\item 
+\#define \hyperlink{group__SYSCTL__17XX__40XX_ga7e481a088f2ff36fc65b77dbb25a749a}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-E\-X\-T\-R\-S\-T}~(1 $<$$<$ 1)
+\item 
+\#define \hyperlink{group__SYSCTL__17XX__40XX_ga84b4a0f567758052c1f4097d51aaa1ae}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-W\-D\-T}~(1 $<$$<$ 2)
+\item 
+\#define \hyperlink{group__SYSCTL__17XX__40XX_gab1441ee02763d5fa7073bcf026036784}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-B\-O\-D}~(1 $<$$<$ 3)
+\item 
+\#define \hyperlink{group__SYSCTL__17XX__40XX_gab8cdb571c0a7cd9485523882eb033f79}{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-S\-M\-F\-L\-A\-G}~(1 $<$$<$ 8)
+\item 
+\#define \hyperlink{group__SYSCTL__17XX__40XX_ga25e12d7c7721dd11b00c5a7a8ec51457}{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-D\-S\-F\-L\-A\-G}~(1 $<$$<$ 9)
+\item 
+\#define \hyperlink{group__SYSCTL__17XX__40XX_ga64388699b0fcd5317d80927e6c8a1db9}{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-P\-D\-F\-L\-A\-G}~(1 $<$$<$ 10)
+\item 
+\#define \hyperlink{group__SYSCTL__17XX__40XX_ga6b2596afa60ba5439b3bb53e88df3e62}{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-D\-P\-D\-F\-L\-A\-G}~(1 $<$$<$ 11)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \\*
+\hyperlink{group__SYSCTL__17XX__40XX_ga08779259bb52e97fa1491aa0047da2c6}{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-B\-O\-O\-T\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-M\-A\-P} \hyperlink{group__SYSCTL__17XX__40XX_gaacc03dffa90a522f3fc992e9940d196e}{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-B\-O\-O\-T\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-M\-A\-P\-\_\-\-T}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__SYSCTL__17XX__40XX_ga5f5478a201b021ed04a0724bff524c4b}{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-P\-L\-L\-\_\-\-T} \{ \hyperlink{group__SYSCTL__17XX__40XX_gga5f5478a201b021ed04a0724bff524c4bad3626cb96bb7a84a9bce324812044d21}{S\-Y\-S\-C\-T\-L\-\_\-\-M\-A\-I\-N\-\_\-\-P\-L\-L}, 
+\hyperlink{group__SYSCTL__17XX__40XX_gga5f5478a201b021ed04a0724bff524c4ba5ee38509163556b883664d7259c43dfd}{S\-Y\-S\-C\-T\-L\-\_\-\-U\-S\-B\-\_\-\-P\-L\-L}
+ \}
+\item 
+enum \hyperlink{group__SYSCTL__17XX__40XX_ga0779e088e3fa7b3a18e66fa0949da8a7}{F\-M\-C\-\_\-\-F\-L\-A\-S\-H\-T\-I\-M\-\_\-\-T} \{ \\*
+\hyperlink{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7aeb017487ff6fd051dfc885ba063415a3}{F\-L\-A\-S\-H\-T\-I\-M\-\_\-20\-M\-H\-Z\-\_\-\-C\-P\-U} = 0, 
+\hyperlink{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7a617391e132f72d731806d6af10863407}{F\-L\-A\-S\-H\-T\-I\-M\-\_\-40\-M\-H\-Z\-\_\-\-C\-P\-U} = 1, 
+\hyperlink{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7af482ee6a465905fd232ff2da7f993514}{F\-L\-A\-S\-H\-T\-I\-M\-\_\-60\-M\-H\-Z\-\_\-\-C\-P\-U} = 2, 
+\hyperlink{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7aff2c5410ad123adc43eb1a781f71ffe8}{F\-L\-A\-S\-H\-T\-I\-M\-\_\-80\-M\-H\-Z\-\_\-\-C\-P\-U} = 3, 
+\\*
+\hyperlink{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7af386ac4dceedf99032479736a40c7257}{F\-L\-A\-S\-H\-T\-I\-M\-\_\-100\-M\-H\-Z\-\_\-\-C\-P\-U} = 4, 
+\hyperlink{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7a747d8440c3924f3546bbb895b101e085}{F\-L\-A\-S\-H\-T\-I\-M\-\_\-120\-M\-H\-Z\-\_\-\-C\-P\-U} = 4, 
+\hyperlink{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7a769f5cbe41f1f487aeaf3ca300be86fb}{F\-L\-A\-S\-H\-T\-I\-M\-\_\-\-S\-A\-F\-E\-\_\-\-S\-E\-T\-T\-I\-N\-G} = 5
+ \}
+\begin{DoxyCompactList}\small\item\em F\-L\-A\-S\-H Access time definitions. \end{DoxyCompactList}\item 
+enum \hyperlink{group__SYSCTL__17XX__40XX_ga08779259bb52e97fa1491aa0047da2c6}{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-B\-O\-O\-T\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-M\-A\-P} \{ \hyperlink{group__SYSCTL__17XX__40XX_gga08779259bb52e97fa1491aa0047da2c6ac021b05380bf12e261025e5a86ae6fc4}{R\-E\-M\-A\-P\-\_\-\-B\-O\-O\-T\-\_\-\-L\-O\-A\-D\-E\-R\-\_\-\-M\-O\-D\-E}, 
+\hyperlink{group__SYSCTL__17XX__40XX_gga08779259bb52e97fa1491aa0047da2c6a959725d695548ba6fe27fdbc006623e7}{R\-E\-M\-A\-P\-\_\-\-U\-S\-E\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-M\-O\-D\-E}
+ \}
+\item 
+enum \hyperlink{group__SYSCTL__17XX__40XX_gaecf57441c240b2e654da2a7de6da0f7b}{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T} \{ \\*
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baed98debf56f4be417183448fbbff92d3}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-L\-C\-D}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba3646ac9d3dd373fd587f5281e86143be}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R0}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baa590b00b3c51dcd756e7b5951c1e525f}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R1}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba8441e64c743b5241188005595b21219e}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T0}, 
+\\*
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7bab41090743fac87a57b444896875ed959}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T1}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba4706614acb98dc27a0e5866c96c46c50}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-P\-W\-M0}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baea04ecce5d82d8226afb99da846deee9}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-P\-W\-M1}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba1bed6e5be953651c0ef47d8cf904a8e9}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-C0}, 
+\\*
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba6ceb03615f8d28db71bd2d6177b6c45f}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T4}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba48614c5d1c26d28c528b20318d42abef}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-R\-T\-C}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba0d28a7a6f404c1d165997390d26d7284}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-S\-P1}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baf1c841fe4b3099132d0e1b72ffd2e690}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-E\-M\-C}, 
+\\*
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba989c7156e441750fb330394490e6c320}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-A\-D\-C}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba4bc1982378a526a7ab1b9bab4513233e}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-A\-N1}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba16f62d8235af020ae6ea4b5288ff15b0}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-A\-N2}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba464cabe264192a35ca432b1dda796388}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-G\-P\-I\-O}, 
+\\*
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7bacb3f3b67771790e282117d4ad33fc19c}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-P\-I\-F\-I}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba10bd86a7a5e273255a5a75e20adcf350}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-M\-C\-P\-W\-M}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba02b1bb91432fffccb96b03f862d0e1d3}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-Q\-E\-I}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba170c46420669c6a9b188f2def4324677}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-C1}, 
+\\*
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba2d825fb70573fbc92821326b6a844930}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-S\-P2}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba68902860edbee49e9e481f92903693b4}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-S\-P0}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba4a424deff0df97116354dfeaf7d3df7b}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R2}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baa74a3061ccd70ed19f189d19793e1c07}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R3}, 
+\\*
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba7ae0f9c361aad8287f6e0108383d6d12}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T2}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba76f86efe400f2bf929dd41e25c6e72dd}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T3}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baed261cfe273b05189b77cf280896d699}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-C2}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7bab46bf1f20826387cc2d5e881e59aa08d}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-S}, 
+\\*
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba88dfb49974f2c29bdaa4a83c9e37d423}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-P\-C\-S\-D\-C}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba6b60e8e3c03464c2a32736186be4fec2}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-G\-P\-D\-M\-A}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baebefd16733d5531076972791fed8a248}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-E\-N\-E\-T}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba55a0845b870e64126a930a11856b51f7}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-S\-B}, 
+\\*
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba27c83420589d4ba328bff407f8181864}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I\-O\-C\-O\-N}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baa4850057330c9eedac61bb1b9b217404}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-D\-A\-C}, 
+\hyperlink{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba9095ea547e053380a83c10b3fdee5e47}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-A\-N\-A\-C\-C}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__SYSCTL__17XX__40XX_gacaea88993f709565eb0166779426b6d8}{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Set\-F\-L\-A\-S\-H\-Access} (\hyperlink{group__SYSCTL__17XX__40XX_ga0779e088e3fa7b3a18e66fa0949da8a7}{F\-M\-C\-\_\-\-F\-L\-A\-S\-H\-T\-I\-M\-\_\-\-T} clks)
+\begin{DoxyCompactList}\small\item\em Set F\-L\-A\-S\-H memory access time in clocks. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__SYSCTL__17XX__40XX_gab44b1cefe990081961a517994babfcbd}{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Map} (\hyperlink{group__SYSCTL__17XX__40XX_gaacc03dffa90a522f3fc992e9940d196e}{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-B\-O\-O\-T\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-M\-A\-P\-\_\-\-T} remap)
+\begin{DoxyCompactList}\small\item\em Re-\/map interrupt vectors. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} uint32\-\_\-t \hyperlink{group__SYSCTL__17XX__40XX_gadd10c121cb32ddc55dd62e13de780c59}{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Get\-System\-R\-S\-T\-Status} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\begin{DoxyCompactList}\small\item\em Get system reset status. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__SYSCTL__17XX__40XX_ga565050aac84c3cfa86874d42630d7eb8}{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Clear\-System\-R\-S\-T\-Status} (uint32\-\_\-t reset)
+\begin{DoxyCompactList}\small\item\em Clear system reset status. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__SYSCTL__17XX__40XX_ga68a4fd386020cb12d47b03f95903b9f1}{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\begin{DoxyCompactList}\small\item\em Enable brown-\/out detection. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__SYSCTL__17XX__40XX_ga20468997a597d6fcae205472c22a949c}{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\begin{DoxyCompactList}\small\item\em Disable brown-\/out detection. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__SYSCTL__17XX__40XX_ga4b04d78cf397ffd3980b2f4ded6a055d}{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D\-Reset} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\begin{DoxyCompactList}\small\item\em Enable brown-\/out detection reset. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__SYSCTL__17XX__40XX_gaee6f6a45b42962728419d15328427564}{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D\-Reset} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\begin{DoxyCompactList}\small\item\em Disable brown-\/out detection reset. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__SYSCTL__17XX__40XX_ga6fa1a6e737b1ac612ee778894303a270}{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D\-R\-P\-M} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\begin{DoxyCompactList}\small\item\em Enable brown-\/out detection reduced power mode. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__SYSCTL__17XX__40XX_ga758135a9cf9c949acbee97291eb447bf}{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D\-R\-P\-M} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\begin{DoxyCompactList}\small\item\em Disable brown-\/out detection reduced power mode. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group__SYSCTL__17XX__40XX_gab80482c3d12f51ef87131497cb67a326}{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Get\-Clr\-Sleep\-Flags} (uint32\-\_\-t flags)
+\begin{DoxyCompactList}\small\item\em Returns and clears the current sleep mode entry flags. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__SYSCTL__17XX__40XX_gaaf987cc6cf1398ae226aaebb975a6372}{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-Boost} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\begin{DoxyCompactList}\small\item\em Enable power boost for clock operation over 100\-M\-Hz. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__SYSCTL__17XX__40XX_ga3c49515056cbc9af430e33f9d8401487}{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-Boost} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\begin{DoxyCompactList}\small\item\em Disable power boost for clock operation under 100\-M\-Hz. \end{DoxyCompactList}\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__SYSCTL__17XX__40XX_ga94ee3796eba43742e11809eacb88269b}{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Periph\-Reset} (\hyperlink{group__SYSCTL__17XX__40XX_gaecf57441c240b2e654da2a7de6da0f7b}{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T} periph)
+\begin{DoxyCompactList}\small\item\em Resets a peripheral. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group__SYSCTL__17XX__40XX_ga6b2596afa60ba5439b3bb53e88df3e62}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-D\-P\-D\-F\-L\-A\-G@{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-D\-P\-D\-F\-L\-A\-G}}
+\index{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-D\-P\-D\-F\-L\-A\-G@{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-D\-P\-D\-F\-L\-A\-G}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-D\-P\-D\-F\-L\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-D\-P\-D\-F\-L\-A\-G~(1 $<$$<$ 11)}}\label{group__SYSCTL__17XX__40XX_ga6b2596afa60ba5439b3bb53e88df3e62}
+Deep Power-\/down entry flag \hypertarget{group__SYSCTL__17XX__40XX_ga25e12d7c7721dd11b00c5a7a8ec51457}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-D\-S\-F\-L\-A\-G@{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-D\-S\-F\-L\-A\-G}}
+\index{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-D\-S\-F\-L\-A\-G@{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-D\-S\-F\-L\-A\-G}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-D\-S\-F\-L\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-D\-S\-F\-L\-A\-G~(1 $<$$<$ 9)}}\label{group__SYSCTL__17XX__40XX_ga25e12d7c7721dd11b00c5a7a8ec51457}
+Deep Sleep entry flag \hypertarget{group__SYSCTL__17XX__40XX_ga64388699b0fcd5317d80927e6c8a1db9}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-P\-D\-F\-L\-A\-G@{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-P\-D\-F\-L\-A\-G}}
+\index{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-P\-D\-F\-L\-A\-G@{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-P\-D\-F\-L\-A\-G}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-P\-D\-F\-L\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-P\-D\-F\-L\-A\-G~(1 $<$$<$ 10)}}\label{group__SYSCTL__17XX__40XX_ga64388699b0fcd5317d80927e6c8a1db9}
+Power-\/down entry flag \hypertarget{group__SYSCTL__17XX__40XX_gab8cdb571c0a7cd9485523882eb033f79}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-S\-M\-F\-L\-A\-G@{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-S\-M\-F\-L\-A\-G}}
+\index{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-S\-M\-F\-L\-A\-G@{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-S\-M\-F\-L\-A\-G}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-S\-M\-F\-L\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-\-S\-M\-F\-L\-A\-G~(1 $<$$<$ 8)}}\label{group__SYSCTL__17XX__40XX_gab8cdb571c0a7cd9485523882eb033f79}
+Sleep Mode entry flag \hypertarget{group__SYSCTL__17XX__40XX_gab1441ee02763d5fa7073bcf026036784}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-B\-O\-D@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-B\-O\-D}}
+\index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-B\-O\-D@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-B\-O\-D}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-B\-O\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-B\-O\-D~(1 $<$$<$ 3)}}\label{group__SYSCTL__17XX__40XX_gab1441ee02763d5fa7073bcf026036784}
+Brown-\/out detect reset status \hypertarget{group__SYSCTL__17XX__40XX_ga7e481a088f2ff36fc65b77dbb25a749a}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-E\-X\-T\-R\-S\-T@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-E\-X\-T\-R\-S\-T}}
+\index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-E\-X\-T\-R\-S\-T@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-E\-X\-T\-R\-S\-T}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-E\-X\-T\-R\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-E\-X\-T\-R\-S\-T~(1 $<$$<$ 1)}}\label{group__SYSCTL__17XX__40XX_ga7e481a088f2ff36fc65b77dbb25a749a}
+External reset status \hypertarget{group__SYSCTL__17XX__40XX_gaeb159c3928c725d8e218dbb5426f99b8}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-P\-O\-R@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-P\-O\-R}}
+\index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-P\-O\-R@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-P\-O\-R}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-P\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-P\-O\-R~(1 $<$$<$ 0)}}\label{group__SYSCTL__17XX__40XX_gaeb159c3928c725d8e218dbb5426f99b8}
+System reset status\-P\-O\-R reset status \hypertarget{group__SYSCTL__17XX__40XX_ga84b4a0f567758052c1f4097d51aaa1ae}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-W\-D\-T@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-W\-D\-T}}
+\index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-W\-D\-T@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-W\-D\-T}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-W\-D\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-\-W\-D\-T~(1 $<$$<$ 2)}}\label{group__SYSCTL__17XX__40XX_ga84b4a0f567758052c1f4097d51aaa1ae}
+Watchdog reset status 
+
+\subsection{Typedef Documentation}
+\hypertarget{group__SYSCTL__17XX__40XX_gaacc03dffa90a522f3fc992e9940d196e}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-B\-O\-O\-T\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-M\-A\-P\-\_\-\-T@{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-B\-O\-O\-T\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-M\-A\-P\-\_\-\-T}}
+\index{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-B\-O\-O\-T\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-M\-A\-P\-\_\-\-T@{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-B\-O\-O\-T\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-M\-A\-P\-\_\-\-T}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-B\-O\-O\-T\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-M\-A\-P\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-B\-O\-O\-T\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-M\-A\-P}  {\bf C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-B\-O\-O\-T\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-M\-A\-P\-\_\-\-T}}}\label{group__SYSCTL__17XX__40XX_gaacc03dffa90a522f3fc992e9940d196e}
+System memory remap modes used to remap interrupt vectors 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{group__SYSCTL__17XX__40XX_ga08779259bb52e97fa1491aa0047da2c6}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-B\-O\-O\-T\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-M\-A\-P@{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-B\-O\-O\-T\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-M\-A\-P}}
+\index{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-B\-O\-O\-T\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-M\-A\-P@{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-B\-O\-O\-T\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-M\-A\-P}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-B\-O\-O\-T\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-M\-A\-P}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-B\-O\-O\-T\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-M\-A\-P}}}\label{group__SYSCTL__17XX__40XX_ga08779259bb52e97fa1491aa0047da2c6}
+System memory remap modes used to remap interrupt vectors \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{R\-E\-M\-A\-P\-\_\-\-B\-O\-O\-T\-\_\-\-L\-O\-A\-D\-E\-R\-\_\-\-M\-O\-D\-E@{R\-E\-M\-A\-P\-\_\-\-B\-O\-O\-T\-\_\-\-L\-O\-A\-D\-E\-R\-\_\-\-M\-O\-D\-E}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!R\-E\-M\-A\-P\-\_\-\-B\-O\-O\-T\-\_\-\-L\-O\-A\-D\-E\-R\-\_\-\-M\-O\-D\-E@{R\-E\-M\-A\-P\-\_\-\-B\-O\-O\-T\-\_\-\-L\-O\-A\-D\-E\-R\-\_\-\-M\-O\-D\-E}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_gga08779259bb52e97fa1491aa0047da2c6ac021b05380bf12e261025e5a86ae6fc4}{R\-E\-M\-A\-P\-\_\-\-B\-O\-O\-T\-\_\-\-L\-O\-A\-D\-E\-R\-\_\-\-M\-O\-D\-E}\label{group__SYSCTL__17XX__40XX_gga08779259bb52e97fa1491aa0047da2c6ac021b05380bf12e261025e5a86ae6fc4}
+}]Interrupt vectors are re-\/mapped to Boot R\-O\-M \index{R\-E\-M\-A\-P\-\_\-\-U\-S\-E\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-M\-O\-D\-E@{R\-E\-M\-A\-P\-\_\-\-U\-S\-E\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-M\-O\-D\-E}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!R\-E\-M\-A\-P\-\_\-\-U\-S\-E\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-M\-O\-D\-E@{R\-E\-M\-A\-P\-\_\-\-U\-S\-E\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-M\-O\-D\-E}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_gga08779259bb52e97fa1491aa0047da2c6a959725d695548ba6fe27fdbc006623e7}{R\-E\-M\-A\-P\-\_\-\-U\-S\-E\-R\-\_\-\-F\-L\-A\-S\-H\-\_\-\-M\-O\-D\-E}\label{group__SYSCTL__17XX__40XX_gga08779259bb52e97fa1491aa0047da2c6a959725d695548ba6fe27fdbc006623e7}
+}]Interrupt vectors are not re-\/mapped and reside in Flash \end{description}
+\end{Desc}
+\hypertarget{group__SYSCTL__17XX__40XX_ga5f5478a201b021ed04a0724bff524c4b}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-P\-L\-L\-\_\-\-T@{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-P\-L\-L\-\_\-\-T}}
+\index{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-P\-L\-L\-\_\-\-T@{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-P\-L\-L\-\_\-\-T}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-P\-L\-L\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-P\-L\-L\-\_\-\-T}}}\label{group__SYSCTL__17XX__40XX_ga5f5478a201b021ed04a0724bff524c4b}
+Selectable P\-L\-Ls \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\-Y\-S\-C\-T\-L\-\_\-\-M\-A\-I\-N\-\_\-\-P\-L\-L@{S\-Y\-S\-C\-T\-L\-\_\-\-M\-A\-I\-N\-\_\-\-P\-L\-L}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-M\-A\-I\-N\-\_\-\-P\-L\-L@{S\-Y\-S\-C\-T\-L\-\_\-\-M\-A\-I\-N\-\_\-\-P\-L\-L}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_gga5f5478a201b021ed04a0724bff524c4bad3626cb96bb7a84a9bce324812044d21}{S\-Y\-S\-C\-T\-L\-\_\-\-M\-A\-I\-N\-\_\-\-P\-L\-L}\label{group__SYSCTL__17XX__40XX_gga5f5478a201b021ed04a0724bff524c4bad3626cb96bb7a84a9bce324812044d21}
+}]Main P\-L\-L (P\-L\-L0) \index{S\-Y\-S\-C\-T\-L\-\_\-\-U\-S\-B\-\_\-\-P\-L\-L@{S\-Y\-S\-C\-T\-L\-\_\-\-U\-S\-B\-\_\-\-P\-L\-L}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-U\-S\-B\-\_\-\-P\-L\-L@{S\-Y\-S\-C\-T\-L\-\_\-\-U\-S\-B\-\_\-\-P\-L\-L}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_gga5f5478a201b021ed04a0724bff524c4ba5ee38509163556b883664d7259c43dfd}{S\-Y\-S\-C\-T\-L\-\_\-\-U\-S\-B\-\_\-\-P\-L\-L}\label{group__SYSCTL__17XX__40XX_gga5f5478a201b021ed04a0724bff524c4ba5ee38509163556b883664d7259c43dfd}
+}]U\-S\-B P\-L\-L (P\-L\-L1) \end{description}
+\end{Desc}
+\hypertarget{group__SYSCTL__17XX__40XX_gaecf57441c240b2e654da2a7de6da0f7b}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T@{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T}}
+\index{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T@{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T}}}\label{group__SYSCTL__17XX__40XX_gaecf57441c240b2e654da2a7de6da0f7b}
+Peripheral reset numbers This is a list of peripherals that can be reset \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-L\-C\-D@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-L\-C\-D}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-L\-C\-D@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-L\-C\-D}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baed98debf56f4be417183448fbbff92d3}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-L\-C\-D}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baed98debf56f4be417183448fbbff92d3}
+}]L\-C\-D reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R0@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R0}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R0@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R0}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba3646ac9d3dd373fd587f5281e86143be}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R0}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba3646ac9d3dd373fd587f5281e86143be}
+}]Timer 0 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R1@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R1}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R1@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R1}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baa590b00b3c51dcd756e7b5951c1e525f}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R1}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baa590b00b3c51dcd756e7b5951c1e525f}
+}]Timer 1 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T0@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T0}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T0@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T0}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba8441e64c743b5241188005595b21219e}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T0}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba8441e64c743b5241188005595b21219e}
+}]U\-A\-R\-T 0 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T1@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T1}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T1@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T1}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7bab41090743fac87a57b444896875ed959}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T1}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7bab41090743fac87a57b444896875ed959}
+}]U\-A\-R\-T 1 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-P\-W\-M0@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-P\-W\-M0}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-P\-W\-M0@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-P\-W\-M0}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba4706614acb98dc27a0e5866c96c46c50}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-P\-W\-M0}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba4706614acb98dc27a0e5866c96c46c50}
+}]P\-W\-M0 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-P\-W\-M1@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-P\-W\-M1}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-P\-W\-M1@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-P\-W\-M1}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baea04ecce5d82d8226afb99da846deee9}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-P\-W\-M1}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baea04ecce5d82d8226afb99da846deee9}
+}]P\-W\-M1 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-C0@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-C0}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-C0@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-C0}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba1bed6e5be953651c0ef47d8cf904a8e9}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-C0}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba1bed6e5be953651c0ef47d8cf904a8e9}
+}]I2\-C0 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T4@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T4}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T4@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T4}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba6ceb03615f8d28db71bd2d6177b6c45f}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T4}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba6ceb03615f8d28db71bd2d6177b6c45f}
+}]U\-A\-R\-T 4 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-R\-T\-C@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-R\-T\-C}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-R\-T\-C@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-R\-T\-C}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba48614c5d1c26d28c528b20318d42abef}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-R\-T\-C}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba48614c5d1c26d28c528b20318d42abef}
+}]R\-T\-C reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-S\-P1@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-S\-P1}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-S\-P1@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-S\-P1}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba0d28a7a6f404c1d165997390d26d7284}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-S\-P1}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba0d28a7a6f404c1d165997390d26d7284}
+}]S\-S\-P1 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-E\-M\-C@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-E\-M\-C}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-E\-M\-C@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-E\-M\-C}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baf1c841fe4b3099132d0e1b72ffd2e690}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-E\-M\-C}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baf1c841fe4b3099132d0e1b72ffd2e690}
+}]E\-M\-C reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-A\-D\-C@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-A\-D\-C}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-A\-D\-C@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-A\-D\-C}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba989c7156e441750fb330394490e6c320}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-A\-D\-C}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba989c7156e441750fb330394490e6c320}
+}]A\-D\-C reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-A\-N1@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-A\-N1}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-A\-N1@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-A\-N1}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba4bc1982378a526a7ab1b9bab4513233e}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-A\-N1}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba4bc1982378a526a7ab1b9bab4513233e}
+}]C\-A\-N1 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-A\-N2@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-A\-N2}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-A\-N2@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-A\-N2}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba16f62d8235af020ae6ea4b5288ff15b0}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-A\-N2}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba16f62d8235af020ae6ea4b5288ff15b0}
+}]C\-A\-N2 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-G\-P\-I\-O@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-G\-P\-I\-O}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-G\-P\-I\-O@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-G\-P\-I\-O}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba464cabe264192a35ca432b1dda796388}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-G\-P\-I\-O}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba464cabe264192a35ca432b1dda796388}
+}]G\-P\-I\-O reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-P\-I\-F\-I@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-P\-I\-F\-I}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-P\-I\-F\-I@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-P\-I\-F\-I}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7bacb3f3b67771790e282117d4ad33fc19c}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-P\-I\-F\-I}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7bacb3f3b67771790e282117d4ad33fc19c}
+}]S\-P\-I\-F\-I reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-M\-C\-P\-W\-M@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-M\-C\-P\-W\-M}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-M\-C\-P\-W\-M@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-M\-C\-P\-W\-M}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba10bd86a7a5e273255a5a75e20adcf350}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-M\-C\-P\-W\-M}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba10bd86a7a5e273255a5a75e20adcf350}
+}]M\-C\-P\-W\-M reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-Q\-E\-I@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-Q\-E\-I}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-Q\-E\-I@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-Q\-E\-I}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba02b1bb91432fffccb96b03f862d0e1d3}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-Q\-E\-I}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba02b1bb91432fffccb96b03f862d0e1d3}
+}]Q\-E\-I reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-C1@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-C1}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-C1@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-C1}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba170c46420669c6a9b188f2def4324677}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-C1}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba170c46420669c6a9b188f2def4324677}
+}]I2\-C1 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-S\-P2@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-S\-P2}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-S\-P2@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-S\-P2}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba2d825fb70573fbc92821326b6a844930}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-S\-P2}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba2d825fb70573fbc92821326b6a844930}
+}]S\-S\-P2 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-S\-P0@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-S\-P0}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-S\-P0@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-S\-P0}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba68902860edbee49e9e481f92903693b4}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-S\-S\-P0}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba68902860edbee49e9e481f92903693b4}
+}]S\-S\-P0 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R2@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R2}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R2@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R2}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba4a424deff0df97116354dfeaf7d3df7b}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R2}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba4a424deff0df97116354dfeaf7d3df7b}
+}]Timer 2 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R3@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R3}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R3@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R3}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baa74a3061ccd70ed19f189d19793e1c07}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T\-I\-M\-E\-R3}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baa74a3061ccd70ed19f189d19793e1c07}
+}]Timer 3 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T2@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T2}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T2@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T2}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba7ae0f9c361aad8287f6e0108383d6d12}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T2}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba7ae0f9c361aad8287f6e0108383d6d12}
+}]U\-A\-R\-T 2 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T3@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T3}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T3@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T3}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba76f86efe400f2bf929dd41e25c6e72dd}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-A\-R\-T3}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba76f86efe400f2bf929dd41e25c6e72dd}
+}]U\-A\-R\-T 3 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-C2@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-C2}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-C2@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-C2}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baed261cfe273b05189b77cf280896d699}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-C2}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baed261cfe273b05189b77cf280896d699}
+}]I2\-C2 reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-S@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-S}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-S@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-S}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7bab46bf1f20826387cc2d5e881e59aa08d}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I2\-S}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7bab46bf1f20826387cc2d5e881e59aa08d}
+}]I2\-S reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-P\-C\-S\-D\-C@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-P\-C\-S\-D\-C}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-P\-C\-S\-D\-C@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-P\-C\-S\-D\-C}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba88dfb49974f2c29bdaa4a83c9e37d423}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-P\-C\-S\-D\-C}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba88dfb49974f2c29bdaa4a83c9e37d423}
+}]S\-D Card interface reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-G\-P\-D\-M\-A@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-G\-P\-D\-M\-A}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-G\-P\-D\-M\-A@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-G\-P\-D\-M\-A}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba6b60e8e3c03464c2a32736186be4fec2}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-G\-P\-D\-M\-A}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba6b60e8e3c03464c2a32736186be4fec2}
+}]G\-P D\-M\-A reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-E\-N\-E\-T@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-E\-N\-E\-T}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-E\-N\-E\-T@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-E\-N\-E\-T}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baebefd16733d5531076972791fed8a248}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-E\-N\-E\-T}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baebefd16733d5531076972791fed8a248}
+}]E\-M\-A\-C/\-Ethernet reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-S\-B@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-S\-B}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-S\-B@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-S\-B}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba55a0845b870e64126a930a11856b51f7}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-U\-S\-B}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba55a0845b870e64126a930a11856b51f7}
+}]U\-S\-B reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I\-O\-C\-O\-N@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I\-O\-C\-O\-N}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I\-O\-C\-O\-N@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I\-O\-C\-O\-N}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba27c83420589d4ba328bff407f8181864}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-I\-O\-C\-O\-N}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba27c83420589d4ba328bff407f8181864}
+}]I\-O\-C\-O\-N reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-D\-A\-C@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-D\-A\-C}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-D\-A\-C@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-D\-A\-C}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baa4850057330c9eedac61bb1b9b217404}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-D\-A\-C}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7baa4850057330c9eedac61bb1b9b217404}
+}]D\-A\-C reset \index{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-A\-N\-A\-C\-C@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-A\-N\-A\-C\-C}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-A\-N\-A\-C\-C@{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-A\-N\-A\-C\-C}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba9095ea547e053380a83c10b3fdee5e47}{S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-C\-A\-N\-A\-C\-C}\label{group__SYSCTL__17XX__40XX_ggaecf57441c240b2e654da2a7de6da0f7ba9095ea547e053380a83c10b3fdee5e47}
+}]C\-A\-N acceptance filter reset \end{description}
+\end{Desc}
+\hypertarget{group__SYSCTL__17XX__40XX_ga0779e088e3fa7b3a18e66fa0949da8a7}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!F\-M\-C\-\_\-\-F\-L\-A\-S\-H\-T\-I\-M\-\_\-\-T@{F\-M\-C\-\_\-\-F\-L\-A\-S\-H\-T\-I\-M\-\_\-\-T}}
+\index{F\-M\-C\-\_\-\-F\-L\-A\-S\-H\-T\-I\-M\-\_\-\-T@{F\-M\-C\-\_\-\-F\-L\-A\-S\-H\-T\-I\-M\-\_\-\-T}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{F\-M\-C\-\_\-\-F\-L\-A\-S\-H\-T\-I\-M\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf F\-M\-C\-\_\-\-F\-L\-A\-S\-H\-T\-I\-M\-\_\-\-T}}}\label{group__SYSCTL__17XX__40XX_ga0779e088e3fa7b3a18e66fa0949da8a7}
+
+
+F\-L\-A\-S\-H Access time definitions. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{F\-L\-A\-S\-H\-T\-I\-M\-\_\-20\-M\-H\-Z\-\_\-\-C\-P\-U@{F\-L\-A\-S\-H\-T\-I\-M\-\_\-20\-M\-H\-Z\-\_\-\-C\-P\-U}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!F\-L\-A\-S\-H\-T\-I\-M\-\_\-20\-M\-H\-Z\-\_\-\-C\-P\-U@{F\-L\-A\-S\-H\-T\-I\-M\-\_\-20\-M\-H\-Z\-\_\-\-C\-P\-U}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7aeb017487ff6fd051dfc885ba063415a3}{F\-L\-A\-S\-H\-T\-I\-M\-\_\-20\-M\-H\-Z\-\_\-\-C\-P\-U}\label{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7aeb017487ff6fd051dfc885ba063415a3}
+}]Flash accesses use 1 C\-P\-U clocks. Use for up to 20 M\-Hz C\-P\-U clock \index{F\-L\-A\-S\-H\-T\-I\-M\-\_\-40\-M\-H\-Z\-\_\-\-C\-P\-U@{F\-L\-A\-S\-H\-T\-I\-M\-\_\-40\-M\-H\-Z\-\_\-\-C\-P\-U}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!F\-L\-A\-S\-H\-T\-I\-M\-\_\-40\-M\-H\-Z\-\_\-\-C\-P\-U@{F\-L\-A\-S\-H\-T\-I\-M\-\_\-40\-M\-H\-Z\-\_\-\-C\-P\-U}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7a617391e132f72d731806d6af10863407}{F\-L\-A\-S\-H\-T\-I\-M\-\_\-40\-M\-H\-Z\-\_\-\-C\-P\-U}\label{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7a617391e132f72d731806d6af10863407}
+}]Flash accesses use 2 C\-P\-U clocks. Use for up to 40 M\-Hz C\-P\-U clock \index{F\-L\-A\-S\-H\-T\-I\-M\-\_\-60\-M\-H\-Z\-\_\-\-C\-P\-U@{F\-L\-A\-S\-H\-T\-I\-M\-\_\-60\-M\-H\-Z\-\_\-\-C\-P\-U}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!F\-L\-A\-S\-H\-T\-I\-M\-\_\-60\-M\-H\-Z\-\_\-\-C\-P\-U@{F\-L\-A\-S\-H\-T\-I\-M\-\_\-60\-M\-H\-Z\-\_\-\-C\-P\-U}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7af482ee6a465905fd232ff2da7f993514}{F\-L\-A\-S\-H\-T\-I\-M\-\_\-60\-M\-H\-Z\-\_\-\-C\-P\-U}\label{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7af482ee6a465905fd232ff2da7f993514}
+}]Flash accesses use 3 C\-P\-U clocks. Use for up to 60 M\-Hz C\-P\-U clock \index{F\-L\-A\-S\-H\-T\-I\-M\-\_\-80\-M\-H\-Z\-\_\-\-C\-P\-U@{F\-L\-A\-S\-H\-T\-I\-M\-\_\-80\-M\-H\-Z\-\_\-\-C\-P\-U}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!F\-L\-A\-S\-H\-T\-I\-M\-\_\-80\-M\-H\-Z\-\_\-\-C\-P\-U@{F\-L\-A\-S\-H\-T\-I\-M\-\_\-80\-M\-H\-Z\-\_\-\-C\-P\-U}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7aff2c5410ad123adc43eb1a781f71ffe8}{F\-L\-A\-S\-H\-T\-I\-M\-\_\-80\-M\-H\-Z\-\_\-\-C\-P\-U}\label{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7aff2c5410ad123adc43eb1a781f71ffe8}
+}]Flash accesses use 4 C\-P\-U clocks. Use for up to 80 M\-Hz C\-P\-U clock \index{F\-L\-A\-S\-H\-T\-I\-M\-\_\-100\-M\-H\-Z\-\_\-\-C\-P\-U@{F\-L\-A\-S\-H\-T\-I\-M\-\_\-100\-M\-H\-Z\-\_\-\-C\-P\-U}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!F\-L\-A\-S\-H\-T\-I\-M\-\_\-100\-M\-H\-Z\-\_\-\-C\-P\-U@{F\-L\-A\-S\-H\-T\-I\-M\-\_\-100\-M\-H\-Z\-\_\-\-C\-P\-U}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7af386ac4dceedf99032479736a40c7257}{F\-L\-A\-S\-H\-T\-I\-M\-\_\-100\-M\-H\-Z\-\_\-\-C\-P\-U}\label{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7af386ac4dceedf99032479736a40c7257}
+}]Flash accesses use 5 C\-P\-U clocks. Use for up to 100 M\-Hz C\-P\-U clock \index{F\-L\-A\-S\-H\-T\-I\-M\-\_\-120\-M\-H\-Z\-\_\-\-C\-P\-U@{F\-L\-A\-S\-H\-T\-I\-M\-\_\-120\-M\-H\-Z\-\_\-\-C\-P\-U}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!F\-L\-A\-S\-H\-T\-I\-M\-\_\-120\-M\-H\-Z\-\_\-\-C\-P\-U@{F\-L\-A\-S\-H\-T\-I\-M\-\_\-120\-M\-H\-Z\-\_\-\-C\-P\-U}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7a747d8440c3924f3546bbb895b101e085}{F\-L\-A\-S\-H\-T\-I\-M\-\_\-120\-M\-H\-Z\-\_\-\-C\-P\-U}\label{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7a747d8440c3924f3546bbb895b101e085}
+}]Flash accesses use 5 C\-P\-U clocks. Use for up to 120 Mhz for L\-P\-C1759 and L\-P\-C1769 only. \index{F\-L\-A\-S\-H\-T\-I\-M\-\_\-\-S\-A\-F\-E\-\_\-\-S\-E\-T\-T\-I\-N\-G@{F\-L\-A\-S\-H\-T\-I\-M\-\_\-\-S\-A\-F\-E\-\_\-\-S\-E\-T\-T\-I\-N\-G}!C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!F\-L\-A\-S\-H\-T\-I\-M\-\_\-\-S\-A\-F\-E\-\_\-\-S\-E\-T\-T\-I\-N\-G@{F\-L\-A\-S\-H\-T\-I\-M\-\_\-\-S\-A\-F\-E\-\_\-\-S\-E\-T\-T\-I\-N\-G}}\item[{\em 
+\hypertarget{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7a769f5cbe41f1f487aeaf3ca300be86fb}{F\-L\-A\-S\-H\-T\-I\-M\-\_\-\-S\-A\-F\-E\-\_\-\-S\-E\-T\-T\-I\-N\-G}\label{group__SYSCTL__17XX__40XX_gga0779e088e3fa7b3a18e66fa0949da8a7a769f5cbe41f1f487aeaf3ca300be86fb}
+}]Flash accesses use 6 C\-P\-U clocks. Safe setting for any allowed conditions \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__SYSCTL__17XX__40XX_ga565050aac84c3cfa86874d42630d7eb8}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Clear\-System\-R\-S\-T\-Status@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Clear\-System\-R\-S\-T\-Status}}
+\index{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Clear\-System\-R\-S\-T\-Status@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Clear\-System\-R\-S\-T\-Status}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Clear\-System\-R\-S\-T\-Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} {\bf void} Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Clear\-System\-R\-S\-T\-Status (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{reset}
+\end{DoxyParamCaption}
+)}}\label{group__SYSCTL__17XX__40XX_ga565050aac84c3cfa86874d42630d7eb8}
+
+
+Clear system reset status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reset} & \-: An Or'ed value of S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-$\ast$ status to clear \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\hypertarget{group__SYSCTL__17XX__40XX_ga20468997a597d6fcae205472c22a949c}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D}}
+\index{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} {\bf void} Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{group__SYSCTL__17XX__40XX_ga20468997a597d6fcae205472c22a949c}
+
+
+Disable brown-\/out detection. 
+
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\hypertarget{group__SYSCTL__17XX__40XX_gaee6f6a45b42962728419d15328427564}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D\-Reset@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D\-Reset}}
+\index{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D\-Reset@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D\-Reset}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D\-Reset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} {\bf void} Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D\-Reset (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{group__SYSCTL__17XX__40XX_gaee6f6a45b42962728419d15328427564}
+
+
+Disable brown-\/out detection reset. 
+
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\hypertarget{group__SYSCTL__17XX__40XX_ga758135a9cf9c949acbee97291eb447bf}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D\-R\-P\-M@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D\-R\-P\-M}}
+\index{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D\-R\-P\-M@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D\-R\-P\-M}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D\-R\-P\-M}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} {\bf void} Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-B\-O\-D\-R\-P\-M (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{group__SYSCTL__17XX__40XX_ga758135a9cf9c949acbee97291eb447bf}
+
+
+Disable brown-\/out detection reduced power mode. 
+
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\hypertarget{group__SYSCTL__17XX__40XX_ga3c49515056cbc9af430e33f9d8401487}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-Boost@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-Boost}}
+\index{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-Boost@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-Boost}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-Boost}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} {\bf void} Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Disable\-Boost (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{group__SYSCTL__17XX__40XX_ga3c49515056cbc9af430e33f9d8401487}
+
+
+Disable power boost for clock operation under 100\-M\-Hz. 
+
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\hypertarget{group__SYSCTL__17XX__40XX_ga68a4fd386020cb12d47b03f95903b9f1}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D}}
+\index{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} {\bf void} Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{group__SYSCTL__17XX__40XX_ga68a4fd386020cb12d47b03f95903b9f1}
+
+
+Enable brown-\/out detection. 
+
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\hypertarget{group__SYSCTL__17XX__40XX_ga4b04d78cf397ffd3980b2f4ded6a055d}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D\-Reset@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D\-Reset}}
+\index{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D\-Reset@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D\-Reset}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D\-Reset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} {\bf void} Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D\-Reset (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{group__SYSCTL__17XX__40XX_ga4b04d78cf397ffd3980b2f4ded6a055d}
+
+
+Enable brown-\/out detection reset. 
+
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\hypertarget{group__SYSCTL__17XX__40XX_ga6fa1a6e737b1ac612ee778894303a270}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D\-R\-P\-M@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D\-R\-P\-M}}
+\index{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D\-R\-P\-M@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D\-R\-P\-M}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D\-R\-P\-M}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} {\bf void} Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-B\-O\-D\-R\-P\-M (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{group__SYSCTL__17XX__40XX_ga6fa1a6e737b1ac612ee778894303a270}
+
+
+Enable brown-\/out detection reduced power mode. 
+
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\hypertarget{group__SYSCTL__17XX__40XX_gaaf987cc6cf1398ae226aaebb975a6372}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-Boost@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-Boost}}
+\index{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-Boost@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-Boost}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-Boost}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} {\bf void} Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Enable\-Boost (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{group__SYSCTL__17XX__40XX_gaaf987cc6cf1398ae226aaebb975a6372}
+
+
+Enable power boost for clock operation over 100\-M\-Hz. 
+
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\hypertarget{group__SYSCTL__17XX__40XX_gab80482c3d12f51ef87131497cb67a326}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Get\-Clr\-Sleep\-Flags@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Get\-Clr\-Sleep\-Flags}}
+\index{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Get\-Clr\-Sleep\-Flags@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Get\-Clr\-Sleep\-Flags}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Get\-Clr\-Sleep\-Flags}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Get\-Clr\-Sleep\-Flags (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{flags}
+\end{DoxyParamCaption}
+)}}\label{group__SYSCTL__17XX__40XX_gab80482c3d12f51ef87131497cb67a326}
+
+
+Returns and clears the current sleep mode entry flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & One or more flags to clear, S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An Or'ed value of the sleep flags, S\-Y\-S\-C\-T\-L\-\_\-\-P\-D\-\_\-$\ast$ 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+These flags indicate the successful entry of one or more sleep modes. 
+\end{DoxyNote}
+\hypertarget{group__SYSCTL__17XX__40XX_gadd10c121cb32ddc55dd62e13de780c59}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Get\-System\-R\-S\-T\-Status@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Get\-System\-R\-S\-T\-Status}}
+\index{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Get\-System\-R\-S\-T\-Status@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Get\-System\-R\-S\-T\-Status}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Get\-System\-R\-S\-T\-Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} uint32\-\_\-t Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Get\-System\-R\-S\-T\-Status (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{group__SYSCTL__17XX__40XX_gadd10c121cb32ddc55dd62e13de780c59}
+
+
+Get system reset status. 
+
+\begin{DoxyReturn}{Returns}
+An Or'ed value of S\-Y\-S\-C\-T\-L\-\_\-\-R\-S\-T\-\_\-$\ast$ 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function returns the detected reset source(s). 
+\end{DoxyNote}
+\hypertarget{group__SYSCTL__17XX__40XX_gab44b1cefe990081961a517994babfcbd}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Map@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Map}}
+\index{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Map@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Map}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} {\bf void} Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Map (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-B\-O\-O\-T\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-M\-A\-P\-\_\-\-T}}]{remap}
+\end{DoxyParamCaption}
+)}}\label{group__SYSCTL__17XX__40XX_gab44b1cefe990081961a517994babfcbd}
+
+
+Re-\/map interrupt vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em remap} & \-: system memory map value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\hypertarget{group__SYSCTL__17XX__40XX_ga94ee3796eba43742e11809eacb88269b}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Periph\-Reset@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Periph\-Reset}}
+\index{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Periph\-Reset@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Periph\-Reset}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Periph\-Reset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Periph\-Reset (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-R\-E\-S\-E\-T\-\_\-\-T}}]{periph}
+\end{DoxyParamCaption}
+)}}\label{group__SYSCTL__17XX__40XX_ga94ee3796eba43742e11809eacb88269b}
+
+
+Resets a peripheral. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em periph} & Peripheral to reset \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\hypertarget{group__SYSCTL__17XX__40XX_gacaea88993f709565eb0166779426b6d8}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}!Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Set\-F\-L\-A\-S\-H\-Access@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Set\-F\-L\-A\-S\-H\-Access}}
+\index{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Set\-F\-L\-A\-S\-H\-Access@{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Set\-F\-L\-A\-S\-H\-Access}!CHIP: LPC17xx/40xx System Control block driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx System Control block driver}}
+\subsubsection[{Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Set\-F\-L\-A\-S\-H\-Access}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} {\bf void} Chip\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-Set\-F\-L\-A\-S\-H\-Access (
+\begin{DoxyParamCaption}
+\item[{{\bf F\-M\-C\-\_\-\-F\-L\-A\-S\-H\-T\-I\-M\-\_\-\-T}}]{clks}
+\end{DoxyParamCaption}
+)}}\label{group__SYSCTL__17XX__40XX_gacaea88993f709565eb0166779426b6d8}
+
+
+Set F\-L\-A\-S\-H memory access time in clocks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clks} & \-: Clock cycles for F\-L\-A\-S\-H access (minus 1) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+See the user manual for valid settings for this register for when power boot is enabled or off. 
+\end{DoxyNote}

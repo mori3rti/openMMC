@@ -1,0 +1,158 @@
+\hypertarget{event__groups_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/event\-\_\-groups.c File Reference}
+\label{event__groups_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/event\-\_\-groups.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/event\-\_\-groups.\-c}}
+}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}timers.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}event\-\_\-groups.\-h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structxEventGroupDefinition}{x\-Event\-Group\-Definition}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{event__groups_8c_ab622d8c674f2a417a666a7ed89109e79}{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}
+\item 
+\#define \hyperlink{event__groups_8c_a1404686af7c8070fa57675707c817abc}{event\-C\-L\-E\-A\-R\-\_\-\-E\-V\-E\-N\-T\-S\-\_\-\-O\-N\-\_\-\-E\-X\-I\-T\-\_\-\-B\-I\-T}~0x01000000\-U\-L
+\item 
+\#define \hyperlink{event__groups_8c_ab451d5ad95813d5ec7ff1784d69e9ec3}{event\-U\-N\-B\-L\-O\-C\-K\-E\-D\-\_\-\-D\-U\-E\-\_\-\-T\-O\-\_\-\-B\-I\-T\-\_\-\-S\-E\-T}~0x02000000\-U\-L
+\item 
+\#define \hyperlink{event__groups_8c_ae98d5f1271845ad42742aef9659e1568}{event\-W\-A\-I\-T\-\_\-\-F\-O\-R\-\_\-\-A\-L\-L\-\_\-\-B\-I\-T\-S}~0x04000000\-U\-L
+\item 
+\#define \hyperlink{event__groups_8c_a46c8292a6ba88b017cca402f5baf670b}{event\-E\-V\-E\-N\-T\-\_\-\-B\-I\-T\-S\-\_\-\-C\-O\-N\-T\-R\-O\-L\-\_\-\-B\-Y\-T\-E\-S}~0xff000000\-U\-L
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \\*
+\hyperlink{structxEventGroupDefinition}{x\-Event\-Group\-Definition} \hyperlink{event__groups_8c_a52ebd73f8020418f71e63c2f3934f999}{Event\-Group\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} \hyperlink{event__groups_8c_ac38db316f0928c7ddaacb677a75dbc03}{x\-Event\-Group\-Sync} (\hyperlink{event__groups_8h_a5119294106541c4eca46e8742fdb4e85}{Event\-Group\-Handle\-\_\-t} x\-Event\-Group, const \hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} ux\-Bits\-To\-Set, const \hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} ux\-Bits\-To\-Wait\-For, \hyperlink{Flsh186_2prtmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t} x\-Ticks\-To\-Wait)
+\item 
+\hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} \hyperlink{event__groups_8c_a379c5cca4552d3d8acd4c51e8220a6c3}{x\-Event\-Group\-Wait\-Bits} (\hyperlink{event__groups_8h_a5119294106541c4eca46e8742fdb4e85}{Event\-Group\-Handle\-\_\-t} x\-Event\-Group, const \hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} ux\-Bits\-To\-Wait\-For, const \hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} x\-Clear\-On\-Exit, const \hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} x\-Wait\-For\-All\-Bits, \hyperlink{Flsh186_2prtmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t} x\-Ticks\-To\-Wait)
+\item 
+\hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} \hyperlink{event__groups_8c_a71dd2680fdfbdde7d6b10db203e266ba}{x\-Event\-Group\-Clear\-Bits} (\hyperlink{event__groups_8h_a5119294106541c4eca46e8742fdb4e85}{Event\-Group\-Handle\-\_\-t} x\-Event\-Group, const \hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} ux\-Bits\-To\-Clear)
+\item 
+\hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} \hyperlink{event__groups_8c_adcb3d3f7dded9fa372bb1ee405c36b8d}{x\-Event\-Group\-Get\-Bits\-From\-I\-S\-R} (\hyperlink{event__groups_8h_a5119294106541c4eca46e8742fdb4e85}{Event\-Group\-Handle\-\_\-t} x\-Event\-Group)
+\item 
+\hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} \hyperlink{event__groups_8c_a9ac7cd970f50e2e50a494b656e0eb239}{x\-Event\-Group\-Set\-Bits} (\hyperlink{event__groups_8h_a5119294106541c4eca46e8742fdb4e85}{Event\-Group\-Handle\-\_\-t} x\-Event\-Group, const \hyperlink{event__groups_8h_ab2f21b93db0b2a0ab64d7a81ff32ac2e}{Event\-Bits\-\_\-t} ux\-Bits\-To\-Set)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{event__groups_8c_a6939faca89fc4ba52fa8288527042464}{v\-Event\-Group\-Delete} (\hyperlink{event__groups_8h_a5119294106541c4eca46e8742fdb4e85}{Event\-Group\-Handle\-\_\-t} x\-Event\-Group)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{event__groups_8c_a54db6cc97bbb926aa4b78d5affc257d9}{v\-Event\-Group\-Set\-Bits\-Callback} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Event\-Group, const uint32\-\_\-t ul\-Bits\-To\-Set)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{event__groups_8c_a3bce459038e87064109c8462b1174c29}{v\-Event\-Group\-Clear\-Bits\-Callback} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Event\-Group, const uint32\-\_\-t ul\-Bits\-To\-Clear)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{event__groups_8c_a1404686af7c8070fa57675707c817abc}{\index{event\-\_\-groups.\-c@{event\-\_\-groups.\-c}!event\-C\-L\-E\-A\-R\-\_\-\-E\-V\-E\-N\-T\-S\-\_\-\-O\-N\-\_\-\-E\-X\-I\-T\-\_\-\-B\-I\-T@{event\-C\-L\-E\-A\-R\-\_\-\-E\-V\-E\-N\-T\-S\-\_\-\-O\-N\-\_\-\-E\-X\-I\-T\-\_\-\-B\-I\-T}}
+\index{event\-C\-L\-E\-A\-R\-\_\-\-E\-V\-E\-N\-T\-S\-\_\-\-O\-N\-\_\-\-E\-X\-I\-T\-\_\-\-B\-I\-T@{event\-C\-L\-E\-A\-R\-\_\-\-E\-V\-E\-N\-T\-S\-\_\-\-O\-N\-\_\-\-E\-X\-I\-T\-\_\-\-B\-I\-T}!event_groups.c@{event\-\_\-groups.\-c}}
+\subsubsection[{event\-C\-L\-E\-A\-R\-\_\-\-E\-V\-E\-N\-T\-S\-\_\-\-O\-N\-\_\-\-E\-X\-I\-T\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define event\-C\-L\-E\-A\-R\-\_\-\-E\-V\-E\-N\-T\-S\-\_\-\-O\-N\-\_\-\-E\-X\-I\-T\-\_\-\-B\-I\-T~0x01000000\-U\-L}}\label{event__groups_8c_a1404686af7c8070fa57675707c817abc}
+\hypertarget{event__groups_8c_a46c8292a6ba88b017cca402f5baf670b}{\index{event\-\_\-groups.\-c@{event\-\_\-groups.\-c}!event\-E\-V\-E\-N\-T\-\_\-\-B\-I\-T\-S\-\_\-\-C\-O\-N\-T\-R\-O\-L\-\_\-\-B\-Y\-T\-E\-S@{event\-E\-V\-E\-N\-T\-\_\-\-B\-I\-T\-S\-\_\-\-C\-O\-N\-T\-R\-O\-L\-\_\-\-B\-Y\-T\-E\-S}}
+\index{event\-E\-V\-E\-N\-T\-\_\-\-B\-I\-T\-S\-\_\-\-C\-O\-N\-T\-R\-O\-L\-\_\-\-B\-Y\-T\-E\-S@{event\-E\-V\-E\-N\-T\-\_\-\-B\-I\-T\-S\-\_\-\-C\-O\-N\-T\-R\-O\-L\-\_\-\-B\-Y\-T\-E\-S}!event_groups.c@{event\-\_\-groups.\-c}}
+\subsubsection[{event\-E\-V\-E\-N\-T\-\_\-\-B\-I\-T\-S\-\_\-\-C\-O\-N\-T\-R\-O\-L\-\_\-\-B\-Y\-T\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define event\-E\-V\-E\-N\-T\-\_\-\-B\-I\-T\-S\-\_\-\-C\-O\-N\-T\-R\-O\-L\-\_\-\-B\-Y\-T\-E\-S~0xff000000\-U\-L}}\label{event__groups_8c_a46c8292a6ba88b017cca402f5baf670b}
+\hypertarget{event__groups_8c_ab451d5ad95813d5ec7ff1784d69e9ec3}{\index{event\-\_\-groups.\-c@{event\-\_\-groups.\-c}!event\-U\-N\-B\-L\-O\-C\-K\-E\-D\-\_\-\-D\-U\-E\-\_\-\-T\-O\-\_\-\-B\-I\-T\-\_\-\-S\-E\-T@{event\-U\-N\-B\-L\-O\-C\-K\-E\-D\-\_\-\-D\-U\-E\-\_\-\-T\-O\-\_\-\-B\-I\-T\-\_\-\-S\-E\-T}}
+\index{event\-U\-N\-B\-L\-O\-C\-K\-E\-D\-\_\-\-D\-U\-E\-\_\-\-T\-O\-\_\-\-B\-I\-T\-\_\-\-S\-E\-T@{event\-U\-N\-B\-L\-O\-C\-K\-E\-D\-\_\-\-D\-U\-E\-\_\-\-T\-O\-\_\-\-B\-I\-T\-\_\-\-S\-E\-T}!event_groups.c@{event\-\_\-groups.\-c}}
+\subsubsection[{event\-U\-N\-B\-L\-O\-C\-K\-E\-D\-\_\-\-D\-U\-E\-\_\-\-T\-O\-\_\-\-B\-I\-T\-\_\-\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define event\-U\-N\-B\-L\-O\-C\-K\-E\-D\-\_\-\-D\-U\-E\-\_\-\-T\-O\-\_\-\-B\-I\-T\-\_\-\-S\-E\-T~0x02000000\-U\-L}}\label{event__groups_8c_ab451d5ad95813d5ec7ff1784d69e9ec3}
+\hypertarget{event__groups_8c_ae98d5f1271845ad42742aef9659e1568}{\index{event\-\_\-groups.\-c@{event\-\_\-groups.\-c}!event\-W\-A\-I\-T\-\_\-\-F\-O\-R\-\_\-\-A\-L\-L\-\_\-\-B\-I\-T\-S@{event\-W\-A\-I\-T\-\_\-\-F\-O\-R\-\_\-\-A\-L\-L\-\_\-\-B\-I\-T\-S}}
+\index{event\-W\-A\-I\-T\-\_\-\-F\-O\-R\-\_\-\-A\-L\-L\-\_\-\-B\-I\-T\-S@{event\-W\-A\-I\-T\-\_\-\-F\-O\-R\-\_\-\-A\-L\-L\-\_\-\-B\-I\-T\-S}!event_groups.c@{event\-\_\-groups.\-c}}
+\subsubsection[{event\-W\-A\-I\-T\-\_\-\-F\-O\-R\-\_\-\-A\-L\-L\-\_\-\-B\-I\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define event\-W\-A\-I\-T\-\_\-\-F\-O\-R\-\_\-\-A\-L\-L\-\_\-\-B\-I\-T\-S~0x04000000\-U\-L}}\label{event__groups_8c_ae98d5f1271845ad42742aef9659e1568}
+\hypertarget{event__groups_8c_ab622d8c674f2a417a666a7ed89109e79}{\index{event\-\_\-groups.\-c@{event\-\_\-groups.\-c}!M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E@{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}}
+\index{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E@{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}!event_groups.c@{event\-\_\-groups.\-c}}
+\subsubsection[{M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-P\-U\-\_\-\-W\-R\-A\-P\-P\-E\-R\-S\-\_\-\-I\-N\-C\-L\-U\-D\-E\-D\-\_\-\-F\-R\-O\-M\-\_\-\-A\-P\-I\-\_\-\-F\-I\-L\-E}}\label{event__groups_8c_ab622d8c674f2a417a666a7ed89109e79}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{event__groups_8c_a52ebd73f8020418f71e63c2f3934f999}{\index{event\-\_\-groups.\-c@{event\-\_\-groups.\-c}!Event\-Group\-\_\-t@{Event\-Group\-\_\-t}}
+\index{Event\-Group\-\_\-t@{Event\-Group\-\_\-t}!event_groups.c@{event\-\_\-groups.\-c}}
+\subsubsection[{Event\-Group\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf x\-Event\-Group\-Definition}  {\bf Event\-Group\-\_\-t}}}\label{event__groups_8c_a52ebd73f8020418f71e63c2f3934f999}
+
+
+\subsection{Function Documentation}
+\hypertarget{event__groups_8c_a3bce459038e87064109c8462b1174c29}{\index{event\-\_\-groups.\-c@{event\-\_\-groups.\-c}!v\-Event\-Group\-Clear\-Bits\-Callback@{v\-Event\-Group\-Clear\-Bits\-Callback}}
+\index{v\-Event\-Group\-Clear\-Bits\-Callback@{v\-Event\-Group\-Clear\-Bits\-Callback}!event_groups.c@{event\-\_\-groups.\-c}}
+\subsubsection[{v\-Event\-Group\-Clear\-Bits\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Event\-Group\-Clear\-Bits\-Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{pv\-Event\-Group, }
+\item[{const uint32\-\_\-t}]{ul\-Bits\-To\-Clear}
+\end{DoxyParamCaption}
+)}}\label{event__groups_8c_a3bce459038e87064109c8462b1174c29}
+\hypertarget{event__groups_8c_a6939faca89fc4ba52fa8288527042464}{\index{event\-\_\-groups.\-c@{event\-\_\-groups.\-c}!v\-Event\-Group\-Delete@{v\-Event\-Group\-Delete}}
+\index{v\-Event\-Group\-Delete@{v\-Event\-Group\-Delete}!event_groups.c@{event\-\_\-groups.\-c}}
+\subsubsection[{v\-Event\-Group\-Delete}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Event\-Group\-Delete (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\-Group\-Handle\-\_\-t}}]{x\-Event\-Group}
+\end{DoxyParamCaption}
+)}}\label{event__groups_8c_a6939faca89fc4ba52fa8288527042464}
+\hyperlink{event__groups_8h}{event\-\_\-groups.\-h} 
+\begin{DoxyPre}
+   void xEventGroupDelete( EventGroupHandle\_t xEventGroup );
+\end{DoxyPre}
+
+
+Delete an event group that was previously created by a call to x\-Event\-Group\-Create(). Tasks that are blocked on the event group will be unblocked and obtain 0 as the event group's value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\-Event\-Group} & The event group being deleted. \\
+\hline
+\end{DoxyParams}
+\hypertarget{event__groups_8c_a54db6cc97bbb926aa4b78d5affc257d9}{\index{event\-\_\-groups.\-c@{event\-\_\-groups.\-c}!v\-Event\-Group\-Set\-Bits\-Callback@{v\-Event\-Group\-Set\-Bits\-Callback}}
+\index{v\-Event\-Group\-Set\-Bits\-Callback@{v\-Event\-Group\-Set\-Bits\-Callback}!event_groups.c@{event\-\_\-groups.\-c}}
+\subsubsection[{v\-Event\-Group\-Set\-Bits\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Event\-Group\-Set\-Bits\-Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{pv\-Event\-Group, }
+\item[{const uint32\-\_\-t}]{ul\-Bits\-To\-Set}
+\end{DoxyParamCaption}
+)}}\label{event__groups_8c_a54db6cc97bbb926aa4b78d5affc257d9}
+\hypertarget{event__groups_8c_a71dd2680fdfbdde7d6b10db203e266ba}{\index{event\-\_\-groups.\-c@{event\-\_\-groups.\-c}!x\-Event\-Group\-Clear\-Bits@{x\-Event\-Group\-Clear\-Bits}}
+\index{x\-Event\-Group\-Clear\-Bits@{x\-Event\-Group\-Clear\-Bits}!event_groups.c@{event\-\_\-groups.\-c}}
+\subsubsection[{x\-Event\-Group\-Clear\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event\-Bits\-\_\-t} x\-Event\-Group\-Clear\-Bits (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\-Group\-Handle\-\_\-t}}]{x\-Event\-Group, }
+\item[{const {\bf Event\-Bits\-\_\-t}}]{ux\-Bits\-To\-Clear}
+\end{DoxyParamCaption}
+)}}\label{event__groups_8c_a71dd2680fdfbdde7d6b10db203e266ba}
+\hypertarget{event__groups_8c_adcb3d3f7dded9fa372bb1ee405c36b8d}{\index{event\-\_\-groups.\-c@{event\-\_\-groups.\-c}!x\-Event\-Group\-Get\-Bits\-From\-I\-S\-R@{x\-Event\-Group\-Get\-Bits\-From\-I\-S\-R}}
+\index{x\-Event\-Group\-Get\-Bits\-From\-I\-S\-R@{x\-Event\-Group\-Get\-Bits\-From\-I\-S\-R}!event_groups.c@{event\-\_\-groups.\-c}}
+\subsubsection[{x\-Event\-Group\-Get\-Bits\-From\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event\-Bits\-\_\-t} x\-Event\-Group\-Get\-Bits\-From\-I\-S\-R (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\-Group\-Handle\-\_\-t}}]{x\-Event\-Group}
+\end{DoxyParamCaption}
+)}}\label{event__groups_8c_adcb3d3f7dded9fa372bb1ee405c36b8d}
+\hypertarget{event__groups_8c_a9ac7cd970f50e2e50a494b656e0eb239}{\index{event\-\_\-groups.\-c@{event\-\_\-groups.\-c}!x\-Event\-Group\-Set\-Bits@{x\-Event\-Group\-Set\-Bits}}
+\index{x\-Event\-Group\-Set\-Bits@{x\-Event\-Group\-Set\-Bits}!event_groups.c@{event\-\_\-groups.\-c}}
+\subsubsection[{x\-Event\-Group\-Set\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event\-Bits\-\_\-t} x\-Event\-Group\-Set\-Bits (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\-Group\-Handle\-\_\-t}}]{x\-Event\-Group, }
+\item[{const {\bf Event\-Bits\-\_\-t}}]{ux\-Bits\-To\-Set}
+\end{DoxyParamCaption}
+)}}\label{event__groups_8c_a9ac7cd970f50e2e50a494b656e0eb239}
+\hypertarget{event__groups_8c_ac38db316f0928c7ddaacb677a75dbc03}{\index{event\-\_\-groups.\-c@{event\-\_\-groups.\-c}!x\-Event\-Group\-Sync@{x\-Event\-Group\-Sync}}
+\index{x\-Event\-Group\-Sync@{x\-Event\-Group\-Sync}!event_groups.c@{event\-\_\-groups.\-c}}
+\subsubsection[{x\-Event\-Group\-Sync}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event\-Bits\-\_\-t} x\-Event\-Group\-Sync (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\-Group\-Handle\-\_\-t}}]{x\-Event\-Group, }
+\item[{const {\bf Event\-Bits\-\_\-t}}]{ux\-Bits\-To\-Set, }
+\item[{const {\bf Event\-Bits\-\_\-t}}]{ux\-Bits\-To\-Wait\-For, }
+\item[{{\bf Tick\-Type\-\_\-t}}]{x\-Ticks\-To\-Wait}
+\end{DoxyParamCaption}
+)}}\label{event__groups_8c_ac38db316f0928c7ddaacb677a75dbc03}
+\hypertarget{event__groups_8c_a379c5cca4552d3d8acd4c51e8220a6c3}{\index{event\-\_\-groups.\-c@{event\-\_\-groups.\-c}!x\-Event\-Group\-Wait\-Bits@{x\-Event\-Group\-Wait\-Bits}}
+\index{x\-Event\-Group\-Wait\-Bits@{x\-Event\-Group\-Wait\-Bits}!event_groups.c@{event\-\_\-groups.\-c}}
+\subsubsection[{x\-Event\-Group\-Wait\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event\-Bits\-\_\-t} x\-Event\-Group\-Wait\-Bits (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\-Group\-Handle\-\_\-t}}]{x\-Event\-Group, }
+\item[{const {\bf Event\-Bits\-\_\-t}}]{ux\-Bits\-To\-Wait\-For, }
+\item[{const {\bf Base\-Type\-\_\-t}}]{x\-Clear\-On\-Exit, }
+\item[{const {\bf Base\-Type\-\_\-t}}]{x\-Wait\-For\-All\-Bits, }
+\item[{{\bf Tick\-Type\-\_\-t}}]{x\-Ticks\-To\-Wait}
+\end{DoxyParamCaption}
+)}}\label{event__groups_8c_a379c5cca4552d3d8acd4c51e8220a6c3}

@@ -1,0 +1,396 @@
+\hypertarget{group__IOCON__17XX__40XX}{\section{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}
+\label{group__IOCON__17XX__40XX}\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structPINMUX__GRP__T}{P\-I\-N\-M\-U\-X\-\_\-\-G\-R\-P\-\_\-\-T}
+\begin{DoxyCompactList}\small\item\em Array of I\-O\-C\-O\-N pin definitions passed to \hyperlink{group__IOCON__17XX__40XX_gad97c96e401016cf296e6d20454f1c522}{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Set\-Pin\-Muxing()} must be in this format. \end{DoxyCompactList}\item 
+struct \hyperlink{structLPC__IOCON__T}{L\-P\-C\-\_\-\-I\-O\-C\-O\-N\-\_\-\-T}
+\begin{DoxyCompactList}\small\item\em I\-O\-C\-O\-N register block. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gab08f72eae45dd5656aeca24c346c8626}{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C0}~0x0
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gab6449233bd56957c684b9ad694606e3a}{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C1}~0x1
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga43ebb7abf055ce2491fbba5ef72f6fc7}{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C2}~0x2
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gace4708e511b3aa9c352600604331bec0}{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C3}~0x3
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gac621b96a2bd1ee57a83ff1af98287a8d}{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C4}~0x4
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga0f9630599f40a3f96a5887c7e65508a9}{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C5}~0x5
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga6284e27c6e5df6bc9f37c482e736a1d3}{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C6}~0x6
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga38efe875290e90d2f4185cb0ffe33e03}{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C7}~0x7
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gafc593aafe607c88c52864ecb7586ffe9}{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-I\-N\-A\-C\-T}~(0x0 $<$$<$ 3)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga270261df49234519bfd09e076dfcec6c}{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-P\-U\-L\-L\-D\-O\-W\-N}~(0x1 $<$$<$ 3)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gad8fe947d8e7076d6cec01a5b30261141}{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-P\-U\-L\-L\-U\-P}~(0x2 $<$$<$ 3)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga53d705841cc362c6f43ffc1370d71726}{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-P\-E\-A\-T\-E\-R}~(0x3 $<$$<$ 3)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gafb7c408ac1f52b7b7e46fde3061fe0b7}{I\-O\-C\-O\-N\-\_\-\-H\-Y\-S\-\_\-\-E\-N}~(0x1 $<$$<$ 5)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gae1fd1faa316f6c3108b499928f8c9922}{I\-O\-C\-O\-N\-\_\-\-I\-N\-V\-\_\-\-E\-N}~(0x1 $<$$<$ 6)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga9a3d4f3e281c382f795b9a769073d4e4}{I\-O\-C\-O\-N\-\_\-\-A\-D\-M\-O\-D\-E\-\_\-\-E\-N}~(0x0 $<$$<$ 7)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga516e9d9bc7b1f3aaefd9d09c6ece74d2}{I\-O\-C\-O\-N\-\_\-\-D\-I\-G\-M\-O\-D\-E\-\_\-\-E\-N}~(0x1 $<$$<$ 7)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gabebfb8b8646d151bfee9615c75724119}{I\-O\-C\-O\-N\-\_\-\-F\-I\-L\-T\-\_\-\-D\-I\-S}~(0x1 $<$$<$ 8)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gab2c8963063faa2ee583ad54750b842fa}{I\-O\-C\-O\-N\-\_\-\-H\-S\-\_\-\-D\-I\-S}~(0x1 $<$$<$ 8)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gadaa6e6eca0d7d555f4f0816aa83dc8f3}{I\-O\-C\-O\-N\-\_\-\-H\-I\-D\-R\-I\-V\-E\-\_\-\-E\-N}~(0x1 $<$$<$ 9)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga478aa0f55e07c89035e36378b2c3780b}{I\-O\-C\-O\-N\-\_\-\-F\-A\-S\-T\-S\-L\-E\-W\-\_\-\-E\-N}~(0x1 $<$$<$ 9)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga226b54f672e61a7a2d2893d9ef8cbc9c}{I\-O\-C\-O\-N\-\_\-\-O\-P\-E\-N\-D\-R\-A\-I\-N\-\_\-\-E\-N}~(0x1 $<$$<$ 10)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gabb788549592ca772def19f2a8060aa3d}{I\-O\-C\-O\-N\-\_\-\-D\-A\-C\-\_\-\-E\-N}~(0x1 $<$$<$ 16)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gaa3ba064ba85ae0da9c55e7cdb8ea09b3}{F\-U\-N\-C0}~0x0				/$\ast$$\ast$ Function 0  $\ast$/
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga3f9b8eb1b4789fef1da73f4eb041ddfc}{F\-U\-N\-C1}~0x1				/$\ast$$\ast$ Function 1  $\ast$/
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga0e8023a25dd46655b8eda5b0476ba169}{F\-U\-N\-C2}~0x2				/$\ast$$\ast$ Function 2	$\ast$/
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gadeea02cdf0e8b64c27b6fad4d2b3b2b5}{F\-U\-N\-C3}~0x3				/$\ast$$\ast$ Function 3	$\ast$/
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gab1595b71147925d9e1b54402d5dd6f9c}{M\-D\-\_\-\-P\-L\-N}~(0x0 $<$$<$ 3)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga27ec0d2ed4901e435240b5e5d68211e7}{M\-D\-\_\-\-P\-D\-N}~(0x1 $<$$<$ 3)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga71356d77e0a6639fec743a8e73f24892}{M\-D\-\_\-\-P\-U\-P}~(0x2 $<$$<$ 3)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gaf637c444b0cbcd50aeaa4c4e34fbbd91}{M\-D\-\_\-\-B\-U\-K}~(0x3 $<$$<$ 3)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gab6a440afbad506dec9b0227f3c82fd73}{M\-D\-\_\-\-H\-Y\-S\-\_\-\-E\-N\-A}~(0x1 $<$$<$ 5)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga7c49147e8696b77ebf4bea2d90474a7f}{M\-D\-\_\-\-H\-Y\-S\-\_\-\-D\-I\-S}~(0x0 $<$$<$ 5)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gaeecb9c3d257aaea0fff788e1cdd538bb}{M\-D\-\_\-\-I\-I\-N\-V\-\_\-\-E\-N\-A}~(0x1 $<$$<$ 6)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga3f1345e7ffe3eed8bb0c4b9e456b0df9}{M\-D\-\_\-\-I\-I\-N\-V\-\_\-\-D\-I\-S}~(0x0 $<$$<$ 6)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga83e1ce8c76aac6481562dd26b059ae61}{M\-D\-\_\-\-O\-D\-\_\-\-E\-N\-A}~(0x1 $<$$<$ 10)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga1b2a7926f85c2e7fddf784ed9a692d33}{M\-D\-\_\-\-O\-D\-\_\-\-D\-I\-S}~(0x0 $<$$<$ 10)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga95de7405f0be07e5a3c1eac75663b7e4}{M\-D\-\_\-\-H\-S\-\_\-\-E\-N\-A}~(0x0 $<$$<$ 8)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gaa9af2984b24150d8c005e2b7c254adbc}{M\-D\-\_\-\-H\-S\-\_\-\-D\-I\-S}~(0x1 $<$$<$ 8)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga981e8fc7f82693378a8856bea0b435b7}{M\-D\-\_\-\-A\-N\-A\-\_\-\-E\-N\-A}~(0x0 $<$$<$ 7)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga12c40f516d771be23c8521a59e8f37dd}{M\-D\-\_\-\-A\-N\-A\-\_\-\-D\-I\-S}~(0x1 $<$$<$ 7)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga0bbfc0ef84fc75d356d7fd36cd23527e}{M\-D\-\_\-\-F\-I\-L\-T\-\_\-\-E\-N\-A}~(0x0 $<$$<$ 8)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gad67d4495f8a8568bdedbaa13aceb2d3d}{M\-D\-\_\-\-F\-I\-L\-T\-\_\-\-D\-I\-S}~(0x1 $<$$<$ 8)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga6b38cbeca37aeb7bcbf7fc66ba4ec65d}{M\-D\-\_\-\-D\-A\-C\-\_\-\-E\-N\-A}~(0x1 $<$$<$ 16)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gaec6eb0c4c1101d5c5dc64ef56a5a5588}{M\-D\-\_\-\-D\-A\-C\-\_\-\-D\-I\-S}~(0x0 $<$$<$ 16)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga190b92c2bbf82f91768ad526aaadc441}{M\-D\-\_\-\-S\-T\-D\-\_\-\-S\-L\-E\-W\-\_\-\-R\-A\-T\-E}~(0x0 $<$$<$ 9)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga26dcdaed2ef64f84991cc59ae9370c80}{M\-D\-\_\-\-F\-A\-S\-T\-\_\-\-S\-L\-E\-W\-\_\-\-R\-A\-T\-E}~(0x1 $<$$<$ 9)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga4fb2c193dc83d6b18a8afad131b2e139}{M\-D\-\_\-\-H\-D\-\_\-\-E\-N\-A}~(0x1 $<$$<$ 9)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga324ed23a726e0788749899278b0ce61a}{M\-D\-\_\-\-H\-D\-\_\-\-D\-I\-S}~(0x0 $<$$<$ 9)
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga769e96bef0ce818be7aa2cb0a0a67753}{F\-U\-N\-C4}~0x4				/$\ast$$\ast$ Function 4  $\ast$/
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_gaa8d0feff604f4d347ce09d433de1b32d}{F\-U\-N\-C5}~0x5				/$\ast$$\ast$ Function 5  $\ast$/
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga3070395c343da6e051c4ebbcd3185a87}{F\-U\-N\-C6}~0x6				/$\ast$$\ast$ Function 6	$\ast$/
+\item 
+\#define \hyperlink{group__IOCON__17XX__40XX_ga25318daff6c777173bc54d6eeac7cb83}{F\-U\-N\-C7}~0x7				/$\ast$$\ast$ Function 7	$\ast$/
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__IOCON__17XX__40XX_ga40283d81f5ad91ba8b47647059721c9d}{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Init} (\hyperlink{structLPC__IOCON__T}{L\-P\-C\-\_\-\-I\-O\-C\-O\-N\-\_\-\-T} $\ast$p\-I\-O\-C\-O\-N)
+\begin{DoxyCompactList}\small\item\em Initialize the I\-O\-C\-O\-N peripheral. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__IOCON__17XX__40XX_ga5db68254cabb0d4cd4558d81557b77e4}{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux\-Set} (\hyperlink{structLPC__IOCON__T}{L\-P\-C\-\_\-\-I\-O\-C\-O\-N\-\_\-\-T} $\ast$p\-I\-O\-C\-O\-N, uint8\-\_\-t port, uint8\-\_\-t pin, uint32\-\_\-t modefunc)
+\begin{DoxyCompactList}\small\item\em Sets I/\-O Control pin mux. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__IOCON__17XX__40XX_gaa2f90b2873cda51e67b3a67d6cc92617}{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux} (\hyperlink{structLPC__IOCON__T}{L\-P\-C\-\_\-\-I\-O\-C\-O\-N\-\_\-\-T} $\ast$p\-I\-O\-C\-O\-N, uint8\-\_\-t port, uint8\-\_\-t pin, uint32\-\_\-t mode, uint8\-\_\-t func)
+\begin{DoxyCompactList}\small\item\em Setup pin modes and function. \end{DoxyCompactList}\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__IOCON__17XX__40XX_gad97c96e401016cf296e6d20454f1c522}{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Set\-Pin\-Muxing} (\hyperlink{structLPC__IOCON__T}{L\-P\-C\-\_\-\-I\-O\-C\-O\-N\-\_\-\-T} $\ast$p\-I\-O\-C\-O\-N, const \hyperlink{structPINMUX__GRP__T}{P\-I\-N\-M\-U\-X\-\_\-\-G\-R\-P\-\_\-\-T} $\ast$pin\-Array, uint32\-\_\-t array\-Length)
+\begin{DoxyCompactList}\small\item\em Set all I/\-O Control pin muxing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group__IOCON__17XX__40XX_gaa3ba064ba85ae0da9c55e7cdb8ea09b3}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!F\-U\-N\-C0@{F\-U\-N\-C0}}
+\index{F\-U\-N\-C0@{F\-U\-N\-C0}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{F\-U\-N\-C0}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-U\-N\-C0~0x0				/$\ast$$\ast$ Function 0  $\ast$/}}\label{group__IOCON__17XX__40XX_gaa3ba064ba85ae0da9c55e7cdb8ea09b3}
+I\-O\-C\-O\-N function and mode selection definitions (old) For backwards compatibility. \hypertarget{group__IOCON__17XX__40XX_ga3f9b8eb1b4789fef1da73f4eb041ddfc}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!F\-U\-N\-C1@{F\-U\-N\-C1}}
+\index{F\-U\-N\-C1@{F\-U\-N\-C1}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{F\-U\-N\-C1}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-U\-N\-C1~0x1				/$\ast$$\ast$ Function 1  $\ast$/}}\label{group__IOCON__17XX__40XX_ga3f9b8eb1b4789fef1da73f4eb041ddfc}
+\hypertarget{group__IOCON__17XX__40XX_ga0e8023a25dd46655b8eda5b0476ba169}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!F\-U\-N\-C2@{F\-U\-N\-C2}}
+\index{F\-U\-N\-C2@{F\-U\-N\-C2}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{F\-U\-N\-C2}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-U\-N\-C2~0x2				/$\ast$$\ast$ Function 2	$\ast$/}}\label{group__IOCON__17XX__40XX_ga0e8023a25dd46655b8eda5b0476ba169}
+\hypertarget{group__IOCON__17XX__40XX_gadeea02cdf0e8b64c27b6fad4d2b3b2b5}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!F\-U\-N\-C3@{F\-U\-N\-C3}}
+\index{F\-U\-N\-C3@{F\-U\-N\-C3}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{F\-U\-N\-C3}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-U\-N\-C3~0x3				/$\ast$$\ast$ Function 3	$\ast$/}}\label{group__IOCON__17XX__40XX_gadeea02cdf0e8b64c27b6fad4d2b3b2b5}
+\hypertarget{group__IOCON__17XX__40XX_ga769e96bef0ce818be7aa2cb0a0a67753}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!F\-U\-N\-C4@{F\-U\-N\-C4}}
+\index{F\-U\-N\-C4@{F\-U\-N\-C4}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{F\-U\-N\-C4}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-U\-N\-C4~0x4				/$\ast$$\ast$ Function 4  $\ast$/}}\label{group__IOCON__17XX__40XX_ga769e96bef0ce818be7aa2cb0a0a67753}
+\hypertarget{group__IOCON__17XX__40XX_gaa8d0feff604f4d347ce09d433de1b32d}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!F\-U\-N\-C5@{F\-U\-N\-C5}}
+\index{F\-U\-N\-C5@{F\-U\-N\-C5}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{F\-U\-N\-C5}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-U\-N\-C5~0x5				/$\ast$$\ast$ Function 5  $\ast$/}}\label{group__IOCON__17XX__40XX_gaa8d0feff604f4d347ce09d433de1b32d}
+\hypertarget{group__IOCON__17XX__40XX_ga3070395c343da6e051c4ebbcd3185a87}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!F\-U\-N\-C6@{F\-U\-N\-C6}}
+\index{F\-U\-N\-C6@{F\-U\-N\-C6}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{F\-U\-N\-C6}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-U\-N\-C6~0x6				/$\ast$$\ast$ Function 6	$\ast$/}}\label{group__IOCON__17XX__40XX_ga3070395c343da6e051c4ebbcd3185a87}
+\hypertarget{group__IOCON__17XX__40XX_ga25318daff6c777173bc54d6eeac7cb83}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!F\-U\-N\-C7@{F\-U\-N\-C7}}
+\index{F\-U\-N\-C7@{F\-U\-N\-C7}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{F\-U\-N\-C7}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-U\-N\-C7~0x7				/$\ast$$\ast$ Function 7	$\ast$/}}\label{group__IOCON__17XX__40XX_ga25318daff6c777173bc54d6eeac7cb83}
+\hypertarget{group__IOCON__17XX__40XX_ga9a3d4f3e281c382f795b9a769073d4e4}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-A\-D\-M\-O\-D\-E\-\_\-\-E\-N@{I\-O\-C\-O\-N\-\_\-\-A\-D\-M\-O\-D\-E\-\_\-\-E\-N}}
+\index{I\-O\-C\-O\-N\-\_\-\-A\-D\-M\-O\-D\-E\-\_\-\-E\-N@{I\-O\-C\-O\-N\-\_\-\-A\-D\-M\-O\-D\-E\-\_\-\-E\-N}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-A\-D\-M\-O\-D\-E\-\_\-\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-A\-D\-M\-O\-D\-E\-\_\-\-E\-N~(0x0 $<$$<$ 7)}}\label{group__IOCON__17XX__40XX_ga9a3d4f3e281c382f795b9a769073d4e4}
+Enables analog input function (analog pins only) \hypertarget{group__IOCON__17XX__40XX_gabb788549592ca772def19f2a8060aa3d}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-D\-A\-C\-\_\-\-E\-N@{I\-O\-C\-O\-N\-\_\-\-D\-A\-C\-\_\-\-E\-N}}
+\index{I\-O\-C\-O\-N\-\_\-\-D\-A\-C\-\_\-\-E\-N@{I\-O\-C\-O\-N\-\_\-\-D\-A\-C\-\_\-\-E\-N}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-D\-A\-C\-\_\-\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-D\-A\-C\-\_\-\-E\-N~(0x1 $<$$<$ 16)}}\label{group__IOCON__17XX__40XX_gabb788549592ca772def19f2a8060aa3d}
+Enables D\-A\-C function \hypertarget{group__IOCON__17XX__40XX_ga516e9d9bc7b1f3aaefd9d09c6ece74d2}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-D\-I\-G\-M\-O\-D\-E\-\_\-\-E\-N@{I\-O\-C\-O\-N\-\_\-\-D\-I\-G\-M\-O\-D\-E\-\_\-\-E\-N}}
+\index{I\-O\-C\-O\-N\-\_\-\-D\-I\-G\-M\-O\-D\-E\-\_\-\-E\-N@{I\-O\-C\-O\-N\-\_\-\-D\-I\-G\-M\-O\-D\-E\-\_\-\-E\-N}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-D\-I\-G\-M\-O\-D\-E\-\_\-\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-D\-I\-G\-M\-O\-D\-E\-\_\-\-E\-N~(0x1 $<$$<$ 7)}}\label{group__IOCON__17XX__40XX_ga516e9d9bc7b1f3aaefd9d09c6ece74d2}
+Enables digital function (analog pins only) \hypertarget{group__IOCON__17XX__40XX_ga478aa0f55e07c89035e36378b2c3780b}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-F\-A\-S\-T\-S\-L\-E\-W\-\_\-\-E\-N@{I\-O\-C\-O\-N\-\_\-\-F\-A\-S\-T\-S\-L\-E\-W\-\_\-\-E\-N}}
+\index{I\-O\-C\-O\-N\-\_\-\-F\-A\-S\-T\-S\-L\-E\-W\-\_\-\-E\-N@{I\-O\-C\-O\-N\-\_\-\-F\-A\-S\-T\-S\-L\-E\-W\-\_\-\-E\-N}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-F\-A\-S\-T\-S\-L\-E\-W\-\_\-\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-F\-A\-S\-T\-S\-L\-E\-W\-\_\-\-E\-N~(0x1 $<$$<$ 9)}}\label{group__IOCON__17XX__40XX_ga478aa0f55e07c89035e36378b2c3780b}
+Enables fast slew \hypertarget{group__IOCON__17XX__40XX_gabebfb8b8646d151bfee9615c75724119}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-F\-I\-L\-T\-\_\-\-D\-I\-S@{I\-O\-C\-O\-N\-\_\-\-F\-I\-L\-T\-\_\-\-D\-I\-S}}
+\index{I\-O\-C\-O\-N\-\_\-\-F\-I\-L\-T\-\_\-\-D\-I\-S@{I\-O\-C\-O\-N\-\_\-\-F\-I\-L\-T\-\_\-\-D\-I\-S}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-F\-I\-L\-T\-\_\-\-D\-I\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-F\-I\-L\-T\-\_\-\-D\-I\-S~(0x1 $<$$<$ 8)}}\label{group__IOCON__17XX__40XX_gabebfb8b8646d151bfee9615c75724119}
+Disables noise pulses filtering (10n\-S glitch filter) \hypertarget{group__IOCON__17XX__40XX_gab08f72eae45dd5656aeca24c346c8626}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C0@{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C0}}
+\index{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C0@{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C0}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C0}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C0~0x0}}\label{group__IOCON__17XX__40XX_gab08f72eae45dd5656aeca24c346c8626}
+I\-O\-C\-O\-N function and mode selection definitions See the User Manual for specific modes and functions supoprted by the various L\-P\-C11xx devices. Functionality can vary per device.\-Selects pin function 0 \hypertarget{group__IOCON__17XX__40XX_gab6449233bd56957c684b9ad694606e3a}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C1@{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C1}}
+\index{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C1@{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C1}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C1}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C1~0x1}}\label{group__IOCON__17XX__40XX_gab6449233bd56957c684b9ad694606e3a}
+Selects pin function 1 \hypertarget{group__IOCON__17XX__40XX_ga43ebb7abf055ce2491fbba5ef72f6fc7}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C2@{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C2}}
+\index{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C2@{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C2}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C2}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C2~0x2}}\label{group__IOCON__17XX__40XX_ga43ebb7abf055ce2491fbba5ef72f6fc7}
+Selects pin function 2 \hypertarget{group__IOCON__17XX__40XX_gace4708e511b3aa9c352600604331bec0}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C3@{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C3}}
+\index{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C3@{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C3}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C3}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C3~0x3}}\label{group__IOCON__17XX__40XX_gace4708e511b3aa9c352600604331bec0}
+Selects pin function 3 \hypertarget{group__IOCON__17XX__40XX_gac621b96a2bd1ee57a83ff1af98287a8d}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C4@{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C4}}
+\index{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C4@{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C4}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C4}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C4~0x4}}\label{group__IOCON__17XX__40XX_gac621b96a2bd1ee57a83ff1af98287a8d}
+Selects pin function 4 \hypertarget{group__IOCON__17XX__40XX_ga0f9630599f40a3f96a5887c7e65508a9}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C5@{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C5}}
+\index{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C5@{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C5}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C5}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C5~0x5}}\label{group__IOCON__17XX__40XX_ga0f9630599f40a3f96a5887c7e65508a9}
+Selects pin function 5 \hypertarget{group__IOCON__17XX__40XX_ga6284e27c6e5df6bc9f37c482e736a1d3}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C6@{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C6}}
+\index{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C6@{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C6}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C6}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C6~0x6}}\label{group__IOCON__17XX__40XX_ga6284e27c6e5df6bc9f37c482e736a1d3}
+Selects pin function 6 \hypertarget{group__IOCON__17XX__40XX_ga38efe875290e90d2f4185cb0ffe33e03}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C7@{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C7}}
+\index{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C7@{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C7}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C7}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C7~0x7}}\label{group__IOCON__17XX__40XX_ga38efe875290e90d2f4185cb0ffe33e03}
+Selects pin function 7 \hypertarget{group__IOCON__17XX__40XX_gadaa6e6eca0d7d555f4f0816aa83dc8f3}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-H\-I\-D\-R\-I\-V\-E\-\_\-\-E\-N@{I\-O\-C\-O\-N\-\_\-\-H\-I\-D\-R\-I\-V\-E\-\_\-\-E\-N}}
+\index{I\-O\-C\-O\-N\-\_\-\-H\-I\-D\-R\-I\-V\-E\-\_\-\-E\-N@{I\-O\-C\-O\-N\-\_\-\-H\-I\-D\-R\-I\-V\-E\-\_\-\-E\-N}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-H\-I\-D\-R\-I\-V\-E\-\_\-\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-H\-I\-D\-R\-I\-V\-E\-\_\-\-E\-N~(0x1 $<$$<$ 9)}}\label{group__IOCON__17XX__40XX_gadaa6e6eca0d7d555f4f0816aa83dc8f3}
+Sink current is 20 m\-A \hypertarget{group__IOCON__17XX__40XX_gab2c8963063faa2ee583ad54750b842fa}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-H\-S\-\_\-\-D\-I\-S@{I\-O\-C\-O\-N\-\_\-\-H\-S\-\_\-\-D\-I\-S}}
+\index{I\-O\-C\-O\-N\-\_\-\-H\-S\-\_\-\-D\-I\-S@{I\-O\-C\-O\-N\-\_\-\-H\-S\-\_\-\-D\-I\-S}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-H\-S\-\_\-\-D\-I\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-H\-S\-\_\-\-D\-I\-S~(0x1 $<$$<$ 8)}}\label{group__IOCON__17XX__40XX_gab2c8963063faa2ee583ad54750b842fa}
+I2\-C glitch filter and slew rate disabled \hypertarget{group__IOCON__17XX__40XX_gafb7c408ac1f52b7b7e46fde3061fe0b7}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-H\-Y\-S\-\_\-\-E\-N@{I\-O\-C\-O\-N\-\_\-\-H\-Y\-S\-\_\-\-E\-N}}
+\index{I\-O\-C\-O\-N\-\_\-\-H\-Y\-S\-\_\-\-E\-N@{I\-O\-C\-O\-N\-\_\-\-H\-Y\-S\-\_\-\-E\-N}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-H\-Y\-S\-\_\-\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-H\-Y\-S\-\_\-\-E\-N~(0x1 $<$$<$ 5)}}\label{group__IOCON__17XX__40XX_gafb7c408ac1f52b7b7e46fde3061fe0b7}
+Enables hysteresis \hypertarget{group__IOCON__17XX__40XX_gae1fd1faa316f6c3108b499928f8c9922}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-I\-N\-V\-\_\-\-E\-N@{I\-O\-C\-O\-N\-\_\-\-I\-N\-V\-\_\-\-E\-N}}
+\index{I\-O\-C\-O\-N\-\_\-\-I\-N\-V\-\_\-\-E\-N@{I\-O\-C\-O\-N\-\_\-\-I\-N\-V\-\_\-\-E\-N}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-I\-N\-V\-\_\-\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-I\-N\-V\-\_\-\-E\-N~(0x1 $<$$<$ 6)}}\label{group__IOCON__17XX__40XX_gae1fd1faa316f6c3108b499928f8c9922}
+Enables invert function on input \hypertarget{group__IOCON__17XX__40XX_gafc593aafe607c88c52864ecb7586ffe9}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-I\-N\-A\-C\-T@{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-I\-N\-A\-C\-T}}
+\index{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-I\-N\-A\-C\-T@{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-I\-N\-A\-C\-T}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-I\-N\-A\-C\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-I\-N\-A\-C\-T~(0x0 $<$$<$ 3)}}\label{group__IOCON__17XX__40XX_gafc593aafe607c88c52864ecb7586ffe9}
+No addition pin function \hypertarget{group__IOCON__17XX__40XX_ga270261df49234519bfd09e076dfcec6c}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-P\-U\-L\-L\-D\-O\-W\-N@{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-P\-U\-L\-L\-D\-O\-W\-N}}
+\index{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-P\-U\-L\-L\-D\-O\-W\-N@{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-P\-U\-L\-L\-D\-O\-W\-N}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-P\-U\-L\-L\-D\-O\-W\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-P\-U\-L\-L\-D\-O\-W\-N~(0x1 $<$$<$ 3)}}\label{group__IOCON__17XX__40XX_ga270261df49234519bfd09e076dfcec6c}
+Selects pull-\/down function \hypertarget{group__IOCON__17XX__40XX_gad8fe947d8e7076d6cec01a5b30261141}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-P\-U\-L\-L\-U\-P@{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-P\-U\-L\-L\-U\-P}}
+\index{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-P\-U\-L\-L\-U\-P@{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-P\-U\-L\-L\-U\-P}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-P\-U\-L\-L\-U\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-P\-U\-L\-L\-U\-P~(0x2 $<$$<$ 3)}}\label{group__IOCON__17XX__40XX_gad8fe947d8e7076d6cec01a5b30261141}
+Selects pull-\/up function \hypertarget{group__IOCON__17XX__40XX_ga53d705841cc362c6f43ffc1370d71726}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-P\-E\-A\-T\-E\-R@{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-P\-E\-A\-T\-E\-R}}
+\index{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-P\-E\-A\-T\-E\-R@{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-P\-E\-A\-T\-E\-R}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-P\-E\-A\-T\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-M\-O\-D\-E\-\_\-\-R\-E\-P\-E\-A\-T\-E\-R~(0x3 $<$$<$ 3)}}\label{group__IOCON__17XX__40XX_ga53d705841cc362c6f43ffc1370d71726}
+Selects pin repeater function \hypertarget{group__IOCON__17XX__40XX_ga226b54f672e61a7a2d2893d9ef8cbc9c}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!I\-O\-C\-O\-N\-\_\-\-O\-P\-E\-N\-D\-R\-A\-I\-N\-\_\-\-E\-N@{I\-O\-C\-O\-N\-\_\-\-O\-P\-E\-N\-D\-R\-A\-I\-N\-\_\-\-E\-N}}
+\index{I\-O\-C\-O\-N\-\_\-\-O\-P\-E\-N\-D\-R\-A\-I\-N\-\_\-\-E\-N@{I\-O\-C\-O\-N\-\_\-\-O\-P\-E\-N\-D\-R\-A\-I\-N\-\_\-\-E\-N}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{I\-O\-C\-O\-N\-\_\-\-O\-P\-E\-N\-D\-R\-A\-I\-N\-\_\-\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-O\-C\-O\-N\-\_\-\-O\-P\-E\-N\-D\-R\-A\-I\-N\-\_\-\-E\-N~(0x1 $<$$<$ 10)}}\label{group__IOCON__17XX__40XX_ga226b54f672e61a7a2d2893d9ef8cbc9c}
+Enables open-\/drain function \hypertarget{group__IOCON__17XX__40XX_ga12c40f516d771be23c8521a59e8f37dd}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-A\-N\-A\-\_\-\-D\-I\-S@{M\-D\-\_\-\-A\-N\-A\-\_\-\-D\-I\-S}}
+\index{M\-D\-\_\-\-A\-N\-A\-\_\-\-D\-I\-S@{M\-D\-\_\-\-A\-N\-A\-\_\-\-D\-I\-S}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-A\-N\-A\-\_\-\-D\-I\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-A\-N\-A\-\_\-\-D\-I\-S~(0x1 $<$$<$ 7)}}\label{group__IOCON__17XX__40XX_ga12c40f516d771be23c8521a59e8f37dd}
+Macro to disable analog mode (A\-D\-C)-\/ use with Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux \hypertarget{group__IOCON__17XX__40XX_ga981e8fc7f82693378a8856bea0b435b7}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-A\-N\-A\-\_\-\-E\-N\-A@{M\-D\-\_\-\-A\-N\-A\-\_\-\-E\-N\-A}}
+\index{M\-D\-\_\-\-A\-N\-A\-\_\-\-E\-N\-A@{M\-D\-\_\-\-A\-N\-A\-\_\-\-E\-N\-A}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-A\-N\-A\-\_\-\-E\-N\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-A\-N\-A\-\_\-\-E\-N\-A~(0x0 $<$$<$ 7)}}\label{group__IOCON__17XX__40XX_ga981e8fc7f82693378a8856bea0b435b7}
+Macro to enable analog mode (A\-D\-C)-\/ use with Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux \hypertarget{group__IOCON__17XX__40XX_gaf637c444b0cbcd50aeaa4c4e34fbbd91}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-B\-U\-K@{M\-D\-\_\-\-B\-U\-K}}
+\index{M\-D\-\_\-\-B\-U\-K@{M\-D\-\_\-\-B\-U\-K}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-B\-U\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-B\-U\-K~(0x3 $<$$<$ 3)}}\label{group__IOCON__17XX__40XX_gaf637c444b0cbcd50aeaa4c4e34fbbd91}
+\hypertarget{group__IOCON__17XX__40XX_gaec6eb0c4c1101d5c5dc64ef56a5a5588}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-D\-A\-C\-\_\-\-D\-I\-S@{M\-D\-\_\-\-D\-A\-C\-\_\-\-D\-I\-S}}
+\index{M\-D\-\_\-\-D\-A\-C\-\_\-\-D\-I\-S@{M\-D\-\_\-\-D\-A\-C\-\_\-\-D\-I\-S}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-D\-A\-C\-\_\-\-D\-I\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-D\-A\-C\-\_\-\-D\-I\-S~(0x0 $<$$<$ 16)}}\label{group__IOCON__17XX__40XX_gaec6eb0c4c1101d5c5dc64ef56a5a5588}
+Macro to disable D\-A\-C-\/ use with Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux \hypertarget{group__IOCON__17XX__40XX_ga6b38cbeca37aeb7bcbf7fc66ba4ec65d}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-D\-A\-C\-\_\-\-E\-N\-A@{M\-D\-\_\-\-D\-A\-C\-\_\-\-E\-N\-A}}
+\index{M\-D\-\_\-\-D\-A\-C\-\_\-\-E\-N\-A@{M\-D\-\_\-\-D\-A\-C\-\_\-\-E\-N\-A}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-D\-A\-C\-\_\-\-E\-N\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-D\-A\-C\-\_\-\-E\-N\-A~(0x1 $<$$<$ 16)}}\label{group__IOCON__17XX__40XX_ga6b38cbeca37aeb7bcbf7fc66ba4ec65d}
+Macro to enable D\-A\-C-\/ use with Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux \hypertarget{group__IOCON__17XX__40XX_ga26dcdaed2ef64f84991cc59ae9370c80}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-F\-A\-S\-T\-\_\-\-S\-L\-E\-W\-\_\-\-R\-A\-T\-E@{M\-D\-\_\-\-F\-A\-S\-T\-\_\-\-S\-L\-E\-W\-\_\-\-R\-A\-T\-E}}
+\index{M\-D\-\_\-\-F\-A\-S\-T\-\_\-\-S\-L\-E\-W\-\_\-\-R\-A\-T\-E@{M\-D\-\_\-\-F\-A\-S\-T\-\_\-\-S\-L\-E\-W\-\_\-\-R\-A\-T\-E}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-F\-A\-S\-T\-\_\-\-S\-L\-E\-W\-\_\-\-R\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-F\-A\-S\-T\-\_\-\-S\-L\-E\-W\-\_\-\-R\-A\-T\-E~(0x1 $<$$<$ 9)}}\label{group__IOCON__17XX__40XX_ga26dcdaed2ef64f84991cc59ae9370c80}
+Macro to enable fast mode, slew rate control is disabled -\/ use with Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux \hypertarget{group__IOCON__17XX__40XX_gad67d4495f8a8568bdedbaa13aceb2d3d}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-F\-I\-L\-T\-\_\-\-D\-I\-S@{M\-D\-\_\-\-F\-I\-L\-T\-\_\-\-D\-I\-S}}
+\index{M\-D\-\_\-\-F\-I\-L\-T\-\_\-\-D\-I\-S@{M\-D\-\_\-\-F\-I\-L\-T\-\_\-\-D\-I\-S}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-F\-I\-L\-T\-\_\-\-D\-I\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-F\-I\-L\-T\-\_\-\-D\-I\-S~(0x1 $<$$<$ 8)}}\label{group__IOCON__17XX__40XX_gad67d4495f8a8568bdedbaa13aceb2d3d}
+Macro to disable input filter-\/ use with Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux \hypertarget{group__IOCON__17XX__40XX_ga0bbfc0ef84fc75d356d7fd36cd23527e}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-F\-I\-L\-T\-\_\-\-E\-N\-A@{M\-D\-\_\-\-F\-I\-L\-T\-\_\-\-E\-N\-A}}
+\index{M\-D\-\_\-\-F\-I\-L\-T\-\_\-\-E\-N\-A@{M\-D\-\_\-\-F\-I\-L\-T\-\_\-\-E\-N\-A}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-F\-I\-L\-T\-\_\-\-E\-N\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-F\-I\-L\-T\-\_\-\-E\-N\-A~(0x0 $<$$<$ 8)}}\label{group__IOCON__17XX__40XX_ga0bbfc0ef84fc75d356d7fd36cd23527e}
+Macro to enable input filter-\/ use with Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux \hypertarget{group__IOCON__17XX__40XX_ga324ed23a726e0788749899278b0ce61a}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-H\-D\-\_\-\-D\-I\-S@{M\-D\-\_\-\-H\-D\-\_\-\-D\-I\-S}}
+\index{M\-D\-\_\-\-H\-D\-\_\-\-D\-I\-S@{M\-D\-\_\-\-H\-D\-\_\-\-D\-I\-S}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-H\-D\-\_\-\-D\-I\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-H\-D\-\_\-\-D\-I\-S~(0x0 $<$$<$ 9)}}\label{group__IOCON__17XX__40XX_ga324ed23a726e0788749899278b0ce61a}
+Macro to disable high drive output-\/ use with Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux \hypertarget{group__IOCON__17XX__40XX_ga4fb2c193dc83d6b18a8afad131b2e139}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-H\-D\-\_\-\-E\-N\-A@{M\-D\-\_\-\-H\-D\-\_\-\-E\-N\-A}}
+\index{M\-D\-\_\-\-H\-D\-\_\-\-E\-N\-A@{M\-D\-\_\-\-H\-D\-\_\-\-E\-N\-A}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-H\-D\-\_\-\-E\-N\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-H\-D\-\_\-\-E\-N\-A~(0x1 $<$$<$ 9)}}\label{group__IOCON__17XX__40XX_ga4fb2c193dc83d6b18a8afad131b2e139}
+Macro to enable high drive output-\/ use with Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux \hypertarget{group__IOCON__17XX__40XX_gaa9af2984b24150d8c005e2b7c254adbc}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-H\-S\-\_\-\-D\-I\-S@{M\-D\-\_\-\-H\-S\-\_\-\-D\-I\-S}}
+\index{M\-D\-\_\-\-H\-S\-\_\-\-D\-I\-S@{M\-D\-\_\-\-H\-S\-\_\-\-D\-I\-S}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-H\-S\-\_\-\-D\-I\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-H\-S\-\_\-\-D\-I\-S~(0x1 $<$$<$ 8)}}\label{group__IOCON__17XX__40XX_gaa9af2984b24150d8c005e2b7c254adbc}
+Macro to disable I2\-C 50ns glitch filter and slew rate control-\/ use with Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux \hypertarget{group__IOCON__17XX__40XX_ga95de7405f0be07e5a3c1eac75663b7e4}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-H\-S\-\_\-\-E\-N\-A@{M\-D\-\_\-\-H\-S\-\_\-\-E\-N\-A}}
+\index{M\-D\-\_\-\-H\-S\-\_\-\-E\-N\-A@{M\-D\-\_\-\-H\-S\-\_\-\-E\-N\-A}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-H\-S\-\_\-\-E\-N\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-H\-S\-\_\-\-E\-N\-A~(0x0 $<$$<$ 8)}}\label{group__IOCON__17XX__40XX_ga95de7405f0be07e5a3c1eac75663b7e4}
+Macro to enable I2\-C 50ns glitch filter and slew rate control-\/ use with Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux \hypertarget{group__IOCON__17XX__40XX_ga7c49147e8696b77ebf4bea2d90474a7f}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-H\-Y\-S\-\_\-\-D\-I\-S@{M\-D\-\_\-\-H\-Y\-S\-\_\-\-D\-I\-S}}
+\index{M\-D\-\_\-\-H\-Y\-S\-\_\-\-D\-I\-S@{M\-D\-\_\-\-H\-Y\-S\-\_\-\-D\-I\-S}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-H\-Y\-S\-\_\-\-D\-I\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-H\-Y\-S\-\_\-\-D\-I\-S~(0x0 $<$$<$ 5)}}\label{group__IOCON__17XX__40XX_ga7c49147e8696b77ebf4bea2d90474a7f}
+Macro to disable hysteresis-\/ use with Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux \hypertarget{group__IOCON__17XX__40XX_gab6a440afbad506dec9b0227f3c82fd73}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-H\-Y\-S\-\_\-\-E\-N\-A@{M\-D\-\_\-\-H\-Y\-S\-\_\-\-E\-N\-A}}
+\index{M\-D\-\_\-\-H\-Y\-S\-\_\-\-E\-N\-A@{M\-D\-\_\-\-H\-Y\-S\-\_\-\-E\-N\-A}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-H\-Y\-S\-\_\-\-E\-N\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-H\-Y\-S\-\_\-\-E\-N\-A~(0x1 $<$$<$ 5)}}\label{group__IOCON__17XX__40XX_gab6a440afbad506dec9b0227f3c82fd73}
+Macro to enable hysteresis-\/ use with Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux \hypertarget{group__IOCON__17XX__40XX_ga3f1345e7ffe3eed8bb0c4b9e456b0df9}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-I\-I\-N\-V\-\_\-\-D\-I\-S@{M\-D\-\_\-\-I\-I\-N\-V\-\_\-\-D\-I\-S}}
+\index{M\-D\-\_\-\-I\-I\-N\-V\-\_\-\-D\-I\-S@{M\-D\-\_\-\-I\-I\-N\-V\-\_\-\-D\-I\-S}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-I\-I\-N\-V\-\_\-\-D\-I\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-I\-I\-N\-V\-\_\-\-D\-I\-S~(0x0 $<$$<$ 6)}}\label{group__IOCON__17XX__40XX_ga3f1345e7ffe3eed8bb0c4b9e456b0df9}
+Macro to disable input inversion-\/ use with Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux \hypertarget{group__IOCON__17XX__40XX_gaeecb9c3d257aaea0fff788e1cdd538bb}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-I\-I\-N\-V\-\_\-\-E\-N\-A@{M\-D\-\_\-\-I\-I\-N\-V\-\_\-\-E\-N\-A}}
+\index{M\-D\-\_\-\-I\-I\-N\-V\-\_\-\-E\-N\-A@{M\-D\-\_\-\-I\-I\-N\-V\-\_\-\-E\-N\-A}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-I\-I\-N\-V\-\_\-\-E\-N\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-I\-I\-N\-V\-\_\-\-E\-N\-A~(0x1 $<$$<$ 6)}}\label{group__IOCON__17XX__40XX_gaeecb9c3d257aaea0fff788e1cdd538bb}
+Macro to enable input inversion-\/ use with Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux \hypertarget{group__IOCON__17XX__40XX_ga1b2a7926f85c2e7fddf784ed9a692d33}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-O\-D\-\_\-\-D\-I\-S@{M\-D\-\_\-\-O\-D\-\_\-\-D\-I\-S}}
+\index{M\-D\-\_\-\-O\-D\-\_\-\-D\-I\-S@{M\-D\-\_\-\-O\-D\-\_\-\-D\-I\-S}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-O\-D\-\_\-\-D\-I\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-O\-D\-\_\-\-D\-I\-S~(0x0 $<$$<$ 10)}}\label{group__IOCON__17XX__40XX_ga1b2a7926f85c2e7fddf784ed9a692d33}
+Macro to disable simulated open drain mode-\/ use with Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux \hypertarget{group__IOCON__17XX__40XX_ga83e1ce8c76aac6481562dd26b059ae61}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-O\-D\-\_\-\-E\-N\-A@{M\-D\-\_\-\-O\-D\-\_\-\-E\-N\-A}}
+\index{M\-D\-\_\-\-O\-D\-\_\-\-E\-N\-A@{M\-D\-\_\-\-O\-D\-\_\-\-E\-N\-A}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-O\-D\-\_\-\-E\-N\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-O\-D\-\_\-\-E\-N\-A~(0x1 $<$$<$ 10)}}\label{group__IOCON__17XX__40XX_ga83e1ce8c76aac6481562dd26b059ae61}
+Macro to enable simulated open drain mode-\/ use with Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux \hypertarget{group__IOCON__17XX__40XX_ga27ec0d2ed4901e435240b5e5d68211e7}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-P\-D\-N@{M\-D\-\_\-\-P\-D\-N}}
+\index{M\-D\-\_\-\-P\-D\-N@{M\-D\-\_\-\-P\-D\-N}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-P\-D\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-P\-D\-N~(0x1 $<$$<$ 3)}}\label{group__IOCON__17XX__40XX_ga27ec0d2ed4901e435240b5e5d68211e7}
+\hypertarget{group__IOCON__17XX__40XX_gab1595b71147925d9e1b54402d5dd6f9c}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-P\-L\-N@{M\-D\-\_\-\-P\-L\-N}}
+\index{M\-D\-\_\-\-P\-L\-N@{M\-D\-\_\-\-P\-L\-N}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-P\-L\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-P\-L\-N~(0x0 $<$$<$ 3)}}\label{group__IOCON__17XX__40XX_gab1595b71147925d9e1b54402d5dd6f9c}
+\hypertarget{group__IOCON__17XX__40XX_ga71356d77e0a6639fec743a8e73f24892}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-P\-U\-P@{M\-D\-\_\-\-P\-U\-P}}
+\index{M\-D\-\_\-\-P\-U\-P@{M\-D\-\_\-\-P\-U\-P}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-P\-U\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-P\-U\-P~(0x2 $<$$<$ 3)}}\label{group__IOCON__17XX__40XX_ga71356d77e0a6639fec743a8e73f24892}
+\hypertarget{group__IOCON__17XX__40XX_ga190b92c2bbf82f91768ad526aaadc441}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!M\-D\-\_\-\-S\-T\-D\-\_\-\-S\-L\-E\-W\-\_\-\-R\-A\-T\-E@{M\-D\-\_\-\-S\-T\-D\-\_\-\-S\-L\-E\-W\-\_\-\-R\-A\-T\-E}}
+\index{M\-D\-\_\-\-S\-T\-D\-\_\-\-S\-L\-E\-W\-\_\-\-R\-A\-T\-E@{M\-D\-\_\-\-S\-T\-D\-\_\-\-S\-L\-E\-W\-\_\-\-R\-A\-T\-E}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{M\-D\-\_\-\-S\-T\-D\-\_\-\-S\-L\-E\-W\-\_\-\-R\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-D\-\_\-\-S\-T\-D\-\_\-\-S\-L\-E\-W\-\_\-\-R\-A\-T\-E~(0x0 $<$$<$ 9)}}\label{group__IOCON__17XX__40XX_ga190b92c2bbf82f91768ad526aaadc441}
+Macro to enable standard mode, slew rate control is enabled -\/ use with Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux 
+
+\subsection{Function Documentation}
+\hypertarget{group__IOCON__17XX__40XX_ga40283d81f5ad91ba8b47647059721c9d}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Init@{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Init}}
+\index{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Init@{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Init}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} {\bf void} Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-P\-C\-\_\-\-I\-O\-C\-O\-N\-\_\-\-T} $\ast$}]{p\-I\-O\-C\-O\-N}
+\end{DoxyParamCaption}
+)}}\label{group__IOCON__17XX__40XX_ga40283d81f5ad91ba8b47647059721c9d}
+
+
+Initialize the I\-O\-C\-O\-N peripheral. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-I\-O\-C\-O\-N} & \-: The base of I\-O\-C\-O\-N peripheral on the chip \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\hypertarget{group__IOCON__17XX__40XX_gaa2f90b2873cda51e67b3a67d6cc92617}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux@{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux}}
+\index{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux@{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} {\bf void} Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-P\-C\-\_\-\-I\-O\-C\-O\-N\-\_\-\-T} $\ast$}]{p\-I\-O\-C\-O\-N, }
+\item[{uint8\-\_\-t}]{port, }
+\item[{uint8\-\_\-t}]{pin, }
+\item[{uint32\-\_\-t}]{mode, }
+\item[{uint8\-\_\-t}]{func}
+\end{DoxyParamCaption}
+)}}\label{group__IOCON__17XX__40XX_gaa2f90b2873cda51e67b3a67d6cc92617}
+
+
+Setup pin modes and function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-I\-O\-C\-O\-N} & \-: The base of I\-O\-C\-O\-N peripheral on the chip \\
+\hline
+{\em port} & \-: port number \\
+\hline
+{\em pin} & \-: gpio pin number \\
+\hline
+{\em mode} & \-: O\-R'ed values or type I\-O\-C\-O\-N\-\_\-$\ast$ \\
+\hline
+{\em func} & \-: Pin function, value of type I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C0 to I\-O\-C\-O\-N\-\_\-\-F\-U\-N\-C7 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\hypertarget{group__IOCON__17XX__40XX_ga5db68254cabb0d4cd4558d81557b77e4}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux\-Set@{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux\-Set}}
+\index{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux\-Set@{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux\-Set}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux\-Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} {\bf void} Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Pin\-Mux\-Set (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-P\-C\-\_\-\-I\-O\-C\-O\-N\-\_\-\-T} $\ast$}]{p\-I\-O\-C\-O\-N, }
+\item[{uint8\-\_\-t}]{port, }
+\item[{uint8\-\_\-t}]{pin, }
+\item[{uint32\-\_\-t}]{modefunc}
+\end{DoxyParamCaption}
+)}}\label{group__IOCON__17XX__40XX_ga5db68254cabb0d4cd4558d81557b77e4}
+
+
+Sets I/\-O Control pin mux. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-I\-O\-C\-O\-N} & \-: The base of I\-O\-C\-O\-N peripheral on the chip \\
+\hline
+{\em port} & \-: G\-P\-I\-O port to mux \\
+\hline
+{\em pin} & \-: G\-P\-I\-O pin to mux \\
+\hline
+{\em modefunc} & \-: O\-R'ed values or type I\-O\-C\-O\-N\-\_\-$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\hypertarget{group__IOCON__17XX__40XX_gad97c96e401016cf296e6d20454f1c522}{\index{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}!Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Set\-Pin\-Muxing@{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Set\-Pin\-Muxing}}
+\index{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Set\-Pin\-Muxing@{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Set\-Pin\-Muxing}!CHIP: LPC17xx/40xx I/O configuration driver@{C\-H\-I\-P\-: L\-P\-C17xx/40xx I/\-O configuration driver}}
+\subsubsection[{Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Set\-Pin\-Muxing}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Chip\-\_\-\-I\-O\-C\-O\-N\-\_\-\-Set\-Pin\-Muxing (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-P\-C\-\_\-\-I\-O\-C\-O\-N\-\_\-\-T} $\ast$}]{p\-I\-O\-C\-O\-N, }
+\item[{const {\bf P\-I\-N\-M\-U\-X\-\_\-\-G\-R\-P\-\_\-\-T} $\ast$}]{pin\-Array, }
+\item[{uint32\-\_\-t}]{array\-Length}
+\end{DoxyParamCaption}
+)}}\label{group__IOCON__17XX__40XX_gad97c96e401016cf296e6d20454f1c522}
+
+
+Set all I/\-O Control pin muxing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-I\-O\-C\-O\-N} & \-: The base of I\-O\-C\-O\-N peripheral on the chip \\
+\hline
+{\em pin\-Array} & \-: Pointer to array of pin mux selections \\
+\hline
+{\em array\-Length} & \-: Number of entries in pin\-Array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}

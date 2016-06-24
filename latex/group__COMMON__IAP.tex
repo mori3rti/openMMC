@@ -1,0 +1,421 @@
+\hypertarget{group__COMMON__IAP}{\section{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}
+\label{group__COMMON__IAP}\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga540234bb0f525a06770175699d01063b}{I\-A\-P\-\_\-\-P\-R\-E\-W\-R\-R\-I\-T\-E\-\_\-\-C\-M\-D}~50
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga9eb15375e6dd4de560a7d43b4483a293}{I\-A\-P\-\_\-\-W\-R\-I\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D}~51
+\item 
+\#define \hyperlink{group__COMMON__IAP_gad212cc38d91507366f07f9393e42eaec}{I\-A\-P\-\_\-\-E\-R\-S\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D}~52
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga2117bbba83cf2110a3fde4cafe189784}{I\-A\-P\-\_\-\-B\-L\-A\-N\-K\-\_\-\-C\-H\-E\-C\-K\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D}~53
+\item 
+\#define \hyperlink{group__COMMON__IAP_gae385db2542e6b2c8b8417cf1b929fcb1}{I\-A\-P\-\_\-\-R\-E\-P\-I\-D\-\_\-\-C\-M\-D}~54
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga8d0f5e06feea423e15ee0238534f80ea}{I\-A\-P\-\_\-\-R\-E\-A\-D\-\_\-\-B\-O\-O\-T\-\_\-\-C\-O\-D\-E\-\_\-\-C\-M\-D}~55
+\item 
+\#define \hyperlink{group__COMMON__IAP_gaa63a66d010441cd1b5837742455cf075}{I\-A\-P\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-C\-M\-D}~56
+\item 
+\#define \hyperlink{group__COMMON__IAP_gad1f3638abcb5134b6fb6aceb67a4bb2c}{I\-A\-P\-\_\-\-R\-E\-I\-N\-V\-O\-K\-E\-\_\-\-I\-S\-P\-\_\-\-C\-M\-D}~57
+\item 
+\#define \hyperlink{group__COMMON__IAP_gad2458645f1cf815f56f205bd7f7fd1af}{I\-A\-P\-\_\-\-R\-E\-A\-D\-\_\-\-U\-I\-D\-\_\-\-C\-M\-D}~58
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga24604c568e67c76aee924f9439426111}{I\-A\-P\-\_\-\-E\-R\-A\-S\-E\-\_\-\-P\-A\-G\-E\-\_\-\-C\-M\-D}~59
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga76ebaaa7cd2a015246d1a44e3a0cc369}{I\-A\-P\-\_\-\-E\-E\-P\-R\-O\-M\-\_\-\-W\-R\-I\-T\-E}~61
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga34d721b0a3ff4caf7b847c9d85fe73a0}{I\-A\-P\-\_\-\-E\-E\-P\-R\-O\-M\-\_\-\-R\-E\-A\-D}~62
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga6855b3bb97689d746eff1f27dde58fc5}{I\-A\-P\-\_\-\-C\-M\-D\-\_\-\-S\-U\-C\-C\-E\-S\-S}~0
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga78fcc8d4b3835576a272431915e39eb7}{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-M\-M\-A\-N\-D}~1
+\item 
+\#define \hyperlink{group__COMMON__IAP_gaad19f900fbc28ee51d3e0138a88a446b}{I\-A\-P\-\_\-\-S\-R\-C\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R}~2
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga72a13c4c7132aa3da476fc0907cb2a08}{I\-A\-P\-\_\-\-D\-S\-T\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R}~3
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga8d15cbc501933748afbe786c587e74f9}{I\-A\-P\-\_\-\-S\-R\-C\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D}~4
+\item 
+\#define \hyperlink{group__COMMON__IAP_gacd5a7fb6c783f5d435e594170757d1d4}{I\-A\-P\-\_\-\-D\-S\-T\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D}~5
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga719488ff2abf2f325b73a10b20403813}{I\-A\-P\-\_\-\-C\-O\-U\-N\-T\-\_\-\-E\-R\-R\-O\-R}~6
+\item 
+\#define \hyperlink{group__COMMON__IAP_gab3af925b968fb59823d08d77261aebf7}{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-E\-C\-T\-O\-R}~7
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga19b046ec9c03aa0276a9cbe409eb3f04}{I\-A\-P\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-N\-O\-T\-\_\-\-B\-L\-A\-N\-K}~8
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga8600f9e930f1dee5d67a2bc11efcde63}{I\-A\-P\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-N\-O\-T\-\_\-\-P\-R\-E\-P\-A\-R\-E\-D}~9
+\item 
+\#define \hyperlink{group__COMMON__IAP_gabeb57ce3d4009fdee1847f5494376c8d}{I\-A\-P\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-E\-R\-R\-O\-R}~10
+\item 
+\#define \hyperlink{group__COMMON__IAP_gaa4e308bc310bb68aa8409a6f830aee04}{I\-A\-P\-\_\-\-B\-U\-S\-Y}~11
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga6bf1bec9cbb419f8006447171e9750b7}{I\-A\-P\-\_\-\-P\-A\-R\-A\-M\-\_\-\-E\-R\-R\-O\-R}~12
+\item 
+\#define \hyperlink{group__COMMON__IAP_gaaff51c256373e4a20f8dab1adc1300f3}{I\-A\-P\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R}~13
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga4cfd7e0c133c450664f0a60bfbbd9eaa}{I\-A\-P\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D}~14
+\item 
+\#define \hyperlink{group__COMMON__IAP_gafdceac1acd5c460094011136c08574a4}{I\-A\-P\-\_\-\-C\-M\-D\-\_\-\-L\-O\-C\-K\-E\-D}~15
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga456a8363a47d21d7198056da4b1e9f61}{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-D\-E}~16
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga6913ca0660dc1a2cccd8c6b09bcdbc75}{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-B\-A\-U\-D\-\_\-\-R\-A\-T\-E}~17
+\item 
+\#define \hyperlink{group__COMMON__IAP_ga6c61111082b04ba6780151c83f8c3644}{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-T\-O\-P\-\_\-\-B\-I\-T}~18
+\item 
+\#define \hyperlink{group__COMMON__IAP_gaaccc191ce402e19b0c0ae399f614efe8}{I\-A\-P\-\_\-\-C\-R\-P\-\_\-\-E\-N\-A\-B\-L\-E\-D}~19
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void}($\ast$ \hyperlink{group__COMMON__IAP_ga532416c10103b6bb939ef311603eabe4}{I\-A\-P\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} )(uint32\-\_\-t\mbox{[}5\mbox{]}, uint32\-\_\-t\mbox{[}5\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\-\_\-t \hyperlink{group__COMMON__IAP_gac45b60745e55670c7fa806e2865625c4}{Chip\-\_\-\-I\-A\-P\-\_\-\-Pre\-Sector\-For\-Read\-Write} (uint32\-\_\-t str\-Sector, uint32\-\_\-t end\-Sector)
+\begin{DoxyCompactList}\small\item\em Prepare sector for write operation. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{group__COMMON__IAP_ga71cb8cde86dc344b05219cdf1ecee638}{Chip\-\_\-\-I\-A\-P\-\_\-\-Copy\-Ram\-To\-Flash} (uint32\-\_\-t dst\-Add, uint32\-\_\-t $\ast$src\-Add, uint32\-\_\-t byteswrt)
+\begin{DoxyCompactList}\small\item\em Copy R\-A\-M to flash. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{group__COMMON__IAP_ga02dbb90a49e24dc449d45a66f03a4a2d}{Chip\-\_\-\-I\-A\-P\-\_\-\-Erase\-Sector} (uint32\-\_\-t str\-Sector, uint32\-\_\-t end\-Sector)
+\begin{DoxyCompactList}\small\item\em Erase sector. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{group__COMMON__IAP_ga98c7e657a618cf004a8967112dae1a30}{Chip\-\_\-\-I\-A\-P\-\_\-\-Blank\-Check\-Sector} (uint32\-\_\-t str\-Sector, uint32\-\_\-t end\-Sector)
+\begin{DoxyCompactList}\small\item\em Blank check a sector or multiples sector of on-\/chip flash memory. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group__COMMON__IAP_gaa4b90551649db0627dc195acfc834cbe}{Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-P\-I\-D} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\begin{DoxyCompactList}\small\item\em Read part identification number. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{group__COMMON__IAP_ga478acfa6d97211d4f43edfa8717dc066}{Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-Boot\-Code} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\begin{DoxyCompactList}\small\item\em Read boot code version number. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{group__COMMON__IAP_ga0f3983319210f99d1931f1e9fa762d9e}{Chip\-\_\-\-I\-A\-P\-\_\-\-Compare} (uint32\-\_\-t dst\-Add, uint32\-\_\-t src\-Add, uint32\-\_\-t bytescmp)
+\begin{DoxyCompactList}\small\item\em Compare the memory contents at two locations. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{group__COMMON__IAP_ga91a6ef5cac3a052f637cf0b5d7d31d53}{Chip\-\_\-\-I\-A\-P\-\_\-\-Reinvoke\-I\-S\-P} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\begin{DoxyCompactList}\small\item\em I\-A\-P reinvoke I\-S\-P to invoke the bootloader in I\-S\-P mode. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group__COMMON__IAP_ga2835e129423f1ce0628004a8adf00773}{Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-U\-I\-D} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\begin{DoxyCompactList}\small\item\em Read the unique I\-D. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{group__COMMON__IAP_ga95ca28fb39884184657054e134671f95}{Chip\-\_\-\-I\-A\-P\-\_\-\-Erase\-Page} (uint32\-\_\-t str\-Page, uint32\-\_\-t end\-Page)
+\begin{DoxyCompactList}\small\item\em Erase a page or multiple papers of on-\/chip flash memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group__COMMON__IAP_gaaff51c256373e4a20f8dab1adc1300f3}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R@{I\-A\-P\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R}}
+\index{I\-A\-P\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R@{I\-A\-P\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R~13}}\label{group__COMMON__IAP_gaaff51c256373e4a20f8dab1adc1300f3}
+Address is not on word boundary \hypertarget{group__COMMON__IAP_ga4cfd7e0c133c450664f0a60bfbbd9eaa}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D@{I\-A\-P\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D}}
+\index{I\-A\-P\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D@{I\-A\-P\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D~14}}\label{group__COMMON__IAP_ga4cfd7e0c133c450664f0a60bfbbd9eaa}
+Address is not mapped in the memory map \hypertarget{group__COMMON__IAP_ga2117bbba83cf2110a3fde4cafe189784}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-B\-L\-A\-N\-K\-\_\-\-C\-H\-E\-C\-K\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-B\-L\-A\-N\-K\-\_\-\-C\-H\-E\-C\-K\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D}}
+\index{I\-A\-P\-\_\-\-B\-L\-A\-N\-K\-\_\-\-C\-H\-E\-C\-K\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-B\-L\-A\-N\-K\-\_\-\-C\-H\-E\-C\-K\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-B\-L\-A\-N\-K\-\_\-\-C\-H\-E\-C\-K\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-B\-L\-A\-N\-K\-\_\-\-C\-H\-E\-C\-K\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D~53}}\label{group__COMMON__IAP_ga2117bbba83cf2110a3fde4cafe189784}
+Blank check sector \hypertarget{group__COMMON__IAP_gaa4e308bc310bb68aa8409a6f830aee04}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-B\-U\-S\-Y@{I\-A\-P\-\_\-\-B\-U\-S\-Y}}
+\index{I\-A\-P\-\_\-\-B\-U\-S\-Y@{I\-A\-P\-\_\-\-B\-U\-S\-Y}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-B\-U\-S\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-B\-U\-S\-Y~11}}\label{group__COMMON__IAP_gaa4e308bc310bb68aa8409a6f830aee04}
+Flash programming hardware interface is busy \hypertarget{group__COMMON__IAP_gafdceac1acd5c460094011136c08574a4}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-C\-M\-D\-\_\-\-L\-O\-C\-K\-E\-D@{I\-A\-P\-\_\-\-C\-M\-D\-\_\-\-L\-O\-C\-K\-E\-D}}
+\index{I\-A\-P\-\_\-\-C\-M\-D\-\_\-\-L\-O\-C\-K\-E\-D@{I\-A\-P\-\_\-\-C\-M\-D\-\_\-\-L\-O\-C\-K\-E\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-C\-M\-D\-\_\-\-L\-O\-C\-K\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-C\-M\-D\-\_\-\-L\-O\-C\-K\-E\-D~15}}\label{group__COMMON__IAP_gafdceac1acd5c460094011136c08574a4}
+Command is locked \hypertarget{group__COMMON__IAP_ga6855b3bb97689d746eff1f27dde58fc5}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-C\-M\-D\-\_\-\-S\-U\-C\-C\-E\-S\-S@{I\-A\-P\-\_\-\-C\-M\-D\-\_\-\-S\-U\-C\-C\-E\-S\-S}}
+\index{I\-A\-P\-\_\-\-C\-M\-D\-\_\-\-S\-U\-C\-C\-E\-S\-S@{I\-A\-P\-\_\-\-C\-M\-D\-\_\-\-S\-U\-C\-C\-E\-S\-S}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-C\-M\-D\-\_\-\-S\-U\-C\-C\-E\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-C\-M\-D\-\_\-\-S\-U\-C\-C\-E\-S\-S~0}}\label{group__COMMON__IAP_ga6855b3bb97689d746eff1f27dde58fc5}
+Command is executed successfully \hypertarget{group__COMMON__IAP_gaa63a66d010441cd1b5837742455cf075}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-C\-M\-D}}
+\index{I\-A\-P\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-C\-M\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-C\-M\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-C\-M\-D~56}}\label{group__COMMON__IAP_gaa63a66d010441cd1b5837742455cf075}
+Compare two R\-A\-M address locations \hypertarget{group__COMMON__IAP_gabeb57ce3d4009fdee1847f5494376c8d}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-E\-R\-R\-O\-R@{I\-A\-P\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-E\-R\-R\-O\-R}}
+\index{I\-A\-P\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-E\-R\-R\-O\-R@{I\-A\-P\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-E\-R\-R\-O\-R}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-C\-O\-M\-P\-A\-R\-E\-\_\-\-E\-R\-R\-O\-R~10}}\label{group__COMMON__IAP_gabeb57ce3d4009fdee1847f5494376c8d}
+Source and destination data not equal \hypertarget{group__COMMON__IAP_ga719488ff2abf2f325b73a10b20403813}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-C\-O\-U\-N\-T\-\_\-\-E\-R\-R\-O\-R@{I\-A\-P\-\_\-\-C\-O\-U\-N\-T\-\_\-\-E\-R\-R\-O\-R}}
+\index{I\-A\-P\-\_\-\-C\-O\-U\-N\-T\-\_\-\-E\-R\-R\-O\-R@{I\-A\-P\-\_\-\-C\-O\-U\-N\-T\-\_\-\-E\-R\-R\-O\-R}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-C\-O\-U\-N\-T\-\_\-\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-C\-O\-U\-N\-T\-\_\-\-E\-R\-R\-O\-R~6}}\label{group__COMMON__IAP_ga719488ff2abf2f325b73a10b20403813}
+Byte count is not multiple of 4 or is not a permitted value \hypertarget{group__COMMON__IAP_gaaccc191ce402e19b0c0ae399f614efe8}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-C\-R\-P\-\_\-\-E\-N\-A\-B\-L\-E\-D@{I\-A\-P\-\_\-\-C\-R\-P\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{I\-A\-P\-\_\-\-C\-R\-P\-\_\-\-E\-N\-A\-B\-L\-E\-D@{I\-A\-P\-\_\-\-C\-R\-P\-\_\-\-E\-N\-A\-B\-L\-E\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-C\-R\-P\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-C\-R\-P\-\_\-\-E\-N\-A\-B\-L\-E\-D~19}}\label{group__COMMON__IAP_gaaccc191ce402e19b0c0ae399f614efe8}
+Code read protection enabled \hypertarget{group__COMMON__IAP_ga72a13c4c7132aa3da476fc0907cb2a08}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-D\-S\-T\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R@{I\-A\-P\-\_\-\-D\-S\-T\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R}}
+\index{I\-A\-P\-\_\-\-D\-S\-T\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R@{I\-A\-P\-\_\-\-D\-S\-T\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-D\-S\-T\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-D\-S\-T\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R~3}}\label{group__COMMON__IAP_ga72a13c4c7132aa3da476fc0907cb2a08}
+Destination address is not on a correct boundary \hypertarget{group__COMMON__IAP_gacd5a7fb6c783f5d435e594170757d1d4}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-D\-S\-T\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D@{I\-A\-P\-\_\-\-D\-S\-T\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D}}
+\index{I\-A\-P\-\_\-\-D\-S\-T\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D@{I\-A\-P\-\_\-\-D\-S\-T\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-D\-S\-T\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-D\-S\-T\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D~5}}\label{group__COMMON__IAP_gacd5a7fb6c783f5d435e594170757d1d4}
+Destination address is not mapped in the memory map \hypertarget{group__COMMON__IAP_ga34d721b0a3ff4caf7b847c9d85fe73a0}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-E\-E\-P\-R\-O\-M\-\_\-\-R\-E\-A\-D@{I\-A\-P\-\_\-\-E\-E\-P\-R\-O\-M\-\_\-\-R\-E\-A\-D}}
+\index{I\-A\-P\-\_\-\-E\-E\-P\-R\-O\-M\-\_\-\-R\-E\-A\-D@{I\-A\-P\-\_\-\-E\-E\-P\-R\-O\-M\-\_\-\-R\-E\-A\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-E\-E\-P\-R\-O\-M\-\_\-\-R\-E\-A\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-E\-E\-P\-R\-O\-M\-\_\-\-R\-E\-A\-D~62}}\label{group__COMMON__IAP_ga34d721b0a3ff4caf7b847c9d85fe73a0}
+E\-E\-P\-R\-O\-M R\-E\-A\-D command \hypertarget{group__COMMON__IAP_ga76ebaaa7cd2a015246d1a44e3a0cc369}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-E\-E\-P\-R\-O\-M\-\_\-\-W\-R\-I\-T\-E@{I\-A\-P\-\_\-\-E\-E\-P\-R\-O\-M\-\_\-\-W\-R\-I\-T\-E}}
+\index{I\-A\-P\-\_\-\-E\-E\-P\-R\-O\-M\-\_\-\-W\-R\-I\-T\-E@{I\-A\-P\-\_\-\-E\-E\-P\-R\-O\-M\-\_\-\-W\-R\-I\-T\-E}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-E\-E\-P\-R\-O\-M\-\_\-\-W\-R\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-E\-E\-P\-R\-O\-M\-\_\-\-W\-R\-I\-T\-E~61}}\label{group__COMMON__IAP_ga76ebaaa7cd2a015246d1a44e3a0cc369}
+E\-E\-P\-R\-O\-M Write command \hypertarget{group__COMMON__IAP_ga24604c568e67c76aee924f9439426111}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-E\-R\-A\-S\-E\-\_\-\-P\-A\-G\-E\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-E\-R\-A\-S\-E\-\_\-\-P\-A\-G\-E\-\_\-\-C\-M\-D}}
+\index{I\-A\-P\-\_\-\-E\-R\-A\-S\-E\-\_\-\-P\-A\-G\-E\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-E\-R\-A\-S\-E\-\_\-\-P\-A\-G\-E\-\_\-\-C\-M\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-E\-R\-A\-S\-E\-\_\-\-P\-A\-G\-E\-\_\-\-C\-M\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-E\-R\-A\-S\-E\-\_\-\-P\-A\-G\-E\-\_\-\-C\-M\-D~59}}\label{group__COMMON__IAP_ga24604c568e67c76aee924f9439426111}
+Erase page \hypertarget{group__COMMON__IAP_gad212cc38d91507366f07f9393e42eaec}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-E\-R\-S\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-E\-R\-S\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D}}
+\index{I\-A\-P\-\_\-\-E\-R\-S\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-E\-R\-S\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-E\-R\-S\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-E\-R\-S\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D~52}}\label{group__COMMON__IAP_gad212cc38d91507366f07f9393e42eaec}
+Erase Sector command \hypertarget{group__COMMON__IAP_ga6913ca0660dc1a2cccd8c6b09bcdbc75}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-B\-A\-U\-D\-\_\-\-R\-A\-T\-E@{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-B\-A\-U\-D\-\_\-\-R\-A\-T\-E}}
+\index{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-B\-A\-U\-D\-\_\-\-R\-A\-T\-E@{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-B\-A\-U\-D\-\_\-\-R\-A\-T\-E}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-B\-A\-U\-D\-\_\-\-R\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-B\-A\-U\-D\-\_\-\-R\-A\-T\-E~17}}\label{group__COMMON__IAP_ga6913ca0660dc1a2cccd8c6b09bcdbc75}
+Invalid baud rate setting \hypertarget{group__COMMON__IAP_ga456a8363a47d21d7198056da4b1e9f61}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-D\-E@{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-D\-E}}
+\index{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-D\-E@{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-D\-E}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-D\-E~16}}\label{group__COMMON__IAP_ga456a8363a47d21d7198056da4b1e9f61}
+Unlock code is invalid \hypertarget{group__COMMON__IAP_ga78fcc8d4b3835576a272431915e39eb7}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-M\-M\-A\-N\-D@{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-M\-M\-A\-N\-D}}
+\index{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-M\-M\-A\-N\-D@{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-M\-M\-A\-N\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-M\-M\-A\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-M\-M\-A\-N\-D~1}}\label{group__COMMON__IAP_ga78fcc8d4b3835576a272431915e39eb7}
+Invalid command \hypertarget{group__COMMON__IAP_gab3af925b968fb59823d08d77261aebf7}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-E\-C\-T\-O\-R@{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-E\-C\-T\-O\-R}}
+\index{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-E\-C\-T\-O\-R@{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-E\-C\-T\-O\-R}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-E\-C\-T\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-E\-C\-T\-O\-R~7}}\label{group__COMMON__IAP_gab3af925b968fb59823d08d77261aebf7}
+Sector number is invalid or end sector number is greater than start sector number \hypertarget{group__COMMON__IAP_ga6c61111082b04ba6780151c83f8c3644}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-T\-O\-P\-\_\-\-B\-I\-T@{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-T\-O\-P\-\_\-\-B\-I\-T}}
+\index{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-T\-O\-P\-\_\-\-B\-I\-T@{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-T\-O\-P\-\_\-\-B\-I\-T}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-T\-O\-P\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-T\-O\-P\-\_\-\-B\-I\-T~18}}\label{group__COMMON__IAP_ga6c61111082b04ba6780151c83f8c3644}
+Invalid stop bit setting \hypertarget{group__COMMON__IAP_ga6bf1bec9cbb419f8006447171e9750b7}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-P\-A\-R\-A\-M\-\_\-\-E\-R\-R\-O\-R@{I\-A\-P\-\_\-\-P\-A\-R\-A\-M\-\_\-\-E\-R\-R\-O\-R}}
+\index{I\-A\-P\-\_\-\-P\-A\-R\-A\-M\-\_\-\-E\-R\-R\-O\-R@{I\-A\-P\-\_\-\-P\-A\-R\-A\-M\-\_\-\-E\-R\-R\-O\-R}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-P\-A\-R\-A\-M\-\_\-\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-P\-A\-R\-A\-M\-\_\-\-E\-R\-R\-O\-R~12}}\label{group__COMMON__IAP_ga6bf1bec9cbb419f8006447171e9750b7}
+nsufficient number of parameters or invalid parameter \hypertarget{group__COMMON__IAP_ga540234bb0f525a06770175699d01063b}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-P\-R\-E\-W\-R\-R\-I\-T\-E\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-P\-R\-E\-W\-R\-R\-I\-T\-E\-\_\-\-C\-M\-D}}
+\index{I\-A\-P\-\_\-\-P\-R\-E\-W\-R\-R\-I\-T\-E\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-P\-R\-E\-W\-R\-R\-I\-T\-E\-\_\-\-C\-M\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-P\-R\-E\-W\-R\-R\-I\-T\-E\-\_\-\-C\-M\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-P\-R\-E\-W\-R\-R\-I\-T\-E\-\_\-\-C\-M\-D~50}}\label{group__COMMON__IAP_ga540234bb0f525a06770175699d01063b}
+Prepare sector for write operation command \hypertarget{group__COMMON__IAP_ga8d0f5e06feea423e15ee0238534f80ea}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-R\-E\-A\-D\-\_\-\-B\-O\-O\-T\-\_\-\-C\-O\-D\-E\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-R\-E\-A\-D\-\_\-\-B\-O\-O\-T\-\_\-\-C\-O\-D\-E\-\_\-\-C\-M\-D}}
+\index{I\-A\-P\-\_\-\-R\-E\-A\-D\-\_\-\-B\-O\-O\-T\-\_\-\-C\-O\-D\-E\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-R\-E\-A\-D\-\_\-\-B\-O\-O\-T\-\_\-\-C\-O\-D\-E\-\_\-\-C\-M\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-R\-E\-A\-D\-\_\-\-B\-O\-O\-T\-\_\-\-C\-O\-D\-E\-\_\-\-C\-M\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-R\-E\-A\-D\-\_\-\-B\-O\-O\-T\-\_\-\-C\-O\-D\-E\-\_\-\-C\-M\-D~55}}\label{group__COMMON__IAP_ga8d0f5e06feea423e15ee0238534f80ea}
+Read Boot code version \hypertarget{group__COMMON__IAP_gad2458645f1cf815f56f205bd7f7fd1af}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-R\-E\-A\-D\-\_\-\-U\-I\-D\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-R\-E\-A\-D\-\_\-\-U\-I\-D\-\_\-\-C\-M\-D}}
+\index{I\-A\-P\-\_\-\-R\-E\-A\-D\-\_\-\-U\-I\-D\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-R\-E\-A\-D\-\_\-\-U\-I\-D\-\_\-\-C\-M\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-R\-E\-A\-D\-\_\-\-U\-I\-D\-\_\-\-C\-M\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-R\-E\-A\-D\-\_\-\-U\-I\-D\-\_\-\-C\-M\-D~58}}\label{group__COMMON__IAP_gad2458645f1cf815f56f205bd7f7fd1af}
+Read U\-I\-D \hypertarget{group__COMMON__IAP_gad1f3638abcb5134b6fb6aceb67a4bb2c}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-R\-E\-I\-N\-V\-O\-K\-E\-\_\-\-I\-S\-P\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-R\-E\-I\-N\-V\-O\-K\-E\-\_\-\-I\-S\-P\-\_\-\-C\-M\-D}}
+\index{I\-A\-P\-\_\-\-R\-E\-I\-N\-V\-O\-K\-E\-\_\-\-I\-S\-P\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-R\-E\-I\-N\-V\-O\-K\-E\-\_\-\-I\-S\-P\-\_\-\-C\-M\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-R\-E\-I\-N\-V\-O\-K\-E\-\_\-\-I\-S\-P\-\_\-\-C\-M\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-R\-E\-I\-N\-V\-O\-K\-E\-\_\-\-I\-S\-P\-\_\-\-C\-M\-D~57}}\label{group__COMMON__IAP_gad1f3638abcb5134b6fb6aceb67a4bb2c}
+Reinvoke I\-S\-P \hypertarget{group__COMMON__IAP_gae385db2542e6b2c8b8417cf1b929fcb1}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-R\-E\-P\-I\-D\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-R\-E\-P\-I\-D\-\_\-\-C\-M\-D}}
+\index{I\-A\-P\-\_\-\-R\-E\-P\-I\-D\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-R\-E\-P\-I\-D\-\_\-\-C\-M\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-R\-E\-P\-I\-D\-\_\-\-C\-M\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-R\-E\-P\-I\-D\-\_\-\-C\-M\-D~54}}\label{group__COMMON__IAP_gae385db2542e6b2c8b8417cf1b929fcb1}
+Read Part\-I\-D command \hypertarget{group__COMMON__IAP_ga19b046ec9c03aa0276a9cbe409eb3f04}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-N\-O\-T\-\_\-\-B\-L\-A\-N\-K@{I\-A\-P\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-N\-O\-T\-\_\-\-B\-L\-A\-N\-K}}
+\index{I\-A\-P\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-N\-O\-T\-\_\-\-B\-L\-A\-N\-K@{I\-A\-P\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-N\-O\-T\-\_\-\-B\-L\-A\-N\-K}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-N\-O\-T\-\_\-\-B\-L\-A\-N\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-N\-O\-T\-\_\-\-B\-L\-A\-N\-K~8}}\label{group__COMMON__IAP_ga19b046ec9c03aa0276a9cbe409eb3f04}
+Sector is not blank \hypertarget{group__COMMON__IAP_ga8600f9e930f1dee5d67a2bc11efcde63}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-N\-O\-T\-\_\-\-P\-R\-E\-P\-A\-R\-E\-D@{I\-A\-P\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-N\-O\-T\-\_\-\-P\-R\-E\-P\-A\-R\-E\-D}}
+\index{I\-A\-P\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-N\-O\-T\-\_\-\-P\-R\-E\-P\-A\-R\-E\-D@{I\-A\-P\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-N\-O\-T\-\_\-\-P\-R\-E\-P\-A\-R\-E\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-N\-O\-T\-\_\-\-P\-R\-E\-P\-A\-R\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-S\-E\-C\-T\-O\-R\-\_\-\-N\-O\-T\-\_\-\-P\-R\-E\-P\-A\-R\-E\-D~9}}\label{group__COMMON__IAP_ga8600f9e930f1dee5d67a2bc11efcde63}
+Command to prepare sector for write operation was not executed \hypertarget{group__COMMON__IAP_gaad19f900fbc28ee51d3e0138a88a446b}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-S\-R\-C\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R@{I\-A\-P\-\_\-\-S\-R\-C\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R}}
+\index{I\-A\-P\-\_\-\-S\-R\-C\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R@{I\-A\-P\-\_\-\-S\-R\-C\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-S\-R\-C\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-S\-R\-C\-\_\-\-A\-D\-D\-R\-\_\-\-E\-R\-R\-O\-R~2}}\label{group__COMMON__IAP_gaad19f900fbc28ee51d3e0138a88a446b}
+Source address is not on word boundary \hypertarget{group__COMMON__IAP_ga8d15cbc501933748afbe786c587e74f9}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-S\-R\-C\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D@{I\-A\-P\-\_\-\-S\-R\-C\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D}}
+\index{I\-A\-P\-\_\-\-S\-R\-C\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D@{I\-A\-P\-\_\-\-S\-R\-C\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-S\-R\-C\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-S\-R\-C\-\_\-\-A\-D\-D\-R\-\_\-\-N\-O\-T\-\_\-\-M\-A\-P\-P\-E\-D~4}}\label{group__COMMON__IAP_ga8d15cbc501933748afbe786c587e74f9}
+Source address is not mapped in the memory map \hypertarget{group__COMMON__IAP_ga9eb15375e6dd4de560a7d43b4483a293}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-W\-R\-I\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-W\-R\-I\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D}}
+\index{I\-A\-P\-\_\-\-W\-R\-I\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D@{I\-A\-P\-\_\-\-W\-R\-I\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-W\-R\-I\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-A\-P\-\_\-\-W\-R\-I\-S\-E\-C\-T\-O\-R\-\_\-\-C\-M\-D~51}}\label{group__COMMON__IAP_ga9eb15375e6dd4de560a7d43b4483a293}
+Write Sector command 
+
+\subsection{Typedef Documentation}
+\hypertarget{group__COMMON__IAP_ga532416c10103b6bb939ef311603eabe4}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!I\-A\-P\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T@{I\-A\-P\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T}}
+\index{I\-A\-P\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T@{I\-A\-P\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{I\-A\-P\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ I\-A\-P\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T)(uint32\-\_\-t\mbox{[}5\mbox{]}, uint32\-\_\-t\mbox{[}5\mbox{]})}}\label{group__COMMON__IAP_ga532416c10103b6bb939ef311603eabe4}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__COMMON__IAP_ga98c7e657a618cf004a8967112dae1a30}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!Chip\-\_\-\-I\-A\-P\-\_\-\-Blank\-Check\-Sector@{Chip\-\_\-\-I\-A\-P\-\_\-\-Blank\-Check\-Sector}}
+\index{Chip\-\_\-\-I\-A\-P\-\_\-\-Blank\-Check\-Sector@{Chip\-\_\-\-I\-A\-P\-\_\-\-Blank\-Check\-Sector}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{Chip\-\_\-\-I\-A\-P\-\_\-\-Blank\-Check\-Sector}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Chip\-\_\-\-I\-A\-P\-\_\-\-Blank\-Check\-Sector (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{str\-Sector, }
+\item[{uint32\-\_\-t}]{end\-Sector}
+\end{DoxyParamCaption}
+)}}\label{group__COMMON__IAP_ga98c7e657a618cf004a8967112dae1a30}
+
+
+Blank check a sector or multiples sector of on-\/chip flash memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\-Sector} & \-: Start sector number \\
+\hline
+{\em end\-Sector} & \-: End sector number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Offset of the first non blank word location if the status code is S\-E\-C\-T\-O\-R\-\_\-\-N\-O\-T\-\_\-\-B\-L\-A\-N\-K 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The end sector must be greater than or equal to start sector number 
+\end{DoxyNote}
+\hypertarget{group__COMMON__IAP_ga0f3983319210f99d1931f1e9fa762d9e}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!Chip\-\_\-\-I\-A\-P\-\_\-\-Compare@{Chip\-\_\-\-I\-A\-P\-\_\-\-Compare}}
+\index{Chip\-\_\-\-I\-A\-P\-\_\-\-Compare@{Chip\-\_\-\-I\-A\-P\-\_\-\-Compare}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{Chip\-\_\-\-I\-A\-P\-\_\-\-Compare}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Chip\-\_\-\-I\-A\-P\-\_\-\-Compare (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{dst\-Add, }
+\item[{uint32\-\_\-t}]{src\-Add, }
+\item[{uint32\-\_\-t}]{bytescmp}
+\end{DoxyParamCaption}
+)}}\label{group__COMMON__IAP_ga0f3983319210f99d1931f1e9fa762d9e}
+
+
+Compare the memory contents at two locations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst\-Add} & \-: Destination of the R\-A\-M address of data bytes to be compared \\
+\hline
+{\em src\-Add} & \-: Source of the R\-A\-M address of data bytes to be compared \\
+\hline
+{\em bytescmp} & \-: Number of bytes to be compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Offset of the first mismatch of the status code is C\-O\-M\-P\-A\-R\-E\-\_\-\-E\-R\-R\-O\-R 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The addresses should be a word boundary and number of bytes should be a multiply of 4 
+\end{DoxyNote}
+\hypertarget{group__COMMON__IAP_ga71cb8cde86dc344b05219cdf1ecee638}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!Chip\-\_\-\-I\-A\-P\-\_\-\-Copy\-Ram\-To\-Flash@{Chip\-\_\-\-I\-A\-P\-\_\-\-Copy\-Ram\-To\-Flash}}
+\index{Chip\-\_\-\-I\-A\-P\-\_\-\-Copy\-Ram\-To\-Flash@{Chip\-\_\-\-I\-A\-P\-\_\-\-Copy\-Ram\-To\-Flash}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{Chip\-\_\-\-I\-A\-P\-\_\-\-Copy\-Ram\-To\-Flash}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Chip\-\_\-\-I\-A\-P\-\_\-\-Copy\-Ram\-To\-Flash (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{dst\-Add, }
+\item[{uint32\-\_\-t $\ast$}]{src\-Add, }
+\item[{uint32\-\_\-t}]{byteswrt}
+\end{DoxyParamCaption}
+)}}\label{group__COMMON__IAP_ga71cb8cde86dc344b05219cdf1ecee638}
+
+
+Copy R\-A\-M to flash. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst\-Add} & \-: Destination flash address where data bytes are to be written \\
+\hline
+{\em src\-Add} & \-: Source flash address where data bytes are to be read \\
+\hline
+{\em byteswrt} & \-: Number of bytes to be written \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status code to indicate the command is executed successfully or not 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The addresses should be a 256 byte boundary and the number of bytes should be 256 $\vert$ 512 $\vert$ 1024 $\vert$ 4096 
+\end{DoxyNote}
+\hypertarget{group__COMMON__IAP_ga95ca28fb39884184657054e134671f95}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!Chip\-\_\-\-I\-A\-P\-\_\-\-Erase\-Page@{Chip\-\_\-\-I\-A\-P\-\_\-\-Erase\-Page}}
+\index{Chip\-\_\-\-I\-A\-P\-\_\-\-Erase\-Page@{Chip\-\_\-\-I\-A\-P\-\_\-\-Erase\-Page}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{Chip\-\_\-\-I\-A\-P\-\_\-\-Erase\-Page}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Chip\-\_\-\-I\-A\-P\-\_\-\-Erase\-Page (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{str\-Page, }
+\item[{uint32\-\_\-t}]{end\-Page}
+\end{DoxyParamCaption}
+)}}\label{group__COMMON__IAP_ga95ca28fb39884184657054e134671f95}
+
+
+Erase a page or multiple papers of on-\/chip flash memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\-Page} & \-: Start page number \\
+\hline
+{\em end\-Page} & \-: End page number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status code to indicate the command is executed successfully or not 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The page number must be greater than or equal to start page number 
+\end{DoxyNote}
+\hypertarget{group__COMMON__IAP_ga02dbb90a49e24dc449d45a66f03a4a2d}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!Chip\-\_\-\-I\-A\-P\-\_\-\-Erase\-Sector@{Chip\-\_\-\-I\-A\-P\-\_\-\-Erase\-Sector}}
+\index{Chip\-\_\-\-I\-A\-P\-\_\-\-Erase\-Sector@{Chip\-\_\-\-I\-A\-P\-\_\-\-Erase\-Sector}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{Chip\-\_\-\-I\-A\-P\-\_\-\-Erase\-Sector}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Chip\-\_\-\-I\-A\-P\-\_\-\-Erase\-Sector (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{str\-Sector, }
+\item[{uint32\-\_\-t}]{end\-Sector}
+\end{DoxyParamCaption}
+)}}\label{group__COMMON__IAP_ga02dbb90a49e24dc449d45a66f03a4a2d}
+
+
+Erase sector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\-Sector} & \-: Start sector number \\
+\hline
+{\em end\-Sector} & \-: End sector number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status code to indicate the command is executed successfully or not 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The end sector must be greater than or equal to start sector number 
+\end{DoxyNote}
+\hypertarget{group__COMMON__IAP_gac45b60745e55670c7fa806e2865625c4}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!Chip\-\_\-\-I\-A\-P\-\_\-\-Pre\-Sector\-For\-Read\-Write@{Chip\-\_\-\-I\-A\-P\-\_\-\-Pre\-Sector\-For\-Read\-Write}}
+\index{Chip\-\_\-\-I\-A\-P\-\_\-\-Pre\-Sector\-For\-Read\-Write@{Chip\-\_\-\-I\-A\-P\-\_\-\-Pre\-Sector\-For\-Read\-Write}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{Chip\-\_\-\-I\-A\-P\-\_\-\-Pre\-Sector\-For\-Read\-Write}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Chip\-\_\-\-I\-A\-P\-\_\-\-Pre\-Sector\-For\-Read\-Write (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{str\-Sector, }
+\item[{uint32\-\_\-t}]{end\-Sector}
+\end{DoxyParamCaption}
+)}}\label{group__COMMON__IAP_gac45b60745e55670c7fa806e2865625c4}
+
+
+Prepare sector for write operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\-Sector} & \-: Start sector number \\
+\hline
+{\em end\-Sector} & \-: End sector number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status code to indicate the command is executed successfully or not 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This command must be executed before executing \char`\"{}\-Copy R\-A\-M to flash\char`\"{} or \char`\"{}\-Erase Sector\char`\"{} command. The end sector must be greater than or equal to start sector number 
+\end{DoxyNote}
+\hypertarget{group__COMMON__IAP_ga478acfa6d97211d4f43edfa8717dc066}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-Boot\-Code@{Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-Boot\-Code}}
+\index{Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-Boot\-Code@{Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-Boot\-Code}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-Boot\-Code}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-Boot\-Code (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{group__COMMON__IAP_ga478acfa6d97211d4f43edfa8717dc066}
+
+
+Read boot code version number. 
+
+\begin{DoxyReturn}{Returns}
+Boot code version number 
+\end{DoxyReturn}
+\hypertarget{group__COMMON__IAP_gaa4b90551649db0627dc195acfc834cbe}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-P\-I\-D@{Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-P\-I\-D}}
+\index{Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-P\-I\-D@{Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-P\-I\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-P\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-P\-I\-D (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{group__COMMON__IAP_gaa4b90551649db0627dc195acfc834cbe}
+
+
+Read part identification number. 
+
+\begin{DoxyReturn}{Returns}
+Part identification number 
+\end{DoxyReturn}
+\hypertarget{group__COMMON__IAP_ga2835e129423f1ce0628004a8adf00773}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-U\-I\-D@{Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-U\-I\-D}}
+\index{Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-U\-I\-D@{Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-U\-I\-D}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-U\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t Chip\-\_\-\-I\-A\-P\-\_\-\-Read\-U\-I\-D (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{group__COMMON__IAP_ga2835e129423f1ce0628004a8adf00773}
+
+
+Read the unique I\-D. 
+
+\begin{DoxyReturn}{Returns}
+Status code to indicate the command is executed successfully or not 
+\end{DoxyReturn}
+\hypertarget{group__COMMON__IAP_ga91a6ef5cac3a052f637cf0b5d7d31d53}{\index{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}!Chip\-\_\-\-I\-A\-P\-\_\-\-Reinvoke\-I\-S\-P@{Chip\-\_\-\-I\-A\-P\-\_\-\-Reinvoke\-I\-S\-P}}
+\index{Chip\-\_\-\-I\-A\-P\-\_\-\-Reinvoke\-I\-S\-P@{Chip\-\_\-\-I\-A\-P\-\_\-\-Reinvoke\-I\-S\-P}!CHIP: Common Chip ISP/IAP commands and return codes@{C\-H\-I\-P\-: Common Chip I\-S\-P/\-I\-A\-P commands and return codes}}
+\subsubsection[{Chip\-\_\-\-I\-A\-P\-\_\-\-Reinvoke\-I\-S\-P}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Chip\-\_\-\-I\-A\-P\-\_\-\-Reinvoke\-I\-S\-P (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{group__COMMON__IAP_ga91a6ef5cac3a052f637cf0b5d7d31d53}
+
+
+I\-A\-P reinvoke I\-S\-P to invoke the bootloader in I\-S\-P mode. 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}

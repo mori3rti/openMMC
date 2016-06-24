@@ -1,0 +1,101 @@
+\hypertarget{GCC_2RX600_2port_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-R\-X600/port.c File Reference}
+\label{GCC_2RX600_2port_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-R\-X600/port.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-R\-X600/port.\-c}}
+}
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}string.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}iodefine.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{GCC_2RX600_2port_8c_a3b89bf729488db5c18a40f8a016e3838}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-W}~( ( \hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} ) 0x00030000 )
+\item 
+\#define \hyperlink{GCC_2RX600_2port_8c_a47c0272f6cd8a21854c4a350fa19333f}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-P\-S\-W}~( ( \hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} ) 0x00000100 )
+\item 
+\#define \hyperlink{GCC_2RX600_2port_8c_acae815a3d4603cd8f470ac0ea2603e12}{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-K\-E\-R\-N\-E\-L\-\_\-\-I\-S\-R}()~\-\_\-\-\_\-asm volatile ( \char`\"{}M\-V\-T\-I\-P\-L	\%0\char`\"{} \-::\char`\"{}i\char`\"{}(config\-M\-A\-X\-\_\-\-S\-Y\-S\-C\-A\-L\-L\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y) )
+\item 
+\#define \hyperlink{GCC_2RX600_2port_8c_a69392d482d6a02d90fb1cb76cb1ade3a}{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-K\-E\-R\-N\-E\-L\-\_\-\-I\-S\-R}()~\-\_\-\-\_\-asm volatile ( \char`\"{}M\-V\-T\-I\-P\-L	\%0\char`\"{} \-::\char`\"{}i\char`\"{}(config\-K\-E\-R\-N\-E\-L\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y) )
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{GCC_2RX600_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{x\-Port\-Start\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2RX600_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{v\-Port\-End\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2RX600_2port_8c_a05b8170f6114a4798593860395d9e8fd}{v\-Software\-Interrupt\-I\-S\-R} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2RX600_2port_8c_a502142367426395ab5c401b99204b437}{v\-Tick\-I\-S\-R} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+uint32\-\_\-t \hyperlink{GCC_2RX600_2port_8c_ab3858308e4e94ffb6656bf736efbc878}{ul\-Port\-Get\-I\-P\-L} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2RX600_2port_8c_a5998eda23104c1c864f914a13c18dd2d}{v\-Port\-Set\-I\-P\-L} (uint32\-\_\-t ul\-New\-I\-P\-L)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{GCC_2RX600_2port_8c_acae815a3d4603cd8f470ac0ea2603e12}{\index{G\-C\-C/\-R\-X600/port.\-c@{G\-C\-C/\-R\-X600/port.\-c}!port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-K\-E\-R\-N\-E\-L\-\_\-\-I\-S\-R@{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-K\-E\-R\-N\-E\-L\-\_\-\-I\-S\-R}}
+\index{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-K\-E\-R\-N\-E\-L\-\_\-\-I\-S\-R@{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-K\-E\-R\-N\-E\-L\-\_\-\-I\-S\-R}!GCC/RX600/port.c@{G\-C\-C/\-R\-X600/port.\-c}}
+\subsubsection[{port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-K\-E\-R\-N\-E\-L\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-D\-I\-S\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-K\-E\-R\-N\-E\-L\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~\-\_\-\-\_\-asm volatile ( \char`\"{}M\-V\-T\-I\-P\-L	\%0\char`\"{} \-::\char`\"{}i\char`\"{}(config\-M\-A\-X\-\_\-\-S\-Y\-S\-C\-A\-L\-L\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y) )}}\label{GCC_2RX600_2port_8c_acae815a3d4603cd8f470ac0ea2603e12}
+\hypertarget{GCC_2RX600_2port_8c_a69392d482d6a02d90fb1cb76cb1ade3a}{\index{G\-C\-C/\-R\-X600/port.\-c@{G\-C\-C/\-R\-X600/port.\-c}!port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-K\-E\-R\-N\-E\-L\-\_\-\-I\-S\-R@{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-K\-E\-R\-N\-E\-L\-\_\-\-I\-S\-R}}
+\index{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-K\-E\-R\-N\-E\-L\-\_\-\-I\-S\-R@{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-K\-E\-R\-N\-E\-L\-\_\-\-I\-S\-R}!GCC/RX600/port.c@{G\-C\-C/\-R\-X600/port.\-c}}
+\subsubsection[{port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-K\-E\-R\-N\-E\-L\-\_\-\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-E\-N\-A\-B\-L\-E\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-F\-R\-O\-M\-\_\-\-K\-E\-R\-N\-E\-L\-\_\-\-I\-S\-R(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~\-\_\-\-\_\-asm volatile ( \char`\"{}M\-V\-T\-I\-P\-L	\%0\char`\"{} \-::\char`\"{}i\char`\"{}(config\-K\-E\-R\-N\-E\-L\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y) )}}\label{GCC_2RX600_2port_8c_a69392d482d6a02d90fb1cb76cb1ade3a}
+\hypertarget{GCC_2RX600_2port_8c_a47c0272f6cd8a21854c4a350fa19333f}{\index{G\-C\-C/\-R\-X600/port.\-c@{G\-C\-C/\-R\-X600/port.\-c}!port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-P\-S\-W@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-P\-S\-W}}
+\index{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-P\-S\-W@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-P\-S\-W}!GCC/RX600/port.c@{G\-C\-C/\-R\-X600/port.\-c}}
+\subsubsection[{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-P\-S\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-P\-S\-W~( ( {\bf Stack\-Type\-\_\-t} ) 0x00000100 )}}\label{GCC_2RX600_2port_8c_a47c0272f6cd8a21854c4a350fa19333f}
+\hypertarget{GCC_2RX600_2port_8c_a3b89bf729488db5c18a40f8a016e3838}{\index{G\-C\-C/\-R\-X600/port.\-c@{G\-C\-C/\-R\-X600/port.\-c}!port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-W@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-W}}
+\index{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-W@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-W}!GCC/RX600/port.c@{G\-C\-C/\-R\-X600/port.\-c}}
+\subsubsection[{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-P\-S\-W~( ( {\bf Stack\-Type\-\_\-t} ) 0x00030000 )}}\label{GCC_2RX600_2port_8c_a3b89bf729488db5c18a40f8a016e3838}
+
+
+\subsection{Function Documentation}
+\hypertarget{GCC_2RX600_2port_8c_ab3858308e4e94ffb6656bf736efbc878}{\index{G\-C\-C/\-R\-X600/port.\-c@{G\-C\-C/\-R\-X600/port.\-c}!ul\-Port\-Get\-I\-P\-L@{ul\-Port\-Get\-I\-P\-L}}
+\index{ul\-Port\-Get\-I\-P\-L@{ul\-Port\-Get\-I\-P\-L}!GCC/RX600/port.c@{G\-C\-C/\-R\-X600/port.\-c}}
+\subsubsection[{ul\-Port\-Get\-I\-P\-L}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t ul\-Port\-Get\-I\-P\-L (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2RX600_2port_8c_ab3858308e4e94ffb6656bf736efbc878}
+\hypertarget{GCC_2RX600_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{\index{G\-C\-C/\-R\-X600/port.\-c@{G\-C\-C/\-R\-X600/port.\-c}!v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}}
+\index{v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}!GCC/RX600/port.c@{G\-C\-C/\-R\-X600/port.\-c}}
+\subsubsection[{v\-Port\-End\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-End\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2RX600_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}
+\hypertarget{GCC_2RX600_2port_8c_a5998eda23104c1c864f914a13c18dd2d}{\index{G\-C\-C/\-R\-X600/port.\-c@{G\-C\-C/\-R\-X600/port.\-c}!v\-Port\-Set\-I\-P\-L@{v\-Port\-Set\-I\-P\-L}}
+\index{v\-Port\-Set\-I\-P\-L@{v\-Port\-Set\-I\-P\-L}!GCC/RX600/port.c@{G\-C\-C/\-R\-X600/port.\-c}}
+\subsubsection[{v\-Port\-Set\-I\-P\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Set\-I\-P\-L (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{ul\-New\-I\-P\-L}
+\end{DoxyParamCaption}
+)}}\label{GCC_2RX600_2port_8c_a5998eda23104c1c864f914a13c18dd2d}
+\hypertarget{GCC_2RX600_2port_8c_a05b8170f6114a4798593860395d9e8fd}{\index{G\-C\-C/\-R\-X600/port.\-c@{G\-C\-C/\-R\-X600/port.\-c}!v\-Software\-Interrupt\-I\-S\-R@{v\-Software\-Interrupt\-I\-S\-R}}
+\index{v\-Software\-Interrupt\-I\-S\-R@{v\-Software\-Interrupt\-I\-S\-R}!GCC/RX600/port.c@{G\-C\-C/\-R\-X600/port.\-c}}
+\subsubsection[{v\-Software\-Interrupt\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Software\-Interrupt\-I\-S\-R (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2RX600_2port_8c_a05b8170f6114a4798593860395d9e8fd}
+\hypertarget{GCC_2RX600_2port_8c_a502142367426395ab5c401b99204b437}{\index{G\-C\-C/\-R\-X600/port.\-c@{G\-C\-C/\-R\-X600/port.\-c}!v\-Tick\-I\-S\-R@{v\-Tick\-I\-S\-R}}
+\index{v\-Tick\-I\-S\-R@{v\-Tick\-I\-S\-R}!GCC/RX600/port.c@{G\-C\-C/\-R\-X600/port.\-c}}
+\subsubsection[{v\-Tick\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Tick\-I\-S\-R (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2RX600_2port_8c_a502142367426395ab5c401b99204b437}
+\hypertarget{GCC_2RX600_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{\index{G\-C\-C/\-R\-X600/port.\-c@{G\-C\-C/\-R\-X600/port.\-c}!x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}}
+\index{x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}!GCC/RX600/port.c@{G\-C\-C/\-R\-X600/port.\-c}}
+\subsubsection[{x\-Port\-Start\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} x\-Port\-Start\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2RX600_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}

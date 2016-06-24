@@ -1,0 +1,47 @@
+\hypertarget{group__USBD__MSC}{\section{Mass Storage Class (M\-S\-C) Function Driver}
+\label{group__USBD__MSC}\index{Mass Storage Class (\-M\-S\-C) Function Driver@{Mass Storage Class (\-M\-S\-C) Function Driver}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structUSBD__MSC__INIT__PARAM}{U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M}
+\begin{DoxyCompactList}\small\item\em Mass Storage class function driver initialization parameter data structure. \end{DoxyCompactList}\item 
+struct \hyperlink{structUSBD__MSC__API}{U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-A\-P\-I}
+\begin{DoxyCompactList}\small\item\em M\-S\-C class A\-P\-I functions structure.
+
+This module exposes functions which interact directly with U\-S\-B device controller hardware. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structUSBD__MSC__INIT__PARAM}{U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M} \hyperlink{group__USBD__MSC_ga01cbe726c0ee97ee44661ca88d7e8fbd}{U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T}
+\begin{DoxyCompactList}\small\item\em Mass Storage class function driver initialization parameter data structure. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structUSBD__MSC__API}{U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-A\-P\-I} \hyperlink{group__USBD__MSC_ga521bb0e0edf4060aeb10827c6c29f7cf}{U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-A\-P\-I\-\_\-\-T}
+\begin{DoxyCompactList}\small\item\em M\-S\-C class A\-P\-I functions structure.
+
+This module exposes functions which interact directly with U\-S\-B device controller hardware. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hypertarget{group__USBD__MSC_Sec_MSCModDescription}{}\subsection{Module Description}\label{group__USBD__MSC_Sec_MSCModDescription}
+M\-S\-C Class Function Driver module. This module contains an internal implementation of the U\-S\-B M\-S\-C Class. User applications can use this class driver instead of implementing the M\-S\-C class manually via the low-\/level U\-S\-B\-D\-\_\-\-H\-W and U\-S\-B\-D\-\_\-\-Core A\-P\-Is.
+
+This module is designed to simplify the user code by exposing only the required interface needed to interface with Devices using the U\-S\-B M\-S\-C Class. 
+
+\subsection{Typedef Documentation}
+\hypertarget{group__USBD__MSC_ga521bb0e0edf4060aeb10827c6c29f7cf}{\index{Mass Storage Class (\-M\-S\-C) Function Driver@{Mass Storage Class (\-M\-S\-C) Function Driver}!U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-A\-P\-I\-\_\-\-T@{U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-A\-P\-I\-\_\-\-T}}
+\index{U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-A\-P\-I\-\_\-\-T@{U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-A\-P\-I\-\_\-\-T}!Mass Storage Class (MSC) Function Driver@{Mass Storage Class (\-M\-S\-C) Function Driver}}
+\subsubsection[{U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-A\-P\-I\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-A\-P\-I}  {\bf U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-A\-P\-I\-\_\-\-T}}}\label{group__USBD__MSC_ga521bb0e0edf4060aeb10827c6c29f7cf}
+
+
+M\-S\-C class A\-P\-I functions structure.
+
+This module exposes functions which interact directly with U\-S\-B device controller hardware. 
+
+\hypertarget{group__USBD__MSC_ga01cbe726c0ee97ee44661ca88d7e8fbd}{\index{Mass Storage Class (\-M\-S\-C) Function Driver@{Mass Storage Class (\-M\-S\-C) Function Driver}!U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T@{U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T}}
+\index{U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T@{U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T}!Mass Storage Class (MSC) Function Driver@{Mass Storage Class (\-M\-S\-C) Function Driver}}
+\subsubsection[{U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M}  {\bf U\-S\-B\-D\-\_\-\-M\-S\-C\-\_\-\-I\-N\-I\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T}}}\label{group__USBD__MSC_ga01cbe726c0ee97ee44661ca88d7e8fbd}
+
+
+Mass Storage class function driver initialization parameter data structure. 
+
+This data structure is used to pass initialization parameters to the Mass Storage class function driver's init function. 

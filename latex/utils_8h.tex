@@ -1,0 +1,122 @@
+\hypertarget{utils_8h}{\section{/home/henrique/rep/open\-M\-M\-C/modules/utils.h File Reference}
+\label{utils_8h}\index{/home/henrique/rep/open\-M\-M\-C/modules/utils.\-h@{/home/henrique/rep/open\-M\-M\-C/modules/utils.\-h}}
+}
+
+
+General utilities functions.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{utils_8h_a18d295a837ac71add5578860b55e5502}{S\-T\-R}(x)~\hyperlink{utils_8h_a34fbaf7ed82e04e522ca124b6aea8db1}{\-\_\-\-S\-T\-R}(x)
+\item 
+\#define \hyperlink{utils_8h_a34fbaf7ed82e04e522ca124b6aea8db1}{\-\_\-\-S\-T\-R}(x)~\#x
+\item 
+\#define \hyperlink{utils_8h_a4259d33ba8f3fa1d78379bfa7581ee94}{S\-T\-R\-\_\-\-S\-I\-Z\-E}(x)~(sizeof(x) -\/1)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\-\_\-t \hyperlink{utils_8h_a98ae8c72aaa361f72d648140c6c92e17}{get\-Tick\-Difference} (uint32\-\_\-t current\-\_\-time, uint32\-\_\-t start\-\_\-time)
+\begin{DoxyCompactList}\small\item\em Calculate the difference between 2 tick values Since he tick counter can overflow, we need to check if the current value is higher than the start time before performing any calculations. The Tick counter is expected to overflow at the port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y value. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{utils_8h_a134816e32f4a2df3247444d75a1ce361}{calculate\-\_\-chksum} (uint8\-\_\-t $\ast$buffer, uint8\-\_\-t range)
+\begin{DoxyCompactList}\small\item\em Calculate a n-\/byte message 2's complement checksum. The checksum byte is calculated by perfoming a simple 8bit 2's complement of the sum of all previous bytes. Since we're using a unsigned int to hold the checksum value, we only need to subtract all bytes from it. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{utils_8h_a839606a1b09e2884aef6b255045ab825}{cmp\-Buffs} (uint8\-\_\-t $\ast$bufa, size\-\_\-t len\-\_\-a, uint8\-\_\-t $\ast$bufb, size\-\_\-t len\-\_\-b)
+\item 
+uint8\-\_\-t \hyperlink{utils_8h_ad00b36606f6f731f08c50fdbf3e31928}{is\-Power\-Of\-Two} (uint8\-\_\-t x)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+General utilities functions. \begin{DoxyAuthor}{Author}
+Henrique Silva 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{utils_8h_a34fbaf7ed82e04e522ca124b6aea8db1}{\index{utils.\-h@{utils.\-h}!\-\_\-\-S\-T\-R@{\-\_\-\-S\-T\-R}}
+\index{\-\_\-\-S\-T\-R@{\-\_\-\-S\-T\-R}!utils.h@{utils.\-h}}
+\subsubsection[{\-\_\-\-S\-T\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-\-S\-T\-R(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~\#x}}\label{utils_8h_a34fbaf7ed82e04e522ca124b6aea8db1}
+\hypertarget{utils_8h_a18d295a837ac71add5578860b55e5502}{\index{utils.\-h@{utils.\-h}!S\-T\-R@{S\-T\-R}}
+\index{S\-T\-R@{S\-T\-R}!utils.h@{utils.\-h}}
+\subsubsection[{S\-T\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-T\-R(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-S\-T\-R}(x)}}\label{utils_8h_a18d295a837ac71add5578860b55e5502}
+\hypertarget{utils_8h_a4259d33ba8f3fa1d78379bfa7581ee94}{\index{utils.\-h@{utils.\-h}!S\-T\-R\-\_\-\-S\-I\-Z\-E@{S\-T\-R\-\_\-\-S\-I\-Z\-E}}
+\index{S\-T\-R\-\_\-\-S\-I\-Z\-E@{S\-T\-R\-\_\-\-S\-I\-Z\-E}!utils.h@{utils.\-h}}
+\subsubsection[{S\-T\-R\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-T\-R\-\_\-\-S\-I\-Z\-E(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~(sizeof(x) -\/1)}}\label{utils_8h_a4259d33ba8f3fa1d78379bfa7581ee94}
+
+
+\subsection{Function Documentation}
+\hypertarget{utils_8h_a134816e32f4a2df3247444d75a1ce361}{\index{utils.\-h@{utils.\-h}!calculate\-\_\-chksum@{calculate\-\_\-chksum}}
+\index{calculate\-\_\-chksum@{calculate\-\_\-chksum}!utils.h@{utils.\-h}}
+\subsubsection[{calculate\-\_\-chksum}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t calculate\-\_\-chksum (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t $\ast$}]{buffer, }
+\item[{uint8\-\_\-t}]{range}
+\end{DoxyParamCaption}
+)}}\label{utils_8h_a134816e32f4a2df3247444d75a1ce361}
+
+
+Calculate a n-\/byte message 2's complement checksum. The checksum byte is calculated by perfoming a simple 8bit 2's complement of the sum of all previous bytes. Since we're using a unsigned int to hold the checksum value, we only need to subtract all bytes from it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Pointer to the message bytes. \\
+\hline
+{\em range} & How many bytes will be used in the calculation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Checksum of the specified bytes of the buffer. 
+\end{DoxyReturn}
+\hypertarget{utils_8h_a839606a1b09e2884aef6b255045ab825}{\index{utils.\-h@{utils.\-h}!cmp\-Buffs@{cmp\-Buffs}}
+\index{cmp\-Buffs@{cmp\-Buffs}!utils.h@{utils.\-h}}
+\subsubsection[{cmp\-Buffs}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t cmp\-Buffs (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t $\ast$}]{bufa, }
+\item[{size\-\_\-t}]{len\-\_\-a, }
+\item[{uint8\-\_\-t $\ast$}]{bufb, }
+\item[{size\-\_\-t}]{len\-\_\-b}
+\end{DoxyParamCaption}
+)}}\label{utils_8h_a839606a1b09e2884aef6b255045ab825}
+\hypertarget{utils_8h_a98ae8c72aaa361f72d648140c6c92e17}{\index{utils.\-h@{utils.\-h}!get\-Tick\-Difference@{get\-Tick\-Difference}}
+\index{get\-Tick\-Difference@{get\-Tick\-Difference}!utils.h@{utils.\-h}}
+\subsubsection[{get\-Tick\-Difference}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t get\-Tick\-Difference (
+\begin{DoxyParamCaption}
+\item[{{\bf Tick\-Type\-\_\-t}}]{current\-\_\-time, }
+\item[{{\bf Tick\-Type\-\_\-t}}]{start\-\_\-time}
+\end{DoxyParamCaption}
+)}}\label{utils_8h_a98ae8c72aaa361f72d648140c6c92e17}
+
+
+Calculate the difference between 2 tick values Since he tick counter can overflow, we need to check if the current value is higher than the start time before performing any calculations. The Tick counter is expected to overflow at the port\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\-\_\-time} & Current tick count \\
+\hline
+{\em start\-\_\-time} & Start tick count\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tick difference between arguments 
+\end{DoxyReturn}
+\hypertarget{utils_8h_ad00b36606f6f731f08c50fdbf3e31928}{\index{utils.\-h@{utils.\-h}!is\-Power\-Of\-Two@{is\-Power\-Of\-Two}}
+\index{is\-Power\-Of\-Two@{is\-Power\-Of\-Two}!utils.h@{utils.\-h}}
+\subsubsection[{is\-Power\-Of\-Two}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t is\-Power\-Of\-Two (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{x}
+\end{DoxyParamCaption}
+)}}\label{utils_8h_ad00b36606f6f731f08c50fdbf3e31928}

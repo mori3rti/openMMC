@@ -1,0 +1,57 @@
+\hypertarget{uart__debug_8c}{\section{/home/henrique/rep/open\-M\-M\-C/modules/uart\-\_\-debug.c File Reference}
+\label{uart__debug_8c}\index{/home/henrique/rep/open\-M\-M\-C/modules/uart\-\_\-debug.\-c@{/home/henrique/rep/open\-M\-M\-C/modules/uart\-\_\-debug.\-c}}
+}
+
+
+U\-A\-R\-T interface implementation.  
+
+
+{\ttfamily \#include \char`\"{}port.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}uart\-\_\-debug.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}stdarg.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{uart__debug_8c_a3744576f717bb19337e79943dcf28d01}{uart\-\_\-debug\-\_\-init} (uint32\-\_\-t baud)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{uart__debug_8c_a8aa2d3d5981abe898095125ff550378f}{uart\-\_\-printf} (uint8\-\_\-t id, const char $\ast$format,...)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{uart__debug_8c_adda4d12e0a924c12674eb8e45fc6b5f5}{debug\-\_\-buf} \mbox{[}100\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+U\-A\-R\-T interface implementation. \begin{DoxyAuthor}{Author}
+Henrique Silva \href{mailto:henrique.silva@lnls.br}{\tt henrique.\-silva@lnls.\-br}, L\-N\-L\-S 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{uart__debug_8c_a3744576f717bb19337e79943dcf28d01}{\index{uart\-\_\-debug.\-c@{uart\-\_\-debug.\-c}!uart\-\_\-debug\-\_\-init@{uart\-\_\-debug\-\_\-init}}
+\index{uart\-\_\-debug\-\_\-init@{uart\-\_\-debug\-\_\-init}!uart_debug.c@{uart\-\_\-debug.\-c}}
+\subsubsection[{uart\-\_\-debug\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} uart\-\_\-debug\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{baud}
+\end{DoxyParamCaption}
+)}}\label{uart__debug_8c_a3744576f717bb19337e79943dcf28d01}
+\hypertarget{uart__debug_8c_a8aa2d3d5981abe898095125ff550378f}{\index{uart\-\_\-debug.\-c@{uart\-\_\-debug.\-c}!uart\-\_\-printf@{uart\-\_\-printf}}
+\index{uart\-\_\-printf@{uart\-\_\-printf}!uart_debug.c@{uart\-\_\-debug.\-c}}
+\subsubsection[{uart\-\_\-printf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} uart\-\_\-printf (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{id, }
+\item[{const char $\ast$}]{format, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{uart__debug_8c_a8aa2d3d5981abe898095125ff550378f}
+
+
+\subsection{Variable Documentation}
+\hypertarget{uart__debug_8c_adda4d12e0a924c12674eb8e45fc6b5f5}{\index{uart\-\_\-debug.\-c@{uart\-\_\-debug.\-c}!debug\-\_\-buf@{debug\-\_\-buf}}
+\index{debug\-\_\-buf@{debug\-\_\-buf}!uart_debug.c@{uart\-\_\-debug.\-c}}
+\subsubsection[{debug\-\_\-buf}]{\setlength{\rightskip}{0pt plus 5cm}char debug\-\_\-buf\mbox{[}100\mbox{]}}}\label{uart__debug_8c_adda4d12e0a924c12674eb8e45fc6b5f5}

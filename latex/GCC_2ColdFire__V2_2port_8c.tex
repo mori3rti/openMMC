@@ -1,0 +1,83 @@
+\hypertarget{GCC_2ColdFire__V2_2port_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.c File Reference}
+\label{GCC_2ColdFire__V2_2port_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+}
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{GCC_2ColdFire__V2_2port_8c_a44e54987059c931615e53125b64bb45e}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-V\-E\-C\-T\-O\-R}~( ( \hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} ) 0x4000 )
+\item 
+\#define \hyperlink{GCC_2ColdFire__V2_2port_8c_a90d9878b0ef16ef9f50817499b1688e5}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R}~( ( \hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} ) 0x2000)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$ \hyperlink{GCC_2ColdFire__V2_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{px\-Port\-Initialise\-Stack} (\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$px\-Top\-Of\-Stack, \hyperlink{projdefs_8h_a24177544ba9c507a9429d6d5761eb487}{Task\-Function\-\_\-t} px\-Code, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters)
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{GCC_2ColdFire__V2_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{x\-Port\-Start\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2ColdFire__V2_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{v\-Port\-End\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2ColdFire__V2_2port_8c_a2ed3554a3de09a3bd09d396ee081ab69}{v\-Port\-Enter\-Critical} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2ColdFire__V2_2port_8c_aed20ada05b957181a0de042802a82a5b}{v\-Port\-Exit\-Critical} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2ColdFire__V2_2port_8c_ad39f79e3ec80894f2c6b1e5ed132f10f}{v\-Port\-Yield\-Handler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{GCC_2ColdFire__V2_2port_8c_a44e54987059c931615e53125b64bb45e}{\index{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c@{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c}!port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-V\-E\-C\-T\-O\-R@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-V\-E\-C\-T\-O\-R}}
+\index{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-V\-E\-C\-T\-O\-R@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-V\-E\-C\-T\-O\-R}!GCC/ColdFire_V2/port.c@{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+\subsubsection[{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-V\-E\-C\-T\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-V\-E\-C\-T\-O\-R~( ( {\bf Stack\-Type\-\_\-t} ) 0x4000 )}}\label{GCC_2ColdFire__V2_2port_8c_a44e54987059c931615e53125b64bb45e}
+\hypertarget{GCC_2ColdFire__V2_2port_8c_a90d9878b0ef16ef9f50817499b1688e5}{\index{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c@{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c}!port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R}}
+\index{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R}!GCC/ColdFire_V2/port.c@{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+\subsubsection[{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R~( ( {\bf Stack\-Type\-\_\-t} ) 0x2000)}}\label{GCC_2ColdFire__V2_2port_8c_a90d9878b0ef16ef9f50817499b1688e5}
+
+
+\subsection{Function Documentation}
+\hypertarget{GCC_2ColdFire__V2_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{\index{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c@{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c}!px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}}
+\index{px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}!GCC/ColdFire_V2/port.c@{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+\subsubsection[{px\-Port\-Initialise\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stack\-Type\-\_\-t}$\ast$ px\-Port\-Initialise\-Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\-Type\-\_\-t} $\ast$}]{px\-Top\-Of\-Stack, }
+\item[{{\bf Task\-Function\-\_\-t}}]{px\-Code, }
+\item[{{\bf void} $\ast$}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)}}\label{GCC_2ColdFire__V2_2port_8c_a474fbbb58ea661a1557f05adc41120c1}
+\hypertarget{GCC_2ColdFire__V2_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{\index{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c@{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c}!v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}}
+\index{v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}!GCC/ColdFire_V2/port.c@{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+\subsubsection[{v\-Port\-End\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-End\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2ColdFire__V2_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}
+\hypertarget{GCC_2ColdFire__V2_2port_8c_a2ed3554a3de09a3bd09d396ee081ab69}{\index{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c@{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c}!v\-Port\-Enter\-Critical@{v\-Port\-Enter\-Critical}}
+\index{v\-Port\-Enter\-Critical@{v\-Port\-Enter\-Critical}!GCC/ColdFire_V2/port.c@{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+\subsubsection[{v\-Port\-Enter\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Enter\-Critical (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2ColdFire__V2_2port_8c_a2ed3554a3de09a3bd09d396ee081ab69}
+\hypertarget{GCC_2ColdFire__V2_2port_8c_aed20ada05b957181a0de042802a82a5b}{\index{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c@{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c}!v\-Port\-Exit\-Critical@{v\-Port\-Exit\-Critical}}
+\index{v\-Port\-Exit\-Critical@{v\-Port\-Exit\-Critical}!GCC/ColdFire_V2/port.c@{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+\subsubsection[{v\-Port\-Exit\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Exit\-Critical (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2ColdFire__V2_2port_8c_aed20ada05b957181a0de042802a82a5b}
+\hypertarget{GCC_2ColdFire__V2_2port_8c_ad39f79e3ec80894f2c6b1e5ed132f10f}{\index{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c@{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c}!v\-Port\-Yield\-Handler@{v\-Port\-Yield\-Handler}}
+\index{v\-Port\-Yield\-Handler@{v\-Port\-Yield\-Handler}!GCC/ColdFire_V2/port.c@{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+\subsubsection[{v\-Port\-Yield\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Yield\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2ColdFire__V2_2port_8c_ad39f79e3ec80894f2c6b1e5ed132f10f}
+\hypertarget{GCC_2ColdFire__V2_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{\index{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c@{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c}!x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}}
+\index{x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}!GCC/ColdFire_V2/port.c@{G\-C\-C/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+\subsubsection[{x\-Port\-Start\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} x\-Port\-Start\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2ColdFire__V2_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}

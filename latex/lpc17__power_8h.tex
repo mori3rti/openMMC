@@ -1,0 +1,65 @@
+\hypertarget{lpc17__power_8h}{\section{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpc17\-\_\-power.h File Reference}
+\label{lpc17__power_8h}\index{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpc17\-\_\-power.\-h@{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpc17\-\_\-power.\-h}}
+}
+
+
+Definitions of power mode selection for L\-P\-C17xx.  
+
+
+{\ttfamily \#include \char`\"{}pmu\-\_\-17xx\-\_\-40xx.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{lpc17__power_8h_a29b2c761e9c3ad52c9adda03a619551a}{L\-P\-C17\-\_\-\-P\-O\-W\-E\-R\-\_\-\-H\-\_\-}
+\item 
+\#define \hyperlink{lpc17__power_8h_a2d63f716cd48c0a1523eb178d8032f37}{pm\-\_\-sleep}()~\hyperlink{group__PMU__17XX__40XX_gaca883204092fcbc6e4705a3461029220}{Chip\-\_\-\-P\-M\-U\-\_\-\-Sleep}(\hyperlink{group__PERIPH__407X__8X__BASE_ga9d540cc313db00679c10f9ac1961b06a}{L\-P\-C\-\_\-\-P\-M\-U}, \hyperlink{group__PMU__17XX__40XX_ggae5e1b53b190a2a25a80b4a6e93c55fa5a642a6452710738e476df4c9873f8d53c}{P\-M\-U\-\_\-\-M\-C\-U\-\_\-\-S\-L\-E\-E\-P})
+\item 
+\#define \hyperlink{lpc17__power_8h_a5dda5f120e3eca389497900659581d06}{pm\-\_\-deep\-\_\-sleep}()~\hyperlink{group__PMU__17XX__40XX_gaca883204092fcbc6e4705a3461029220}{Chip\-\_\-\-P\-M\-U\-\_\-\-Sleep}(\hyperlink{group__PERIPH__407X__8X__BASE_ga9d540cc313db00679c10f9ac1961b06a}{L\-P\-C\-\_\-\-P\-M\-U}, \hyperlink{group__PMU__17XX__40XX_ggae5e1b53b190a2a25a80b4a6e93c55fa5a520bf4cb3d4ae81e7fc2b6da77117089}{P\-M\-U\-\_\-\-M\-C\-U\-\_\-\-D\-E\-E\-P\-\_\-\-S\-L\-E\-E\-P})
+\item 
+\#define \hyperlink{lpc17__power_8h_a8ce87e077c4570d895e30a0d84c3663f}{pm\-\_\-power\-\_\-down}()~\hyperlink{group__PMU__17XX__40XX_gaca883204092fcbc6e4705a3461029220}{Chip\-\_\-\-P\-M\-U\-\_\-\-Sleep}(\hyperlink{group__PERIPH__407X__8X__BASE_ga9d540cc313db00679c10f9ac1961b06a}{L\-P\-C\-\_\-\-P\-M\-U}, \hyperlink{group__PMU__17XX__40XX_ggae5e1b53b190a2a25a80b4a6e93c55fa5ae57e035fd3a4f9fa956fbc8668030f8d}{P\-M\-U\-\_\-\-M\-C\-U\-\_\-\-P\-O\-W\-E\-R\-\_\-\-D\-O\-W\-N})
+\item 
+\#define \hyperlink{lpc17__power_8h_acf0e7c0d6a251a67f8edc77dfd33137b}{pm\-\_\-deep\-\_\-power\-\_\-down}()~\hyperlink{group__PMU__17XX__40XX_gaca883204092fcbc6e4705a3461029220}{Chip\-\_\-\-P\-M\-U\-\_\-\-Sleep}(\hyperlink{group__PERIPH__407X__8X__BASE_ga9d540cc313db00679c10f9ac1961b06a}{L\-P\-C\-\_\-\-P\-M\-U}, \hyperlink{group__PMU__17XX__40XX_ggae5e1b53b190a2a25a80b4a6e93c55fa5a23fed3c82386a96e38fcf19bc6ec20a6}{P\-M\-U\-\_\-\-M\-C\-U\-\_\-\-D\-E\-E\-P\-\_\-\-P\-W\-R\-D\-O\-W\-N})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definitions of power mode selection for L\-P\-C17xx. \begin{DoxyAuthor}{Author}
+Henrique Silva \href{mailto:henrique.silva@lnls.br}{\tt henrique.\-silva@lnls.\-br}, L\-N\-L\-S 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March 2016 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{lpc17__power_8h_a29b2c761e9c3ad52c9adda03a619551a}{\index{lpc17\-\_\-power.\-h@{lpc17\-\_\-power.\-h}!L\-P\-C17\-\_\-\-P\-O\-W\-E\-R\-\_\-\-H\-\_\-@{L\-P\-C17\-\_\-\-P\-O\-W\-E\-R\-\_\-\-H\-\_\-}}
+\index{L\-P\-C17\-\_\-\-P\-O\-W\-E\-R\-\_\-\-H\-\_\-@{L\-P\-C17\-\_\-\-P\-O\-W\-E\-R\-\_\-\-H\-\_\-}!lpc17_power.h@{lpc17\-\_\-power.\-h}}
+\subsubsection[{L\-P\-C17\-\_\-\-P\-O\-W\-E\-R\-\_\-\-H\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-P\-C17\-\_\-\-P\-O\-W\-E\-R\-\_\-\-H\-\_\-}}\label{lpc17__power_8h_a29b2c761e9c3ad52c9adda03a619551a}
+\hypertarget{lpc17__power_8h_acf0e7c0d6a251a67f8edc77dfd33137b}{\index{lpc17\-\_\-power.\-h@{lpc17\-\_\-power.\-h}!pm\-\_\-deep\-\_\-power\-\_\-down@{pm\-\_\-deep\-\_\-power\-\_\-down}}
+\index{pm\-\_\-deep\-\_\-power\-\_\-down@{pm\-\_\-deep\-\_\-power\-\_\-down}!lpc17_power.h@{lpc17\-\_\-power.\-h}}
+\subsubsection[{pm\-\_\-deep\-\_\-power\-\_\-down}]{\setlength{\rightskip}{0pt plus 5cm}\#define pm\-\_\-deep\-\_\-power\-\_\-down(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-P\-M\-U\-\_\-\-Sleep}({\bf L\-P\-C\-\_\-\-P\-M\-U}, {\bf P\-M\-U\-\_\-\-M\-C\-U\-\_\-\-D\-E\-E\-P\-\_\-\-P\-W\-R\-D\-O\-W\-N})}}\label{lpc17__power_8h_acf0e7c0d6a251a67f8edc77dfd33137b}
+\hypertarget{lpc17__power_8h_a5dda5f120e3eca389497900659581d06}{\index{lpc17\-\_\-power.\-h@{lpc17\-\_\-power.\-h}!pm\-\_\-deep\-\_\-sleep@{pm\-\_\-deep\-\_\-sleep}}
+\index{pm\-\_\-deep\-\_\-sleep@{pm\-\_\-deep\-\_\-sleep}!lpc17_power.h@{lpc17\-\_\-power.\-h}}
+\subsubsection[{pm\-\_\-deep\-\_\-sleep}]{\setlength{\rightskip}{0pt plus 5cm}\#define pm\-\_\-deep\-\_\-sleep(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-P\-M\-U\-\_\-\-Sleep}({\bf L\-P\-C\-\_\-\-P\-M\-U}, {\bf P\-M\-U\-\_\-\-M\-C\-U\-\_\-\-D\-E\-E\-P\-\_\-\-S\-L\-E\-E\-P})}}\label{lpc17__power_8h_a5dda5f120e3eca389497900659581d06}
+\hypertarget{lpc17__power_8h_a8ce87e077c4570d895e30a0d84c3663f}{\index{lpc17\-\_\-power.\-h@{lpc17\-\_\-power.\-h}!pm\-\_\-power\-\_\-down@{pm\-\_\-power\-\_\-down}}
+\index{pm\-\_\-power\-\_\-down@{pm\-\_\-power\-\_\-down}!lpc17_power.h@{lpc17\-\_\-power.\-h}}
+\subsubsection[{pm\-\_\-power\-\_\-down}]{\setlength{\rightskip}{0pt plus 5cm}\#define pm\-\_\-power\-\_\-down(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-P\-M\-U\-\_\-\-Sleep}({\bf L\-P\-C\-\_\-\-P\-M\-U}, {\bf P\-M\-U\-\_\-\-M\-C\-U\-\_\-\-P\-O\-W\-E\-R\-\_\-\-D\-O\-W\-N})}}\label{lpc17__power_8h_a8ce87e077c4570d895e30a0d84c3663f}
+\hypertarget{lpc17__power_8h_a2d63f716cd48c0a1523eb178d8032f37}{\index{lpc17\-\_\-power.\-h@{lpc17\-\_\-power.\-h}!pm\-\_\-sleep@{pm\-\_\-sleep}}
+\index{pm\-\_\-sleep@{pm\-\_\-sleep}!lpc17_power.h@{lpc17\-\_\-power.\-h}}
+\subsubsection[{pm\-\_\-sleep}]{\setlength{\rightskip}{0pt plus 5cm}\#define pm\-\_\-sleep(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-P\-M\-U\-\_\-\-Sleep}({\bf L\-P\-C\-\_\-\-P\-M\-U}, {\bf P\-M\-U\-\_\-\-M\-C\-U\-\_\-\-S\-L\-E\-E\-P})}}\label{lpc17__power_8h_a2d63f716cd48c0a1523eb178d8032f37}

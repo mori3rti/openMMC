@@ -1,0 +1,138 @@
+\hypertarget{IAR_2ATMega323_2port_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-I\-A\-R/\-A\-T\-Mega323/port.c File Reference}
+\label{IAR_2ATMega323_2port_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-I\-A\-R/\-A\-T\-Mega323/port.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-I\-A\-R/\-A\-T\-Mega323/port.\-c}}
+}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{IAR_2ATMega323_2port_8c_ad05c7a8ee45c5190627f9a49c95e7538}{port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}~( ( \hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} ) 0x80 )
+\item 
+\#define \hyperlink{IAR_2ATMega323_2port_8c_afebcaa9dc7c6672280d342d9215a79a0}{port\-C\-L\-E\-A\-R\-\_\-\-C\-O\-U\-N\-T\-E\-R\-\_\-\-O\-N\-\_\-\-M\-A\-T\-C\-H}~( ( uint8\-\_\-t ) 0x08 )
+\item 
+\#define \hyperlink{IAR_2ATMega323_2port_8c_adaf734e7b28a9b88b6ab6d7c9b2250f8}{port\-P\-R\-E\-S\-C\-A\-L\-E\-\_\-64}~( ( uint8\-\_\-t ) 0x03 )
+\item 
+\#define \hyperlink{IAR_2ATMega323_2port_8c_a67e4948f41f0ee1e6a27b9fc857ea3fe}{port\-C\-L\-O\-C\-K\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R}~( ( uint32\-\_\-t ) 64 )
+\item 
+\#define \hyperlink{IAR_2ATMega323_2port_8c_af0181ceef46fdd03e26e86625c481d1a}{port\-C\-O\-M\-P\-A\-R\-E\-\_\-\-M\-A\-T\-C\-H\-\_\-\-A\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-E\-N\-A\-B\-L\-E}~( ( uint8\-\_\-t ) 0x10 )
+\item 
+\#define \hyperlink{IAR_2ATMega323_2port_8c_a36b4286a59e24b085994ad254ffffaf7}{port\-B\-Y\-T\-E\-S\-\_\-\-U\-S\-E\-D\-\_\-\-B\-Y\-\_\-\-R\-E\-T\-U\-R\-N\-\_\-\-A\-D\-D\-R\-E\-S\-S}~( 2 )
+\item 
+\#define \hyperlink{IAR_2ATMega323_2port_8c_ab7c7cbbda4fb9a253c7e5086071db162}{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}~( ( \hyperlink{Flsh186_2prtmacro_8h_a8e88a5e44a5243b3d1c29af17fd6b5bd}{U\-Base\-Type\-\_\-t} ) 0 )
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{IAR_2ATMega323_2port_8c_a130213f2e8a8331aaa6dc715f41b6358}{v\-Port\-Yield\-From\-Tick} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{IAR_2ATMega323_2port_8c_a97998187984cbffc1cbeef4d67622ab6}{v\-Port\-Start} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$ \hyperlink{IAR_2ATMega323_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{px\-Port\-Initialise\-Stack} (\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$px\-Top\-Of\-Stack, \hyperlink{projdefs_8h_a24177544ba9c507a9429d6d5761eb487}{Task\-Function\-\_\-t} px\-Code, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters)
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{IAR_2ATMega323_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{x\-Port\-Start\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{IAR_2ATMega323_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{v\-Port\-End\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\-\_\-\-\_\-interrupt \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{IAR_2ATMega323_2port_8c_a7eb14d5c3f1c439f2696bb17f906a85d}{S\-I\-G\-\_\-\-O\-U\-T\-P\-U\-T\-\_\-\-C\-O\-M\-P\-A\-R\-E1\-A} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{IAR_2ATMega323_2port_8c_a2ed3554a3de09a3bd09d396ee081ab69}{v\-Port\-Enter\-Critical} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{IAR_2ATMega323_2port_8c_aed20ada05b957181a0de042802a82a5b}{v\-Port\-Exit\-Critical} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a8e88a5e44a5243b3d1c29af17fd6b5bd}{U\-Base\-Type\-\_\-t} \hyperlink{IAR_2ATMega323_2port_8c_af1ef0b7e839d2e30cc6ef9cdc93b8801}{ux\-Critical\-Nesting} = 0x50
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{IAR_2ATMega323_2port_8c_a36b4286a59e24b085994ad254ffffaf7}{\index{I\-A\-R/\-A\-T\-Mega323/port.\-c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}!port\-B\-Y\-T\-E\-S\-\_\-\-U\-S\-E\-D\-\_\-\-B\-Y\-\_\-\-R\-E\-T\-U\-R\-N\-\_\-\-A\-D\-D\-R\-E\-S\-S@{port\-B\-Y\-T\-E\-S\-\_\-\-U\-S\-E\-D\-\_\-\-B\-Y\-\_\-\-R\-E\-T\-U\-R\-N\-\_\-\-A\-D\-D\-R\-E\-S\-S}}
+\index{port\-B\-Y\-T\-E\-S\-\_\-\-U\-S\-E\-D\-\_\-\-B\-Y\-\_\-\-R\-E\-T\-U\-R\-N\-\_\-\-A\-D\-D\-R\-E\-S\-S@{port\-B\-Y\-T\-E\-S\-\_\-\-U\-S\-E\-D\-\_\-\-B\-Y\-\_\-\-R\-E\-T\-U\-R\-N\-\_\-\-A\-D\-D\-R\-E\-S\-S}!IAR/ATMega323/port.c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}}
+\subsubsection[{port\-B\-Y\-T\-E\-S\-\_\-\-U\-S\-E\-D\-\_\-\-B\-Y\-\_\-\-R\-E\-T\-U\-R\-N\-\_\-\-A\-D\-D\-R\-E\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-B\-Y\-T\-E\-S\-\_\-\-U\-S\-E\-D\-\_\-\-B\-Y\-\_\-\-R\-E\-T\-U\-R\-N\-\_\-\-A\-D\-D\-R\-E\-S\-S~( 2 )}}\label{IAR_2ATMega323_2port_8c_a36b4286a59e24b085994ad254ffffaf7}
+\hypertarget{IAR_2ATMega323_2port_8c_afebcaa9dc7c6672280d342d9215a79a0}{\index{I\-A\-R/\-A\-T\-Mega323/port.\-c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}!port\-C\-L\-E\-A\-R\-\_\-\-C\-O\-U\-N\-T\-E\-R\-\_\-\-O\-N\-\_\-\-M\-A\-T\-C\-H@{port\-C\-L\-E\-A\-R\-\_\-\-C\-O\-U\-N\-T\-E\-R\-\_\-\-O\-N\-\_\-\-M\-A\-T\-C\-H}}
+\index{port\-C\-L\-E\-A\-R\-\_\-\-C\-O\-U\-N\-T\-E\-R\-\_\-\-O\-N\-\_\-\-M\-A\-T\-C\-H@{port\-C\-L\-E\-A\-R\-\_\-\-C\-O\-U\-N\-T\-E\-R\-\_\-\-O\-N\-\_\-\-M\-A\-T\-C\-H}!IAR/ATMega323/port.c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}}
+\subsubsection[{port\-C\-L\-E\-A\-R\-\_\-\-C\-O\-U\-N\-T\-E\-R\-\_\-\-O\-N\-\_\-\-M\-A\-T\-C\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-C\-L\-E\-A\-R\-\_\-\-C\-O\-U\-N\-T\-E\-R\-\_\-\-O\-N\-\_\-\-M\-A\-T\-C\-H~( ( uint8\-\_\-t ) 0x08 )}}\label{IAR_2ATMega323_2port_8c_afebcaa9dc7c6672280d342d9215a79a0}
+\hypertarget{IAR_2ATMega323_2port_8c_a67e4948f41f0ee1e6a27b9fc857ea3fe}{\index{I\-A\-R/\-A\-T\-Mega323/port.\-c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}!port\-C\-L\-O\-C\-K\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R@{port\-C\-L\-O\-C\-K\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R}}
+\index{port\-C\-L\-O\-C\-K\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R@{port\-C\-L\-O\-C\-K\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R}!IAR/ATMega323/port.c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}}
+\subsubsection[{port\-C\-L\-O\-C\-K\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-C\-L\-O\-C\-K\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R~( ( uint32\-\_\-t ) 64 )}}\label{IAR_2ATMega323_2port_8c_a67e4948f41f0ee1e6a27b9fc857ea3fe}
+\hypertarget{IAR_2ATMega323_2port_8c_af0181ceef46fdd03e26e86625c481d1a}{\index{I\-A\-R/\-A\-T\-Mega323/port.\-c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}!port\-C\-O\-M\-P\-A\-R\-E\-\_\-\-M\-A\-T\-C\-H\-\_\-\-A\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-E\-N\-A\-B\-L\-E@{port\-C\-O\-M\-P\-A\-R\-E\-\_\-\-M\-A\-T\-C\-H\-\_\-\-A\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-E\-N\-A\-B\-L\-E}}
+\index{port\-C\-O\-M\-P\-A\-R\-E\-\_\-\-M\-A\-T\-C\-H\-\_\-\-A\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-E\-N\-A\-B\-L\-E@{port\-C\-O\-M\-P\-A\-R\-E\-\_\-\-M\-A\-T\-C\-H\-\_\-\-A\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-E\-N\-A\-B\-L\-E}!IAR/ATMega323/port.c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}}
+\subsubsection[{port\-C\-O\-M\-P\-A\-R\-E\-\_\-\-M\-A\-T\-C\-H\-\_\-\-A\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-E\-N\-A\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-C\-O\-M\-P\-A\-R\-E\-\_\-\-M\-A\-T\-C\-H\-\_\-\-A\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-E\-N\-A\-B\-L\-E~( ( uint8\-\_\-t ) 0x10 )}}\label{IAR_2ATMega323_2port_8c_af0181ceef46fdd03e26e86625c481d1a}
+\hypertarget{IAR_2ATMega323_2port_8c_ad05c7a8ee45c5190627f9a49c95e7538}{\index{I\-A\-R/\-A\-T\-Mega323/port.\-c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}!port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D@{port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D@{port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}!IAR/ATMega323/port.c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}}
+\subsubsection[{port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D~( ( {\bf Stack\-Type\-\_\-t} ) 0x80 )}}\label{IAR_2ATMega323_2port_8c_ad05c7a8ee45c5190627f9a49c95e7538}
+\hypertarget{IAR_2ATMega323_2port_8c_ab7c7cbbda4fb9a253c7e5086071db162}{\index{I\-A\-R/\-A\-T\-Mega323/port.\-c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}!port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G@{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}}
+\index{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G@{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}!IAR/ATMega323/port.c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}}
+\subsubsection[{port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-N\-O\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G~( ( {\bf U\-Base\-Type\-\_\-t} ) 0 )}}\label{IAR_2ATMega323_2port_8c_ab7c7cbbda4fb9a253c7e5086071db162}
+\hypertarget{IAR_2ATMega323_2port_8c_adaf734e7b28a9b88b6ab6d7c9b2250f8}{\index{I\-A\-R/\-A\-T\-Mega323/port.\-c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}!port\-P\-R\-E\-S\-C\-A\-L\-E\-\_\-64@{port\-P\-R\-E\-S\-C\-A\-L\-E\-\_\-64}}
+\index{port\-P\-R\-E\-S\-C\-A\-L\-E\-\_\-64@{port\-P\-R\-E\-S\-C\-A\-L\-E\-\_\-64}!IAR/ATMega323/port.c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}}
+\subsubsection[{port\-P\-R\-E\-S\-C\-A\-L\-E\-\_\-64}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-P\-R\-E\-S\-C\-A\-L\-E\-\_\-64~( ( uint8\-\_\-t ) 0x03 )}}\label{IAR_2ATMega323_2port_8c_adaf734e7b28a9b88b6ab6d7c9b2250f8}
+
+
+\subsection{Function Documentation}
+\hypertarget{IAR_2ATMega323_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{\index{I\-A\-R/\-A\-T\-Mega323/port.\-c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}!px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}}
+\index{px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}!IAR/ATMega323/port.c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}}
+\subsubsection[{px\-Port\-Initialise\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stack\-Type\-\_\-t}$\ast$ px\-Port\-Initialise\-Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\-Type\-\_\-t} $\ast$}]{px\-Top\-Of\-Stack, }
+\item[{{\bf Task\-Function\-\_\-t}}]{px\-Code, }
+\item[{{\bf void} $\ast$}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)}}\label{IAR_2ATMega323_2port_8c_a474fbbb58ea661a1557f05adc41120c1}
+\hypertarget{IAR_2ATMega323_2port_8c_a7eb14d5c3f1c439f2696bb17f906a85d}{\index{I\-A\-R/\-A\-T\-Mega323/port.\-c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}!S\-I\-G\-\_\-\-O\-U\-T\-P\-U\-T\-\_\-\-C\-O\-M\-P\-A\-R\-E1\-A@{S\-I\-G\-\_\-\-O\-U\-T\-P\-U\-T\-\_\-\-C\-O\-M\-P\-A\-R\-E1\-A}}
+\index{S\-I\-G\-\_\-\-O\-U\-T\-P\-U\-T\-\_\-\-C\-O\-M\-P\-A\-R\-E1\-A@{S\-I\-G\-\_\-\-O\-U\-T\-P\-U\-T\-\_\-\-C\-O\-M\-P\-A\-R\-E1\-A}!IAR/ATMega323/port.c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}}
+\subsubsection[{S\-I\-G\-\_\-\-O\-U\-T\-P\-U\-T\-\_\-\-C\-O\-M\-P\-A\-R\-E1\-A}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-interrupt {\bf void} S\-I\-G\-\_\-\-O\-U\-T\-P\-U\-T\-\_\-\-C\-O\-M\-P\-A\-R\-E1\-A (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{IAR_2ATMega323_2port_8c_a7eb14d5c3f1c439f2696bb17f906a85d}
+\hypertarget{IAR_2ATMega323_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{\index{I\-A\-R/\-A\-T\-Mega323/port.\-c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}!v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}}
+\index{v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}!IAR/ATMega323/port.c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}}
+\subsubsection[{v\-Port\-End\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-End\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{IAR_2ATMega323_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}
+\hypertarget{IAR_2ATMega323_2port_8c_a2ed3554a3de09a3bd09d396ee081ab69}{\index{I\-A\-R/\-A\-T\-Mega323/port.\-c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}!v\-Port\-Enter\-Critical@{v\-Port\-Enter\-Critical}}
+\index{v\-Port\-Enter\-Critical@{v\-Port\-Enter\-Critical}!IAR/ATMega323/port.c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}}
+\subsubsection[{v\-Port\-Enter\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Enter\-Critical (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{IAR_2ATMega323_2port_8c_a2ed3554a3de09a3bd09d396ee081ab69}
+\hypertarget{IAR_2ATMega323_2port_8c_aed20ada05b957181a0de042802a82a5b}{\index{I\-A\-R/\-A\-T\-Mega323/port.\-c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}!v\-Port\-Exit\-Critical@{v\-Port\-Exit\-Critical}}
+\index{v\-Port\-Exit\-Critical@{v\-Port\-Exit\-Critical}!IAR/ATMega323/port.c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}}
+\subsubsection[{v\-Port\-Exit\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Exit\-Critical (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{IAR_2ATMega323_2port_8c_aed20ada05b957181a0de042802a82a5b}
+\hypertarget{IAR_2ATMega323_2port_8c_a97998187984cbffc1cbeef4d67622ab6}{\index{I\-A\-R/\-A\-T\-Mega323/port.\-c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}!v\-Port\-Start@{v\-Port\-Start}}
+\index{v\-Port\-Start@{v\-Port\-Start}!IAR/ATMega323/port.c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}}
+\subsubsection[{v\-Port\-Start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Start (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{IAR_2ATMega323_2port_8c_a97998187984cbffc1cbeef4d67622ab6}
+\hypertarget{IAR_2ATMega323_2port_8c_a130213f2e8a8331aaa6dc715f41b6358}{\index{I\-A\-R/\-A\-T\-Mega323/port.\-c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}!v\-Port\-Yield\-From\-Tick@{v\-Port\-Yield\-From\-Tick}}
+\index{v\-Port\-Yield\-From\-Tick@{v\-Port\-Yield\-From\-Tick}!IAR/ATMega323/port.c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}}
+\subsubsection[{v\-Port\-Yield\-From\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Yield\-From\-Tick (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{IAR_2ATMega323_2port_8c_a130213f2e8a8331aaa6dc715f41b6358}
+\hypertarget{IAR_2ATMega323_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{\index{I\-A\-R/\-A\-T\-Mega323/port.\-c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}!x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}}
+\index{x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}!IAR/ATMega323/port.c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}}
+\subsubsection[{x\-Port\-Start\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} x\-Port\-Start\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{IAR_2ATMega323_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}
+
+
+\subsection{Variable Documentation}
+\hypertarget{IAR_2ATMega323_2port_8c_af1ef0b7e839d2e30cc6ef9cdc93b8801}{\index{I\-A\-R/\-A\-T\-Mega323/port.\-c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}!ux\-Critical\-Nesting@{ux\-Critical\-Nesting}}
+\index{ux\-Critical\-Nesting@{ux\-Critical\-Nesting}!IAR/ATMega323/port.c@{I\-A\-R/\-A\-T\-Mega323/port.\-c}}
+\subsubsection[{ux\-Critical\-Nesting}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\-Base\-Type\-\_\-t} ux\-Critical\-Nesting = 0x50}}\label{IAR_2ATMega323_2port_8c_af1ef0b7e839d2e30cc6ef9cdc93b8801}

@@ -1,0 +1,95 @@
+\hypertarget{hotswap_8c}{\section{/home/henrique/rep/open\-M\-M\-C/modules/sensors/hotswap.c File Reference}
+\label{hotswap_8c}\index{/home/henrique/rep/open\-M\-M\-C/modules/sensors/hotswap.\-c@{/home/henrique/rep/open\-M\-M\-C/modules/sensors/hotswap.\-c}}
+}
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}semphr.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}port.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sdr.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}hotswap.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task\-\_\-priorities.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ipmi.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}led.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fru.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}utils.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}rtm.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{hotswap_8c_aeeb214f7dd04a7bf518409c0365cbb08}{hotswap\-\_\-init} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{hotswap_8c_a6b1ff2cb75d950cec09b450e3694e9a6}{v\-Task\-Hot\-Swap} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$Parameters)
+\item 
+\hyperlink{ipmb_8h_a8d757edf82d973e9e19ea700b3cd0671}{ipmb\-\_\-error} \hyperlink{hotswap_8c_ae60c686233597f56f087e8a1feebf2de}{hotswap\-\_\-send\-\_\-event} (\hyperlink{structsensor__t}{sensor\-\_\-t} $\ast$sensor, uint8\-\_\-t evt)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{hotswap_8c_a09dafcd34cc16f4edce6c9432f944987}{hotswap\-\_\-clear\-\_\-mask\-\_\-bit} (uint8\-\_\-t \hyperlink{fru_8c_a3d7cc64921822af8dcd4d120a3c00f68}{fru}, uint8\-\_\-t mask)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{hotswap_8c_ae96351ecba4133c9c0b79e29ae8edad9}{hotswap\-\_\-set\-\_\-mask\-\_\-bit} (uint8\-\_\-t \hyperlink{fru_8c_a3d7cc64921822af8dcd4d120a3c00f68}{fru}, uint8\-\_\-t mask)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structSDR__type__02h__t}{S\-D\-R\-\_\-type\-\_\-02h\-\_\-t} $\ast$ \hyperlink{hotswap_8c_abe6272990e867900d9d09926426ab95a}{hotswap\-\_\-amc\-\_\-p\-S\-D\-R}
+\item 
+\hyperlink{structsensor__t}{sensor\-\_\-t} $\ast$ \hyperlink{hotswap_8c_ae24acd49e24465534c4503c2535bcfb7}{hotswap\-\_\-amc\-\_\-sensor}
+\item 
+\hyperlink{structSDR__type__02h__t}{S\-D\-R\-\_\-type\-\_\-02h\-\_\-t} $\ast$ \hyperlink{hotswap_8c_ad2dbb838d22e385beb43e7be82a5930c}{hotswap\-\_\-rtm\-\_\-p\-S\-D\-R}
+\item 
+\hyperlink{structsensor__t}{sensor\-\_\-t} $\ast$ \hyperlink{hotswap_8c_a0fc3c5748ec81c75197fd436a7471a53}{hotswap\-\_\-rtm\-\_\-sensor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{hotswap_8c_a09dafcd34cc16f4edce6c9432f944987}{\index{hotswap.\-c@{hotswap.\-c}!hotswap\-\_\-clear\-\_\-mask\-\_\-bit@{hotswap\-\_\-clear\-\_\-mask\-\_\-bit}}
+\index{hotswap\-\_\-clear\-\_\-mask\-\_\-bit@{hotswap\-\_\-clear\-\_\-mask\-\_\-bit}!hotswap.c@{hotswap.\-c}}
+\subsubsection[{hotswap\-\_\-clear\-\_\-mask\-\_\-bit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} hotswap\-\_\-clear\-\_\-mask\-\_\-bit (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{fru, }
+\item[{uint8\-\_\-t}]{mask}
+\end{DoxyParamCaption}
+)}}\label{hotswap_8c_a09dafcd34cc16f4edce6c9432f944987}
+\hypertarget{hotswap_8c_aeeb214f7dd04a7bf518409c0365cbb08}{\index{hotswap.\-c@{hotswap.\-c}!hotswap\-\_\-init@{hotswap\-\_\-init}}
+\index{hotswap\-\_\-init@{hotswap\-\_\-init}!hotswap.c@{hotswap.\-c}}
+\subsubsection[{hotswap\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} hotswap\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{hotswap_8c_aeeb214f7dd04a7bf518409c0365cbb08}
+\hypertarget{hotswap_8c_ae60c686233597f56f087e8a1feebf2de}{\index{hotswap.\-c@{hotswap.\-c}!hotswap\-\_\-send\-\_\-event@{hotswap\-\_\-send\-\_\-event}}
+\index{hotswap\-\_\-send\-\_\-event@{hotswap\-\_\-send\-\_\-event}!hotswap.c@{hotswap.\-c}}
+\subsubsection[{hotswap\-\_\-send\-\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ipmb\-\_\-error} hotswap\-\_\-send\-\_\-event (
+\begin{DoxyParamCaption}
+\item[{{\bf sensor\-\_\-t} $\ast$}]{sensor, }
+\item[{uint8\-\_\-t}]{evt}
+\end{DoxyParamCaption}
+)}}\label{hotswap_8c_ae60c686233597f56f087e8a1feebf2de}
+\hypertarget{hotswap_8c_ae96351ecba4133c9c0b79e29ae8edad9}{\index{hotswap.\-c@{hotswap.\-c}!hotswap\-\_\-set\-\_\-mask\-\_\-bit@{hotswap\-\_\-set\-\_\-mask\-\_\-bit}}
+\index{hotswap\-\_\-set\-\_\-mask\-\_\-bit@{hotswap\-\_\-set\-\_\-mask\-\_\-bit}!hotswap.c@{hotswap.\-c}}
+\subsubsection[{hotswap\-\_\-set\-\_\-mask\-\_\-bit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} hotswap\-\_\-set\-\_\-mask\-\_\-bit (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{fru, }
+\item[{uint8\-\_\-t}]{mask}
+\end{DoxyParamCaption}
+)}}\label{hotswap_8c_ae96351ecba4133c9c0b79e29ae8edad9}
+\hypertarget{hotswap_8c_a6b1ff2cb75d950cec09b450e3694e9a6}{\index{hotswap.\-c@{hotswap.\-c}!v\-Task\-Hot\-Swap@{v\-Task\-Hot\-Swap}}
+\index{v\-Task\-Hot\-Swap@{v\-Task\-Hot\-Swap}!hotswap.c@{hotswap.\-c}}
+\subsubsection[{v\-Task\-Hot\-Swap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Task\-Hot\-Swap (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{Parameters}
+\end{DoxyParamCaption}
+)}}\label{hotswap_8c_a6b1ff2cb75d950cec09b450e3694e9a6}
+
+
+\subsection{Variable Documentation}
+\hypertarget{hotswap_8c_abe6272990e867900d9d09926426ab95a}{\index{hotswap.\-c@{hotswap.\-c}!hotswap\-\_\-amc\-\_\-p\-S\-D\-R@{hotswap\-\_\-amc\-\_\-p\-S\-D\-R}}
+\index{hotswap\-\_\-amc\-\_\-p\-S\-D\-R@{hotswap\-\_\-amc\-\_\-p\-S\-D\-R}!hotswap.c@{hotswap.\-c}}
+\subsubsection[{hotswap\-\_\-amc\-\_\-p\-S\-D\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-D\-R\-\_\-type\-\_\-02h\-\_\-t}$\ast$ hotswap\-\_\-amc\-\_\-p\-S\-D\-R}}\label{hotswap_8c_abe6272990e867900d9d09926426ab95a}
+\hypertarget{hotswap_8c_ae24acd49e24465534c4503c2535bcfb7}{\index{hotswap.\-c@{hotswap.\-c}!hotswap\-\_\-amc\-\_\-sensor@{hotswap\-\_\-amc\-\_\-sensor}}
+\index{hotswap\-\_\-amc\-\_\-sensor@{hotswap\-\_\-amc\-\_\-sensor}!hotswap.c@{hotswap.\-c}}
+\subsubsection[{hotswap\-\_\-amc\-\_\-sensor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sensor\-\_\-t}$\ast$ hotswap\-\_\-amc\-\_\-sensor}}\label{hotswap_8c_ae24acd49e24465534c4503c2535bcfb7}
+\hypertarget{hotswap_8c_ad2dbb838d22e385beb43e7be82a5930c}{\index{hotswap.\-c@{hotswap.\-c}!hotswap\-\_\-rtm\-\_\-p\-S\-D\-R@{hotswap\-\_\-rtm\-\_\-p\-S\-D\-R}}
+\index{hotswap\-\_\-rtm\-\_\-p\-S\-D\-R@{hotswap\-\_\-rtm\-\_\-p\-S\-D\-R}!hotswap.c@{hotswap.\-c}}
+\subsubsection[{hotswap\-\_\-rtm\-\_\-p\-S\-D\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-D\-R\-\_\-type\-\_\-02h\-\_\-t}$\ast$ hotswap\-\_\-rtm\-\_\-p\-S\-D\-R}}\label{hotswap_8c_ad2dbb838d22e385beb43e7be82a5930c}
+\hypertarget{hotswap_8c_a0fc3c5748ec81c75197fd436a7471a53}{\index{hotswap.\-c@{hotswap.\-c}!hotswap\-\_\-rtm\-\_\-sensor@{hotswap\-\_\-rtm\-\_\-sensor}}
+\index{hotswap\-\_\-rtm\-\_\-sensor@{hotswap\-\_\-rtm\-\_\-sensor}!hotswap.c@{hotswap.\-c}}
+\subsubsection[{hotswap\-\_\-rtm\-\_\-sensor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sensor\-\_\-t}$\ast$ hotswap\-\_\-rtm\-\_\-sensor}}\label{hotswap_8c_a0fc3c5748ec81c75197fd436a7471a53}

@@ -1,0 +1,68 @@
+Open Source modular I\-P\-M Controller firmware
+
+\subsection*{Installation\-:}
+
+The following packages are needed in your system in order to compile the firmware\-:
+\begin{DoxyItemize}
+\item {\bfseries gcc-\/arm-\/none-\/eabi}
+\item {\bfseries cmake}
+\item {\bfseries cmake-\/gui} (Optional)
+\end{DoxyItemize}
+
+{\bfseries gcc-\/arm-\/none-\/eabi} can be installed from the pre-\/compiled files found at\-: \href{https://launchpad.net/gcc-arm-embedded/+download}{\tt https\-://launchpad.\-net/gcc-\/arm-\/embedded/+download} or you can run the following command under Ubuntu\-: \begin{DoxyVerb}sudo apt-get install gcc-arm-none-eabi
+\end{DoxyVerb}
+
+
+Next step is to clone this repository into your workspace. \begin{DoxyVerb}git clone https://github.com/lnls-dig/openMMC
+\end{DoxyVerb}
+
+
+\subsection*{Compilation}
+
+Create a new folder wherever is suitable \begin{DoxyVerb}cd <build_folder>
+\end{DoxyVerb}
+
+
+Run C\-Make using the path to the repository folder as an direct argument and the flag {\ttfamily -\/\-D\-B\-O\-A\-R\-D=$<$board\-\_\-name$>$} and {\ttfamily -\/\-D\-V\-E\-R\-S\-I\-O\-N=$<$board\-\_\-version$>$} to configure the compilation scripts to your specific board hardware \begin{DoxyVerb}cmake <path_to_source> -DBOARD=<board_name> -DVERSION=<board_version>
+\end{DoxyVerb}
+
+
+Example\-: \begin{DoxyVerb}cmake ~/openmmc/ -DBOARD=afc -DVERSION=3.1
+\end{DoxyVerb}
+
+
+After creating the build files with C\-Make, you can compile the firmware using {\ttfamily make}, optionally setting the V\-E\-R\-B\-O\-S\-E flag to 1 if you wish to see all the compilation commands \begin{DoxyVerb}make [VERBOSE=1]
+\end{DoxyVerb}
+
+
+Both a {\ttfamily .axf} file and a {\ttfamily .bin} file will be generated in the {\ttfamily out} folder. You can use any one you prefer to program your processor.
+
+To clean the compilation files (binaries, objects and dependence files), just run \begin{DoxyVerb}make clean
+\end{DoxyVerb}
+
+
+\subsection*{Programming L\-P\-C1764}
+
+If you own a {\itshape L\-P\-C\-Link} board, you can use it to program the L\-P\-C1764 processor via its J\-T\-A\-G interface
+
+{\bfseries N\-O\-T\-E}\-: You {\bfseries must} have the L\-P\-C\-Xpresso installed in your machine, since we need to use some installation binaries that they provide, which are not open source.
+
+The C\-Make script should be able to find L\-P\-C\-Xpresso path, but if this is not possible, open the {\ttfamily $<$open\-M\-M\-C\-\_\-root\-\_\-folder$>$/\-C\-Make\-Lists.txt} and change the following line \begin{DoxyVerb}set(LPCXPRESSO_PATH <lpcxpresso_path>)
+\end{DoxyVerb}
+
+
+{\itshape N\-O\-T\-E}\-: You can also use cmake-\/gui to set this option.
+
+To transfer only the application firmware, run \begin{DoxyVerb}make program_app
+\end{DoxyVerb}
+
+
+To transfer only the bootloader firmware, run \begin{DoxyVerb}make program_boot
+\end{DoxyVerb}
+
+
+If you want to erase the whole Flash and copy both firmwares\-: \begin{DoxyVerb}make program_all
+\end{DoxyVerb}
+
+
+{\bfseries N\-O\-T\-E 2}\-: We only have linker scripts to L\-P\-C1764 and L\-P\-C1769, so if you wish to compile to a different controller, you'll have to change the {\ttfamily linker/lpc1764\-\_\-boot.\-ld} and {\ttfamily linker/lpc1764\-\_\-app.\-ld} files, which defines the memory regions, otherwise you'll run into several Hard\-Fault errors. 

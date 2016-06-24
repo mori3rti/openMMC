@@ -1,0 +1,332 @@
+\hypertarget{can__17xx__40xx_8c}{\section{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpcopen/src/can\-\_\-17xx\-\_\-40xx.c File Reference}
+\label{can__17xx__40xx_8c}\index{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpcopen/src/can\-\_\-17xx\-\_\-40xx.\-c@{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpcopen/src/can\-\_\-17xx\-\_\-40xx.\-c}}
+}
+{\ttfamily \#include \char`\"{}chip.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{can__17xx__40xx_8c_adfc9fcf03f1989c383b0a63df52122a6}{set\-Bus\-Timing} (\hyperlink{structLPC__CAN__T}{L\-P\-C\-\_\-\-C\-A\-N\-\_\-\-T} $\ast$p\-C\-A\-N, \hyperlink{structIP__CAN__BUS__TIMING__T}{I\-P\-\_\-\-C\-A\-N\-\_\-\-B\-U\-S\-\_\-\-T\-I\-M\-I\-N\-G\-\_\-\-T} $\ast$p\-Bus\-Timing)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{can__17xx__40xx_8c_adbef22968c9a6f4ea8948a4e06f3f486}{get\-Section\-Address} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{group__CAN__17XX__40XX_gaf0ae33e71a7acfc561972811aa1207e8}{C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-S\-E\-C\-T\-I\-O\-N\-\_\-\-T} Section\-I\-D, uint16\-\_\-t $\ast$Start\-Addr, uint16\-\_\-t $\ast$End\-Addr)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} uint16\-\_\-t \hyperlink{can__17xx__40xx_8c_ada8c99dfd70448c36ad9e4a413f01a0e}{get\-Total\-Entry\-Num} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{can__17xx__40xx_8c_a3c9aaf9b9e77760ba237767127e0b365}{set\-Section\-End\-Address} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{group__CAN__17XX__40XX_gaf0ae33e71a7acfc561972811aa1207e8}{C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-S\-E\-C\-T\-I\-O\-N\-\_\-\-T} Section\-I\-D, uint16\-\_\-t End\-Addr)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} \hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{can__17xx__40xx_8c_a9b0a41982bb5ea7085dce416ef16a026}{get\-Receive\-Frame\-Info} (\hyperlink{structLPC__CAN__T}{L\-P\-C\-\_\-\-C\-A\-N\-\_\-\-T} $\ast$p\-C\-A\-N, \hyperlink{structIP__CAN__001__RX__T}{I\-P\-\_\-\-C\-A\-N\-\_\-001\-\_\-\-R\-X\-\_\-\-T} $\ast$p\-Rx\-Frame)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{can__17xx__40xx_8c_a0ba1044569101d8991b2c6dd19da5b19}{set\-Send\-Frame\-Info} (\hyperlink{structLPC__CAN__T}{L\-P\-C\-\_\-\-C\-A\-N\-\_\-\-T} $\ast$p\-C\-A\-N, \hyperlink{group__CAN__17XX__40XX_ga073d4792bdf9dd0d8ceda6b8c3752dd9}{C\-A\-N\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-I\-D\-\_\-\-T} Tx\-Buf\-I\-D, \hyperlink{structLPC__CAN__TX__T}{L\-P\-C\-\_\-\-C\-A\-N\-\_\-\-T\-X\-\_\-\-T} $\ast$p\-Tx\-Frame)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} uint16\-\_\-t \hyperlink{can__17xx__40xx_8c_af321be329bd2d7261dd7244aafc9cf55}{create\-Std\-I\-D\-Entry} (\hyperlink{structCAN__STD__ID__ENTRY__T}{C\-A\-N\-\_\-\-S\-T\-D\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Entry\-Info, bool Is\-Full\-C\-A\-N\-Entry)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\-N\-L\-I\-N\-E} uint16\-\_\-t \hyperlink{can__17xx__40xx_8c_a6b8c8126b85d4506ab3fdcef92ba75ce}{create\-Un\-Used\-S\-T\-D\-Entry} (uint8\-\_\-t Ctrl\-No)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{can__17xx__40xx_8c_a2fb26dd5da40454e92a2058d9646149d}{read\-Std\-I\-D\-Entry} (uint16\-\_\-t Entry\-Val, \hyperlink{structCAN__STD__ID__ENTRY__T}{C\-A\-N\-\_\-\-S\-T\-D\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Entry\-Info)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{can__17xx__40xx_8c_aff9d7d24095778c949c84e03b57893e7}{setup\-S\-T\-D\-Section} (uint32\-\_\-t $\ast$p\-C\-A\-N\-A\-F\-Ram\-Addr, \hyperlink{structCAN__STD__ID__ENTRY__T}{C\-A\-N\-\_\-\-S\-T\-D\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Std\-C\-A\-N\-Sec, uint16\-\_\-t Entry\-Num, bool Is\-Full\-C\-A\-N\-Entry)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{can__17xx__40xx_8c_a65397bd26b159e9be57ff2787c803b6b}{setup\-S\-T\-D\-Range\-Section} (uint32\-\_\-t $\ast$p\-C\-A\-N\-A\-F\-Ram\-Addr, \hyperlink{structCAN__STD__ID__RANGE__ENTRY__T}{C\-A\-N\-\_\-\-S\-T\-D\-\_\-\-I\-D\-\_\-\-R\-A\-N\-G\-E\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Std\-Range\-C\-A\-N\-Sec, uint16\-\_\-t Entry\-Num)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{can__17xx__40xx_8c_a52421e2a4946f7296ed74961f8a6e40b}{shift\-S\-T\-D\-Entry\-Down} (uint32\-\_\-t $\ast$arr, int32\-\_\-t num)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{can__17xx__40xx_8c_a660398197d747f5d462b8cd1322fbf6e}{shift\-S\-T\-D\-Entry\-Up} (uint32\-\_\-t $\ast$arr, int32\-\_\-t num)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} uint32\-\_\-t \hyperlink{can__17xx__40xx_8c_aa1f5af4dc6ed5d3d37c40092e666b26c}{create\-Ext\-I\-D\-Entry} (\hyperlink{structCAN__EXT__ID__ENTRY__T}{C\-A\-N\-\_\-\-E\-X\-T\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Entry\-Info)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{can__17xx__40xx_8c_a470b3f98aaa21dfd0338b48aa0574bf9}{read\-Ext\-I\-D\-Entry} (uint32\-\_\-t Entry\-Val, \hyperlink{structCAN__EXT__ID__ENTRY__T}{C\-A\-N\-\_\-\-E\-X\-T\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Entry\-Info)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{can__17xx__40xx_8c_abee61c37c038030fc740b952d3eba65e}{setup\-E\-X\-T\-Section} (uint32\-\_\-t $\ast$p\-C\-A\-N\-A\-F\-Ram\-Addr, \hyperlink{structCAN__EXT__ID__ENTRY__T}{C\-A\-N\-\_\-\-E\-X\-T\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Ext\-C\-A\-N\-Sec, uint16\-\_\-t Entry\-Num)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{can__17xx__40xx_8c_ace69b5bc45dbd8a330c55394462349aa}{setup\-E\-X\-T\-Range\-Section} (uint32\-\_\-t $\ast$p\-C\-A\-N\-A\-F\-Ram\-Addr, \hyperlink{structCAN__EXT__ID__RANGE__ENTRY__T}{C\-A\-N\-\_\-\-E\-X\-T\-\_\-\-I\-D\-\_\-\-R\-A\-N\-G\-E\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Ext\-Range\-C\-A\-N\-Sec, uint16\-\_\-t Entry\-Num)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} uint32\-\_\-t \hyperlink{can__17xx__40xx_8c_a07e62aa45562b4f5a62bdaf75cb7a5f1}{get\-Array\-Val} (uint8\-\_\-t $\ast$arr, uint32\-\_\-t start\-Index, uint8\-\_\-t byte\-Num)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} int32\-\_\-t \hyperlink{can__17xx__40xx_8c_aa8643dacfe6562375ea122d5e9abc011}{search\-Insert\-Index} (uint32\-\_\-t $\ast$arr, uint32\-\_\-t arr\-Num, uint32\-\_\-t val, uint32\-\_\-t mask, uint8\-\_\-t unit\-Size)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{can__17xx__40xx_8c_a0c0de72b5c365c85d9dbe93a4eb1f296}{insert\-S\-T\-D\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, \hyperlink{structCAN__STD__ID__ENTRY__T}{C\-A\-N\-\_\-\-S\-T\-D\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Entry, bool Is\-Full\-C\-A\-N\-Entry)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{can__17xx__40xx_8c_ad0834b11af3db386b4a901e4bac73035}{read\-S\-T\-D\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, uint16\-\_\-t Position, bool Is\-Full\-C\-A\-N\-Entry, \hyperlink{structCAN__STD__ID__ENTRY__T}{C\-A\-N\-\_\-\-S\-T\-D\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Entry)
+\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{can__17xx__40xx_8c_ac84dd14acdc2cd74edc65556cac4a65e}{remove\-S\-T\-D\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, int16\-\_\-t I\-D\-Index, bool Is\-Full\-C\-A\-N\-Entry)
+\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{can__17xx__40xx_8c_a286515216100adb60d10f27090b21763}{remove\-L\-U\-T\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, \hyperlink{group__CAN__17XX__40XX_gaf0ae33e71a7acfc561972811aa1207e8}{C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-S\-E\-C\-T\-I\-O\-N\-\_\-\-T} Section\-I\-D, int16\-\_\-t Position)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{can__17xx__40xx_8c_ac9f6cb3064ab412be376f38c27542580}{clear\-A\-F\-L\-U\-T} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-Can\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-Can\-A\-F\-Ram)
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga10b2d890d871e1489bb02b7e70d9bdfb}{S\-T\-A\-T\-I\-C} \hyperlink{group__CLOCK__17XX__40XX_ga82e75cbe777e79f448fec3987ddd978e}{C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-C\-L\-O\-C\-K\-\_\-\-T} \hyperlink{can__17xx__40xx_8c_a7ff02f25da888689499423d50d43399a}{Chip\-\_\-\-C\-A\-N\-\_\-\-Get\-Clock\-Index} (\hyperlink{structLPC__CAN__T}{L\-P\-C\-\_\-\-C\-A\-N\-\_\-\-T} $\ast$p\-C\-A\-N)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__CAN__17XX__40XX_ga4995b9302885e0e577d4566d23c2ce37}{Chip\-\_\-\-C\-A\-N\-\_\-\-Init} (\hyperlink{structLPC__CAN__T}{L\-P\-C\-\_\-\-C\-A\-N\-\_\-\-T} $\ast$p\-C\-A\-N, \hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram)
+\begin{DoxyCompactList}\small\item\em Initialize C\-A\-N Interface. \end{DoxyCompactList}\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__CAN__17XX__40XX_ga7f490bb9d12b30243264cd06feb795db}{Chip\-\_\-\-C\-A\-N\-\_\-\-De\-Init} (\hyperlink{structLPC__CAN__T}{L\-P\-C\-\_\-\-C\-A\-N\-\_\-\-T} $\ast$p\-C\-A\-N)
+\begin{DoxyCompactList}\small\item\em De-\/\-Initialize C\-A\-N Interface. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_ga269c61b9e26af6f207632993274b04e5}{Chip\-\_\-\-C\-A\-N\-\_\-\-Set\-Bit\-Rate} (\hyperlink{structLPC__CAN__T}{L\-P\-C\-\_\-\-C\-A\-N\-\_\-\-T} $\ast$p\-C\-A\-N, uint32\-\_\-t Bit\-Rate)
+\begin{DoxyCompactList}\small\item\em Set C\-A\-N bitrate. \end{DoxyCompactList}\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__CAN__17XX__40XX_gad935e9c3c93278bb18b99df67ba52516}{Chip\-\_\-\-C\-A\-N\-\_\-\-Set\-Mode} (\hyperlink{structLPC__CAN__T}{L\-P\-C\-\_\-\-C\-A\-N\-\_\-\-T} $\ast$p\-C\-A\-N, \hyperlink{group__CAN__17XX__40XX_ga57c03b9f9b4ebf86dccc13baf8c2889c}{C\-A\-N\-\_\-\-M\-O\-D\-E\-\_\-\-T} \hyperlink{ioat91sam7x256_8h_a2c3349c7d637bdca4752c232da5df71c}{Mode}, \hyperlink{group__LPC__Types__Public__Types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\-State} New\-State)
+\begin{DoxyCompactList}\small\item\em Set C\-A\-N controller enter/exit to a given mode. \end{DoxyCompactList}\item 
+\hyperlink{group__CAN__17XX__40XX_ga073d4792bdf9dd0d8ceda6b8c3752dd9}{C\-A\-N\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-I\-D\-\_\-\-T} \hyperlink{group__CAN__17XX__40XX_gadb33450a707ebe03be084c2783017272}{Chip\-\_\-\-C\-A\-N\-\_\-\-Get\-Free\-Tx\-Buf} (\hyperlink{structLPC__CAN__T}{L\-P\-C\-\_\-\-C\-A\-N\-\_\-\-T} $\ast$p\-C\-A\-N)
+\begin{DoxyCompactList}\small\item\em Get Free Tx\-Buffer. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_gaa58803ce4de8c8520925ebd1cbfd2019}{Chip\-\_\-\-C\-A\-N\-\_\-\-Set\-A\-F\-L\-U\-T} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, \hyperlink{structCANAF__LUT__T}{C\-A\-N\-A\-F\-\_\-\-L\-U\-T\-\_\-\-T} $\ast$p\-A\-F\-Sections)
+\begin{DoxyCompactList}\small\item\em Set C\-A\-N A\-F L\-U\-T. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{group__CAN__17XX__40XX_gabf7932e8e5dfd4b8efcd17b1900c53b6}{Chip\-\_\-\-C\-A\-N\-\_\-\-Get\-Entries\-Num} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, \hyperlink{group__CAN__17XX__40XX_gaf0ae33e71a7acfc561972811aa1207e8}{C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-S\-E\-C\-T\-I\-O\-N\-\_\-\-T} Section\-I\-D)
+\begin{DoxyCompactList}\small\item\em Get the number of entries in the given section. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_ga3666d1f79e2dcbf0f041205f27494bdf}{Chip\-\_\-\-C\-A\-N\-\_\-\-Insert\-Full\-C\-A\-N\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, \hyperlink{structCAN__STD__ID__ENTRY__T}{C\-A\-N\-\_\-\-S\-T\-D\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Entry)
+\begin{DoxyCompactList}\small\item\em Insert a Full\-C\-A\-N Entry into the current L\-U\-T. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_ga164daa2297bee23837a93bbea3793531}{Chip\-\_\-\-C\-A\-N\-\_\-\-Insert\-S\-T\-D\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, \hyperlink{structCAN__STD__ID__ENTRY__T}{C\-A\-N\-\_\-\-S\-T\-D\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Entry)
+\begin{DoxyCompactList}\small\item\em Insert an individual Standard Entry into the current L\-U\-T. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_gad6ce5875d9ca861b291a1fc2d91ba026}{Chip\-\_\-\-C\-A\-N\-\_\-\-Insert\-E\-X\-T\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, \hyperlink{structCAN__EXT__ID__ENTRY__T}{C\-A\-N\-\_\-\-E\-X\-T\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Entry)
+\begin{DoxyCompactList}\small\item\em Insert an individual Extended Entry into the current L\-U\-T. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_gaf418fa9333574ccb4e710982f90b650c}{Chip\-\_\-\-C\-A\-N\-\_\-\-Insert\-Group\-S\-T\-D\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, \hyperlink{structCAN__STD__ID__RANGE__ENTRY__T}{C\-A\-N\-\_\-\-S\-T\-D\-\_\-\-I\-D\-\_\-\-R\-A\-N\-G\-E\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Entry)
+\begin{DoxyCompactList}\small\item\em Insert an Group Standard Entry into the current L\-U\-T. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_ga6bb7c9685df871a1d6dae14908c70397}{Chip\-\_\-\-C\-A\-N\-\_\-\-Insert\-Group\-E\-X\-T\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, \hyperlink{structCAN__EXT__ID__RANGE__ENTRY__T}{C\-A\-N\-\_\-\-E\-X\-T\-\_\-\-I\-D\-\_\-\-R\-A\-N\-G\-E\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Entry)
+\begin{DoxyCompactList}\small\item\em Insert an Group Extended Entry into the current L\-U\-T. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_ga8d00f1ed0727ec6812ce72d4a194519f}{Chip\-\_\-\-C\-A\-N\-\_\-\-Remove\-Full\-C\-A\-N\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, int16\-\_\-t Position)
+\begin{DoxyCompactList}\small\item\em Remove a Full\-C\-A\-N Entry from the current L\-U\-T. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_gac991bc7a590c7069e4149a0b8ccfcb55}{Chip\-\_\-\-C\-A\-N\-\_\-\-Remove\-S\-T\-D\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, int16\-\_\-t Position)
+\begin{DoxyCompactList}\small\item\em Remove an individual Standard Entry from the current L\-U\-T. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_ga090e4a29bbaebc8de77bc929438dcfb7}{Chip\-\_\-\-C\-A\-N\-\_\-\-Remove\-Group\-S\-T\-D\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, int16\-\_\-t Position)
+\begin{DoxyCompactList}\small\item\em Remove an Group Standard Entry from the current L\-U\-T. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_ga01e3a9942d50effd9da2a773d3af943f}{Chip\-\_\-\-C\-A\-N\-\_\-\-Remove\-E\-X\-T\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, int16\-\_\-t Position)
+\begin{DoxyCompactList}\small\item\em Remove an individual Extended Entry from the current L\-U\-T. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_gafa0a59577a1c1d38c4c6a339d018c35d}{Chip\-\_\-\-C\-A\-N\-\_\-\-Remove\-Group\-E\-X\-T\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, int16\-\_\-t Position)
+\begin{DoxyCompactList}\small\item\em Remove an Group Extended Entry from the current L\-U\-T. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_gac54b6ced8b370416a071912bd08a0091}{Chip\-\_\-\-C\-A\-N\-\_\-\-Read\-Full\-C\-A\-N\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, uint16\-\_\-t Position, \hyperlink{structCAN__STD__ID__ENTRY__T}{C\-A\-N\-\_\-\-S\-T\-D\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Entry)
+\begin{DoxyCompactList}\small\item\em Read a Full\-C\-A\-N Entry into from current L\-U\-T. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_ga0594319bfc5d033b7500a4ca706dc11a}{Chip\-\_\-\-C\-A\-N\-\_\-\-Read\-S\-T\-D\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, uint16\-\_\-t Position, \hyperlink{structCAN__STD__ID__ENTRY__T}{C\-A\-N\-\_\-\-S\-T\-D\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Entry)
+\begin{DoxyCompactList}\small\item\em Read an individual Standard Entry from the current L\-U\-T. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_ga1d8da3b3270e092f42dbe9e61f025b06}{Chip\-\_\-\-C\-A\-N\-\_\-\-Read\-Group\-S\-T\-D\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, uint16\-\_\-t Position, \hyperlink{structCAN__STD__ID__RANGE__ENTRY__T}{C\-A\-N\-\_\-\-S\-T\-D\-\_\-\-I\-D\-\_\-\-R\-A\-N\-G\-E\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Entry)
+\begin{DoxyCompactList}\small\item\em Read an Group Standard Entry from the current L\-U\-T. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_gad8bbd206134607402721450d085e3ccf}{Chip\-\_\-\-C\-A\-N\-\_\-\-Read\-E\-X\-T\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, uint16\-\_\-t Position, \hyperlink{structCAN__EXT__ID__ENTRY__T}{C\-A\-N\-\_\-\-E\-X\-T\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Entry)
+\begin{DoxyCompactList}\small\item\em Read an individual Extended Entry from the current L\-U\-T. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_ga230f718177c73eab776ae534906b5c9a}{Chip\-\_\-\-C\-A\-N\-\_\-\-Read\-Group\-E\-X\-T\-Entry} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, uint16\-\_\-t Position, \hyperlink{structCAN__EXT__ID__RANGE__ENTRY__T}{C\-A\-N\-\_\-\-E\-X\-T\-\_\-\-I\-D\-\_\-\-R\-A\-N\-G\-E\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$p\-Entry)
+\begin{DoxyCompactList}\small\item\em Read an Group Extended Entry from the current L\-U\-T. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_ga27767c0aa2e0c5da0e680e7e432bbc69}{Chip\-\_\-\-C\-A\-N\-\_\-\-Send} (\hyperlink{structLPC__CAN__T}{L\-P\-C\-\_\-\-C\-A\-N\-\_\-\-T} $\ast$p\-C\-A\-N, \hyperlink{group__CAN__17XX__40XX_ga073d4792bdf9dd0d8ceda6b8c3752dd9}{C\-A\-N\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-I\-D\-\_\-\-T} Tx\-Buf\-I\-D, \hyperlink{structCAN__MSG__T}{C\-A\-N\-\_\-\-M\-S\-G\-\_\-\-T} $\ast$p\-Msg)
+\begin{DoxyCompactList}\small\item\em Request the given C\-A\-N Controller to send message. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_gadbb9fadb00c42f7c33f0ed06876a8a03}{Chip\-\_\-\-C\-A\-N\-\_\-\-Receive} (\hyperlink{structLPC__CAN__T}{L\-P\-C\-\_\-\-C\-A\-N\-\_\-\-T} $\ast$p\-C\-A\-N, \hyperlink{structCAN__MSG__T}{C\-A\-N\-\_\-\-M\-S\-G\-\_\-\-T} $\ast$p\-Msg)
+\begin{DoxyCompactList}\small\item\em Get message received by the C\-A\-N Controller. \end{DoxyCompactList}\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{group__CAN__17XX__40XX_ga90ebd27acbebb24951b5707abca13220}{Chip\-\_\-\-C\-A\-N\-\_\-\-Config\-Full\-C\-A\-N\-Int} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{group__LPC__Types__Public__Types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\-State} New\-State)
+\begin{DoxyCompactList}\small\item\em Enable/\-Disable C\-A\-N controller Full\-C\-A\-N Interrupts. \end{DoxyCompactList}\item 
+uint32\-\_\-t \hyperlink{group__CAN__17XX__40XX_gaf955e0441bf4ca24b8c72f59aabbd9e8}{Chip\-\_\-\-C\-A\-N\-\_\-\-Get\-Full\-C\-A\-N\-Int\-Status} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, uint8\-\_\-t Obj\-I\-D)
+\begin{DoxyCompactList}\small\item\em Get Full\-C\-A\-N interrupt status of the given object. \end{DoxyCompactList}\item 
+\hyperlink{group__LPC__Types__Public__Types_ga67a0db04d321a74b7e7fcfd3f1a3f70b}{Status} \hyperlink{group__CAN__17XX__40XX_ga4029c0d9ce2f898bf911e0e49b570f5b}{Chip\-\_\-\-C\-A\-N\-\_\-\-Full\-C\-A\-N\-Receive} (\hyperlink{structLPC__CANAF__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F, \hyperlink{structLPC__CANAF__RAM__T}{L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$p\-C\-A\-N\-A\-F\-Ram, uint8\-\_\-t Obj\-I\-D, \hyperlink{structCAN__MSG__T}{C\-A\-N\-\_\-\-M\-S\-G\-\_\-\-T} $\ast$p\-Msg, uint8\-\_\-t $\ast$p\-S\-C\-C)
+\begin{DoxyCompactList}\small\item\em Get message received automatically by the A\-F. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{can__17xx__40xx_8c_a7ff02f25da888689499423d50d43399a}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!Chip\-\_\-\-C\-A\-N\-\_\-\-Get\-Clock\-Index@{Chip\-\_\-\-C\-A\-N\-\_\-\-Get\-Clock\-Index}}
+\index{Chip\-\_\-\-C\-A\-N\-\_\-\-Get\-Clock\-Index@{Chip\-\_\-\-C\-A\-N\-\_\-\-Get\-Clock\-Index}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{Chip\-\_\-\-C\-A\-N\-\_\-\-Get\-Clock\-Index}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf C\-H\-I\-P\-\_\-\-S\-Y\-S\-C\-T\-L\-\_\-\-C\-L\-O\-C\-K\-\_\-\-T} Chip\-\_\-\-C\-A\-N\-\_\-\-Get\-Clock\-Index (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-P\-C\-\_\-\-C\-A\-N\-\_\-\-T} $\ast$}]{p\-C\-A\-N}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_a7ff02f25da888689499423d50d43399a}
+\hypertarget{can__17xx__40xx_8c_ac9f6cb3064ab412be376f38c27542580}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!clear\-A\-F\-L\-U\-T@{clear\-A\-F\-L\-U\-T}}
+\index{clear\-A\-F\-L\-U\-T@{clear\-A\-F\-L\-U\-T}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{clear\-A\-F\-L\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} clear\-A\-F\-L\-U\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$}]{p\-Can\-A\-F, }
+\item[{{\bf L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$}]{p\-Can\-A\-F\-Ram}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_ac9f6cb3064ab412be376f38c27542580}
+\hypertarget{can__17xx__40xx_8c_aa1f5af4dc6ed5d3d37c40092e666b26c}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!create\-Ext\-I\-D\-Entry@{create\-Ext\-I\-D\-Entry}}
+\index{create\-Ext\-I\-D\-Entry@{create\-Ext\-I\-D\-Entry}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{create\-Ext\-I\-D\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} uint32\-\_\-t create\-Ext\-I\-D\-Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-A\-N\-\_\-\-E\-X\-T\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$}]{p\-Entry\-Info}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_aa1f5af4dc6ed5d3d37c40092e666b26c}
+\hypertarget{can__17xx__40xx_8c_af321be329bd2d7261dd7244aafc9cf55}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!create\-Std\-I\-D\-Entry@{create\-Std\-I\-D\-Entry}}
+\index{create\-Std\-I\-D\-Entry@{create\-Std\-I\-D\-Entry}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{create\-Std\-I\-D\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} uint16\-\_\-t create\-Std\-I\-D\-Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-A\-N\-\_\-\-S\-T\-D\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$}]{p\-Entry\-Info, }
+\item[{bool}]{Is\-Full\-C\-A\-N\-Entry}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_af321be329bd2d7261dd7244aafc9cf55}
+\hypertarget{can__17xx__40xx_8c_a6b8c8126b85d4506ab3fdcef92ba75ce}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!create\-Un\-Used\-S\-T\-D\-Entry@{create\-Un\-Used\-S\-T\-D\-Entry}}
+\index{create\-Un\-Used\-S\-T\-D\-Entry@{create\-Un\-Used\-S\-T\-D\-Entry}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{create\-Un\-Used\-S\-T\-D\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} uint16\-\_\-t create\-Un\-Used\-S\-T\-D\-Entry (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{Ctrl\-No}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_a6b8c8126b85d4506ab3fdcef92ba75ce}
+\hypertarget{can__17xx__40xx_8c_a07e62aa45562b4f5a62bdaf75cb7a5f1}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!get\-Array\-Val@{get\-Array\-Val}}
+\index{get\-Array\-Val@{get\-Array\-Val}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{get\-Array\-Val}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} uint32\-\_\-t get\-Array\-Val (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t $\ast$}]{arr, }
+\item[{uint32\-\_\-t}]{start\-Index, }
+\item[{uint8\-\_\-t}]{byte\-Num}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_a07e62aa45562b4f5a62bdaf75cb7a5f1}
+\hypertarget{can__17xx__40xx_8c_a9b0a41982bb5ea7085dce416ef16a026}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!get\-Receive\-Frame\-Info@{get\-Receive\-Frame\-Info}}
+\index{get\-Receive\-Frame\-Info@{get\-Receive\-Frame\-Info}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{get\-Receive\-Frame\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} {\bf Status} get\-Receive\-Frame\-Info (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-P\-C\-\_\-\-C\-A\-N\-\_\-\-T} $\ast$}]{p\-C\-A\-N, }
+\item[{{\bf I\-P\-\_\-\-C\-A\-N\-\_\-001\-\_\-\-R\-X\-\_\-\-T} $\ast$}]{p\-Rx\-Frame}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_a9b0a41982bb5ea7085dce416ef16a026}
+\hypertarget{can__17xx__40xx_8c_adbef22968c9a6f4ea8948a4e06f3f486}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!get\-Section\-Address@{get\-Section\-Address}}
+\index{get\-Section\-Address@{get\-Section\-Address}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{get\-Section\-Address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf void} get\-Section\-Address (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$}]{p\-C\-A\-N\-A\-F, }
+\item[{{\bf C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-S\-E\-C\-T\-I\-O\-N\-\_\-\-T}}]{Section\-I\-D, }
+\item[{uint16\-\_\-t $\ast$}]{Start\-Addr, }
+\item[{uint16\-\_\-t $\ast$}]{End\-Addr}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_adbef22968c9a6f4ea8948a4e06f3f486}
+\hypertarget{can__17xx__40xx_8c_ada8c99dfd70448c36ad9e4a413f01a0e}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!get\-Total\-Entry\-Num@{get\-Total\-Entry\-Num}}
+\index{get\-Total\-Entry\-Num@{get\-Total\-Entry\-Num}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{get\-Total\-Entry\-Num}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} uint16\-\_\-t get\-Total\-Entry\-Num (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$}]{p\-C\-A\-N\-A\-F}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_ada8c99dfd70448c36ad9e4a413f01a0e}
+\hypertarget{can__17xx__40xx_8c_a0c0de72b5c365c85d9dbe93a4eb1f296}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!insert\-S\-T\-D\-Entry@{insert\-S\-T\-D\-Entry}}
+\index{insert\-S\-T\-D\-Entry@{insert\-S\-T\-D\-Entry}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{insert\-S\-T\-D\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf Status} insert\-S\-T\-D\-Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$}]{p\-C\-A\-N\-A\-F, }
+\item[{{\bf L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$}]{p\-C\-A\-N\-A\-F\-Ram, }
+\item[{{\bf C\-A\-N\-\_\-\-S\-T\-D\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$}]{p\-Entry, }
+\item[{bool}]{Is\-Full\-C\-A\-N\-Entry}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_a0c0de72b5c365c85d9dbe93a4eb1f296}
+\hypertarget{can__17xx__40xx_8c_a470b3f98aaa21dfd0338b48aa0574bf9}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!read\-Ext\-I\-D\-Entry@{read\-Ext\-I\-D\-Entry}}
+\index{read\-Ext\-I\-D\-Entry@{read\-Ext\-I\-D\-Entry}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{read\-Ext\-I\-D\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf void} read\-Ext\-I\-D\-Entry (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{Entry\-Val, }
+\item[{{\bf C\-A\-N\-\_\-\-E\-X\-T\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$}]{p\-Entry\-Info}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_a470b3f98aaa21dfd0338b48aa0574bf9}
+\hypertarget{can__17xx__40xx_8c_ad0834b11af3db386b4a901e4bac73035}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!read\-S\-T\-D\-Entry@{read\-S\-T\-D\-Entry}}
+\index{read\-S\-T\-D\-Entry@{read\-S\-T\-D\-Entry}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{read\-S\-T\-D\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf Status} read\-S\-T\-D\-Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$}]{p\-C\-A\-N\-A\-F, }
+\item[{{\bf L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$}]{p\-C\-A\-N\-A\-F\-Ram, }
+\item[{uint16\-\_\-t}]{Position, }
+\item[{bool}]{Is\-Full\-C\-A\-N\-Entry, }
+\item[{{\bf C\-A\-N\-\_\-\-S\-T\-D\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$}]{p\-Entry}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_ad0834b11af3db386b4a901e4bac73035}
+\hypertarget{can__17xx__40xx_8c_a2fb26dd5da40454e92a2058d9646149d}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!read\-Std\-I\-D\-Entry@{read\-Std\-I\-D\-Entry}}
+\index{read\-Std\-I\-D\-Entry@{read\-Std\-I\-D\-Entry}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{read\-Std\-I\-D\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf void} read\-Std\-I\-D\-Entry (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{Entry\-Val, }
+\item[{{\bf C\-A\-N\-\_\-\-S\-T\-D\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$}]{p\-Entry\-Info}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_a2fb26dd5da40454e92a2058d9646149d}
+\hypertarget{can__17xx__40xx_8c_a286515216100adb60d10f27090b21763}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!remove\-L\-U\-T\-Entry@{remove\-L\-U\-T\-Entry}}
+\index{remove\-L\-U\-T\-Entry@{remove\-L\-U\-T\-Entry}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{remove\-L\-U\-T\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} remove\-L\-U\-T\-Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$}]{p\-C\-A\-N\-A\-F, }
+\item[{{\bf L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$}]{p\-C\-A\-N\-A\-F\-Ram, }
+\item[{{\bf C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-S\-E\-C\-T\-I\-O\-N\-\_\-\-T}}]{Section\-I\-D, }
+\item[{int16\-\_\-t}]{Position}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_a286515216100adb60d10f27090b21763}
+\hypertarget{can__17xx__40xx_8c_ac84dd14acdc2cd74edc65556cac4a65e}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!remove\-S\-T\-D\-Entry@{remove\-S\-T\-D\-Entry}}
+\index{remove\-S\-T\-D\-Entry@{remove\-S\-T\-D\-Entry}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{remove\-S\-T\-D\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} remove\-S\-T\-D\-Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$}]{p\-C\-A\-N\-A\-F, }
+\item[{{\bf L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-T} $\ast$}]{p\-C\-A\-N\-A\-F\-Ram, }
+\item[{int16\-\_\-t}]{I\-D\-Index, }
+\item[{bool}]{Is\-Full\-C\-A\-N\-Entry}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_ac84dd14acdc2cd74edc65556cac4a65e}
+\hypertarget{can__17xx__40xx_8c_aa8643dacfe6562375ea122d5e9abc011}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!search\-Insert\-Index@{search\-Insert\-Index}}
+\index{search\-Insert\-Index@{search\-Insert\-Index}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{search\-Insert\-Index}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} int32\-\_\-t search\-Insert\-Index (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t $\ast$}]{arr, }
+\item[{uint32\-\_\-t}]{arr\-Num, }
+\item[{uint32\-\_\-t}]{val, }
+\item[{uint32\-\_\-t}]{mask, }
+\item[{uint8\-\_\-t}]{unit\-Size}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_aa8643dacfe6562375ea122d5e9abc011}
+\hypertarget{can__17xx__40xx_8c_adfc9fcf03f1989c383b0a63df52122a6}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!set\-Bus\-Timing@{set\-Bus\-Timing}}
+\index{set\-Bus\-Timing@{set\-Bus\-Timing}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{set\-Bus\-Timing}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf void} set\-Bus\-Timing (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-P\-C\-\_\-\-C\-A\-N\-\_\-\-T} $\ast$}]{p\-C\-A\-N, }
+\item[{{\bf I\-P\-\_\-\-C\-A\-N\-\_\-\-B\-U\-S\-\_\-\-T\-I\-M\-I\-N\-G\-\_\-\-T} $\ast$}]{p\-Bus\-Timing}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_adfc9fcf03f1989c383b0a63df52122a6}
+\hypertarget{can__17xx__40xx_8c_a3c9aaf9b9e77760ba237767127e0b365}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!set\-Section\-End\-Address@{set\-Section\-End\-Address}}
+\index{set\-Section\-End\-Address@{set\-Section\-End\-Address}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{set\-Section\-End\-Address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} {\bf void} set\-Section\-End\-Address (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-P\-C\-\_\-\-C\-A\-N\-A\-F\-\_\-\-T} $\ast$}]{p\-C\-A\-N\-A\-F, }
+\item[{{\bf C\-A\-N\-A\-F\-\_\-\-R\-A\-M\-\_\-\-S\-E\-C\-T\-I\-O\-N\-\_\-\-T}}]{Section\-I\-D, }
+\item[{uint16\-\_\-t}]{End\-Addr}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_a3c9aaf9b9e77760ba237767127e0b365}
+\hypertarget{can__17xx__40xx_8c_a0ba1044569101d8991b2c6dd19da5b19}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!set\-Send\-Frame\-Info@{set\-Send\-Frame\-Info}}
+\index{set\-Send\-Frame\-Info@{set\-Send\-Frame\-Info}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{set\-Send\-Frame\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf I\-N\-L\-I\-N\-E} {\bf void} set\-Send\-Frame\-Info (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-P\-C\-\_\-\-C\-A\-N\-\_\-\-T} $\ast$}]{p\-C\-A\-N, }
+\item[{{\bf C\-A\-N\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-I\-D\-\_\-\-T}}]{Tx\-Buf\-I\-D, }
+\item[{{\bf L\-P\-C\-\_\-\-C\-A\-N\-\_\-\-T\-X\-\_\-\-T} $\ast$}]{p\-Tx\-Frame}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_a0ba1044569101d8991b2c6dd19da5b19}
+\hypertarget{can__17xx__40xx_8c_ace69b5bc45dbd8a330c55394462349aa}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!setup\-E\-X\-T\-Range\-Section@{setup\-E\-X\-T\-Range\-Section}}
+\index{setup\-E\-X\-T\-Range\-Section@{setup\-E\-X\-T\-Range\-Section}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{setup\-E\-X\-T\-Range\-Section}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf Status} setup\-E\-X\-T\-Range\-Section (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t $\ast$}]{p\-C\-A\-N\-A\-F\-Ram\-Addr, }
+\item[{{\bf C\-A\-N\-\_\-\-E\-X\-T\-\_\-\-I\-D\-\_\-\-R\-A\-N\-G\-E\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$}]{p\-Ext\-Range\-C\-A\-N\-Sec, }
+\item[{uint16\-\_\-t}]{Entry\-Num}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_ace69b5bc45dbd8a330c55394462349aa}
+\hypertarget{can__17xx__40xx_8c_abee61c37c038030fc740b952d3eba65e}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!setup\-E\-X\-T\-Section@{setup\-E\-X\-T\-Section}}
+\index{setup\-E\-X\-T\-Section@{setup\-E\-X\-T\-Section}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{setup\-E\-X\-T\-Section}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf Status} setup\-E\-X\-T\-Section (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t $\ast$}]{p\-C\-A\-N\-A\-F\-Ram\-Addr, }
+\item[{{\bf C\-A\-N\-\_\-\-E\-X\-T\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$}]{p\-Ext\-C\-A\-N\-Sec, }
+\item[{uint16\-\_\-t}]{Entry\-Num}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_abee61c37c038030fc740b952d3eba65e}
+\hypertarget{can__17xx__40xx_8c_a65397bd26b159e9be57ff2787c803b6b}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!setup\-S\-T\-D\-Range\-Section@{setup\-S\-T\-D\-Range\-Section}}
+\index{setup\-S\-T\-D\-Range\-Section@{setup\-S\-T\-D\-Range\-Section}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{setup\-S\-T\-D\-Range\-Section}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf Status} setup\-S\-T\-D\-Range\-Section (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t $\ast$}]{p\-C\-A\-N\-A\-F\-Ram\-Addr, }
+\item[{{\bf C\-A\-N\-\_\-\-S\-T\-D\-\_\-\-I\-D\-\_\-\-R\-A\-N\-G\-E\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$}]{p\-Std\-Range\-C\-A\-N\-Sec, }
+\item[{uint16\-\_\-t}]{Entry\-Num}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_a65397bd26b159e9be57ff2787c803b6b}
+\hypertarget{can__17xx__40xx_8c_aff9d7d24095778c949c84e03b57893e7}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!setup\-S\-T\-D\-Section@{setup\-S\-T\-D\-Section}}
+\index{setup\-S\-T\-D\-Section@{setup\-S\-T\-D\-Section}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{setup\-S\-T\-D\-Section}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf Status} setup\-S\-T\-D\-Section (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t $\ast$}]{p\-C\-A\-N\-A\-F\-Ram\-Addr, }
+\item[{{\bf C\-A\-N\-\_\-\-S\-T\-D\-\_\-\-I\-D\-\_\-\-E\-N\-T\-R\-Y\-\_\-\-T} $\ast$}]{p\-Std\-C\-A\-N\-Sec, }
+\item[{uint16\-\_\-t}]{Entry\-Num, }
+\item[{bool}]{Is\-Full\-C\-A\-N\-Entry}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_aff9d7d24095778c949c84e03b57893e7}
+\hypertarget{can__17xx__40xx_8c_a52421e2a4946f7296ed74961f8a6e40b}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!shift\-S\-T\-D\-Entry\-Down@{shift\-S\-T\-D\-Entry\-Down}}
+\index{shift\-S\-T\-D\-Entry\-Down@{shift\-S\-T\-D\-Entry\-Down}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{shift\-S\-T\-D\-Entry\-Down}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf void} shift\-S\-T\-D\-Entry\-Down (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t $\ast$}]{arr, }
+\item[{int32\-\_\-t}]{num}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_a52421e2a4946f7296ed74961f8a6e40b}
+\hypertarget{can__17xx__40xx_8c_a660398197d747f5d462b8cd1322fbf6e}{\index{can\-\_\-17xx\-\_\-40xx.\-c@{can\-\_\-17xx\-\_\-40xx.\-c}!shift\-S\-T\-D\-Entry\-Up@{shift\-S\-T\-D\-Entry\-Up}}
+\index{shift\-S\-T\-D\-Entry\-Up@{shift\-S\-T\-D\-Entry\-Up}!can_17xx_40xx.c@{can\-\_\-17xx\-\_\-40xx.\-c}}
+\subsubsection[{shift\-S\-T\-D\-Entry\-Up}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-T\-A\-T\-I\-C} {\bf void} shift\-S\-T\-D\-Entry\-Up (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t $\ast$}]{arr, }
+\item[{int32\-\_\-t}]{num}
+\end{DoxyParamCaption}
+)}}\label{can__17xx__40xx_8c_a660398197d747f5d462b8cd1322fbf6e}

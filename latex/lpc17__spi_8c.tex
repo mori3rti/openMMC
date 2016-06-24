@@ -1,0 +1,65 @@
+\hypertarget{lpc17__spi_8c}{\section{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpc17\-\_\-spi.c File Reference}
+\label{lpc17__spi_8c}\index{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpc17\-\_\-spi.\-c@{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpc17\-\_\-spi.\-c}}
+}
+
+
+Legacy S\-P\-I driver for L\-P\-C17xx.  
+
+
+{\ttfamily \#include \char`\"{}port.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}pin\-\_\-mapping.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{lpc17__spi_8c_a19c19921ca90ad4f8c31646f9d01a49e}{spi\-\_\-assert\-S\-S\-E\-L} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{lpc17__spi_8c_ad2465960879722bdba5f635c8626adfd}{spi\-\_\-deassert\-S\-S\-E\-L} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{lpc17__spi_8c_a0e336d3ed15e588ca778ff2d484ce621}{spi\-\_\-config} (uint32\-\_\-t bitrate, uint8\-\_\-t frame\-\_\-sz, bool master\-\_\-mode, bool poll)
+\item 
+uint32\-\_\-t \hyperlink{lpc17__spi_8c_aa548809efafe61519eca89cb497451f5}{spi\-\_\-write} (uint8\-\_\-t $\ast$buffer, uint32\-\_\-t buffer\-\_\-len)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Legacy S\-P\-I driver for L\-P\-C17xx. \begin{DoxyAuthor}{Author}
+Henrique Silva \href{mailto:henrique.silva@lnls.br}{\tt henrique.\-silva@lnls.\-br}, L\-N\-L\-S 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{lpc17__spi_8c_a19c19921ca90ad4f8c31646f9d01a49e}{\index{lpc17\-\_\-spi.\-c@{lpc17\-\_\-spi.\-c}!spi\-\_\-assert\-S\-S\-E\-L@{spi\-\_\-assert\-S\-S\-E\-L}}
+\index{spi\-\_\-assert\-S\-S\-E\-L@{spi\-\_\-assert\-S\-S\-E\-L}!lpc17_spi.c@{lpc17\-\_\-spi.\-c}}
+\subsubsection[{spi\-\_\-assert\-S\-S\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} spi\-\_\-assert\-S\-S\-E\-L (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{lpc17__spi_8c_a19c19921ca90ad4f8c31646f9d01a49e}
+\hypertarget{lpc17__spi_8c_a0e336d3ed15e588ca778ff2d484ce621}{\index{lpc17\-\_\-spi.\-c@{lpc17\-\_\-spi.\-c}!spi\-\_\-config@{spi\-\_\-config}}
+\index{spi\-\_\-config@{spi\-\_\-config}!lpc17_spi.c@{lpc17\-\_\-spi.\-c}}
+\subsubsection[{spi\-\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} spi\-\_\-config (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{bitrate, }
+\item[{uint8\-\_\-t}]{frame\-\_\-sz, }
+\item[{bool}]{master\-\_\-mode, }
+\item[{bool}]{poll}
+\end{DoxyParamCaption}
+)}}\label{lpc17__spi_8c_a0e336d3ed15e588ca778ff2d484ce621}
+\hypertarget{lpc17__spi_8c_ad2465960879722bdba5f635c8626adfd}{\index{lpc17\-\_\-spi.\-c@{lpc17\-\_\-spi.\-c}!spi\-\_\-deassert\-S\-S\-E\-L@{spi\-\_\-deassert\-S\-S\-E\-L}}
+\index{spi\-\_\-deassert\-S\-S\-E\-L@{spi\-\_\-deassert\-S\-S\-E\-L}!lpc17_spi.c@{lpc17\-\_\-spi.\-c}}
+\subsubsection[{spi\-\_\-deassert\-S\-S\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} spi\-\_\-deassert\-S\-S\-E\-L (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{lpc17__spi_8c_ad2465960879722bdba5f635c8626adfd}
+\hypertarget{lpc17__spi_8c_aa548809efafe61519eca89cb497451f5}{\index{lpc17\-\_\-spi.\-c@{lpc17\-\_\-spi.\-c}!spi\-\_\-write@{spi\-\_\-write}}
+\index{spi\-\_\-write@{spi\-\_\-write}!lpc17_spi.c@{lpc17\-\_\-spi.\-c}}
+\subsubsection[{spi\-\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t spi\-\_\-write (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t $\ast$}]{buffer, }
+\item[{uint32\-\_\-t}]{buffer\-\_\-len}
+\end{DoxyParamCaption}
+)}}\label{lpc17__spi_8c_aa548809efafe61519eca89cb497451f5}

@@ -1,0 +1,199 @@
+\hypertarget{lpc17__ssp_8h}{\section{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpc17\-\_\-ssp.h File Reference}
+\label{lpc17__ssp_8h}\index{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpc17\-\_\-ssp.\-h@{/home/henrique/rep/open\-M\-M\-C/port/ucontroller/nxp/lpc17xx/lpc17\-\_\-ssp.\-h}}
+}
+{\ttfamily \#include \char`\"{}chip\-\_\-lpc175x\-\_\-6x.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ssp\-\_\-17xx\-\_\-40xx.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structssp__pin}{ssp\-\_\-pin}
+\item 
+struct \hyperlink{structssp__config}{ssp\-\_\-config}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{lpc17__ssp_8h_af1193e37ec5f227b6ed29ce366e88d0a}{M\-A\-X\-\_\-\-S\-S\-P\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E\-S}~3
+\item 
+\#define \hyperlink{lpc17__ssp_8h_a8f34fafc9becbef9af48ea63a6466fcd}{S\-S\-P}(n)~L\-P\-C\-\_\-\-S\-S\-P\#\#n
+\item 
+\#define \hyperlink{lpc17__ssp_8h_a929f128604feb3c8037db3fb9255005a}{S\-S\-P\-\_\-\-S\-L\-A\-V\-E}~0
+\item 
+\#define \hyperlink{lpc17__ssp_8h_a285ef1b847fc49c960380d8d0a698995}{S\-S\-P\-\_\-\-M\-A\-S\-T\-E\-R}~1
+\item 
+\#define \hyperlink{lpc17__ssp_8h_af4974d8db19439a5fd2ea633c5161e91}{S\-S\-P\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T}~0
+\item 
+\#define \hyperlink{lpc17__ssp_8h_a24e24ea8d6128fabf1b0da10dc9eec9a}{S\-S\-P\-\_\-\-P\-O\-L\-L\-I\-N\-G}~1
+\item 
+\#define \hyperlink{lpc17__ssp_8h_af38c9d1f6b3bbd7c6579278962c0f77b}{ssp\-\_\-chip\-\_\-init}(id)~\hyperlink{group__SSP__17XX__40XX_ga66e20405561e8d3dacba65cbfe41d556}{Chip\-\_\-\-S\-S\-P\-\_\-\-Init}(\hyperlink{lpc17__ssp_8h_a8f34fafc9becbef9af48ea63a6466fcd}{S\-S\-P}(id))
+\item 
+\#define \hyperlink{lpc17__ssp_8h_a21f86abaed3e33d9921211c82ada68f5}{ssp\-\_\-chip\-\_\-deinit}(id)~\hyperlink{group__SSP__17XX__40XX_ga48f87506f2fddc1043606eae292b6f16}{Chip\-\_\-\-S\-S\-P\-\_\-\-De\-Init}(\hyperlink{lpc17__ssp_8h_a8f34fafc9becbef9af48ea63a6466fcd}{S\-S\-P}(id))
+\item 
+\#define \hyperlink{lpc17__ssp_8h_ac4952e95b3aa7df9d70cd07f301f3079}{ssp\-\_\-flush\-\_\-rx}(id)~\hyperlink{group__SSP__17XX__40XX_gabf29dfba7478866abe7511d32638e57e}{Chip\-\_\-\-S\-S\-P\-\_\-\-Int\-\_\-\-Flush\-Data}(\hyperlink{lpc17__ssp_8h_a8f34fafc9becbef9af48ea63a6466fcd}{S\-S\-P}(id))
+\item 
+\#define \hyperlink{lpc17__ssp_8h_a65dc1a2bc4dd40ce5ee447394c7ab7c8}{ssp\-\_\-set\-\_\-bitrate}(id, bitrate)~\hyperlink{group__SSP__17XX__40XX_ga373660d8ad7b28fb71209539b1e72717}{Chip\-\_\-\-S\-S\-P\-\_\-\-Set\-Bit\-Rate}(\hyperlink{lpc17__ssp_8h_a8f34fafc9becbef9af48ea63a6466fcd}{S\-S\-P}(id), bitrate)
+\item 
+\#define \hyperlink{lpc17__ssp_8h_a1afa5d13b5aa13e5dccf17133b2bc62d}{ssp\-\_\-write}(id, buffer, buffer\-\_\-len)~\hyperlink{lpc17__ssp_8h_ae5f0882598002fd21c202aba1a03177f}{ssp\-\_\-write\-\_\-read}(id, buffer, buffer\-\_\-len, \hyperlink{group__LPC__Types__Public__Macros_ga070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L}, 0, 0)
+\item 
+\#define \hyperlink{lpc17__ssp_8h_aad8e56050ee6210de8931ef09485e024}{ssp\-\_\-read}(id, buffer, buffer\-\_\-lenm, timeout)~\hyperlink{lpc17__ssp_8h_ae5f0882598002fd21c202aba1a03177f}{ssp\-\_\-write\-\_\-read}(id, \hyperlink{group__LPC__Types__Public__Macros_ga070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L}, 0, buffer, buffer\-\_\-len, timeout)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structssp__pin}{ssp\-\_\-pin} \hyperlink{lpc17__ssp_8h_a97fa3b0ab90125b28dca975a5c8ba257}{ssp\-\_\-pin\-\_\-t}
+\item 
+typedef struct \hyperlink{structssp__config}{ssp\-\_\-config} \hyperlink{lpc17__ssp_8h_a71ccf685bb38129c010808852db9d1cc}{ssp\-\_\-config\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{lpc17__ssp_8h_a8f5f6574a2901fa6802e3f101f32ee29}{ssel\-\_\-state} \{ \hyperlink{lpc17__ssp_8h_a8f5f6574a2901fa6802e3f101f32ee29a61d9e0e93eb9635173764c5ba45666f1}{A\-S\-S\-E\-R\-T} = 0, 
+\hyperlink{lpc17__ssp_8h_a8f5f6574a2901fa6802e3f101f32ee29a1b6e5c62a03b286dac779ef4533b569b}{D\-E\-A\-S\-S\-E\-R\-T}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{lpc17__ssp_8h_a184bff94fcee6f95259c308e3cd48c69}{ssp\-\_\-init} (uint8\-\_\-t id, uint32\-\_\-t bitrate, uint8\-\_\-t frame\-\_\-sz, bool master\-\_\-mode, bool poll)
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{lpc17__ssp_8h_a3edf57b47d3e7a6ee1e8b6369db9f07e}{ssp\-\_\-ssel\-\_\-control} (uint8\-\_\-t id, uint8\-\_\-t state)
+\begin{DoxyCompactList}\small\item\em Function that controls the Slave Select (S\-S\-E\-L) signal This pin is controlled manually because the internal S\-S\-P driver resets the S\-S\-E\-L pin every 8 bits that are transfered. \end{DoxyCompactList}\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{lpc17__ssp_8h_ae5f0882598002fd21c202aba1a03177f}{ssp\-\_\-write\-\_\-read} (uint8\-\_\-t id, uint8\-\_\-t $\ast$tx\-\_\-buf, uint32\-\_\-t tx\-\_\-len, uint8\-\_\-t $\ast$rx\-\_\-buf, uint32\-\_\-t rx\-\_\-len, uint32\-\_\-t timeout)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{lpc17__ssp_8h_af1193e37ec5f227b6ed29ce366e88d0a}{\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!M\-A\-X\-\_\-\-S\-S\-P\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E\-S@{M\-A\-X\-\_\-\-S\-S\-P\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E\-S}}
+\index{M\-A\-X\-\_\-\-S\-S\-P\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E\-S@{M\-A\-X\-\_\-\-S\-S\-P\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E\-S}!lpc17_ssp.h@{lpc17\-\_\-ssp.\-h}}
+\subsubsection[{M\-A\-X\-\_\-\-S\-S\-P\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X\-\_\-\-S\-S\-P\-\_\-\-I\-N\-T\-E\-R\-F\-A\-C\-E\-S~3}}\label{lpc17__ssp_8h_af1193e37ec5f227b6ed29ce366e88d0a}
+\hypertarget{lpc17__ssp_8h_a8f34fafc9becbef9af48ea63a6466fcd}{\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!S\-S\-P@{S\-S\-P}}
+\index{S\-S\-P@{S\-S\-P}!lpc17_ssp.h@{lpc17\-\_\-ssp.\-h}}
+\subsubsection[{S\-S\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-S\-P(
+\begin{DoxyParamCaption}
+\item[{}]{n}
+\end{DoxyParamCaption}
+)~L\-P\-C\-\_\-\-S\-S\-P\#\#n}}\label{lpc17__ssp_8h_a8f34fafc9becbef9af48ea63a6466fcd}
+\hypertarget{lpc17__ssp_8h_a21f86abaed3e33d9921211c82ada68f5}{\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!ssp\-\_\-chip\-\_\-deinit@{ssp\-\_\-chip\-\_\-deinit}}
+\index{ssp\-\_\-chip\-\_\-deinit@{ssp\-\_\-chip\-\_\-deinit}!lpc17_ssp.h@{lpc17\-\_\-ssp.\-h}}
+\subsubsection[{ssp\-\_\-chip\-\_\-deinit}]{\setlength{\rightskip}{0pt plus 5cm}\#define ssp\-\_\-chip\-\_\-deinit(
+\begin{DoxyParamCaption}
+\item[{}]{id}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-S\-S\-P\-\_\-\-De\-Init}({\bf S\-S\-P}(id))}}\label{lpc17__ssp_8h_a21f86abaed3e33d9921211c82ada68f5}
+\hypertarget{lpc17__ssp_8h_af38c9d1f6b3bbd7c6579278962c0f77b}{\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!ssp\-\_\-chip\-\_\-init@{ssp\-\_\-chip\-\_\-init}}
+\index{ssp\-\_\-chip\-\_\-init@{ssp\-\_\-chip\-\_\-init}!lpc17_ssp.h@{lpc17\-\_\-ssp.\-h}}
+\subsubsection[{ssp\-\_\-chip\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}\#define ssp\-\_\-chip\-\_\-init(
+\begin{DoxyParamCaption}
+\item[{}]{id}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-S\-S\-P\-\_\-\-Init}({\bf S\-S\-P}(id))}}\label{lpc17__ssp_8h_af38c9d1f6b3bbd7c6579278962c0f77b}
+\hypertarget{lpc17__ssp_8h_ac4952e95b3aa7df9d70cd07f301f3079}{\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!ssp\-\_\-flush\-\_\-rx@{ssp\-\_\-flush\-\_\-rx}}
+\index{ssp\-\_\-flush\-\_\-rx@{ssp\-\_\-flush\-\_\-rx}!lpc17_ssp.h@{lpc17\-\_\-ssp.\-h}}
+\subsubsection[{ssp\-\_\-flush\-\_\-rx}]{\setlength{\rightskip}{0pt plus 5cm}\#define ssp\-\_\-flush\-\_\-rx(
+\begin{DoxyParamCaption}
+\item[{}]{id}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-S\-S\-P\-\_\-\-Int\-\_\-\-Flush\-Data}({\bf S\-S\-P}(id))}}\label{lpc17__ssp_8h_ac4952e95b3aa7df9d70cd07f301f3079}
+\hypertarget{lpc17__ssp_8h_af4974d8db19439a5fd2ea633c5161e91}{\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!S\-S\-P\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T@{S\-S\-P\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T}}
+\index{S\-S\-P\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T@{S\-S\-P\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T}!lpc17_ssp.h@{lpc17\-\_\-ssp.\-h}}
+\subsubsection[{S\-S\-P\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-S\-P\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T~0}}\label{lpc17__ssp_8h_af4974d8db19439a5fd2ea633c5161e91}
+\hypertarget{lpc17__ssp_8h_a285ef1b847fc49c960380d8d0a698995}{\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!S\-S\-P\-\_\-\-M\-A\-S\-T\-E\-R@{S\-S\-P\-\_\-\-M\-A\-S\-T\-E\-R}}
+\index{S\-S\-P\-\_\-\-M\-A\-S\-T\-E\-R@{S\-S\-P\-\_\-\-M\-A\-S\-T\-E\-R}!lpc17_ssp.h@{lpc17\-\_\-ssp.\-h}}
+\subsubsection[{S\-S\-P\-\_\-\-M\-A\-S\-T\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-S\-P\-\_\-\-M\-A\-S\-T\-E\-R~1}}\label{lpc17__ssp_8h_a285ef1b847fc49c960380d8d0a698995}
+\hypertarget{lpc17__ssp_8h_a24e24ea8d6128fabf1b0da10dc9eec9a}{\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!S\-S\-P\-\_\-\-P\-O\-L\-L\-I\-N\-G@{S\-S\-P\-\_\-\-P\-O\-L\-L\-I\-N\-G}}
+\index{S\-S\-P\-\_\-\-P\-O\-L\-L\-I\-N\-G@{S\-S\-P\-\_\-\-P\-O\-L\-L\-I\-N\-G}!lpc17_ssp.h@{lpc17\-\_\-ssp.\-h}}
+\subsubsection[{S\-S\-P\-\_\-\-P\-O\-L\-L\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-S\-P\-\_\-\-P\-O\-L\-L\-I\-N\-G~1}}\label{lpc17__ssp_8h_a24e24ea8d6128fabf1b0da10dc9eec9a}
+\hypertarget{lpc17__ssp_8h_aad8e56050ee6210de8931ef09485e024}{\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!ssp\-\_\-read@{ssp\-\_\-read}}
+\index{ssp\-\_\-read@{ssp\-\_\-read}!lpc17_ssp.h@{lpc17\-\_\-ssp.\-h}}
+\subsubsection[{ssp\-\_\-read}]{\setlength{\rightskip}{0pt plus 5cm}\#define ssp\-\_\-read(
+\begin{DoxyParamCaption}
+\item[{}]{id, }
+\item[{}]{buffer, }
+\item[{}]{buffer\-\_\-lenm, }
+\item[{}]{timeout}
+\end{DoxyParamCaption}
+)~{\bf ssp\-\_\-write\-\_\-read}(id, {\bf N\-U\-L\-L}, 0, buffer, buffer\-\_\-len, timeout)}}\label{lpc17__ssp_8h_aad8e56050ee6210de8931ef09485e024}
+\hypertarget{lpc17__ssp_8h_a65dc1a2bc4dd40ce5ee447394c7ab7c8}{\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!ssp\-\_\-set\-\_\-bitrate@{ssp\-\_\-set\-\_\-bitrate}}
+\index{ssp\-\_\-set\-\_\-bitrate@{ssp\-\_\-set\-\_\-bitrate}!lpc17_ssp.h@{lpc17\-\_\-ssp.\-h}}
+\subsubsection[{ssp\-\_\-set\-\_\-bitrate}]{\setlength{\rightskip}{0pt plus 5cm}\#define ssp\-\_\-set\-\_\-bitrate(
+\begin{DoxyParamCaption}
+\item[{}]{id, }
+\item[{}]{bitrate}
+\end{DoxyParamCaption}
+)~{\bf Chip\-\_\-\-S\-S\-P\-\_\-\-Set\-Bit\-Rate}({\bf S\-S\-P}(id), bitrate)}}\label{lpc17__ssp_8h_a65dc1a2bc4dd40ce5ee447394c7ab7c8}
+\hypertarget{lpc17__ssp_8h_a929f128604feb3c8037db3fb9255005a}{\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!S\-S\-P\-\_\-\-S\-L\-A\-V\-E@{S\-S\-P\-\_\-\-S\-L\-A\-V\-E}}
+\index{S\-S\-P\-\_\-\-S\-L\-A\-V\-E@{S\-S\-P\-\_\-\-S\-L\-A\-V\-E}!lpc17_ssp.h@{lpc17\-\_\-ssp.\-h}}
+\subsubsection[{S\-S\-P\-\_\-\-S\-L\-A\-V\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-S\-P\-\_\-\-S\-L\-A\-V\-E~0}}\label{lpc17__ssp_8h_a929f128604feb3c8037db3fb9255005a}
+\hypertarget{lpc17__ssp_8h_a1afa5d13b5aa13e5dccf17133b2bc62d}{\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!ssp\-\_\-write@{ssp\-\_\-write}}
+\index{ssp\-\_\-write@{ssp\-\_\-write}!lpc17_ssp.h@{lpc17\-\_\-ssp.\-h}}
+\subsubsection[{ssp\-\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}\#define ssp\-\_\-write(
+\begin{DoxyParamCaption}
+\item[{}]{id, }
+\item[{}]{buffer, }
+\item[{}]{buffer\-\_\-len}
+\end{DoxyParamCaption}
+)~{\bf ssp\-\_\-write\-\_\-read}(id, buffer, buffer\-\_\-len, {\bf N\-U\-L\-L}, 0, 0)}}\label{lpc17__ssp_8h_a1afa5d13b5aa13e5dccf17133b2bc62d}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{lpc17__ssp_8h_a71ccf685bb38129c010808852db9d1cc}{\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!ssp\-\_\-config\-\_\-t@{ssp\-\_\-config\-\_\-t}}
+\index{ssp\-\_\-config\-\_\-t@{ssp\-\_\-config\-\_\-t}!lpc17_ssp.h@{lpc17\-\_\-ssp.\-h}}
+\subsubsection[{ssp\-\_\-config\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf ssp\-\_\-config}  {\bf ssp\-\_\-config\-\_\-t}}}\label{lpc17__ssp_8h_a71ccf685bb38129c010808852db9d1cc}
+\hypertarget{lpc17__ssp_8h_a97fa3b0ab90125b28dca975a5c8ba257}{\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!ssp\-\_\-pin\-\_\-t@{ssp\-\_\-pin\-\_\-t}}
+\index{ssp\-\_\-pin\-\_\-t@{ssp\-\_\-pin\-\_\-t}!lpc17_ssp.h@{lpc17\-\_\-ssp.\-h}}
+\subsubsection[{ssp\-\_\-pin\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf ssp\-\_\-pin}  {\bf ssp\-\_\-pin\-\_\-t}}}\label{lpc17__ssp_8h_a97fa3b0ab90125b28dca975a5c8ba257}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{lpc17__ssp_8h_a8f5f6574a2901fa6802e3f101f32ee29}{\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!ssel\-\_\-state@{ssel\-\_\-state}}
+\index{ssel\-\_\-state@{ssel\-\_\-state}!lpc17_ssp.h@{lpc17\-\_\-ssp.\-h}}
+\subsubsection[{ssel\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ssel\-\_\-state}}}\label{lpc17__ssp_8h_a8f5f6574a2901fa6802e3f101f32ee29}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{A\-S\-S\-E\-R\-T@{A\-S\-S\-E\-R\-T}!lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}}\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!A\-S\-S\-E\-R\-T@{A\-S\-S\-E\-R\-T}}\item[{\em 
+\hypertarget{lpc17__ssp_8h_a8f5f6574a2901fa6802e3f101f32ee29a61d9e0e93eb9635173764c5ba45666f1}{A\-S\-S\-E\-R\-T}\label{lpc17__ssp_8h_a8f5f6574a2901fa6802e3f101f32ee29a61d9e0e93eb9635173764c5ba45666f1}
+}]\index{D\-E\-A\-S\-S\-E\-R\-T@{D\-E\-A\-S\-S\-E\-R\-T}!lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}}\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!D\-E\-A\-S\-S\-E\-R\-T@{D\-E\-A\-S\-S\-E\-R\-T}}\item[{\em 
+\hypertarget{lpc17__ssp_8h_a8f5f6574a2901fa6802e3f101f32ee29a1b6e5c62a03b286dac779ef4533b569b}{D\-E\-A\-S\-S\-E\-R\-T}\label{lpc17__ssp_8h_a8f5f6574a2901fa6802e3f101f32ee29a1b6e5c62a03b286dac779ef4533b569b}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{lpc17__ssp_8h_a184bff94fcee6f95259c308e3cd48c69}{\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!ssp\-\_\-init@{ssp\-\_\-init}}
+\index{ssp\-\_\-init@{ssp\-\_\-init}!lpc17_ssp.h@{lpc17\-\_\-ssp.\-h}}
+\subsubsection[{ssp\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} ssp\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{id, }
+\item[{uint32\-\_\-t}]{bitrate, }
+\item[{uint8\-\_\-t}]{frame\-\_\-sz, }
+\item[{bool}]{master\-\_\-mode, }
+\item[{bool}]{poll}
+\end{DoxyParamCaption}
+)}}\label{lpc17__ssp_8h_a184bff94fcee6f95259c308e3cd48c69}
+\hypertarget{lpc17__ssp_8h_a3edf57b47d3e7a6ee1e8b6369db9f07e}{\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!ssp\-\_\-ssel\-\_\-control@{ssp\-\_\-ssel\-\_\-control}}
+\index{ssp\-\_\-ssel\-\_\-control@{ssp\-\_\-ssel\-\_\-control}!lpc17_ssp.h@{lpc17\-\_\-ssp.\-h}}
+\subsubsection[{ssp\-\_\-ssel\-\_\-control}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} ssp\-\_\-ssel\-\_\-control (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{id, }
+\item[{uint8\-\_\-t}]{state}
+\end{DoxyParamCaption}
+)}}\label{lpc17__ssp_8h_a3edf57b47d3e7a6ee1e8b6369db9f07e}
+
+
+Function that controls the Slave Select (S\-S\-E\-L) signal This pin is controlled manually because the internal S\-S\-P driver resets the S\-S\-E\-L pin every 8 bits that are transfered. 
+
+\hypertarget{lpc17__ssp_8h_ae5f0882598002fd21c202aba1a03177f}{\index{lpc17\-\_\-ssp.\-h@{lpc17\-\_\-ssp.\-h}!ssp\-\_\-write\-\_\-read@{ssp\-\_\-write\-\_\-read}}
+\index{ssp\-\_\-write\-\_\-read@{ssp\-\_\-write\-\_\-read}!lpc17_ssp.h@{lpc17\-\_\-ssp.\-h}}
+\subsubsection[{ssp\-\_\-write\-\_\-read}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} ssp\-\_\-write\-\_\-read (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{id, }
+\item[{uint8\-\_\-t $\ast$}]{tx\-\_\-buf, }
+\item[{uint32\-\_\-t}]{tx\-\_\-len, }
+\item[{uint8\-\_\-t $\ast$}]{rx\-\_\-buf, }
+\item[{uint32\-\_\-t}]{rx\-\_\-len, }
+\item[{uint32\-\_\-t}]{timeout}
+\end{DoxyParamCaption}
+)}}\label{lpc17__ssp_8h_ae5f0882598002fd21c202aba1a03177f}

@@ -1,0 +1,81 @@
+\hypertarget{structQueueDefinition}{\section{Queue\-Definition Struct Reference}
+\label{structQueueDefinition}\index{Queue\-Definition@{Queue\-Definition}}
+}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+int8\-\_\-t $\ast$ \hyperlink{structQueueDefinition_a487dc7e43b380c58212cba72bc33e0ed}{pc\-Head}
+\item 
+int8\-\_\-t $\ast$ \hyperlink{structQueueDefinition_a189dc1b16fc2152dd9441ea1a117b0ce}{pc\-Tail}
+\item 
+int8\-\_\-t $\ast$ \hyperlink{structQueueDefinition_abdf13cc013c8488848cee3fce4f0fed3}{pc\-Write\-To}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>int8\_t $\ast$ \hyperlink{structQueueDefinition_a970cf73ab9c7382b581bc310b1d947d5}{pcReadFrom}\\
+\>\hyperlink{Flsh186_2prtmacro_8h_a8e88a5e44a5243b3d1c29af17fd6b5bd}{UBaseType\_t} \hyperlink{structQueueDefinition_a2cf88e286477f6f89fe1009d722dc4cf}{uxRecursiveCallCount}\\
+\} \hyperlink{structQueueDefinition_a3a2be4f333e88fd5bc1ddb7ae8441e28}{u}\\
+
+\end{tabbing}\item 
+\hyperlink{list_8h_afd590ef6400071b4d63d65ef90bea7f4}{List\-\_\-t} \hyperlink{structQueueDefinition_aaab135c4345cb0393d6ff3cd5164c7b2}{x\-Tasks\-Waiting\-To\-Send}
+\item 
+\hyperlink{list_8h_afd590ef6400071b4d63d65ef90bea7f4}{List\-\_\-t} \hyperlink{structQueueDefinition_af6d61526f77beee659cd604a0c473359}{x\-Tasks\-Waiting\-To\-Receive}
+\item 
+volatile \hyperlink{Flsh186_2prtmacro_8h_a8e88a5e44a5243b3d1c29af17fd6b5bd}{U\-Base\-Type\-\_\-t} \hyperlink{structQueueDefinition_a12b07a40152d0f21488ca06d362d13d1}{ux\-Messages\-Waiting}
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a8e88a5e44a5243b3d1c29af17fd6b5bd}{U\-Base\-Type\-\_\-t} \hyperlink{structQueueDefinition_ae80d17a812c669d4d41265b7f693988c}{ux\-Length}
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a8e88a5e44a5243b3d1c29af17fd6b5bd}{U\-Base\-Type\-\_\-t} \hyperlink{structQueueDefinition_a81bb7d3826909244baa9debf5a55abb0}{ux\-Item\-Size}
+\item 
+volatile int8\-\_\-t \hyperlink{structQueueDefinition_ac750a3f75a6e174adbc697e473a0dd13}{c\-Rx\-Lock}
+\item 
+volatile int8\-\_\-t \hyperlink{structQueueDefinition_a24ac3f0707f098da2a22244d843fcf82}{c\-Tx\-Lock}
+\end{DoxyCompactItemize}
+
+
+\subsection{Field Documentation}
+\hypertarget{structQueueDefinition_ac750a3f75a6e174adbc697e473a0dd13}{\index{Queue\-Definition@{Queue\-Definition}!c\-Rx\-Lock@{c\-Rx\-Lock}}
+\index{c\-Rx\-Lock@{c\-Rx\-Lock}!QueueDefinition@{Queue\-Definition}}
+\subsubsection[{c\-Rx\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}volatile int8\-\_\-t Queue\-Definition\-::c\-Rx\-Lock}}\label{structQueueDefinition_ac750a3f75a6e174adbc697e473a0dd13}
+\hypertarget{structQueueDefinition_a24ac3f0707f098da2a22244d843fcf82}{\index{Queue\-Definition@{Queue\-Definition}!c\-Tx\-Lock@{c\-Tx\-Lock}}
+\index{c\-Tx\-Lock@{c\-Tx\-Lock}!QueueDefinition@{Queue\-Definition}}
+\subsubsection[{c\-Tx\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}volatile int8\-\_\-t Queue\-Definition\-::c\-Tx\-Lock}}\label{structQueueDefinition_a24ac3f0707f098da2a22244d843fcf82}
+\hypertarget{structQueueDefinition_a487dc7e43b380c58212cba72bc33e0ed}{\index{Queue\-Definition@{Queue\-Definition}!pc\-Head@{pc\-Head}}
+\index{pc\-Head@{pc\-Head}!QueueDefinition@{Queue\-Definition}}
+\subsubsection[{pc\-Head}]{\setlength{\rightskip}{0pt plus 5cm}int8\-\_\-t$\ast$ Queue\-Definition\-::pc\-Head}}\label{structQueueDefinition_a487dc7e43b380c58212cba72bc33e0ed}
+\hypertarget{structQueueDefinition_a970cf73ab9c7382b581bc310b1d947d5}{\index{Queue\-Definition@{Queue\-Definition}!pc\-Read\-From@{pc\-Read\-From}}
+\index{pc\-Read\-From@{pc\-Read\-From}!QueueDefinition@{Queue\-Definition}}
+\subsubsection[{pc\-Read\-From}]{\setlength{\rightskip}{0pt plus 5cm}int8\-\_\-t$\ast$ Queue\-Definition\-::pc\-Read\-From}}\label{structQueueDefinition_a970cf73ab9c7382b581bc310b1d947d5}
+\hypertarget{structQueueDefinition_a189dc1b16fc2152dd9441ea1a117b0ce}{\index{Queue\-Definition@{Queue\-Definition}!pc\-Tail@{pc\-Tail}}
+\index{pc\-Tail@{pc\-Tail}!QueueDefinition@{Queue\-Definition}}
+\subsubsection[{pc\-Tail}]{\setlength{\rightskip}{0pt plus 5cm}int8\-\_\-t$\ast$ Queue\-Definition\-::pc\-Tail}}\label{structQueueDefinition_a189dc1b16fc2152dd9441ea1a117b0ce}
+\hypertarget{structQueueDefinition_abdf13cc013c8488848cee3fce4f0fed3}{\index{Queue\-Definition@{Queue\-Definition}!pc\-Write\-To@{pc\-Write\-To}}
+\index{pc\-Write\-To@{pc\-Write\-To}!QueueDefinition@{Queue\-Definition}}
+\subsubsection[{pc\-Write\-To}]{\setlength{\rightskip}{0pt plus 5cm}int8\-\_\-t$\ast$ Queue\-Definition\-::pc\-Write\-To}}\label{structQueueDefinition_abdf13cc013c8488848cee3fce4f0fed3}
+\hypertarget{structQueueDefinition_a3a2be4f333e88fd5bc1ddb7ae8441e28}{\index{Queue\-Definition@{Queue\-Definition}!u@{u}}
+\index{u@{u}!QueueDefinition@{Queue\-Definition}}
+\subsubsection[{u}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \}   Queue\-Definition\-::u}}\label{structQueueDefinition_a3a2be4f333e88fd5bc1ddb7ae8441e28}
+\hypertarget{structQueueDefinition_a81bb7d3826909244baa9debf5a55abb0}{\index{Queue\-Definition@{Queue\-Definition}!ux\-Item\-Size@{ux\-Item\-Size}}
+\index{ux\-Item\-Size@{ux\-Item\-Size}!QueueDefinition@{Queue\-Definition}}
+\subsubsection[{ux\-Item\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\-Base\-Type\-\_\-t} Queue\-Definition\-::ux\-Item\-Size}}\label{structQueueDefinition_a81bb7d3826909244baa9debf5a55abb0}
+\hypertarget{structQueueDefinition_ae80d17a812c669d4d41265b7f693988c}{\index{Queue\-Definition@{Queue\-Definition}!ux\-Length@{ux\-Length}}
+\index{ux\-Length@{ux\-Length}!QueueDefinition@{Queue\-Definition}}
+\subsubsection[{ux\-Length}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\-Base\-Type\-\_\-t} Queue\-Definition\-::ux\-Length}}\label{structQueueDefinition_ae80d17a812c669d4d41265b7f693988c}
+\hypertarget{structQueueDefinition_a12b07a40152d0f21488ca06d362d13d1}{\index{Queue\-Definition@{Queue\-Definition}!ux\-Messages\-Waiting@{ux\-Messages\-Waiting}}
+\index{ux\-Messages\-Waiting@{ux\-Messages\-Waiting}!QueueDefinition@{Queue\-Definition}}
+\subsubsection[{ux\-Messages\-Waiting}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf U\-Base\-Type\-\_\-t} Queue\-Definition\-::ux\-Messages\-Waiting}}\label{structQueueDefinition_a12b07a40152d0f21488ca06d362d13d1}
+\hypertarget{structQueueDefinition_a2cf88e286477f6f89fe1009d722dc4cf}{\index{Queue\-Definition@{Queue\-Definition}!ux\-Recursive\-Call\-Count@{ux\-Recursive\-Call\-Count}}
+\index{ux\-Recursive\-Call\-Count@{ux\-Recursive\-Call\-Count}!QueueDefinition@{Queue\-Definition}}
+\subsubsection[{ux\-Recursive\-Call\-Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\-Base\-Type\-\_\-t} Queue\-Definition\-::ux\-Recursive\-Call\-Count}}\label{structQueueDefinition_a2cf88e286477f6f89fe1009d722dc4cf}
+\hypertarget{structQueueDefinition_af6d61526f77beee659cd604a0c473359}{\index{Queue\-Definition@{Queue\-Definition}!x\-Tasks\-Waiting\-To\-Receive@{x\-Tasks\-Waiting\-To\-Receive}}
+\index{x\-Tasks\-Waiting\-To\-Receive@{x\-Tasks\-Waiting\-To\-Receive}!QueueDefinition@{Queue\-Definition}}
+\subsubsection[{x\-Tasks\-Waiting\-To\-Receive}]{\setlength{\rightskip}{0pt plus 5cm}{\bf List\-\_\-t} Queue\-Definition\-::x\-Tasks\-Waiting\-To\-Receive}}\label{structQueueDefinition_af6d61526f77beee659cd604a0c473359}
+\hypertarget{structQueueDefinition_aaab135c4345cb0393d6ff3cd5164c7b2}{\index{Queue\-Definition@{Queue\-Definition}!x\-Tasks\-Waiting\-To\-Send@{x\-Tasks\-Waiting\-To\-Send}}
+\index{x\-Tasks\-Waiting\-To\-Send@{x\-Tasks\-Waiting\-To\-Send}!QueueDefinition@{Queue\-Definition}}
+\subsubsection[{x\-Tasks\-Waiting\-To\-Send}]{\setlength{\rightskip}{0pt plus 5cm}{\bf List\-\_\-t} Queue\-Definition\-::x\-Tasks\-Waiting\-To\-Send}}\label{structQueueDefinition_aaab135c4345cb0393d6ff3cd5164c7b2}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/\hyperlink{queue_8c}{queue.\-c}\end{DoxyCompactItemize}

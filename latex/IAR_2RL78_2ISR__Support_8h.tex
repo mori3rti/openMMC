@@ -1,0 +1,131 @@
+\hypertarget{IAR_2RL78_2ISR__Support_8h}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.h File Reference}
+\label{IAR_2RL78_2ISR__Support_8h}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+}
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S\-Config.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Saves \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} \hyperlink{ARM__CA9_2portASM_8h_afc222dc14cdd45ff7e72dec42824f2ac}{context} of \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} \\*
+general purpose \hyperlink{IAR_2RL78_2ISR__Support_8h_a80a70aea205e0e10f3ea6e7f6e9a94d2}{C\-S} and \hyperlink{IAR_2RL78_2ISR__Support_8h_a95864854aedfd89fa2351c89a98cb1f7}{E\-S} (only in far;memory mode) \hyperlink{IAR_2RL78_2ISR__Support_8h_a3de5611e92ac83d85441f23bf7c14cf7}{registers} \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} \hyperlink{Rowley_2MSP430F449_2port_8c_a72024c36cef5744b86e354381b5d3dcd}{us\-Critical\-Nesting} Value and \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} Stack Pointer
+\item 
+Restores \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} task Stack \\*
+Pointer then use this \hyperlink{ioat91sam7x256_8h_a964274cc117a83510a5ca1ad054ca6ae}{to} \\*
+restore general purpose \\*
+\hyperlink{IAR_2RL78_2ISR__Support_8h_a3de5611e92ac83d85441f23bf7c14cf7}{registers} and \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} \hyperlink{IAR_2RL78_2ISR__Support_8h_a80a70aea205e0e10f3ea6e7f6e9a94d2}{C\-S} and \hyperlink{IAR_2RL78_2ISR__Support_8h_adaa07e94e979d3ef98fdc4afc853a559}{E\-S} (only in far memory mode)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Variables used by \hyperlink{IAR_2RL78_2ISR__Support_8h_ac5b8949e9ab98269114a8786f0f337c6}{scheduler}
+\item 
+\hyperlink{group__LPC__Types__Public__Macros_ga77366c1bd428629dc898e188bfd182a3}{E\-X\-T\-E\-R\-N} \hyperlink{tasks_8c_acdecf2afe97343aba42b111bc6df9eea}{px\-Current\-T\-C\-B} \hyperlink{group__LPC__Types__Public__Macros_ga77366c1bd428629dc898e188bfd182a3}{E\-X\-T\-E\-R\-N} \hyperlink{IAR_2RL78_2ISR__Support_8h_a7738f5a9321a7eccc2da96119924d68d}{us\-Critical\-Nesting}
+\item 
+\hyperlink{IAR_2V850ES_2portmacro_8h_ad79a8b96e1489f7f0645e8d57360337d}{port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T} \hyperlink{IAR_2RL78_2ISR__Support_8h_ac6914e7d59cd2a9690c919b3a3381e87}{M\-A\-C\-R\-O}
+\item 
+Saves \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} \hyperlink{ARM__CA9_2portASM_8h_afc222dc14cdd45ff7e72dec42824f2ac}{context} of \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} \\*
+general purpose \hyperlink{IAR_2RL78_2ISR__Support_8h_a3de5611e92ac83d85441f23bf7c14cf7}{registers}
+\item 
+of \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} active Task onto \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} task \hyperlink{IAR_2RL78_2ISR__Support_8h_ab327b64f028ec1b108340d3378d45d45}{stack}
+\item 
+\hyperlink{IAR_2V850ES_2portmacro_8h_ad79a8b96e1489f7f0645e8d57360337d}{port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T} \hyperlink{IAR_2STR91x_2ISR__Support_8h_ada307cac855884c6cb4493eaa3663de7}{M\-A\-C\-R\-O} \hyperlink{ARM__CA9_2portASM_8h_a551efa3573f442f9676984d3b220c981}{P\-U\-S\-H} \hyperlink{IAR_2RL78_2ISR__Support_8h_ac07dd4b65f1d21f9225978c9cfd67772}{A\-X}
+\item 
+Save \hyperlink{IAR_2RL78_2ISR__Support_8h_ac07dd4b65f1d21f9225978c9cfd67772}{A\-X} Register \hyperlink{ioat91sam7x256_8h_a964274cc117a83510a5ca1ad054ca6ae}{to} \hyperlink{IAR_2V850ES_2ISR__Support_8h_a0be1cfabf98139b63feae55f7e985c93}{stack} \hyperlink{ARM__CA9_2portASM_8h_a551efa3573f442f9676984d3b220c981}{P\-U\-S\-H} \\*
+\hyperlink{IAR_2RL78_2ISR__Support_8h_a30c2eb330b4fbf8161ba6379d629e7a5}{H\-L} M\-O\-V \hyperlink{IAR_2RL78_2ISR__Support_8h_af0952859cab91217559e910b2a1466e2}{A}
+\item 
+Save \hyperlink{IAR_2RL78_2ISR__Support_8h_ac07dd4b65f1d21f9225978c9cfd67772}{A\-X} Register \hyperlink{ioat91sam7x256_8h_a964274cc117a83510a5ca1ad054ca6ae}{to} \hyperlink{IAR_2V850ES_2ISR__Support_8h_a0be1cfabf98139b63feae55f7e985c93}{stack} \hyperlink{ARM__CA9_2portASM_8h_a551efa3573f442f9676984d3b220c981}{P\-U\-S\-H} \\*
+\hyperlink{IAR_2RL78_2ISR__Support_8h_a30c2eb330b4fbf8161ba6379d629e7a5}{H\-L} M\-O\-V \hyperlink{IAR_2RL78_2ISR__Support_8h_a80a70aea205e0e10f3ea6e7f6e9a94d2}{C\-S}
+\item 
+Save \hyperlink{IAR_2RL78_2ISR__Support_8h_a80a70aea205e0e10f3ea6e7f6e9a94d2}{C\-S} \hyperlink{RVDS_2ARM7__LPC21xx_2portmacro_8h_a24ac627a7839caecddfc66f1d46033f0}{register} X\-C\-H \hyperlink{IAR_2RL78_2ISR__Support_8h_a836d136c5cf9b95192920ca0affa917e}{X} M\-O\-V \hyperlink{IAR_2RL78_2ISR__Support_8h_a7bdba1afa6d8c5f506cdda4a6236a923}{E\-S}
+\item 
+Save \hyperlink{IAR_2RL78_2ISR__Support_8h_adaa07e94e979d3ef98fdc4afc853a559}{E\-S} \hyperlink{RVDS_2ARM7__LPC21xx_2portmacro_8h_a24ac627a7839caecddfc66f1d46033f0}{register} \hyperlink{ARM__CA9_2portASM_8h_a551efa3573f442f9676984d3b220c981}{P\-U\-S\-H} \hyperlink{IAR_2RL78_2ISR__Support_8h_ac07dd4b65f1d21f9225978c9cfd67772}{A\-X} \hyperlink{ARM__CA9_2portASM_8h_a551efa3573f442f9676984d3b220c981}{P\-U\-S\-H} \hyperlink{IAR_2RL78_2ISR__Support_8h_ada21f928de52d04774d34370a6721d6e}{D\-E}
+\item 
+Save \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} \hyperlink{Rowley_2MSP430F449_2port_8c_a72024c36cef5744b86e354381b5d3dcd}{us\-Critical\-Nesting} \\*
+value \hyperlink{ARM__CA9_2portASM_8h_a551efa3573f442f9676984d3b220c981}{P\-U\-S\-H} \hyperlink{IAR_2RL78_2ISR__Support_8h_ac07dd4b65f1d21f9225978c9cfd67772}{A\-X} \hyperlink{IAR_2RL78_2ISR__Support_8h_a1281d798a6a374bdcb81e5641c27e744}{M\-O\-V\-W} \hyperlink{IAR_2RL78_2ISR__Support_8h_a7cd782382601a8809780a8b6e8ffe570}{px\-Current\-T\-C\-B}
+\item 
+Save \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} Stack pointer \hyperlink{IAR_2RL78_2ISR__Support_8h_a1281d798a6a374bdcb81e5641c27e744}{M\-O\-V\-W} \hyperlink{IAR_2RL78_2ISR__Support_8h_a30c2eb330b4fbf8161ba6379d629e7a5}{H\-L}
+\item 
+Save \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} Stack pointer M\-O\-V\-W \hyperlink{IAR_2RL78_2ISR__Support_8h_ac07dd4b65f1d21f9225978c9cfd67772}{A\-X} \\*
+M\-O\-V\-W \hyperlink{ARM__CA9_2portASM_8h_a1c04d1213b319de2098bf4398286bb85}{S\-P} \hyperlink{IAR_2RL78_2ISR__Support_8h_a1281d798a6a374bdcb81e5641c27e744}{M\-O\-V\-W} \mbox{[}\hyperlink{IAR_2RL78_2ISR__Support_8h_a30c2eb330b4fbf8161ba6379d629e7a5}{H\-L}\mbox{]}
+\item 
+Save \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} Stack pointer \hyperlink{IAR_2RL78_2ISR__Support_8h_a1281d798a6a374bdcb81e5641c27e744}{M\-O\-V\-W} \hyperlink{IAR_2RL78_2ISR__Support_8h_ac07dd4b65f1d21f9225978c9cfd67772}{A\-X} \\*
+\hyperlink{IAR_2RL78_2ISR__Support_8h_a1281d798a6a374bdcb81e5641c27e744}{M\-O\-V\-W} \hyperlink{ARM__CA9_2portASM_8h_a1c04d1213b319de2098bf4398286bb85}{S\-P} \hyperlink{IAR_2RL78_2ISR__Support_8h_ac07dd4b65f1d21f9225978c9cfd67772}{A\-X} \hyperlink{IAR_2RL78_2ISR__Support_8h_a4a7122bee868af09d2aa6d0b7d3ea3c9}{E\-N\-D\-M}
+\item 
+Restore \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} Stack pointer \hyperlink{IAR_2RL78_2ISR__Support_8h_a1281d798a6a374bdcb81e5641c27e744}{M\-O\-V\-W} \\*
+\hyperlink{IAR_2RL78_2ISR__Support_8h_ac07dd4b65f1d21f9225978c9cfd67772}{A\-X} \hyperlink{IAR_2RL78_2ISR__Support_8h_a1281d798a6a374bdcb81e5641c27e744}{M\-O\-V\-W} \hyperlink{IAR_2RL78_2ISR__Support_8h_a1281d798a6a374bdcb81e5641c27e744}{M\-O\-V\-W} \hyperlink{IAR_2RL78_2ISR__Support_8h_a12c4bede088cd50856dc8e5d9b2de535}{S\-P}
+\item 
+Restore \hyperlink{Rowley_2MSP430F449_2port_8c_a72024c36cef5744b86e354381b5d3dcd}{us\-Critical\-Nesting} \\*
+value \hyperlink{IAR_2RL78_2ISR__Support_8h_a1281d798a6a374bdcb81e5641c27e744}{M\-O\-V\-W} \hyperlink{IAR_2RL78_2ISR__Support_8h_ac07dd4b65f1d21f9225978c9cfd67772}{A\-X} P\-O\-P \hyperlink{IAR_2RL78_2ISR__Support_8h_a47e51e20d00428621fddaf2b63b109fa}{B\-C}
+\item 
+Restore \hyperlink{IAR_2STR91x_2ISR__Support_8h_aef4e93322d3b4e7f5270e9b89fe30753}{the} \hyperlink{IAR_2RL78_2ISR__Support_8h_adaa07e94e979d3ef98fdc4afc853a559}{E\-S} \hyperlink{RVDS_2ARM7__LPC21xx_2portmacro_8h_a24ac627a7839caecddfc66f1d46033f0}{register} M\-O\-V \hyperlink{Softune_2MB96340_2port_8c_ae2572b8ee3e438f22571e0214222bd1b}{A} X\-C\-H \hyperlink{IAR_2RL78_2ISR__Support_8h_a836d136c5cf9b95192920ca0affa917e}{X}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_a95864854aedfd89fa2351c89a98cb1f7}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!E\-S@{E\-S}}
+\index{E\-S@{E\-S}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{E\-S}]{\setlength{\rightskip}{0pt plus 5cm}Saves {\bf the} {\bf context} of {\bf the} general purpose {\bf C\-S} and E\-S (
+\begin{DoxyParamCaption}
+\item[{only in far;memory}]{mode}
+\end{DoxyParamCaption}
+)}}\label{IAR_2RL78_2ISR__Support_8h_a95864854aedfd89fa2351c89a98cb1f7}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_adaa07e94e979d3ef98fdc4afc853a559}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!E\-S@{E\-S}}
+\index{E\-S@{E\-S}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{E\-S}]{\setlength{\rightskip}{0pt plus 5cm}Restores {\bf the} task Stack Pointer then use this {\bf to} restore general purpose {\bf registers} and {\bf the} {\bf C\-S} and E\-S (
+\begin{DoxyParamCaption}
+\item[{only in far memory}]{mode}
+\end{DoxyParamCaption}
+)}}\label{IAR_2RL78_2ISR__Support_8h_adaa07e94e979d3ef98fdc4afc853a559}
+
+
+\subsection{Variable Documentation}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_af0952859cab91217559e910b2a1466e2}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!A@{A}}
+\index{A@{A}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{A}]{\setlength{\rightskip}{0pt plus 5cm}Restore {\bf the} {\bf E\-S} {\bf register} M\-O\-V A X\-C\-H A}}\label{IAR_2RL78_2ISR__Support_8h_af0952859cab91217559e910b2a1466e2}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_ac07dd4b65f1d21f9225978c9cfd67772}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!A\-X@{A\-X}}
+\index{A\-X@{A\-X}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{A\-X}]{\setlength{\rightskip}{0pt plus 5cm}Restore general purpose {\bf register} {\bf H\-L} P\-O\-P A\-X}}\label{IAR_2RL78_2ISR__Support_8h_ac07dd4b65f1d21f9225978c9cfd67772}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_a47e51e20d00428621fddaf2b63b109fa}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!B\-C@{B\-C}}
+\index{B\-C@{B\-C}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{B\-C}]{\setlength{\rightskip}{0pt plus 5cm}Restore {\bf us\-Critical\-Nesting} value {\bf M\-O\-V\-W} {\bf A\-X} P\-O\-P B\-C}}\label{IAR_2RL78_2ISR__Support_8h_a47e51e20d00428621fddaf2b63b109fa}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_a80a70aea205e0e10f3ea6e7f6e9a94d2}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!C\-S@{C\-S}}
+\index{C\-S@{C\-S}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{C\-S}]{\setlength{\rightskip}{0pt plus 5cm}Restore {\bf the} C\-S {\bf register} M\-O\-V C\-S}}\label{IAR_2RL78_2ISR__Support_8h_a80a70aea205e0e10f3ea6e7f6e9a94d2}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_ada21f928de52d04774d34370a6721d6e}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!D\-E@{D\-E}}
+\index{D\-E@{D\-E}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{D\-E}]{\setlength{\rightskip}{0pt plus 5cm}Save {\bf E\-S} {\bf register} {\bf P\-U\-S\-H} {\bf A\-X} {\bf P\-U\-S\-H} D\-E}}\label{IAR_2RL78_2ISR__Support_8h_ada21f928de52d04774d34370a6721d6e}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_a4a7122bee868af09d2aa6d0b7d3ea3c9}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!E\-N\-D\-M@{E\-N\-D\-M}}
+\index{E\-N\-D\-M@{E\-N\-D\-M}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{E\-N\-D\-M}]{\setlength{\rightskip}{0pt plus 5cm}Restore {\bf A\-X} E\-N\-D\-M}}\label{IAR_2RL78_2ISR__Support_8h_a4a7122bee868af09d2aa6d0b7d3ea3c9}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_a7bdba1afa6d8c5f506cdda4a6236a923}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!E\-S@{E\-S}}
+\index{E\-S@{E\-S}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{E\-S}]{\setlength{\rightskip}{0pt plus 5cm}Restore {\bf the} E\-S {\bf register} M\-O\-V E\-S}}\label{IAR_2RL78_2ISR__Support_8h_a7bdba1afa6d8c5f506cdda4a6236a923}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_a30c2eb330b4fbf8161ba6379d629e7a5}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!H\-L@{H\-L}}
+\index{H\-L@{H\-L}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{H\-L}]{\setlength{\rightskip}{0pt plus 5cm}Restore {\bf the} {\bf C\-S} {\bf register} M\-O\-V {\bf A} P\-O\-P H\-L}}\label{IAR_2RL78_2ISR__Support_8h_a30c2eb330b4fbf8161ba6379d629e7a5}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_ac6914e7d59cd2a9690c919b3a3381e87}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!M\-A\-C\-R\-O@{M\-A\-C\-R\-O}}
+\index{M\-A\-C\-R\-O@{M\-A\-C\-R\-O}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{M\-A\-C\-R\-O}]{\setlength{\rightskip}{0pt plus 5cm}{\bf port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T} M\-A\-C\-R\-O}}\label{IAR_2RL78_2ISR__Support_8h_ac6914e7d59cd2a9690c919b3a3381e87}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_a1281d798a6a374bdcb81e5641c27e744}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!M\-O\-V\-W@{M\-O\-V\-W}}
+\index{M\-O\-V\-W@{M\-O\-V\-W}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{M\-O\-V\-W}]{\setlength{\rightskip}{0pt plus 5cm}Save {\bf the} Stack pointer M\-O\-V\-W {\bf A\-X} M\-O\-V\-W {\bf S\-P} M\-O\-V\-W\mbox{[}{\bf H\-L}\mbox{]}}}\label{IAR_2RL78_2ISR__Support_8h_a1281d798a6a374bdcb81e5641c27e744}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_a7cd782382601a8809780a8b6e8ffe570}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!px\-Current\-T\-C\-B@{px\-Current\-T\-C\-B}}
+\index{px\-Current\-T\-C\-B@{px\-Current\-T\-C\-B}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{px\-Current\-T\-C\-B}]{\setlength{\rightskip}{0pt plus 5cm}{\bf port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T} {\bf M\-A\-C\-R\-O} {\bf M\-O\-V\-W} px\-Current\-T\-C\-B}}\label{IAR_2RL78_2ISR__Support_8h_a7cd782382601a8809780a8b6e8ffe570}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_a3de5611e92ac83d85441f23bf7c14cf7}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!registers@{registers}}
+\index{registers@{registers}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{registers}]{\setlength{\rightskip}{0pt plus 5cm}Saves {\bf the} {\bf context} of {\bf the} general purpose registers}}\label{IAR_2RL78_2ISR__Support_8h_a3de5611e92ac83d85441f23bf7c14cf7}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_ac5b8949e9ab98269114a8786f0f337c6}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!scheduler@{scheduler}}
+\index{scheduler@{scheduler}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{scheduler}]{\setlength{\rightskip}{0pt plus 5cm}Variables used by scheduler}}\label{IAR_2RL78_2ISR__Support_8h_ac5b8949e9ab98269114a8786f0f337c6}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_a12c4bede088cd50856dc8e5d9b2de535}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!S\-P@{S\-P}}
+\index{S\-P@{S\-P}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{S\-P}]{\setlength{\rightskip}{0pt plus 5cm}Restore {\bf the} Stack pointer {\bf M\-O\-V\-W} {\bf A\-X} {\bf M\-O\-V\-W} {\bf M\-O\-V\-W} S\-P}}\label{IAR_2RL78_2ISR__Support_8h_a12c4bede088cd50856dc8e5d9b2de535}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_ab327b64f028ec1b108340d3378d45d45}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!stack@{stack}}
+\index{stack@{stack}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{stack}]{\setlength{\rightskip}{0pt plus 5cm}of {\bf the} selected task from {\bf the} task stack}}\label{IAR_2RL78_2ISR__Support_8h_ab327b64f028ec1b108340d3378d45d45}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_a7738f5a9321a7eccc2da96119924d68d}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!us\-Critical\-Nesting@{us\-Critical\-Nesting}}
+\index{us\-Critical\-Nesting@{us\-Critical\-Nesting}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{us\-Critical\-Nesting}]{\setlength{\rightskip}{0pt plus 5cm}Restore us\-Critical\-Nesting value {\bf M\-O\-V\-W} us\-Critical\-Nesting}}\label{IAR_2RL78_2ISR__Support_8h_a7738f5a9321a7eccc2da96119924d68d}
+\hypertarget{IAR_2RL78_2ISR__Support_8h_a836d136c5cf9b95192920ca0affa917e}{\index{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}!X@{X}}
+\index{X@{X}!IAR/RL78/ISR_Support.h@{I\-A\-R/\-R\-L78/\-I\-S\-R\-\_\-\-Support.\-h}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}Restore {\bf the} {\bf E\-S} {\bf register} M\-O\-V {\bf A} X\-C\-H X}}\label{IAR_2RL78_2ISR__Support_8h_a836d136c5cf9b95192920ca0affa917e}

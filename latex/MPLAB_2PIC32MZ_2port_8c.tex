@@ -1,0 +1,192 @@
+\hypertarget{MPLAB_2PIC32MZ_2port_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.c File Reference}
+\label{MPLAB_2PIC32MZ_2port_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+}
+{\ttfamily \#include $<$xc.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{MPLAB_2PIC32MZ_2port_8c_a251858be039c5c5a9e24a3e3e7c0d034}{port\-T\-I\-M\-E\-R\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E}~8
+\item 
+\#define \hyperlink{MPLAB_2PIC32MZ_2port_8c_a16a81a8551b14360664828aa8a3773c4}{port\-P\-R\-E\-S\-C\-A\-L\-E\-\_\-\-B\-I\-T\-S}~1
+\item 
+\#define \hyperlink{MPLAB_2PIC32MZ_2port_8c_a11404e640380b216a1fc6dc4d6795389}{port\-I\-E\-\_\-\-B\-I\-T}~( 0x00000001 )
+\item 
+\#define \hyperlink{MPLAB_2PIC32MZ_2port_8c_a9faa9178a3560762d2161c0fc25f021e}{port\-E\-X\-L\-\_\-\-B\-I\-T}~( 0x00000002 )
+\item 
+\#define \hyperlink{MPLAB_2PIC32MZ_2port_8c_a2d585b9e7f1a4295b8877918dfdde2e7}{port\-M\-X\-\_\-\-B\-I\-T}~( 0x01000000 ) /$\ast$ Allow access to D\-S\-P instructions. $\ast$/
+\item 
+\#define \hyperlink{MPLAB_2PIC32MZ_2port_8c_aa325ab320194ef4016733a32aff1985c}{port\-C\-U1\-\_\-\-B\-I\-T}~( 0x20000000 ) /$\ast$ enable C\-P1 for parts with hardware. $\ast$/
+\item 
+\#define \hyperlink{MPLAB_2PIC32MZ_2port_8c_abcf764dd7a728c6fab555e2d4537f3f1}{port\-F\-R\-\_\-\-B\-I\-T}~( 0x04000000 ) /$\ast$ Enable 64 bit floating point registers. $\ast$/
+\item 
+\#define \hyperlink{MPLAB_2PIC32MZ_2port_8c_aaf95f33b7a0b1c96759b9058446160a4}{port\-C\-O\-R\-E\-\_\-\-S\-W\-\_\-0}~( 0x00000100 )
+\item 
+\#define \hyperlink{MPLAB_2PIC32MZ_2port_8c_a8853e2467c2412a363a6e7accaa4c595}{port\-C\-O\-R\-E\-\_\-\-S\-W\-\_\-1}~( 0x00000200 )
+\item 
+\#define \hyperlink{MPLAB_2PIC32MZ_2port_8c_a26624b2cf57368e3719a498832ecb658}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-R}~( \hyperlink{MPLAB_2PIC32MZ_2port_8c_a11404e640380b216a1fc6dc4d6795389}{port\-I\-E\-\_\-\-B\-I\-T} $\vert$ \hyperlink{MPLAB_2PIC32MZ_2port_8c_a9faa9178a3560762d2161c0fc25f021e}{port\-E\-X\-L\-\_\-\-B\-I\-T} $\vert$ \hyperlink{MPLAB_2PIC32MZ_2port_8c_a2d585b9e7f1a4295b8877918dfdde2e7}{port\-M\-X\-\_\-\-B\-I\-T} )
+\item 
+\#define \hyperlink{MPLAB_2PIC32MZ_2port_8c_ac0d88abb68188f5d7da45c60a5f78c02}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-P\-S\-C\-R}~(0x1000000) /$\ast$ High perf on denormal ops $\ast$/
+\item 
+\#define \hyperlink{MPLAB_2PIC32MZ_2port_8c_aa361060979e763f9fe088e47bd46acd7}{config\-T\-I\-C\-K\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-V\-E\-C\-T\-O\-R}~\-\_\-\-T\-I\-M\-E\-R\-\_\-1\-\_\-\-V\-E\-C\-T\-O\-R
+\item 
+\#define \hyperlink{MPLAB_2PIC32MZ_2port_8c_ac90c946d419377b9501b58efd830af06}{config\-C\-L\-E\-A\-R\-\_\-\-T\-I\-C\-K\-\_\-\-T\-I\-M\-E\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T}()~I\-F\-S0\-C\-L\-R = \-\_\-\-I\-F\-S0\-\_\-\-T1\-I\-F\-\_\-\-M\-A\-S\-K
+\item 
+\#define \hyperlink{MPLAB_2PIC32MZ_2port_8c_a254a1ddd7499c6ec36b38e2fc3486b80}{port\-T\-A\-S\-K\-\_\-\-R\-E\-T\-U\-R\-N\-\_\-\-A\-D\-D\-R\-E\-S\-S}~prv\-Task\-Exit\-Error
+\item 
+\#define \hyperlink{MPLAB_2PIC32MZ_2port_8c_a675a9ea33bf706283cbc295bfff06335}{port\-C\-H\-E\-C\-K\-\_\-\-I\-S\-R\-\_\-\-S\-T\-A\-C\-K}()
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$ \hyperlink{MPLAB_2PIC32MZ_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{px\-Port\-Initialise\-Stack} (\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$px\-Top\-Of\-Stack, \hyperlink{projdefs_8h_a24177544ba9c507a9429d6d5761eb487}{Task\-Function\-\_\-t} px\-Code, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters)
+\item 
+\hyperlink{MPLAB_2PIC32MZ_2port_8c_af9aace1b44b73111e15aa39f06f43456}{\-\_\-\-\_\-attribute\-\_\-\-\_\-} ((\hyperlink{porttrap_8c_acf66f77446c31149307d114f4e52e89a}{weak}))
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{MPLAB_2PIC32MZ_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{v\-Port\-End\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{MPLAB_2PIC32MZ_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{x\-Port\-Start\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{MPLAB_2PIC32MZ_2port_8c_aa9ac2b26adfad38266878b63174ea70a}{v\-Port\-Increment\-Tick} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a8e88a5e44a5243b3d1c29af17fd6b5bd}{U\-Base\-Type\-\_\-t} \hyperlink{MPLAB_2PIC32MZ_2port_8c_ad3b846f809a7cff169a8c3cb621ec1ee}{ux\-Port\-Set\-Interrupt\-Mask\-From\-I\-S\-R} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{MPLAB_2PIC32MZ_2port_8c_a62eacd09c9598a61fc169a6c4f4c01be}{v\-Port\-Clear\-Interrupt\-Mask\-From\-I\-S\-R} (\hyperlink{Flsh186_2prtmacro_8h_a8e88a5e44a5243b3d1c29af17fd6b5bd}{U\-Base\-Type\-\_\-t} ux\-Saved\-Status\-Register)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile \hyperlink{Flsh186_2prtmacro_8h_a8e88a5e44a5243b3d1c29af17fd6b5bd}{U\-Base\-Type\-\_\-t} \hyperlink{MPLAB_2PIC32MZ_2port_8c_a60c776e8fe8808f7188ee8b0a52f5313}{ux\-Interrupt\-Nesting} = 0x01
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a8e88a5e44a5243b3d1c29af17fd6b5bd}{U\-Base\-Type\-\_\-t} \hyperlink{MPLAB_2PIC32MZ_2port_8c_a835fe37fd85f12a9f0a5a7e9b3d08ab8}{ux\-Saved\-Task\-Stack\-Pointer} = 0
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} \hyperlink{MPLAB_2PIC32MZ_2port_8c_ac7d154e9cc52ae4e126e5063ae0b8c74}{x\-I\-S\-R\-Stack} \mbox{[}config\-I\-S\-R\-\_\-\-S\-T\-A\-C\-K\-\_\-\-S\-I\-Z\-E\mbox{]} = \{ 0 \}
+\item 
+const \hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$const \hyperlink{MPLAB_2PIC32MZ_2port_8c_a25abfe165b2be913281745c21e8760bd}{x\-I\-S\-R\-Stack\-Top} = \&( \hyperlink{MPLAB_2PIC32MZ_2port_8c_ac7d154e9cc52ae4e126e5063ae0b8c74}{x\-I\-S\-R\-Stack}\mbox{[} config\-I\-S\-R\-\_\-\-S\-T\-A\-C\-K\-\_\-\-S\-I\-Z\-E -\/ 7 \mbox{]} )
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_ac90c946d419377b9501b58efd830af06}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!config\-C\-L\-E\-A\-R\-\_\-\-T\-I\-C\-K\-\_\-\-T\-I\-M\-E\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T@{config\-C\-L\-E\-A\-R\-\_\-\-T\-I\-C\-K\-\_\-\-T\-I\-M\-E\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T}}
+\index{config\-C\-L\-E\-A\-R\-\_\-\-T\-I\-C\-K\-\_\-\-T\-I\-M\-E\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T@{config\-C\-L\-E\-A\-R\-\_\-\-T\-I\-C\-K\-\_\-\-T\-I\-M\-E\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{config\-C\-L\-E\-A\-R\-\_\-\-T\-I\-C\-K\-\_\-\-T\-I\-M\-E\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-C\-L\-E\-A\-R\-\_\-\-T\-I\-C\-K\-\_\-\-T\-I\-M\-E\-R\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~I\-F\-S0\-C\-L\-R = \-\_\-\-I\-F\-S0\-\_\-\-T1\-I\-F\-\_\-\-M\-A\-S\-K}}\label{MPLAB_2PIC32MZ_2port_8c_ac90c946d419377b9501b58efd830af06}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_aa361060979e763f9fe088e47bd46acd7}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!config\-T\-I\-C\-K\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-V\-E\-C\-T\-O\-R@{config\-T\-I\-C\-K\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-V\-E\-C\-T\-O\-R}}
+\index{config\-T\-I\-C\-K\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-V\-E\-C\-T\-O\-R@{config\-T\-I\-C\-K\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-V\-E\-C\-T\-O\-R}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{config\-T\-I\-C\-K\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-V\-E\-C\-T\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define config\-T\-I\-C\-K\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-V\-E\-C\-T\-O\-R~\-\_\-\-T\-I\-M\-E\-R\-\_\-1\-\_\-\-V\-E\-C\-T\-O\-R}}\label{MPLAB_2PIC32MZ_2port_8c_aa361060979e763f9fe088e47bd46acd7}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_a675a9ea33bf706283cbc295bfff06335}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!port\-C\-H\-E\-C\-K\-\_\-\-I\-S\-R\-\_\-\-S\-T\-A\-C\-K@{port\-C\-H\-E\-C\-K\-\_\-\-I\-S\-R\-\_\-\-S\-T\-A\-C\-K}}
+\index{port\-C\-H\-E\-C\-K\-\_\-\-I\-S\-R\-\_\-\-S\-T\-A\-C\-K@{port\-C\-H\-E\-C\-K\-\_\-\-I\-S\-R\-\_\-\-S\-T\-A\-C\-K}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{port\-C\-H\-E\-C\-K\-\_\-\-I\-S\-R\-\_\-\-S\-T\-A\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-C\-H\-E\-C\-K\-\_\-\-I\-S\-R\-\_\-\-S\-T\-A\-C\-K(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{MPLAB_2PIC32MZ_2port_8c_a675a9ea33bf706283cbc295bfff06335}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_aaf95f33b7a0b1c96759b9058446160a4}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!port\-C\-O\-R\-E\-\_\-\-S\-W\-\_\-0@{port\-C\-O\-R\-E\-\_\-\-S\-W\-\_\-0}}
+\index{port\-C\-O\-R\-E\-\_\-\-S\-W\-\_\-0@{port\-C\-O\-R\-E\-\_\-\-S\-W\-\_\-0}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{port\-C\-O\-R\-E\-\_\-\-S\-W\-\_\-0}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-C\-O\-R\-E\-\_\-\-S\-W\-\_\-0~( 0x00000100 )}}\label{MPLAB_2PIC32MZ_2port_8c_aaf95f33b7a0b1c96759b9058446160a4}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_a8853e2467c2412a363a6e7accaa4c595}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!port\-C\-O\-R\-E\-\_\-\-S\-W\-\_\-1@{port\-C\-O\-R\-E\-\_\-\-S\-W\-\_\-1}}
+\index{port\-C\-O\-R\-E\-\_\-\-S\-W\-\_\-1@{port\-C\-O\-R\-E\-\_\-\-S\-W\-\_\-1}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{port\-C\-O\-R\-E\-\_\-\-S\-W\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-C\-O\-R\-E\-\_\-\-S\-W\-\_\-1~( 0x00000200 )}}\label{MPLAB_2PIC32MZ_2port_8c_a8853e2467c2412a363a6e7accaa4c595}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_aa325ab320194ef4016733a32aff1985c}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!port\-C\-U1\-\_\-\-B\-I\-T@{port\-C\-U1\-\_\-\-B\-I\-T}}
+\index{port\-C\-U1\-\_\-\-B\-I\-T@{port\-C\-U1\-\_\-\-B\-I\-T}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{port\-C\-U1\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-C\-U1\-\_\-\-B\-I\-T~( 0x20000000 ) /$\ast$ enable C\-P1 for parts with hardware. $\ast$/}}\label{MPLAB_2PIC32MZ_2port_8c_aa325ab320194ef4016733a32aff1985c}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_a9faa9178a3560762d2161c0fc25f021e}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!port\-E\-X\-L\-\_\-\-B\-I\-T@{port\-E\-X\-L\-\_\-\-B\-I\-T}}
+\index{port\-E\-X\-L\-\_\-\-B\-I\-T@{port\-E\-X\-L\-\_\-\-B\-I\-T}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{port\-E\-X\-L\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-E\-X\-L\-\_\-\-B\-I\-T~( 0x00000002 )}}\label{MPLAB_2PIC32MZ_2port_8c_a9faa9178a3560762d2161c0fc25f021e}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_abcf764dd7a728c6fab555e2d4537f3f1}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!port\-F\-R\-\_\-\-B\-I\-T@{port\-F\-R\-\_\-\-B\-I\-T}}
+\index{port\-F\-R\-\_\-\-B\-I\-T@{port\-F\-R\-\_\-\-B\-I\-T}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{port\-F\-R\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-F\-R\-\_\-\-B\-I\-T~( 0x04000000 ) /$\ast$ Enable 64 bit floating point registers. $\ast$/}}\label{MPLAB_2PIC32MZ_2port_8c_abcf764dd7a728c6fab555e2d4537f3f1}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_a11404e640380b216a1fc6dc4d6795389}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!port\-I\-E\-\_\-\-B\-I\-T@{port\-I\-E\-\_\-\-B\-I\-T}}
+\index{port\-I\-E\-\_\-\-B\-I\-T@{port\-I\-E\-\_\-\-B\-I\-T}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{port\-I\-E\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-E\-\_\-\-B\-I\-T~( 0x00000001 )}}\label{MPLAB_2PIC32MZ_2port_8c_a11404e640380b216a1fc6dc4d6795389}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_ac0d88abb68188f5d7da45c60a5f78c02}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-P\-S\-C\-R@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-P\-S\-C\-R}}
+\index{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-P\-S\-C\-R@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-P\-S\-C\-R}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-P\-S\-C\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-P\-S\-C\-R~(0x1000000) /$\ast$ High perf on denormal ops $\ast$/}}\label{MPLAB_2PIC32MZ_2port_8c_ac0d88abb68188f5d7da45c60a5f78c02}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_a26624b2cf57368e3719a498832ecb658}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-R@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-R}}
+\index{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-R@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-R}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-R~( {\bf port\-I\-E\-\_\-\-B\-I\-T} $\vert$ {\bf port\-E\-X\-L\-\_\-\-B\-I\-T} $\vert$ {\bf port\-M\-X\-\_\-\-B\-I\-T} )}}\label{MPLAB_2PIC32MZ_2port_8c_a26624b2cf57368e3719a498832ecb658}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_a2d585b9e7f1a4295b8877918dfdde2e7}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!port\-M\-X\-\_\-\-B\-I\-T@{port\-M\-X\-\_\-\-B\-I\-T}}
+\index{port\-M\-X\-\_\-\-B\-I\-T@{port\-M\-X\-\_\-\-B\-I\-T}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{port\-M\-X\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-M\-X\-\_\-\-B\-I\-T~( 0x01000000 ) /$\ast$ Allow access to D\-S\-P instructions. $\ast$/}}\label{MPLAB_2PIC32MZ_2port_8c_a2d585b9e7f1a4295b8877918dfdde2e7}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_a16a81a8551b14360664828aa8a3773c4}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!port\-P\-R\-E\-S\-C\-A\-L\-E\-\_\-\-B\-I\-T\-S@{port\-P\-R\-E\-S\-C\-A\-L\-E\-\_\-\-B\-I\-T\-S}}
+\index{port\-P\-R\-E\-S\-C\-A\-L\-E\-\_\-\-B\-I\-T\-S@{port\-P\-R\-E\-S\-C\-A\-L\-E\-\_\-\-B\-I\-T\-S}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{port\-P\-R\-E\-S\-C\-A\-L\-E\-\_\-\-B\-I\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-P\-R\-E\-S\-C\-A\-L\-E\-\_\-\-B\-I\-T\-S~1}}\label{MPLAB_2PIC32MZ_2port_8c_a16a81a8551b14360664828aa8a3773c4}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_a254a1ddd7499c6ec36b38e2fc3486b80}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!port\-T\-A\-S\-K\-\_\-\-R\-E\-T\-U\-R\-N\-\_\-\-A\-D\-D\-R\-E\-S\-S@{port\-T\-A\-S\-K\-\_\-\-R\-E\-T\-U\-R\-N\-\_\-\-A\-D\-D\-R\-E\-S\-S}}
+\index{port\-T\-A\-S\-K\-\_\-\-R\-E\-T\-U\-R\-N\-\_\-\-A\-D\-D\-R\-E\-S\-S@{port\-T\-A\-S\-K\-\_\-\-R\-E\-T\-U\-R\-N\-\_\-\-A\-D\-D\-R\-E\-S\-S}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{port\-T\-A\-S\-K\-\_\-\-R\-E\-T\-U\-R\-N\-\_\-\-A\-D\-D\-R\-E\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-A\-S\-K\-\_\-\-R\-E\-T\-U\-R\-N\-\_\-\-A\-D\-D\-R\-E\-S\-S~prv\-Task\-Exit\-Error}}\label{MPLAB_2PIC32MZ_2port_8c_a254a1ddd7499c6ec36b38e2fc3486b80}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_a251858be039c5c5a9e24a3e3e7c0d034}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!port\-T\-I\-M\-E\-R\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E@{port\-T\-I\-M\-E\-R\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E}}
+\index{port\-T\-I\-M\-E\-R\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E@{port\-T\-I\-M\-E\-R\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{port\-T\-I\-M\-E\-R\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-T\-I\-M\-E\-R\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E~8}}\label{MPLAB_2PIC32MZ_2port_8c_a251858be039c5c5a9e24a3e3e7c0d034}
+
+
+\subsection{Function Documentation}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_af9aace1b44b73111e15aa39f06f43456}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!\-\_\-\-\_\-attribute\-\_\-\-\_\-@{\-\_\-\-\_\-attribute\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-attribute\-\_\-\-\_\-@{\-\_\-\-\_\-attribute\-\_\-\-\_\-}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{\-\_\-\-\_\-attribute\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-attribute\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{({\bf weak})}]{}
+\end{DoxyParamCaption}
+)}}\label{MPLAB_2PIC32MZ_2port_8c_af9aace1b44b73111e15aa39f06f43456}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}}
+\index{px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{px\-Port\-Initialise\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stack\-Type\-\_\-t}$\ast$ px\-Port\-Initialise\-Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\-Type\-\_\-t} $\ast$}]{px\-Top\-Of\-Stack, }
+\item[{{\bf Task\-Function\-\_\-t}}]{px\-Code, }
+\item[{{\bf void} $\ast$}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)}}\label{MPLAB_2PIC32MZ_2port_8c_a474fbbb58ea661a1557f05adc41120c1}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_ad3b846f809a7cff169a8c3cb621ec1ee}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!ux\-Port\-Set\-Interrupt\-Mask\-From\-I\-S\-R@{ux\-Port\-Set\-Interrupt\-Mask\-From\-I\-S\-R}}
+\index{ux\-Port\-Set\-Interrupt\-Mask\-From\-I\-S\-R@{ux\-Port\-Set\-Interrupt\-Mask\-From\-I\-S\-R}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{ux\-Port\-Set\-Interrupt\-Mask\-From\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\-Base\-Type\-\_\-t} ux\-Port\-Set\-Interrupt\-Mask\-From\-I\-S\-R (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{MPLAB_2PIC32MZ_2port_8c_ad3b846f809a7cff169a8c3cb621ec1ee}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_a62eacd09c9598a61fc169a6c4f4c01be}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!v\-Port\-Clear\-Interrupt\-Mask\-From\-I\-S\-R@{v\-Port\-Clear\-Interrupt\-Mask\-From\-I\-S\-R}}
+\index{v\-Port\-Clear\-Interrupt\-Mask\-From\-I\-S\-R@{v\-Port\-Clear\-Interrupt\-Mask\-From\-I\-S\-R}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{v\-Port\-Clear\-Interrupt\-Mask\-From\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Clear\-Interrupt\-Mask\-From\-I\-S\-R (
+\begin{DoxyParamCaption}
+\item[{{\bf U\-Base\-Type\-\_\-t}}]{ux\-Saved\-Status\-Register}
+\end{DoxyParamCaption}
+)}}\label{MPLAB_2PIC32MZ_2port_8c_a62eacd09c9598a61fc169a6c4f4c01be}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}}
+\index{v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{v\-Port\-End\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-End\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{MPLAB_2PIC32MZ_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_aa9ac2b26adfad38266878b63174ea70a}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!v\-Port\-Increment\-Tick@{v\-Port\-Increment\-Tick}}
+\index{v\-Port\-Increment\-Tick@{v\-Port\-Increment\-Tick}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{v\-Port\-Increment\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Increment\-Tick (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{MPLAB_2PIC32MZ_2port_8c_aa9ac2b26adfad38266878b63174ea70a}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}}
+\index{x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{x\-Port\-Start\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} x\-Port\-Start\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{MPLAB_2PIC32MZ_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}
+
+
+\subsection{Variable Documentation}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_a60c776e8fe8808f7188ee8b0a52f5313}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!ux\-Interrupt\-Nesting@{ux\-Interrupt\-Nesting}}
+\index{ux\-Interrupt\-Nesting@{ux\-Interrupt\-Nesting}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{ux\-Interrupt\-Nesting}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf U\-Base\-Type\-\_\-t} ux\-Interrupt\-Nesting = 0x01}}\label{MPLAB_2PIC32MZ_2port_8c_a60c776e8fe8808f7188ee8b0a52f5313}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_a835fe37fd85f12a9f0a5a7e9b3d08ab8}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!ux\-Saved\-Task\-Stack\-Pointer@{ux\-Saved\-Task\-Stack\-Pointer}}
+\index{ux\-Saved\-Task\-Stack\-Pointer@{ux\-Saved\-Task\-Stack\-Pointer}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{ux\-Saved\-Task\-Stack\-Pointer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\-Base\-Type\-\_\-t} ux\-Saved\-Task\-Stack\-Pointer = 0}}\label{MPLAB_2PIC32MZ_2port_8c_a835fe37fd85f12a9f0a5a7e9b3d08ab8}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_ac7d154e9cc52ae4e126e5063ae0b8c74}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!x\-I\-S\-R\-Stack@{x\-I\-S\-R\-Stack}}
+\index{x\-I\-S\-R\-Stack@{x\-I\-S\-R\-Stack}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{x\-I\-S\-R\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stack\-Type\-\_\-t} x\-I\-S\-R\-Stack\mbox{[}config\-I\-S\-R\-\_\-\-S\-T\-A\-C\-K\-\_\-\-S\-I\-Z\-E\mbox{]} = \{ 0 \}}}\label{MPLAB_2PIC32MZ_2port_8c_ac7d154e9cc52ae4e126e5063ae0b8c74}
+\hypertarget{MPLAB_2PIC32MZ_2port_8c_a25abfe165b2be913281745c21e8760bd}{\index{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}!x\-I\-S\-R\-Stack\-Top@{x\-I\-S\-R\-Stack\-Top}}
+\index{x\-I\-S\-R\-Stack\-Top@{x\-I\-S\-R\-Stack\-Top}!MPLAB/PIC32MZ/port.c@{M\-P\-L\-A\-B/\-P\-I\-C32\-M\-Z/port.\-c}}
+\subsubsection[{x\-I\-S\-R\-Stack\-Top}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Stack\-Type\-\_\-t}$\ast$ const x\-I\-S\-R\-Stack\-Top = \&( {\bf x\-I\-S\-R\-Stack}\mbox{[} config\-I\-S\-R\-\_\-\-S\-T\-A\-C\-K\-\_\-\-S\-I\-Z\-E -\/ 7 \mbox{]} )}}\label{MPLAB_2PIC32MZ_2port_8c_a25abfe165b2be913281745c21e8760bd}

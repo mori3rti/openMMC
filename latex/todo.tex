@@ -1,0 +1,9 @@
+
+\begin{DoxyRefList}
+\item[\label{todo__todo000001}%
+\hypertarget{todo__todo000001}{}%
+Global \hyperlink{ipmb_8h_a1c987a2dc56422b57146391280f5e796}{get\-\_\-ipmb\-\_\-addr} (void)]Develop a function to discover the Geographic Address once (checking the G\-A pins) and store it into a global variable, since everytime a I\-P\-M\-I message is built (request or response) the M\-M\-C has to check its own address to fill the rs/rq\-S\-A field, and it takes some time to go through all this function.  
+\item[\label{todo__todo000002}%
+\hypertarget{todo__todo000002}{}%
+Global \hyperlink{ipmi_8c_ab560cc7a3b9a9264296f742d63b1283a}{I\-P\-M\-I\-\_\-\-H\-A\-N\-D\-L\-E\-R} (ipmi\-\_\-get\-\_\-device\-\_\-id, N\-E\-T\-F\-N\-\_\-\-A\-P\-P, I\-P\-M\-I\-\_\-\-G\-E\-T\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-\-C\-M\-D, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$req, \hyperlink{structipmi__msg}{ipmi\-\_\-msg} $\ast$rsp)]\-: several bits of hardcoded information. Organize it so it makes more sense and is easier to modify. 
+\end{DoxyRefList}

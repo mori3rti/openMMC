@@ -1,0 +1,116 @@
+\hypertarget{CodeWarrior_2ColdFire__V2_2port_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.c File Reference}
+\label{CodeWarrior_2ColdFire__V2_2port_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+}
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{CodeWarrior_2ColdFire__V2_2port_8c_a44e54987059c931615e53125b64bb45e}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-V\-E\-C\-T\-O\-R}~( ( \hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} ) 0x4000 )
+\item 
+\#define \hyperlink{CodeWarrior_2ColdFire__V2_2port_8c_a90d9878b0ef16ef9f50817499b1688e5}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R}~( ( \hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} ) 0x2000)
+\item 
+\#define \hyperlink{CodeWarrior_2ColdFire__V2_2port_8c_a798f37b250502b49763c54a56b3aa4b0}{port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}()
+\item 
+\#define \hyperlink{CodeWarrior_2ColdFire__V2_2port_8c_a8d3a167375b5b57944a57df23d45b39e}{port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}()
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$ \hyperlink{CodeWarrior_2ColdFire__V2_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{px\-Port\-Initialise\-Stack} (\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$px\-Top\-Of\-Stack, \hyperlink{projdefs_8h_a24177544ba9c507a9429d6d5761eb487}{Task\-Function\-\_\-t} px\-Code, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters)
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{CodeWarrior_2ColdFire__V2_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{x\-Port\-Start\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{CodeWarrior_2ColdFire__V2_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{v\-Port\-End\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{CodeWarrior_2ColdFire__V2_2port_8c_a2ed3554a3de09a3bd09d396ee081ab69}{v\-Port\-Enter\-Critical} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{CodeWarrior_2ColdFire__V2_2port_8c_aed20ada05b957181a0de042802a82a5b}{v\-Port\-Exit\-Critical} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{CodeWarrior_2ColdFire__V2_2port_8c_ad39f79e3ec80894f2c6b1e5ed132f10f}{v\-Port\-Yield\-Handler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{CodeWarrior_2ColdFire__V2_2port_8c_a44e54987059c931615e53125b64bb45e}{\index{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}!port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-V\-E\-C\-T\-O\-R@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-V\-E\-C\-T\-O\-R}}
+\index{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-V\-E\-C\-T\-O\-R@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-V\-E\-C\-T\-O\-R}!CodeWarrior/ColdFire_V2/port.c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+\subsubsection[{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-V\-E\-C\-T\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-V\-E\-C\-T\-O\-R~( ( {\bf Stack\-Type\-\_\-t} ) 0x4000 )}}\label{CodeWarrior_2ColdFire__V2_2port_8c_a44e54987059c931615e53125b64bb45e}
+\hypertarget{CodeWarrior_2ColdFire__V2_2port_8c_a90d9878b0ef16ef9f50817499b1688e5}{\index{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}!port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R}}
+\index{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R}!CodeWarrior/ColdFire_V2/port.c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+\subsubsection[{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R~( ( {\bf Stack\-Type\-\_\-t} ) 0x2000)}}\label{CodeWarrior_2ColdFire__V2_2port_8c_a90d9878b0ef16ef9f50817499b1688e5}
+\hypertarget{CodeWarrior_2ColdFire__V2_2port_8c_a8d3a167375b5b57944a57df23d45b39e}{\index{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}!port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}}
+\index{port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}!CodeWarrior/ColdFire_V2/port.c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+\subsubsection[{port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)}}\label{CodeWarrior_2ColdFire__V2_2port_8c_a8d3a167375b5b57944a57df23d45b39e}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+move.l      \hyperlink{CCS_2MSP430X_2port_8c_af7b1fc0a36e224b885fb22b9936a03a2}{pxCurrentTCB}, %\hyperlink{MPLAB_2PIC32MX_2ISR__Support_8h_ad8121c31dfb63f3a77342636a7b7ccb7}{a0};        \(\backslash\)
+    move.l      (%\hyperlink{MPLAB_2PIC32MX_2ISR__Support_8h_ad8121c31dfb63f3a77342636a7b7ccb7}{a0}), %\hyperlink{isr__support_8h_a78954c18cde9882760485d3420c872db}{sp};             \(\backslash\)
+    movem.l     (%\hyperlink{isr__support_8h_a78954c18cde9882760485d3420c872db}{sp}), %d0-%fp;           \(\backslash\)
+    lea.l       %\hyperlink{isr__support_8h_a78954c18cde9882760485d3420c872db}{sp}@(60), %\hyperlink{isr__support_8h_a78954c18cde9882760485d3420c872db}{sp};          \(\backslash\)
+    rte
+\end{DoxyCode}
+\hypertarget{CodeWarrior_2ColdFire__V2_2port_8c_a798f37b250502b49763c54a56b3aa4b0}{\index{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}!port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}}
+\index{port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}!CodeWarrior/ColdFire_V2/port.c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+\subsubsection[{port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)}}\label{CodeWarrior_2ColdFire__V2_2port_8c_a798f37b250502b49763c54a56b3aa4b0}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+lea.l       (-60, %\hyperlink{isr__support_8h_a78954c18cde9882760485d3420c872db}{sp}), %\hyperlink{isr__support_8h_a78954c18cde9882760485d3420c872db}{sp};        \(\backslash\)
+    movem.l     %d0-%fp, (%\hyperlink{isr__support_8h_a78954c18cde9882760485d3420c872db}{sp});           \(\backslash\)
+    move.l      \hyperlink{CCS_2MSP430X_2port_8c_af7b1fc0a36e224b885fb22b9936a03a2}{pxCurrentTCB}, %\hyperlink{MPLAB_2PIC32MX_2ISR__Support_8h_ad8121c31dfb63f3a77342636a7b7ccb7}{a0};        \(\backslash\)
+    move.l      %\hyperlink{isr__support_8h_a78954c18cde9882760485d3420c872db}{sp}, (%\hyperlink{MPLAB_2PIC32MX_2ISR__Support_8h_ad8121c31dfb63f3a77342636a7b7ccb7}{a0});
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\hypertarget{CodeWarrior_2ColdFire__V2_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{\index{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}!px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}}
+\index{px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}!CodeWarrior/ColdFire_V2/port.c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+\subsubsection[{px\-Port\-Initialise\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stack\-Type\-\_\-t}$\ast$ px\-Port\-Initialise\-Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\-Type\-\_\-t} $\ast$}]{px\-Top\-Of\-Stack, }
+\item[{{\bf Task\-Function\-\_\-t}}]{px\-Code, }
+\item[{{\bf void} $\ast$}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)}}\label{CodeWarrior_2ColdFire__V2_2port_8c_a474fbbb58ea661a1557f05adc41120c1}
+\hypertarget{CodeWarrior_2ColdFire__V2_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{\index{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}!v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}}
+\index{v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}!CodeWarrior/ColdFire_V2/port.c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+\subsubsection[{v\-Port\-End\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-End\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{CodeWarrior_2ColdFire__V2_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}
+\hypertarget{CodeWarrior_2ColdFire__V2_2port_8c_a2ed3554a3de09a3bd09d396ee081ab69}{\index{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}!v\-Port\-Enter\-Critical@{v\-Port\-Enter\-Critical}}
+\index{v\-Port\-Enter\-Critical@{v\-Port\-Enter\-Critical}!CodeWarrior/ColdFire_V2/port.c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+\subsubsection[{v\-Port\-Enter\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Enter\-Critical (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{CodeWarrior_2ColdFire__V2_2port_8c_a2ed3554a3de09a3bd09d396ee081ab69}
+\hypertarget{CodeWarrior_2ColdFire__V2_2port_8c_aed20ada05b957181a0de042802a82a5b}{\index{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}!v\-Port\-Exit\-Critical@{v\-Port\-Exit\-Critical}}
+\index{v\-Port\-Exit\-Critical@{v\-Port\-Exit\-Critical}!CodeWarrior/ColdFire_V2/port.c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+\subsubsection[{v\-Port\-Exit\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Exit\-Critical (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{CodeWarrior_2ColdFire__V2_2port_8c_aed20ada05b957181a0de042802a82a5b}
+\hypertarget{CodeWarrior_2ColdFire__V2_2port_8c_ad39f79e3ec80894f2c6b1e5ed132f10f}{\index{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}!v\-Port\-Yield\-Handler@{v\-Port\-Yield\-Handler}}
+\index{v\-Port\-Yield\-Handler@{v\-Port\-Yield\-Handler}!CodeWarrior/ColdFire_V2/port.c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+\subsubsection[{v\-Port\-Yield\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Yield\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{CodeWarrior_2ColdFire__V2_2port_8c_ad39f79e3ec80894f2c6b1e5ed132f10f}
+\hypertarget{CodeWarrior_2ColdFire__V2_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{\index{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}!x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}}
+\index{x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}!CodeWarrior/ColdFire_V2/port.c@{Code\-Warrior/\-Cold\-Fire\-\_\-\-V2/port.\-c}}
+\subsubsection[{x\-Port\-Start\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} x\-Port\-Start\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{CodeWarrior_2ColdFire__V2_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}

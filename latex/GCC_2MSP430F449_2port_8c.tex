@@ -1,0 +1,168 @@
+\hypertarget{GCC_2MSP430F449_2port_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-M\-S\-P430\-F449/port.c File Reference}
+\label{GCC_2MSP430F449_2port_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-M\-S\-P430\-F449/port.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-M\-S\-P430\-F449/port.\-c}}
+}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$signal.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{GCC_2MSP430F449_2port_8c_ac539a316edadf394a897fb205ebee7ab}{port\-A\-C\-L\-K\-\_\-\-F\-R\-E\-Q\-U\-E\-N\-C\-Y\-\_\-\-H\-Z}~( ( \hyperlink{Flsh186_2prtmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{Tick\-Type\-\_\-t} ) 32768 )
+\item 
+\#define \hyperlink{GCC_2MSP430F449_2port_8c_ac9ed907cf162fb95081e68f847bc6e43}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}~( ( uint16\-\_\-t ) 10 )
+\item 
+\#define \hyperlink{GCC_2MSP430F449_2port_8c_ad05c7a8ee45c5190627f9a49c95e7538}{port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}~( ( \hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} ) 0x08 )
+\item 
+\#define \hyperlink{GCC_2MSP430F449_2port_8c_a798f37b250502b49763c54a56b3aa4b0}{port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}()
+\item 
+\#define \hyperlink{GCC_2MSP430F449_2port_8c_a8d3a167375b5b57944a57df23d45b39e}{port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}()
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2MSP430F449_2port_8c_af5b0f7452857787ed70ce2856ca74c4b}{T\-C\-B\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$ \hyperlink{GCC_2MSP430F449_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{px\-Port\-Initialise\-Stack} (\hyperlink{Flsh186_2prtmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\-Type\-\_\-t} $\ast$px\-Top\-Of\-Stack, \hyperlink{projdefs_8h_a24177544ba9c507a9429d6d5761eb487}{Task\-Function\-\_\-t} px\-Code, \hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} $\ast$pv\-Parameters)
+\item 
+\hyperlink{Flsh186_2prtmacro_8h_ac826f39420fcf5b32ba7123a1d243f99}{Base\-Type\-\_\-t} \hyperlink{GCC_2MSP430F449_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{x\-Port\-Start\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2MSP430F449_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{v\-Port\-End\-Scheduler} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void} \hyperlink{GCC_2MSP430F449_2port_8c_add01c927fb689f7ec170e42d47d27927}{v\-Port\-Yield} (\hyperlink{Paradigm_2Tern__EE_2small_2portmacro_8h_a14d32f8130d3c0b212cfc751730b5b49}{void})
+\item 
+\hyperlink{GCC_2MSP430F449_2port_8c_ae0992854bdba99f7b163894433c32aef}{interrupt} (T\-I\-M\-E\-R\-A0\-\_\-\-V\-E\-C\-T\-O\-R)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile \hyperlink{BCC_216BitDOS_2common_2portasm_8h_af5b0f7452857787ed70ce2856ca74c4b}{T\-C\-B\-\_\-t} $\ast$volatile \hyperlink{GCC_2MSP430F449_2port_8c_af7b1fc0a36e224b885fb22b9936a03a2}{px\-Current\-T\-C\-B}
+\item 
+volatile uint16\-\_\-t \hyperlink{GCC_2MSP430F449_2port_8c_a72024c36cef5744b86e354381b5d3dcd}{us\-Critical\-Nesting} = \hyperlink{Rowley_2MSP430F449_2port_8c_ac9ed907cf162fb95081e68f847bc6e43}{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{GCC_2MSP430F449_2port_8c_ac539a316edadf394a897fb205ebee7ab}{\index{G\-C\-C/\-M\-S\-P430\-F449/port.\-c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}!port\-A\-C\-L\-K\-\_\-\-F\-R\-E\-Q\-U\-E\-N\-C\-Y\-\_\-\-H\-Z@{port\-A\-C\-L\-K\-\_\-\-F\-R\-E\-Q\-U\-E\-N\-C\-Y\-\_\-\-H\-Z}}
+\index{port\-A\-C\-L\-K\-\_\-\-F\-R\-E\-Q\-U\-E\-N\-C\-Y\-\_\-\-H\-Z@{port\-A\-C\-L\-K\-\_\-\-F\-R\-E\-Q\-U\-E\-N\-C\-Y\-\_\-\-H\-Z}!GCC/MSP430F449/port.c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}}
+\subsubsection[{port\-A\-C\-L\-K\-\_\-\-F\-R\-E\-Q\-U\-E\-N\-C\-Y\-\_\-\-H\-Z}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-A\-C\-L\-K\-\_\-\-F\-R\-E\-Q\-U\-E\-N\-C\-Y\-\_\-\-H\-Z~( ( {\bf Tick\-Type\-\_\-t} ) 32768 )}}\label{GCC_2MSP430F449_2port_8c_ac539a316edadf394a897fb205ebee7ab}
+\hypertarget{GCC_2MSP430F449_2port_8c_ad05c7a8ee45c5190627f9a49c95e7538}{\index{G\-C\-C/\-M\-S\-P430\-F449/port.\-c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}!port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D@{port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D@{port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}!GCC/MSP430F449/port.c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}}
+\subsubsection[{port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-F\-L\-A\-G\-S\-\_\-\-I\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D~( ( {\bf Stack\-Type\-\_\-t} ) 0x08 )}}\label{GCC_2MSP430F449_2port_8c_ad05c7a8ee45c5190627f9a49c95e7538}
+\hypertarget{GCC_2MSP430F449_2port_8c_ac9ed907cf162fb95081e68f847bc6e43}{\index{G\-C\-C/\-M\-S\-P430\-F449/port.\-c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}!port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}}
+\index{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G@{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}!GCC/MSP430F449/port.c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}}
+\subsubsection[{port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G~( ( uint16\-\_\-t ) 10 )}}\label{GCC_2MSP430F449_2port_8c_ac9ed907cf162fb95081e68f847bc6e43}
+\hypertarget{GCC_2MSP430F449_2port_8c_a8d3a167375b5b57944a57df23d45b39e}{\index{G\-C\-C/\-M\-S\-P430\-F449/port.\-c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}!port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}}
+\index{port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}!GCC/MSP430F449/port.c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}}
+\subsubsection[{port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-R\-E\-S\-T\-O\-R\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MSP430F449_2port_8c_a8d3a167375b5b57944a57df23d45b39e}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{asm} \textcolor{keyword}{volatile} (  \textcolor{stringliteral}{"mov.w  pxCurrentTCB, r12       \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"mov.w  @r12, r1                \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"pop    r15                     \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"mov.w  r15, usCriticalNesting  \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"pop    r15                     \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"pop    r14                     \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"pop    r13                     \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"pop    r12                     \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"pop    r11                     \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"pop    r10                     \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"pop    r9                      \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"pop    r8                      \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"pop    r7                      \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"pop    r6                      \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"pop    r5                      \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"pop    r4                      \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"bic    #(0xf0),0(r1)           \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"reti                           \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                );
+\end{DoxyCode}
+\hypertarget{GCC_2MSP430F449_2port_8c_a798f37b250502b49763c54a56b3aa4b0}{\index{G\-C\-C/\-M\-S\-P430\-F449/port.\-c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}!port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}}
+\index{port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T@{port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}!GCC/MSP430F449/port.c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}}
+\subsubsection[{port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define port\-S\-A\-V\-E\-\_\-\-C\-O\-N\-T\-E\-X\-T(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf void}}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MSP430F449_2port_8c_a798f37b250502b49763c54a56b3aa4b0}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{asm} \textcolor{keyword}{volatile} (  \textcolor{stringliteral}{"push   r4                      \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"push   r5                      \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"push   r6                      \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"push   r7                      \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"push   r8                      \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"push   r9                      \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"push   r10                     \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"push   r11                     \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"push   r12                     \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"push   r13                     \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"push   r14                     \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"push   r15                     \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"mov.w  usCriticalNesting, r14  \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"push   r14                     \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"mov.w  pxCurrentTCB, r12       \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                    \textcolor{stringliteral}{"mov.w  r1, @r12                \(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+                );
+\end{DoxyCode}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{GCC_2MSP430F449_2port_8c_af5b0f7452857787ed70ce2856ca74c4b}{\index{G\-C\-C/\-M\-S\-P430\-F449/port.\-c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}!T\-C\-B\-\_\-t@{T\-C\-B\-\_\-t}}
+\index{T\-C\-B\-\_\-t@{T\-C\-B\-\_\-t}!GCC/MSP430F449/port.c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}}
+\subsubsection[{T\-C\-B\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void} {\bf T\-C\-B\-\_\-t}}}\label{GCC_2MSP430F449_2port_8c_af5b0f7452857787ed70ce2856ca74c4b}
+
+
+\subsection{Function Documentation}
+\hypertarget{GCC_2MSP430F449_2port_8c_ae0992854bdba99f7b163894433c32aef}{\index{G\-C\-C/\-M\-S\-P430\-F449/port.\-c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}!interrupt@{interrupt}}
+\index{interrupt@{interrupt}!GCC/MSP430F449/port.c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}}
+\subsubsection[{interrupt}]{\setlength{\rightskip}{0pt plus 5cm}interrupt (
+\begin{DoxyParamCaption}
+\item[{T\-I\-M\-E\-R\-A0\-\_\-\-V\-E\-C\-T\-O\-R}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MSP430F449_2port_8c_ae0992854bdba99f7b163894433c32aef}
+\hypertarget{GCC_2MSP430F449_2port_8c_a474fbbb58ea661a1557f05adc41120c1}{\index{G\-C\-C/\-M\-S\-P430\-F449/port.\-c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}!px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}}
+\index{px\-Port\-Initialise\-Stack@{px\-Port\-Initialise\-Stack}!GCC/MSP430F449/port.c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}}
+\subsubsection[{px\-Port\-Initialise\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stack\-Type\-\_\-t}$\ast$ px\-Port\-Initialise\-Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\-Type\-\_\-t} $\ast$}]{px\-Top\-Of\-Stack, }
+\item[{{\bf Task\-Function\-\_\-t}}]{px\-Code, }
+\item[{{\bf void} $\ast$}]{pv\-Parameters}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MSP430F449_2port_8c_a474fbbb58ea661a1557f05adc41120c1}
+\hypertarget{GCC_2MSP430F449_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{\index{G\-C\-C/\-M\-S\-P430\-F449/port.\-c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}!v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}}
+\index{v\-Port\-End\-Scheduler@{v\-Port\-End\-Scheduler}!GCC/MSP430F449/port.c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}}
+\subsubsection[{v\-Port\-End\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-End\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MSP430F449_2port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}
+\hypertarget{GCC_2MSP430F449_2port_8c_add01c927fb689f7ec170e42d47d27927}{\index{G\-C\-C/\-M\-S\-P430\-F449/port.\-c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}!v\-Port\-Yield@{v\-Port\-Yield}}
+\index{v\-Port\-Yield@{v\-Port\-Yield}!GCC/MSP430F449/port.c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}}
+\subsubsection[{v\-Port\-Yield}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} v\-Port\-Yield (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MSP430F449_2port_8c_add01c927fb689f7ec170e42d47d27927}
+\hypertarget{GCC_2MSP430F449_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}{\index{G\-C\-C/\-M\-S\-P430\-F449/port.\-c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}!x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}}
+\index{x\-Port\-Start\-Scheduler@{x\-Port\-Start\-Scheduler}!GCC/MSP430F449/port.c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}}
+\subsubsection[{x\-Port\-Start\-Scheduler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\-Type\-\_\-t} x\-Port\-Start\-Scheduler (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{GCC_2MSP430F449_2port_8c_ade5a8c6666e7413a0355cc252029c5c6}
+
+
+\subsection{Variable Documentation}
+\hypertarget{GCC_2MSP430F449_2port_8c_af7b1fc0a36e224b885fb22b9936a03a2}{\index{G\-C\-C/\-M\-S\-P430\-F449/port.\-c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}!px\-Current\-T\-C\-B@{px\-Current\-T\-C\-B}}
+\index{px\-Current\-T\-C\-B@{px\-Current\-T\-C\-B}!GCC/MSP430F449/port.c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}}
+\subsubsection[{px\-Current\-T\-C\-B}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf T\-C\-B\-\_\-t}$\ast$ volatile px\-Current\-T\-C\-B}}\label{GCC_2MSP430F449_2port_8c_af7b1fc0a36e224b885fb22b9936a03a2}
+\hypertarget{GCC_2MSP430F449_2port_8c_a72024c36cef5744b86e354381b5d3dcd}{\index{G\-C\-C/\-M\-S\-P430\-F449/port.\-c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}!us\-Critical\-Nesting@{us\-Critical\-Nesting}}
+\index{us\-Critical\-Nesting@{us\-Critical\-Nesting}!GCC/MSP430F449/port.c@{G\-C\-C/\-M\-S\-P430\-F449/port.\-c}}
+\subsubsection[{us\-Critical\-Nesting}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint16\-\_\-t us\-Critical\-Nesting = {\bf port\-I\-N\-I\-T\-I\-A\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-N\-E\-S\-T\-I\-N\-G}}}\label{GCC_2MSP430F449_2port_8c_a72024c36cef5744b86e354381b5d3dcd}

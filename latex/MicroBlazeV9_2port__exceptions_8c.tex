@@ -1,0 +1,93 @@
+\hypertarget{MicroBlazeV9_2port__exceptions_8c}{\section{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-Micro\-Blaze\-V9/port\-\_\-exceptions.c File Reference}
+\label{MicroBlazeV9_2port__exceptions_8c}\index{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-Micro\-Blaze\-V9/port\-\_\-exceptions.\-c@{/home/henrique/rep/open\-M\-M\-C/\-Free\-R\-T\-O\-S/portable/\-G\-C\-C/\-Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}}
+}
+{\ttfamily \#include \char`\"{}Free\-R\-T\-O\-S.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}task.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$microblaze\-\_\-exceptions\-\_\-i.\-h$>$}\\*
+{\ttfamily \#include $<$microblaze\-\_\-exceptions\-\_\-g.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{MicroBlazeV9_2port__exceptions_8c_a67b0d2d6648a89e6fc631476b003dce2}{portex\-R3\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}~4
+\item 
+\#define \hyperlink{MicroBlazeV9_2port__exceptions_8c_af021fb14debb1514c6c130a024fd959a}{portex\-R4\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}~5
+\item 
+\#define \hyperlink{MicroBlazeV9_2port__exceptions_8c_ab2032d33da00217604f69e085a42a1d8}{portex\-R5\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}~6
+\item 
+\#define \hyperlink{MicroBlazeV9_2port__exceptions_8c_a439fb3e073392e64e8656f4cb3f633f5}{portex\-R6\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}~7
+\item 
+\#define \hyperlink{MicroBlazeV9_2port__exceptions_8c_af7efce7d7d559eadfc4b4c7bf35caa20}{portex\-R7\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}~8
+\item 
+\#define \hyperlink{MicroBlazeV9_2port__exceptions_8c_acaf811831589f3af5b5f9761516e34b0}{portex\-R8\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}~9
+\item 
+\#define \hyperlink{MicroBlazeV9_2port__exceptions_8c_acf9894253c97cd0e7e954a63a7211438}{portex\-R9\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}~10
+\item 
+\#define \hyperlink{MicroBlazeV9_2port__exceptions_8c_a7cf672aba1e83a11712e416f7b5c90af}{portex\-R10\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}~11
+\item 
+\#define \hyperlink{MicroBlazeV9_2port__exceptions_8c_a3525147303a6fc5b6d876a112bc052d6}{portex\-R11\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}~12
+\item 
+\#define \hyperlink{MicroBlazeV9_2port__exceptions_8c_abeee247c241a8c0fc335e5124c1a970e}{portex\-R12\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}~13
+\item 
+\#define \hyperlink{MicroBlazeV9_2port__exceptions_8c_aa3bea181b2055a918eb47b12c3b2dc2a}{portex\-R15\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}~16
+\item 
+\#define \hyperlink{MicroBlazeV9_2port__exceptions_8c_a2355520ad19feb3637ff45f0d07be3d5}{portex\-R18\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}~19
+\item 
+\#define \hyperlink{MicroBlazeV9_2port__exceptions_8c_a39e410810f98f970bb9ecf9fbbdd77ef}{portex\-M\-S\-R\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}~20
+\item 
+\#define \hyperlink{MicroBlazeV9_2port__exceptions_8c_a800877d751d4d8d307cdb1a43df33a2e}{portex\-R19\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}~-\/1
+\item 
+\#define \hyperlink{MicroBlazeV9_2port__exceptions_8c_af8973c49ce70c23c1a69e7b4e9255902}{portex\-A\-S\-M\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-S\-T\-A\-C\-K\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E}~84\-U\-L
+\item 
+\#define \hyperlink{MicroBlazeV9_2port__exceptions_8c_ad1dec687a4fa584f7eca76c23c89bd58}{portex\-I\-N\-S\-T\-R\-U\-C\-T\-I\-O\-N\-\_\-\-S\-I\-Z\-E}~4
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{MicroBlazeV9_2port__exceptions_8c_af8973c49ce70c23c1a69e7b4e9255902}{\index{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}!portex\-A\-S\-M\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-S\-T\-A\-C\-K\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E@{portex\-A\-S\-M\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-S\-T\-A\-C\-K\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E}}
+\index{portex\-A\-S\-M\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-S\-T\-A\-C\-K\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E@{portex\-A\-S\-M\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-S\-T\-A\-C\-K\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E}!MicroBlazeV9/port_exceptions.c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}}
+\subsubsection[{portex\-A\-S\-M\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-S\-T\-A\-C\-K\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define portex\-A\-S\-M\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-S\-T\-A\-C\-K\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E~84\-U\-L}}\label{MicroBlazeV9_2port__exceptions_8c_af8973c49ce70c23c1a69e7b4e9255902}
+\hypertarget{MicroBlazeV9_2port__exceptions_8c_ad1dec687a4fa584f7eca76c23c89bd58}{\index{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}!portex\-I\-N\-S\-T\-R\-U\-C\-T\-I\-O\-N\-\_\-\-S\-I\-Z\-E@{portex\-I\-N\-S\-T\-R\-U\-C\-T\-I\-O\-N\-\_\-\-S\-I\-Z\-E}}
+\index{portex\-I\-N\-S\-T\-R\-U\-C\-T\-I\-O\-N\-\_\-\-S\-I\-Z\-E@{portex\-I\-N\-S\-T\-R\-U\-C\-T\-I\-O\-N\-\_\-\-S\-I\-Z\-E}!MicroBlazeV9/port_exceptions.c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}}
+\subsubsection[{portex\-I\-N\-S\-T\-R\-U\-C\-T\-I\-O\-N\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define portex\-I\-N\-S\-T\-R\-U\-C\-T\-I\-O\-N\-\_\-\-S\-I\-Z\-E~4}}\label{MicroBlazeV9_2port__exceptions_8c_ad1dec687a4fa584f7eca76c23c89bd58}
+\hypertarget{MicroBlazeV9_2port__exceptions_8c_a39e410810f98f970bb9ecf9fbbdd77ef}{\index{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}!portex\-M\-S\-R\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-M\-S\-R\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}}
+\index{portex\-M\-S\-R\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-M\-S\-R\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}!MicroBlazeV9/port_exceptions.c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}}
+\subsubsection[{portex\-M\-S\-R\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define portex\-M\-S\-R\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T~20}}\label{MicroBlazeV9_2port__exceptions_8c_a39e410810f98f970bb9ecf9fbbdd77ef}
+\hypertarget{MicroBlazeV9_2port__exceptions_8c_a7cf672aba1e83a11712e416f7b5c90af}{\index{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}!portex\-R10\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R10\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}}
+\index{portex\-R10\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R10\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}!MicroBlazeV9/port_exceptions.c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}}
+\subsubsection[{portex\-R10\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define portex\-R10\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T~11}}\label{MicroBlazeV9_2port__exceptions_8c_a7cf672aba1e83a11712e416f7b5c90af}
+\hypertarget{MicroBlazeV9_2port__exceptions_8c_a3525147303a6fc5b6d876a112bc052d6}{\index{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}!portex\-R11\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R11\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}}
+\index{portex\-R11\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R11\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}!MicroBlazeV9/port_exceptions.c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}}
+\subsubsection[{portex\-R11\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define portex\-R11\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T~12}}\label{MicroBlazeV9_2port__exceptions_8c_a3525147303a6fc5b6d876a112bc052d6}
+\hypertarget{MicroBlazeV9_2port__exceptions_8c_abeee247c241a8c0fc335e5124c1a970e}{\index{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}!portex\-R12\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R12\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}}
+\index{portex\-R12\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R12\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}!MicroBlazeV9/port_exceptions.c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}}
+\subsubsection[{portex\-R12\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define portex\-R12\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T~13}}\label{MicroBlazeV9_2port__exceptions_8c_abeee247c241a8c0fc335e5124c1a970e}
+\hypertarget{MicroBlazeV9_2port__exceptions_8c_aa3bea181b2055a918eb47b12c3b2dc2a}{\index{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}!portex\-R15\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R15\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}}
+\index{portex\-R15\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R15\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}!MicroBlazeV9/port_exceptions.c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}}
+\subsubsection[{portex\-R15\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define portex\-R15\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T~16}}\label{MicroBlazeV9_2port__exceptions_8c_aa3bea181b2055a918eb47b12c3b2dc2a}
+\hypertarget{MicroBlazeV9_2port__exceptions_8c_a2355520ad19feb3637ff45f0d07be3d5}{\index{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}!portex\-R18\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R18\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}}
+\index{portex\-R18\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R18\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}!MicroBlazeV9/port_exceptions.c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}}
+\subsubsection[{portex\-R18\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define portex\-R18\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T~19}}\label{MicroBlazeV9_2port__exceptions_8c_a2355520ad19feb3637ff45f0d07be3d5}
+\hypertarget{MicroBlazeV9_2port__exceptions_8c_a800877d751d4d8d307cdb1a43df33a2e}{\index{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}!portex\-R19\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R19\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}}
+\index{portex\-R19\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R19\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}!MicroBlazeV9/port_exceptions.c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}}
+\subsubsection[{portex\-R19\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define portex\-R19\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T~-\/1}}\label{MicroBlazeV9_2port__exceptions_8c_a800877d751d4d8d307cdb1a43df33a2e}
+\hypertarget{MicroBlazeV9_2port__exceptions_8c_a67b0d2d6648a89e6fc631476b003dce2}{\index{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}!portex\-R3\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R3\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}}
+\index{portex\-R3\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R3\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}!MicroBlazeV9/port_exceptions.c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}}
+\subsubsection[{portex\-R3\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define portex\-R3\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T~4}}\label{MicroBlazeV9_2port__exceptions_8c_a67b0d2d6648a89e6fc631476b003dce2}
+\hypertarget{MicroBlazeV9_2port__exceptions_8c_af021fb14debb1514c6c130a024fd959a}{\index{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}!portex\-R4\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R4\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}}
+\index{portex\-R4\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R4\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}!MicroBlazeV9/port_exceptions.c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}}
+\subsubsection[{portex\-R4\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define portex\-R4\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T~5}}\label{MicroBlazeV9_2port__exceptions_8c_af021fb14debb1514c6c130a024fd959a}
+\hypertarget{MicroBlazeV9_2port__exceptions_8c_ab2032d33da00217604f69e085a42a1d8}{\index{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}!portex\-R5\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R5\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}}
+\index{portex\-R5\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R5\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}!MicroBlazeV9/port_exceptions.c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}}
+\subsubsection[{portex\-R5\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define portex\-R5\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T~6}}\label{MicroBlazeV9_2port__exceptions_8c_ab2032d33da00217604f69e085a42a1d8}
+\hypertarget{MicroBlazeV9_2port__exceptions_8c_a439fb3e073392e64e8656f4cb3f633f5}{\index{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}!portex\-R6\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R6\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}}
+\index{portex\-R6\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R6\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}!MicroBlazeV9/port_exceptions.c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}}
+\subsubsection[{portex\-R6\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define portex\-R6\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T~7}}\label{MicroBlazeV9_2port__exceptions_8c_a439fb3e073392e64e8656f4cb3f633f5}
+\hypertarget{MicroBlazeV9_2port__exceptions_8c_af7efce7d7d559eadfc4b4c7bf35caa20}{\index{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}!portex\-R7\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R7\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}}
+\index{portex\-R7\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R7\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}!MicroBlazeV9/port_exceptions.c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}}
+\subsubsection[{portex\-R7\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define portex\-R7\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T~8}}\label{MicroBlazeV9_2port__exceptions_8c_af7efce7d7d559eadfc4b4c7bf35caa20}
+\hypertarget{MicroBlazeV9_2port__exceptions_8c_acaf811831589f3af5b5f9761516e34b0}{\index{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}!portex\-R8\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R8\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}}
+\index{portex\-R8\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R8\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}!MicroBlazeV9/port_exceptions.c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}}
+\subsubsection[{portex\-R8\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define portex\-R8\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T~9}}\label{MicroBlazeV9_2port__exceptions_8c_acaf811831589f3af5b5f9761516e34b0}
+\hypertarget{MicroBlazeV9_2port__exceptions_8c_acf9894253c97cd0e7e954a63a7211438}{\index{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}!portex\-R9\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R9\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}}
+\index{portex\-R9\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T@{portex\-R9\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}!MicroBlazeV9/port_exceptions.c@{Micro\-Blaze\-V9/port\-\_\-exceptions.\-c}}
+\subsubsection[{portex\-R9\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define portex\-R9\-\_\-\-S\-T\-A\-C\-K\-\_\-\-O\-F\-F\-S\-E\-T~10}}\label{MicroBlazeV9_2port__exceptions_8c_acf9894253c97cd0e7e954a63a7211438}
