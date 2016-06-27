@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['dac_5fvadj_5fframe_5fsize',['DAC_VADJ_FRAME_SIZE',['../ad84xx_8c.html#a4b7be65b422174069951feec14bfa4c5',1,'ad84xx.c']]],
+  ['dac_5fvadj_5fspi',['DAC_VADJ_SPI',['../v3__0_2pin__mapping_8h.html#a00c7d919472183f1c4b244ae180e2f34',1,'DAC_VADJ_SPI():&#160;pin_mapping.h'],['../v3__1_2pin__mapping_8h.html#a00c7d919472183f1c4b244ae180e2f34',1,'DAC_VADJ_SPI():&#160;pin_mapping.h'],['../timing_2pin__mapping_8h.html#a00c7d919472183f1c4b244ae180e2f34',1,'DAC_VADJ_SPI():&#160;pin_mapping.h']]],
+  ['dac_5fvadj_5fspi_5fbitrate',['DAC_VADJ_SPI_BITRATE',['../ad84xx_8c.html#ac3e9417818eb10acc9480e2cca9efd41',1,'ad84xx.c']]],
+  ['dcdc_5ftemp_5fdevid',['DCDC_TEMP_DEVID',['../fpga__spi_8h.html#a2afd8ae0fd62ecd58f35ca719264d70a',1,'fpga_spi.h']]],
+  ['deassertion_5fevent',['DEASSERTION_EVENT',['../sdr_8h.html#a133a88c8d6bd6b884e0afd3a289a19cb',1,'sdr.h']]],
+  ['debounce_5ftime',['DEBOUNCE_TIME',['../hotswap_8h.html#a00aef9e8dd001a49f8717031d84b2c6c',1,'hotswap.h']]],
+  ['debug_5fch',['DEBUG_CH',['../uart__debug_8h.html#a35894b5725005bfb932d137a5af2327f',1,'uart_debug.h']]],
+  ['debug_5fmsg',['DEBUG_MSG',['../uart__debug_8h.html#ae0188c06a0b9870c90e05292f629c1d1',1,'uart_debug.h']]],
+  ['dec',['DEC',['../CMakeCCompilerId_8c.html#ad1280362da42492bbc11aa78cbf776ad',1,'DEC():&#160;CMakeCCompilerId.c'],['../CMakeCXXCompilerId_8cpp.html#ad1280362da42492bbc11aa78cbf776ad',1,'DEC():&#160;CMakeCXXCompilerId.cpp']]],
+  ['demcr_5ftrcena',['DEMCR_TRCENA',['../trcHardwarePort_8h.html#ac682309ccff8a7161e608f83d2ce8d7b',1,'trcHardwarePort.h']]],
+  ['direct_5fclock_5fconnection',['DIRECT_CLOCK_CONNECTION',['../fru__editor_8h.html#a3719f7fb6f1e4c9735ee213359796ead',1,'fru_editor.h']]],
+  ['direction_5fdecrementing',['DIRECTION_DECREMENTING',['../trcHardwarePort_8h.html#a5b4ef04472bb3f944ad48e4b78650c56',1,'trcHardwarePort.h']]],
+  ['direction_5fincrementing',['DIRECTION_INCREMENTING',['../trcHardwarePort_8h.html#a21f7f415caa76d8dbd38e75c0d30f1fa',1,'trcHardwarePort.h']]],
+  ['dwt_5fctrl_5fcyccntena',['DWT_CTRL_CYCCNTENA',['../trcHardwarePort_8h.html#a68dd9864bb23c0499a18186f88dbe429',1,'trcHardwarePort.h']]],
+  ['dwt_5fctrl_5fexcevtena',['DWT_CTRL_EXCEVTENA',['../trcHardwarePort_8h.html#a4226019de5570e73181377a7d5294baf',1,'trcHardwarePort.h']]],
+  ['dwt_5fctrl_5fnocyccnt',['DWT_CTRL_NOCYCCNT',['../trcHardwarePort_8h.html#ac9c90652f7e095f19a58b212ecbb7247',1,'trcHardwarePort.h']]],
+  ['dwt_5fctrl_5fnoprfcnt',['DWT_CTRL_NOPRFCNT',['../trcHardwarePort_8h.html#a115260aff62b9a5710695383ec1c0298',1,'trcHardwarePort.h']]]
+];

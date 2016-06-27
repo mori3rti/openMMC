@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$lpc17__hpm_8h.html" title="Firmware update functions (HPM.1)" alt="" coords="160,83,256,112"/>
+<area shape="rect" id="node9" href="$ipmi_8h.html" title="ipmi.h" alt="" coords="355,83,411,112"/>
+<area shape="rect" id="node24" href="$boot_8h.html" title="boot.h" alt="" coords="435,83,493,112"/>
+<area shape="rect" id="node11" href="$ipmb_8h.html" title="Definitions used in IPMB Layer." alt="" coords="351,237,412,267"/>
+<area shape="rect" id="node21" href="$sdr_8h.html" title="sdr.h" alt="" coords="388,160,439,189"/>
+</map>

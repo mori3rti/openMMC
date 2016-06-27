@@ -1,0 +1,26 @@
+var sdr_8c =
+[
+    [ "check_sensor_event", "sdr_8c.html#a9a66580cf2e3e714398c0b4759a5f0e8", null ],
+    [ "find_sensor_by_id", "sdr_8c.html#a2a9da1aafcb4ef730ec322b6267af292", null ],
+    [ "find_sensor_by_sdr", "sdr_8c.html#a4b25a177fdd40cf9511b2ea5b352424b", null ],
+    [ "IPMI_HANDLER", "sdr_8c.html#a2ae009865e09417932515b866f23c7fa", null ],
+    [ "IPMI_HANDLER", "sdr_8c.html#a109121cb9239a6aacc1963b2f5c7d2b5", null ],
+    [ "IPMI_HANDLER", "sdr_8c.html#a9fa5c04f48f340bb31b8e7f404d42a8d", null ],
+    [ "IPMI_HANDLER", "sdr_8c.html#abb5ee54d052c884997123f7c15820fdf", null ],
+    [ "IPMI_HANDLER", "sdr_8c.html#ac0320510995fc494e7d33adf4c94c1dc", null ],
+    [ "IPMI_HANDLER", "sdr_8c.html#af1900c87582a7e2fcf2c6ea7c022c9fc", null ],
+    [ "sdr_get_size_by_entry", "sdr_8c.html#a0b05f9a10c5abf6ae0006160dac9246f", null ],
+    [ "sdr_get_size_by_type", "sdr_8c.html#ac8d1085abe88d21e4a0df14aa0312a8b", null ],
+    [ "sdr_init", "sdr_8c.html#a537d6c311893d2f5abba21e8380854d9", null ],
+    [ "sdr_insert_entry", "sdr_8c.html#a95ea266b13fde16bad887385ebb29ca2", null ],
+    [ "sdr_pop", "sdr_8c.html#a80653f80d7ca91dce6b3d636dc5ba0f5", null ],
+    [ "sdr_remove_entry", "sdr_8c.html#a261b8f6d8d43a4324db44793f77387cf", null ],
+    [ "sensor_init", "sdr_8c.html#a8ff671f56fe6749e5d35c8064e80a51e", null ],
+    [ "event_receiver_addr", "sdr_8c.html#a434bb8b3749fe42c96712daa8588ea37", null ],
+    [ "event_receiver_lun", "sdr_8c.html#aa9fb3874bd82c8aabb9bde5d7ad73b0d", null ],
+    [ "reservationID", "sdr_8c.html#a28385ad24f85d718aaf2c2acb5288a8d", null ],
+    [ "SDR0", "sdr_8c.html#a417522cd01f7df1d1381978e6f4e0e62", null ],
+    [ "sdr_change_count", "sdr_8c.html#a146d84ecdd44611bd7d0d153b5cc7c87", null ],
+    [ "sdr_count", "sdr_8c.html#a8f6eb4c31da86d6a1eb8d350d1f90e9e", null ],
+    [ "SDR_RTM_DEV_LOCATOR", "sdr_8c.html#aa7bb04707e198d37abda1e7d676e9db1", null ]
+];

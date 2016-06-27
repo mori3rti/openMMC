@@ -1,0 +1,24 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$sdr_8h.html" title="sdr.h" alt="" coords="372,237,423,267"/>
+<area shape="rect" id="node15" href="$utils_8h.html" title="General utilities functions." alt="" coords="232,160,288,189"/>
+<area shape="rect" id="node17" href="$v3__0_2i2c__mapping_8h.html" title="i2c_mapping.h" alt="" coords="96,83,203,112"/>
+<area shape="rect" id="node27" href="$sensors_8h.html" title="sensors.h" alt="" coords="533,83,611,112"/>
+<area shape="rect" id="node86" href="$fpga__spi_8h.html" title="fpga_spi.h" alt="" coords="277,83,360,112"/>
+<area shape="rect" id="node5" href="$ipmb_8h.html" title="Definitions used in IPMB Layer." alt="" coords="367,315,428,344"/>
+<area shape="rect" id="node19" href="$i2c_8h.html" title="i2c.h" alt="" coords="124,315,175,344"/>
+<area shape="rect" id="node29" href="$ina220_8h.html" title="Definitions for INA220 Current/Voltage/Power Sensor." alt="" coords="736,160,805,189"/>
+<area shape="rect" id="node79" href="$hotswap_8h.html" title="hotswap.h" alt="" coords="435,160,517,189"/>
+<area shape="rect" id="node82" href="$lm75_8h.html" title="Definitions for LM75 I2C Temperature Sensor." alt="" coords="541,160,603,189"/>
+<area shape="rect" id="node84" href="$max6642_8h.html" title="Definitions for MAX6642 I2C Temperature Sensor." alt="" coords="627,160,712,189"/>
+<area shape="rect" id="node32" href="$port_8h.html" title="Port layer (includes all portable functions headers)" alt="" coords="1228,237,1281,267"/>
+<area shape="rect" id="node36" href="$lpc17__gpio_8h.html" title="lpc17_gpio.h" alt="" coords="1028,315,1121,344"/>
+<area shape="rect" id="node40" href="$lpc17__i2c_8h.html" title="I2C driver for LPC17xx." alt="" coords="865,315,953,344"/>
+<area shape="rect" id="node42" href="$lpc17__ssp_8h.html" title="lpc17_ssp.h" alt="" coords="751,315,841,344"/>
+<area shape="rect" id="node49" href="$lpc17__spi_8h.html" title="Legacy SPI driver definitions for LPC17xx." alt="" coords="1145,315,1233,344"/>
+<area shape="rect" id="node53" href="$lpc17__watchdog_8h.html" title="Definitions of Watchdog driver implementation for LPC17xx." alt="" coords="1257,315,1383,344"/>
+<area shape="rect" id="node57" href="$lpc17__interruptions_8h.html" title="Interruptions control." alt="" coords="1527,315,1668,344"/>
+<area shape="rect" id="node61" href="$lpc17__hpm_8h.html" title="Firmware update functions (HPM.1)" alt="" coords="1407,315,1503,344"/>
+<area shape="rect" id="node63" href="$lpc17__power_8h.html" title="Definitions of power mode selection for LPC17xx." alt="" coords="1953,315,2060,344"/>
+<area shape="rect" id="node67" href="$lpc17__pincfg_8h.html" title="lpc17_pincfg.h" alt="" coords="1692,315,1799,344"/>
+<area shape="rect" id="node72" href="$lpc17__uart_8h.html" title="lpc17_uart.h" alt="" coords="559,315,652,344"/>
+</map>

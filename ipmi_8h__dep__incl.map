@@ -1,0 +1,27 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$main__mmc_8c.html" title="main_mmc.c" alt="" coords="167,83,263,112"/>
+<area shape="rect" id="node5" href="$fru__editor_8h.html" title="modules/fru_editor.h" alt="" coords="337,83,476,112"/>
+<area shape="rect" id="node7" href="$fru_8c.html" title="modules/fru.c" alt="" coords="5,160,107,189"/>
+<area shape="rect" id="node24" href="$hpm_8c.html" title="modules/hpm.c" alt="" coords="500,83,609,112"/>
+<area shape="rect" id="node26" href="$ipmb_8c.html" title="modules/ipmb.c" alt="" coords="633,83,748,112"/>
+<area shape="rect" id="node28" href="$ipmi_8c.html" title="modules/ipmi.c" alt="" coords="772,83,881,112"/>
+<area shape="rect" id="node30" href="$led_8c.html" title="modules/led.c" alt="" coords="905,83,1007,112"/>
+<area shape="rect" id="node32" href="$rtm_8c.html" title="modules/rtm.c" alt="" coords="1031,83,1135,112"/>
+<area shape="rect" id="node34" href="$sdr_8c.html" title="modules/sdr.c" alt="" coords="1159,83,1263,112"/>
+<area shape="rect" id="node36" href="$hotswap_8c.html" title="modules/sensors/hotswap.c" alt="" coords="1287,83,1471,112"/>
+<area shape="rect" id="node38" href="$v3__0_2ipmi__oem_8h.html" title="port/board/afc/v3_0/ipmi_oem.h" alt="" coords="1495,83,1700,112"/>
+<area shape="rect" id="node40" href="$v3__0_2payload_8c.html" title="port/board/afc/v3_0/payload.c" alt="" coords="1724,83,1919,112"/>
+<area shape="rect" id="node42" href="$v3__1_2ipmi__oem_8h.html" title="port/board/afc/v3_1/ipmi_oem.h" alt="" coords="1943,83,2148,112"/>
+<area shape="rect" id="node44" href="$v3__1_2payload_8c.html" title="port/board/afc/v3_1/payload.c" alt="" coords="2172,83,2367,112"/>
+<area shape="rect" id="node46" href="$timing_2ipmi__oem_8h.html" title="port/board/afc&#45;timing/ipmi_oem.h" alt="" coords="2391,83,2601,112"/>
+<area shape="rect" id="node50" href="$timing_2payload_8c.html" title="port/board/afc&#45;timing/payload.c" alt="" coords="2625,83,2825,112"/>
+<area shape="rect" id="node52" href="$lpc17__hpm_8c.html" title="Firmware update functions (HPM.1)" alt="" coords="2849,83,3108,112"/>
+<area shape="rect" id="node9" href="$fru__editor_8c.html" title="modules/fru_editor.c" alt="" coords="131,160,269,189"/>
+<area shape="rect" id="node11" href="$v3__0_2user__amc__fru_8h.html" title="port/board/afc/v3_0/user_amc_fru.h" alt="" coords="293,160,520,189"/>
+<area shape="rect" id="node13" href="$v3__1_2user__amc__fru_8h.html" title="port/board/afc/v3_1/user_amc_fru.h" alt="" coords="544,160,771,189"/>
+<area shape="rect" id="node15" href="$timing_2user__amc__fru_8h.html" title="port/board/afc&#45;timing/user_amc_fru.h" alt="" coords="795,160,1029,189"/>
+<area shape="rect" id="node19" href="$rtm__user__fru_8h.html" title="port/board/rtm&#45;8sfp/rtm_user_fru.h" alt="" coords="1053,160,1272,189"/>
+<area shape="rect" id="node17" href="$amc__fru_8c.html" title="modules/amc_fru.c" alt="" coords="845,237,979,267"/>
+<area shape="rect" id="node21" href="$rtm__fru_8c.html" title="modules/rtm_fru.c" alt="" coords="1100,237,1225,267"/>
+<area shape="rect" id="node48" href="$adn4604_8c.html" title="modules/adn4604.c" alt="" coords="2429,160,2563,189"/>
+</map>

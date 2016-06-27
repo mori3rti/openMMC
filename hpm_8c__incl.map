@@ -1,0 +1,19 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$ipmi_8h.html" title="ipmi.h" alt="" coords="211,83,267,112"/>
+<area shape="rect" id="node18" href="$hpm_8h.html" title="hpm.h" alt="" coords="731,83,789,112"/>
+<area shape="rect" id="node20" href="$utils_8h.html" title="General utilities functions." alt="" coords="813,83,869,112"/>
+<area shape="rect" id="node24" href="$led_8h.html" title="led.h" alt="" coords="893,83,944,112"/>
+<area shape="rect" id="node26" href="$port_8h.html" title="Port layer (includes all portable functions headers)" alt="" coords="892,160,945,189"/>
+<area shape="rect" id="node5" href="$ipmb_8h.html" title="Definitions used in IPMB Layer." alt="" coords="145,237,207,267"/>
+<area shape="rect" id="node15" href="$sdr_8h.html" title="sdr.h" alt="" coords="213,160,264,189"/>
+<area shape="rect" id="node30" href="$lpc17__gpio_8h.html" title="lpc17_gpio.h" alt="" coords="1303,237,1396,267"/>
+<area shape="rect" id="node34" href="$lpc17__i2c_8h.html" title="I2C driver for LPC17xx." alt="" coords="1191,237,1279,267"/>
+<area shape="rect" id="node36" href="$lpc17__ssp_8h.html" title="lpc17_ssp.h" alt="" coords="231,237,321,267"/>
+<area shape="rect" id="node43" href="$lpc17__spi_8h.html" title="Legacy SPI driver definitions for LPC17xx." alt="" coords="1420,237,1508,267"/>
+<area shape="rect" id="node47" href="$lpc17__watchdog_8h.html" title="Definitions of Watchdog driver implementation for LPC17xx." alt="" coords="1532,237,1657,267"/>
+<area shape="rect" id="node51" href="$lpc17__interruptions_8h.html" title="Interruptions control." alt="" coords="777,237,919,267"/>
+<area shape="rect" id="node55" href="$lpc17__hpm_8h.html" title="Firmware update functions (HPM.1)" alt="" coords="396,237,492,267"/>
+<area shape="rect" id="node57" href="$lpc17__power_8h.html" title="Definitions of power mode selection for LPC17xx." alt="" coords="1060,237,1167,267"/>
+<area shape="rect" id="node61" href="$lpc17__pincfg_8h.html" title="lpc17_pincfg.h" alt="" coords="516,237,623,267"/>
+<area shape="rect" id="node66" href="$lpc17__uart_8h.html" title="lpc17_uart.h" alt="" coords="943,237,1036,267"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$ad84xx_8c.html" title="modules/ad84xx.c" alt="" coords="5,83,133,112"/>
+<area shape="rect" id="node5" href="$v3__0_2payload_8c.html" title="port/board/afc/v3_0/payload.c" alt="" coords="157,83,352,112"/>
+<area shape="rect" id="node7" href="$v3__1_2payload_8c.html" title="port/board/afc/v3_1/payload.c" alt="" coords="376,83,571,112"/>
+<area shape="rect" id="node9" href="$timing_2payload_8c.html" title="port/board/afc&#45;timing/payload.c" alt="" coords="595,83,795,112"/>
+</map>

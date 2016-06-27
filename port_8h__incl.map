@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$lpc17__gpio_8h.html" title="lpc17_gpio.h" alt="" coords="55,83,148,112"/>
+<area shape="rect" id="node9" href="$lpc17__i2c_8h.html" title="I2C driver for LPC17xx." alt="" coords="347,83,435,112"/>
+<area shape="rect" id="node11" href="$lpc17__ssp_8h.html" title="lpc17_ssp.h" alt="" coords="459,83,549,112"/>
+<area shape="rect" id="node20" href="$lpc17__spi_8h.html" title="Legacy SPI driver definitions for LPC17xx." alt="" coords="573,83,661,112"/>
+<area shape="rect" id="node24" href="$lpc17__watchdog_8h.html" title="Definitions of Watchdog driver implementation for LPC17xx." alt="" coords="685,83,811,112"/>
+<area shape="rect" id="node28" href="$lpc17__interruptions_8h.html" title="Interruptions control." alt="" coords="835,83,976,112"/>
+<area shape="rect" id="node32" href="$lpc17__hpm_8h.html" title="Firmware update functions (HPM.1)" alt="" coords="1000,83,1096,112"/>
+<area shape="rect" id="node34" href="$lpc17__power_8h.html" title="Definitions of power mode selection for LPC17xx." alt="" coords="1120,83,1227,112"/>
+<area shape="rect" id="node38" href="$lpc17__pincfg_8h.html" title="lpc17_pincfg.h" alt="" coords="1251,83,1357,112"/>
+<area shape="rect" id="node43" href="$lpc17__uart_8h.html" title="lpc17_uart.h" alt="" coords="1512,83,1605,112"/>
+</map>
