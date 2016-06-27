@@ -1,23 +1,21 @@
 <map id="G" name="G">
-<area shape="rect" id="node9" href="$port_8h.html" title="Port layer (includes all portable functions headers)" alt="" coords="896,160,949,189"/>
+<area shape="rect" id="node9" href="$port_8h.html" title="Port layer (includes all portable functions headers)" alt="" coords="979,160,1032,189"/>
 <area shape="rect" id="node56" href="$sdr_8h.html" title="sdr.h" alt="" coords="159,160,209,189"/>
 <area shape="rect" id="node65" href="$hotswap_8h.html" title="Hotswap sensors definitions." alt="" coords="140,83,223,112"/>
 <area shape="rect" id="node68" href="$task__priorities_8h.html" title="task_priorities.h" alt="" coords="604,83,719,112"/>
 <area shape="rect" id="node70" href="$ipmi_8h.html" title="IPMI module definitions." alt="" coords="247,83,303,112"/>
 <area shape="rect" id="node74" href="$led_8h.html" title="led.h" alt="" coords="529,83,580,112"/>
-<area shape="rect" id="node77" href="$fru_8h.html" title="fru.h" alt="" coords="981,83,1029,112"/>
+<area shape="rect" id="node77" href="$fru_8h.html" title="fru.h" alt="" coords="1064,83,1112,112"/>
 <area shape="rect" id="node83" href="$utils_8h.html" title="General utilities functions." alt="" coords="289,160,345,189"/>
-<area shape="rect" id="node86" href="$rtm_8h.html" title="Generic RTM Module management functions." alt="" coords="1115,83,1165,112"/>
-<area shape="rect" id="node13" href="$lpc17__gpio_8h.html" title="lpc17_gpio.h" alt="" coords="761,237,855,267"/>
-<area shape="rect" id="node17" href="$lpc17__i2c_8h.html" title="I2C driver for LPC17xx." alt="" coords="879,237,967,267"/>
+<area shape="rect" id="node13" href="$lpc17__gpio_8h.html" title="lpc17_gpio.h" alt="" coords="788,237,881,267"/>
+<area shape="rect" id="node17" href="$lpc17__i2c_8h.html" title="I2C driver for LPC17xx." alt="" coords="905,237,993,267"/>
 <area shape="rect" id="node19" href="$lpc17__ssp_8h.html" title="lpc17_ssp.h" alt="" coords="479,237,569,267"/>
-<area shape="rect" id="node26" href="$lpc17__spi_8h.html" title="Legacy SPI driver definitions for LPC17xx." alt="" coords="991,237,1079,267"/>
-<area shape="rect" id="node30" href="$lpc17__watchdog_8h.html" title="Definitions of Watchdog driver implementation for LPC17xx." alt="" coords="1103,237,1228,267"/>
-<area shape="rect" id="node34" href="$lpc17__interruptions_8h.html" title="Interruptions control." alt="" coords="1252,237,1393,267"/>
-<area shape="rect" id="node38" href="$lpc17__hpm_8h.html" title="Firmware update functions (HPM.1)" alt="" coords="1417,237,1513,267"/>
-<area shape="rect" id="node40" href="$lpc17__power_8h.html" title="Definitions of power mode selection for LPC17xx." alt="" coords="1537,237,1644,267"/>
-<area shape="rect" id="node44" href="$lpc17__pincfg_8h.html" title="Pin Config functions redirection for LPC17xx." alt="" coords="1668,237,1775,267"/>
-<area shape="rect" id="node49" href="$lpc17__uart_8h.html" title="lpc17_uart.h" alt="" coords="593,237,687,267"/>
+<area shape="rect" id="node26" href="$lpc17__spi_8h.html" title="Legacy SPI driver definitions for LPC17xx." alt="" coords="1017,237,1105,267"/>
+<area shape="rect" id="node30" href="$lpc17__watchdog_8h.html" title="Definitions of Watchdog driver implementation for LPC17xx." alt="" coords="1129,237,1255,267"/>
+<area shape="rect" id="node34" href="$lpc17__interruptions_8h.html" title="Interruptions control." alt="" coords="1279,237,1420,267"/>
+<area shape="rect" id="node38" href="$lpc17__hpm_8h.html" title="Firmware update functions (HPM.1)" alt="" coords="1444,237,1540,267"/>
+<area shape="rect" id="node40" href="$lpc17__power_8h.html" title="Definitions of power mode selection for LPC17xx." alt="" coords="1564,237,1671,267"/>
+<area shape="rect" id="node44" href="$lpc17__pincfg_8h.html" title="Pin Config functions redirection for LPC17xx." alt="" coords="1695,237,1801,267"/>
+<area shape="rect" id="node49" href="$lpc17__uart_8h.html" title="lpc17_uart.h" alt="" coords="604,237,697,267"/>
 <area shape="rect" id="node58" href="$ipmb_8h.html" title="Definitions used in IPMB Layer." alt="" coords="196,237,257,267"/>
-<area shape="rect" id="node88" href="$rtm__user_8h.html" title="rtm_user.h" alt="" coords="1160,160,1243,189"/>
 </map>
