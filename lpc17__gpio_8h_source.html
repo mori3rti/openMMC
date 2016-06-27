@@ -52,7 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -118,28 +118,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00017"></a>00017 <span class="comment"> *   along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span>
 <a name="l00018"></a>00018 <span class="comment"> */</span>
 <a name="l00019"></a>00019 
-<a name="l00028"></a>00028 <span class="preprocessor">#ifdef LPC17_GPIO_H_</span>
-<a name="l00029"></a>00029 <span class="preprocessor"></span><span class="preprocessor">#undef LPC17_GPIO_H_</span>
-<a name="l00030"></a>00030 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00031"></a><a class="code" href="lpc17__gpio_8h.html#aea281af6e4a0854ecaf1c92fb8588f28">00031</a> <span class="preprocessor"></span><span class="preprocessor">#define LPC17_GPIO_H_</span>
-<a name="l00032"></a>00032 <span class="preprocessor"></span>
-<a name="l00033"></a>00033 <span class="preprocessor">#include &quot;gpio_17xx_40xx.h&quot;</span>
-<a name="l00034"></a>00034 
-<a name="l00035"></a><a class="code" href="lpc17__gpio_8h.html#a1bb283bd7893b9855e2f23013891fc82">00035</a> <span class="preprocessor">#define INPUT 0</span>
-<a name="l00036"></a><a class="code" href="lpc17__gpio_8h.html#a61a3c9a18380aafb6e430e79bf596557">00036</a> <span class="preprocessor"></span><span class="preprocessor">#define OUTPUT 1</span>
-<a name="l00037"></a><a class="code" href="lpc17__gpio_8h.html#ab811d8c6ff3a505312d3276590444289">00037</a> <span class="preprocessor"></span><span class="preprocessor">#define LOW 0</span>
-<a name="l00038"></a><a class="code" href="lpc17__gpio_8h.html#a5bb885982ff66a2e0a0a45a8ee9c35e2">00038</a> <span class="preprocessor"></span><span class="preprocessor">#define HIGH 1</span>
-<a name="l00039"></a>00039 <span class="preprocessor"></span>
-<a name="l00040"></a><a class="code" href="lpc17__gpio_8h.html#a849d46f6abb7f4e78f6cde87b7f0571b">00040</a> <span class="preprocessor">#define gpio_init()                            Chip_GPIO_Init( LPC_GPIO )</span>
-<a name="l00041"></a><a class="code" href="lpc17__gpio_8h.html#af04140f17175bf81e0ed388a029005f4">00041</a> <span class="preprocessor"></span><span class="preprocessor">#define gpio_read_pin( port, pin )             Chip_GPIO_GetPinState( LPC_GPIO, port, pin )</span>
-<a name="l00042"></a><a class="code" href="lpc17__gpio_8h.html#a24c4288bf64bbc9c6f312dd2fb4f0434">00042</a> <span class="preprocessor"></span><span class="preprocessor">#define gpio_read_port( port )                 Chip_GPIO_GetPortValue( LPC_GPIO, port )</span>
-<a name="l00043"></a><a class="code" href="lpc17__gpio_8h.html#a1fccea682fb04fb65cfd55619da742a5">00043</a> <span class="preprocessor"></span><span class="preprocessor">#define gpio_set_pin( port, pin )              Chip_GPIO_SetPinOutHigh( LPC_GPIO, port, pin )</span>
-<a name="l00044"></a><a class="code" href="lpc17__gpio_8h.html#a988fbd3484f79deb6336ecbdbcda0133">00044</a> <span class="preprocessor"></span><span class="preprocessor">#define gpio_set_port( port, mask )            Chip_GPIO_SetPortOutHigh( LPC_GPIO, port, mask )</span>
-<a name="l00045"></a><a class="code" href="lpc17__gpio_8h.html#ab75c1cf151054a0eb03ff37fa618371d">00045</a> <span class="preprocessor"></span><span class="preprocessor">#define gpio_clr_pin( port, pin )              Chip_GPIO_SetPinOutLow( LPC_GPIO, port, pin )</span>
-<a name="l00046"></a><a class="code" href="lpc17__gpio_8h.html#aedebb9df812c9f5cd96aa44686032521">00046</a> <span class="preprocessor"></span><span class="preprocessor">#define gpio_clr_port( port, mask )            Chip_GPIO_SetPortOutLow( LPC_GPIO, port, mask )</span>
-<a name="l00047"></a><a class="code" href="lpc17__gpio_8h.html#ab1cb0fb6db66ae4783a9b6e66605f4b5">00047</a> <span class="preprocessor"></span><span class="preprocessor">#define gpio_pin_toggle( port, pin )           Chip_GPIO_SetPinToggle( LPC_GPIO, port, pin )</span>
-<a name="l00048"></a><a class="code" href="lpc17__gpio_8h.html#a78f00dd20e8d207a4737511f57b9705a">00048</a> <span class="preprocessor"></span><span class="preprocessor">#define gpio_set_pin_state( port, pin, state ) Chip_GPIO_SetPinState( LPC_GPIO, port, pin, state )</span>
-<a name="l00049"></a><a class="code" href="lpc17__gpio_8h.html#ac3f5cfa5d75037c54de09a93c9ff4d09">00049</a> <span class="preprocessor"></span><span class="preprocessor">#define gpio_set_pin_dir( port, pin, dir )     Chip_GPIO_SetPinDIR( LPC_GPIO, port, pin, dir )</span>
+<a name="l00026"></a>00026 <span class="preprocessor">#ifdef LPC17_GPIO_H_</span>
+<a name="l00027"></a>00027 <span class="preprocessor"></span><span class="preprocessor">#undef LPC17_GPIO_H_</span>
+<a name="l00028"></a>00028 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00029"></a><a class="code" href="lpc17__gpio_8h.html#aea281af6e4a0854ecaf1c92fb8588f28">00029</a> <span class="preprocessor"></span><span class="preprocessor">#define LPC17_GPIO_H_</span>
+<a name="l00030"></a>00030 <span class="preprocessor"></span>
+<a name="l00031"></a>00031 <span class="preprocessor">#include &quot;gpio_17xx_40xx.h&quot;</span>
+<a name="l00032"></a>00032 
+<a name="l00033"></a><a class="code" href="lpc17__gpio_8h.html#a1bb283bd7893b9855e2f23013891fc82">00033</a> <span class="preprocessor">#define INPUT 0</span>
+<a name="l00034"></a><a class="code" href="lpc17__gpio_8h.html#a61a3c9a18380aafb6e430e79bf596557">00034</a> <span class="preprocessor"></span><span class="preprocessor">#define OUTPUT 1</span>
+<a name="l00035"></a><a class="code" href="lpc17__gpio_8h.html#ab811d8c6ff3a505312d3276590444289">00035</a> <span class="preprocessor"></span><span class="preprocessor">#define LOW 0</span>
+<a name="l00036"></a><a class="code" href="lpc17__gpio_8h.html#a5bb885982ff66a2e0a0a45a8ee9c35e2">00036</a> <span class="preprocessor"></span><span class="preprocessor">#define HIGH 1</span>
+<a name="l00037"></a>00037 <span class="preprocessor"></span>
+<a name="l00042"></a><a class="code" href="lpc17__gpio_8h.html#a849d46f6abb7f4e78f6cde87b7f0571b">00042</a> <span class="preprocessor">#define gpio_init()                            Chip_GPIO_Init( LPC_GPIO )</span>
+<a name="l00043"></a>00043 <span class="preprocessor"></span>
+<a name="l00050"></a><a class="code" href="lpc17__gpio_8h.html#af04140f17175bf81e0ed388a029005f4">00050</a> <span class="preprocessor">#define gpio_read_pin( port, pin )             Chip_GPIO_GetPinState( LPC_GPIO, port, pin )</span>
+<a name="l00051"></a>00051 <span class="preprocessor"></span>
+<a name="l00057"></a><a class="code" href="lpc17__gpio_8h.html#a24c4288bf64bbc9c6f312dd2fb4f0434">00057</a> <span class="preprocessor">#define gpio_read_port( port )                 Chip_GPIO_GetPortValue( LPC_GPIO, port )</span>
+<a name="l00058"></a>00058 <span class="preprocessor"></span>
+<a name="l00065"></a><a class="code" href="lpc17__gpio_8h.html#a81396ccffe7b0fc5658c9bf84674f94b">00065</a> <span class="preprocessor">#define gpio_set_pin_high( port, pin )         Chip_GPIO_SetPinOutHigh( LPC_GPIO, port, pin )</span>
+<a name="l00066"></a>00066 <span class="preprocessor"></span>
+<a name="l00073"></a><a class="code" href="lpc17__gpio_8h.html#a5b631a6ed0db8de41860fe3424f13707">00073</a> <span class="preprocessor">#define gpio_set_port_high( port, mask )       Chip_GPIO_SetPortOutHigh( LPC_GPIO, port, mask )</span>
+<a name="l00074"></a>00074 <span class="preprocessor"></span>
+<a name="l00081"></a><a class="code" href="lpc17__gpio_8h.html#ab83ea2dc0a82a33df9580e2f8d8da613">00081</a> <span class="preprocessor">#define gpio_set_pin_low( port, pin )          Chip_GPIO_SetPinOutLow( LPC_GPIO, port, pin )</span>
+<a name="l00082"></a>00082 <span class="preprocessor"></span>
+<a name="l00089"></a><a class="code" href="lpc17__gpio_8h.html#a283217671dd88049f4afcb5c5673a41f">00089</a> <span class="preprocessor">#define gpio_set_port_low( port, mask )        Chip_GPIO_SetPortOutLow( LPC_GPIO, port, mask )</span>
+<a name="l00090"></a>00090 <span class="preprocessor"></span>
+<a name="l00097"></a><a class="code" href="lpc17__gpio_8h.html#ab1cb0fb6db66ae4783a9b6e66605f4b5">00097</a> <span class="preprocessor">#define gpio_pin_toggle( port, pin )           Chip_GPIO_SetPinToggle( LPC_GPIO, port, pin )</span>
+<a name="l00098"></a>00098 <span class="preprocessor"></span>
+<a name="l00105"></a><a class="code" href="lpc17__gpio_8h.html#a78f00dd20e8d207a4737511f57b9705a">00105</a> <span class="preprocessor">#define gpio_set_pin_state( port, pin, state ) Chip_GPIO_SetPinState( LPC_GPIO, port, pin, state )</span>
+<a name="l00106"></a>00106 <span class="preprocessor"></span>
+<a name="l00113"></a><a class="code" href="lpc17__gpio_8h.html#ac3f5cfa5d75037c54de09a93c9ff4d09">00113</a> <span class="preprocessor">#define gpio_set_pin_dir( port, pin, dir )     Chip_GPIO_SetPinDIR( LPC_GPIO, port, pin, dir )</span>
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -160,7 +169,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="lpc17__gpio_8h.html">lpc17_gpio.h</a>      </li>
 
-    <li class="footer">Generated on Mon Jun 27 2016 19:01:00 for openMMC by
+    <li class="footer">Generated on Mon Jun 27 2016 19:45:12 for openMMC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

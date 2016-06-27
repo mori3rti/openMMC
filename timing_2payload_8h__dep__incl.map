@@ -1,8 +1,8 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$main__mmc_8c.html" title="main_mmc.c" alt="" coords="5,83,101,112"/>
 <area shape="rect" id="node5" href="$hpm_8c.html" title="modules/hpm.c" alt="" coords="125,83,235,112"/>
-<area shape="rect" id="node7" href="$ipmi_8c.html" title="modules/ipmi.c" alt="" coords="259,83,368,112"/>
+<area shape="rect" id="node7" href="$ipmi_8c.html" title="IPMI module implementation." alt="" coords="259,83,368,112"/>
 <area shape="rect" id="node9" href="$rtm_8c.html" title="modules/rtm.c" alt="" coords="392,83,496,112"/>
-<area shape="rect" id="node11" href="$ina220_8c.html" title="DCDCs Voltage reading using INA220 sensor." alt="" coords="520,83,693,112"/>
+<area shape="rect" id="node11" href="$ina220_8c.html" title="INA220 interface implementation." alt="" coords="520,83,693,112"/>
 <area shape="rect" id="node13" href="$timing_2payload_8c.html" title="port/board/afc&#45;timing/payload.c" alt="" coords="717,83,917,112"/>
 </map>

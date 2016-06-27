@@ -52,7 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -120,47 +120,54 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00019"></a>00019 <span class="comment"> *   @license GPL-3.0+ &lt;http://spdx.org/licenses/GPL-3.0+&gt;</span>
 <a name="l00020"></a>00020 <span class="comment"> */</span>
 <a name="l00021"></a>00021 
-<a name="l00022"></a>00022 <span class="preprocessor">#ifndef _HOTSWAP_H_</span>
-<a name="l00023"></a>00023 <span class="preprocessor"></span><span class="preprocessor">#define _HOTSWAP_H_</span>
-<a name="l00024"></a>00024 <span class="preprocessor"></span>
-<a name="l00025"></a>00025 <span class="preprocessor">#include &quot;<a class="code" href="sdr_8h.html">sdr.h</a>&quot;</span>
-<a name="l00026"></a>00026 
-<a name="l00027"></a><a class="code" href="hotswap_8h.html#a00aef9e8dd001a49f8717031d84b2c6c">00027</a> <span class="preprocessor">#define DEBOUNCE_TIME 250</span>
-<a name="l00028"></a>00028 <span class="preprocessor"></span>
-<a name="l00029"></a>00029 <span class="comment">/* Module handle sensor status */</span>
-<a name="l00030"></a><a class="code" href="hotswap_8h.html#a2e4e1c21cad1f2a33564fcc648f391a6">00030</a> <span class="preprocessor">#define HOTSWAP_STATE_HANDLE_CLOSED             0x00</span>
-<a name="l00031"></a><a class="code" href="hotswap_8h.html#a637b49fca6018a3eafec460e86ea732b">00031</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_STATE_HANDLE_OPENED             0x01</span>
-<a name="l00032"></a><a class="code" href="hotswap_8h.html#a5d9f6541543c5c94fd9a7afcfd370075">00032</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_STATE_QUIESCED                  0x02</span>
-<a name="l00033"></a><a class="code" href="hotswap_8h.html#ab1e78c6ab9b70799a9bbd192a8335a97">00033</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_STATE_BP_FAIL                   0x03</span>
-<a name="l00034"></a><a class="code" href="hotswap_8h.html#a9b0148c15cff95e859d467e9546aa4b5">00034</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_STATE_BP_SDOWN                  0x04</span>
-<a name="l00035"></a><a class="code" href="hotswap_8h.html#a23e7f6494264f3ef66b767c123d6f51e">00035</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_STATE_URTM_PRSENT               0x05</span>
-<a name="l00036"></a><a class="code" href="hotswap_8h.html#ab51748743580927bbd6822b083e852f7">00036</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_STATE_URTM_ABSENT               0x06</span>
-<a name="l00037"></a><a class="code" href="hotswap_8h.html#a47de38994ace60db73d9486428e00d1d">00037</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_STATE_URTM_COMPATIBLE           0x07</span>
-<a name="l00038"></a><a class="code" href="hotswap_8h.html#aeafc5aa93f5c7f00cbd5834285bbd24f">00038</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_STATE_URTM_INCOMPATIBLE         0x08</span>
-<a name="l00039"></a>00039 <span class="preprocessor"></span>
-<a name="l00040"></a><a class="code" href="hotswap_8h.html#ac8fa528ccfbbe7e6a273e1e7a5139d51">00040</a> <span class="preprocessor">#define HOTSWAP_MODULE_HANDLE_CLOSED_MASK       0x01</span>
-<a name="l00041"></a><a class="code" href="hotswap_8h.html#a2cff4d8b7802f1e38e1919206109982b">00041</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_MODULE_HANDLE_OPEN_MASK         0x02</span>
-<a name="l00042"></a><a class="code" href="hotswap_8h.html#a267418ee48a0cc39b258a18ccac935ce">00042</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_QUIESCED_MASK                   0x04</span>
-<a name="l00043"></a><a class="code" href="hotswap_8h.html#af7451bf398d882f7810110325b66d787">00043</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_BACKEND_PWR_FAILURE_MASK        0x08</span>
-<a name="l00044"></a><a class="code" href="hotswap_8h.html#ab65461b66af3674ad7f1037f3f54a23c">00044</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_BACKEND_PWR_SHUTDOWN_MASK       0x10</span>
-<a name="l00045"></a><a class="code" href="hotswap_8h.html#a7b1e100bd282e94f9d6b4f8341ff4920">00045</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_URTM_PRESENT_MASK               0x20</span>
-<a name="l00046"></a><a class="code" href="hotswap_8h.html#a07fe91896d7ff050d3ef6e10b7c4ec5f">00046</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_URTM_ABSENT_MASK                0x40</span>
-<a name="l00047"></a><a class="code" href="hotswap_8h.html#a2207cd96f1f659596dc1b8565b72cfff">00047</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_URTM_COMPATIBLE_MASK            0x80</span>
-<a name="l00048"></a>00048 <span class="preprocessor"></span>
-<a name="l00049"></a>00049 <span class="keyword">enum</span> {
-<a name="l00050"></a><a class="code" href="hotswap_8h.html#adc29c2ff13d900c2f185ee95427fb06ca89d641d18a3ceabebbc5283ad15159cc">00050</a>     <a class="code" href="hotswap_8h.html#adc29c2ff13d900c2f185ee95427fb06ca89d641d18a3ceabebbc5283ad15159cc">HOTSWAP_AMC</a>,
-<a name="l00051"></a><a class="code" href="hotswap_8h.html#adc29c2ff13d900c2f185ee95427fb06cab3a61fcc77c12f27c85093a0e65fb942">00051</a>     <a class="code" href="hotswap_8h.html#adc29c2ff13d900c2f185ee95427fb06cab3a61fcc77c12f27c85093a0e65fb942">HOTSWAP_RTM</a>
-<a name="l00052"></a>00052 };
-<a name="l00053"></a>00053 
-<a name="l00054"></a><a class="code" href="hotswap_8h.html#a645c09cb29ccdbbeb025ac477d55f707">00054</a> TaskHandle_t <a class="code" href="hotswap_8h.html#a645c09cb29ccdbbeb025ac477d55f707">vTaskHotSwap_Handle</a>;
-<a name="l00055"></a>00055 
-<a name="l00056"></a>00056 <span class="keywordtype">void</span> <a class="code" href="hotswap_8c.html#a6b1ff2cb75d950cec09b450e3694e9a6">vTaskHotSwap</a>( <span class="keywordtype">void</span> *Parameters );
-<a name="l00057"></a>00057 <span class="keywordtype">void</span> <a class="code" href="hotswap_8c.html#aeeb214f7dd04a7bf518409c0365cbb08">hotswap_init</a>( <span class="keywordtype">void</span> );
-<a name="l00058"></a>00058 <a class="code" href="ipmb_8h.html#a8d757edf82d973e9e19ea700b3cd0671" title="IPMB errors enumeration.">ipmb_error</a> <a class="code" href="hotswap_8c.html#ae60c686233597f56f087e8a1feebf2de">hotswap_send_event</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor, uint8_t evt );
-<a name="l00059"></a>00059 <span class="keywordtype">void</span> <a class="code" href="hotswap_8c.html#ae96351ecba4133c9c0b79e29ae8edad9">hotswap_set_mask_bit</a>( uint8_t <a class="code" href="fru_8c.html#a3d7cc64921822af8dcd4d120a3c00f68">fru</a>, uint8_t mask );
-<a name="l00060"></a>00060 <span class="keywordtype">void</span> <a class="code" href="hotswap_8c.html#a09dafcd34cc16f4edce6c9432f944987">hotswap_clear_mask_bit</a>( uint8_t <a class="code" href="fru_8c.html#a3d7cc64921822af8dcd4d120a3c00f68">fru</a>, uint8_t mask );
-<a name="l00061"></a>00061 
-<a name="l00062"></a>00062 <span class="preprocessor">#endif</span>
+<a name="l00036"></a>00036 <span class="preprocessor">#ifndef _HOTSWAP_H_</span>
+<a name="l00037"></a>00037 <span class="preprocessor"></span><span class="preprocessor">#define _HOTSWAP_H_</span>
+<a name="l00038"></a>00038 <span class="preprocessor"></span>
+<a name="l00039"></a>00039 <span class="preprocessor">#include &quot;<a class="code" href="sdr_8h.html">sdr.h</a>&quot;</span>
+<a name="l00040"></a>00040 <span class="preprocessor">#ifdef MODULE_RTM</span>
+<a name="l00041"></a>00041 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="rtm__user_8h.html">rtm_user.h</a>&quot;</span>
+<a name="l00042"></a>00042 <span class="preprocessor">#endif</span>
+<a name="l00043"></a>00043 <span class="preprocessor"></span>
+<a name="l00044"></a><a class="code" href="hotswap_8h.html#a00aef9e8dd001a49f8717031d84b2c6c">00044</a> <span class="preprocessor">#define DEBOUNCE_TIME 250</span>
+<a name="l00045"></a>00045 <span class="preprocessor"></span>
+<a name="l00046"></a>00046 <span class="comment">/* Module handle sensor status */</span>
+<a name="l00047"></a><a class="code" href="hotswap_8h.html#a2e4e1c21cad1f2a33564fcc648f391a6">00047</a> <span class="preprocessor">#define HOTSWAP_STATE_HANDLE_CLOSED             0x00</span>
+<a name="l00048"></a><a class="code" href="hotswap_8h.html#a637b49fca6018a3eafec460e86ea732b">00048</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_STATE_HANDLE_OPENED             0x01</span>
+<a name="l00049"></a><a class="code" href="hotswap_8h.html#a5d9f6541543c5c94fd9a7afcfd370075">00049</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_STATE_QUIESCED                  0x02</span>
+<a name="l00050"></a><a class="code" href="hotswap_8h.html#ab1e78c6ab9b70799a9bbd192a8335a97">00050</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_STATE_BP_FAIL                   0x03</span>
+<a name="l00051"></a><a class="code" href="hotswap_8h.html#a9b0148c15cff95e859d467e9546aa4b5">00051</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_STATE_BP_SDOWN                  0x04</span>
+<a name="l00052"></a><a class="code" href="hotswap_8h.html#a23e7f6494264f3ef66b767c123d6f51e">00052</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_STATE_URTM_PRSENT               0x05</span>
+<a name="l00053"></a><a class="code" href="hotswap_8h.html#ab51748743580927bbd6822b083e852f7">00053</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_STATE_URTM_ABSENT               0x06</span>
+<a name="l00054"></a><a class="code" href="hotswap_8h.html#a47de38994ace60db73d9486428e00d1d">00054</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_STATE_URTM_COMPATIBLE           0x07</span>
+<a name="l00055"></a><a class="code" href="hotswap_8h.html#aeafc5aa93f5c7f00cbd5834285bbd24f">00055</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_STATE_URTM_INCOMPATIBLE         0x08</span>
+<a name="l00056"></a>00056 <span class="preprocessor"></span>
+<a name="l00057"></a><a class="code" href="hotswap_8h.html#ac8fa528ccfbbe7e6a273e1e7a5139d51">00057</a> <span class="preprocessor">#define HOTSWAP_MODULE_HANDLE_CLOSED_MASK       0x01</span>
+<a name="l00058"></a><a class="code" href="hotswap_8h.html#a2cff4d8b7802f1e38e1919206109982b">00058</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_MODULE_HANDLE_OPEN_MASK         0x02</span>
+<a name="l00059"></a><a class="code" href="hotswap_8h.html#a267418ee48a0cc39b258a18ccac935ce">00059</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_QUIESCED_MASK                   0x04</span>
+<a name="l00060"></a><a class="code" href="hotswap_8h.html#af7451bf398d882f7810110325b66d787">00060</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_BACKEND_PWR_FAILURE_MASK        0x08</span>
+<a name="l00061"></a><a class="code" href="hotswap_8h.html#ab65461b66af3674ad7f1037f3f54a23c">00061</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_BACKEND_PWR_SHUTDOWN_MASK       0x10</span>
+<a name="l00062"></a><a class="code" href="hotswap_8h.html#a7b1e100bd282e94f9d6b4f8341ff4920">00062</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_URTM_PRESENT_MASK               0x20</span>
+<a name="l00063"></a><a class="code" href="hotswap_8h.html#a07fe91896d7ff050d3ef6e10b7c4ec5f">00063</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_URTM_ABSENT_MASK                0x40</span>
+<a name="l00064"></a><a class="code" href="hotswap_8h.html#a2207cd96f1f659596dc1b8565b72cfff">00064</a> <span class="preprocessor"></span><span class="preprocessor">#define HOTSWAP_URTM_COMPATIBLE_MASK            0x80</span>
+<a name="l00065"></a>00065 <span class="preprocessor"></span>
+<a name="l00066"></a>00066 <span class="keyword">enum</span> {
+<a name="l00067"></a><a class="code" href="hotswap_8h.html#adc29c2ff13d900c2f185ee95427fb06ca89d641d18a3ceabebbc5283ad15159cc">00067</a>     <a class="code" href="hotswap_8h.html#adc29c2ff13d900c2f185ee95427fb06ca89d641d18a3ceabebbc5283ad15159cc">HOTSWAP_AMC</a>,
+<a name="l00068"></a><a class="code" href="hotswap_8h.html#adc29c2ff13d900c2f185ee95427fb06cab3a61fcc77c12f27c85093a0e65fb942">00068</a>     <a class="code" href="hotswap_8h.html#adc29c2ff13d900c2f185ee95427fb06cab3a61fcc77c12f27c85093a0e65fb942">HOTSWAP_RTM</a>
+<a name="l00069"></a>00069 };
+<a name="l00070"></a>00070 
+<a name="l00074"></a><a class="code" href="hotswap_8h.html#a645c09cb29ccdbbeb025ac477d55f707">00074</a> TaskHandle_t <a class="code" href="hotswap_8h.html#a645c09cb29ccdbbeb025ac477d55f707" title="Hotswap Task handle.">vTaskHotSwap_Handle</a>;
+<a name="l00075"></a>00075 
+<a name="l00081"></a>00081 <span class="keywordtype">void</span> <a class="code" href="hotswap_8c.html#a6b1ff2cb75d950cec09b450e3694e9a6" title="Periodically reads the Hotswap sensor state and checks if its state has changed.">vTaskHotSwap</a>( <span class="keywordtype">void</span> *Parameters );
+<a name="l00082"></a>00082 
+<a name="l00088"></a>00088 <span class="keywordtype">void</span> <a class="code" href="hotswap_8c.html#aeeb214f7dd04a7bf518409c0365cbb08" title="Initializes hotswap sensor informatiosn on SDR and creates vTaskHotSwap.">hotswap_init</a>( <span class="keywordtype">void</span> );
+<a name="l00089"></a>00089 
+<a name="l00099"></a>00099 <a class="code" href="ipmb_8h.html#a8d757edf82d973e9e19ea700b3cd0671" title="IPMB errors enumeration.">ipmb_error</a> <a class="code" href="hotswap_8c.html#ae60c686233597f56f087e8a1feebf2de" title="Send a hotswap event via IPMB.">hotswap_send_event</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor, uint8_t evt );
+<a name="l00100"></a>00100 
+<a name="l00109"></a>00109 <span class="keywordtype">void</span> <a class="code" href="hotswap_8c.html#ae96351ecba4133c9c0b79e29ae8edad9" title="Sets the corresponding status bit in the Hotswap SDR readout value.">hotswap_set_mask_bit</a>( uint8_t <a class="code" href="fru_8c.html#a3d7cc64921822af8dcd4d120a3c00f68">fru</a>, uint8_t mask );
+<a name="l00110"></a>00110 
+<a name="l00119"></a>00119 <span class="keywordtype">void</span> <a class="code" href="hotswap_8c.html#a09dafcd34cc16f4edce6c9432f944987" title="Clears the corresponding status bit in the Hotswap SDR readout value.">hotswap_clear_mask_bit</a>( uint8_t <a class="code" href="fru_8c.html#a3d7cc64921822af8dcd4d120a3c00f68">fru</a>, uint8_t mask );
+<a name="l00120"></a>00120 
+<a name="l00121"></a>00121 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -181,7 +188,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="hotswap_8h.html">hotswap.h</a>      </li>
 
-    <li class="footer">Generated on Mon Jun 27 2016 19:01:00 for openMMC by
+    <li class="footer">Generated on Mon Jun 27 2016 19:45:12 for openMMC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

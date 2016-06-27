@@ -52,7 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -100,7 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">modules/sensors/lm75.h File Reference</div>  </div>
+<div class="title">modules/sensors/lm75.h File Reference<div class="ingroups"><a class="el" href="group__LM75.html">LM75 - Temperature Sensor</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -111,7 +111,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="lm75_8h__dep__incl.png" border="0" usemap="#modules_2sensors_2lm75_8hdep" alt=""/></div>
 <map name="modules_2sensors_2lm75_8hdep" id="modules_2sensors_2lm75_8hdep">
-<area shape="rect" id="node3" href="lm75_8c.html" title="modules/sensors/lm75.c" alt="" coords="57,83,220,112"/><area shape="rect" id="node5" href="sensors_8h.html" title="modules/sensors/sensors.h" alt="" coords="244,83,425,112"/><area shape="rect" id="node7" href="sdr_8c.html" title="modules/sdr.c" alt="" coords="5,160,109,189"/><area shape="rect" id="node9" href="port_2board_2afc_2v3__0_2sdr__list_8c.html" title="port/board/afc/v3_0/sdr_list.c" alt="" coords="133,160,323,189"/><area shape="rect" id="node11" href="port_2board_2afc_2v3__1_2sdr__list_8c.html" title="port/board/afc/v3_1/sdr_list.c" alt="" coords="347,160,536,189"/><area shape="rect" id="node13" href="port_2board_2afc-timing_2sdr__list_8c.html" title="port/board/afc&#45;timing/sdr_list.c" alt="" coords="560,160,757,189"/></map>
+<area shape="rect" id="node3" href="lm75_8c.html" title="Interface functions for LM75 I2C Temperature Sensor." alt="" coords="57,83,220,112"/><area shape="rect" id="node5" href="sensors_8h.html" title="Shortcut to include all sensors headers (not mandatory, user can include each sensor separately)..." alt="" coords="244,83,425,112"/><area shape="rect" id="node7" href="sdr_8c.html" title="modules/sdr.c" alt="" coords="5,160,109,189"/><area shape="rect" id="node9" href="port_2board_2afc_2v3__0_2sdr__list_8c.html" title="port/board/afc/v3_0/sdr_list.c" alt="" coords="133,160,323,189"/><area shape="rect" id="node11" href="port_2board_2afc_2v3__1_2sdr__list_8c.html" title="port/board/afc/v3_1/sdr_list.c" alt="" coords="347,160,536,189"/><area shape="rect" id="node13" href="port_2board_2afc-timing_2sdr__list_8c.html" title="port/board/afc&#45;timing/sdr_list.c" alt="" coords="560,160,757,189"/></map>
 </div>
 </div>
 <p><a href="lm75_8h_source.html">Go to the source code of this file.</a></p>
@@ -119,10 +119,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lm75_8h.html#a1b84f8c27a039cd27ef5d1d496ab6d3d">LM75_UPDATE_RATE</a>&#160;&#160;&#160;500</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Rate at which the LM75 sensors are read (in ms)  <a href="#a1b84f8c27a039cd27ef5d1d496ab6d3d"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lm75_8h.html#a719d46d37b4bdfae576c2ec280b31837">LM75_init</a> (void)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes LM75 monitoring task.  <a href="#a719d46d37b4bdfae576c2ec280b31837"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lm75_8h.html#aad22b7da899582e180d29ee35c41e7e8">vTaskLM75</a> (void *Parameters)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Monitoring task for LM75 sensor.  <a href="#aad22b7da899582e180d29ee35c41e7e8"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lm75_8h.html#af9b0007a05dc101a137a7d972af0b229">vTaskLM75_Handle</a></td></tr>
@@ -134,7 +137,6 @@ Variables</h2></td></tr>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Definitions for LM75 I2C Temperature Sensor. </p>
 <dl class="author"><dt><b>Author:</b></dt><dd>Henrique Silva &lt;<a href="mailto:henrique.silva@lnls.br">henrique.silva@lnls.br</a>&gt;, LNLS </dd></dl>
-<dl class="date"><dt><b>Date:</b></dt><dd>September 2015 </dd></dl>
 </div><hr/><h2>Define Documentation</h2>
 <a class="anchor" id="a1b84f8c27a039cd27ef5d1d496ab6d3d"></a><!-- doxytag: member="lm75.h::LM75_UPDATE_RATE" ref="a1b84f8c27a039cd27ef5d1d496ab6d3d" args="" -->
 <div class="memitem">
@@ -146,6 +148,8 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Rate at which the LM75 sensors are read (in ms) </p>
 
 </div>
 </div>
@@ -165,6 +169,9 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Initializes LM75 monitoring task. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>None </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="aad22b7da899582e180d29ee35c41e7e8"></a><!-- doxytag: member="lm75.h::vTaskLM75" ref="aad22b7da899582e180d29ee35c41e7e8" args="(void *Parameters)" -->
@@ -181,6 +188,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Monitoring task for LM75 sensor. </p>
+<p>This task unblocks after every <a class="el" href="lm75_8h.html#a1b84f8c27a039cd27ef5d1d496ab6d3d" title="Rate at which the LM75 sensors are read (in ms)">LM75_UPDATE_RATE</a> ms and updates the read from all the LM75 sensors listed in this module's SDR table</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Parameters</td><td>Pointer to parameter list passed to task upon initialization (not used here) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -270,7 +286,7 @@ Variables</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="lm75_8h.html">lm75.h</a>      </li>
 
-    <li class="footer">Generated on Mon Jun 27 2016 19:01:01 for openMMC by
+    <li class="footer">Generated on Mon Jun 27 2016 19:45:12 for openMMC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

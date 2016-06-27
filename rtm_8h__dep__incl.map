@@ -1,6 +1,6 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$main__mmc_8c.html" title="main_mmc.c" alt="" coords="5,83,101,112"/>
 <area shape="rect" id="node5" href="$rtm_8c.html" title="modules/rtm.c" alt="" coords="125,83,229,112"/>
-<area shape="rect" id="node7" href="$hotswap_8c.html" title="modules/sensors/hotswap.c" alt="" coords="253,83,437,112"/>
+<area shape="rect" id="node7" href="$hotswap_8c.html" title="Hotswap sensors implementation." alt="" coords="253,83,437,112"/>
 <area shape="rect" id="node9" href="$rtm__user_8c.html" title="port/board/rtm&#45;8sfp/rtm_user.c" alt="" coords="461,83,659,112"/>
 </map>

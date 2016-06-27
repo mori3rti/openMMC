@@ -37,7 +37,6 @@ var sdr_8h =
     [ "check_sensor_event", "sdr_8h.html#a9a66580cf2e3e714398c0b4759a5f0e8", null ],
     [ "find_sensor_by_id", "sdr_8h.html#a2a9da1aafcb4ef730ec322b6267af292", null ],
     [ "find_sensor_by_sdr", "sdr_8h.html#a4b25a177fdd40cf9511b2ea5b352424b", null ],
-    [ "initializeDCDC", "sdr_8h.html#a36b5372f7b812f7c5c20ef239a2c52d1", null ],
     [ "sdr_init", "sdr_8h.html#a537d6c311893d2f5abba21e8380854d9", null ],
     [ "sdr_insert_entry", "sdr_8h.html#abcc5b7941cf56d5c7510495e981c069e", null ],
     [ "sdr_pop", "sdr_8h.html#a80653f80d7ca91dce6b3d636dc5ba0f5", null ],

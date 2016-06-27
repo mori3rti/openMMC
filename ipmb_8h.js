@@ -1,9 +1,11 @@
 var ipmb_8h =
 [
     [ "CLIENT_NOTIFY_TIMEOUT", "ipmb_8h.html#a7219ff5cd3c13052d4d4a890f680527f", null ],
+    [ "GPIO_GA_DELAY", "ipmb_8h.html#afb1fa450cf18fa7580c7a27c68f142a3", null ],
     [ "IPMB_CLIENT_QUEUE_LEN", "ipmb_8h.html#a76f3c64e1b2e71e7d78672424fb1c999", null ],
     [ "IPMB_DEST_LUN_MASK", "ipmb_8h.html#af71080dafa1f17e2cc8852586b5b4324", null ],
     [ "IPMB_I2C", "ipmb_8h.html#a3793f7468fd51edf168fe607044e57ca", null ],
+    [ "IPMB_I2C_FREQ", "ipmb_8h.html#abee717e3bd520f879994892563cc3965", null ],
     [ "IPMB_MAX_RETRIES", "ipmb_8h.html#a5546e89aff8048ba1e566aaaed175c27", null ],
     [ "IPMB_MSG_TIMEOUT", "ipmb_8h.html#adb061c5466ba5d2d8c7bb47f74ff137b", null ],
     [ "IPMB_NETFN_MASK", "ipmb_8h.html#a38546674ce3ba08ae07cb1ef494e7bf5", null ],

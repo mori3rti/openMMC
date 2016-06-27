@@ -52,7 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -118,21 +118,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00017"></a>00017 <span class="comment"> *   along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span>
 <a name="l00018"></a>00018 <span class="comment"> */</span>
 <a name="l00019"></a>00019 
-<a name="l00028"></a>00028 <span class="preprocessor">#ifdef PORT_INTERRUPTIONS_H_</span>
-<a name="l00029"></a>00029 <span class="preprocessor"></span><span class="preprocessor">#error Interruption functions already defined somewhere else! Aborting...</span>
-<a name="l00030"></a>00030 <span class="preprocessor"></span><span class="preprocessor">#else</span>
-<a name="l00031"></a>00031 <span class="preprocessor"></span><span class="preprocessor">#define PORT_INTERRUPTIONS_H_</span>
-<a name="l00032"></a>00032 <span class="preprocessor"></span>
-<a name="l00033"></a>00033 <span class="preprocessor">#include &quot;core_cm3.h&quot;</span>
-<a name="l00034"></a>00034 
-<a name="l00035"></a><a class="code" href="lpc17__interruptions_8h.html#a79536555186cc1c1e003dc02f18faaba">00035</a> <span class="preprocessor">#define irq_set_priority(irq, priority) NVIC_SetPriority( irq, priority )</span>
-<a name="l00036"></a><a class="code" href="lpc17__interruptions_8h.html#a7ea700ee31e4ff036c997a554dbedfeb">00036</a> <span class="preprocessor"></span><span class="preprocessor">#define irq_enable(irq)                 NVIC_EnableIRQ( irq )</span>
-<a name="l00037"></a><a class="code" href="lpc17__interruptions_8h.html#a82c3a15d812f58e0f6525f358d031e6d">00037</a> <span class="preprocessor"></span><span class="preprocessor">#define irq_disable(irq)                NVIC_DisableIRQ( irq )</span>
-<a name="l00038"></a><a class="code" href="lpc17__interruptions_8h.html#a29fce977406260f5eda4a2d40d2bc7f8">00038</a> <span class="preprocessor"></span><span class="preprocessor">#define irq_clear_pending(irq)          NVIC_ClearPendingIRQ( irq )</span>
-<a name="l00039"></a><a class="code" href="lpc17__interruptions_8h.html#a7fe15b40a22372e22aa16f77e7707a61">00039</a> <span class="preprocessor"></span><span class="preprocessor">#define irq_set_pending(irq)            NVIC_SetPendingIRQ( irq )</span>
-<a name="l00040"></a><a class="code" href="lpc17__interruptions_8h.html#af50bf0b70b0ab79f68a3b591c0e1606f">00040</a> <span class="preprocessor"></span><span class="preprocessor">#define irq_get_active(irq)             NVIC_GetActive( irq )</span>
+<a name="l00027"></a>00027 <span class="preprocessor">#ifdef PORT_INTERRUPTIONS_H_</span>
+<a name="l00028"></a>00028 <span class="preprocessor"></span><span class="preprocessor">#error Interruption functions already defined somewhere else! Aborting...</span>
+<a name="l00029"></a>00029 <span class="preprocessor"></span><span class="preprocessor">#else</span>
+<a name="l00030"></a>00030 <span class="preprocessor"></span><span class="preprocessor">#define PORT_INTERRUPTIONS_H_</span>
+<a name="l00031"></a>00031 <span class="preprocessor"></span>
+<a name="l00032"></a>00032 <span class="preprocessor">#include &quot;core_cm3.h&quot;</span>
+<a name="l00033"></a>00033 
+<a name="l00040"></a><a class="code" href="lpc17__interruptions_8h.html#a79536555186cc1c1e003dc02f18faaba">00040</a> <span class="preprocessor">#define irq_set_priority(irq, priority) NVIC_SetPriority( irq, priority )</span>
 <a name="l00041"></a>00041 <span class="preprocessor"></span>
-<a name="l00042"></a>00042 <span class="preprocessor">#endif</span>
+<a name="l00048"></a><a class="code" href="lpc17__interruptions_8h.html#a7ea700ee31e4ff036c997a554dbedfeb">00048</a> <span class="preprocessor">#define irq_enable(irq)                 NVIC_EnableIRQ( irq )</span>
+<a name="l00049"></a>00049 <span class="preprocessor"></span>
+<a name="l00056"></a><a class="code" href="lpc17__interruptions_8h.html#a82c3a15d812f58e0f6525f358d031e6d">00056</a> <span class="preprocessor">#define irq_disable(irq)                NVIC_DisableIRQ( irq )</span>
+<a name="l00057"></a>00057 <span class="preprocessor"></span>
+<a name="l00065"></a><a class="code" href="lpc17__interruptions_8h.html#a29fce977406260f5eda4a2d40d2bc7f8">00065</a> <span class="preprocessor">#define irq_clear_pending(irq)          NVIC_ClearPendingIRQ( irq )</span>
+<a name="l00066"></a>00066 <span class="preprocessor"></span>
+<a name="l00074"></a><a class="code" href="lpc17__interruptions_8h.html#a7fe15b40a22372e22aa16f77e7707a61">00074</a> <span class="preprocessor">#define irq_set_pending(irq)            NVIC_SetPendingIRQ( irq )</span>
+<a name="l00075"></a>00075 <span class="preprocessor"></span>
+<a name="l00086"></a><a class="code" href="lpc17__interruptions_8h.html#af50bf0b70b0ab79f68a3b591c0e1606f">00086</a> <span class="preprocessor">#define irq_get_active(irq)             NVIC_GetActive( irq )</span>
+<a name="l00087"></a>00087 <span class="preprocessor"></span>
+<a name="l00088"></a>00088 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -153,7 +158,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="lpc17__interruptions_8h.html">lpc17_interruptions.h</a>      </li>
 
-    <li class="footer">Generated on Mon Jun 27 2016 19:01:00 for openMMC by
+    <li class="footer">Generated on Mon Jun 27 2016 19:45:12 for openMMC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

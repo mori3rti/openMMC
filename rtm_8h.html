@@ -52,7 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -101,12 +101,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">modules/rtm.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="dynheader">
+
+<p>Generic RTM Module management functions.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="rtm__user_8h_source.html">rtm_user.h</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for rtm.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="rtm_8h__incl.png" border="0" usemap="#modules_2rtm_8h" alt=""/></div>
+<map name="modules_2rtm_8h" id="modules_2rtm_8h">
+<area shape="rect" id="node3" href="rtm__user_8h.html" title="rtm_user.h" alt="" coords="16,83,99,112"/></map>
+</div>
+</div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="rtm_8h__dep__incl.png" border="0" usemap="#modules_2rtm_8hdep" alt=""/></div>
 <map name="modules_2rtm_8hdep" id="modules_2rtm_8hdep">
-<area shape="rect" id="node3" href="main__mmc_8c.html" title="main_mmc.c" alt="" coords="5,83,101,112"/><area shape="rect" id="node5" href="rtm_8c.html" title="modules/rtm.c" alt="" coords="125,83,229,112"/><area shape="rect" id="node7" href="hotswap_8c.html" title="modules/sensors/hotswap.c" alt="" coords="253,83,437,112"/><area shape="rect" id="node9" href="rtm__user_8c.html" title="port/board/rtm&#45;8sfp/rtm_user.c" alt="" coords="461,83,659,112"/></map>
+<area shape="rect" id="node3" href="main__mmc_8c.html" title="main_mmc.c" alt="" coords="5,83,101,112"/><area shape="rect" id="node5" href="rtm_8c.html" title="modules/rtm.c" alt="" coords="125,83,229,112"/><area shape="rect" id="node7" href="hotswap_8c.html" title="Hotswap sensors implementation." alt="" coords="253,83,437,112"/><area shape="rect" id="node9" href="rtm__user_8c.html" title="port/board/rtm&#45;8sfp/rtm_user.c" alt="" coords="461,83,659,112"/></map>
 </div>
 </div>
 <p><a href="rtm_8h_source.html">Go to the source code of this file.</a></p>
@@ -114,63 +125,12 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtm_8h.html#ab4377e1f7e52ddf5030690f9d4487760">rtm_manage_init</a> (void)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtm_8h.html#a600dfbdfd88b9297e07278f91bec166d">rtm_enable_payload_power</a> (void)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtm_8h.html#a96d76fe42b45516dd827e590e5a805fd">rtm_get_hotswap_handle_status</a> (void)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtm_8h.html#a40e38dcc222f86c10c87b32178d23c41">rtm_compatibility_check</a> (void)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtm_8h.html#a16af4f7771d39df5cc1d322f22643855">rtm_quiesce</a> (void)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize RTM Manage task.  <a href="#ab4377e1f7e52ddf5030690f9d4487760"></a><br/></td></tr>
 </table>
-<hr/><h2>Function Documentation</h2>
-<a class="anchor" id="a40e38dcc222f86c10c87b32178d23c41"></a><!-- doxytag: member="rtm.h::rtm_compatibility_check" ref="a40e38dcc222f86c10c87b32178d23c41" args="(void)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="rtm__user_8c.html#a40e38dcc222f86c10c87b32178d23c41">rtm_compatibility_check</a> </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a600dfbdfd88b9297e07278f91bec166d"></a><!-- doxytag: member="rtm.h::rtm_enable_payload_power" ref="a600dfbdfd88b9297e07278f91bec166d" args="(void)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="rtm__user_8h.html#a600dfbdfd88b9297e07278f91bec166d">rtm_enable_payload_power</a> </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a96d76fe42b45516dd827e590e5a805fd"></a><!-- doxytag: member="rtm.h::rtm_get_hotswap_handle_status" ref="a96d76fe42b45516dd827e590e5a805fd" args="(void)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t <a class="el" href="rtm__user_8h.html#a96d76fe42b45516dd827e590e5a805fd">rtm_get_hotswap_handle_status</a> </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Generic RTM Module management functions. </p>
+<dl class="author"><dt><b>Author:</b></dt><dd>Henrique Silva &lt;<a href="mailto:henrique.silva@lnls.br">henrique.silva@lnls.br</a>&gt; </dd></dl>
+</div><hr/><h2>Function Documentation</h2>
 <a class="anchor" id="ab4377e1f7e52ddf5030690f9d4487760"></a><!-- doxytag: member="rtm.h::rtm_manage_init" ref="ab4377e1f7e52ddf5030690f9d4487760" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
@@ -186,22 +146,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a16af4f7771d39df5cc1d322f22643855"></a><!-- doxytag: member="rtm.h::rtm_quiesce" ref="a16af4f7771d39df5cc1d322f22643855" args="(void)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="rtm__user_8c.html#a16af4f7771d39df5cc1d322f22643855">rtm_quiesce</a> </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
+<p>Initialize RTM Manage task. </p>
+<p>This task creates the RTM_Manage task and initialize some GPIO pins used to detect the RTM Board presence</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>None </dd></dl>
 
 </div>
 </div>
@@ -225,7 +172,7 @@ Functions</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="rtm_8h.html">rtm.h</a>      </li>
 
-    <li class="footer">Generated on Mon Jun 27 2016 19:01:01 for openMMC by
+    <li class="footer">Generated on Mon Jun 27 2016 19:45:12 for openMMC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

@@ -52,7 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -123,20 +123,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00022"></a>00022 <span class="preprocessor">#ifndef JTAG_H_</span>
 <a name="l00023"></a>00023 <span class="preprocessor"></span><span class="preprocessor">#define JTAG_H_</span>
 <a name="l00024"></a>00024 <span class="preprocessor"></span>
-<a name="l00025"></a><a class="code" href="jtag_8h.html#a4901cf29ee77e6777699ee24265806d9">00025</a> <span class="preprocessor">#define SCANSTA_PORT            2</span>
-<a name="l00026"></a>00026 <span class="preprocessor"></span>
-<a name="l00027"></a><a class="code" href="jtag_8h.html#a4fab4de1e4af7493cb8131a4fcc540d1">00027</a> <span class="preprocessor">#define SCANSTA_ADDR0_PIN       0</span>
-<a name="l00028"></a><a class="code" href="jtag_8h.html#acfc05e729ce063ecc644090d4d67754f">00028</a> <span class="preprocessor"></span><span class="preprocessor">#define SCANSTA_ADDR1_PIN       1</span>
-<a name="l00029"></a><a class="code" href="jtag_8h.html#afee60b4f4e76731f4a53a29ebf55f2a7">00029</a> <span class="preprocessor"></span><span class="preprocessor">#define SCANSTA_ADDR2_PIN       2</span>
-<a name="l00030"></a><a class="code" href="jtag_8h.html#a8dd492439c41835cdf34d03168dd64a0">00030</a> <span class="preprocessor"></span><span class="preprocessor">#define SCANSTA_ADDR3_PIN       3</span>
-<a name="l00031"></a><a class="code" href="jtag_8h.html#af9d6c6f578b5e34dc382ca80a13d240f">00031</a> <span class="preprocessor"></span><span class="preprocessor">#define SCANSTA_ADDR4_PIN       4</span>
-<a name="l00032"></a><a class="code" href="jtag_8h.html#af0eed3700c2abf350f4f372855c70c8f">00032</a> <span class="preprocessor"></span><span class="preprocessor">#define SCANSTA_ADDR5_PIN       5</span>
-<a name="l00033"></a><a class="code" href="jtag_8h.html#ac75da03f2daf0123354ac730f7d92bc9">00033</a> <span class="preprocessor"></span><span class="preprocessor">#define SCANSTA_ADDR6_PIN       6</span>
-<a name="l00034"></a><a class="code" href="jtag_8h.html#aff45ad541c4d60d4a20392ec95eb3557">00034</a> <span class="preprocessor"></span><span class="preprocessor">#define SCANSTA_RST_PIN         7</span>
-<a name="l00035"></a>00035 <span class="preprocessor"></span>
-<a name="l00036"></a>00036 <span class="keywordtype">void</span> <a class="code" href="jtag_8c.html#adfd2311ade82e67b8756de29408313d7">scansta_init</a>( <span class="keywordtype">void</span> );
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038 <span class="preprocessor">#endif</span>
+<a name="l00025"></a>00025 <span class="preprocessor">#include &quot;pin_mapping.h&quot;</span>
+<a name="l00026"></a>00026 
+<a name="l00030"></a>00030 <span class="keywordtype">void</span> <a class="code" href="jtag_8c.html#adfd2311ade82e67b8756de29408313d7" title="Initialize and configure SCANSTA addr pins.">scansta_init</a>( <span class="keywordtype">void</span> );
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -157,7 +148,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="jtag_8h.html">jtag.h</a>      </li>
 
-    <li class="footer">Generated on Mon Jun 27 2016 19:01:00 for openMMC by
+    <li class="footer">Generated on Mon Jun 27 2016 19:45:12 for openMMC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

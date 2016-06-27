@@ -52,7 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -120,33 +120,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00019"></a>00019 <span class="comment"> *   @license GPL-3.0+ &lt;http://spdx.org/licenses/GPL-3.0+&gt;</span>
 <a name="l00020"></a>00020 <span class="comment"> */</span>
 <a name="l00021"></a>00021 
-<a name="l00022"></a>00022 <span class="preprocessor">#ifndef PCA9554_H_</span>
-<a name="l00023"></a>00023 <span class="preprocessor"></span><span class="preprocessor">#define PCA9554_H_</span>
-<a name="l00024"></a>00024 <span class="preprocessor"></span>
-<a name="l00025"></a><a class="code" href="pca9554_8h.html#a18fcefbdede27f814b583906191502d0">00025</a> <span class="preprocessor">#define PCA9554_INPUT_REG       0</span>
-<a name="l00026"></a><a class="code" href="pca9554_8h.html#a3cbb13dc37255fb997d713f42c4d7f07">00026</a> <span class="preprocessor"></span><span class="preprocessor">#define PCA9554_OUTPUT_REG      1</span>
-<a name="l00027"></a><a class="code" href="pca9554_8h.html#acfe69257a576514acb5d3f43596bcc83">00027</a> <span class="preprocessor"></span><span class="preprocessor">#define PCA9554_POLARITY_REG    2</span>
-<a name="l00028"></a><a class="code" href="pca9554_8h.html#af6e007cbed4eee2ca91fe8fc8004b4c9">00028</a> <span class="preprocessor"></span><span class="preprocessor">#define PCA9554_CFG_REG         3</span>
-<a name="l00029"></a>00029 <span class="preprocessor"></span>
-<a name="l00030"></a>00030 <span class="comment">/* Pins Read/Write */</span>
-<a name="l00031"></a>00031 uint8_t <a class="code" href="pca9554_8c.html#aefdd9c4aa2a4c5fead5266adc6323f77">pca9554_read_port</a>( <span class="keywordtype">void</span> );
-<a name="l00032"></a>00032 uint8_t <a class="code" href="pca9554_8c.html#a9f5fe130d764d72d3d53678255f4a548">pca9554_read_pin</a>( uint8_t pin );
-<a name="l00033"></a>00033 <span class="keywordtype">void</span> <a class="code" href="pca9554_8c.html#a91e171d0b45e630b19187838ea159e9b">pca9554_write_port</a>( uint8_t data );
-<a name="l00034"></a>00034 <span class="keywordtype">void</span> <a class="code" href="pca9554_8c.html#a783e2d07ba3206f89cc861e291585885">pca9554_write_pin</a>( uint8_t pin, uint8_t data );
-<a name="l00035"></a>00035 
-<a name="l00036"></a>00036 <span class="comment">/* Polarity Control */</span>
-<a name="l00037"></a>00037 <span class="keywordtype">void</span> <a class="code" href="pca9554_8c.html#a4c92823b248c2c1fccffba6032a89273">pca9554_set_port_pol</a>( uint8_t pol );
-<a name="l00038"></a>00038 <span class="keywordtype">void</span> <a class="code" href="pca9554_8c.html#aa75379fb98d01184e7e40ab5aa7c54b4">pca9554_set_pin_pol</a>( uint8_t pin, uint8_t pol );
-<a name="l00039"></a>00039 uint8_t <a class="code" href="pca9554_8c.html#aaadbffaff9c7fe10f637cac2509a95de">pca9554_get_port_pol</a>( <span class="keywordtype">void</span> );
-<a name="l00040"></a>00040 uint8_t <a class="code" href="pca9554_8c.html#a56d6192cba8fcbcf936fa9a1df4d6177">pca9554_get_pin_pol</a>( uint8_t pin );
-<a name="l00041"></a>00041 
-<a name="l00042"></a>00042 <span class="comment">/* Pins direction (output/input) */</span>
-<a name="l00043"></a>00043 <span class="keywordtype">void</span> <a class="code" href="pca9554_8c.html#ac4c2310e20f0bffecdaa4b055140fad2">pca9554_set_port_dir</a>( uint8_t dir );
-<a name="l00044"></a>00044 <span class="keywordtype">void</span> <a class="code" href="pca9554_8c.html#a5b1789d72502957b21c270586e465665">pca9554_set_pin_dir</a>( uint8_t pin, uint8_t dir );
-<a name="l00045"></a>00045 uint8_t <a class="code" href="pca9554_8c.html#a60a0658eb7e56a4edad1010907661cd8">pca9554_get_port_dir</a>( <span class="keywordtype">void</span> );
-<a name="l00046"></a>00046 uint8_t <a class="code" href="pca9554_8c.html#ad3f198e6005045b42aefec401f4ce75f">pca9554_get_pin_dir</a>( uint8_t pin );
-<a name="l00047"></a>00047 
-<a name="l00048"></a>00048 <span class="preprocessor">#endif</span>
+<a name="l00031"></a>00031 <span class="preprocessor">#ifndef PCA9554_H_</span>
+<a name="l00032"></a>00032 <span class="preprocessor"></span><span class="preprocessor">#define PCA9554_H_</span>
+<a name="l00033"></a>00033 <span class="preprocessor"></span>
+<a name="l00048"></a><a class="code" href="group__PCA9554__REGS.html#ga18fcefbdede27f814b583906191502d0">00048</a> <span class="preprocessor">#define PCA9554_INPUT_REG       0</span>
+<a name="l00049"></a>00049 <span class="preprocessor"></span>
+<a name="l00054"></a><a class="code" href="group__PCA9554__REGS.html#ga3cbb13dc37255fb997d713f42c4d7f07">00054</a> <span class="preprocessor">#define PCA9554_OUTPUT_REG      1</span>
+<a name="l00055"></a>00055 <span class="preprocessor"></span>
+<a name="l00060"></a><a class="code" href="group__PCA9554__REGS.html#gacfe69257a576514acb5d3f43596bcc83">00060</a> <span class="preprocessor">#define PCA9554_POLARITY_REG    2</span>
+<a name="l00061"></a>00061 <span class="preprocessor"></span>
+<a name="l00066"></a><a class="code" href="group__PCA9554__REGS.html#gaf6e007cbed4eee2ca91fe8fc8004b4c9">00066</a> <span class="preprocessor">#define PCA9554_CFG_REG         3</span>
+<a name="l00067"></a>00067 <span class="preprocessor"></span>
+<a name="l00073"></a>00073 <span class="comment">/* Pins Read/Write */</span>
+<a name="l00079"></a>00079 uint8_t <a class="code" href="pca9554_8c.html#aefdd9c4aa2a4c5fead5266adc6323f77" title="Read all pins status.">pca9554_read_port</a>( <span class="keywordtype">void</span> );
+<a name="l00080"></a>00080 
+<a name="l00088"></a>00088 uint8_t <a class="code" href="pca9554_8c.html#a9f5fe130d764d72d3d53678255f4a548" title="Read a pin status.">pca9554_read_pin</a>( uint8_t pin );
+<a name="l00089"></a>00089 
+<a name="l00097"></a>00097 <span class="keywordtype">void</span> <a class="code" href="pca9554_8c.html#a91e171d0b45e630b19187838ea159e9b" title="Write all output pins.">pca9554_write_port</a>( uint8_t data );
+<a name="l00098"></a>00098 
+<a name="l00107"></a>00107 <span class="keywordtype">void</span> <a class="code" href="pca9554_8c.html#ac721949890125de4552acb3b5ad18759" title="Write a output pin.">pca9554_write_pin</a>( uint8_t pin, <span class="keywordtype">bool</span> data );
+<a name="l00108"></a>00108 
+<a name="l00109"></a>00109 <span class="comment">/* Polarity Control */</span>
+<a name="l00115"></a>00115 <span class="keywordtype">void</span> <a class="code" href="pca9554_8c.html#a4c92823b248c2c1fccffba6032a89273" title="Set all pins polarity.">pca9554_set_port_pol</a>( uint8_t pol );
+<a name="l00116"></a>00116 
+<a name="l00123"></a>00123 <span class="keywordtype">void</span> <a class="code" href="pca9554_8c.html#ae7c9a0417893c506c7be8ee2b135814c" title="Set pin polarity.">pca9554_set_pin_pol</a>( uint8_t pin, <span class="keywordtype">bool</span> pol );
+<a name="l00124"></a>00124 
+<a name="l00130"></a>00130 uint8_t <a class="code" href="pca9554_8c.html#aaadbffaff9c7fe10f637cac2509a95de" title="Read all pins polarity.">pca9554_get_port_pol</a>( <span class="keywordtype">void</span> );
+<a name="l00131"></a>00131 
+<a name="l00139"></a>00139 <span class="keywordtype">bool</span> <a class="code" href="pca9554_8c.html#a1bf6314b3e4281fe3b22f840cc0a0e81" title="Read pin polarity.">pca9554_get_pin_pol</a>( uint8_t pin );
+<a name="l00140"></a>00140 
+<a name="l00141"></a>00141 <span class="comment">/* Pins direction (output/input) */</span>
+<a name="l00149"></a>00149 <span class="keywordtype">void</span> <a class="code" href="pca9554_8c.html#ac4c2310e20f0bffecdaa4b055140fad2" title="Set all pins direction.">pca9554_set_port_dir</a>( uint8_t dir );
+<a name="l00150"></a>00150 
+<a name="l00159"></a>00159 <span class="keywordtype">void</span> <a class="code" href="pca9554_8c.html#a88f0e84ca9bcb78f480d8118eb0beb60" title="Set pin direction.">pca9554_set_pin_dir</a>( uint8_t pin, <span class="keywordtype">bool</span> dir );
+<a name="l00160"></a>00160 
+<a name="l00166"></a>00166 uint8_t <a class="code" href="pca9554_8c.html#a60a0658eb7e56a4edad1010907661cd8" title="Read all pins direction.">pca9554_get_port_dir</a>( <span class="keywordtype">void</span> );
+<a name="l00167"></a>00167 
+<a name="l00175"></a>00175 <span class="keywordtype">bool</span> <a class="code" href="pca9554_8c.html#ae99c729aa74596437ab358b4a625d9a9" title="Read pin direction.">pca9554_get_pin_dir</a>( uint8_t pin );
+<a name="l00176"></a>00176 
+<a name="l00177"></a>00177 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -167,7 +179,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="pca9554_8h.html">pca9554.h</a>      </li>
 
-    <li class="footer">Generated on Mon Jun 27 2016 19:01:00 for openMMC by
+    <li class="footer">Generated on Mon Jun 27 2016 19:45:12 for openMMC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

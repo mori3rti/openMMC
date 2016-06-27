@@ -10,6 +10,6 @@
 <area shape="rect" id="node35" href="$lpc17__interruptions_8h.html" title="Interruptions control." alt="" coords="159,160,300,189"/>
 <area shape="rect" id="node39" href="$lpc17__hpm_8h.html" title="Firmware update functions (HPM.1)" alt="" coords="455,160,551,189"/>
 <area shape="rect" id="node41" href="$lpc17__power_8h.html" title="Definitions of power mode selection for LPC17xx." alt="" coords="324,160,431,189"/>
-<area shape="rect" id="node45" href="$lpc17__pincfg_8h.html" title="lpc17_pincfg.h" alt="" coords="575,160,681,189"/>
+<area shape="rect" id="node45" href="$lpc17__pincfg_8h.html" title="Pin Config functions redirection for LPC17xx." alt="" coords="575,160,681,189"/>
 <area shape="rect" id="node50" href="$lpc17__uart_8h.html" title="lpc17_uart.h" alt="" coords="1464,160,1557,189"/>
 </map>

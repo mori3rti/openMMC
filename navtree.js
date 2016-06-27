@@ -1,7 +1,7 @@
 var NAVTREE =
 [
   [ "openMMC", "index.html", [
-    [ "Related Pages", "pages.html", "pages" ],
+    [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [

@@ -52,7 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -99,9 +99,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">modules/ipmi.c File Reference</div>  </div>
+<div class="title">modules/ipmi.c File Reference<div class="ingroups"><a class="el" href="group__IPMI.html">IPMI - Intelligent Platform Management Interface</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>IPMI module implementation.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;string.h&quot;</code><br/>
 <code>#include &quot;FreeRTOS.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ipmi_8h_source.html">ipmi.h</a>&quot;</code><br/>
@@ -115,39 +118,47 @@ Include dependency graph for ipmi.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="ipmi_8c__incl.png" border="0" usemap="#modules_2ipmi_8c" alt=""/></div>
 <map name="modules_2ipmi_8c" id="modules_2ipmi_8c">
-<area shape="rect" id="node7" href="ipmi_8h.html" title="ipmi.h" alt="" coords="451,83,507,112"/><area shape="rect" id="node21" href="port_8h.html" title="Port layer (includes all portable functions headers)" alt="" coords="969,160,1023,189"/><area shape="rect" id="node67" href="task__priorities_8h.html" title="task_priorities.h" alt="" coords="933,83,1048,112"/><area shape="rect" id="node69" href="led_8h.html" title="led.h" alt="" coords="739,83,789,112"/><area shape="rect" id="node74" href="uart__debug_8h.html" title="uart_debug.h" alt="" coords="813,83,909,112"/><area shape="rect" id="node9" href="ipmb_8h.html" title="Definitions used in IPMB Layer." alt="" coords="385,237,447,267"/><area shape="rect" id="node18" href="sdr_8h.html" title="sdr.h" alt="" coords="453,160,504,189"/><area shape="rect" id="node25" href="lpc17__gpio_8h.html" title="lpc17_gpio.h" alt="" coords="779,237,872,267"/><area shape="rect" id="node29" href="lpc17__i2c_8h.html" title="I2C driver for LPC17xx." alt="" coords="896,237,984,267"/><area shape="rect" id="node31" href="lpc17__ssp_8h.html" title="lpc17_ssp.h" alt="" coords="587,237,677,267"/><area shape="rect" id="node38" href="lpc17__spi_8h.html" title="Legacy SPI driver definitions for LPC17xx." alt="" coords="1008,237,1096,267"/><area shape="rect" id="node42" href="lpc17__watchdog_8h.html" title="Definitions of Watchdog driver implementation for LPC17xx." alt="" coords="1120,237,1245,267"/><area shape="rect" id="node46" href="lpc17__interruptions_8h.html" title="Interruptions control." alt="" coords="1269,237,1411,267"/><area shape="rect" id="node50" href="lpc17__hpm_8h.html" title="Firmware update functions (HPM.1)" alt="" coords="1435,237,1531,267"/><area shape="rect" id="node52" href="lpc17__power_8h.html" title="Definitions of power mode selection for LPC17xx." alt="" coords="1555,237,1661,267"/><area shape="rect" id="node56" href="lpc17__pincfg_8h.html" title="lpc17_pincfg.h" alt="" coords="1685,237,1792,267"/><area shape="rect" id="node61" href="lpc17__uart_8h.html" title="lpc17_uart.h" alt="" coords="145,237,239,267"/></map>
+<area shape="rect" id="node7" href="ipmi_8h.html" title="IPMI module definitions." alt="" coords="451,83,507,112"/><area shape="rect" id="node21" href="port_8h.html" title="Port layer (includes all portable functions headers)" alt="" coords="969,160,1023,189"/><area shape="rect" id="node67" href="task__priorities_8h.html" title="task_priorities.h" alt="" coords="933,83,1048,112"/><area shape="rect" id="node69" href="led_8h.html" title="led.h" alt="" coords="739,83,789,112"/><area shape="rect" id="node74" href="uart__debug_8h.html" title="uart_debug.h" alt="" coords="813,83,909,112"/><area shape="rect" id="node9" href="ipmb_8h.html" title="Definitions used in IPMB Layer." alt="" coords="385,237,447,267"/><area shape="rect" id="node18" href="sdr_8h.html" title="sdr.h" alt="" coords="453,160,504,189"/><area shape="rect" id="node25" href="lpc17__gpio_8h.html" title="lpc17_gpio.h" alt="" coords="779,237,872,267"/><area shape="rect" id="node29" href="lpc17__i2c_8h.html" title="I2C driver for LPC17xx." alt="" coords="896,237,984,267"/><area shape="rect" id="node31" href="lpc17__ssp_8h.html" title="lpc17_ssp.h" alt="" coords="587,237,677,267"/><area shape="rect" id="node38" href="lpc17__spi_8h.html" title="Legacy SPI driver definitions for LPC17xx." alt="" coords="1008,237,1096,267"/><area shape="rect" id="node42" href="lpc17__watchdog_8h.html" title="Definitions of Watchdog driver implementation for LPC17xx." alt="" coords="1120,237,1245,267"/><area shape="rect" id="node46" href="lpc17__interruptions_8h.html" title="Interruptions control." alt="" coords="1269,237,1411,267"/><area shape="rect" id="node50" href="lpc17__hpm_8h.html" title="Firmware update functions (HPM.1)" alt="" coords="1435,237,1531,267"/><area shape="rect" id="node52" href="lpc17__power_8h.html" title="Definitions of power mode selection for LPC17xx." alt="" coords="1555,237,1661,267"/><area shape="rect" id="node56" href="lpc17__pincfg_8h.html" title="Pin Config functions redirection for LPC17xx." alt="" coords="1685,237,1792,267"/><area shape="rect" id="node61" href="lpc17__uart_8h.html" title="lpc17_uart.h" alt="" coords="145,237,239,267"/></map>
 </div>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#a39a0f1e61e5e56094a3e16768974379c">IPMITask</a> (void *pvParameters)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">IPMI dispatcher task.  <a href="#a39a0f1e61e5e56094a3e16768974379c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#a7cb50481a3971a3910efd1ba4e4d7876">ipmi_init</a> (void)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the IPMI Dispatcher.  <a href="#a7cb50481a3971a3910efd1ba4e4d7876"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="ipmi_8h.html#ae8d76fafa26fe153e5646fb94b6399fb">t_req_handler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#acbfa06d1826d965b679c660d08f033bf">ipmi_retrieve_handler</a> (uint8_t netfn, uint8_t cmd)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a handler associated with a given netfunction and command.  <a href="#acbfa06d1826d965b679c660d08f033bf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="ipmb_8h.html#a8d757edf82d973e9e19ea700b3cd0671">ipmb_error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#a87596b58965c4479b96a79b2a789566d">ipmi_event_send</a> (<a class="el" href="structsensor__t.html">sensor_t</a> *sensor, uint8_t assert_deassert, uint8_t *evData, uint8_t length)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an event message via IPMB interface.  <a href="#a87596b58965c4479b96a79b2a789566d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#ab560cc7a3b9a9264296f742d63b1283a">IPMI_HANDLER</a> (ipmi_get_device_id, <a class="el" href="ipmi_8h.html#a1581da6b4c468038e4f3f5f531c8ffa7">NETFN_APP</a>, <a class="el" href="ipmi_8h.html#ace0772092f035503df32a1ba7c89181b">IPMI_GET_DEVICE_ID_CMD</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#ab560cc7a3b9a9264296f742d63b1283a">IPMI_HANDLER</a> (ipmi_get_device_id, <a class="el" href="group__IPMI__NETFN.html#ga1581da6b4c468038e4f3f5f531c8ffa7">NETFN_APP</a>, <a class="el" href="group__IPMI__APP__CMD.html#gace0772092f035503df32a1ba7c89181b">IPMI_GET_DEVICE_ID_CMD</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Handler for GET Device ID command as in IPMI v2.0 section 20.1 for more information.  <a href="#ab560cc7a3b9a9264296f742d63b1283a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#a36cbdc74ce276263dbd60fdcfab6ad6a">IPMI_HANDLER</a> (ipmi_get_device_guid, <a class="el" href="ipmi_8h.html#a1581da6b4c468038e4f3f5f531c8ffa7">NETFN_APP</a>, <a class="el" href="ipmi_8h.html#ac13d7b8f3ac14fa3a3172ccc0fbc41db">IPMI_GET_DEVICE_GUID_CMD</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#a36cbdc74ce276263dbd60fdcfab6ad6a">IPMI_HANDLER</a> (ipmi_get_device_guid, <a class="el" href="group__IPMI__NETFN.html#ga1581da6b4c468038e4f3f5f531c8ffa7">NETFN_APP</a>, <a class="el" href="group__IPMI__APP__CMD.html#gac13d7b8f3ac14fa3a3172ccc0fbc41db">IPMI_GET_DEVICE_GUID_CMD</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Handler for GET Device GUID command.  <a href="#a36cbdc74ce276263dbd60fdcfab6ad6a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#affd33bfe68f6abb307d3c5b77497eaab">IPMI_HANDLER</a> (ipmi_picmg_get_properties, <a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="ipmi_8h.html#ab7990586bcae7e8a21743a2995f23d5e">IPMI_PICMG_CMD_GET_PROPERTIES</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#affd33bfe68f6abb307d3c5b77497eaab">IPMI_HANDLER</a> (ipmi_picmg_get_properties, <a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="group__IPMI__PICMG__CMD.html#gab7990586bcae7e8a21743a2995f23d5e">IPMI_PICMG_CMD_GET_PROPERTIES</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Handler for GET Properties request. To be called by IPMI request handler, it must obey the predefined function signature and protocol. Check IPMI 2.0 table 3-11 for more information.  <a href="#affd33bfe68f6abb307d3c5b77497eaab"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#a3aab8dc0fb105c9d44eec109ccb17e1e">IPMI_HANDLER</a> (ipmi_picmg_cmd_set_amc_port_state, <a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="ipmi_8h.html#a934d185b4c8c450fcb9b55f32caf3713">IPMI_PICMG_CMD_SET_AMC_PORT_STATE</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#a3aab8dc0fb105c9d44eec109ccb17e1e">IPMI_HANDLER</a> (ipmi_picmg_cmd_set_amc_port_state, <a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="group__IPMI__PICMG__CMD.html#ga934d185b4c8c450fcb9b55f32caf3713">IPMI_PICMG_CMD_SET_AMC_PORT_STATE</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Handler for Set AMC Port state request. Check IPMI 2.0 table 3-11 for more information.  <a href="#a3aab8dc0fb105c9d44eec109ccb17e1e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#ac2e47a5ef63bf45b21f107ad3336048b">IPMI_HANDLER</a> (ipmi_get_device_locator_record, <a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="ipmi_8h.html#a6c562b344e382be2e5a6cc611f28b239">IPMI_PICMG_CMD_GET_DEVICE_LOCATOR_RECORD</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#a61618acaf5f4ab411e4f815b728dec5a">IPMI_HANDLER</a> (ipmi_picmg_cmd_fru_control, <a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="ipmi_8h.html#a869e065bba4457e23a028b9e611b1efd">IPMI_PICMG_CMD_FRU_CONTROL</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#a0d0796dd356f1145cf1293a57b7b9f5e">IPMI_HANDLER</a> (ipmi_picmg_cmd_get_fru_control_capabilities, <a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="ipmi_8h.html#aa2b44fd16a64771ca4d244f99d867b92">IPMI_PICMG_CMD_FRU_CONTROL_CAPABILITIES</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#a1d968bfc4481417a4496255b6addcc6a">IPMI_HANDLER</a> (ipmi_picmg_cmd_set_fru_activation_policy, <a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="ipmi_8h.html#ab13d6445b2f97348ee96d856c19ea6e1">IPMI_PICMG_CMD_SET_FRU_ACTIVATION_POLICY</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#ac2e47a5ef63bf45b21f107ad3336048b">IPMI_HANDLER</a> (ipmi_get_device_locator_record, <a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="group__IPMI__PICMG__CMD.html#ga6c562b344e382be2e5a6cc611f28b239">IPMI_PICMG_CMD_GET_DEVICE_LOCATOR_RECORD</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#a61618acaf5f4ab411e4f815b728dec5a">IPMI_HANDLER</a> (ipmi_picmg_cmd_fru_control, <a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="group__IPMI__PICMG__CMD.html#ga869e065bba4457e23a028b9e611b1efd">IPMI_PICMG_CMD_FRU_CONTROL</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#a0d0796dd356f1145cf1293a57b7b9f5e">IPMI_HANDLER</a> (ipmi_picmg_cmd_get_fru_control_capabilities, <a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="group__IPMI__PICMG__CMD.html#gaa2b44fd16a64771ca4d244f99d867b92">IPMI_PICMG_CMD_FRU_CONTROL_CAPABILITIES</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#a1d968bfc4481417a4496255b6addcc6a">IPMI_HANDLER</a> (ipmi_picmg_cmd_set_fru_activation_policy, <a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="group__IPMI__PICMG__CMD.html#gab13d6445b2f97348ee96d856c19ea6e1">IPMI_PICMG_CMD_SET_FRU_ACTIVATION_POLICY</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
 <tr><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QueueHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#abeb4cc3653b87d7bfe54aba4871d3818">ipmi_rxqueue</a> = NULL</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue that holds the incoming IPMI messages.  <a href="#abeb4cc3653b87d7bfe54aba4871d3818"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">volatile const <br class="typebreak"/>
 <a class="el" href="structt__req__handler__record.html">t_req_handler_record</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#a314385ff92bc32be37dc7ae39146c7f0">ipmiEntries</a> = (<a class="el" href="structt__req__handler__record.html">t_req_handler_record</a> *) &amp;<a class="el" href="ipmi_8h.html#aaf9366d031dbd7249fec4763d9d87387">_ipmi_handlers</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">IPMI handlers list start address.  <a href="#a314385ff92bc32be37dc7ae39146c7f0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">volatile const <br class="typebreak"/>
 <a class="el" href="structt__req__handler__record.html">t_req_handler_record</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#ad7ea94c7840b6bc4c14bcc28acb07ece">ipmiEntries_end</a> = (<a class="el" href="structt__req__handler__record.html">t_req_handler_record</a> *) &amp;<a class="el" href="ipmi_8h.html#a1df167b38f3654a555eb744b50e6d8d8">_eipmi_handlers</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">IPMI handlers list end address.  <a href="#ad7ea94c7840b6bc4c14bcc28acb07ece"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ipmi_8c.html#a0ea7154e097de7002a6b4909370dfed7">TaskIPMI_Handle</a></td></tr>
 </table>
-<hr/><h2>Function Documentation</h2>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>IPMI module implementation. </p>
+<dl class="author"><dt><b>Author:</b></dt><dd>Henrique Silva &lt;<a href="mailto:henrique.silva@lnls.br">henrique.silva@lnls.br</a>&gt;, LNLS </dd></dl>
+</div><hr/><h2>Function Documentation</h2>
 <a class="anchor" id="a87596b58965c4479b96a79b2a789566d"></a><!-- doxytag: member="ipmi.c::ipmi_event_send" ref="a87596b58965c4479b96a79b2a789566d" args="(sensor_t *sensor, uint8_t assert_deassert, uint8_t *evData, uint8_t length)" -->
 <div class="memitem">
 <div class="memproto">
@@ -186,6 +197,7 @@ Variables</h2></td></tr>
 <div class="memdoc">
 
 <p>Sends an event message via IPMB interface. </p>
+<p>Sends an event message (Platform Event) via IPMI.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">sensor</td><td>Pointer to sensor structure defined in sensor.h </td></tr>
@@ -213,13 +225,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#a1581da6b4c468038e4f3f5f531c8ffa7">NETFN_APP</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__NETFN.html#ga1581da6b4c468038e4f3f5f531c8ffa7">NETFN_APP</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#ace0772092f035503df32a1ba7c89181b">IPMI_GET_DEVICE_ID_CMD</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__APP__CMD.html#gace0772092f035503df32a1ba7c89181b">IPMI_GET_DEVICE_ID_CMD</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -246,13 +258,12 @@ Variables</h2></td></tr>
 <p>Handler for GET Device ID command as in IPMI v2.0 section 20.1 for more information. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">req[in]</td><td>pointer to request message</td></tr>
-    <tr><td class="paramname">rsp[out]</td><td>pointer to response message</td></tr>
+    <tr><td class="paramname">req[in]</td><td>Pointer to request IPMI message</td></tr>
+    <tr><td class="paramname">rsp[out]</td><td>Pointer to response IPMI message</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>: several bits of hardcoded information. Organize it so it makes more sense and is easier to modify. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>None </dd></dl>
 
 </div>
 </div>
@@ -269,13 +280,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#a1581da6b4c468038e4f3f5f531c8ffa7">NETFN_APP</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__NETFN.html#ga1581da6b4c468038e4f3f5f531c8ffa7">NETFN_APP</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#ac13d7b8f3ac14fa3a3172ccc0fbc41db">IPMI_GET_DEVICE_GUID_CMD</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__APP__CMD.html#gac13d7b8f3ac14fa3a3172ccc0fbc41db">IPMI_GET_DEVICE_GUID_CMD</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -324,13 +335,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#ab7990586bcae7e8a21743a2995f23d5e">IPMI_PICMG_CMD_GET_PROPERTIES</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__PICMG__CMD.html#gab7990586bcae7e8a21743a2995f23d5e">IPMI_PICMG_CMD_GET_PROPERTIES</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -378,13 +389,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#a934d185b4c8c450fcb9b55f32caf3713">IPMI_PICMG_CMD_SET_AMC_PORT_STATE</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__PICMG__CMD.html#ga934d185b4c8c450fcb9b55f32caf3713">IPMI_PICMG_CMD_SET_AMC_PORT_STATE</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -432,13 +443,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#a6c562b344e382be2e5a6cc611f28b239">IPMI_PICMG_CMD_GET_DEVICE_LOCATOR_RECORD</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__PICMG__CMD.html#ga6c562b344e382be2e5a6cc611f28b239">IPMI_PICMG_CMD_GET_DEVICE_LOCATOR_RECORD</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -477,13 +488,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#a869e065bba4457e23a028b9e611b1efd">IPMI_PICMG_CMD_FRU_CONTROL</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__PICMG__CMD.html#ga869e065bba4457e23a028b9e611b1efd">IPMI_PICMG_CMD_FRU_CONTROL</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -522,13 +533,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#aa2b44fd16a64771ca4d244f99d867b92">IPMI_PICMG_CMD_FRU_CONTROL_CAPABILITIES</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__PICMG__CMD.html#gaa2b44fd16a64771ca4d244f99d867b92">IPMI_PICMG_CMD_FRU_CONTROL_CAPABILITIES</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -567,13 +578,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#ab13d6445b2f97348ee96d856c19ea6e1">IPMI_PICMG_CMD_SET_FRU_ACTIVATION_POLICY</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__PICMG__CMD.html#gab13d6445b2f97348ee96d856c19ea6e1">IPMI_PICMG_CMD_SET_FRU_ACTIVATION_POLICY</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -613,6 +624,9 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Initializes the IPMI Dispatcher. </p>
+<p>This function initializes the IPMB Layer, registers the RX queue for incoming requests and creates the IPMI task </p>
 
 </div>
 </div>
@@ -668,6 +682,19 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>IPMI dispatcher task. </p>
+<p>This task handles all the incoming IPMI messages previously decoded by IPMB tasks. Here the netfunction and commands are analyzed and the respective handler function is called.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pvParameters</td><td>Pointer to parameters buffer passed to this task in initialization </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Call user-defined function, give request data and retrieve required response</p>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>Since IPMI task have a high priority, this handler function should not wait other tasks to unblock</dd></dl>
+<p>In case of error during IPMB response, the MMC may wait for a new command from the MCH. Check this for debugging purposes only.</p>
+<p>If there is no function handler, use data from received message to send "invalid command" response (IPMI table 5-2, page 44). </p>
+
 </div>
 </div>
 <hr/><h2>Variable Documentation</h2>
@@ -682,6 +709,8 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Queue that holds the incoming IPMI messages. </p>
+
 </div>
 </div>
 <a class="anchor" id="a314385ff92bc32be37dc7ae39146c7f0"></a><!-- doxytag: member="ipmi.c::ipmiEntries" ref="a314385ff92bc32be37dc7ae39146c7f0" args="" -->
@@ -695,6 +724,8 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>IPMI handlers list start address. </p>
+
 </div>
 </div>
 <a class="anchor" id="ad7ea94c7840b6bc4c14bcc28acb07ece"></a><!-- doxytag: member="ipmi.c::ipmiEntries_end" ref="ad7ea94c7840b6bc4c14bcc28acb07ece" args="" -->
@@ -707,6 +738,8 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>IPMI handlers list end address. </p>
 
 </div>
 </div>
@@ -743,7 +776,7 @@ Variables</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="ipmi_8c.html">ipmi.c</a>      </li>
 
-    <li class="footer">Generated on Mon Jun 27 2016 19:01:01 for openMMC by
+    <li class="footer">Generated on Mon Jun 27 2016 19:45:12 for openMMC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

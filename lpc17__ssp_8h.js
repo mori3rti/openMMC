@@ -8,7 +8,7 @@ var lpc17__ssp_8h =
     [ "SSP_INTERRUPT", "lpc17__ssp_8h.html#af4974d8db19439a5fd2ea633c5161e91", null ],
     [ "SSP_MASTER", "lpc17__ssp_8h.html#a285ef1b847fc49c960380d8d0a698995", null ],
     [ "SSP_POLLING", "lpc17__ssp_8h.html#a24e24ea8d6128fabf1b0da10dc9eec9a", null ],
-    [ "ssp_read", "lpc17__ssp_8h.html#aad8e56050ee6210de8931ef09485e024", null ],
+    [ "ssp_read", "lpc17__ssp_8h.html#a6f934f136090bb3e47f3fa0176062ac7", null ],
     [ "ssp_set_bitrate", "lpc17__ssp_8h.html#a65dc1a2bc4dd40ce5ee447394c7ab7c8", null ],
     [ "SSP_SLAVE", "lpc17__ssp_8h.html#a929f128604feb3c8037db3fb9255005a", null ],
     [ "ssp_write", "lpc17__ssp_8h.html#a1afa5d13b5aa13e5dccf17133b2bc62d", null ],

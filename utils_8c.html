@@ -52,7 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -111,17 +111,19 @@ Include dependency graph for utils.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="utils_8c__incl.png" border="0" usemap="#modules_2utils_8c" alt=""/></div>
 <map name="modules_2utils_8c" id="modules_2utils_8c">
-<area shape="rect" id="node5" href="utils_8h.html" title="General utilities functions." alt="" coords="125,83,181,112"/></map>
+<area shape="rect" id="node5" href="utils_8h.html" title="General utilities functions." alt="" coords="65,83,121,112"/></map>
 </div>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">TickType_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8c.html#a4da28eea723ce5be9be3cafbf3c2eec5">getTickDifference</a> (TickType_t current_time, TickType_t start_time)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the difference between 2 tick values Since he tick counter can overflow, we need to check if the current value is higher than the start time before performing any calculations. The Tick counter is expected to overflow at the portMAX_DELAY value.  <a href="#a4da28eea723ce5be9be3cafbf3c2eec5"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the difference between 2 tick values.  <a href="#a4da28eea723ce5be9be3cafbf3c2eec5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8c.html#a134816e32f4a2df3247444d75a1ce361">calculate_chksum</a> (uint8_t *buffer, uint8_t range)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a n-byte message 2's complement checksum. The checksum byte is calculated by perfoming a simple 8bit 2's complement of the sum of all previous bytes. Since we're using a unsigned int to hold the checksum value, we only need to subtract all bytes from it.  <a href="#a134816e32f4a2df3247444d75a1ce361"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a n-byte message 2's complement checksum.  <a href="#a134816e32f4a2df3247444d75a1ce361"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8c.html#a839606a1b09e2884aef6b255045ab825">cmpBuffs</a> (uint8_t *bufa, size_t len_a, uint8_t *bufb, size_t len_b)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare 2 buffers.  <a href="#a839606a1b09e2884aef6b255045ab825"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8c.html#ad00b36606f6f731f08c50fdbf3e31928">isPowerOfTwo</a> (uint8_t x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check is a number is a power of 2.  <a href="#ad00b36606f6f731f08c50fdbf3e31928"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>General utilities functions. </p>
@@ -152,7 +154,8 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Calculate a n-byte message 2's complement checksum. The checksum byte is calculated by perfoming a simple 8bit 2's complement of the sum of all previous bytes. Since we're using a unsigned int to hold the checksum value, we only need to subtract all bytes from it. </p>
+<p>Calculate a n-byte message 2's complement checksum. </p>
+<p>The checksum byte is calculated by perfoming a simple 8bit 2's complement of the sum of all previous bytes. Since we're using a unsigned int to hold the checksum value, we only need to subtract all bytes from it.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>Pointer to the message bytes. </td></tr>
@@ -201,6 +204,24 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Compare 2 buffers. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bufa</td><td>First buffer to compare </td></tr>
+    <tr><td class="paramname">len_a</td><td>Length of #bufa </td></tr>
+    <tr><td class="paramname">bufb</td><td>Second buffer to compare </td></tr>
+    <tr><td class="paramname">len_b</td><td>Length of #bufb</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt><b>Return values:</b></dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0x00</td><td>Buffers are equal </td></tr>
+    <tr><td class="paramname">0xFF</td><td>Buffers are different </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a4da28eea723ce5be9be3cafbf3c2eec5"></a><!-- doxytag: member="utils.c::getTickDifference" ref="a4da28eea723ce5be9be3cafbf3c2eec5" args="(TickType_t current_time, TickType_t start_time)" -->
@@ -208,7 +229,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">TickType_t <a class="el" href="utils_8h.html#a98ae8c72aaa361f72d648140c6c92e17">getTickDifference</a> </td>
+          <td class="memname">TickType_t <a class="el" href="utils_8h.html#a4da28eea723ce5be9be3cafbf3c2eec5">getTickDifference</a> </td>
           <td>(</td>
           <td class="paramtype">TickType_t&#160;</td>
           <td class="paramname"><em>current_time</em>, </td>
@@ -228,7 +249,8 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Calculate the difference between 2 tick values Since he tick counter can overflow, we need to check if the current value is higher than the start time before performing any calculations. The Tick counter is expected to overflow at the portMAX_DELAY value. </p>
+<p>Calculate the difference between 2 tick values. </p>
+<p>Since the tick counter can overflow, we need to check if the current value is higher than the start time before performing any calculations. The Tick counter is expected to overflow at the portMAX_DELAY value</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">current_time</td><td>Current tick count </td></tr>
@@ -255,6 +277,21 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Check is a number is a power of 2. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Number to be tested</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt><b>Return values:</b></dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">1</td><td>Number is a power of two </td></tr>
+    <tr><td class="paramname">0</td><td>Number is not a power of two </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -277,7 +314,7 @@ Functions</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="utils_8c.html">utils.c</a>      </li>
 
-    <li class="footer">Generated on Mon Jun 27 2016 19:01:01 for openMMC by
+    <li class="footer">Generated on Mon Jun 27 2016 19:45:12 for openMMC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

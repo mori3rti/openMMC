@@ -1,0 +1,6 @@
+<map id="structs" name="structs">
+<area shape="rect" id="node1" href="$group__HOTSWAP.html" title="Hotswap Sensor" alt="" coords="392,5,509,35"/>
+<area shape="rect" id="node2" href="$group__MAX6642.html" title="MAX6642 &#160;Remote/Local Temperature Sensor with Overtemperature Alarm" alt="" coords="224,59,677,88"/>
+<area shape="rect" id="node4" href="$group__INA220.html" title="INA220 &#45; High&#45; or Low&#45;Side, Bidirectional Current and Power Monitor" alt="" coords="240,112,661,141"/>
+<area shape="rect" id="node5" href="$group__LM75.html" title="LM75 &#45; Temperature Sensor" alt="" coords="359,165,543,195"/>
+</map>

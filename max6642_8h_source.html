@@ -52,7 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -120,55 +120,64 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00019"></a>00019 <span class="comment"> *   @license GPL-3.0+ &lt;http://spdx.org/licenses/GPL-3.0+&gt;</span>
 <a name="l00020"></a>00020 <span class="comment"> */</span>
 <a name="l00021"></a>00021 
-<a name="l00030"></a>00030 <span class="preprocessor">#ifndef MAX6642_H_</span>
-<a name="l00031"></a>00031 <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_H_</span>
-<a name="l00032"></a>00032 <span class="preprocessor"></span>
-<a name="l00033"></a><a class="code" href="max6642_8h.html#ad65748df5a676a7916599a088bfd7c0f">00033</a> <span class="preprocessor">#define MAX6642_UPDATE_RATE             500</span>
-<a name="l00034"></a>00034 <span class="preprocessor"></span>
-<a name="l00035"></a><a class="code" href="max6642_8h.html#a314f9706c8e29f88a2cccbcb333a19b8">00035</a> <span class="preprocessor">#define MAX6642_CMD_READ_LOCAL          0x00</span>
-<a name="l00036"></a><a class="code" href="max6642_8h.html#ab21f197973b6916b2a13e931297a741a">00036</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_READ_REMOTE         0x01</span>
-<a name="l00037"></a><a class="code" href="max6642_8h.html#a2447ba940d0aa6cf693fa65b591aacf5">00037</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_READ_STATUS         0x02</span>
-<a name="l00038"></a><a class="code" href="max6642_8h.html#a37639585ad62b37692aa806a07756496">00038</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_READ_CONFIG         0x03</span>
-<a name="l00039"></a><a class="code" href="max6642_8h.html#a8f1ab1313d56a5c2455ad18417d30a64">00039</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_READ_LOCAL_LIMIT    0x05</span>
-<a name="l00040"></a><a class="code" href="max6642_8h.html#aafb9beb2d6278e50c1f8b6237a762cd7">00040</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_READ_REMOTE_LIMIT   0x07</span>
-<a name="l00041"></a><a class="code" href="max6642_8h.html#a381c5611a148a570e7ef88bc29917a73">00041</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_WRITE_CONFIG        0x09</span>
-<a name="l00042"></a><a class="code" href="max6642_8h.html#a084df75d8f42822c86dbf1654dd01139">00042</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_WRITE_LOCAL_LIMIT   0x0B</span>
-<a name="l00043"></a><a class="code" href="max6642_8h.html#a9c7821c4e495c95e5ad016bd00b8b4b5">00043</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_WRITE_REMOTE_LIMIT  0x0D</span>
-<a name="l00044"></a><a class="code" href="max6642_8h.html#a43763be71e37cb271b356c92810a6e89">00044</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_SINGLESHOT          0x0D</span>
-<a name="l00045"></a><a class="code" href="max6642_8h.html#a6cf87f1f8e86541bfe517062611629ee">00045</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_READ_REMOTE_EXTD    0x10</span>
-<a name="l00046"></a><a class="code" href="max6642_8h.html#a3dd9253f1c71b6c96841abfe4f0d4eb6">00046</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_READ_LOCAL_EXTD     0x11</span>
-<a name="l00047"></a><a class="code" href="max6642_8h.html#afdc5f47821a36ca9b876d787f361b637">00047</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_READ_MANUF_ID       0xFE</span>
-<a name="l00048"></a>00048 <span class="preprocessor"></span>
-<a name="l00049"></a>00049 <span class="comment">/*  MAX6642 Configuration bits */</span>
-<a name="l00050"></a><a class="code" href="max6642_8h.html#a690dd40c88bad14d406a55c40a1f4344">00050</a> <span class="preprocessor">#define MAX6642_CFG_ALERT_MASK          (1 &lt;&lt; 7)</span>
-<a name="l00051"></a><a class="code" href="max6642_8h.html#a774b5c21cef3c82a34990772033889f9">00051</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CFG_STOP_RUN_MASK       (1 &lt;&lt; 6)</span>
-<a name="l00052"></a><a class="code" href="max6642_8h.html#acfd737e00ea927156ee18c6f4b97abc9">00052</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CFG_EXT_ONLY_MASK       (1 &lt;&lt; 5)</span>
-<a name="l00053"></a><a class="code" href="max6642_8h.html#aeee269a91a101c6348e097359b04d882">00053</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CFG_FAULT_QUEUE_MASK    (1 &lt;&lt; 4)</span>
-<a name="l00054"></a>00054 <span class="preprocessor"></span>
-<a name="l00055"></a>00055 <span class="comment">/*  MAX6642 Status bits */</span>
-<a name="l00056"></a><a class="code" href="max6642_8h.html#af8e54670c180d92f136812faf6cdc33b">00056</a> <span class="preprocessor">#define MAX6642_STATUS_BUSY_MASK        (1 &lt;&lt; 7)</span>
-<a name="l00057"></a><a class="code" href="max6642_8h.html#aa4780c100e851f4206cb5ff8cabed069">00057</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_STATUS_LOCAL_HIGH_MASK  (1 &lt;&lt; 6)</span>
-<a name="l00058"></a><a class="code" href="max6642_8h.html#abbdbac594c5aafbbe89d1c2969c9125c">00058</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_STATUS_REMOTE_HIGH_MASK (1 &lt;&lt; 5)</span>
-<a name="l00059"></a><a class="code" href="max6642_8h.html#a0160a68aae8d3d923a25849d29268473">00059</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_STATUS_OPEN_MASK        (1 &lt;&lt; 4)</span>
-<a name="l00060"></a>00060 <span class="preprocessor"></span>
-<a name="l00061"></a><a class="code" href="max6642_8h.html#a9bc576b3ef8d797aa84afd21dac51883">00061</a> TaskHandle_t <a class="code" href="max6642_8c.html#a9bc576b3ef8d797aa84afd21dac51883">vTaskMAX6642_Handle</a>;
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063 <span class="keyword">extern</span> <span class="keyword">const</span> <a class="code" href="structSDR__type__01h__t.html">SDR_type_01h_t</a> <a class="code" href="max6642_8h.html#a294d7ba6febdf60b0c12e7680950315c">SDR_MAX6642_FPGA</a>;
-<a name="l00064"></a>00064 
-<a name="l00065"></a>00065 <span class="keywordtype">void</span> <a class="code" href="max6642_8c.html#aed9641b2ab40b8a8971a24c7e3679f92">MAX6642_init</a>( <span class="keywordtype">void</span> );
-<a name="l00066"></a>00066 <span class="keywordtype">void</span> <a class="code" href="max6642_8c.html#ae70e79021da3abf0c660e0dc128bb4cb">vTaskMAX6642</a>( <span class="keywordtype">void</span> *Parameters );
-<a name="l00067"></a>00067 
-<a name="l00068"></a>00068 uint8_t <a class="code" href="max6642_8c.html#a3a33ec6c61cbdddac050fd132ed20225">max6642_read_local</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor );
-<a name="l00069"></a>00069 uint8_t <a class="code" href="max6642_8c.html#a643657b4834331e4b9daa3214c9b4869">max6642_read_remote</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor );
-<a name="l00070"></a>00070 uint8_t <a class="code" href="max6642_8c.html#ae3960d019af22c9834c3138b43f65eef">max6642_read_local_extd</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor );
-<a name="l00071"></a>00071 uint8_t <a class="code" href="max6642_8c.html#ac4a9c7ba2c474ee3bff148dfa3f04ce2">max6642_read_remote_extd</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor );
-<a name="l00072"></a>00072 uint8_t <a class="code" href="max6642_8c.html#a527bb7b8ff1fc11b0601eef6ddb4cc84">max6642_read_status</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor );
-<a name="l00073"></a>00073 uint8_t <a class="code" href="max6642_8c.html#af0072e8ab325cd8f80ef69f05827e3cc">max6642_read_cfg</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor );
-<a name="l00074"></a>00074 <span class="keywordtype">void</span> <a class="code" href="max6642_8c.html#a29473063d211831bf2190e059245286d">max6642_write_cfg</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor, uint8_t cfg );
-<a name="l00075"></a>00075 <span class="keywordtype">void</span> <a class="code" href="max6642_8c.html#a5126aaa433f5fd059e0d2bb9dd03510e">max6642_write_local_limit</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor, uint8_t limit );
-<a name="l00076"></a>00076 <span class="keywordtype">void</span> <a class="code" href="max6642_8c.html#a996a9c1021254e273135112a11943231">max6642_write_remote_limit</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor, uint8_t limit );
-<a name="l00077"></a>00077 
-<a name="l00078"></a>00078 <span class="preprocessor">#endif</span>
+<a name="l00035"></a>00035 <span class="preprocessor">#ifndef MAX6642_H_</span>
+<a name="l00036"></a>00036 <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_H_</span>
+<a name="l00037"></a>00037 <span class="preprocessor"></span>
+<a name="l00038"></a><a class="code" href="max6642_8h.html#ad65748df5a676a7916599a088bfd7c0f">00038</a> <span class="preprocessor">#define MAX6642_UPDATE_RATE             500</span>
+<a name="l00039"></a>00039 <span class="preprocessor"></span>
+<a name="l00040"></a><a class="code" href="max6642_8h.html#a314f9706c8e29f88a2cccbcb333a19b8">00040</a> <span class="preprocessor">#define MAX6642_CMD_READ_LOCAL          0x00</span>
+<a name="l00041"></a><a class="code" href="max6642_8h.html#ab21f197973b6916b2a13e931297a741a">00041</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_READ_REMOTE         0x01</span>
+<a name="l00042"></a><a class="code" href="max6642_8h.html#a2447ba940d0aa6cf693fa65b591aacf5">00042</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_READ_STATUS         0x02</span>
+<a name="l00043"></a><a class="code" href="max6642_8h.html#a37639585ad62b37692aa806a07756496">00043</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_READ_CONFIG         0x03</span>
+<a name="l00044"></a><a class="code" href="max6642_8h.html#a8f1ab1313d56a5c2455ad18417d30a64">00044</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_READ_LOCAL_LIMIT    0x05</span>
+<a name="l00045"></a><a class="code" href="max6642_8h.html#aafb9beb2d6278e50c1f8b6237a762cd7">00045</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_READ_REMOTE_LIMIT   0x07</span>
+<a name="l00046"></a><a class="code" href="max6642_8h.html#a381c5611a148a570e7ef88bc29917a73">00046</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_WRITE_CONFIG        0x09</span>
+<a name="l00047"></a><a class="code" href="max6642_8h.html#a084df75d8f42822c86dbf1654dd01139">00047</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_WRITE_LOCAL_LIMIT   0x0B</span>
+<a name="l00048"></a><a class="code" href="max6642_8h.html#a9c7821c4e495c95e5ad016bd00b8b4b5">00048</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_WRITE_REMOTE_LIMIT  0x0D</span>
+<a name="l00049"></a><a class="code" href="max6642_8h.html#a43763be71e37cb271b356c92810a6e89">00049</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_SINGLESHOT          0x0D</span>
+<a name="l00050"></a><a class="code" href="max6642_8h.html#a6cf87f1f8e86541bfe517062611629ee">00050</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_READ_REMOTE_EXTD    0x10</span>
+<a name="l00051"></a><a class="code" href="max6642_8h.html#a3dd9253f1c71b6c96841abfe4f0d4eb6">00051</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_READ_LOCAL_EXTD     0x11</span>
+<a name="l00052"></a><a class="code" href="max6642_8h.html#afdc5f47821a36ca9b876d787f361b637">00052</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CMD_READ_MANUF_ID       0xFE</span>
+<a name="l00053"></a>00053 <span class="preprocessor"></span>
+<a name="l00054"></a>00054 <span class="comment">/*  MAX6642 Configuration bits */</span>
+<a name="l00055"></a><a class="code" href="max6642_8h.html#a690dd40c88bad14d406a55c40a1f4344">00055</a> <span class="preprocessor">#define MAX6642_CFG_ALERT_MASK          (1 &lt;&lt; 7)</span>
+<a name="l00056"></a><a class="code" href="max6642_8h.html#a774b5c21cef3c82a34990772033889f9">00056</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CFG_STOP_RUN_MASK       (1 &lt;&lt; 6)</span>
+<a name="l00057"></a><a class="code" href="max6642_8h.html#acfd737e00ea927156ee18c6f4b97abc9">00057</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CFG_EXT_ONLY_MASK       (1 &lt;&lt; 5)</span>
+<a name="l00058"></a><a class="code" href="max6642_8h.html#aeee269a91a101c6348e097359b04d882">00058</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_CFG_FAULT_QUEUE_MASK    (1 &lt;&lt; 4)</span>
+<a name="l00059"></a>00059 <span class="preprocessor"></span>
+<a name="l00060"></a>00060 <span class="comment">/*  MAX6642 Status bits */</span>
+<a name="l00061"></a><a class="code" href="max6642_8h.html#af8e54670c180d92f136812faf6cdc33b">00061</a> <span class="preprocessor">#define MAX6642_STATUS_BUSY_MASK        (1 &lt;&lt; 7)</span>
+<a name="l00062"></a><a class="code" href="max6642_8h.html#aa4780c100e851f4206cb5ff8cabed069">00062</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_STATUS_LOCAL_HIGH_MASK  (1 &lt;&lt; 6)</span>
+<a name="l00063"></a><a class="code" href="max6642_8h.html#abbdbac594c5aafbbe89d1c2969c9125c">00063</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_STATUS_REMOTE_HIGH_MASK (1 &lt;&lt; 5)</span>
+<a name="l00064"></a><a class="code" href="max6642_8h.html#a0160a68aae8d3d923a25849d29268473">00064</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX6642_STATUS_OPEN_MASK        (1 &lt;&lt; 4)</span>
+<a name="l00065"></a>00065 <span class="preprocessor"></span>
+<a name="l00069"></a><a class="code" href="max6642_8h.html#a9bc576b3ef8d797aa84afd21dac51883">00069</a> TaskHandle_t <a class="code" href="max6642_8c.html#a9bc576b3ef8d797aa84afd21dac51883">vTaskMAX6642_Handle</a>;
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071 <span class="keyword">extern</span> <span class="keyword">const</span> <a class="code" href="structSDR__type__01h__t.html">SDR_type_01h_t</a> <a class="code" href="max6642_8h.html#a294d7ba6febdf60b0c12e7680950315c">SDR_MAX6642_FPGA</a>;
+<a name="l00072"></a>00072 
+<a name="l00078"></a>00078 <span class="keywordtype">void</span> <a class="code" href="max6642_8c.html#aed9641b2ab40b8a8971a24c7e3679f92" title="Initializes MAX6642 sensor and creates vTaskMAX6642.">MAX6642_init</a>( <span class="keywordtype">void</span> );
+<a name="l00079"></a>00079 
+<a name="l00085"></a>00085 <span class="keywordtype">void</span> <a class="code" href="max6642_8c.html#ae70e79021da3abf0c660e0dc128bb4cb" title="MAX6642 Monitor Task.">vTaskMAX6642</a>( <span class="keywordtype">void</span> *Parameters );
+<a name="l00086"></a>00086 
+<a name="l00094"></a>00094 uint8_t <a class="code" href="max6642_8c.html#a3a33ec6c61cbdddac050fd132ed20225" title="Reads MAX6642&#39;s local temperature value.">max6642_read_local</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor );
+<a name="l00095"></a>00095 
+<a name="l00103"></a>00103 uint8_t <a class="code" href="max6642_8c.html#a643657b4834331e4b9daa3214c9b4869" title="Reads MAX6642&#39;s remote temperature value.">max6642_read_remote</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor );
+<a name="l00104"></a>00104 
+<a name="l00114"></a>00114 uint8_t <a class="code" href="max6642_8c.html#ae3960d019af22c9834c3138b43f65eef" title="Reads MAX6642&#39;s local extended temperature value.">max6642_read_local_extd</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor );
+<a name="l00115"></a>00115 
+<a name="l00125"></a>00125 uint8_t <a class="code" href="max6642_8c.html#ac4a9c7ba2c474ee3bff148dfa3f04ce2" title="Reads MAX6642&#39;s remote extended temperature value.">max6642_read_remote_extd</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor );
+<a name="l00126"></a>00126 
+<a name="l00143"></a>00143 uint8_t <a class="code" href="max6642_8c.html#a527bb7b8ff1fc11b0601eef6ddb4cc84" title="Reads MAX6642 status byte.">max6642_read_status</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor );
+<a name="l00144"></a>00144 
+<a name="l00159"></a>00159 uint8_t <a class="code" href="max6642_8c.html#af0072e8ab325cd8f80ef69f05827e3cc" title="Reads MAX6642 configuration byte.">max6642_read_cfg</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor );
+<a name="l00160"></a>00160 
+<a name="l00176"></a>00176 <span class="keywordtype">void</span> <a class="code" href="max6642_8c.html#a29473063d211831bf2190e059245286d" title="Writes MAX6642 configuration byte.">max6642_write_cfg</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor, uint8_t cfg );
+<a name="l00177"></a>00177 
+<a name="l00184"></a>00184 <span class="keywordtype">void</span> <a class="code" href="max6642_8c.html#a5126aaa433f5fd059e0d2bb9dd03510e" title="Sets internal high temperature limit that asserts &#39;ALERT.">max6642_write_local_limit</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor, uint8_t limit );
+<a name="l00185"></a>00185 
+<a name="l00192"></a>00192 <span class="keywordtype">void</span> <a class="code" href="max6642_8c.html#a996a9c1021254e273135112a11943231" title="Sets external high temperature limit that asserts &#39;ALERT.">max6642_write_remote_limit</a>( <a class="code" href="structsensor__t.html">sensor_t</a> *sensor, uint8_t limit );
+<a name="l00193"></a>00193 
+<a name="l00194"></a>00194 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -189,7 +198,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="max6642_8h.html">max6642.h</a>      </li>
 
-    <li class="footer">Generated on Mon Jun 27 2016 19:01:00 for openMMC by
+    <li class="footer">Generated on Mon Jun 27 2016 19:45:12 for openMMC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

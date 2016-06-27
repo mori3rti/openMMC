@@ -52,7 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -114,7 +114,7 @@ Include dependency graph for led.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="led_8c__incl.png" border="0" usemap="#modules_2led_8c" alt=""/></div>
 <map name="modules_2led_8c" id="modules_2led_8c">
-<area shape="rect" id="node9" href="ipmi_8h.html" title="ipmi.h" alt="" coords="365,83,421,112"/><area shape="rect" id="node22" href="port_8h.html" title="Port layer (includes all portable functions headers)" alt="" coords="973,160,1027,189"/><area shape="rect" id="node68" href="led_8h.html" title="led.h" alt="" coords="975,83,1025,112"/><area shape="rect" id="node71" href="task__priorities_8h.html" title="task_priorities.h" alt="" coords="1880,83,1995,112"/><area shape="rect" id="node11" href="ipmb_8h.html" title="Definitions used in IPMB Layer." alt="" coords="331,237,392,267"/><area shape="rect" id="node19" href="sdr_8h.html" title="sdr.h" alt="" coords="369,160,420,189"/><area shape="rect" id="node26" href="lpc17__gpio_8h.html" title="lpc17_gpio.h" alt="" coords="661,237,755,267"/><area shape="rect" id="node30" href="lpc17__i2c_8h.html" title="I2C driver for LPC17xx." alt="" coords="779,237,867,267"/><area shape="rect" id="node32" href="lpc17__ssp_8h.html" title="lpc17_ssp.h" alt="" coords="496,237,587,267"/><area shape="rect" id="node39" href="lpc17__spi_8h.html" title="Legacy SPI driver definitions for LPC17xx." alt="" coords="891,237,979,267"/><area shape="rect" id="node43" href="lpc17__watchdog_8h.html" title="Definitions of Watchdog driver implementation for LPC17xx." alt="" coords="1003,237,1128,267"/><area shape="rect" id="node47" href="lpc17__interruptions_8h.html" title="Interruptions control." alt="" coords="1152,237,1293,267"/><area shape="rect" id="node51" href="lpc17__hpm_8h.html" title="Firmware update functions (HPM.1)" alt="" coords="1317,237,1413,267"/><area shape="rect" id="node53" href="lpc17__power_8h.html" title="Definitions of power mode selection for LPC17xx." alt="" coords="1437,237,1544,267"/><area shape="rect" id="node57" href="lpc17__pincfg_8h.html" title="lpc17_pincfg.h" alt="" coords="1568,237,1675,267"/><area shape="rect" id="node62" href="lpc17__uart_8h.html" title="lpc17_uart.h" alt="" coords="145,237,239,267"/></map>
+<area shape="rect" id="node9" href="ipmi_8h.html" title="IPMI module definitions." alt="" coords="365,83,421,112"/><area shape="rect" id="node22" href="port_8h.html" title="Port layer (includes all portable functions headers)" alt="" coords="973,160,1027,189"/><area shape="rect" id="node68" href="led_8h.html" title="led.h" alt="" coords="975,83,1025,112"/><area shape="rect" id="node71" href="task__priorities_8h.html" title="task_priorities.h" alt="" coords="1880,83,1995,112"/><area shape="rect" id="node11" href="ipmb_8h.html" title="Definitions used in IPMB Layer." alt="" coords="331,237,392,267"/><area shape="rect" id="node19" href="sdr_8h.html" title="sdr.h" alt="" coords="369,160,420,189"/><area shape="rect" id="node26" href="lpc17__gpio_8h.html" title="lpc17_gpio.h" alt="" coords="661,237,755,267"/><area shape="rect" id="node30" href="lpc17__i2c_8h.html" title="I2C driver for LPC17xx." alt="" coords="779,237,867,267"/><area shape="rect" id="node32" href="lpc17__ssp_8h.html" title="lpc17_ssp.h" alt="" coords="496,237,587,267"/><area shape="rect" id="node39" href="lpc17__spi_8h.html" title="Legacy SPI driver definitions for LPC17xx." alt="" coords="891,237,979,267"/><area shape="rect" id="node43" href="lpc17__watchdog_8h.html" title="Definitions of Watchdog driver implementation for LPC17xx." alt="" coords="1003,237,1128,267"/><area shape="rect" id="node47" href="lpc17__interruptions_8h.html" title="Interruptions control." alt="" coords="1152,237,1293,267"/><area shape="rect" id="node51" href="lpc17__hpm_8h.html" title="Firmware update functions (HPM.1)" alt="" coords="1317,237,1413,267"/><area shape="rect" id="node53" href="lpc17__power_8h.html" title="Definitions of power mode selection for LPC17xx." alt="" coords="1437,237,1544,267"/><area shape="rect" id="node57" href="lpc17__pincfg_8h.html" title="Pin Config functions redirection for LPC17xx." alt="" coords="1568,237,1675,267"/><area shape="rect" id="node62" href="lpc17__uart_8h.html" title="lpc17_uart.h" alt="" coords="145,237,239,267"/></map>
 </div>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
@@ -124,11 +124,11 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="led_8c.html#a6f6e088d8b99a3a27a5fdcf15242da8a">LED_Task</a> (void *Parameters)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="led_8c.html#a8fdb095408c357c7d78963a3f8930c16">LEDUpdate</a> (uint8_t <a class="el" href="fru_8c.html#a3d7cc64921822af8dcd4d120a3c00f68">fru</a>, uint8_t led_num, uint8_t mode, uint8_t init_status, uint16_t t_init, uint16_t t_toggle)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="led_8c.html#a3679b0ccb97b967a0a162bc786d354d4">amc_led_act</a> (uint8_t id, uint8_t action)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="led_8c.html#a1d8151a1b64168e9777a63d3926c96c1">IPMI_HANDLER</a> (ipmi_picmg_set_fru_led_state, <a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="ipmi_8h.html#a1348fec938a5ac83160b5efeebaac82d">IPMI_PICMG_CMD_SET_FRU_LED_STATE</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="led_8c.html#a1d8151a1b64168e9777a63d3926c96c1">IPMI_HANDLER</a> (ipmi_picmg_set_fru_led_state, <a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="group__IPMI__PICMG__CMD.html#ga1348fec938a5ac83160b5efeebaac82d">IPMI_PICMG_CMD_SET_FRU_LED_STATE</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Handler for "Set FRU LED State"" request. Check IPMI 2.0 table 3-31 for more information.  <a href="#a1d8151a1b64168e9777a63d3926c96c1"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="led_8c.html#abb0141bf10d0560f134904bbc26610a5">IPMI_HANDLER</a> (ipmi_picmg_get_fru_led_properties, <a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="ipmi_8h.html#ad047ddb10ce5fac3206f9e352c23df50">IPMI_PICMG_CMD_GET_FRU_LED_PROPERTIES</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="led_8c.html#a3b4c89c84b10907749f2e12fa899b68a">IPMI_HANDLER</a> (ipmi_picmg_get_fru_led_state, <a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="ipmi_8h.html#a648cb209b13245f96c8e4ad1d803ec8a">IPMI_PICMG_CMD_GET_FRU_LED_STATE</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="led_8c.html#aca537a51c39a970d470b70f5037fa9f2">IPMI_HANDLER</a> (ipmi_picmg_get_led_color_capabilities, <a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="ipmi_8h.html#a09e86f10357e1e17b4670417b19736fc">IPMI_PICMG_CMD_GET_LED_COLOR_CAPABILITIES</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="led_8c.html#abb0141bf10d0560f134904bbc26610a5">IPMI_HANDLER</a> (ipmi_picmg_get_fru_led_properties, <a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="group__IPMI__PICMG__CMD.html#gad047ddb10ce5fac3206f9e352c23df50">IPMI_PICMG_CMD_GET_FRU_LED_PROPERTIES</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="led_8c.html#a3b4c89c84b10907749f2e12fa899b68a">IPMI_HANDLER</a> (ipmi_picmg_get_fru_led_state, <a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="group__IPMI__PICMG__CMD.html#ga648cb209b13245f96c8e4ad1d803ec8a">IPMI_PICMG_CMD_GET_FRU_LED_STATE</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="led_8c.html#aca537a51c39a970d470b70f5037fa9f2">IPMI_HANDLER</a> (ipmi_picmg_get_led_color_capabilities, <a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>, <a class="el" href="group__IPMI__PICMG__CMD.html#ga09e86f10357e1e17b4670417b19736fc">IPMI_PICMG_CMD_GET_LED_COLOR_CAPABILITIES</a>, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *req, <a class="el" href="structipmi__msg.html">ipmi_msg</a> *rsp)</td></tr>
 <tr><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="led_8h.html#afc3e48aa64853d50d56ea3f39a8cd44e">LEDPincfg_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="led_8c.html#ada02767f6b0893599ba3f73e85484573">amc_led_pincfg</a> [<a class="el" href="led_8h.html#a20686d72752a8842320e750ba4ec4388af09da57493c57655050f1f45ec6e921e">LED_CNT</a>]</td></tr>
@@ -177,13 +177,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#a1348fec938a5ac83160b5efeebaac82d">IPMI_PICMG_CMD_SET_FRU_LED_STATE</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__PICMG__CMD.html#ga1348fec938a5ac83160b5efeebaac82d">IPMI_PICMG_CMD_SET_FRU_LED_STATE</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -232,13 +232,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#ad047ddb10ce5fac3206f9e352c23df50">IPMI_PICMG_CMD_GET_FRU_LED_PROPERTIES</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__PICMG__CMD.html#gad047ddb10ce5fac3206f9e352c23df50">IPMI_PICMG_CMD_GET_FRU_LED_PROPERTIES</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -277,13 +277,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#a648cb209b13245f96c8e4ad1d803ec8a">IPMI_PICMG_CMD_GET_FRU_LED_STATE</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__PICMG__CMD.html#ga648cb209b13245f96c8e4ad1d803ec8a">IPMI_PICMG_CMD_GET_FRU_LED_STATE</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -322,13 +322,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#a27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__NETFN.html#ga27ea7c162811163c28a31cc9cd677a80">NETFN_GRPEXT</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ipmi_8h.html#a09e86f10357e1e17b4670417b19736fc">IPMI_PICMG_CMD_GET_LED_COLOR_CAPABILITIES</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__IPMI__PICMG__CMD.html#ga09e86f10357e1e17b4670417b19736fc">IPMI_PICMG_CMD_GET_LED_COLOR_CAPABILITIES</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -548,7 +548,7 @@ Variables</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="led_8c.html">led.c</a>      </li>
 
-    <li class="footer">Generated on Mon Jun 27 2016 19:01:01 for openMMC by
+    <li class="footer">Generated on Mon Jun 27 2016 19:45:12 for openMMC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

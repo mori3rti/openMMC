@@ -52,7 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -96,11 +96,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#define-members">Defines</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">modules/watchdog.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Watchdog module definitions.  
+<a href="#details">More...</a></p>
 <div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
@@ -111,12 +115,73 @@ This graph shows which files directly or indirectly include this file:</div>
 </div>
 <p><a href="watchdog_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Defines</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="watchdog_8h.html#ae7ddf06274536d77539fbbd79cc9e3b3">WATCHDOG_CLK_FREQ</a>&#160;&#160;&#160;8000000</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Watchdog module clock frequency (in Hz)  <a href="#ae7ddf06274536d77539fbbd79cc9e3b3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="watchdog_8h.html#abf89628d486477bd0db5a5890cd38a05">WATCHDOG_TIMEOUT</a>&#160;&#160;&#160;1000    /* in milisseconds */</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Watchdog timer timeout (in ms)  <a href="#abf89628d486477bd0db5a5890cd38a05"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="watchdog_8h.html#ae27d77dcfa20cfcdb565aad89d1d5f9e">WATCHDOG_FEED_DELAY</a>&#160;&#160;&#160;(<a class="el" href="watchdog_8h.html#abf89628d486477bd0db5a5890cd38a05">WATCHDOG_TIMEOUT</a>/3)*2</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Watchdog timer feed delay.  <a href="#ae27d77dcfa20cfcdb565aad89d1d5f9e"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="watchdog_8h.html#ad3e3f89e8fb1ad9489dc281c05335f5f">watchdog_init</a> (void)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="watchdog_8h.html#a4d8f954dc64547ecdf5098e7d3fbe6fa">WatchdogTask</a> (void *Parameters)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes and configures Watchdog timer.  <a href="#ad3e3f89e8fb1ad9489dc281c05335f5f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="watchdog_8h.html#a688ae0be44bb4bddb4f9fa6680addf25">watchdog_reset_mcu</a> (void)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules a Reset on the next run of the Watchdog task.  <a href="#a688ae0be44bb4bddb4f9fa6680addf25"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="watchdog_8h.html#a4d8f954dc64547ecdf5098e7d3fbe6fa">WatchdogTask</a> (void *Parameters)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Periodically feed the Watchdog timer and checks if there's any Reset requests.  <a href="#a4d8f954dc64547ecdf5098e7d3fbe6fa"></a><br/></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Watchdog module definitions. </p>
+<dl class="author"><dt><b>Author:</b></dt><dd>Henrique Silva &lt;<a href="mailto:henrique.silva@lnls.br">henrique.silva@lnls.br</a>&gt; </dd></dl>
+</div><hr/><h2>Define Documentation</h2>
+<a class="anchor" id="ae7ddf06274536d77539fbbd79cc9e3b3"></a><!-- doxytag: member="watchdog.h::WATCHDOG_CLK_FREQ" ref="ae7ddf06274536d77539fbbd79cc9e3b3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="watchdog_8h.html#ae7ddf06274536d77539fbbd79cc9e3b3">WATCHDOG_CLK_FREQ</a>&#160;&#160;&#160;8000000</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Watchdog module clock frequency (in Hz) </p>
+
+</div>
+</div>
+<a class="anchor" id="ae27d77dcfa20cfcdb565aad89d1d5f9e"></a><!-- doxytag: member="watchdog.h::WATCHDOG_FEED_DELAY" ref="ae27d77dcfa20cfcdb565aad89d1d5f9e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="watchdog_8h.html#ae27d77dcfa20cfcdb565aad89d1d5f9e">WATCHDOG_FEED_DELAY</a>&#160;&#160;&#160;(<a class="el" href="watchdog_8h.html#abf89628d486477bd0db5a5890cd38a05">WATCHDOG_TIMEOUT</a>/3)*2</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Watchdog timer feed delay. </p>
+<p>We reload the watchdog timer at 2/3 of the max count </p>
+
+</div>
+</div>
+<a class="anchor" id="abf89628d486477bd0db5a5890cd38a05"></a><!-- doxytag: member="watchdog.h::WATCHDOG_TIMEOUT" ref="abf89628d486477bd0db5a5890cd38a05" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="watchdog_8h.html#abf89628d486477bd0db5a5890cd38a05">WATCHDOG_TIMEOUT</a>&#160;&#160;&#160;1000    /* in milisseconds */</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Watchdog timer timeout (in ms) </p>
+
+</div>
+</div>
 <hr/><h2>Function Documentation</h2>
 <a class="anchor" id="ad3e3f89e8fb1ad9489dc281c05335f5f"></a><!-- doxytag: member="watchdog.h::watchdog_init" ref="ad3e3f89e8fb1ad9489dc281c05335f5f" args="(void)" -->
 <div class="memitem">
@@ -132,6 +197,9 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Initializes and configures Watchdog timer. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>None </dd></dl>
 
 </div>
 </div>
@@ -150,6 +218,9 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Schedules a Reset on the next run of the Watchdog task. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>None </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a4d8f954dc64547ecdf5098e7d3fbe6fa"></a><!-- doxytag: member="watchdog.h::WatchdogTask" ref="a4d8f954dc64547ecdf5098e7d3fbe6fa" args="(void *Parameters)" -->
@@ -166,6 +237,15 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Periodically feed the Watchdog timer and checks if there's any Reset requests. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Parameters</td><td>Pointer to a buffer of parameters passed to the task upon initialization</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>None </dd></dl>
 
 </div>
 </div>
@@ -189,7 +269,7 @@ Functions</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="watchdog_8h.html">watchdog.h</a>      </li>
 
-    <li class="footer">Generated on Mon Jun 27 2016 19:01:01 for openMMC by
+    <li class="footer">Generated on Mon Jun 27 2016 19:45:12 for openMMC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

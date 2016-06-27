@@ -52,7 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -105,12 +105,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>General utilities functions.  
 <a href="#details">More...</a></p>
-<div class="textblock"><div class="dynheader">
+<div class="textblock"><code>#include &quot;FreeRTOS.h&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for utils.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="utils_8h__incl.png" border="0" usemap="#modules_2utils_8h" alt=""/></div>
+<map name="modules_2utils_8h" id="modules_2utils_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="utils_8h__dep__incl.png" border="0" usemap="#modules_2utils_8hdep" alt=""/></div>
 <map name="modules_2utils_8hdep" id="modules_2utils_8hdep">
-<area shape="rect" id="node3" href="amc__fru_8c.html" title="modules/amc_fru.c" alt="" coords="427,83,560,112"/><area shape="rect" id="node5" href="fpga__spi_8h.html" title="modules/fpga_spi.h" alt="" coords="584,83,717,112"/><area shape="rect" id="node15" href="port_2board_2afc_2v3__0_2sdr__list_8c.html" title="port/board/afc/v3_0/sdr_list.c" alt="" coords="608,160,797,189"/><area shape="rect" id="node17" href="port_2board_2afc_2v3__1_2sdr__list_8c.html" title="port/board/afc/v3_1/sdr_list.c" alt="" coords="821,160,1011,189"/><area shape="rect" id="node19" href="port_2board_2afc-timing_2sdr__list_8c.html" title="port/board/afc&#45;timing/sdr_list.c" alt="" coords="1035,160,1232,189"/><area shape="rect" id="node21" href="fru_8c.html" title="modules/fru.c" alt="" coords="893,83,995,112"/><area shape="rect" id="node23" href="fru__editor_8c.html" title="modules/fru_editor.c" alt="" coords="1019,83,1157,112"/><area shape="rect" id="node25" href="hpm_8c.html" title="modules/hpm.c" alt="" coords="1181,83,1291,112"/><area shape="rect" id="node27" href="ipmb_8c.html" title="modules/ipmb.c" alt="" coords="1315,83,1429,112"/><area shape="rect" id="node29" href="hotswap_8c.html" title="modules/sensors/hotswap.c" alt="" coords="1453,83,1637,112"/><area shape="rect" id="node31" href="lm75_8c.html" title="modules/sensors/lm75.c" alt="" coords="1661,83,1824,112"/><area shape="rect" id="node33" href="max6642_8c.html" title="modules/sensors/max6642.c" alt="" coords="1848,83,2037,112"/><area shape="rect" id="node35" href="utils_8c.html" title="General utilities functions." alt="" coords="2061,83,2171,112"/><area shape="rect" id="node37" href="v3__0_2payload_8c.html" title="port/board/afc/v3_0/payload.c" alt="" coords="2195,83,2389,112"/><area shape="rect" id="node40" href="v3__1_2payload_8c.html" title="port/board/afc/v3_1/payload.c" alt="" coords="2413,83,2608,112"/><area shape="rect" id="node43" href="timing_2payload_8c.html" title="port/board/afc&#45;timing/payload.c" alt="" coords="2632,83,2832,112"/><area shape="rect" id="node46" href="rtm__user_8c.html" title="port/board/rtm&#45;8sfp/rtm_user.c" alt="" coords="2856,83,3053,112"/><area shape="rect" id="node48" href="port_2board_2rtm-8sfp_2sdr__list_8c.html" title="port/board/rtm&#45;8sfp/sdr_list.c" alt="" coords="3077,83,3267,112"/><area shape="rect" id="node7" href="main__mmc_8c.html" title="main_mmc.c" alt="" coords="488,160,584,189"/><area shape="rect" id="node9" href="fpga__spi_8c.html" title="modules/fpga_spi.c" alt="" coords="5,160,139,189"/><area shape="rect" id="node11" href="sdr_8c.html" title="modules/sdr.c" alt="" coords="163,160,267,189"/><area shape="rect" id="node13" href="ina220_8c.html" title="DCDCs Voltage reading using INA220 sensor." alt="" coords="291,160,464,189"/></map>
+<area shape="rect" id="node3" href="amc__fru_8c.html" title="modules/amc_fru.c" alt="" coords="427,83,560,112"/><area shape="rect" id="node5" href="fpga__spi_8h.html" title="modules/fpga_spi.h" alt="" coords="584,83,717,112"/><area shape="rect" id="node15" href="port_2board_2afc_2v3__0_2sdr__list_8c.html" title="port/board/afc/v3_0/sdr_list.c" alt="" coords="608,160,797,189"/><area shape="rect" id="node17" href="port_2board_2afc_2v3__1_2sdr__list_8c.html" title="port/board/afc/v3_1/sdr_list.c" alt="" coords="821,160,1011,189"/><area shape="rect" id="node19" href="port_2board_2afc-timing_2sdr__list_8c.html" title="port/board/afc&#45;timing/sdr_list.c" alt="" coords="1035,160,1232,189"/><area shape="rect" id="node21" href="fru_8c.html" title="modules/fru.c" alt="" coords="893,83,995,112"/><area shape="rect" id="node23" href="fru__editor_8c.html" title="modules/fru_editor.c" alt="" coords="1019,83,1157,112"/><area shape="rect" id="node25" href="hpm_8c.html" title="modules/hpm.c" alt="" coords="1181,83,1291,112"/><area shape="rect" id="node27" href="ipmb_8c.html" title="modules/ipmb.c" alt="" coords="1315,83,1429,112"/><area shape="rect" id="node29" href="hotswap_8c.html" title="Hotswap sensors implementation." alt="" coords="1453,83,1637,112"/><area shape="rect" id="node31" href="lm75_8c.html" title="Interface functions for LM75 I2C Temperature Sensor." alt="" coords="1661,83,1824,112"/><area shape="rect" id="node33" href="max6642_8c.html" title="MAX6642 I2C Temperature Sensor Interface implementation." alt="" coords="1848,83,2037,112"/><area shape="rect" id="node35" href="utils_8c.html" title="General utilities functions." alt="" coords="2061,83,2171,112"/><area shape="rect" id="node37" href="v3__0_2payload_8c.html" title="port/board/afc/v3_0/payload.c" alt="" coords="2195,83,2389,112"/><area shape="rect" id="node40" href="v3__1_2payload_8c.html" title="port/board/afc/v3_1/payload.c" alt="" coords="2413,83,2608,112"/><area shape="rect" id="node43" href="timing_2payload_8c.html" title="port/board/afc&#45;timing/payload.c" alt="" coords="2632,83,2832,112"/><area shape="rect" id="node46" href="rtm__user_8c.html" title="port/board/rtm&#45;8sfp/rtm_user.c" alt="" coords="2856,83,3053,112"/><area shape="rect" id="node48" href="port_2board_2rtm-8sfp_2sdr__list_8c.html" title="port/board/rtm&#45;8sfp/sdr_list.c" alt="" coords="3077,83,3267,112"/><area shape="rect" id="node7" href="main__mmc_8c.html" title="main_mmc.c" alt="" coords="488,160,584,189"/><area shape="rect" id="node9" href="fpga__spi_8c.html" title="modules/fpga_spi.c" alt="" coords="5,160,139,189"/><area shape="rect" id="node11" href="sdr_8c.html" title="modules/sdr.c" alt="" coords="163,160,267,189"/><area shape="rect" id="node13" href="ina220_8c.html" title="INA220 interface implementation." alt="" coords="291,160,464,189"/></map>
 </div>
 </div>
 <p><a href="utils_8h_source.html">Go to the source code of this file.</a></p>
@@ -118,15 +126,20 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a18d295a837ac71add5578860b55e5502">STR</a>(x)&#160;&#160;&#160;<a class="el" href="utils_8h.html#a34fbaf7ed82e04e522ca124b6aea8db1">_STR</a>(x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Stringify a macro.  <a href="#a18d295a837ac71add5578860b55e5502"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a34fbaf7ed82e04e522ca124b6aea8db1">_STR</a>(x)&#160;&#160;&#160;#x</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a4259d33ba8f3fa1d78379bfa7581ee94">STR_SIZE</a>(x)&#160;&#160;&#160;(sizeof(x) -1)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets length of a macro string.  <a href="#a4259d33ba8f3fa1d78379bfa7581ee94"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a98ae8c72aaa361f72d648140c6c92e17">getTickDifference</a> (uint32_t current_time, uint32_t start_time)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">TickType_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a4da28eea723ce5be9be3cafbf3c2eec5">getTickDifference</a> (TickType_t current_time, TickType_t start_time)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the difference between 2 tick values.  <a href="#a4da28eea723ce5be9be3cafbf3c2eec5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a134816e32f4a2df3247444d75a1ce361">calculate_chksum</a> (uint8_t *buffer, uint8_t range)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a n-byte message 2's complement checksum. The checksum byte is calculated by perfoming a simple 8bit 2's complement of the sum of all previous bytes. Since we're using a unsigned int to hold the checksum value, we only need to subtract all bytes from it.  <a href="#a134816e32f4a2df3247444d75a1ce361"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a n-byte message 2's complement checksum.  <a href="#a134816e32f4a2df3247444d75a1ce361"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a839606a1b09e2884aef6b255045ab825">cmpBuffs</a> (uint8_t *bufa, size_t len_a, uint8_t *bufb, size_t len_b)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare 2 buffers.  <a href="#a839606a1b09e2884aef6b255045ab825"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#ad00b36606f6f731f08c50fdbf3e31928">isPowerOfTwo</a> (uint8_t x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check is a number is a power of 2.  <a href="#ad00b36606f6f731f08c50fdbf3e31928"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>General utilities functions. </p>
@@ -164,6 +177,14 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Stringify a macro. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Value to be stringifyed </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a4259d33ba8f3fa1d78379bfa7581ee94"></a><!-- doxytag: member="utils.h::STR_SIZE" ref="a4259d33ba8f3fa1d78379bfa7581ee94" args="(x)" -->
@@ -180,6 +201,15 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Gets length of a macro string. </p>
+<dl class="note"><dt><b>Note:</b></dt><dd>This macro behaviour is equivalent to strlen()</dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Macro string </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -209,7 +239,8 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Calculate a n-byte message 2's complement checksum. The checksum byte is calculated by perfoming a simple 8bit 2's complement of the sum of all previous bytes. Since we're using a unsigned int to hold the checksum value, we only need to subtract all bytes from it. </p>
+<p>Calculate a n-byte message 2's complement checksum. </p>
+<p>The checksum byte is calculated by perfoming a simple 8bit 2's complement of the sum of all previous bytes. Since we're using a unsigned int to hold the checksum value, we only need to subtract all bytes from it.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>Pointer to the message bytes. </td></tr>
@@ -258,22 +289,40 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Compare 2 buffers. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bufa</td><td>First buffer to compare </td></tr>
+    <tr><td class="paramname">len_a</td><td>Length of #bufa </td></tr>
+    <tr><td class="paramname">bufb</td><td>Second buffer to compare </td></tr>
+    <tr><td class="paramname">len_b</td><td>Length of #bufb</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt><b>Return values:</b></dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0x00</td><td>Buffers are equal </td></tr>
+    <tr><td class="paramname">0xFF</td><td>Buffers are different </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a class="anchor" id="a98ae8c72aaa361f72d648140c6c92e17"></a><!-- doxytag: member="utils.h::getTickDifference" ref="a98ae8c72aaa361f72d648140c6c92e17" args="(uint32_t current_time, uint32_t start_time)" -->
+<a class="anchor" id="a4da28eea723ce5be9be3cafbf3c2eec5"></a><!-- doxytag: member="utils.h::getTickDifference" ref="a4da28eea723ce5be9be3cafbf3c2eec5" args="(TickType_t current_time, TickType_t start_time)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t <a class="el" href="utils_8h.html#a98ae8c72aaa361f72d648140c6c92e17">getTickDifference</a> </td>
+          <td class="memname">TickType_t <a class="el" href="utils_8h.html#a4da28eea723ce5be9be3cafbf3c2eec5">getTickDifference</a> </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">TickType_t&#160;</td>
           <td class="paramname"><em>current_time</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">TickType_t&#160;</td>
           <td class="paramname"><em>start_time</em>&#160;</td>
         </tr>
         <tr>
@@ -284,6 +333,17 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Calculate the difference between 2 tick values. </p>
+<p>Since the tick counter can overflow, we need to check if the current value is higher than the start time before performing any calculations. The Tick counter is expected to overflow at the portMAX_DELAY value</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">current_time</td><td>Current tick count </td></tr>
+    <tr><td class="paramname">start_time</td><td>Start tick count</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Tick difference between arguments </dd></dl>
 
 </div>
 </div>
@@ -301,6 +361,21 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Check is a number is a power of 2. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Number to be tested</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt><b>Return values:</b></dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">1</td><td>Number is a power of two </td></tr>
+    <tr><td class="paramname">0</td><td>Number is not a power of two </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -324,7 +399,7 @@ Functions</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="utils_8h.html">utils.h</a>      </li>
 
-    <li class="footer">Generated on Mon Jun 27 2016 19:01:01 for openMMC by
+    <li class="footer">Generated on Mon Jun 27 2016 19:45:12 for openMMC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

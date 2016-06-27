@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$ina220_8c.html" title="DCDCs Voltage reading using INA220 sensor." alt="" coords="47,83,220,112"/>
-<area shape="rect" id="node5" href="$sensors_8h.html" title="modules/sensors/sensors.h" alt="" coords="244,83,425,112"/>
+<area shape="rect" id="node3" href="$ina220_8c.html" title="INA220 interface implementation." alt="" coords="47,83,220,112"/>
+<area shape="rect" id="node5" href="$sensors_8h.html" title="Shortcut to include all sensors headers (not mandatory, user can include each sensor separately)..." alt="" coords="244,83,425,112"/>
 <area shape="rect" id="node7" href="$sdr_8c.html" title="modules/sdr.c" alt="" coords="5,160,109,189"/>
 <area shape="rect" id="node9" href="$port_2board_2afc_2v3__0_2sdr__list_8c.html" title="port/board/afc/v3_0/sdr_list.c" alt="" coords="133,160,323,189"/>
 <area shape="rect" id="node11" href="$port_2board_2afc_2v3__1_2sdr__list_8c.html" title="port/board/afc/v3_1/sdr_list.c" alt="" coords="347,160,536,189"/>

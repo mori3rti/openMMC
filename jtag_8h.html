@@ -52,7 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -96,13 +96,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#define-members">Defines</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">modules/jtag.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="dynheader">
+<div class="textblock"><code>#include &quot;pin_mapping.h&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for jtag.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="jtag_8h__incl.png" border="0" usemap="#modules_2jtag_8h" alt=""/></div>
+<map name="modules_2jtag_8h" id="modules_2jtag_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="jtag_8h__dep__incl.png" border="0" usemap="#modules_2jtag_8hdep" alt=""/></div>
@@ -112,139 +119,11 @@ This graph shows which files directly or indirectly include this file:</div>
 </div>
 <p><a href="jtag_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="define-members"></a>
-Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jtag_8h.html#a4901cf29ee77e6777699ee24265806d9">SCANSTA_PORT</a>&#160;&#160;&#160;2</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jtag_8h.html#a4fab4de1e4af7493cb8131a4fcc540d1">SCANSTA_ADDR0_PIN</a>&#160;&#160;&#160;0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jtag_8h.html#acfc05e729ce063ecc644090d4d67754f">SCANSTA_ADDR1_PIN</a>&#160;&#160;&#160;1</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jtag_8h.html#afee60b4f4e76731f4a53a29ebf55f2a7">SCANSTA_ADDR2_PIN</a>&#160;&#160;&#160;2</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jtag_8h.html#a8dd492439c41835cdf34d03168dd64a0">SCANSTA_ADDR3_PIN</a>&#160;&#160;&#160;3</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jtag_8h.html#af9d6c6f578b5e34dc382ca80a13d240f">SCANSTA_ADDR4_PIN</a>&#160;&#160;&#160;4</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jtag_8h.html#af0eed3700c2abf350f4f372855c70c8f">SCANSTA_ADDR5_PIN</a>&#160;&#160;&#160;5</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jtag_8h.html#ac75da03f2daf0123354ac730f7d92bc9">SCANSTA_ADDR6_PIN</a>&#160;&#160;&#160;6</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jtag_8h.html#aff45ad541c4d60d4a20392ec95eb3557">SCANSTA_RST_PIN</a>&#160;&#160;&#160;7</td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jtag_8h.html#adfd2311ade82e67b8756de29408313d7">scansta_init</a> (void)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize and configure SCANSTA addr pins.  <a href="#adfd2311ade82e67b8756de29408313d7"></a><br/></td></tr>
 </table>
-<hr/><h2>Define Documentation</h2>
-<a class="anchor" id="a4fab4de1e4af7493cb8131a4fcc540d1"></a><!-- doxytag: member="jtag.h::SCANSTA_ADDR0_PIN" ref="a4fab4de1e4af7493cb8131a4fcc540d1" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="jtag_8h.html#a4fab4de1e4af7493cb8131a4fcc540d1">SCANSTA_ADDR0_PIN</a>&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="acfc05e729ce063ecc644090d4d67754f"></a><!-- doxytag: member="jtag.h::SCANSTA_ADDR1_PIN" ref="acfc05e729ce063ecc644090d4d67754f" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="jtag_8h.html#acfc05e729ce063ecc644090d4d67754f">SCANSTA_ADDR1_PIN</a>&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="afee60b4f4e76731f4a53a29ebf55f2a7"></a><!-- doxytag: member="jtag.h::SCANSTA_ADDR2_PIN" ref="afee60b4f4e76731f4a53a29ebf55f2a7" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="jtag_8h.html#afee60b4f4e76731f4a53a29ebf55f2a7">SCANSTA_ADDR2_PIN</a>&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8dd492439c41835cdf34d03168dd64a0"></a><!-- doxytag: member="jtag.h::SCANSTA_ADDR3_PIN" ref="a8dd492439c41835cdf34d03168dd64a0" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="jtag_8h.html#a8dd492439c41835cdf34d03168dd64a0">SCANSTA_ADDR3_PIN</a>&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af9d6c6f578b5e34dc382ca80a13d240f"></a><!-- doxytag: member="jtag.h::SCANSTA_ADDR4_PIN" ref="af9d6c6f578b5e34dc382ca80a13d240f" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="jtag_8h.html#af9d6c6f578b5e34dc382ca80a13d240f">SCANSTA_ADDR4_PIN</a>&#160;&#160;&#160;4</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af0eed3700c2abf350f4f372855c70c8f"></a><!-- doxytag: member="jtag.h::SCANSTA_ADDR5_PIN" ref="af0eed3700c2abf350f4f372855c70c8f" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="jtag_8h.html#af0eed3700c2abf350f4f372855c70c8f">SCANSTA_ADDR5_PIN</a>&#160;&#160;&#160;5</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac75da03f2daf0123354ac730f7d92bc9"></a><!-- doxytag: member="jtag.h::SCANSTA_ADDR6_PIN" ref="ac75da03f2daf0123354ac730f7d92bc9" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="jtag_8h.html#ac75da03f2daf0123354ac730f7d92bc9">SCANSTA_ADDR6_PIN</a>&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4901cf29ee77e6777699ee24265806d9"></a><!-- doxytag: member="jtag.h::SCANSTA_PORT" ref="a4901cf29ee77e6777699ee24265806d9" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="jtag_8h.html#a4901cf29ee77e6777699ee24265806d9">SCANSTA_PORT</a>&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aff45ad541c4d60d4a20392ec95eb3557"></a><!-- doxytag: member="jtag.h::SCANSTA_RST_PIN" ref="aff45ad541c4d60d4a20392ec95eb3557" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="jtag_8h.html#aff45ad541c4d60d4a20392ec95eb3557">SCANSTA_RST_PIN</a>&#160;&#160;&#160;7</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <hr/><h2>Function Documentation</h2>
 <a class="anchor" id="adfd2311ade82e67b8756de29408313d7"></a><!-- doxytag: member="jtag.h::scansta_init" ref="adfd2311ade82e67b8756de29408313d7" args="(void)" -->
 <div class="memitem">
@@ -260,6 +139,8 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Initialize and configure SCANSTA addr pins. </p>
 
 </div>
 </div>
@@ -283,7 +164,7 @@ Functions</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="jtag_8h.html">jtag.h</a>      </li>
 
-    <li class="footer">Generated on Mon Jun 27 2016 19:01:01 for openMMC by
+    <li class="footer">Generated on Mon Jun 27 2016 19:45:12 for openMMC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

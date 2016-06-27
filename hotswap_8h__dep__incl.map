@@ -1,7 +1,7 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$rtm_8c.html" title="modules/rtm.c" alt="" coords="5,83,109,112"/>
-<area shape="rect" id="node5" href="$hotswap_8c.html" title="modules/sensors/hotswap.c" alt="" coords="133,83,317,112"/>
-<area shape="rect" id="node7" href="$sensors_8h.html" title="modules/sensors/sensors.h" alt="" coords="341,83,523,112"/>
+<area shape="rect" id="node5" href="$hotswap_8c.html" title="Hotswap sensors implementation." alt="" coords="133,83,317,112"/>
+<area shape="rect" id="node7" href="$sensors_8h.html" title="Shortcut to include all sensors headers (not mandatory, user can include each sensor separately)..." alt="" coords="341,83,523,112"/>
 <area shape="rect" id="node17" href="$v3__0_2payload_8c.html" title="port/board/afc/v3_0/payload.c" alt="" coords="547,83,741,112"/>
 <area shape="rect" id="node19" href="$v3__1_2payload_8c.html" title="port/board/afc/v3_1/payload.c" alt="" coords="765,83,960,112"/>
 <area shape="rect" id="node21" href="$timing_2payload_8c.html" title="port/board/afc&#45;timing/payload.c" alt="" coords="984,83,1184,112"/>

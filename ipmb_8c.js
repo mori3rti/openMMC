@@ -1,7 +1,5 @@
 var ipmb_8c =
 [
-    [ "GPIO_GA_DELAY", "ipmb_8c.html#afb1fa450cf18fa7580c7a27c68f142a3", null ],
-    [ "I2C_SPEED", "ipmb_8c.html#a410dc1e7572425a449b5dc0f7ca9f69d", null ],
     [ "get_ipmb_addr", "ipmb_8c.html#a1c987a2dc56422b57146391280f5e796", null ],
     [ "ipmb_assert_chksum", "ipmb_8c.html#a2f65cfe781d852b8d1394830ad0ec739", null ],
     [ "ipmb_decode", "ipmb_8c.html#ab1e2328f30108a9f68cac6e6cd233428", null ],

@@ -52,7 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -120,22 +120,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00019"></a>00019 <span class="comment"> *   @license GPL-3.0+ &lt;http://spdx.org/licenses/GPL-3.0+&gt;</span>
 <a name="l00020"></a>00020 <span class="comment"> */</span>
 <a name="l00021"></a>00021 
-<a name="l00030"></a>00030 <span class="preprocessor">#ifndef LM75_H_</span>
-<a name="l00031"></a>00031 <span class="preprocessor"></span><span class="preprocessor">#define LM75_H_</span>
-<a name="l00032"></a>00032 <span class="preprocessor"></span>
-<a name="l00033"></a><a class="code" href="lm75_8h.html#a1b84f8c27a039cd27ef5d1d496ab6d3d">00033</a> <span class="preprocessor">#define LM75_UPDATE_RATE        500</span>
-<a name="l00034"></a>00034 <span class="preprocessor"></span>
-<a name="l00035"></a><a class="code" href="lm75_8h.html#af9b0007a05dc101a137a7d972af0b229">00035</a> TaskHandle_t <a class="code" href="lm75_8c.html#af9b0007a05dc101a137a7d972af0b229">vTaskLM75_Handle</a>;
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037 <span class="keyword">extern</span> <span class="keyword">const</span> <a class="code" href="structSDR__type__01h__t.html">SDR_type_01h_t</a> <a class="code" href="lm75_8h.html#a392ddc5a5b5952e1009157244848e894">SDR_LM75_uC</a>;
-<a name="l00038"></a>00038 <span class="keyword">extern</span> <span class="keyword">const</span> <a class="code" href="structSDR__type__01h__t.html">SDR_type_01h_t</a> <a class="code" href="lm75_8h.html#a07f51847bfaa003cd9bb349e513a5630">SDR_LM75_CLOCK_SWITCH</a>;
-<a name="l00039"></a>00039 <span class="keyword">extern</span> <span class="keyword">const</span> <a class="code" href="structSDR__type__01h__t.html">SDR_type_01h_t</a> <a class="code" href="lm75_8h.html#a789827423954dc6cdde3a513e0aa2cee">SDR_LM75_DCDC</a>;
-<a name="l00040"></a>00040 <span class="keyword">extern</span> <span class="keyword">const</span> <a class="code" href="structSDR__type__01h__t.html">SDR_type_01h_t</a> <a class="code" href="lm75_8h.html#aa25b89ab86a30fd75c55ebaaaa3ab108">SDR_LM75_RAM</a>;
-<a name="l00041"></a>00041 
-<a name="l00042"></a>00042 <span class="keywordtype">void</span> <a class="code" href="lm75_8c.html#a719d46d37b4bdfae576c2ec280b31837">LM75_init</a>( <span class="keywordtype">void</span> );
-<a name="l00043"></a>00043 <span class="keywordtype">void</span> <a class="code" href="lm75_8c.html#aad22b7da899582e180d29ee35c41e7e8">vTaskLM75</a>( <span class="keywordtype">void</span>* Parameters );
-<a name="l00044"></a>00044 
-<a name="l00045"></a>00045 <span class="preprocessor">#endif</span>
+<a name="l00041"></a>00041 <span class="preprocessor">#ifndef LM75_H_</span>
+<a name="l00042"></a>00042 <span class="preprocessor"></span><span class="preprocessor">#define LM75_H_</span>
+<a name="l00043"></a>00043 <span class="preprocessor"></span>
+<a name="l00047"></a><a class="code" href="lm75_8h.html#a1b84f8c27a039cd27ef5d1d496ab6d3d">00047</a> <span class="preprocessor">#define LM75_UPDATE_RATE        500</span>
+<a name="l00048"></a>00048 <span class="preprocessor"></span>
+<a name="l00049"></a><a class="code" href="lm75_8h.html#af9b0007a05dc101a137a7d972af0b229">00049</a> TaskHandle_t <a class="code" href="lm75_8c.html#af9b0007a05dc101a137a7d972af0b229">vTaskLM75_Handle</a>;
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 <span class="keyword">extern</span> <span class="keyword">const</span> <a class="code" href="structSDR__type__01h__t.html">SDR_type_01h_t</a> <a class="code" href="lm75_8h.html#a392ddc5a5b5952e1009157244848e894">SDR_LM75_uC</a>;
+<a name="l00052"></a>00052 <span class="keyword">extern</span> <span class="keyword">const</span> <a class="code" href="structSDR__type__01h__t.html">SDR_type_01h_t</a> <a class="code" href="lm75_8h.html#a07f51847bfaa003cd9bb349e513a5630">SDR_LM75_CLOCK_SWITCH</a>;
+<a name="l00053"></a>00053 <span class="keyword">extern</span> <span class="keyword">const</span> <a class="code" href="structSDR__type__01h__t.html">SDR_type_01h_t</a> <a class="code" href="lm75_8h.html#a789827423954dc6cdde3a513e0aa2cee">SDR_LM75_DCDC</a>;
+<a name="l00054"></a>00054 <span class="keyword">extern</span> <span class="keyword">const</span> <a class="code" href="structSDR__type__01h__t.html">SDR_type_01h_t</a> <a class="code" href="lm75_8h.html#aa25b89ab86a30fd75c55ebaaaa3ab108">SDR_LM75_RAM</a>;
+<a name="l00055"></a>00055 
+<a name="l00061"></a>00061 <span class="keywordtype">void</span> <a class="code" href="lm75_8c.html#a719d46d37b4bdfae576c2ec280b31837" title="Initializes LM75 monitoring task.">LM75_init</a>( <span class="keywordtype">void</span> );
+<a name="l00062"></a>00062 
+<a name="l00070"></a>00070 <span class="keywordtype">void</span> <a class="code" href="lm75_8c.html#aad22b7da899582e180d29ee35c41e7e8" title="Monitoring task for LM75 sensor.">vTaskLM75</a>( <span class="keywordtype">void</span>* Parameters );
+<a name="l00071"></a>00071 
+<a name="l00072"></a>00072 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -156,7 +157,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="lm75_8h.html">lm75.h</a>      </li>
 
-    <li class="footer">Generated on Mon Jun 27 2016 19:01:00 for openMMC by
+    <li class="footer">Generated on Mon Jun 27 2016 19:45:12 for openMMC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

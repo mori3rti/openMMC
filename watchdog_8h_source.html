@@ -52,7 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -120,14 +120,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00019"></a>00019 <span class="comment"> *   @license GPL-3.0+ &lt;http://spdx.org/licenses/GPL-3.0+&gt;</span>
 <a name="l00020"></a>00020 <span class="comment"> */</span>
 <a name="l00021"></a>00021 
-<a name="l00022"></a>00022 <span class="preprocessor">#ifndef WATCHDOG_H_</span>
-<a name="l00023"></a>00023 <span class="preprocessor"></span><span class="preprocessor">#define WATCHDOG_H_</span>
-<a name="l00024"></a>00024 <span class="preprocessor"></span>
-<a name="l00025"></a>00025 <span class="keywordtype">void</span> <a class="code" href="watchdog_8c.html#ad3e3f89e8fb1ad9489dc281c05335f5f">watchdog_init</a>( <span class="keywordtype">void</span> );
-<a name="l00026"></a>00026 <span class="keywordtype">void</span> <a class="code" href="watchdog_8c.html#a4d8f954dc64547ecdf5098e7d3fbe6fa">WatchdogTask</a>( <span class="keywordtype">void</span> * Parameters );
-<a name="l00027"></a>00027 <span class="keywordtype">void</span> <a class="code" href="watchdog_8c.html#a688ae0be44bb4bddb4f9fa6680addf25">watchdog_reset_mcu</a>( <span class="keywordtype">void</span> );
-<a name="l00028"></a>00028 
-<a name="l00029"></a>00029 <span class="preprocessor">#endif</span>
+<a name="l00030"></a>00030 <span class="preprocessor">#ifndef WATCHDOG_H_</span>
+<a name="l00031"></a>00031 <span class="preprocessor"></span><span class="preprocessor">#define WATCHDOG_H_</span>
+<a name="l00032"></a>00032 <span class="preprocessor"></span>
+<a name="l00036"></a><a class="code" href="watchdog_8h.html#ae7ddf06274536d77539fbbd79cc9e3b3">00036</a> <span class="preprocessor">#define WATCHDOG_CLK_FREQ       8000000</span>
+<a name="l00037"></a>00037 <span class="preprocessor"></span>
+<a name="l00041"></a><a class="code" href="watchdog_8h.html#abf89628d486477bd0db5a5890cd38a05">00041</a> <span class="preprocessor">#define WATCHDOG_TIMEOUT        1000    </span><span class="comment">/* in milisseconds */</span>
+<a name="l00042"></a>00042 
+<a name="l00048"></a><a class="code" href="watchdog_8h.html#ae27d77dcfa20cfcdb565aad89d1d5f9e">00048</a> <span class="preprocessor">#define WATCHDOG_FEED_DELAY     (WATCHDOG_TIMEOUT/3)*2</span>
+<a name="l00049"></a>00049 <span class="preprocessor"></span>
+<a name="l00050"></a>00050 
+<a name="l00056"></a>00056 <span class="keywordtype">void</span> <a class="code" href="watchdog_8c.html#ad3e3f89e8fb1ad9489dc281c05335f5f" title="Initializes and configures Watchdog timer.">watchdog_init</a>( <span class="keywordtype">void</span> );
+<a name="l00057"></a>00057 
+<a name="l00063"></a>00063 <span class="keywordtype">void</span> <a class="code" href="watchdog_8c.html#a688ae0be44bb4bddb4f9fa6680addf25" title="Schedules a Reset on the next run of the Watchdog task.">watchdog_reset_mcu</a>( <span class="keywordtype">void</span> );
+<a name="l00064"></a>00064 
+<a name="l00072"></a>00072 <span class="keywordtype">void</span> <a class="code" href="watchdog_8c.html#a4d8f954dc64547ecdf5098e7d3fbe6fa" title="Periodically feed the Watchdog timer and checks if there&#39;s any Reset requests.">WatchdogTask</a>( <span class="keywordtype">void</span> * Parameters );
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -148,7 +157,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="watchdog_8h.html">watchdog.h</a>      </li>
 
-    <li class="footer">Generated on Mon Jun 27 2016 19:01:00 for openMMC by
+    <li class="footer">Generated on Mon Jun 27 2016 19:45:12 for openMMC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

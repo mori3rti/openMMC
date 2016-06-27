@@ -1,6 +1,6 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$ina220_8h.html" title="Definitions for INA220 Current/Voltage/Power Sensor." alt="" coords="1568,83,1637,112"/>
-<area shape="rect" id="node56" href="$hotswap_8h.html" title="hotswap.h" alt="" coords="1461,83,1544,112"/>
+<area shape="rect" id="node56" href="$hotswap_8h.html" title="Hotswap sensors definitions." alt="" coords="1461,83,1544,112"/>
 <area shape="rect" id="node67" href="$lm75_8h.html" title="Definitions for LM75 I2C Temperature Sensor." alt="" coords="1661,83,1723,112"/>
 <area shape="rect" id="node69" href="$max6642_8h.html" title="Definitions for MAX6642 I2C Temperature Sensor." alt="" coords="1747,83,1832,112"/>
 <area shape="rect" id="node7" href="$port_8h.html" title="Port layer (includes all portable functions headers)" alt="" coords="869,160,923,189"/>
@@ -12,7 +12,7 @@
 <area shape="rect" id="node33" href="$lpc17__interruptions_8h.html" title="Interruptions control." alt="" coords="544,237,685,267"/>
 <area shape="rect" id="node37" href="$lpc17__hpm_8h.html" title="Firmware update functions (HPM.1)" alt="" coords="891,237,987,267"/>
 <area shape="rect" id="node39" href="$lpc17__power_8h.html" title="Definitions of power mode selection for LPC17xx." alt="" coords="709,237,816,267"/>
-<area shape="rect" id="node43" href="$lpc17__pincfg_8h.html" title="lpc17_pincfg.h" alt="" coords="1128,237,1235,267"/>
+<area shape="rect" id="node43" href="$lpc17__pincfg_8h.html" title="Pin Config functions redirection for LPC17xx." alt="" coords="1128,237,1235,267"/>
 <area shape="rect" id="node48" href="$lpc17__uart_8h.html" title="lpc17_uart.h" alt="" coords="1011,237,1104,267"/>
 <area shape="rect" id="node58" href="$sdr_8h.html" title="sdr.h" alt="" coords="1493,160,1544,189"/>
 <area shape="rect" id="node60" href="$ipmb_8h.html" title="Definitions used in IPMB Layer." alt="" coords="1504,237,1565,267"/>

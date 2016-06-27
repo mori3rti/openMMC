@@ -1,5 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node7" href="$ipmi_8h.html" title="ipmi.h" alt="" coords="451,83,507,112"/>
+<area shape="rect" id="node7" href="$ipmi_8h.html" title="IPMI module definitions." alt="" coords="451,83,507,112"/>
 <area shape="rect" id="node21" href="$port_8h.html" title="Port layer (includes all portable functions headers)" alt="" coords="969,160,1023,189"/>
 <area shape="rect" id="node67" href="$task__priorities_8h.html" title="task_priorities.h" alt="" coords="933,83,1048,112"/>
 <area shape="rect" id="node69" href="$led_8h.html" title="led.h" alt="" coords="739,83,789,112"/>
@@ -14,6 +14,6 @@
 <area shape="rect" id="node46" href="$lpc17__interruptions_8h.html" title="Interruptions control." alt="" coords="1269,237,1411,267"/>
 <area shape="rect" id="node50" href="$lpc17__hpm_8h.html" title="Firmware update functions (HPM.1)" alt="" coords="1435,237,1531,267"/>
 <area shape="rect" id="node52" href="$lpc17__power_8h.html" title="Definitions of power mode selection for LPC17xx." alt="" coords="1555,237,1661,267"/>
-<area shape="rect" id="node56" href="$lpc17__pincfg_8h.html" title="lpc17_pincfg.h" alt="" coords="1685,237,1792,267"/>
+<area shape="rect" id="node56" href="$lpc17__pincfg_8h.html" title="Pin Config functions redirection for LPC17xx." alt="" coords="1685,237,1792,267"/>
 <area shape="rect" id="node61" href="$lpc17__uart_8h.html" title="lpc17_uart.h" alt="" coords="145,237,239,267"/>
 </map>
